@@ -1,0 +1,27 @@
+[    1592ms] [ERROR] CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token @ https://homolog.qa.poli.digital/js/app.js:1555
+[    2129ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:892:429
+    at VR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:894:31)
+    at Nd.UR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:891:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+[   58777ms] [LOG] 0 Criar Novo Cliente  @ :2
+[   58781ms] [LOG] 1 Criar Novo Token  @ :2
+[   58784ms] [LOG] 2 Deletar  @ :2
+[   58784ms] [LOG] 3 Deletar  @ :2
+[   58785ms] [LOG] 4 Deletar  @ :2
+[   58785ms] [LOG] 5 Deletar  @ :2
+[   58793ms] [LOG] 6 Deletar  @ :2
+[   58795ms] [LOG] 7 Deletar  @ :2
+[   58796ms] [LOG] 8 Deletar  @ :2
+[   58796ms] [LOG] 9 Deletar  @ :2
+[   94828ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://homolog.qa.poli.digital/oauth/personal-access-tokens:0
+[  137273ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/oauth/token:0
+[  137528ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/oauth/token:0
+[  137760ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/oauth/token:0
+[  156670ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_flow_template/channels/1522/contacts/1/users/79356:0

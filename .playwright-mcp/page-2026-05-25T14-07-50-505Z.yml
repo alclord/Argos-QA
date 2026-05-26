@@ -1,0 +1,283 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - img [ref=e7]
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link [ref=e11] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=d552244dfb982b4b6e26830f354b8510aa3aeaa0&toPath=https://app.poli.digital/home
+              - img [ref=e13]
+          - listitem [ref=e16]:
+            - link [ref=e17] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e19]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=d552244dfb982b4b6e26830f354b8510aa3aeaa0&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e30]
+          - listitem [ref=e32]:
+            - link [ref=e33] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=d552244dfb982b4b6e26830f354b8510aa3aeaa0&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e35]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=d552244dfb982b4b6e26830f354b8510aa3aeaa0&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e41]
+          - listitem [ref=e43]:
+            - link [ref=e44] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=d552244dfb982b4b6e26830f354b8510aa3aeaa0&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e46]
+          - listitem [ref=e49]:
+            - link [ref=e50] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=d552244dfb982b4b6e26830f354b8510aa3aeaa0&toPath=https://app.poli.digital/settings/1
+              - img [ref=e52]
+          - listitem [ref=e55]:
+            - link [ref=e56] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e58]
+          - listitem [ref=e62]:
+            - link [ref=e63] [cursor=pointer]:
+              - /url: /templates
+              - img [ref=e65]
+        - list [ref=e68]:
+          - listitem [ref=e69]:
+            - button "Consumo de créditos" [ref=e70] [cursor=pointer]:
+              - img [ref=e71]
+          - listitem [ref=e74]:
+            - button "YA" [ref=e75] [cursor=pointer]:
+              - generic [ref=e80]: YA
+          - listitem [ref=e82]:
+            - button [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+          - listitem [ref=e86]:
+            - generic [ref=e88]: 3.5.332
+    - main [ref=e89]:
+      - generic [ref=e91]:
+        - navigation "breadcrumb" [ref=e93]:
+          - link "Página inicial" [ref=e95] [cursor=pointer]:
+            - /url: /
+          - img [ref=e96]
+          - generic [ref=e98]: Mensagens agendadas
+        - generic [ref=e100]:
+          - generic [ref=e102]:
+            - generic [ref=e233]:
+              - img [ref=e235]
+              - generic [ref=e238]:
+                - paragraph [ref=e239]: Total
+                - paragraph [ref=e240]: "1388"
+            - generic [ref=e242]:
+              - img [ref=e244]
+              - generic [ref=e248]:
+                - paragraph [ref=e249]: Agendadas
+                - paragraph [ref=e250]: "20"
+            - generic [ref=e252]:
+              - img [ref=e254]
+              - generic [ref=e257]:
+                - paragraph [ref=e258]: Enviadas
+                - paragraph [ref=e259]: "1250"
+            - generic [ref=e261]:
+              - img [ref=e263]
+              - generic [ref=e267]:
+                - paragraph [ref=e268]: Canceladas
+                - paragraph [ref=e269]: "51"
+          - generic [ref=e131]:
+            - table [ref=e942]:
+              - rowgroup [ref=e943]:
+                - row "Selecionar todos da página Contato Canal Mensagem Agendado para Responsável Status Ações" [ref=e944]:
+                  - columnheader "Selecionar todos da página" [ref=e945]:
+                    - checkbox "Selecionar todos da página" [ref=e1465] [cursor=pointer]
+                  - columnheader "Contato" [ref=e948]:
+                    - button "Contato" [ref=e1466] [cursor=pointer]:
+                      - text: Contato
+                      - img [ref=e1467]
+                  - columnheader "Canal" [ref=e953]
+                  - columnheader "Mensagem" [ref=e954]
+                  - columnheader "Agendado para" [ref=e955]:
+                    - button "Agendado para" [ref=e1470] [cursor=pointer]:
+                      - text: Agendado para
+                      - img [ref=e1471]
+                  - columnheader "Responsável" [ref=e960]
+                  - columnheader "Status" [ref=e961]
+                  - columnheader "Ações" [ref=e962]
+              - rowgroup [active] [ref=e963]:
+                - row "Tifany WhatsApp Business WhatsApp Business Canal Principal [contact_first_name] Como vai? Muitos negócios perdem clientes porque não conseguem responder rápido no WhatsApp, Instagram e Facebook. E se você tivesse tudo centralizado em um só lugar? Assim, nenhum cliente ficaria sem resposta. Posso te mostrar como funciona de forma simples? 29/05/26 05:00 Tifany Cancelada Ações" [ref=e964]:
+                  - cell [ref=e965]
+                  - cell "Tifany" [ref=e966]
+                  - cell "WhatsApp Business WhatsApp Business Canal Principal" [ref=e967]:
+                    - generic [ref=e1474]:
+                      - generic [ref=e1475]:
+                        - img "WhatsApp Business" [ref=e1476]
+                        - generic [ref=e1479]: WhatsApp Business
+                      - generic [ref=e1480]: Canal Principal
+                  - cell "[contact_first_name] Como vai? Muitos negócios perdem clientes porque não conseguem responder rápido no WhatsApp, Instagram e Facebook. E se você tivesse tudo centralizado em um só lugar? Assim, nenhum cliente ficaria sem resposta. Posso te mostrar como funciona de forma simples?" [ref=e975]:
+                    - generic [ref=e1481]: "[contact_first_name] Como vai? Muitos negócios perdem clientes porque não conseguem responder rápido no WhatsApp, Instagram e Facebook. E se você tivesse tudo centralizado em um só lugar? Assim, nenhum cliente ficaria sem resposta. Posso te mostrar como funciona de forma simples?"
+                  - cell "29/05/26 05:00" [ref=e977]
+                  - cell "Tifany" [ref=e978]
+                  - cell "Cancelada" [ref=e979]:
+                    - generic [ref=e1482]: Cancelada
+                  - cell "Ações" [ref=e981]:
+                    - button "Ações" [ref=e1483] [cursor=pointer]:
+                      - img [ref=e1484]
+                - row "Esmeraldo - Siena Escola de Negócios WhatsApp Business WhatsApp Business Canal Principal Olá Esmeraldo! Tudo bem? Combinamos de conversar hoje para fecharmos oficialmente nossa parceria e iniciarmos o processo de implantação da plataforma. Estou pronto para dar o start — só preciso do seu ok para seguirmos! Está tudo certo para avançarmos? 01/06/26 06:30 Aline Paiva Cancelada Ações" [ref=e987]:
+                  - cell [ref=e988]
+                  - cell "Esmeraldo - Siena Escola de Negócios" [ref=e989]
+                  - cell "WhatsApp Business WhatsApp Business Canal Principal" [ref=e990]:
+                    - generic [ref=e1488]:
+                      - generic [ref=e1489]:
+                        - img "WhatsApp Business" [ref=e1490]
+                        - generic [ref=e1493]: WhatsApp Business
+                      - generic [ref=e1494]: Canal Principal
+                  - cell "Olá Esmeraldo! Tudo bem? Combinamos de conversar hoje para fecharmos oficialmente nossa parceria e iniciarmos o processo de implantação da plataforma. Estou pronto para dar o start — só preciso do seu ok para seguirmos! Está tudo certo para avançarmos?" [ref=e998]:
+                    - generic [ref=e1495]: Olá Esmeraldo! Tudo bem? Combinamos de conversar hoje para fecharmos oficialmente nossa parceria e iniciarmos o processo de implantação da plataforma. Estou pronto para dar o start — só preciso do seu ok para seguirmos! Está tudo certo para avançarmos?
+                  - cell "01/06/26 06:30" [ref=e1000]
+                  - cell "Aline Paiva" [ref=e1001]
+                  - cell "Cancelada" [ref=e1002]:
+                    - generic [ref=e1496]: Cancelada
+                  - cell "Ações" [ref=e1004]:
+                    - button "Ações" [ref=e1497] [cursor=pointer]:
+                      - img [ref=e1498]
+                - row "Selecionar item 23f33f4e-2dd5-11f1-9d75-06799772b1cd Francielly Bazanella | Gas Progresso WhatsApp Business WhatsApp Business Canal Principal Olá, [contact_first_name], tudo bem? Conforme conversamos, estou retornando o contato para darmos continuidade. Podemos seguir com o atendimento? 01/06/26 07:05 Erika Lustosa Agendada Ações" [ref=e1010]:
+                  - cell "Selecionar item 23f33f4e-2dd5-11f1-9d75-06799772b1cd" [ref=e1011]:
+                    - generic [ref=e1502]:
+                      - checkbox "Selecionar item 23f33f4e-2dd5-11f1-9d75-06799772b1cd"
+                  - cell "Francielly Bazanella | Gas Progresso" [ref=e1013]
+                  - cell "WhatsApp Business WhatsApp Business Canal Principal" [ref=e1014]:
+                    - generic [ref=e1503]:
+                      - generic [ref=e1504]:
+                        - img "WhatsApp Business" [ref=e1505]
+                        - generic [ref=e1508]: WhatsApp Business
+                      - generic [ref=e1509]: Canal Principal
+                  - cell "Olá, [contact_first_name], tudo bem? Conforme conversamos, estou retornando o contato para darmos continuidade. Podemos seguir com o atendimento?" [ref=e1022]:
+                    - generic [ref=e1510]: Olá, [contact_first_name], tudo bem? Conforme conversamos, estou retornando o contato para darmos continuidade. Podemos seguir com o atendimento?
+                  - cell "01/06/26 07:05" [ref=e1024]
+                  - cell "Erika Lustosa" [ref=e1025]
+                  - cell "Agendada" [ref=e1026]:
+                    - generic [ref=e1511]: Agendada
+                  - cell "Ações" [ref=e1028]:
+                    - button "Ações" [ref=e1512] [cursor=pointer]:
+                      - img [ref=e1513]
+                - row "Selecionar item 5b8c855b-4947-11f1-9d75-06799772b1cd Mauro WhatsApp Business WhatsApp Business Canal Principal Olá, [contact_first_name], tudo bem? Conforme conversamos, estou retornando o contato para darmos continuidade. Podemos seguir com o atendimento? 06/06/26 05:00 Laura Mathias Agendada Ações" [ref=e1034]:
+                  - cell "Selecionar item 5b8c855b-4947-11f1-9d75-06799772b1cd" [ref=e1035]:
+                    - checkbox "Selecionar item 5b8c855b-4947-11f1-9d75-06799772b1cd" [ref=e1518] [cursor=pointer]
+                  - cell "Mauro" [ref=e1037]
+                  - cell "WhatsApp Business WhatsApp Business Canal Principal" [ref=e1038]:
+                    - generic [ref=e1519]:
+                      - generic [ref=e1520]:
+                        - img "WhatsApp Business" [ref=e1521]
+                        - generic [ref=e1524]: WhatsApp Business
+                      - generic [ref=e1525]: Canal Principal
+                  - cell "Olá, [contact_first_name], tudo bem? Conforme conversamos, estou retornando o contato para darmos continuidade. Podemos seguir com o atendimento?" [ref=e1046]:
+                    - generic [ref=e1526]: Olá, [contact_first_name], tudo bem? Conforme conversamos, estou retornando o contato para darmos continuidade. Podemos seguir com o atendimento?
+                  - cell "06/06/26 05:00" [ref=e1048]
+                  - cell "Laura Mathias" [ref=e1049]
+                  - cell "Agendada" [ref=e1050]:
+                    - generic [ref=e1527]: Agendada
+                  - cell "Ações" [ref=e1052]:
+                    - button "Ações" [ref=e1528] [cursor=pointer]:
+                      - img [ref=e1529]
+                - row "Selecionar item 694ed043-4a50-11f1-9d75-06799772b1cd Mauro WhatsApp Business WhatsApp Business Canal Principal Olá [contact_first_name], recebemos seu pré-agendamento para uma reunião aqui na Poli Digital. *Para poder te enviar o link da reunião preciso entender alguns pontos rápidos com você.* Podemos prosseguir com o atendimento e confirmar esta reunião? 10/06/26 06:00 Laura Mathias Agendada Ações" [ref=e1058]:
+                  - cell "Selecionar item 694ed043-4a50-11f1-9d75-06799772b1cd" [ref=e1059]:
+                    - generic [ref=e1533]:
+                      - checkbox "Selecionar item 694ed043-4a50-11f1-9d75-06799772b1cd"
+                  - cell "Mauro" [ref=e1061]
+                  - cell "WhatsApp Business WhatsApp Business Canal Principal" [ref=e1062]:
+                    - generic [ref=e1534]:
+                      - generic [ref=e1535]:
+                        - img "WhatsApp Business" [ref=e1536]
+                        - generic [ref=e1539]: WhatsApp Business
+                      - generic [ref=e1540]: Canal Principal
+                  - cell "Olá [contact_first_name], recebemos seu pré-agendamento para uma reunião aqui na Poli Digital. *Para poder te enviar o link da reunião preciso entender alguns pontos rápidos com você.* Podemos prosseguir com o atendimento e confirmar esta reunião?" [ref=e1070]:
+                    - generic [ref=e1541]: Olá [contact_first_name], recebemos seu pré-agendamento para uma reunião aqui na Poli Digital. *Para poder te enviar o link da reunião preciso entender alguns pontos rápidos com você.* Podemos prosseguir com o atendimento e confirmar esta reunião?
+                  - cell "10/06/26 06:00" [ref=e1072]
+                  - cell "Laura Mathias" [ref=e1073]
+                  - cell "Agendada" [ref=e1074]:
+                    - generic [ref=e1542]: Agendada
+                  - cell "Ações" [ref=e1076]:
+                    - button "Ações" [ref=e1543] [cursor=pointer]:
+                      - img [ref=e1544]
+                - row "Selecionar item d7ad4b42-55e3-11f1-9d75-06799772b1cd Sirnoel Quaresma WhatsApp Business WhatsApp Business Canal Principal [operator_name] Oi [contact_first_name]. Na nossa última conversa feita, combinamos um retorno para hoje sobre a avaliação da nossa solução. Poderia nos confirmar o status? Caso precise de algum esclarecimento adicional, seguimos à disposição. 15/06/26 06:00 Aline Paiva Agendada Ações" [ref=e1082]:
+                  - cell "Selecionar item d7ad4b42-55e3-11f1-9d75-06799772b1cd" [ref=e1083]:
+                    - generic [ref=e1548]:
+                      - checkbox "Selecionar item d7ad4b42-55e3-11f1-9d75-06799772b1cd"
+                  - cell "Sirnoel Quaresma" [ref=e1085]
+                  - cell "WhatsApp Business WhatsApp Business Canal Principal" [ref=e1086]:
+                    - generic [ref=e1549]:
+                      - generic [ref=e1550]:
+                        - img "WhatsApp Business" [ref=e1551]
+                        - generic [ref=e1554]: WhatsApp Business
+                      - generic [ref=e1555]: Canal Principal
+                  - cell "[operator_name] Oi [contact_first_name]. Na nossa última conversa feita, combinamos um retorno para hoje sobre a avaliação da nossa solução. Poderia nos confirmar o status? Caso precise de algum esclarecimento adicional, seguimos à disposição." [ref=e1094]:
+                    - generic [ref=e1556]: "[operator_name] Oi [contact_first_name]. Na nossa última conversa feita, combinamos um retorno para hoje sobre a avaliação da nossa solução. Poderia nos confirmar o status? Caso precise de algum esclarecimento adicional, seguimos à disposição."
+                  - cell "15/06/26 06:00" [ref=e1096]
+                  - cell "Aline Paiva" [ref=e1097]
+                  - cell "Agendada" [ref=e1098]:
+                    - generic [ref=e1557]: Agendada
+                  - cell "Ações" [ref=e1100]:
+                    - button "Ações" [ref=e1558] [cursor=pointer]:
+                      - img [ref=e1559]
+                - row "Selecionar item 04ed07a2-f4c4-11f0-8c78-06b3482cde9b Yanne WhatsApp Business WhatsApp Business Canal Principal Olá Yanne, tudo bem? Estou passando para dizer que já deixei tudo preparado para a nossa demonstração de hoje, e reforcei todas as informações com o consultor responsável, de acordo com o que conversamos! Ele estará te aguardando no horário que agendamos, ok? 19/11/26 05:00 Julliana Reis Agendada Ações" [ref=e1106]:
+                  - cell "Selecionar item 04ed07a2-f4c4-11f0-8c78-06b3482cde9b" [ref=e1107]:
+                    - generic [ref=e1563]:
+                      - checkbox "Selecionar item 04ed07a2-f4c4-11f0-8c78-06b3482cde9b"
+                  - cell "Yanne" [ref=e1109]
+                  - cell "WhatsApp Business WhatsApp Business Canal Principal" [ref=e1110]:
+                    - generic [ref=e1564]:
+                      - generic [ref=e1565]:
+                        - img "WhatsApp Business" [ref=e1566]
+                        - generic [ref=e1569]: WhatsApp Business
+                      - generic [ref=e1570]: Canal Principal
+                  - cell "Olá Yanne, tudo bem? Estou passando para dizer que já deixei tudo preparado para a nossa demonstração de hoje, e reforcei todas as informações com o consultor responsável, de acordo com o que conversamos! Ele estará te aguardando no horário que agendamos, ok?" [ref=e1118]:
+                    - generic [ref=e1571]: Olá Yanne, tudo bem? Estou passando para dizer que já deixei tudo preparado para a nossa demonstração de hoje, e reforcei todas as informações com o consultor responsável, de acordo com o que conversamos! Ele estará te aguardando no horário que agendamos, ok?
+                  - cell "19/11/26 05:00" [ref=e1120]
+                  - cell "Julliana Reis" [ref=e1121]
+                  - cell "Agendada" [ref=e1122]:
+                    - generic [ref=e1572]: Agendada
+                  - cell "Ações" [ref=e1124]:
+                    - button "Ações" [ref=e1573] [cursor=pointer]:
+                      - img [ref=e1574]
+                - row "Selecionar item 95676ea7-003e-11f1-b89b-06b3482cde9b Andressa Lima WhatsApp Business WhatsApp Business Testes - Poli - Comercial jujujujjuj 12/12/26 06:00 Matheus Miranda Agendada Ações" [ref=e1130]:
+                  - cell "Selecionar item 95676ea7-003e-11f1-b89b-06b3482cde9b" [ref=e1131]:
+                    - generic [ref=e1578]:
+                      - checkbox "Selecionar item 95676ea7-003e-11f1-b89b-06b3482cde9b"
+                  - cell "Andressa Lima" [ref=e1133]
+                  - cell "WhatsApp Business WhatsApp Business Testes - Poli - Comercial" [ref=e1134]:
+                    - generic [ref=e1579]:
+                      - generic [ref=e1580]:
+                        - img "WhatsApp Business" [ref=e1581]
+                        - generic [ref=e1584]: WhatsApp Business
+                      - generic [ref=e1585]: Testes - Poli - Comercial
+                  - cell "jujujujjuj" [ref=e1142]:
+                    - generic [ref=e1586]: jujujujjuj
+                  - cell "12/12/26 06:00" [ref=e1144]
+                  - cell "Matheus Miranda" [ref=e1145]
+                  - cell "Agendada" [ref=e1146]:
+                    - generic [ref=e1587]: Agendada
+                  - cell "Ações" [ref=e1148]:
+                    - button "Ações" [ref=e1588] [cursor=pointer]:
+                      - img [ref=e1589]
+            - generic [ref=e1157]:
+              - generic [ref=e1158]:
+                - generic [ref=e1159]: Página 93 de 93
+                - generic [ref=e1160]: "Total: 1.388 registros"
+              - generic [ref=e1161]:
+                - combobox [ref=e1162]:
+                  - option "10 por página"
+                  - option "15 por página" [selected]
+                  - option "25 por página"
+                  - option "50 por página"
+                - generic [ref=e1163]:
+                  - button [ref=e1164] [cursor=pointer]:
+                    - img [ref=e1165]
+                  - button [ref=e1168] [cursor=pointer]:
+                    - img [ref=e1169]
+                  - button [disabled]:
+                    - img
+                  - button [disabled]:
+                    - img
+  - region "Notifications (F8)":
+    - list

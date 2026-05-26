@@ -1,0 +1,83 @@
+{
+  "defaultEnvironment": "staging",
+  "environments": {
+    "staging": {
+      "url": "https://sua-app.staging.example.com/chat",
+      "appSpaUrl": "https://app-spa.staging.example.com",
+      "legadoUrl": "https://legado.staging.example.com",
+      "foundationApiUrl": "https://api.staging.example.com",
+      "timeouts": {
+        "step": 8000,
+        "navigation": 20000,
+        "observerSession": 600000
+      }
+    },
+    "canary": {
+      "url": "https://sua-app.canary.example.com/chat",
+      "appSpaUrl": "https://app-spa.canary.example.com",
+      "legadoUrl": "https://legado.canary.example.com",
+      "foundationApiUrl": "https://api.canary.example.com",
+      "timeouts": {
+        "step": 10000,
+        "navigation": 25000,
+        "observerSession": 600000
+      }
+    },
+    "production": {
+      "url": "https://sua-app.example.com",
+      "appSpaUrl": "https://app-spa.example.com",
+      "legadoUrl": "https://sua-app.example.com",
+      "foundationApiUrl": "https://api.example.com",
+      "timeouts": {
+        "step": 15000,
+        "navigation": 40000,
+        "observerSession": 600000
+      }
+    }
+  },
+  "mocks": {
+    "enabled": false,
+    "intercepts": [
+      {
+        "pattern": "**/api/sms/**",
+        "fixture": "sms-success.json",
+        "description": "Mock de envio de SMS — retorna sucesso sem disparar SMS real"
+      },
+      {
+        "pattern": "**/api/webhooks/external/**",
+        "fixture": "webhook-success.json",
+        "description": "Mock de webhook externo — evita dependência de sistema terceiro"
+      }
+    ]
+  },
+  "github": {
+    "owner": "sua-org",
+    "repos": [
+      "repo-frontend",
+      "repo-backend",
+      "repo-api"
+    ]
+  },
+  "knowledgeBase": {
+    "github": {
+      "owner": "sua-org",
+      "repo": "knowledge-base",
+      "branch": "main"
+    }
+  },
+  "jira": {
+    "cloudId": "SEU_JIRA_CLOUD_ID",
+    "baseUrl": "https://sua-org.atlassian.net/browse"
+  },
+  "testContacts": {
+    "default": {
+      "name": "\"Contato de Teste\"",
+      "phone": "5511999990000",
+      "channelId": "5511999990000@c.us",
+      "chatUuid": "00000000-0000-0000-0000-000000000000",
+      "accountUuid": "00000000-0000-0000-0000-000000000001",
+      "contactUuid": "00000000-0000-0000-0000-000000000000",
+      "note": "Contato oficial para testes de envio de mensagem outbound. NUNCA enviar mensagens para outros contatos da lista de atendimento."
+    }
+  }
+}

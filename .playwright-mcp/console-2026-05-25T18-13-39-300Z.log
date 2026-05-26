@@ -1,0 +1,47 @@
+[    2630ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:892:429
+    at VR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:894:31)
+    at Nd.UR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:891:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+[   45965ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://homolog.qa.poli.digital/api/v1/customers/1/contacts?page=1&limit=5:0
+[  118727ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_flow_template/channels/1522/contacts/2/users/79356:0
+[  118728ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_flow_template/channels/1522/contacts/3/users/79356:0
+[  118729ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_flow_template/channels/1522/contacts/4/users/79356:0
+[  118732ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_flow_template/channels/1522/contacts/50/users/79356:0
+[  118734ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_flow_template/channels/1522/contacts/10/users/79356:0
+[  118735ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_flow_template/channels/1522/contacts/500/users/79356:0
+[  118746ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_flow_template/channels/1522/contacts/1000/users/79356:0
+[  118747ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_flow_template/channels/1522/contacts/5/users/79356:0
+[  118749ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_flow_template/channels/1522/contacts/20/users/79356:0
+[  118749ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_flow_template/channels/1522/contacts/1/users/79356:0
+[  118750ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_flow_template/channels/1522/contacts/100/users/79356:0
+[  118992ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_template/channels/1522/phone/556299210609:0
+[  119013ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_template/channels/1522/phone/556299210609:0
+[  119017ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_template/channels/1522/phone/556299210609:0
+[  119018ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_template/channels/1522/phone/556299210609:0
+[  119019ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_template/channels/1522/phone/556299210609:0
+[  119026ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_template/channels/1522/phone/556299210609:0
+[  119027ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_template/channels/1522/phone/556299210609:0
+[  119032ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_template/channels/1522/phone/556299210609:0
+[  119033ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_template/channels/1522/phone/556299210609:0
+[  119036ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_template/channels/1522/phone/556299210609:0
+[  188485ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_flow_template/channels/1522/phone/556299210609:0
+[  188748ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_flow_template/channels/1522/phone/556299210609:0
+[  188984ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_flow_template/channels/1522/phone/556299210609:0
+[  547688ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  607945ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  668209ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  728474ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  788727ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  849027ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  909279ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  969533ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 1029782ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 1090063ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 1150340ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0

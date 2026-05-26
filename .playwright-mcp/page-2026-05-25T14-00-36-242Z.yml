@@ -1,0 +1,164 @@
+- generic [ref=e2]:
+  - generic [ref=e251]:
+    - complementary [ref=e252]:
+      - img [ref=e254]
+      - navigation [ref=e255]:
+        - list [ref=e256]:
+          - listitem [ref=e257]:
+            - link [ref=e258] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=d552244dfb982b4b6e26830f354b8510aa3aeaa0&toPath=https://app.poli.digital/home
+              - img [ref=e260]
+          - listitem [ref=e263]:
+            - link [ref=e264] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e266]
+          - listitem [ref=e268]:
+            - link [ref=e269] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=d552244dfb982b4b6e26830f354b8510aa3aeaa0&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e271]
+          - listitem [ref=e274]:
+            - link [ref=e275] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e277]
+          - listitem [ref=e279]:
+            - link [ref=e280] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=d552244dfb982b4b6e26830f354b8510aa3aeaa0&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e282]
+          - listitem [ref=e285]:
+            - link [ref=e286] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=d552244dfb982b4b6e26830f354b8510aa3aeaa0&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e288]
+          - listitem [ref=e290]:
+            - link [ref=e291] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=d552244dfb982b4b6e26830f354b8510aa3aeaa0&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e293]
+          - listitem [ref=e296]:
+            - link [ref=e297] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=d552244dfb982b4b6e26830f354b8510aa3aeaa0&toPath=https://app.poli.digital/settings/1
+              - img [ref=e299]
+          - listitem [ref=e302]:
+            - link [ref=e303] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e305]
+          - listitem [ref=e309]:
+            - link [ref=e310] [cursor=pointer]:
+              - /url: /templates
+              - img [ref=e312]
+        - list [ref=e315]:
+          - listitem [ref=e316]:
+            - button "Consumo de créditos" [ref=e317] [cursor=pointer]:
+              - img [ref=e318]
+          - listitem [ref=e321]:
+            - button "YA" [ref=e322] [cursor=pointer]:
+              - generic [ref=e327]: YA
+          - listitem [ref=e329]:
+            - button [ref=e330] [cursor=pointer]:
+              - img [ref=e331]
+          - listitem [ref=e333]:
+            - generic [ref=e335]: 3.5.332
+    - main [ref=e336]:
+      - generic [ref=e339]:
+        - generic [ref=e340]:
+          - generic [ref=e341]:
+            - heading "Olá, Yuri Alcantara Gestror," [level=1] [ref=e342]
+            - heading "bem-vindo(a)!" [level=1] [ref=e343]
+          - paragraph [ref=e344]: "Monitore as principais informações dos seus atendimentos:"
+        - generic [ref=e345]:
+          - generic [ref=e346]:
+            - heading "Seu relatório diário" [level=2] [ref=e347]
+            - generic [ref=e348]:
+              - paragraph [ref=e349]: Última atualização em segunda-feira, 25 de maio de 2026
+              - button [ref=e350] [cursor=pointer]:
+                - img [ref=e351]
+          - generic [ref=e354]:
+            - generic [ref=e355]:
+              - img [ref=e356]
+              - generic [ref=e359]: "28"
+              - generic [ref=e360]: Conversas em atendimento
+            - generic [ref=e361]:
+              - img [ref=e362]
+              - generic [ref=e365]: "3"
+              - generic [ref=e366]: Conversas não lidas
+            - generic [ref=e367]:
+              - img [ref=e368]
+              - generic [ref=e370]: "10"
+              - generic [ref=e371]: Conversas finalizadas
+            - generic [ref=e372]:
+              - img [ref=e373]
+              - generic [ref=e375]: "31"
+              - generic [ref=e376]: Conversas totais
+        - generic [ref=e378]:
+          - link "Ads Gerencie seus anúncios" [ref=e379] [cursor=pointer]:
+            - /url: /ads
+            - img [ref=e380]
+            - generic [ref=e383]:
+              - generic [ref=e384]: Ads
+              - generic [ref=e385]: Gerencie seus anúncios
+          - link "Chat Conversas com os contatos" [ref=e386] [cursor=pointer]:
+            - /url: /chat
+            - img [ref=e387]
+            - generic [ref=e390]:
+              - generic [ref=e391]: Chat
+              - generic [ref=e392]: Conversas com os contatos
+          - link "Bot Automações inteligentes" [ref=e393] [cursor=pointer]:
+            - /url: /bot
+            - img [ref=e394]
+            - generic [ref=e397]:
+              - generic [ref=e398]: Bot
+              - generic [ref=e399]: Automações inteligentes
+          - link "CRM Gestão das suas vendas" [ref=e400] [cursor=pointer]:
+            - /url: /crm
+            - img [ref=e401]
+            - generic [ref=e403]:
+              - generic [ref=e404]: CRM
+              - generic [ref=e405]: Gestão das suas vendas
+          - link "Pay Pagamentos integrados" [ref=e406] [cursor=pointer]:
+            - /url: /pay
+            - img [ref=e407]
+            - generic [ref=e410]:
+              - generic [ref=e411]: Pay
+              - generic [ref=e412]: Pagamentos integrados
+          - link "Relatórios Métricas do seu negócio" [ref=e413] [cursor=pointer]:
+            - /url: /report
+            - img [ref=e414]
+            - generic [ref=e418]:
+              - generic [ref=e419]: Relatórios
+              - generic [ref=e420]: Métricas do seu negócio
+          - link "Configurações Configure sua plataforma" [ref=e421] [cursor=pointer]:
+            - /url: /config
+            - img [ref=e422]
+            - generic [ref=e426]:
+              - generic [ref=e427]: Configurações
+              - generic [ref=e428]: Configure sua plataforma
+          - link "Minha empresa Gerenciamento de conta" [ref=e429] [cursor=pointer]:
+            - /url: /company
+            - img [ref=e430]
+            - generic [ref=e433]:
+              - generic [ref=e434]: Minha empresa
+              - generic [ref=e435]: Gerenciamento de conta
+          - link "Canais Gestão dos seus canais" [ref=e436] [cursor=pointer]:
+            - /url: /channels
+            - img [ref=e437]
+            - generic [ref=e440]:
+              - generic [ref=e441]: Canais
+              - generic [ref=e442]: Gestão dos seus canais
+          - link "Contatos Gestão dos seus contatos" [ref=e443] [cursor=pointer]:
+            - /url: /contacts
+            - img [ref=e444]
+            - generic [ref=e447]:
+              - generic [ref=e448]: Contatos
+              - generic [ref=e449]: Gestão dos seus contatos
+          - link "Usuários Gestão dos seus usuários" [ref=e450] [cursor=pointer]:
+            - /url: /users
+            - img [ref=e451]
+            - generic [ref=e454]:
+              - generic [ref=e455]: Usuários
+              - generic [ref=e456]: Gestão dos seus usuários
+          - link "Suporte e Treinamento Ajuda para configuração" [ref=e457] [cursor=pointer]:
+            - /url: /support
+            - img [ref=e458]
+            - generic [ref=e462]:
+              - generic [ref=e463]: Suporte e Treinamento
+              - generic [ref=e464]: Ajuda para configuração
+  - region "Notifications (F8)":
+    - list

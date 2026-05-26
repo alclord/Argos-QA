@@ -1,0 +1,155 @@
+[    1737ms] [LOG] i18next: languageChanged pt @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    1738ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    1814ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    2228ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:901:429
+    at cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:903:31)
+    at Md.bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:92)
+    at Md.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at fb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Md.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Iq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at sf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:726:315
+    at UA (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:651:1)
+    at ZA.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:655:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:673:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:131)
+    at oC (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:773)
+    at rC (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:679:29)
+    at vD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:707:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65j0:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:862:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65j0h1:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:708:6
+    at r (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:70:9812)
+[    2273ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/accounts/balance/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[    2276ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[    2278ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message:0
+[    2279ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/settings:0
+[    2279ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/contacts/9bb49c4f-2c88-4a7f-84bb-38074c239b4b?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[    2280ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/users/settings/chat-sidebar:0
+[    2498ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/accounts/non-payment/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[    2505ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/users/settings/summary:0
+[    2576ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/crm/index:0
+[    2577ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.qa.poli.digital/auth/activity:0
+[    2578ms] [WARNING] Erro ao enviar heartbeat: AxiosError: Request failed with status code 404
+    at rwe (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:15705) @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    2581ms] [INFO] WebSocket: Conexão estabelecida @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    2705ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.qa.poli.digital/auth/refresh-token:0
+[    2706ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at rwe (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:15705)
+    at Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2234)
+    at async zct (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:6854)
+    at async https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8196
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async h4.getPanelCredits (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:1803:551) @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    2707ms] [ERROR] AxiosError: Request failed with status code 401
+    at rwe (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:15705)
+    at Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2234)
+    at async zct (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:6854)
+    at async https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8196
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async h4.getPanelCredits (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:1803:551) @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    2710ms] [ERROR] [UserPreferencesService] Failed to get summary: Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8163
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async qee.getSummary (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:2118:64672)
+    at async https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:2118:65373 @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    2710ms] [ERROR] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8163
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async t4 (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:1014:2977) @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    2711ms] [ERROR] [useUserPreferences] Error: Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8163
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async qee.getSummary (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:2118:64672)
+    at async https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:2118:65373 @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    2711ms] [ERROR] getCrmUserToken - Error on get crm user token: Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8163
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async N8.getUserToken (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:2114:56263)
+    at async https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:2114:56554 @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    2712ms] [ERROR] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8163
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async oFt.getOverdueAccounts (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:2130:54810)
+    at async https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:2136:197433 @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    2712ms] [ERROR] error ao buscar chats Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8163
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async Cdt (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:1012:26251)
+    at async C (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:54:37549)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:54:37856) @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    2820ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/broadcasting/auth:0
+[    2821ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/chats/pinned:0
+[    2825ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/accounts/payment-due-alert:0
+[    3055ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/accounts/balance/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[    3124ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.qa.poli.digital/auth/refresh-token:0
+[    3129ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at rwe (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:15705)
+    at Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2234)
+    at async zct (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:6854)
+    at async https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8196
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async z5t (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:2075:5607) @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    3130ms] [ERROR] AxiosError: Request failed with status code 401
+    at rwe (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:15705)
+    at Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2234)
+    at async zct (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:6854)
+    at async https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8196
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async z5t (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:2075:5607) @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    3288ms] [INFO] WebSocket: Conexão finalizada @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    3408ms] [ERROR] Amplitude Logger [Error]: Failed to fetch (api2.amplitude.com) @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    3411ms] [WARNING] Amplitude Logger [Warn]: {code: 0, error: "Status 'failed' provided for 1 events"} @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    5058ms] [LOG] i18next: languageChanged pt @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    5060ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    5166ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    5239ms] [LOG] i18next: languageChanged pt @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    5596ms] [INFO] WebSocket: Conexão estabelecida @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[   31942ms] [LOG] i18next: languageChanged pt @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[   35202ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[   36248ms] Identifier 'TCRMEmbed' has already been declared
+[   42475ms] [ERROR] `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[   42476ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[   45252ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[   65323ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[   71251ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[  168531ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[  504711ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[  645967ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[  663711ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[  712825ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516821226_1034137662043294_8412083315673682112_n.jpg?ccb=11-4&oh=01_Q5Aa3wGV0w2YmnQ6TBMH0x-0rxT9pjZgTvTyDdDyH-6A-5wg7w&oe=69B819C9&_nc_sid=5e03e0&_nc_cat=109:0
+[ 1040020ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/389521425_964939741837092_2242383312396983181_n.jpg?ccb=11-4&oh=01_Q5Aa3gH0Ns4woclJg0wnkzSD4D0FXGxfux73VFrdwcent-oVOA&oe=698740FB&_nc_sid=5e03e0&_nc_cat=108:0
+[ 1145805ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/389521425_964939741837092_2242383312396983181_n.jpg?ccb=11-4&oh=01_Q5Aa3gH0Ns4woclJg0wnkzSD4D0FXGxfux73VFrdwcent-oVOA&oe=698740FB&_nc_sid=5e03e0&_nc_cat=108:0
+[ 1447400ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516299784_765127936149524_5928964262199968569_n.jpg?ccb=11-4&oh=01_Q5Aa3AF4no6RdRY23ypyTfYBHds24ZPIQipiE7s8OUUZapJnQQ&oe=69358870&_nc_sid=5e03e0&_nc_cat=103:0
+[ 1516953ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516299784_765127936149524_5928964262199968569_n.jpg?ccb=11-4&oh=01_Q5Aa3AF4no6RdRY23ypyTfYBHds24ZPIQipiE7s8OUUZapJnQQ&oe=69358870&_nc_sid=5e03e0&_nc_cat=103:0
+[ 1531234ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[ 1547221ms] [INFO] WebSocket: Conexão estabelecida @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[ 1550487ms] Identifier 'TCRMEmbed' has already been declared
+[ 1605365ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516299784_765127936149524_5928964262199968569_n.jpg?ccb=11-4&oh=01_Q5Aa3AF4no6RdRY23ypyTfYBHds24ZPIQipiE7s8OUUZapJnQQ&oe=69358870&_nc_sid=5e03e0&_nc_cat=103:0
+[ 1609296ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516299784_765127936149524_5928964262199968569_n.jpg?ccb=11-4&oh=01_Q5Aa3AF4no6RdRY23ypyTfYBHds24ZPIQipiE7s8OUUZapJnQQ&oe=69358870&_nc_sid=5e03e0&_nc_cat=103:0
+[ 1616807ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516821226_1034137662043294_8412083315673682112_n.jpg?ccb=11-4&oh=01_Q5Aa3wGV0w2YmnQ6TBMH0x-0rxT9pjZgTvTyDdDyH-6A-5wg7w&oe=69B819C9&_nc_sid=5e03e0&_nc_cat=109:0
+[ 1620591ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516299784_765127936149524_5928964262199968569_n.jpg?ccb=11-4&oh=01_Q5Aa3AF4no6RdRY23ypyTfYBHds24ZPIQipiE7s8OUUZapJnQQ&oe=69358870&_nc_sid=5e03e0&_nc_cat=103:0
+[ 1634304ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516299784_765127936149524_5928964262199968569_n.jpg?ccb=11-4&oh=01_Q5Aa3AF4no6RdRY23ypyTfYBHds24ZPIQipiE7s8OUUZapJnQQ&oe=69358870&_nc_sid=5e03e0&_nc_cat=103:0
+[ 1661519ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516299784_765127936149524_5928964262199968569_n.jpg?ccb=11-4&oh=01_Q5Aa3AF4no6RdRY23ypyTfYBHds24ZPIQipiE7s8OUUZapJnQQ&oe=69358870&_nc_sid=5e03e0&_nc_cat=103:0
+[ 1723015ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516299784_765127936149524_5928964262199968569_n.jpg?ccb=11-4&oh=01_Q5Aa3AF4no6RdRY23ypyTfYBHds24ZPIQipiE7s8OUUZapJnQQ&oe=69358870&_nc_sid=5e03e0&_nc_cat=103:0

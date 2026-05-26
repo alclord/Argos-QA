@@ -1,0 +1,66 @@
+- generic [ref=e1]:
+  - generic [ref=e4]:
+    - list [ref=e6]:
+      - img [ref=e9] [cursor=pointer]
+      - listitem [ref=e11]:
+        - link [ref=e12] [cursor=pointer]:
+          - /url: /
+          - img [ref=e14]
+      - listitem [ref=e16]:
+        - link [ref=e17] [cursor=pointer]:
+          - /url: /chat
+          - img [ref=e19]
+      - listitem [ref=e21]:
+        - link [ref=e22] [cursor=pointer]:
+          - /url: /automation
+          - img [ref=e24]
+      - listitem [ref=e26]:
+        - link [ref=e27] [cursor=pointer]:
+          - /url: /crm
+          - img [ref=e29]
+      - listitem [ref=e32]:
+        - link [ref=e33] [cursor=pointer]:
+          - /url: /marketing
+          - img [ref=e35]
+      - listitem [ref=e37]:
+        - link [ref=e38] [cursor=pointer]:
+          - /url: /shopping
+          - img [ref=e40]
+      - listitem [ref=e42]:
+        - link [ref=e43] [cursor=pointer]:
+          - /url: /relatorio
+          - img [ref=e45]
+      - listitem [ref=e47]:
+        - link [ref=e48] [cursor=pointer]:
+          - /url: /tools
+          - img [ref=e50]
+      - listitem [ref=e52]:
+        - link [ref=e53] [cursor=pointer]:
+          - /url: /admin
+          - img [ref=e55]
+    - generic [ref=e58]:
+      - button "" [ref=e60] [cursor=pointer]:
+        - generic [ref=e61]: 
+      - generic [ref=e63]:
+        - button "" [ref=e64] [cursor=pointer]:
+          - generic [ref=e65]: 
+        - text:        
+      - button "" [ref=e67] [cursor=pointer]:
+        - generic [ref=e68]: 
+      - generic [ref=e70]:
+        - button "YA" [ref=e71] [cursor=pointer]:
+          - generic "Yuri Alcantara" [ref=e72]:
+            - generic [ref=e73]: YA
+        - text:   
+      - generic [ref=e76] [cursor=pointer]: 
+      - generic [ref=e78] [cursor=pointer]: v0.20.533
+  - dialog [active] [ref=e82]:
+    - document:
+      - generic [ref=e83]:
+        - heading " Sem canal de atendimento" [level=5] [ref=e85]:
+          - generic [ref=e86]: 
+          - heading "Sem canal de atendimento" [level=3] [ref=e87]
+        - generic [ref=e88]: Você não possui acesso a nenhuma canal de atendimento da sua organização! Entre em contato com o administrador do sistema e solicite acesso.
+        - generic [ref=e89]:
+          - button "Voltar ao Painel" [ref=e90] [cursor=pointer]
+          - button "Falar com Suporte" [ref=e91] [cursor=pointer]

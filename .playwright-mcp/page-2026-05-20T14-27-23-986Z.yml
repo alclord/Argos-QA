@@ -1,0 +1,384 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - img [ref=e7]
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link [ref=e11] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app.poli.digital/home
+              - img [ref=e13]
+          - listitem [ref=e16]:
+            - link [ref=e17] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e19]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e30]
+          - listitem [ref=e32]:
+            - link [ref=e33] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e35]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e41]
+          - listitem [ref=e43]:
+            - link [ref=e44] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e46]
+          - listitem [ref=e49]:
+            - link [ref=e50] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app.poli.digital/settings/1
+              - img [ref=e52]
+          - listitem [ref=e55]:
+            - link [ref=e56] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e58]
+          - listitem [ref=e62]:
+            - link [ref=e63] [cursor=pointer]:
+              - /url: /templates
+              - img [ref=e65]
+        - list [ref=e68]:
+          - listitem [ref=e69]:
+            - button "Consumo de créditos" [ref=e70] [cursor=pointer]:
+              - img [ref=e71]
+          - listitem [ref=e74]:
+            - button "YA" [ref=e75] [cursor=pointer]:
+              - generic [ref=e80]: YA
+          - listitem [ref=e82]:
+            - button [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+          - listitem [ref=e86]:
+            - generic [ref=e88]: v3.5.327
+    - main [ref=e89]:
+      - generic [ref=e90]:
+        - navigation "breadcrumb" [ref=e92]:
+          - link "Página inicial" [ref=e94] [cursor=pointer]:
+            - /url: /
+          - img [ref=e95]
+          - generic [ref=e97]: Templates
+        - generic [ref=e99]:
+          - generic [ref=e101]:
+            - generic [ref=e102]:
+              - textbox "Buscar templates" [ref=e103]
+              - button [ref=e104] [cursor=pointer]:
+                - img [ref=e105]
+            - generic [ref=e108]:
+              - generic [ref=e109]: Status
+              - combobox "Status" [ref=e110] [cursor=pointer]:
+                - generic: Todos
+                - img [ref=e111]
+            - generic [ref=e113]:
+              - generic [ref=e114]: Categoria
+              - combobox "Categoria" [ref=e115] [cursor=pointer]:
+                - generic: Todos
+                - img [ref=e116]
+            - generic [ref=e118]:
+              - generic [ref=e119]: Tipo
+              - combobox "Tipo" [ref=e120] [cursor=pointer]:
+                - generic: Todos
+                - img [ref=e121]
+            - generic [ref=e123]:
+              - generic [ref=e124]: Canal
+              - combobox "Canal" [disabled] [ref=e125]:
+                - generic: Todos
+                - img [ref=e126]
+          - generic [ref=e128]:
+            - table [ref=e132]:
+              - rowgroup [ref=e133]:
+                - row "Selecionar todos da página Nome Conteúdo Categoria Idioma Canal Status Criado em Ações" [ref=e134]:
+                  - columnheader "Selecionar todos da página" [ref=e135]:
+                    - checkbox "Selecionar todos da página" [ref=e137] [cursor=pointer]
+                  - columnheader "Nome" [ref=e138]:
+                    - button "Nome" [ref=e139] [cursor=pointer]:
+                      - text: Nome
+                      - img [ref=e140]
+                  - columnheader "Conteúdo" [ref=e143]
+                  - columnheader "Categoria" [ref=e144]
+                  - columnheader "Idioma" [ref=e145]
+                  - columnheader "Canal" [ref=e146]
+                  - columnheader "Status" [ref=e147]
+                  - columnheader "Criado em" [ref=e148]:
+                    - button "Criado em" [ref=e149] [cursor=pointer]:
+                      - text: Criado em
+                      - img [ref=e150]
+                  - columnheader "Ações" [ref=e153]
+              - rowgroup [active] [ref=e154]:
+                - row "Selecionar item a1d34261-01d2-42d5-8ff0-7b9c5539dbc2 mvanteciparretornosexta Oie [contact_first_name], tudo bem? Nosso retorno ta marcado para essa sexta, mas estou passando por aqui para perguntar se você precisa de mais alguma coisa da minha parte antes disso e se também você recebeu as propostas que você estavam cotando. Como estão com isso? Marketing pt_BR Canal Principal Em análise 20 de mai. de 2026 Excluir" [ref=e155]:
+                  - cell "Selecionar item a1d34261-01d2-42d5-8ff0-7b9c5539dbc2" [ref=e156]:
+                    - generic [ref=e157]:
+                      - checkbox "Selecionar item a1d34261-01d2-42d5-8ff0-7b9c5539dbc2"
+                  - cell "mvanteciparretornosexta" [ref=e159]
+                  - cell "Oie [contact_first_name], tudo bem? Nosso retorno ta marcado para essa sexta, mas estou passando por aqui para perguntar se você precisa de mais alguma coisa da minha parte antes disso e se também você recebeu as propostas que você estavam cotando. Como estão com isso?" [ref=e160]:
+                    - generic [ref=e161]: Oie [contact_first_name], tudo bem? Nosso retorno ta marcado para essa sexta, mas estou passando por aqui para perguntar se você precisa de mais alguma coisa da minha parte antes disso e se também você recebeu as propostas que você estavam cotando. Como estão com isso?
+                  - cell "Marketing" [ref=e162]:
+                    - generic [ref=e163]: Marketing
+                  - cell "pt_BR" [ref=e164]
+                  - cell "Canal Principal" [ref=e165]
+                  - cell "Em análise" [ref=e166]:
+                    - generic [ref=e167]: Em análise
+                  - cell "20 de mai. de 2026" [ref=e168]
+                  - cell "Excluir" [ref=e169]:
+                    - button "Excluir" [ref=e171] [cursor=pointer]:
+                      - img [ref=e172]
+                - row "Selecionar item a1d34197-50fc-4429-b8fd-410d4abe29e7 COMO PESQUISAR TEXTO OBRIGATORIO — — — Em análise 20 de mai. de 2026 Excluir" [ref=e175]:
+                  - cell "Selecionar item a1d34197-50fc-4429-b8fd-410d4abe29e7" [ref=e176]:
+                    - generic [ref=e177]:
+                      - checkbox "Selecionar item a1d34197-50fc-4429-b8fd-410d4abe29e7"
+                  - cell "COMO PESQUISAR" [ref=e178]
+                  - cell "TEXTO OBRIGATORIO" [ref=e179]:
+                    - generic [ref=e180]: TEXTO OBRIGATORIO
+                  - cell "—" [ref=e181]
+                  - cell "—" [ref=e182]
+                  - cell "—" [ref=e183]
+                  - cell "Em análise" [ref=e184]:
+                    - generic [ref=e185]: Em análise
+                  - cell "20 de mai. de 2026" [ref=e186]
+                  - cell "Excluir" [ref=e187]:
+                    - button "Excluir" [ref=e189] [cursor=pointer]:
+                      - img [ref=e190]
+                - 'row "Selecionar item a1d34197-539d-446b-a3d5-27842e320e08 #testemaster Oi [contact_first_name], aqui é do Centro Clínico Master. Estou passando para confirmar sua consulta de amanhã. Desde de já agradeço! Utility pt_BR Canal Principal Aprovado 19 de mai. de 2026 Excluir" [ref=e193]':
+                  - cell "Selecionar item a1d34197-539d-446b-a3d5-27842e320e08" [ref=e194]:
+                    - generic [ref=e195]:
+                      - checkbox "Selecionar item a1d34197-539d-446b-a3d5-27842e320e08"
+                  - cell "#testemaster" [ref=e196]
+                  - cell "Oi [contact_first_name], aqui é do Centro Clínico Master. Estou passando para confirmar sua consulta de amanhã. Desde de já agradeço!" [ref=e197]:
+                    - generic [ref=e198]: Oi [contact_first_name], aqui é do Centro Clínico Master. Estou passando para confirmar sua consulta de amanhã. Desde de já agradeço!
+                  - cell "Utility" [ref=e199]:
+                    - generic [ref=e200]: Utility
+                  - cell "pt_BR" [ref=e201]
+                  - cell "Canal Principal" [ref=e202]
+                  - cell "Aprovado" [ref=e203]:
+                    - generic [ref=e204]: Aprovado
+                  - cell "19 de mai. de 2026" [ref=e205]
+                  - cell "Excluir" [ref=e206]:
+                    - button "Excluir" [ref=e208] [cursor=pointer]:
+                      - img [ref=e209]
+                - row "Selecionar item a1d10727-7e9e-467b-a3e1-e5eb4c69d167 Retorno-contrato.atençao Oi, [contact_first_name] Eu entendo que deve estar bem corrido por ai, mas preciso da sua atenção para resolvermos essa questão o quanto antes. Já validamos diversos detalhes e alinhamos todos os pontos, porem o contrato já esta em aberto a muito tempo e a diretoria esta me cobrando muito. Peço sua compreensão e colaboração, por favor. Aguardo seu retorno! Utility pt_BR Canal Principal Aprovado 19 de mai. de 2026 Excluir" [ref=e212]:
+                  - cell "Selecionar item a1d10727-7e9e-467b-a3e1-e5eb4c69d167" [ref=e213]:
+                    - generic [ref=e214]:
+                      - checkbox "Selecionar item a1d10727-7e9e-467b-a3e1-e5eb4c69d167"
+                  - cell "Retorno-contrato.atençao" [ref=e215]
+                  - cell "Oi, [contact_first_name] Eu entendo que deve estar bem corrido por ai, mas preciso da sua atenção para resolvermos essa questão o quanto antes. Já validamos diversos detalhes e alinhamos todos os pontos, porem o contrato já esta em aberto a muito tempo e a diretoria esta me cobrando muito. Peço sua compreensão e colaboração, por favor. Aguardo seu retorno!" [ref=e216]:
+                    - generic [ref=e217]: Oi, [contact_first_name] Eu entendo que deve estar bem corrido por ai, mas preciso da sua atenção para resolvermos essa questão o quanto antes. Já validamos diversos detalhes e alinhamos todos os pontos, porem o contrato já esta em aberto a muito tempo e a diretoria esta me cobrando muito. Peço sua compreensão e colaboração, por favor. Aguardo seu retorno!
+                  - cell "Utility" [ref=e218]:
+                    - generic [ref=e219]: Utility
+                  - cell "pt_BR" [ref=e220]
+                  - cell "Canal Principal" [ref=e221]
+                  - cell "Aprovado" [ref=e222]:
+                    - generic [ref=e223]: Aprovado
+                  - cell "19 de mai. de 2026" [ref=e224]
+                  - cell "Excluir" [ref=e225]:
+                    - button "Excluir" [ref=e227] [cursor=pointer]:
+                      - img [ref=e228]
+                - row "Selecionar item a1d10e96-1dd9-464c-bc46-82cc7ae69f81 t-retorno Olá, tudo bem? 😊 Estou retomando nosso contato referente ao atendimento que tivemos anteriormente. Passando por aqui para dar continuidade no seu suporte e verificar se ficou alguma dúvida ou pendência em relação ao processo que estávamos acompanhando. Fico à disposição para te auxiliar no que precisar! Marketing pt_BR Canal Principal Aprovado 19 de mai. de 2026 Excluir" [ref=e231]:
+                  - cell "Selecionar item a1d10e96-1dd9-464c-bc46-82cc7ae69f81" [ref=e232]:
+                    - generic [ref=e233]:
+                      - checkbox "Selecionar item a1d10e96-1dd9-464c-bc46-82cc7ae69f81"
+                  - cell "t-retorno" [ref=e234]
+                  - cell "Olá, tudo bem? 😊 Estou retomando nosso contato referente ao atendimento que tivemos anteriormente. Passando por aqui para dar continuidade no seu suporte e verificar se ficou alguma dúvida ou pendência em relação ao processo que estávamos acompanhando. Fico à disposição para te auxiliar no que precisar!" [ref=e235]:
+                    - generic [ref=e236]: Olá, tudo bem? 😊 Estou retomando nosso contato referente ao atendimento que tivemos anteriormente. Passando por aqui para dar continuidade no seu suporte e verificar se ficou alguma dúvida ou pendência em relação ao processo que estávamos acompanhando. Fico à disposição para te auxiliar no que precisar!
+                  - cell "Marketing" [ref=e237]:
+                    - generic [ref=e238]: Marketing
+                  - cell "pt_BR" [ref=e239]
+                  - cell "Canal Principal" [ref=e240]
+                  - cell "Aprovado" [ref=e241]:
+                    - generic [ref=e242]: Aprovado
+                  - cell "19 de mai. de 2026" [ref=e243]
+                  - cell "Excluir" [ref=e244]:
+                    - button "Excluir" [ref=e246] [cursor=pointer]:
+                      - img [ref=e247]
+                - 'row "Selecionar item a1cfad81-9f3f-4301-b050-c9f7dd119347 #testejd3 Olá, [contact_first_name]! Tudo bem? 😊 Você sabia que hoje já é possível centralizar atendimento, ligações e WhatsApp em uma única plataforma? Com a nossa solução de telefonia, sua equipe ganha mais agilidade no atendimento, organização nas conversas e acompanhamento completo das interações. Se fizer sentido para vocês, posso te mostrar rapidinho como funciona na prática. Marketing pt_BR Canal Principal Aprovado 18 de mai. de 2026 Excluir" [ref=e250]':
+                  - cell "Selecionar item a1cfad81-9f3f-4301-b050-c9f7dd119347" [ref=e251]:
+                    - checkbox "Selecionar item a1cfad81-9f3f-4301-b050-c9f7dd119347" [ref=e453] [cursor=pointer]
+                  - cell "#testejd3" [ref=e253]
+                  - cell "Olá, [contact_first_name]! Tudo bem? 😊 Você sabia que hoje já é possível centralizar atendimento, ligações e WhatsApp em uma única plataforma? Com a nossa solução de telefonia, sua equipe ganha mais agilidade no atendimento, organização nas conversas e acompanhamento completo das interações. Se fizer sentido para vocês, posso te mostrar rapidinho como funciona na prática." [ref=e254]:
+                    - generic [ref=e255]: Olá, [contact_first_name]! Tudo bem? 😊 Você sabia que hoje já é possível centralizar atendimento, ligações e WhatsApp em uma única plataforma? Com a nossa solução de telefonia, sua equipe ganha mais agilidade no atendimento, organização nas conversas e acompanhamento completo das interações. Se fizer sentido para vocês, posso te mostrar rapidinho como funciona na prática.
+                  - cell "Marketing" [ref=e256]:
+                    - generic [ref=e257]: Marketing
+                  - cell "pt_BR" [ref=e258]
+                  - cell "Canal Principal" [ref=e259]
+                  - cell "Aprovado" [ref=e260]:
+                    - generic [ref=e261]: Aprovado
+                  - cell "18 de mai. de 2026" [ref=e262]
+                  - cell "Excluir" [ref=e263]:
+                    - button "Excluir" [ref=e265] [cursor=pointer]:
+                      - img [ref=e266]
+                - 'row "Selecionar item a1cf4023-5336-433f-b587-59af55c3d208 #chamafechamentodir-giu Fala, [contact_first_name]. Como você tinha me confirmado a aprovação da diretoria para seguirmos, fiquei aguardando apenas esse alinhamento da integração para conseguirmos avançar. Mas como não consegui mais falar contigo, queria entender se ainda faz sentido seguirmos com o projeto ou se aconteceu algum impeditivo no meio do processo? Marketing pt_BR Canal Principal Aprovado 18 de mai. de 2026 Excluir" [ref=e269]':
+                  - cell "Selecionar item a1cf4023-5336-433f-b587-59af55c3d208" [ref=e270]:
+                    - generic [ref=e271]:
+                      - checkbox "Selecionar item a1cf4023-5336-433f-b587-59af55c3d208"
+                  - cell "#chamafechamentodir-giu" [ref=e272]
+                  - cell "Fala, [contact_first_name]. Como você tinha me confirmado a aprovação da diretoria para seguirmos, fiquei aguardando apenas esse alinhamento da integração para conseguirmos avançar. Mas como não consegui mais falar contigo, queria entender se ainda faz sentido seguirmos com o projeto ou se aconteceu algum impeditivo no meio do processo?" [ref=e273]:
+                    - generic [ref=e274]: Fala, [contact_first_name]. Como você tinha me confirmado a aprovação da diretoria para seguirmos, fiquei aguardando apenas esse alinhamento da integração para conseguirmos avançar. Mas como não consegui mais falar contigo, queria entender se ainda faz sentido seguirmos com o projeto ou se aconteceu algum impeditivo no meio do processo?
+                  - cell "Marketing" [ref=e275]:
+                    - generic [ref=e276]: Marketing
+                  - cell "pt_BR" [ref=e277]
+                  - cell "Canal Principal" [ref=e278]
+                  - cell "Aprovado" [ref=e279]:
+                    - generic [ref=e280]: Aprovado
+                  - cell "18 de mai. de 2026" [ref=e281]
+                  - cell "Excluir" [ref=e282]:
+                    - button "Excluir" [ref=e284] [cursor=pointer]:
+                      - img [ref=e285]
+                - 'row "Selecionar item a1cf3f05-06e7-49ba-a1f6-1a5b8780b159 #alinharprojeto-giu Oiii, [contact_first_name]. Conseguiram alinhar aí internamente sobre a aprovação do projeto? Estou te perguntando porque já deixei validado aqui com a diretoria toda a parte necessária para conseguirmos iniciar a implantação de vocês e queria entender se já podemos avançar para o fechamento. Marketing pt_BR Canal Principal Aprovado 18 de mai. de 2026 Excluir" [ref=e288]':
+                  - cell "Selecionar item a1cf3f05-06e7-49ba-a1f6-1a5b8780b159" [ref=e289]:
+                    - generic [ref=e290]:
+                      - checkbox "Selecionar item a1cf3f05-06e7-49ba-a1f6-1a5b8780b159"
+                  - cell "#alinharprojeto-giu" [ref=e291]
+                  - cell "Oiii, [contact_first_name]. Conseguiram alinhar aí internamente sobre a aprovação do projeto? Estou te perguntando porque já deixei validado aqui com a diretoria toda a parte necessária para conseguirmos iniciar a implantação de vocês e queria entender se já podemos avançar para o fechamento." [ref=e292]:
+                    - generic [ref=e293]: Oiii, [contact_first_name]. Conseguiram alinhar aí internamente sobre a aprovação do projeto? Estou te perguntando porque já deixei validado aqui com a diretoria toda a parte necessária para conseguirmos iniciar a implantação de vocês e queria entender se já podemos avançar para o fechamento.
+                  - cell "Marketing" [ref=e294]:
+                    - generic [ref=e295]: Marketing
+                  - cell "pt_BR" [ref=e296]
+                  - cell "Canal Principal" [ref=e297]
+                  - cell "Aprovado" [ref=e298]:
+                    - generic [ref=e299]: Aprovado
+                  - cell "18 de mai. de 2026" [ref=e300]
+                  - cell "Excluir" [ref=e301]:
+                    - button "Excluir" [ref=e303] [cursor=pointer]:
+                      - img [ref=e304]
+                - 'row "Selecionar item a1d1c801-d1ce-4ded-88c8-46f5fe5a7940 marcioretornocentrus Tudo bem, Marcio? Como está? Segue link do nosso retorno às 14:00 na sexta-feira. Te aguardo na sala! Me avise se precisar de alguma coisa antes ou se quiser antecipar o retorno. Retorno - Centrus e Poli Sexta-feira, 22 de maio · 2:00 – 3:00pm Fuso horário: America/Sao_Paulo Como participar do Google Meet Link da videochamada: https://meet.google.com/sed-ivaa-brx Ou disque: ‪(BR) +55 31 3958-9671‬ PIN: ‪972 511 082‬# Outros números de telefone: https://tel.meet/sed-ivaa-brx?pin=5087947686744 Utility pt_BR Canal Principal Aprovado 18 de mai. de 2026 Excluir" [ref=e307]':
+                  - cell "Selecionar item a1d1c801-d1ce-4ded-88c8-46f5fe5a7940" [ref=e308]:
+                    - generic [ref=e309]:
+                      - checkbox "Selecionar item a1d1c801-d1ce-4ded-88c8-46f5fe5a7940"
+                  - cell "marcioretornocentrus" [ref=e310]
+                  - 'cell "Tudo bem, Marcio? Como está? Segue link do nosso retorno às 14:00 na sexta-feira. Te aguardo na sala! Me avise se precisar de alguma coisa antes ou se quiser antecipar o retorno. Retorno - Centrus e Poli Sexta-feira, 22 de maio · 2:00 – 3:00pm Fuso horário: America/Sao_Paulo Como participar do Google Meet Link da videochamada: https://meet.google.com/sed-ivaa-brx Ou disque: ‪(BR) +55 31 3958-9671‬ PIN: ‪972 511 082‬# Outros números de telefone: https://tel.meet/sed-ivaa-brx?pin=5087947686744" [ref=e311]':
+                    - generic [ref=e312]: "Tudo bem, Marcio? Como está? Segue link do nosso retorno às 14:00 na sexta-feira. Te aguardo na sala! Me avise se precisar de alguma coisa antes ou se quiser antecipar o retorno. Retorno - Centrus e Poli Sexta-feira, 22 de maio · 2:00 – 3:00pm Fuso horário: America/Sao_Paulo Como participar do Google Meet Link da videochamada: https://meet.google.com/sed-ivaa-brx Ou disque: ‪(BR) +55 31 3958-9671‬ PIN: ‪972 511 082‬# Outros números de telefone: https://tel.meet/sed-ivaa-brx?pin=5087947686744"
+                  - cell "Utility" [ref=e313]:
+                    - generic [ref=e314]: Utility
+                  - cell "pt_BR" [ref=e315]
+                  - cell "Canal Principal" [ref=e316]
+                  - cell "Aprovado" [ref=e317]:
+                    - generic [ref=e318]: Aprovado
+                  - cell "18 de mai. de 2026" [ref=e319]
+                  - cell "Excluir" [ref=e320]:
+                    - button "Excluir" [ref=e322] [cursor=pointer]:
+                      - img [ref=e323]
+                - row "Selecionar item a1d34197-5653-4b13-8d97-139520465a72 retornoacertivomavi Tudo bem, [contact_first_name]? Como está? Semana passada eu mandei a proposta comercial e marcamos um retorno para sexta-feira, porém eu não obtive retorno. Haveria algum empecilho sobre a proposta? Estou aqui para ajudar a contornar todas essas questões e ajudar vocês do melhor jeito possível. Vamos conversar? Marketing pt_BR Canal Principal Aprovado 18 de mai. de 2026 Excluir" [ref=e326]:
+                  - cell "Selecionar item a1d34197-5653-4b13-8d97-139520465a72" [ref=e327]:
+                    - generic [ref=e328]:
+                      - checkbox "Selecionar item a1d34197-5653-4b13-8d97-139520465a72"
+                  - cell "retornoacertivomavi" [ref=e329]
+                  - cell "Tudo bem, [contact_first_name]? Como está? Semana passada eu mandei a proposta comercial e marcamos um retorno para sexta-feira, porém eu não obtive retorno. Haveria algum empecilho sobre a proposta? Estou aqui para ajudar a contornar todas essas questões e ajudar vocês do melhor jeito possível. Vamos conversar?" [ref=e330]:
+                    - generic [ref=e331]: Tudo bem, [contact_first_name]? Como está? Semana passada eu mandei a proposta comercial e marcamos um retorno para sexta-feira, porém eu não obtive retorno. Haveria algum empecilho sobre a proposta? Estou aqui para ajudar a contornar todas essas questões e ajudar vocês do melhor jeito possível. Vamos conversar?
+                  - cell "Marketing" [ref=e332]:
+                    - generic [ref=e333]: Marketing
+                  - cell "pt_BR" [ref=e334]
+                  - cell "Canal Principal" [ref=e335]
+                  - cell "Aprovado" [ref=e336]:
+                    - generic [ref=e337]: Aprovado
+                  - cell "18 de mai. de 2026" [ref=e338]
+                  - cell "Excluir" [ref=e339]:
+                    - button "Excluir" [ref=e341] [cursor=pointer]:
+                      - img [ref=e342]
+                - 'row "Selecionar item a1cf0b39-7819-43fc-8e33-eaa3b5addf8d #implantaçãopronta-giu Oiii, [contact_first_name]. Sobre aquela parte da implantação, consegui deixar tudo alinhado aqui internamente para conseguirmos subir a operação de vocês de forma rápida. Conseguiu validar com a sócia aí também? Porque da nossa parte já deixamos preparado para avançar assim que vocês aprovarem. Utility pt_BR Canal Principal Aprovado 18 de mai. de 2026 Excluir" [ref=e345]':
+                  - cell "Selecionar item a1cf0b39-7819-43fc-8e33-eaa3b5addf8d" [ref=e346]:
+                    - generic [ref=e347]:
+                      - checkbox "Selecionar item a1cf0b39-7819-43fc-8e33-eaa3b5addf8d"
+                  - cell "#implantaçãopronta-giu" [ref=e348]
+                  - cell "Oiii, [contact_first_name]. Sobre aquela parte da implantação, consegui deixar tudo alinhado aqui internamente para conseguirmos subir a operação de vocês de forma rápida. Conseguiu validar com a sócia aí também? Porque da nossa parte já deixamos preparado para avançar assim que vocês aprovarem." [ref=e349]:
+                    - generic [ref=e350]: Oiii, [contact_first_name]. Sobre aquela parte da implantação, consegui deixar tudo alinhado aqui internamente para conseguirmos subir a operação de vocês de forma rápida. Conseguiu validar com a sócia aí também? Porque da nossa parte já deixamos preparado para avançar assim que vocês aprovarem.
+                  - cell "Utility" [ref=e351]:
+                    - generic [ref=e352]: Utility
+                  - cell "pt_BR" [ref=e353]
+                  - cell "Canal Principal" [ref=e354]
+                  - cell "Aprovado" [ref=e355]:
+                    - generic [ref=e356]: Aprovado
+                  - cell "18 de mai. de 2026" [ref=e357]
+                  - cell "Excluir" [ref=e358]:
+                    - button "Excluir" [ref=e360] [cursor=pointer]:
+                      - img [ref=e361]
+                - 'row "Selecionar item a1cef286-3f10-4d48-b0a4-1b0279e45ad6 #jeff1 Bom dia Jefferson tudo bem ? Para gente dar continuidade aqui no processo , me confirma em qual email eu posso enviar o contrato para você assinar . Marketing pt_BR Canal Principal Aprovado 18 de mai. de 2026 Excluir" [ref=e364]':
+                  - cell "Selecionar item a1cef286-3f10-4d48-b0a4-1b0279e45ad6" [ref=e365]:
+                    - generic [ref=e366]:
+                      - checkbox "Selecionar item a1cef286-3f10-4d48-b0a4-1b0279e45ad6"
+                  - cell "#jeff1" [ref=e367]
+                  - cell "Bom dia Jefferson tudo bem ? Para gente dar continuidade aqui no processo , me confirma em qual email eu posso enviar o contrato para você assinar ." [ref=e368]:
+                    - generic [ref=e369]: Bom dia Jefferson tudo bem ? Para gente dar continuidade aqui no processo , me confirma em qual email eu posso enviar o contrato para você assinar .
+                  - cell "Marketing" [ref=e370]:
+                    - generic [ref=e371]: Marketing
+                  - cell "pt_BR" [ref=e372]
+                  - cell "Canal Principal" [ref=e373]
+                  - cell "Aprovado" [ref=e374]:
+                    - generic [ref=e375]: Aprovado
+                  - cell "18 de mai. de 2026" [ref=e376]
+                  - cell "Excluir" [ref=e377]:
+                    - button "Excluir" [ref=e379] [cursor=pointer]:
+                      - img [ref=e380]
+                - 'row "Selecionar item a1c998c6-52be-4e83-9c4e-8243aeeeb565 Soporte técnico Nuestro teléfono de Soporte es: +525596024030 Atendemos de *Lunes a Viernes* de 08:00 a 19:00 Hs (Brasil ) 🇧🇷 *Sábados* de 08:00 a 12:00 Hs (Brasil ) 🇧🇷 — — — Em análise 15 de mai. de 2026 Excluir" [ref=e383]':
+                  - cell "Selecionar item a1c998c6-52be-4e83-9c4e-8243aeeeb565" [ref=e384]:
+                    - generic [ref=e385]:
+                      - checkbox "Selecionar item a1c998c6-52be-4e83-9c4e-8243aeeeb565"
+                  - cell "Soporte técnico" [ref=e386]
+                  - 'cell "Nuestro teléfono de Soporte es: +525596024030 Atendemos de *Lunes a Viernes* de 08:00 a 19:00 Hs (Brasil ) 🇧🇷 *Sábados* de 08:00 a 12:00 Hs (Brasil ) 🇧🇷" [ref=e387]':
+                    - generic [ref=e388]: "Nuestro teléfono de Soporte es: +525596024030 Atendemos de *Lunes a Viernes* de 08:00 a 19:00 Hs (Brasil ) 🇧🇷 *Sábados* de 08:00 a 12:00 Hs (Brasil ) 🇧🇷"
+                  - cell "—" [ref=e389]
+                  - cell "—" [ref=e390]
+                  - cell "—" [ref=e391]
+                  - cell "Em análise" [ref=e392]:
+                    - generic [ref=e393]: Em análise
+                  - cell "15 de mai. de 2026" [ref=e394]
+                  - cell "Excluir" [ref=e395]:
+                    - button "Excluir" [ref=e397] [cursor=pointer]:
+                      - img [ref=e398]
+                - row "Selecionar item a1c995f2-3e34-44f3-95d1-1dcbf3284e07 Dirección empresa *Nuestra Dirección es:* 📍 Av. de las Américas 2889 Atendemos de 08:00 a 19:00 Te esperamos. — — — Em análise 15 de mai. de 2026 Excluir" [ref=e401]:
+                  - cell "Selecionar item a1c995f2-3e34-44f3-95d1-1dcbf3284e07" [ref=e402]:
+                    - generic [ref=e403]:
+                      - checkbox "Selecionar item a1c995f2-3e34-44f3-95d1-1dcbf3284e07"
+                  - cell "Dirección empresa" [ref=e404]
+                  - cell "*Nuestra Dirección es:* 📍 Av. de las Américas 2889 Atendemos de 08:00 a 19:00 Te esperamos." [ref=e405]:
+                    - generic [ref=e406]: "*Nuestra Dirección es:* 📍 Av. de las Américas 2889 Atendemos de 08:00 a 19:00 Te esperamos."
+                  - cell "—" [ref=e407]
+                  - cell "—" [ref=e408]
+                  - cell "—" [ref=e409]
+                  - cell "Em análise" [ref=e410]:
+                    - generic [ref=e411]: Em análise
+                  - cell "15 de mai. de 2026" [ref=e412]
+                  - cell "Excluir" [ref=e413]:
+                    - button "Excluir" [ref=e415] [cursor=pointer]:
+                      - img [ref=e416]
+                - row "Selecionar item a1d34197-58bf-4dd1-adbc-44fb870e7791 Retomar contacto Hola [contact_first_name] Soy [operator_name] te estoy contactando para poder retomar nuestras comunicación. ¿Tienes un minuto? Marketing es_MX Latam - Mexico Aprovado 15 de mai. de 2026 Excluir" [ref=e419]:
+                  - cell "Selecionar item a1d34197-58bf-4dd1-adbc-44fb870e7791" [ref=e420]:
+                    - generic [ref=e421]:
+                      - checkbox "Selecionar item a1d34197-58bf-4dd1-adbc-44fb870e7791"
+                  - cell "Retomar contacto" [ref=e422]
+                  - cell "Hola [contact_first_name] Soy [operator_name] te estoy contactando para poder retomar nuestras comunicación. ¿Tienes un minuto?" [ref=e423]:
+                    - generic [ref=e424]: Hola [contact_first_name] Soy [operator_name] te estoy contactando para poder retomar nuestras comunicación. ¿Tienes un minuto?
+                  - cell "Marketing" [ref=e425]:
+                    - generic [ref=e426]: Marketing
+                  - cell "es_MX" [ref=e427]
+                  - cell "Latam - Mexico" [ref=e428]
+                  - cell "Aprovado" [ref=e429]:
+                    - generic [ref=e430]: Aprovado
+                  - cell "15 de mai. de 2026" [ref=e431]
+                  - cell "Excluir" [ref=e432]:
+                    - button "Excluir" [ref=e434] [cursor=pointer]:
+                      - img [ref=e435]
+            - generic [ref=e439]:
+              - generic [ref=e440]:
+                - generic [ref=e441]: Página 1 de 225
+                - generic [ref=e442]: "Total: 3.367 registros"
+              - generic [ref=e443]:
+                - combobox [ref=e444]:
+                  - option "10 por página"
+                  - option "15 por página" [selected]
+                  - option "25 por página"
+                  - option "50 por página"
+                - generic [ref=e445]:
+                  - button [disabled]:
+                    - img
+                  - button [disabled]:
+                    - img
+                  - button [ref=e446] [cursor=pointer]:
+                    - img [ref=e447]
+                  - button [ref=e449] [cursor=pointer]:
+                    - img [ref=e450]
+  - region "Notifications (F8)":
+    - list

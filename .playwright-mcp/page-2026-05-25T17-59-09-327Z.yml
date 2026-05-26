@@ -1,0 +1,380 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link [ref=e6] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e8]:
+          - listitem [ref=e9] [cursor=pointer]:
+            - generic "Pesquisar" [ref=e10]:
+              - generic [ref=e11]:
+                - img [ref=e12]
+                - generic: Pesquisar
+          - listitem
+          - listitem [ref=e14]:
+            - link "Página Inicial" [ref=e15] [cursor=pointer]:
+              - /url: https://homolog.qa.poli.digital/home
+              - generic [ref=e16]:
+                - img [ref=e17]
+                - generic: Página Inicial
+          - listitem [ref=e19]:
+            - link "Chat" [ref=e20] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/chat
+              - generic [ref=e21]:
+                - img [ref=e22]
+                - generic: Chat
+          - listitem [ref=e24]:
+            - link "Automações" [ref=e25] [cursor=pointer]:
+              - /url: https://homolog.qa.poli.digital/settings/1/chatbot
+              - generic [ref=e26]:
+                - img [ref=e27]
+                - generic: Automações
+          - listitem [ref=e29]:
+            - link "Marketing" [ref=e30] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/marketing
+              - generic [ref=e31]:
+                - img [ref=e32]
+                - generic: Marketing
+          - listitem [ref=e34]:
+            - link "Relatórios" [ref=e35] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/relatorio
+              - generic [ref=e36]:
+                - img [ref=e37]
+                - generic: Relatórios
+          - listitem [ref=e39]:
+            - link "Configurações" [ref=e40] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/tools
+              - generic [ref=e41]:
+                - img [ref=e42]
+                - generic: Configurações
+          - listitem [ref=e44]:
+            - link "Administração" [ref=e45] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/admin
+              - generic [ref=e46]:
+                - img [ref=e47]
+                - generic: Administração
+        - generic [ref=e49]:
+          - listitem [ref=e50]:
+            - link "Notificação" [ref=e51] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e52]:
+                - img [ref=e53]
+                - generic: Notificação
+          - listitem [ref=e55]:
+            - link "Suporte" [ref=e56] [cursor=pointer]:
+              - /url: https://polichat.com.br/central-de-conhecimento/
+              - generic [ref=e57]:
+                - img [ref=e58]
+                - generic: Suporte
+          - listitem [ref=e61]:
+            - generic [ref=e64]:
+              - img "Yuri Alcantara" [ref=e66]
+              - generic: Yuri Alcantara
+          - listitem [ref=e68]:
+            - link " Recolher Menu" [ref=e69] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e70]:
+                - generic [ref=e71]: 
+                - generic: Recolher Menu
+          - listitem [ref=e72]:
+            - generic "versão" [ref=e73]:
+              - paragraph [ref=e75]: v2.18.465
+    - generic [ref=e76]:
+      - generic [ref=e80]:
+        - generic [ref=e81]: Gerar Tokens
+        - generic [ref=e82]:
+          - button "Ativar API" [ref=e84] [cursor=pointer]
+          - generic [ref=e86]:
+            - generic [ref=e88]:
+              - generic [ref=e89]: OAuth Clients
+              - generic [ref=e90] [cursor=pointer]: Criar Novo Cliente
+            - paragraph [ref=e92]: You have not created any OAuth clients.
+          - generic [ref=e95]:
+            - generic [ref=e97]:
+              - generic [ref=e98]: Personal Access Tokens
+              - generic [ref=e99] [cursor=pointer]: Criar Novo Token
+            - table [ref=e101]:
+              - rowgroup [ref=e102]:
+                - row "Name" [ref=e103]:
+                  - columnheader "Name" [ref=e104]
+                  - columnheader [ref=e105]
+              - rowgroup [ref=e106]:
+                - row "Personal Access Token Deletar" [ref=e107]:
+                  - cell "Personal Access Token" [ref=e108]
+                  - cell "Deletar" [ref=e109]
+                - row "Personal Access Token Deletar" [ref=e110]:
+                  - cell "Personal Access Token" [ref=e111]
+                  - cell "Deletar" [ref=e112]
+                - row "Deletar" [ref=e113]:
+                  - cell [ref=e114]
+                  - cell "Deletar" [ref=e115]
+                - row "Personal Access Token Deletar" [ref=e116]:
+                  - cell "Personal Access Token" [ref=e117]
+                  - cell "Deletar" [ref=e118]
+                - row "Personal Access Token Deletar" [ref=e119]:
+                  - cell "Personal Access Token" [ref=e120]
+                  - cell "Deletar" [ref=e121]
+                - row "Personal Access Token Deletar" [ref=e122]:
+                  - cell "Personal Access Token" [ref=e123]
+                  - cell "Deletar" [ref=e124]
+                - row "Personal Access Token Deletar" [ref=e125]:
+                  - cell "Personal Access Token" [ref=e126]
+                  - cell "Deletar" [ref=e127]
+                - row "tokenteste Deletar" [ref=e128]:
+                  - cell "tokenteste" [ref=e129]
+                  - cell "Deletar" [ref=e130]
+                - row "Personal Access Token Deletar" [ref=e131]:
+                  - cell "Personal Access Token" [ref=e132]
+                  - cell "Deletar" [ref=e133]
+          - generic [ref=e134]:
+            - generic [ref=e135]: Outras informações
+            - table [ref=e138]:
+              - rowgroup [ref=e139]:
+                - row "Campo Valor Descrição" [ref=e140]:
+                  - columnheader "Campo" [ref=e141]
+                  - columnheader "Valor" [ref=e142]
+                  - columnheader "Descrição" [ref=e143]
+              - rowgroup [ref=e144]:
+                - row "customer_id 1 Identificador da sua empresa" [ref=e145]:
+                  - cell "customer_id" [ref=e146]
+                  - cell "1" [ref=e147]
+                  - cell "Identificador da sua empresa" [ref=e148]
+                - row "user_id 79356 Identificador do seu usuário" [ref=e149]:
+                  - cell "user_id" [ref=e150]
+                  - cell "79356" [ref=e151]
+                  - cell "Identificador do seu usuário" [ref=e152]
+                - row [ref=e153]:
+                  - cell "channel_id" [ref=e154]
+                  - cell "1522 *" [ref=e155]:
+                    - text: "1522"
+                    - strong [ref=e156]: "*"
+                  - cell [ref=e157]:
+                    - text: Identificador do canal
+                    - paragraph [ref=e158]:
+                      - generic [ref=e159]: "*Ver lista dos seus canais abaixo:"
+                    - generic [ref=e161]:
+                      - generic [ref=e162]: Canais cadastrados
+                      - table [ref=e164]:
+                        - rowgroup [ref=e165]:
+                          - row "channel_id Nome Tipo" [ref=e166]:
+                            - columnheader "channel_id" [ref=e167]
+                            - columnheader "Nome" [ref=e168]
+                            - columnheader "Tipo" [ref=e169]
+                        - rowgroup [ref=e170]:
+                          - row "1522 Suporte Ativo waba" [ref=e171]:
+                            - cell "1522" [ref=e172]
+                            - cell "Suporte Ativo" [ref=e173]
+                            - cell "waba" [ref=e174]
+                          - row "54513 Teste BSP Iury waba" [ref=e175]:
+                            - cell "54513" [ref=e176]
+                            - cell "Teste BSP Iury" [ref=e177]
+                            - cell "waba" [ref=e178]
+                          - row "54579 Teste Marketing Poli waba" [ref=e179]:
+                            - cell "54579" [ref=e180]
+                            - cell "Teste Marketing Poli" [ref=e181]
+                            - cell "waba" [ref=e182]
+                          - row "54580 Teste Marketing Poli waba" [ref=e183]:
+                            - cell "54580" [ref=e184]
+                            - cell "Teste Marketing Poli" [ref=e185]
+                            - cell "waba" [ref=e186]
+                          - row "54581 Teste MKT Poli waba" [ref=e187]:
+                            - cell "54581" [ref=e188]
+                            - cell "Teste MKT Poli" [ref=e189]
+                            - cell "waba" [ref=e190]
+                          - row "54591 Teste Poli Marketing waba" [ref=e191]:
+                            - cell "54591" [ref=e192]
+                            - cell "Teste Poli Marketing" [ref=e193]
+                            - cell "waba" [ref=e194]
+                          - row "54598 teste waba" [ref=e195]:
+                            - cell "54598" [ref=e196]
+                            - cell "teste" [ref=e197]
+                            - cell "waba" [ref=e198]
+                          - row "54611 t waba" [ref=e199]:
+                            - cell "54611" [ref=e200]
+                            - cell "t" [ref=e201]
+                            - cell "waba" [ref=e202]
+                          - row "54612 , waba" [ref=e203]:
+                            - cell "54612" [ref=e204]
+                            - cell "," [ref=e205]
+                            - cell "waba" [ref=e206]
+                          - row "54616 teste mkt waba" [ref=e207]:
+                            - cell "54616" [ref=e208]
+                            - cell "teste mkt" [ref=e209]
+                            - cell "waba" [ref=e210]
+                          - row "54618 teste waba" [ref=e211]:
+                            - cell "54618" [ref=e212]
+                            - cell "teste" [ref=e213]
+                            - cell "waba" [ref=e214]
+                          - row "54620 teste mkt waba" [ref=e215]:
+                            - cell "54620" [ref=e216]
+                            - cell "teste mkt" [ref=e217]
+                            - cell "waba" [ref=e218]
+                          - row "54621 teste mkt waba" [ref=e219]:
+                            - cell "54621" [ref=e220]
+                            - cell "teste mkt" [ref=e221]
+                            - cell "waba" [ref=e222]
+                          - row "54622 teste mkt waba" [ref=e223]:
+                            - cell "54622" [ref=e224]
+                            - cell "teste mkt" [ref=e225]
+                            - cell "waba" [ref=e226]
+                          - row "54623 teste mkt waba" [ref=e227]:
+                            - cell "54623" [ref=e228]
+                            - cell "teste mkt" [ref=e229]
+                            - cell "waba" [ref=e230]
+                          - row "54624 teste Adm poli mkt waba" [ref=e231]:
+                            - cell "54624" [ref=e232]
+                            - cell "teste Adm poli mkt" [ref=e233]
+                            - cell "waba" [ref=e234]
+                          - row "54625 teste mkt waba" [ref=e235]:
+                            - cell "54625" [ref=e236]
+                            - cell "teste mkt" [ref=e237]
+                            - cell "waba" [ref=e238]
+                          - row "54629 teste mkt waba" [ref=e239]:
+                            - cell "54629" [ref=e240]
+                            - cell "teste mkt" [ref=e241]
+                            - cell "waba" [ref=e242]
+                          - row "54630 teste mkt waba" [ref=e243]:
+                            - cell "54630" [ref=e244]
+                            - cell "teste mkt" [ref=e245]
+                            - cell "waba" [ref=e246]
+                          - row "54637 teste-api waba" [ref=e247]:
+                            - cell "54637" [ref=e248]
+                            - cell "teste-api" [ref=e249]
+                            - cell "waba" [ref=e250]
+                          - row "54702 teste (mkt apagar) waba" [ref=e251]:
+                            - cell "54702" [ref=e252]
+                            - cell "teste (mkt apagar)" [ref=e253]
+                            - cell "waba" [ref=e254]
+                          - row "54704 Teste Integração (apagar!!!) waba" [ref=e255]:
+                            - cell "54704" [ref=e256]
+                            - cell "Teste Integração (apagar!!!)" [ref=e257]
+                            - cell "waba" [ref=e258]
+                          - row "54711 teste (apagar) waba" [ref=e259]:
+                            - cell "54711" [ref=e260]
+                            - cell "teste (apagar)" [ref=e261]
+                            - cell "waba" [ref=e262]
+                          - row "54735 apagar - mkt waba" [ref=e263]:
+                            - cell "54735" [ref=e264]
+                            - cell "apagar - mkt" [ref=e265]
+                            - cell "waba" [ref=e266]
+                          - row "54736 Teste Integração (apagar) waba" [ref=e267]:
+                            - cell "54736" [ref=e268]
+                            - cell "Teste Integração (apagar)" [ref=e269]
+                            - cell "waba" [ref=e270]
+                          - row "54746 Teste do mkt waba" [ref=e271]:
+                            - cell "54746" [ref=e272]
+                            - cell "Teste do mkt" [ref=e273]
+                            - cell "waba" [ref=e274]
+                          - row "54751 Teste Integração (apagar) waba" [ref=e275]:
+                            - cell "54751" [ref=e276]
+                            - cell "Teste Integração (apagar)" [ref=e277]
+                            - cell "waba" [ref=e278]
+                          - row "54753 teste (apagar) waba" [ref=e279]:
+                            - cell "54753" [ref=e280]
+                            - cell "teste (apagar)" [ref=e281]
+                            - cell "waba" [ref=e282]
+                          - row "54754 Teste para apagar waba" [ref=e283]:
+                            - cell "54754" [ref=e284]
+                            - cell "Teste para apagar" [ref=e285]
+                            - cell "waba" [ref=e286]
+                          - row "54758 teste 😀 (apagar) waba" [ref=e287]:
+                            - cell "54758" [ref=e288]
+                            - cell "teste 😀 (apagar)" [ref=e289]
+                            - cell "waba" [ref=e290]
+                          - row "54760 teste apagar waba" [ref=e291]:
+                            - cell "54760" [ref=e292]
+                            - cell "teste apagar" [ref=e293]
+                            - cell "waba" [ref=e294]
+                          - row "54772 Teste do Marketing waba" [ref=e295]:
+                            - cell "54772" [ref=e296]
+                            - cell "Teste do Marketing" [ref=e297]
+                            - cell "waba" [ref=e298]
+                          - row "54773 TESTE MARKETING waba" [ref=e299]:
+                            - cell "54773" [ref=e300]
+                            - cell "TESTE MARKETING" [ref=e301]
+                            - cell "waba" [ref=e302]
+                          - row "54775 teste mktttt waba" [ref=e303]:
+                            - cell "54775" [ref=e304]
+                            - cell "teste mktttt" [ref=e305]
+                            - cell "waba" [ref=e306]
+                          - row "54782 Teste APAGAR waba" [ref=e307]:
+                            - cell "54782" [ref=e308]
+                            - cell "Teste APAGAR" [ref=e309]
+                            - cell "waba" [ref=e310]
+                          - row "54785 Teste mkt waba" [ref=e311]:
+                            - cell "54785" [ref=e312]
+                            - cell "Teste mkt" [ref=e313]
+                            - cell "waba" [ref=e314]
+                          - row "54786 teste mkt waba" [ref=e315]:
+                            - cell "54786" [ref=e316]
+                            - cell "teste mkt" [ref=e317]
+                            - cell "waba" [ref=e318]
+                          - row "54787 mkt teste waba" [ref=e319]:
+                            - cell "54787" [ref=e320]
+                            - cell "mkt teste" [ref=e321]
+                            - cell "waba" [ref=e322]
+                          - row "54789 teste mkt waba" [ref=e323]:
+                            - cell "54789" [ref=e324]
+                            - cell "teste mkt" [ref=e325]
+                            - cell "waba" [ref=e326]
+                          - row "54790 Teste MKT waba" [ref=e327]:
+                            - cell "54790" [ref=e328]
+                            - cell "Teste MKT" [ref=e329]
+                            - cell "waba" [ref=e330]
+                          - row "54864 Marketing (apagar) waba" [ref=e331]:
+                            - cell "54864" [ref=e332]
+                            - cell "Marketing (apagar)" [ref=e333]
+                            - cell "waba" [ref=e334]
+                          - row "54950 Teste de Portabilidade waba" [ref=e335]:
+                            - cell "54950" [ref=e336]
+                            - cell "Teste de Portabilidade" [ref=e337]
+                            - cell "waba" [ref=e338]
+                          - row "56312 teste Nik waba" [ref=e339]:
+                            - cell "56312" [ref=e340]
+                            - cell "teste Nik" [ref=e341]
+                            - cell "waba" [ref=e342]
+                          - row "56886 Teste waba" [ref=e343]:
+                            - cell "56886" [ref=e344]
+                            - cell "Teste" [ref=e345]
+                            - cell "waba" [ref=e346]
+                          - row "57004 Receptivo Waba waba" [ref=e347]:
+                            - cell "57004" [ref=e348]
+                            - cell "Receptivo Waba" [ref=e349]
+                            - cell "waba" [ref=e350]
+                          - row "90137 teste jj webchat" [ref=e351]:
+                            - cell "90137" [ref=e352]
+                            - cell "teste jj" [ref=e353]
+                            - cell "webchat" [ref=e354]
+                          - row "90138 WABA QA jj webchat" [ref=e355]:
+                            - cell "90138" [ref=e356]
+                            - cell "WABA QA jj" [ref=e357]
+                            - cell "webchat" [ref=e358]
+                          - row "90139 teste whatsapp" [ref=e359]:
+                            - cell "90139" [ref=e360]
+                            - cell "teste" [ref=e361]
+                            - cell "whatsapp" [ref=e362]
+                          - row "90348 Teste N2 (Instagram) instagram" [ref=e363]:
+                            - cell "90348" [ref=e364]
+                            - cell "Teste N2 (Instagram)" [ref=e365]
+                            - cell "instagram" [ref=e366]
+                          - row "91964 Webchat Automate webchat" [ref=e367]:
+                            - cell "91964" [ref=e368]
+                            - cell "Webchat Automate" [ref=e369]
+                            - cell "webchat" [ref=e370]
+                          - row "91994 Test Page 3 (Instagram) Lineu instagram" [ref=e371]:
+                            - cell "91994" [ref=e372]
+                            - cell "Test Page 3 (Instagram) Lineu" [ref=e373]
+                            - cell "instagram" [ref=e374]
+                    - paragraph
+          - generic [ref=e376]:
+            - text: Para mais informações acesse a documentação
+            - link "clicando aqui" [ref=e377] [cursor=pointer]:
+              - /url: https://documenter.getpostman.com/view/3672616/SzYdUHQj?version=latest
+            - text: .
+      - text:   
+  - text: 
+  - link "Suporte" [ref=e379] [cursor=pointer]:
+    - /url: https://api.whatsapp.com/send?phone=556282361759
+    - text: Suporte
+    - img [ref=e380]

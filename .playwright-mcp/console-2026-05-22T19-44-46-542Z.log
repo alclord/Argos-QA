@@ -1,0 +1,23 @@
+[    9374ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BioPu60a.js:101
+[    9375ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-BioPu60a.js:101
+[    9532ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-BioPu60a.js:76
+[    9918ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BioPu60a.js:69
+[    9929ms] [ERROR] error ao buscar chats TypeError: Cannot read properties of undefined (reading 'data')
+    at mft (https://spa-canary.poli.digital/assets/index-BioPu60a.js:1017:26293)
+    at async C (https://spa-canary.poli.digital/assets/index-BioPu60a.js:54:38122)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-BioPu60a.js:54:38429) @ https://spa-canary.poli.digital/assets/index-BioPu60a.js:69
+[   10095ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-BioPu60a.js:69
+[   10700ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/users/settings/summary:0
+[   10704ms] [ERROR] [UserPreferencesService] Failed to get summary: TypeError: Cannot read properties of undefined (reading 'data')
+    at mte.getSummary (https://spa-canary.poli.digital/assets/index-BioPu60a.js:2123:64704)
+    at async https://spa-canary.poli.digital/assets/index-BioPu60a.js:2123:65364 @ https://spa-canary.poli.digital/assets/index-BioPu60a.js:69
+[   10705ms] [ERROR] [useUserPreferences] Error: TypeError: Cannot read properties of undefined (reading 'data')
+    at mte.getSummary (https://spa-canary.poli.digital/assets/index-BioPu60a.js:2123:64704)
+    at async https://spa-canary.poli.digital/assets/index-BioPu60a.js:2123:65364 @ https://spa-canary.poli.digital/assets/index-BioPu60a.js:69
+[   12483ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BioPu60a.js:101
+[   12483ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-BioPu60a.js:101
+[   12545ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-BioPu60a.js:76
+[   12581ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BioPu60a.js:69
+[   13016ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-BioPu60a.js:69
+[   26285ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BioPu60a.js:69
+[   31523ms] Identifier 'TCRMEmbed' has already been declared

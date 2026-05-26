@@ -1,0 +1,25 @@
+[    2848ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:101
+[    2848ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:101
+[    3008ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:76
+[    3503ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    3727ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    3733ms] [ERROR] error ao buscar chats TypeError: Cannot read properties of undefined (reading 'data')
+    at Ndt (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:1002:26293)
+    at async C (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:54:37544)
+    at async Object.d [as fn] (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:54:37851) @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    3961ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/users/settings/summary:0
+[    3964ms] [ERROR] [UserPreferencesService] Failed to get summary: TypeError: Cannot read properties of undefined (reading 'data')
+    at qee.getSummary (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:2108:64561)
+    at async https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:2108:65221 @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    3965ms] [ERROR] [useUserPreferences] Error: TypeError: Cannot read properties of undefined (reading 'data')
+    at qee.getSummary (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:2108:64561)
+    at async https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:2108:65221 @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    4213ms] [ERROR] Amplitude Logger [Error]: Failed to fetch (api2.amplitude.com) @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    4216ms] [WARNING] Amplitude Logger [Warn]: {code: 0, error: "Status 'failed' provided for 3 events"} @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    4513ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:101
+[    4513ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:101
+[    4568ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:76
+[    4606ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    5012ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[   25494ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[   73033ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69

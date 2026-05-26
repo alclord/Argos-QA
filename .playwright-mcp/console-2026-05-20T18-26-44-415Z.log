@@ -1,0 +1,12 @@
+[     335ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-DOGhbpIq.js:101
+[     335ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-DOGhbpIq.js:101
+[     379ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-DOGhbpIq.js:76
+[     820ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-DOGhbpIq.js:69
+[   59249ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa.qa.poli.digital/assets/index-DOGhbpIq.js:69
+[  168385ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/tags?category=D&per_page=5&include=category:0
+[  168865ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/tags?category=INVALID_CATEGORY&per_page=5:0
+[  202852ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/tags?status=INVALID_STATUS&per_page=5:0
+[  279385ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/tags/9c8390ce-ba71-4bf6-bea4-a55322f804d6:0
+[  318184ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/tags?unknown_field=abc&per_page=5:0
+[  319690ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/tags?password=secret&per_page=5:0
+[  320245ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/tags?order=unknown_column&per_page=5:0

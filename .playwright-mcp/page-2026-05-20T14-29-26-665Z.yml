@@ -1,0 +1,52 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - img [ref=e7]
+      - navigation [ref=e8]:
+        - list
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - button "Consumo de créditos" [ref=e11] [cursor=pointer]:
+              - img [ref=e12]
+          - listitem [ref=e15]:
+            - button "YA" [ref=e16] [cursor=pointer]:
+              - generic [ref=e21]: YA
+          - listitem [ref=e23]:
+            - button [ref=e24] [cursor=pointer]:
+              - img [ref=e25]
+          - listitem [ref=e27]:
+            - generic [ref=e29]: v3.5.327
+    - main [ref=e30]:
+      - generic [ref=e31]:
+        - navigation "breadcrumb" [ref=e33]:
+          - link "Página inicial" [ref=e35] [cursor=pointer]:
+            - /url: /
+          - img [ref=e36]
+          - generic [ref=e38]: Templates
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - textbox "Buscar templates" [ref=e44]: xyzxyzxyz123_nao_existe_absolutamente
+            - button [ref=e45] [cursor=pointer]:
+              - img [ref=e46]
+          - generic [ref=e49]:
+            - generic [ref=e50]: Status
+            - combobox "Status" [ref=e51] [cursor=pointer]:
+              - generic: Todos
+              - img [ref=e52]
+          - generic [ref=e54]:
+            - generic [ref=e55]: Categoria
+            - combobox "Categoria" [ref=e56] [cursor=pointer]:
+              - generic: Todos
+              - img [ref=e57]
+          - generic [ref=e59]:
+            - generic [ref=e60]: Tipo
+            - combobox "Tipo" [ref=e61] [cursor=pointer]:
+              - generic: Todos
+              - img [ref=e62]
+          - generic [ref=e64]:
+            - generic [ref=e65]: Canal
+            - combobox "Canal" [disabled] [ref=e66]:
+              - generic: Todos
+              - img [ref=e67]
+  - region "Notifications (F8)":
+    - list

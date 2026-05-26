@@ -1,0 +1,282 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - img [ref=e7]
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link [ref=e11] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=73e9215b96c86f79c5f5de27a4ee8029398e367e&toPath=https://app.poli.digital/home
+              - img [ref=e13]
+          - listitem [ref=e16]:
+            - link [ref=e17] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e19]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=73e9215b96c86f79c5f5de27a4ee8029398e367e&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e30]
+          - listitem [ref=e32]:
+            - link [ref=e33] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=73e9215b96c86f79c5f5de27a4ee8029398e367e&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e35]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=73e9215b96c86f79c5f5de27a4ee8029398e367e&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e41]
+          - listitem [ref=e43]:
+            - link [ref=e44] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=73e9215b96c86f79c5f5de27a4ee8029398e367e&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e46]
+          - listitem [ref=e49]:
+            - link [ref=e50] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=73e9215b96c86f79c5f5de27a4ee8029398e367e&toPath=https://app.poli.digital/settings/1
+              - img [ref=e52]
+          - listitem [ref=e55]:
+            - link [ref=e56] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e58]
+          - listitem [ref=e62]:
+            - link [ref=e63] [cursor=pointer]:
+              - /url: /templates
+              - img [ref=e65]
+        - list [ref=e68]:
+          - listitem [ref=e69]:
+            - button "Consumo de créditos" [ref=e70] [cursor=pointer]:
+              - img [ref=e71]
+          - listitem [ref=e74]:
+            - button "YA" [ref=e75] [cursor=pointer]:
+              - generic [ref=e80]: YA
+          - listitem [ref=e82]:
+            - button [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+          - listitem [ref=e86]:
+            - generic [ref=e88]: v3.5.327
+    - main [ref=e89]:
+      - generic [ref=e90]:
+        - button "✨ Nova Versão" [ref=e91] [cursor=pointer]:
+          - generic [ref=e92]: ✨ Nova Versão
+          - img [ref=e93]
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - generic [ref=e98]:
+              - button "Em atendimento" [ref=e99] [cursor=pointer]:
+                - generic [ref=e100]: Em atendimento
+                - img [ref=e101]
+              - generic [ref=e103]:
+                - button [ref=e104] [cursor=pointer]:
+                  - img [ref=e105]
+                - button [ref=e109] [cursor=pointer]:
+                  - img [ref=e110]
+            - generic [ref=e112]:
+              - generic [ref=e113]:
+                - textbox "Pesquisar" [ref=e114]
+                - button [ref=e115] [cursor=pointer]:
+                  - img [ref=e116]
+              - button "Ordenação das conversas" [ref=e119] [cursor=pointer]:
+                - img [ref=e120]
+          - generic [ref=e122]: Você está indisponível e não receberá novas conversas
+      - button "\"Yuri\" \"Yuri\" Alef Santos Alertas de crédito Digite sua mensagem aqui ou / para mensagens rápidas Mais opções schedule-message" [ref=e246] [cursor=pointer]:
+        - generic [ref=e248]:
+          - generic [ref=e249]:
+            - img "\"Yuri\"" [ref=e253]
+            - generic [ref=e254]:
+              - generic [ref=e255]: "\"Yuri\""
+              - generic [ref=e257]:
+                - img [ref=e259]
+                - generic [ref=e263]: Alef Santos
+          - generic [ref=e264]:
+            - button [ref=e265]:
+              - img [ref=e266]
+            - button [ref=e269]:
+              - img [ref=e270]
+            - button [ref=e272]:
+              - img [ref=e273]
+            - button [ref=e277]:
+              - img [ref=e278]
+            - button [ref=e281]:
+              - img [ref=e282]
+        - region "Alertas de crédito" [ref=e338]
+        - generic [ref=e341]:
+          - generic [ref=e343]:
+            - button [ref=e345]:
+              - img [ref=e346]
+            - generic [ref=e350]:
+              - paragraph [ref=e355]: Digite sua mensagem aqui ou / para mensagens rápidas
+              - button [ref=e357]:
+                - img [ref=e358]
+          - generic [ref=e363]:
+            - generic [ref=e364]:
+              - button [ref=e365]:
+                - img [ref=e366]
+              - button "Mais opções" [ref=e369]:
+                - img [ref=e370]
+              - button "schedule-message" [ref=e372]:
+                - img [ref=e373]
+            - button [ref=e377]:
+              - img [ref=e378]
+      - generic [ref=e381]:
+        - generic [ref=e383]:
+          - img "\"Yuri\"" [ref=e387] [cursor=pointer]
+          - button [ref=e388] [cursor=pointer]:
+            - img [ref=e389]
+        - list [ref=e395]:
+          - generic [ref=e396]:
+            - generic [ref=e397]:
+              - img [ref=e399]
+              - generic [ref=e402]: Detalhes do contato
+            - generic [ref=e403]:
+              - generic [ref=e406]:
+                - generic "Nome" [ref=e408]
+                - generic [ref=e409]: "\"Yuri\""
+              - generic [ref=e413]:
+                - generic "Telefone" [ref=e415]
+                - generic [ref=e416]: +55 (62) 9921-0609
+              - generic "E-mail" [ref=e421]
+              - generic "CPF" [ref=e426]
+          - generic [ref=e427]:
+            - generic [ref=e428]:
+              - img [ref=e430]
+              - generic [ref=e432]: Categoria
+            - generic [ref=e433]:
+              - generic [ref=e436]:
+                - generic "Origem" [ref=e438]
+                - generic [ref=e439]: orgânico
+              - generic "Fonte" [ref=e444]
+          - generic [ref=e445]:
+            - generic [ref=e446]:
+              - generic [ref=e447]:
+                - img [ref=e448]
+                - generic [ref=e450]: Etiquetas
+              - button "Adicionar etiqueta" [ref=e451] [cursor=pointer]:
+                - img [ref=e452]
+                - text: Adicionar etiqueta
+            - generic [ref=e456]:
+              - generic [ref=e458]:
+                - generic [ref=e459]: 14\01
+                - button [ref=e460] [cursor=pointer]:
+                  - img [ref=e461]
+              - generic [ref=e465]:
+                - generic [ref=e466]: disparo_11000_2024-03-27 09:49:56.796706-03:00
+                - button [ref=e467] [cursor=pointer]:
+                  - img [ref=e468]
+              - generic [ref=e472]:
+                - generic [ref=e473]: disparo_11000_2024-04-24 10:03:12.271478-03:00
+                - button [ref=e474] [cursor=pointer]:
+                  - img [ref=e475]
+              - generic [ref=e479]:
+                - generic [ref=e480]: disparo_2024-10-23 09:52:26_11000
+                - button [ref=e481] [cursor=pointer]:
+                  - img [ref=e482]
+              - generic [ref=e486]:
+                - generic [ref=e487]: disparo_2025-05-06 11:26:00_57780
+                - button [ref=e488] [cursor=pointer]:
+                  - img [ref=e489]
+              - generic [ref=e493]:
+                - generic [ref=e494]: disparo_2025-05-06 11:30:59_57780
+                - button [ref=e495] [cursor=pointer]:
+                  - img [ref=e496]
+              - generic [ref=e500]:
+                - generic [ref=e501]: disparo_2025-05-06 11:35:17_57780
+                - button [ref=e502] [cursor=pointer]:
+                  - img [ref=e503]
+              - generic [ref=e507]:
+                - generic [ref=e508]: disparo_2025-05-06 11:36:13_57780
+                - button [ref=e509] [cursor=pointer]:
+                  - img [ref=e510]
+              - generic [ref=e514]:
+                - generic [ref=e515]: disparo_2025-05-07 11:30:55_57780
+                - button [ref=e516] [cursor=pointer]:
+                  - img [ref=e517]
+              - generic [ref=e521]:
+                - generic [ref=e522]: disparo_2025-06-12 15:05:00_11000
+                - button [ref=e523] [cursor=pointer]:
+                  - img [ref=e524]
+              - generic [ref=e528]:
+                - generic [ref=e529]: disparo_2025-08-20 15:20:24_11000
+                - button [ref=e530] [cursor=pointer]:
+                  - img [ref=e531]
+              - generic [ref=e535]:
+                - generic [ref=e536]: disparo_2025-08-20 15:24:20_11000
+                - button [ref=e537] [cursor=pointer]:
+                  - img [ref=e538]
+              - generic [ref=e542]:
+                - generic [ref=e543]: disparo_2025-08-20 15:37:06_11000
+                - button [ref=e544] [cursor=pointer]:
+                  - img [ref=e545]
+              - generic [ref=e549]:
+                - generic [ref=e550]: disparo_2025-08-20 15:43:43_11000
+                - button [ref=e551] [cursor=pointer]:
+                  - img [ref=e552]
+              - generic [ref=e556]:
+                - generic [ref=e557]: disparo_2025-09-22 15:40:12_11000
+                - button [ref=e558] [cursor=pointer]:
+                  - img [ref=e559]
+              - generic [ref=e563]:
+                - generic [ref=e564]: disparo_2025-09-22 15:44:15_11000
+                - button [ref=e565] [cursor=pointer]:
+                  - img [ref=e566]
+              - generic [ref=e570]:
+                - generic [ref=e571]: disparo_2025-09-22 15:45:16_11000
+                - button [ref=e572] [cursor=pointer]:
+                  - img [ref=e573]
+              - generic [ref=e577]:
+                - generic [ref=e578]: disparo_2025-09-22 16:10:01_11000
+                - button [ref=e579] [cursor=pointer]:
+                  - img [ref=e580]
+              - generic [ref=e584]:
+                - generic [ref=e585]: disparo_2025-09-22 16:12:28_11000
+                - button [ref=e586] [cursor=pointer]:
+                  - img [ref=e587]
+              - generic [ref=e591]:
+                - generic [ref=e592]: disparo_2025-09-24 18:36:34_11000
+                - button [ref=e593] [cursor=pointer]:
+                  - img [ref=e594]
+              - generic [ref=e598]:
+                - generic [ref=e599]: disparo_2025-09-25 14:32:33_57780
+                - button [ref=e600] [cursor=pointer]:
+                  - img [ref=e601]
+              - generic [ref=e605]:
+                - generic [ref=e606]: disparo_2025-09-25 14:35:20_57780
+                - button [ref=e607] [cursor=pointer]:
+                  - img [ref=e608]
+              - generic [ref=e612]:
+                - generic [ref=e613]: CTWA
+                - button [ref=e614] [cursor=pointer]:
+                  - img [ref=e615]
+          - generic [ref=e618]:
+            - generic [ref=e619]:
+              - img [ref=e620]
+              - text: Canais
+            - generic [ref=e624]:
+              - generic [ref=e626] [cursor=pointer]:
+                - img "WhatsApp" [ref=e627]
+                - generic [ref=e629]: WhatsApp
+              - generic "556299210609@c.us" [ref=e630]
+            - generic [ref=e633]:
+              - generic [ref=e635] [cursor=pointer]:
+                - img "WhatsApp" [ref=e636]
+                - generic [ref=e638]: WhatsApp
+              - generic "30301044633685@lid" [ref=e639]
+          - generic [ref=e640]:
+            - generic [ref=e641]:
+              - img [ref=e642]
+              - text: Endereço
+            - generic [ref=e646]: Endereço não registrado
+      - complementary [ref=e647]:
+        - button [ref=e649] [cursor=pointer]:
+          - img [ref=e650]
+        - button [ref=e654] [cursor=pointer]:
+          - img [ref=e655]
+        - button [ref=e660] [cursor=pointer]:
+          - img [ref=e661]
+        - button [ref=e664] [cursor=pointer]:
+          - img [ref=e665]
+        - button [ref=e670] [cursor=pointer]:
+          - img [ref=e671]
+  - region "Notifications (F8)":
+    - list

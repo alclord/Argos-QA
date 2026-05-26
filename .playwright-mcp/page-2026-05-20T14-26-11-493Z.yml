@@ -1,0 +1,433 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - complementary:
+          - generic:
+            - img
+          - navigation:
+            - list:
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app.poli.digital/home
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /chat
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app.poli.digital/settings/1/chatbot
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /poli-flow
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app-spa.poli.digital/marketing
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app-spa.poli.digital/shopping
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app-spa.poli.digital/relatorio
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app.poli.digital/settings/1
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /contacts
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /templates
+                  - generic:
+                    - img
+            - list:
+              - listitem:
+                - button:
+                  - img
+              - listitem:
+                - button:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: YA
+              - listitem:
+                - button:
+                  - img
+              - listitem:
+                - generic:
+                  - generic: v3.5.327
+        - main:
+          - generic:
+            - generic:
+              - navigation:
+                - generic:
+                  - link:
+                    - /url: /
+                    - text: Página inicial
+                - img
+                - generic: Templates
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - textbox:
+                        - /placeholder: Buscar templates
+                      - button:
+                        - img
+                    - generic:
+                      - generic: Status
+                      - combobox [expanded]:
+                        - generic: Todos
+                        - img
+                    - generic:
+                      - generic: Categoria
+                      - combobox:
+                        - generic: Todos
+                        - img
+                    - generic:
+                      - generic: Tipo
+                      - combobox:
+                        - generic: Todos
+                        - img
+                    - generic:
+                      - generic: Canal
+                      - combobox [disabled]:
+                        - generic: Todos
+                        - img
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - table:
+                          - rowgroup:
+                            - row:
+                              - columnheader:
+                                - generic:
+                                  - checkbox
+                              - columnheader:
+                                - button:
+                                  - text: Nome
+                                  - img
+                              - columnheader: Conteúdo
+                              - columnheader: Categoria
+                              - columnheader: Idioma
+                              - columnheader: Canal
+                              - columnheader: Status
+                              - columnheader:
+                                - button:
+                                  - text: Criado em
+                                  - img
+                              - columnheader: Ações
+                          - rowgroup:
+                            - row:
+                              - cell:
+                                - generic:
+                                  - checkbox
+                              - cell: COMO PESQUISAR
+                              - cell:
+                                - generic: TEXTO OBRIGATORIO
+                              - cell: —
+                              - cell: —
+                              - cell: —
+                              - cell:
+                                - generic: Em análise
+                              - cell: 20 de mai. de 2026
+                              - cell:
+                                - generic:
+                                  - button:
+                                    - img
+                            - row:
+                              - cell:
+                                - generic:
+                                  - checkbox
+                              - cell: "#testemaster"
+                              - cell:
+                                - generic: Oi [contact_first_name], aqui é do Centro Clínico Master. Estou passando para confirmar sua consulta de amanhã. Desde de já agradeço!
+                              - cell:
+                                - generic: Utility
+                              - cell: pt_BR
+                              - cell: Canal Principal
+                              - cell:
+                                - generic: Aprovado
+                              - cell: 19 de mai. de 2026
+                              - cell:
+                                - generic:
+                                  - button:
+                                    - img
+                            - row:
+                              - cell:
+                                - generic:
+                                  - checkbox
+                              - cell: Retorno-contrato.atençao
+                              - cell:
+                                - generic: Oi, [contact_first_name] Eu entendo que deve estar bem corrido por ai, mas preciso da sua atenção para resolvermos essa questão o quanto antes. Já validamos diversos detalhes e alinhamos todos os pontos, porem o contrato já esta em aberto a muito tempo e a diretoria esta me cobrando muito. Peço sua compreensão e colaboração, por favor. Aguardo seu retorno!
+                              - cell:
+                                - generic: Utility
+                              - cell: pt_BR
+                              - cell: Canal Principal
+                              - cell:
+                                - generic: Aprovado
+                              - cell: 19 de mai. de 2026
+                              - cell:
+                                - generic:
+                                  - button:
+                                    - img
+                            - row:
+                              - cell:
+                                - generic:
+                                  - checkbox
+                              - cell: t-retorno
+                              - cell:
+                                - generic: Olá, tudo bem? 😊 Estou retomando nosso contato referente ao atendimento que tivemos anteriormente. Passando por aqui para dar continuidade no seu suporte e verificar se ficou alguma dúvida ou pendência em relação ao processo que estávamos acompanhando. Fico à disposição para te auxiliar no que precisar!
+                              - cell:
+                                - generic: Marketing
+                              - cell: pt_BR
+                              - cell: Canal Principal
+                              - cell:
+                                - generic: Aprovado
+                              - cell: 19 de mai. de 2026
+                              - cell:
+                                - generic:
+                                  - button:
+                                    - img
+                            - row:
+                              - cell:
+                                - generic:
+                                  - checkbox
+                              - cell: "#testejd3"
+                              - cell:
+                                - generic: Olá, [contact_first_name]! Tudo bem? 😊 Você sabia que hoje já é possível centralizar atendimento, ligações e WhatsApp em uma única plataforma? Com a nossa solução de telefonia, sua equipe ganha mais agilidade no atendimento, organização nas conversas e acompanhamento completo das interações. Se fizer sentido para vocês, posso te mostrar rapidinho como funciona na prática.
+                              - cell:
+                                - generic: Marketing
+                              - cell: pt_BR
+                              - cell: Canal Principal
+                              - cell:
+                                - generic: Aprovado
+                              - cell: 18 de mai. de 2026
+                              - cell:
+                                - generic:
+                                  - button:
+                                    - img
+                            - row:
+                              - cell:
+                                - generic:
+                                  - checkbox
+                              - cell: "#chamafechamentodir-giu"
+                              - cell:
+                                - generic: Fala, [contact_first_name]. Como você tinha me confirmado a aprovação da diretoria para seguirmos, fiquei aguardando apenas esse alinhamento da integração para conseguirmos avançar. Mas como não consegui mais falar contigo, queria entender se ainda faz sentido seguirmos com o projeto ou se aconteceu algum impeditivo no meio do processo?
+                              - cell:
+                                - generic: Marketing
+                              - cell: pt_BR
+                              - cell: Canal Principal
+                              - cell:
+                                - generic: Aprovado
+                              - cell: 18 de mai. de 2026
+                              - cell:
+                                - generic:
+                                  - button:
+                                    - img
+                            - row:
+                              - cell:
+                                - generic:
+                                  - checkbox
+                              - cell: "#alinharprojeto-giu"
+                              - cell:
+                                - generic: Oiii, [contact_first_name]. Conseguiram alinhar aí internamente sobre a aprovação do projeto? Estou te perguntando porque já deixei validado aqui com a diretoria toda a parte necessária para conseguirmos iniciar a implantação de vocês e queria entender se já podemos avançar para o fechamento.
+                              - cell:
+                                - generic: Marketing
+                              - cell: pt_BR
+                              - cell: Canal Principal
+                              - cell:
+                                - generic: Aprovado
+                              - cell: 18 de mai. de 2026
+                              - cell:
+                                - generic:
+                                  - button:
+                                    - img
+                            - row:
+                              - cell:
+                                - generic:
+                                  - checkbox
+                              - cell: marcioretornocentrus
+                              - cell:
+                                - generic: "Tudo bem, Marcio? Como está? Segue link do nosso retorno às 14:00 na sexta-feira. Te aguardo na sala! Me avise se precisar de alguma coisa antes ou se quiser antecipar o retorno. Retorno - Centrus e Poli Sexta-feira, 22 de maio · 2:00 – 3:00pm Fuso horário: America/Sao_Paulo Como participar do Google Meet Link da videochamada: https://meet.google.com/sed-ivaa-brx Ou disque: ‪(BR) +55 31 3958-9671‬ PIN: ‪972 511 082‬# Outros números de telefone: https://tel.meet/sed-ivaa-brx?pin=5087947686744"
+                              - cell:
+                                - generic: Utility
+                              - cell: pt_BR
+                              - cell: Canal Principal
+                              - cell:
+                                - generic: Aprovado
+                              - cell: 18 de mai. de 2026
+                              - cell:
+                                - generic:
+                                  - button:
+                                    - img
+                            - row:
+                              - cell:
+                                - generic:
+                                  - checkbox
+                              - cell: retornoacertivomavi
+                              - cell:
+                                - generic: Tudo bem, [contact_first_name]? Como está? Semana passada eu mandei a proposta comercial e marcamos um retorno para sexta-feira, porém eu não obtive retorno. Haveria algum empecilho sobre a proposta? Estou aqui para ajudar a contornar todas essas questões e ajudar vocês do melhor jeito possível. Vamos conversar?
+                              - cell:
+                                - generic: Marketing
+                              - cell: pt_BR
+                              - cell: Canal Principal
+                              - cell:
+                                - generic: Aprovado
+                              - cell: 18 de mai. de 2026
+                              - cell:
+                                - generic:
+                                  - button:
+                                    - img
+                            - row:
+                              - cell:
+                                - generic:
+                                  - checkbox
+                              - cell: "#implantaçãopronta-giu"
+                              - cell:
+                                - generic: Oiii, [contact_first_name]. Sobre aquela parte da implantação, consegui deixar tudo alinhado aqui internamente para conseguirmos subir a operação de vocês de forma rápida. Conseguiu validar com a sócia aí também? Porque da nossa parte já deixamos preparado para avançar assim que vocês aprovarem.
+                              - cell:
+                                - generic: Utility
+                              - cell: pt_BR
+                              - cell: Canal Principal
+                              - cell:
+                                - generic: Aprovado
+                              - cell: 18 de mai. de 2026
+                              - cell:
+                                - generic:
+                                  - button:
+                                    - img
+                            - row:
+                              - cell:
+                                - generic:
+                                  - checkbox
+                              - cell: "#jeff1"
+                              - cell:
+                                - generic: Bom dia Jefferson tudo bem ? Para gente dar continuidade aqui no processo , me confirma em qual email eu posso enviar o contrato para você assinar .
+                              - cell:
+                                - generic: Marketing
+                              - cell: pt_BR
+                              - cell: Canal Principal
+                              - cell:
+                                - generic: Aprovado
+                              - cell: 18 de mai. de 2026
+                              - cell:
+                                - generic:
+                                  - button:
+                                    - img
+                            - row:
+                              - cell:
+                                - generic:
+                                  - checkbox
+                              - cell: Soporte técnico
+                              - cell:
+                                - generic: "Nuestro teléfono de Soporte es: +525596024030 Atendemos de *Lunes a Viernes* de 08:00 a 19:00 Hs (Brasil ) 🇧🇷 *Sábados* de 08:00 a 12:00 Hs (Brasil ) 🇧🇷"
+                              - cell: —
+                              - cell: —
+                              - cell: —
+                              - cell:
+                                - generic: Em análise
+                              - cell: 15 de mai. de 2026
+                              - cell:
+                                - generic:
+                                  - button:
+                                    - img
+                            - row:
+                              - cell:
+                                - generic:
+                                  - checkbox
+                              - cell: Dirección empresa
+                              - cell:
+                                - generic: "*Nuestra Dirección es:* 📍 Av. de las Américas 2889 Atendemos de 08:00 a 19:00 Te esperamos."
+                              - cell: —
+                              - cell: —
+                              - cell: —
+                              - cell:
+                                - generic: Em análise
+                              - cell: 15 de mai. de 2026
+                              - cell:
+                                - generic:
+                                  - button:
+                                    - img
+                            - row:
+                              - cell:
+                                - generic:
+                                  - checkbox
+                              - cell: Retomar contacto
+                              - cell:
+                                - generic: Hola [contact_first_name] Soy [operator_name] te estoy contactando para poder retomar nuestras comunicación. ¿Tienes un minuto?
+                              - cell:
+                                - generic: Marketing
+                              - cell: es_MX
+                              - cell: Latam - Mexico
+                              - cell:
+                                - generic: Aprovado
+                              - cell: 15 de mai. de 2026
+                              - cell:
+                                - generic:
+                                  - button:
+                                    - img
+                            - row:
+                              - cell:
+                                - generic:
+                                  - checkbox
+                              - cell: Pago Pix con mercado libre
+                              - cell:
+                                - generic: "Para realizar tu pago desde Argentina, por favor sigue estos pasos en tu aplicación de Mercado Pago: *1)* Entra a tu App de *Mercado Pago.* *2)* Selecciona la opción *Ver mais* en el menú principal. *3)* Elige la función *Pagar com Pix*. *4)* Ingresa el siguiente número: CNPJ: *30021926000124* *5)* Verifica los datos: El nombre del destinatario debe aparecer como: *Poli Solucoes Digitais LTDA* *6)* Ingresa el importe en Reales (R$) y confirma la operación. *¡Listo!* Envía el comprobante de pago a tu representante comercial para validar tu pago."
+                              - cell: —
+                              - cell: —
+                              - cell: —
+                              - cell:
+                                - generic: Em análise
+                              - cell: 15 de mai. de 2026
+                              - cell:
+                                - generic:
+                                  - button:
+                                    - img
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: Página 1 de 225
+                        - generic: "Total: 3.366 registros"
+                      - generic:
+                        - combobox
+                        - generic:
+                          - button [disabled]:
+                            - img
+                          - button [disabled]:
+                            - img
+                          - button:
+                            - img
+                          - button:
+                            - img
+    - list
+  - listbox [ref=e451]:
+    - option "Todos" [active] [selected] [ref=e452] [cursor=pointer]:
+      - img [ref=e455]
+      - generic [ref=e457]: Todos
+    - option "Em análise" [ref=e458] [cursor=pointer]:
+      - generic [ref=e460]: Em análise
+    - option "Aprovado" [ref=e461] [cursor=pointer]:
+      - generic [ref=e463]: Aprovado
+    - option "Rejeitado" [ref=e464] [cursor=pointer]:
+      - generic [ref=e466]: Rejeitado

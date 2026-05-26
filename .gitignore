@@ -1,0 +1,21 @@
+node_modules/
+
+# Credenciais e configurações sensíveis — nunca commitar
+.env
+
+# Configuração local com dados reais (tokens, UUIDs, URLs de ambiente)
+tests/config/qa-environment.local.json
+
+# Configuração local do Claude Code — pode conter tokens e caminhos pessoais
+.claude/settings.local.json
+
+# Sessões de browser salvas pelo Argos — contêm cookies e tokens de autenticação
+tests/fixtures/observer-*-storageState.json
+
+# Evidências e relatórios gerados (opcionais — adicione ao controle de versão se quiser histórico)
+tests/evidence/
+tests/reports/
+
+# Logs e memória de execuções — dados operacionais, não devem ser versionados
+tests/logs/
+tests/memory/

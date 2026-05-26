@@ -1,0 +1,70 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - button:
+              - img
+          - generic:
+            - generic:
+              - generic:
+                - img
+                - heading [level=1]: Seja bem-vindo!
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                    - generic: Email
+                    - generic:
+                      - textbox:
+                        - /placeholder: nome@exemplo.com
+                        - text: yuri.castro@poli.digital
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: Senha
+                      - generic:
+                        - generic:
+                          - textbox:
+                            - /placeholder: "#SenhaForte!"
+                            - text: Lord#8512
+                          - button:
+                            - img
+                            - generic: Show password
+                - generic:
+                  - link:
+                    - /url: /forgot-password
+                    - text: Esqueci minha senha
+                - button [disabled]:
+                  - img
+                  - text: Login
+    - list
+  - dialog [ref=e43]:
+    - generic [ref=e44]: Aviso de Débito
+    - generic [ref=e45]: Notamos que há pendência no seu pagamento, regularize para evitar suspensão da plataforma.
+    - table [ref=e47]:
+      - rowgroup [ref=e48]:
+        - row "Vencimento Valor Valor corrigido Acessar boleto" [ref=e49]:
+          - columnheader "Vencimento" [ref=e50]
+          - columnheader "Valor" [ref=e51]
+          - columnheader "Valor corrigido" [ref=e52]
+          - columnheader "Acessar boleto" [ref=e53]
+      - rowgroup [ref=e54]:
+        - row "24/05/2026 R$ 6.718,60 R$ 6.855,19" [ref=e55]:
+          - cell "24/05/2026" [ref=e56]
+          - cell "R$ 6.718,60" [ref=e57]
+          - cell "R$ 6.855,19" [ref=e58]
+          - cell [ref=e59]:
+            - button [active] [ref=e60] [cursor=pointer]:
+              - img [ref=e61]
+    - generic [ref=e65]: "Entre em contato com nosso setor financeiro:"
+    - button "Mande um e-mail ao Financeiro" [ref=e66] [cursor=pointer]:
+      - img [ref=e67]
+      - generic [ref=e70]: Mande um e-mail ao Financeiro
+    - button "Falar com o Suporte" [ref=e71] [cursor=pointer]:
+      - img [ref=e72]
+      - generic [ref=e74]: Falar com o Suporte
+    - button "Close" [ref=e75] [cursor=pointer]:
+      - img [ref=e76]
+      - generic [ref=e79]: Close

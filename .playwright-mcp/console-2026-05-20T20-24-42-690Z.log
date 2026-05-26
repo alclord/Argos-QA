@@ -1,0 +1,143 @@
+[    7123ms] [LOG] i18next: languageChanged pt @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    7124ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    7288ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    7840ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:901:429
+    at cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:903:31)
+    at Md.bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:92)
+    at Md.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at fb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Md.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Iq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at sf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:726:315
+    at UA (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:651:1)
+    at ZA.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:655:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:673:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:131)
+    at oC (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:773)
+    at rC (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:679:29)
+    at vD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:707:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65j0:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:862:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65j0h1:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:708:6
+    at r (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:70:9812)
+[    7774ms] [INFO] WebSocket: Conexão estabelecida @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    8573ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.qa.poli.digital/auth/activity:0
+[    8578ms] [WARNING] Erro ao enviar heartbeat: AxiosError: Request failed with status code 404
+    at rwe (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:15705) @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    8629ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/accounts/balance/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[    8640ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/broadcasting/auth:0
+[    8768ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/settings:0
+[    8770ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/accounts/payment-due-alert:0
+[    8773ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/users/settings/chat-sidebar:0
+[    8839ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/contacts/9bb49c4f-2c88-4a7f-84bb-38074c239b4b?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[    8848ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[    8850ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message:0
+[    8962ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/crm/index:0
+[    8964ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/chats/pinned:0
+[    8965ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.qa.poli.digital/auth/refresh-token:0
+[    8967ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at rwe (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:15705)
+    at Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2234)
+    at async zct (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:6854)
+    at async https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8196
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async h4.getPanelCredits (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:1803:551) @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    8969ms] [ERROR] AxiosError: Request failed with status code 401
+    at rwe (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:15705)
+    at Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2234)
+    at async zct (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:6854)
+    at async https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8196
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async h4.getPanelCredits (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:1803:551) @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    8974ms] [ERROR] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8163
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async t4 (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:1014:2977) @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    8975ms] [ERROR] getCrmUserToken - Error on get crm user token: Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8163
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async N8.getUserToken (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:2114:56263)
+    at async https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:2114:56554 @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    8976ms] [ERROR] error ao buscar chats Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8163
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async Cdt (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:1012:26251)
+    at async C (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:54:37549)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:54:37856) @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    9061ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/users/settings/summary:0
+[    9187ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.qa.poli.digital/auth/refresh-token:0
+[    9189ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at rwe (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:15705)
+    at Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2234)
+    at async zct (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:6854)
+    at async https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8196
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async z5t (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:2075:5607) @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    9190ms] [ERROR] AxiosError: Request failed with status code 401
+    at rwe (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:15705)
+    at Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2234)
+    at async zct (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:6854)
+    at async https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8196
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async z5t (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:2075:5607) @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    9192ms] [ERROR] [UserPreferencesService] Failed to get summary: Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8163
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async qee.getSummary (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:2118:64672)
+    at async https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:2118:65373 @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    9193ms] [ERROR] [useUserPreferences] Error: Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8163
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async qee.getSummary (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:2118:64672)
+    at async https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:2118:65373 @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    9194ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/accounts/balance/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[    9197ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.qa.poli.digital/v3/accounts/non-payment/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[    9412ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.qa.poli.digital/auth/refresh-token:0
+[    9413ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at rwe (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:15705)
+    at Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2234)
+    at async zct (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:6854)
+    at async https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8196
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async h4.getPanelCredits (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:1803:551) @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    9414ms] [ERROR] AxiosError: Request failed with status code 401
+    at rwe (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:976:15705)
+    at Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2234)
+    at async zct (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:6854)
+    at async https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8196
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async h4.getPanelCredits (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:1803:551) @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    9416ms] [ERROR] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:982:8163
+    at async Yy.request (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:978:2138)
+    at async oFt.getOverdueAccounts (https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:2130:54810)
+    at async https://spa-canary.poli.digital/assets/index-DRyWDDj0.js:2136:197433 @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    9536ms] [INFO] WebSocket: Conexão finalizada @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    9630ms] [WARNING] Amplitude Logger [Warn]: TypeError: Failed to fetch (api-sr.amplitude.com) @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[   10836ms] [LOG] i18next: languageChanged pt @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[   10836ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[   11012ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[   11104ms] [LOG] i18next: languageChanged pt @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[   11390ms] [INFO] WebSocket: Conexão estabelecida @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[   23292ms] [LOG] i18next: languageChanged pt @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[   26595ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[   27486ms] Identifier 'TCRMEmbed' has already been declared

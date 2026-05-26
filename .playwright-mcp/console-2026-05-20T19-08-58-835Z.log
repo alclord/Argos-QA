@@ -1,0 +1,138 @@
+[    3784ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:101
+[    3787ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:101
+[    4040ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:76
+[    4157ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[    4440ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[    6855ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:901:429
+    at cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:903:31)
+    at Md.bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:92)
+    at Md.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at fb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Md.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Iq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at sf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:726:315
+    at UA (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:651:1)
+    at ZA.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:655:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:673:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:131)
+    at oC (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:773)
+    at rC (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:679:29)
+    at vD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:707:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65j0:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:862:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65j0:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:708:6
+    at r (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:70:9812)
+[   33077ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[   38292ms] Identifier 'TCRMEmbed' has already been declared
+[   81861ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/299515172_168693502342982_3946085247964697759_n.jpg?ccb=11-4&oh=01_Q5Aa3gGBgrifWav-kjmDcqLKb3YBQcUqDZJFOqntgw7yh7H5Aw&oe=69909D30&_nc_sid=5e03e0&_nc_cat=103:0
+[  149025ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516821226_1034137662043294_8412083315673682112_n.jpg?ccb=11-4&oh=01_Q5Aa3wGV0w2YmnQ6TBMH0x-0rxT9pjZgTvTyDdDyH-6A-5wg7w&oe=69B819C9&_nc_sid=5e03e0&_nc_cat=109:0
+[  239196ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/299515172_168693502342982_3946085247964697759_n.jpg?ccb=11-4&oh=01_Q5Aa3gGBgrifWav-kjmDcqLKb3YBQcUqDZJFOqntgw7yh7H5Aw&oe=69909D30&_nc_sid=5e03e0&_nc_cat=103:0
+[  522609ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/389521425_964939741837092_2242383312396983181_n.jpg?ccb=11-4&oh=01_Q5Aa3gH0Ns4woclJg0wnkzSD4D0FXGxfux73VFrdwcent-oVOA&oe=698740FB&_nc_sid=5e03e0&_nc_cat=108:0
+[  570049ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/299515172_168693502342982_3946085247964697759_n.jpg?ccb=11-4&oh=01_Q5Aa3gGBgrifWav-kjmDcqLKb3YBQcUqDZJFOqntgw7yh7H5Aw&oe=69909D30&_nc_sid=5e03e0&_nc_cat=103:0
+[  602857ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/299515172_168693502342982_3946085247964697759_n.jpg?ccb=11-4&oh=01_Q5Aa3gGBgrifWav-kjmDcqLKb3YBQcUqDZJFOqntgw7yh7H5Aw&oe=69909D30&_nc_sid=5e03e0&_nc_cat=103:0
+[  609397ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516821226_1034137662043294_8412083315673682112_n.jpg?ccb=11-4&oh=01_Q5Aa3wGV0w2YmnQ6TBMH0x-0rxT9pjZgTvTyDdDyH-6A-5wg7w&oe=69B819C9&_nc_sid=5e03e0&_nc_cat=109:0
+[  747989ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[  754760ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/299515172_168693502342982_3946085247964697759_n.jpg?ccb=11-4&oh=01_Q5Aa3gGBgrifWav-kjmDcqLKb3YBQcUqDZJFOqntgw7yh7H5Aw&oe=69909D30&_nc_sid=5e03e0&_nc_cat=103:0
+[  860782ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/299515172_168693502342982_3946085247964697759_n.jpg?ccb=11-4&oh=01_Q5Aa3gGBgrifWav-kjmDcqLKb3YBQcUqDZJFOqntgw7yh7H5Aw&oe=69909D30&_nc_sid=5e03e0&_nc_cat=103:0
+[ 1165997ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/389521425_964939741837092_2242383312396983181_n.jpg?ccb=11-4&oh=01_Q5Aa3gH0Ns4woclJg0wnkzSD4D0FXGxfux73VFrdwcent-oVOA&oe=698740FB&_nc_sid=5e03e0&_nc_cat=108:0
+[ 1424520ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[ 1515236ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[ 1534880ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[ 1546603ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:54:35513)
+    at hne.cancel (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:54:39777)
+    at hne.fetch (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-hoijn-GF.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-hoijn-GF.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:54:34126)
+    at xne.refetchQueries (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-hoijn-GF.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:54:34126)
+    at xne.invalidateQueries (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:4889)
+    at He.emit (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:963:17237)
+    at He.handleEvent (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:963:26124)
+    at https://spa-canary.poli.digital/assets/index-hoijn-GF.js:964:16006
+    at Kn.emit (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:963:17237)
+    at message (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:963:34603)
+    at la.emit (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:963:17237)
+    at message (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:963:23778)
+    at aa.emit (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:963:17237)
+    at aa.onMessage (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:963:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:963:19009)
+    at zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2234)
+    at async Edt (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1002:26256)
+    at async C (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:54:37851) @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[ 1550713ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[ 1551331ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[ 1557869ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[ 1559085ms] Identifier 'TCRMEmbed' has already been declared
+[ 1603015ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/299515172_168693502342982_3946085247964697759_n.jpg?ccb=11-4&oh=01_Q5Aa3gGBgrifWav-kjmDcqLKb3YBQcUqDZJFOqntgw7yh7H5Aw&oe=69909D30&_nc_sid=5e03e0&_nc_cat=103:0
+[ 1647921ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/299515172_168693502342982_3946085247964697759_n.jpg?ccb=11-4&oh=01_Q5Aa3gGBgrifWav-kjmDcqLKb3YBQcUqDZJFOqntgw7yh7H5Aw&oe=69909D30&_nc_sid=5e03e0&_nc_cat=103:0
+[ 2116028ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[ 2129062ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[ 2133473ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[ 2135977ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/2f5aa716-fb87-11f0-860b-06c1973a4013/read:0
+[ 2136605ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/861370a4-53ce-11f1-9d75-06799772b1cd/unread:0
+[ 2178135ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/546551196_810687678111403_1972125146864179804_n.jpg?ccb=11-4&oh=01_Q5Aa2gHtS_p3EXNKTxy_u6QHwC1N-v-uBkKQALJGbCFElJBMIA&oe=68EBD2D0&_nc_sid=5e03e0&_nc_cat=106:0
+[ 2580002ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[ 3174319ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[ 3693890ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[ 3791003ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[ 3812724ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[ 4243826ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0d0b774e-52dc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 4244505ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0d0b774e-52dc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 4244567ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0d0b774e-52dc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 4244737ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0d0b774e-52dc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 4244910ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0d0b774e-52dc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 4244919ms] [ERROR] Erro ao enriquecer contato 0d0b774e-52dc-11f1-9d75-06799772b1cd: AxiosError: Request failed with status code 401
+    at fwe (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:15705)
+    at zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2234)
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async ggt (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1078:8435)
+    at async u (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1078:9637) @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[ 4245086ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0d0b774e-52dc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 4245248ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0d0b774e-52dc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 4245275ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0d0b774e-52dc-11f1-9d75-06799772b1cd/read:0
+[ 4245415ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0d0b774e-52dc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 4245603ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0d0b774e-52dc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 4245772ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0d0b774e-52dc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 4245939ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0d0b774e-52dc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 4246120ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0d0b774e-52dc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 4246299ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0d0b774e-52dc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 4246467ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0d0b774e-52dc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 4246634ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0d0b774e-52dc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 4246809ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0d0b774e-52dc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 4247135ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0d0b774e-52dc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 4247153ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0d0b774e-52dc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 4247296ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e2a1038a-df47-11f0-85da-062ccf12487f/read:0
+[ 4247346ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0d0b774e-52dc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 4247461ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:3049)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[ 4247704ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0d0b774e-52dc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 4249532ms] [LOG] i18next: languageChanged pt @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[ 4249534ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[ 4249704ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[ 4249805ms] [LOG] i18next: languageChanged pt @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[ 4250179ms] [INFO] WebSocket: Conexão estabelecida @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0

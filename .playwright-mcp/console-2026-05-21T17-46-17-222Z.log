@@ -1,0 +1,50 @@
+[     462ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:101
+[     462ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:101
+[     563ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:76
+[     616ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[     824ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/non-payment/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[     960ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.qa.poli.digital/auth/activity:0
+[     962ms] [WARNING] Erro ao enviar heartbeat: AxiosError: Request failed with status code 404
+    at dwe (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:966:10177)
+    at XMLHttpRequest.w (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:966:15705) @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[     990ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    1165ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.qa.poli.digital/auth/refresh-token:0
+[    1167ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at dwe (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:966:10177)
+    at XMLHttpRequest.w (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:966:15705)
+    at Uy.request (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:968:2234)
+    at async Kct (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:972:6854)
+    at async https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:972:8196
+    at async Uy.request (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:968:2138)
+    at async vFt.getOverdueAccounts (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:2120:54805)
+    at async https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:2126:197468 @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    1168ms] [ERROR] AxiosError: Request failed with status code 401
+    at dwe (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:966:10177)
+    at XMLHttpRequest.w (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:966:15705)
+    at Uy.request (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:968:2234)
+    at async Kct (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:972:6854)
+    at async https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:972:8196
+    at async Uy.request (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:968:2138)
+    at async vFt.getOverdueAccounts (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:2120:54805)
+    at async https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:2126:197468 @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    1169ms] [ERROR] AxiosError: Request failed with status code 401
+    at dwe (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:966:10177)
+    at XMLHttpRequest.w (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:966:15705)
+    at Uy.request (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:968:2234)
+    at async Kct (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:972:6854)
+    at async https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:972:8196
+    at async Uy.request (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:968:2138)
+    at async vFt.getOverdueAccounts (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:2120:54805)
+    at async https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:2126:197468 @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    1509ms] [INFO] WebSocket: Conexão finalizada @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    1562ms] [ERROR] Amplitude Logger [Error]: Failed to fetch (api2.amplitude.com) @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    1564ms] [WARNING] Amplitude Logger [Warn]: {code: 0, error: "Status 'failed' provided for 2 events"} @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    2120ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:101
+[    2121ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:101
+[    2177ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:76
+[    2207ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    2599ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    9721ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[ 3517899ms] Identifier 'TCRMEmbed' has already been declared
+[ 3518295ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/crm/index:0
+[ 3518306ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/non-payment/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0

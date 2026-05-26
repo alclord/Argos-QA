@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:chat": "cypress run --spec cypress/e2e/chat/envio-mensagem.cy.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-code": "^2.1.144"
+  },
+  "devDependencies": {
+    "cypress": "^13.17.0",
+    "dotenv": "^17.4.2"
+  }
+}

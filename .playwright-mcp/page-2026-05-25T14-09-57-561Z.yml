@@ -1,0 +1,336 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - complementary:
+          - generic:
+            - img
+          - navigation:
+            - list:
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=d552244dfb982b4b6e26830f354b8510aa3aeaa0&toPath=https://app.poli.digital/home
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /chat
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=d552244dfb982b4b6e26830f354b8510aa3aeaa0&toPath=https://app.poli.digital/settings/1/chatbot
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /poli-flow
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=d552244dfb982b4b6e26830f354b8510aa3aeaa0&toPath=https://app-spa.poli.digital/marketing
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=d552244dfb982b4b6e26830f354b8510aa3aeaa0&toPath=https://app-spa.poli.digital/shopping
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=d552244dfb982b4b6e26830f354b8510aa3aeaa0&toPath=https://app-spa.poli.digital/relatorio
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=d552244dfb982b4b6e26830f354b8510aa3aeaa0&toPath=https://app.poli.digital/settings/1
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /contacts
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /templates
+                  - generic:
+                    - img
+            - list:
+              - listitem:
+                - button:
+                  - img
+              - listitem:
+                - button:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: YA
+              - listitem:
+                - button:
+                  - img
+              - listitem:
+                - generic:
+                  - generic: 3.5.332
+        - main:
+          - generic:
+            - generic:
+              - generic:
+                - navigation:
+                  - generic:
+                    - link:
+                      - /url: /
+                      - text: Página inicial
+                  - img
+                  - generic: Mensagens agendadas
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                          - generic:
+                            - paragraph: Total
+                            - paragraph: "1388"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                          - generic:
+                            - paragraph: Agendadas
+                            - paragraph: "20"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                          - generic:
+                            - paragraph: Enviadas
+                            - paragraph: "1250"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                          - generic:
+                            - paragraph: Canceladas
+                            - paragraph: "51"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - table:
+                                    - rowgroup:
+                                      - row:
+                                        - columnheader:
+                                          - generic:
+                                            - checkbox [checked=mixed]:
+                                              - generic:
+                                                - img
+                                        - columnheader:
+                                          - button:
+                                            - text: Contato
+                                            - img
+                                        - columnheader: Canal
+                                        - columnheader: Mensagem
+                                        - columnheader:
+                                          - button:
+                                            - text: Agendado para
+                                            - img
+                                        - columnheader: Responsável
+                                        - columnheader: Status
+                                        - columnheader: Ações
+                                    - rowgroup:
+                                      - row:
+                                        - cell
+                                        - cell: Tifany
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Canal Principal
+                                        - cell:
+                                          - generic: "[contact_first_name] Como vai? Muitos negócios perdem clientes porque não conseguem responder rápido no WhatsApp, Instagram e Facebook. E se você tivesse tudo centralizado em um só lugar? Assim, nenhum cliente ficaria sem resposta. Posso te mostrar como funciona de forma simples?"
+                                        - cell: 29/05/26 05:00
+                                        - cell: Tifany
+                                        - cell:
+                                          - generic: Cancelada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Esmeraldo - Siena Escola de Negócios
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Canal Principal
+                                        - cell:
+                                          - generic: Olá Esmeraldo! Tudo bem? Combinamos de conversar hoje para fecharmos oficialmente nossa parceria e iniciarmos o processo de implantação da plataforma. Estou pronto para dar o start — só preciso do seu ok para seguirmos! Está tudo certo para avançarmos?
+                                        - cell: 01/06/26 06:30
+                                        - cell: Aline Paiva
+                                        - cell:
+                                          - generic: Cancelada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell:
+                                          - generic:
+                                            - checkbox
+                                        - cell: Francielly Bazanella | Gas Progresso
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Canal Principal
+                                        - cell:
+                                          - generic: Olá, [contact_first_name], tudo bem? Conforme conversamos, estou retornando o contato para darmos continuidade. Podemos seguir com o atendimento?
+                                        - cell: 01/06/26 07:05
+                                        - cell: Erika Lustosa
+                                        - cell:
+                                          - generic: Agendada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell:
+                                          - generic:
+                                            - checkbox [checked]:
+                                              - generic:
+                                                - img
+                                        - cell: Mauro
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Canal Principal
+                                        - cell:
+                                          - generic: Olá, [contact_first_name], tudo bem? Conforme conversamos, estou retornando o contato para darmos continuidade. Podemos seguir com o atendimento?
+                                        - cell: 06/06/26 05:00
+                                        - cell: Laura Mathias
+                                        - cell:
+                                          - generic: Agendada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell:
+                                          - generic:
+                                            - checkbox
+                                        - cell: Mauro
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Canal Principal
+                                        - cell:
+                                          - generic: Olá [contact_first_name], recebemos seu pré-agendamento para uma reunião aqui na Poli Digital. *Para poder te enviar o link da reunião preciso entender alguns pontos rápidos com você.* Podemos prosseguir com o atendimento e confirmar esta reunião?
+                                        - cell: 10/06/26 06:00
+                                        - cell: Laura Mathias
+                                        - cell:
+                                          - generic: Agendada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell:
+                                          - generic:
+                                            - checkbox
+                                        - cell: Sirnoel Quaresma
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Canal Principal
+                                        - cell:
+                                          - generic: "[operator_name] Oi [contact_first_name]. Na nossa última conversa feita, combinamos um retorno para hoje sobre a avaliação da nossa solução. Poderia nos confirmar o status? Caso precise de algum esclarecimento adicional, seguimos à disposição."
+                                        - cell: 15/06/26 06:00
+                                        - cell: Aline Paiva
+                                        - cell:
+                                          - generic: Agendada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell:
+                                          - generic:
+                                            - checkbox
+                                        - cell: Yanne
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Canal Principal
+                                        - cell:
+                                          - generic: Olá Yanne, tudo bem? Estou passando para dizer que já deixei tudo preparado para a nossa demonstração de hoje, e reforcei todas as informações com o consultor responsável, de acordo com o que conversamos! Ele estará te aguardando no horário que agendamos, ok?
+                                        - cell: 19/11/26 05:00
+                                        - cell: Julliana Reis
+                                        - cell:
+                                          - generic: Agendada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell:
+                                          - generic:
+                                            - checkbox
+                                        - cell: Andressa Lima
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Testes - Poli - Comercial
+                                        - cell:
+                                          - generic: jujujujjuj
+                                        - cell: 12/12/26 06:00
+                                        - cell: Matheus Miranda
+                                        - cell:
+                                          - generic: Agendada
+                                        - cell:
+                                          - button:
+                                            - img
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic: Página 93 de 93
+                                  - generic: "Total: 1.388 registros"
+                                - generic:
+                                  - combobox
+                                  - generic:
+                                    - button:
+                                      - img
+                                    - button:
+                                      - img
+                                    - button [disabled]:
+                                      - img
+                                    - button [disabled]:
+                                      - img
+                          - generic:
+                            - generic: 1 item selecionado
+                            - button [expanded]:
+                              - text: Ações em massa
+                              - img
+                            - button:
+                              - img
+    - list
+  - menu "Ações em massa" [active] [ref=e2144]:
+    - menuitem "Cancelar selecionados" [ref=e2145] [cursor=pointer]:
+      - generic [ref=e2147]:
+        - img [ref=e2149]
+        - text: Cancelar selecionados
