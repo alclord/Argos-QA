@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mapa de Fluxos Críticos — Poli Digital</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #c9d1d9; min-height: 100vh; padding: 32px 24px; }
+
+  .header { margin-bottom: 8px; }
+  .header h1 { font-size: 1.6rem; font-weight: 700; color: #f0f6fc; letter-spacing: -0.3px; }
+  .header h1 span { color: #4f8ef7; }
+  .header p { font-size: 0.875rem; color: #8b949e; margin-top: 6px; }
+  .meta { font-size: 0.78rem; color: #6e7681; margin-top: 4px; }
+
+  .divider { border: none; border-top: 1px solid #21262d; margin: 24px 0; }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin-bottom: 32px; }
+  .stat-card { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 20px; text-align: center; }
+  .stat-card .num { font-size: 2.4rem; font-weight: 700; line-height: 1; margin-bottom: 6px; }
+  .stat-card .label { font-size: 0.78rem; color: #6e7681; text-transform: uppercase; letter-spacing: .6px; }
+  .num-blue { color: #4f8ef7; }
+  .num-red { color: #ef4444; }
+  .num-orange { color: #f97316; }
+  .num-green { color: #22c55e; }
+  .num-yellow { color: #eab308; }
+
+  .section { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 24px; margin-bottom: 24px; }
+  .section-title { font-size: 0.82rem; font-weight: 600; color: #8b949e; text-transform: uppercase; letter-spacing: .7px; margin-bottom: 20px; display: flex; align-items: center; gap: 8px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+  th { text-align: left; color: #6e7681; font-weight: 500; padding: 0 10px 12px; font-size: 0.72rem; text-transform: uppercase; letter-spacing: .5px; border-bottom: 1px solid #21262d; }
+  td { padding: 12px 10px; border-bottom: 1px solid #1c2128; color: #c9d1d9; vertical-align: middle; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #1a1f27; }
+
+  .badge { display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px; border-radius: 99px; font-size: 0.72rem; font-weight: 600; white-space: nowrap; }
+  .badge-red    { background: #3d0505; color: #f87171; border: 1px solid #7f1d1d; }
+  .badge-orange { background: #2d1b06; color: #fb923c; border: 1px solid #7c2d12; }
+  .badge-yellow { background: #2a2006; color: #facc15; border: 1px solid #713f12; }
+  .badge-green  { background: #062010; color: #4ade80; border: 1px solid #14532d; }
+  .badge-blue   { background: #0c1e3d; color: #60a5fa; border: 1px solid #1e3a5f; }
+  .dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+  .dot-red { background: #ef4444; }
+  .dot-orange { background: #f97316; }
+  .dot-yellow { background: #eab308; }
+  .dot-green { background: #22c55e; }
+
+  .flow-name { font-weight: 600; color: #e6edf3; font-size: 0.9rem; }
+  .flow-sub { font-size: 0.78rem; color: #6e7681; margin-top: 3px; }
+  .services { display: flex; flex-wrap: wrap; gap: 5px; }
+  .svc { background: #1c2128; color: #79c0ff; padding: 2px 8px; border-radius: 5px; font-size: 0.72rem; font-family: monospace; }
+  .svc-red { background: #2a0a0a; color: #fca5a5; }
+
+  .spof-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+  .spof-item { background: #1c2128; border: 1px solid #21262d; border-radius: 8px; padding: 14px 16px; display: flex; gap: 12px; align-items: flex-start; }
+  .spof-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 1px; }
+  .spof-name { font-size: 0.875rem; font-weight: 600; color: #f0f6fc; font-family: monospace; }
+  .spof-ns { font-size: 0.72rem; color: #6e7681; margin-top: 2px; }
+  .spof-desc { font-size: 0.8rem; color: #8b949e; margin-top: 5px; line-height: 1.5; }
+  .spof-rep { display: inline-block; background: #3d0505; color: #f87171; border: 1px solid #7f1d1d; border-radius: 99px; font-size: 0.7rem; font-weight: 700; padding: 1px 8px; margin-top: 6px; }
+
+  .progress-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .progress-label { width: 200px; font-size: 0.82rem; color: #c9d1d9; flex-shrink: 0; }
+  .progress-bar-bg { flex: 1; background: #21262d; border-radius: 99px; height: 10px; overflow: hidden; }
+  .progress-bar-fill { height: 100%; border-radius: 99px; }
+  .progress-pct { width: 42px; text-align: right; font-size: 0.78rem; color: #6e7681; flex-shrink: 0; }
+
+  .callout { display: flex; gap: 12px; background: #0c1e3d; border: 1px solid #1e3a5f; border-radius: 8px; padding: 14px 16px; margin-top: 16px; }
+  .callout-icon { font-size: 1.1rem; flex-shrink: 0; }
+  .callout-text { font-size: 0.85rem; color: #93c5fd; line-height: 1.6; }
+  .callout-text strong { color: #bfdbfe; }
+
+  .callout-warn { background: #2a1500; border-color: #7c2d12; }
+  .callout-warn .callout-text { color: #fdba74; }
+  .callout-warn .callout-text strong { color: #fed7aa; }
+
+  .legend { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 16px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 0.78rem; color: #8b949e; }
+
+  .footer { text-align: center; font-size: 0.75rem; color: #6e7681; margin-top: 32px; }
+
+  @media (max-width: 768px) {
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .progress-label { width: 140px; }
+  }
+
+  /* Tabs */
+  .tab-nav { display: flex; gap: 4px; margin-bottom: 24px; flex-wrap: wrap; }
+  .tab-btn { background: #161b22; border: 1px solid #21262d; color: #8b949e; padding: 8px 22px; border-radius: 8px; cursor: pointer; font-size: 0.82rem; font-weight: 500; transition: all .15s; }
+  .tab-btn:hover { border-color: #4f8ef7; color: #c9d1d9; }
+  .tab-btn.active { background: #0c1e3d; border-color: #4f8ef7; color: #60a5fa; font-weight: 600; }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  /* Dependency view */
+  .dep-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 16px; }
+  .dep-card { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 18px 20px; }
+  .dep-card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #21262d; }
+  .dep-flow-num { background: #0c1e3d; color: #60a5fa; border: 1px solid #1e3a5f; border-radius: 6px; padding: 2px 9px; font-size: 0.72rem; font-weight: 700; font-family: monospace; flex-shrink: 0; }
+  .dep-flow-name { font-size: 0.88rem; font-weight: 600; color: #e6edf3; }
+  .dep-layer { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 7px; }
+  .dep-layer-label { width: 92px; font-size: 0.68rem; color: #6e7681; text-transform: uppercase; letter-spacing: .4px; padding-top: 4px; flex-shrink: 0; font-weight: 600; }
+  .dep-svcs { display: flex; flex-wrap: wrap; gap: 5px; }
+  .dep-svc { display: inline-flex; align-items: center; gap: 4px; padding: 3px 9px; border-radius: 5px; font-size: 0.71rem; font-family: monospace; white-space: nowrap; }
+  .dep-svc-normal { background: #1c2128; color: #79c0ff; border: 1px solid #2d3748; }
+  .dep-svc-spof { background: #3d0505; color: #f87171; border: 1px solid #7f1d1d; }
+  .dep-svc-spof::before { content: "⚠ "; font-size: .65rem; }
+  .dep-svc-ext { background: #1a1f27; color: #9ca3af; border: 1px solid #374151; }
+  .dep-svc-data { background: #0f1b2d; color: #93c5fd; border: 1px solid #1d3557; }
+
+  /* Shared matrix */
+  .shared-matrix { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+  .shared-matrix th { text-align: center; padding: 6px 6px 10px; font-size: .7rem; color: #6e7681; font-weight: 500; border-bottom: 1px solid #21262d; }
+  .shared-matrix th.col-svc { text-align: left; width: 190px; }
+  .shared-matrix td { text-align: center; padding: 8px 6px; border-bottom: 1px solid #1c2128; vertical-align: middle; }
+  .shared-matrix td.col-svc { text-align: left; font-family: monospace; font-size: .78rem; color: #c9d1d9; padding-left: 2px; }
+  .shared-matrix tr:last-child td { border-bottom: none; }
+  .dot-yes { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #4f8ef7; }
+  .dot-spof { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #ef4444; }
+  .dot-no { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #21262d; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Mapa de Fluxos Críticos — <span>Poli Digital</span></h1>
+  <p>Identificação, priorização e plano de cobertura de testes para os fluxos que, se pararem, deixam os clientes sem operar.</p>
+  <div class="meta">Gerado em 2026-04-30 · <strong style="color:#4f8ef7">Serviços críticos adicionados em 2026-05-12</strong> · QA: yuri.castro@poli.digital · Dados: Jira (30d) + service map K8s + Cypress repo · <strong style="color:#f97316">Estratégia: produção com pod isolado</strong></div>
+</div>
+
+<hr class="divider">
+
+<!-- Stats -->
+<div class="stats">
+  <div class="stat-card">
+    <div class="num num-blue">7</div>
+    <div class="label">Fluxos críticos</div>
+  </div>
+  <div class="stat-card">
+    <div class="num num-red">120+</div>
+    <div class="label">Issues abertos (30d)</div>
+  </div>
+  <div class="stat-card">
+    <div class="num num-orange">12</div>
+    <div class="label">Prioridade Highest</div>
+  </div>
+  <div class="stat-card">
+    <div class="num num-red">8</div>
+    <div class="label">SPOFs (1 replica)</div>
+  </div>
+  <div class="stat-card">
+    <div class="num num-yellow">79</div>
+    <div class="label">Cenários de teste</div>
+  </div>
+  <div class="stat-card">
+    <div class="num num-yellow">~10%</div>
+    <div class="label">Cobertura atual de fluxo</div>
+  </div>
+  <div class="stat-card">
+    <div class="num num-blue">33</div>
+    <div class="label">Testes Cypress ativos</div>
+  </div>
+  <div class="stat-card">
+    <div class="num num-orange">2</div>
+    <div class="label">Testes skipped</div>
+  </div>
+</div>
+
+<!-- Tab Nav -->
+<div class="tab-nav">
+  <button class="tab-btn active" onclick="switchTab('executivo',this)">Visão Executiva</button>
+  <button class="tab-btn" onclick="switchTab('dependencias',this)">Dependências por Fluxo</button>
+  <button class="tab-btn" onclick="switchTab('servicos',this)">Serviços Críticos</button>
+</div>
+
+<div id="tab-executivo" class="tab-content active">
+
+<!-- Flows Table -->
+<div class="section">
+  <div class="section-title">
+    <span style="color:#ef4444">●</span> Fluxos críticos — visão executiva
+  </div>
+
+  <div class="legend">
+    <div class="legend-item"><span class="dot dot-red"></span> Crítico — parada total de operação</div>
+    <div class="legend-item"><span class="dot dot-orange"></span> Alto — impacto severo, múltiplos clientes</div>
+    <div class="legend-item"><span class="dot dot-yellow"></span> Médio — impacto parcial</div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Fluxo</th>
+        <th>Impacto se parar</th>
+        <th>Issues abertos</th>
+        <th>Highest</th>
+        <th>SPOFs</th>
+        <th>Risco</th>
+        <th>Test Plan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="color:#6e7681;font-size:.8rem">01</td>
+        <td>
+          <div class="flow-name">Recebimento de mensagem</div>
+          <div class="flow-sub">WhatsApp / WABA → atendente</div>
+        </td>
+        <td style="font-size:.82rem;color:#8b949e">Atendentes não veem mensagens dos clientes</td>
+        <td><span class="badge badge-red">21</span></td>
+        <td><span style="color:#6e7681;font-size:.82rem">—</span></td>
+        <td>
+          <div class="services">
+            <span class="svc svc-red">RabbitMQ×1</span>
+            <span class="svc svc-red">dispatch-websocket×1</span>
+            <span class="svc svc-red">dispatch-queue×1</span>
+          </div>
+        </td>
+        <td><span class="badge badge-red"><span class="dot dot-red"></span>Crítico</span></td>
+        <td><span class="badge badge-blue">flows/01</span></td>
+      </tr>
+      <tr>
+        <td style="color:#6e7681;font-size:.8rem">02</td>
+        <td>
+          <div class="flow-name">Distribuição de chats</div>
+          <div class="flow-sub">Roteamento para atendente correto</div>
+        </td>
+        <td style="font-size:.82rem;color:#8b949e">Chats não chegam para atendentes, fila acumula</td>
+        <td><span class="badge badge-red">19</span></td>
+        <td><span class="badge badge-red">3</span></td>
+        <td>
+          <div class="services">
+            <span class="svc svc-red">dispatch-websocket×1</span>
+            <span class="svc svc-red">dispatch-queue×1</span>
+            <span class="svc svc-red">dispatch-cron×1</span>
+          </div>
+        </td>
+        <td><span class="badge badge-red"><span class="dot dot-red"></span>Crítico</span></td>
+        <td><span class="badge badge-blue">flows/02</span></td>
+      </tr>
+      <tr>
+        <td style="color:#6e7681;font-size:.8rem">03</td>
+        <td>
+          <div class="flow-name">Envio de mensagem</div>
+          <div class="flow-sub">Atendente → cliente via WhatsApp/WABA</div>
+        </td>
+        <td style="font-size:.82rem;color:#8b949e">Atendentes não conseguem responder clientes</td>
+        <td><span class="badge badge-orange">15</span></td>
+        <td><span class="badge badge-red">3</span></td>
+        <td>
+          <div class="services">
+            <span class="svc svc-red">RabbitMQ×1</span>
+          </div>
+        </td>
+        <td><span class="badge badge-red"><span class="dot dot-red"></span>Crítico</span></td>
+        <td><span class="badge badge-blue">flows/03</span></td>
+      </tr>
+      <tr>
+        <td style="color:#6e7681;font-size:.8rem">04</td>
+        <td>
+          <div class="flow-name">Login e autenticação</div>
+          <div class="flow-sub">Acesso à plataforma</div>
+        </td>
+        <td style="font-size:.82rem;color:#8b949e">Nenhum usuário consegue acessar a plataforma</td>
+        <td><span class="badge badge-orange">18</span></td>
+        <td><span class="badge badge-red">3</span></td>
+        <td>
+          <div class="services">
+            <span class="svc svc-red">soketi-omni×1</span>
+            <span class="svc svc-red">omnispa×1</span>
+          </div>
+        </td>
+        <td><span class="badge badge-red"><span class="dot dot-red"></span>Crítico</span></td>
+        <td><span class="badge badge-blue">flows/04</span></td>
+      </tr>
+      <tr>
+        <td style="color:#6e7681;font-size:.8rem">05</td>
+        <td>
+          <div class="flow-name">Bot e Automação</div>
+          <div class="flow-sub">Primeiro contato → resposta automática → handoff humano</div>
+        </td>
+        <td style="font-size:.82rem;color:#8b949e">Contatos ficam sem resposta; chats nunca chegam aos atendentes</td>
+        <td><span class="badge badge-red">—</span></td>
+        <td><span style="color:#6e7681;font-size:.82rem">—</span></td>
+        <td>
+          <div class="services">
+            <span class="svc">bot-engine</span>
+            <span class="svc svc-red">dispatch-websocket×1</span>
+          </div>
+        </td>
+        <td><span class="badge badge-red"><span class="dot dot-red"></span>Crítico</span></td>
+        <td><span class="badge badge-blue">flows/07</span></td>
+      </tr>
+      <tr>
+        <td style="color:#6e7681;font-size:.8rem">06</td>
+        <td>
+          <div class="flow-name">Disparador / Bulk Sending</div>
+          <div class="flow-sub">Campanhas → envio massivo de templates</div>
+        </td>
+        <td style="font-size:.82rem;color:#8b949e">Toda operação proativa do cliente travada — campanhas não saem</td>
+        <td><span class="badge badge-red">—</span></td>
+        <td><span style="color:#6e7681;font-size:.82rem">—</span></td>
+        <td>
+          <div class="services">
+            <span class="svc svc-red">RabbitMQ×1</span>
+          </div>
+        </td>
+        <td><span class="badge badge-red"><span class="dot dot-red"></span>Crítico</span></td>
+        <td><span class="badge badge-blue">flows/08</span></td>
+      </tr>
+      <tr>
+        <td style="color:#6e7681;font-size:.8rem">07</td>
+        <td>
+          <div class="flow-name">Reconexão de Canal</div>
+          <div class="flow-sub">Z-API / WABA → detecção de queda → reconexão</div>
+        </td>
+        <td style="font-size:.82rem;color:#8b949e">Inbound e outbound mortos simultaneamente — cliente sem comunicação</td>
+        <td><span class="badge badge-red">—</span></td>
+        <td><span style="color:#6e7681;font-size:.82rem">—</span></td>
+        <td>
+          <div class="services">
+            <span class="svc">Z-API</span>
+            <span class="svc">WABA</span>
+          </div>
+        </td>
+        <td><span class="badge badge-red"><span class="dot dot-red"></span>Crítico</span></td>
+        <td><span class="badge badge-blue">flows/09</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- SPOFs -->
+<div class="section">
+  <div class="section-title">
+    <span style="color:#f97316">▲</span> Single Points of Failure — produção (Kubernetes)
+  </div>
+
+  <div class="callout callout-warn" style="margin-bottom:20px">
+    <div class="callout-icon">⚠️</div>
+    <div class="callout-text">
+      Todos os serviços abaixo têm <strong>exatamente 1 replica</strong> em produção — sem failover automático. Uma queda derruba o fluxo inteiro para <strong>todos os clientes simultaneamente</strong>, sem recuperação automática até o Kubernetes reiniciar o pod (avg: 30–90s).
+    </div>
+  </div>
+
+  <div class="spof-grid">
+    <div class="spof-item">
+      <div class="spof-icon">🔴</div>
+      <div>
+        <div class="spof-name">dispatch-websocket</div>
+        <div class="spof-ns">namespace: poli-chat-system · dispatch:v0.0.11</div>
+        <div class="spof-desc">WebSocket de distribuição em tempo real (polichat-spa). Se cair, <strong>nenhum chat novo</strong> chega para os atendentes na interface legada.</div>
+        <span class="spof-rep">1 replica</span>
+      </div>
+    </div>
+    <div class="spof-item">
+      <div class="spof-icon">🔴</div>
+      <div>
+        <div class="spof-name">dispatch-queue-service</div>
+        <div class="spof-ns">namespace: poli-chat-distribution-system · dispatch:v0.0.36</div>
+        <div class="spof-desc">Consumer BullMQ que alimenta o dispatch-websocket. Se cair, eventos de distribuição param de ser processados mesmo que as mensagens cheguem.</div>
+        <span class="spof-rep">1 replica</span>
+      </div>
+    </div>
+    <div class="spof-item">
+      <div class="spof-icon">🔴</div>
+      <div>
+        <div class="spof-name">rabbitmq</div>
+        <div class="spof-ns">namespace: rabbitmq · bitnami/rabbitmq:3.10.8</div>
+        <div class="spof-desc">Broker principal de mensagens Z-API. Se cair, <strong>toda ingestão de mensagens Z-API para</strong>. Backlog acumula sem requeue garantido (lição do incidente 2026-04-08).</div>
+        <span class="spof-rep">1 replica</span>
+      </div>
+    </div>
+    <div class="spof-item">
+      <div class="spof-icon">🔴</div>
+      <div>
+        <div class="spof-name">soketi-omni</div>
+        <div class="spof-ns">namespace: omni · soketi:1.6-16-debian</div>
+        <div class="spof-desc">WebSocket da nova interface (foundation-spa / Pusher-compatible). Se cair, usuários da nova interface perdem atualizações em tempo real.</div>
+        <span class="spof-rep">1 replica</span>
+      </div>
+    </div>
+    <div class="spof-item">
+      <div class="spof-icon">🟠</div>
+      <div>
+        <div class="spof-name">dispatch-cron-service</div>
+        <div class="spof-ns">namespace: poli-chat-distribution-system · dispatch:v0.0.36</div>
+        <div class="spof-desc">Cron de redistribuição de chats. Se cair, chats que ficam na fila sem atendente não são redistribuídos automaticamente.</div>
+        <span class="spof-rep">1 replica</span>
+      </div>
+    </div>
+    <div class="spof-item">
+      <div class="spof-icon">🟠</div>
+      <div>
+        <div class="spof-name">omnispa</div>
+        <div class="spof-ns">namespace: poli-core-api-system · omnispa:v3.5.283</div>
+        <div class="spof-desc">Frontend da nova interface (foundation-spa). Se cair, todos os usuários da nova interface ficam sem acesso à plataforma.</div>
+        <span class="spof-rep">1 replica</span>
+      </div>
+    </div>
+    <div class="spof-item">
+      <div class="spof-icon">🟡</div>
+      <div>
+        <div class="spof-name">leads</div>
+        <div class="spof-ns">namespace: poli-flow-system · leads:v0.0.34</div>
+        <div class="spof-desc">Serviço de Meta Leads / MAPI2Tier (Go). Se cair, toda a funcionalidade de criação e gestão de anúncios via Ads Manager fica indisponível.</div>
+        <span class="spof-rep">1 replica</span>
+      </div>
+    </div>
+    <div class="spof-item">
+      <div class="spof-icon">🟡</div>
+      <div>
+        <div class="spof-name">facebookmessage</div>
+        <div class="spof-ns">namespace: poli-chat-facebook-system · facebook-message:v1.3.23</div>
+        <div class="spof-desc">Integração com Facebook Messenger. Se cair, todos os canais Facebook de todos os clientes param de receber mensagens.</div>
+        <span class="spof-rep">1 replica</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout" style="margin-top:20px">
+    <div class="callout-icon">💡</div>
+    <div class="callout-text">
+      <strong>Ação recomendada (baixo esforço, alto impacto):</strong> Escalar <code>dispatch-websocket</code>, <code>dispatch-queue-service</code> e <code>soketi-omni</code> para <strong>2 replicas mínimas</strong> cada. Esses três cobrem os fluxos mais críticos e com maior volume de incidentes.
+    </div>
+  </div>
+</div>
+
+<!-- Coverage -->
+<div class="section">
+  <div class="section-title">
+    <span style="color:#22c55e">◆</span> Cobertura automatizada — Cypress (repo <code style="color:#79c0ff;font-size:.8rem">poli-digital/Regressivo_v2</code>)
+  </div>
+
+  <div class="callout" style="margin-bottom:20px">
+    <div class="callout-icon">ℹ️</div>
+    <div class="callout-text">
+      <strong>33 testes Cypress ativos + 2 skipped</strong> mapeados em 5 arquivos. Cypress v15 · JavaScript.<br>
+      <strong>Estratégia de execução:</strong> testes rodam em <strong>produção com pod isolado</strong> — o card é subido em um pod dedicado dentro da infra de prod para garantir fidelidade real com o ambiente e dados de produção. Ambientes alpha, beta, gamma e staging não fazem parte do fluxo de validação.<br>
+      Cobertura concentrada em <strong>envio de mensagem WABA</strong> (texto + 9 tipos de mídia × 2 interfaces) e <strong>login</strong>. Fluxos de inbound, distribuição, RBAC e billing têm <strong>0% de cobertura automatizada</strong>.
+    </div>
+  </div>
+
+  <!-- Barras de progresso -->
+  <div style="margin-bottom:28px">
+    <div class="progress-row">
+      <div class="progress-label">01 · Mensagem inbound</div>
+      <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:0%;background:#ef4444"></div></div>
+      <div class="progress-pct" style="color:#ef4444">0%</div>
+    </div>
+    <div class="progress-row">
+      <div class="progress-label">02 · Distribuição de chats</div>
+      <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:5%;background:#f97316"></div></div>
+      <div class="progress-pct" style="color:#f97316">5%</div>
+    </div>
+    <div class="progress-row">
+      <div class="progress-label">03 · Mensagem outbound</div>
+      <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:25%;background:#eab308"></div></div>
+      <div class="progress-pct" style="color:#eab308">25%</div>
+    </div>
+    <div class="progress-row">
+      <div class="progress-label">04 · Login / Auth</div>
+      <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:28%;background:#eab308"></div></div>
+      <div class="progress-pct" style="color:#eab308">28%</div>
+    </div>
+    <div class="progress-row">
+      <div class="progress-label">05 · Permissões RBAC</div>
+      <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:5%;background:#f97316"></div></div>
+      <div class="progress-pct" style="color:#f97316">5%</div>
+    </div>
+    <div class="progress-row">
+      <div class="progress-label">06 · Créditos / Billing</div>
+      <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:0%;background:#ef4444"></div></div>
+      <div class="progress-pct" style="color:#ef4444">0%</div>
+    </div>
+    <div class="progress-row" style="margin-top:16px;padding-top:16px;border-top:1px solid #21262d">
+      <div class="progress-label" style="font-weight:600;color:#f0f6fc">Total (meta: 100%)</div>
+      <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:10%;background:linear-gradient(90deg,#ef4444,#f97316)"></div></div>
+      <div class="progress-pct" style="color:#f97316;font-weight:700">~10%</div>
+    </div>
+  </div>
+
+  <!-- Tabela detalhada de cobertura -->
+  <table>
+    <thead>
+      <tr>
+        <th>Fluxo</th>
+        <th>Cenários definidos</th>
+        <th>Coberto pelo Cypress</th>
+        <th>Gap (não coberto)</th>
+        <th>Arquivo(s) no repo</th>
+        <th>Cobertura</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="flow-name">01 · Mensagem inbound</td>
+        <td><strong style="color:#f0f6fc">9</strong></td>
+        <td style="color:#6e7681;font-size:.8rem">—</td>
+        <td style="font-size:.8rem;color:#f87171">Todos os 9 cenários (nenhum teste de inbound existe)</td>
+        <td style="color:#6e7681;font-size:.78rem">—</td>
+        <td><span class="badge badge-red">0 / 9 · 0%</span></td>
+      </tr>
+      <tr>
+        <td class="flow-name">02 · Distribuição</td>
+        <td><strong style="color:#f0f6fc">10</strong></td>
+        <td style="font-size:.8rem;color:#4ade80">Transferência manual (happy path básico)</td>
+        <td style="font-size:.8rem;color:#f87171">Distribuição automática, status online/offline, SPOFs, bot vs atribuição manual, multi-tenant</td>
+        <td><div class="services"><span class="svc">transferencia-de-chat.cy.js</span></div></td>
+        <td><span class="badge badge-red">~0.5 / 10 · 5%</span></td>
+      </tr>
+      <tr>
+        <td class="flow-name">03 · Mensagem outbound</td>
+        <td><strong style="color:#f0f6fc">8</strong></td>
+        <td style="font-size:.8rem;color:#4ade80">WABA texto + 9 tipos de mídia (Foundation + Legado) = C02 ✓ + C07 parcial</td>
+        <td style="font-size:.8rem;color:#f87171">Z-API outbound (C01), templates com botões (C03), ícone relógio/failure (C04, C05), carga (C06), multi-tenant (C08)</td>
+        <td><div class="services"><span class="svc">waba-messages-found.cy.js</span><span class="svc">waba-messages.cy.js</span></div></td>
+        <td><span class="badge badge-yellow">~2 / 8 · 25%</span></td>
+      </tr>
+      <tr>
+        <td class="flow-name">04 · Login / Auth</td>
+        <td><strong style="color:#f0f6fc">9</strong></td>
+        <td style="font-size:.8rem;color:#4ade80">Login Foundation (adm/supervisor/operador) = C02 ✓ · Login Legado (adm/supervisor) = C01 ✓ · Email inválido = C06 parcial</td>
+        <td style="font-size:.8rem;color:#f87171">Loading infinito (C03), CRM sem permissão (C04), JWT expirado (C05), recovery de senha (C07), SPOF soketi (C08), multi-tenant (C09) · Logout legado = 2 SKIP (cross-origin)</td>
+        <td><div class="services"><span class="svc">login-foudation.cy.js</span><span class="svc">login-legado.cy.js</span></div></td>
+        <td><span class="badge badge-yellow">~2.5 / 9 · 28%</span></td>
+      </tr>
+      <tr>
+        <td class="flow-name">05 · Permissões RBAC</td>
+        <td><strong style="color:#f0f6fc">10</strong></td>
+        <td style="font-size:.8rem;color:#4ade80">Login por role (adm/supervisor/operador) — confirma que cada perfil acessa a plataforma</td>
+        <td style="font-size:.8rem;color:#f87171">Nenhum teste verifica <em>o que</em> cada role pode ver: gestor sem chats (C04), supervisor vendo depto alheio (C05), chat transferido visível (C06), chats disparador sem depto (C08), nova vs legado (C10), multi-tenant (C09)</td>
+        <td><div class="services"><span class="svc">login-foudation.cy.js</span><span class="svc">login-legado.cy.js</span></div></td>
+        <td><span class="badge badge-red">~0.5 / 10 · 5%</span></td>
+      </tr>
+      <tr>
+        <td class="flow-name">06 · Créditos / Billing</td>
+        <td><strong style="color:#f0f6fc">9</strong></td>
+        <td style="color:#6e7681;font-size:.8rem">—</td>
+        <td style="font-size:.8rem;color:#f87171">Todos os 9 cenários (nenhum teste de billing existe)</td>
+        <td style="color:#6e7681;font-size:.78rem">—</td>
+        <td><span class="badge badge-red">0 / 9 · 0%</span></td>
+      </tr>
+      <tr style="background:#111820">
+        <td style="font-weight:700;color:#f0f6fc">Total</td>
+        <td><strong style="color:#4f8ef7;font-size:1rem">55</strong></td>
+        <td style="font-size:.8rem;color:#4ade80"><strong style="color:#f0f6fc">~5.5</strong> cenários cobertos</td>
+        <td style="font-size:.8rem;color:#f87171"><strong style="color:#f0f6fc">~49.5</strong> cenários sem cobertura</td>
+        <td style="font-size:.78rem;color:#6e7681">5 arquivos · 33 testes ativos · 2 skip</td>
+        <td><span class="badge badge-red"><strong>~10% · 5.5 / 55</strong></span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Gap Analysis -->
+<div class="section">
+  <div class="section-title">
+    <span style="color:#f97316">!</span> Gap analysis — o que precisa ser criado no Regressivo_v2
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Prioridade</th>
+        <th>Arquivo a criar</th>
+        <th>Cenários que cobre</th>
+        <th>Por que urgente</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="badge badge-red">P1 · Crítico</span></td>
+        <td><div class="services"><span class="svc">cypress/e2e/legado/inbound-messages.cy.js</span></div></td>
+        <td style="font-size:.8rem">Mensagem de texto Z-API chega em tempo real · Mídia chega sem TypeError · @lid não descarta mensagem</td>
+        <td style="font-size:.8rem;color:#8b949e">Fluxo com maior volume de issues (21 abertos) e 0% de cobertura</td>
+      </tr>
+      <tr>
+        <td><span class="badge badge-red">P1 · Crítico</span></td>
+        <td><div class="services"><span class="svc">cypress/e2e/legado/distribuicao-chats.cy.js</span></div></td>
+        <td style="font-size:.8rem">Novo chat aparece automaticamente · Status online correto após login · Chat não vai para "sem atendente"</td>
+        <td style="font-size:.8rem;color:#8b949e">19 issues abertos, 3 Highest, 5% de cobertura — fluxo mais problemático por severidade</td>
+      </tr>
+      <tr>
+        <td><span class="badge badge-orange">P2 · Alto</span></td>
+        <td><div class="services"><span class="svc">cypress/e2e/legado/zapi-outbound.cy.js</span></div></td>
+        <td style="font-size:.8rem">Mensagem texto Z-API entregue com ACK · Template com botões renderizado (não JSON bruto)</td>
+        <td style="font-size:.8rem;color:#8b949e">Fluxo 03 tem 25% de cobertura mas só WABA — Z-API é o canal mais usado</td>
+      </tr>
+      <tr>
+        <td><span class="badge badge-orange">P2 · Alto</span></td>
+        <td><div class="services"><span class="svc">cypress/e2e/foudation/rbac-permissions.cy.js</span></div></td>
+        <td style="font-size:.8rem">Gestor vê chats do depto · Supervisor não vê depto alheio · Chat transferido some da lista de origem · Chats disparador herdam depto</td>
+        <td style="font-size:.8rem;color:#8b949e">3 issues Highest abertos; bug silencioso — usuário não sabe o que não está vendo</td>
+      </tr>
+      <tr>
+        <td><span class="badge badge-orange">P2 · Alto</span></td>
+        <td><div class="services"><span class="svc">cypress/e2e/foudation/login-auth-edge.cy.js</span></div></td>
+        <td style="font-size:.8rem">JWT expirado redireciona (não trava) · Recovery de senha end-to-end · Logout legado (resolver cross-origin com cy.origin)</td>
+        <td style="font-size:.8rem;color:#8b949e">2 testes skip no legado por problema de cross-origin não resolvido</td>
+      </tr>
+      <tr>
+        <td><span class="badge badge-yellow">P3 · Médio</span></td>
+        <td><div class="services"><span class="svc">cypress/e2e/legado/billing-credits.cy.js</span></div></td>
+        <td style="font-size:.8rem">Canal bloqueado ao zerar créditos · Desbloqueio após crédito adicionado · Alerta visível para gestor</td>
+        <td style="font-size:.8rem;color:#8b949e">0% de cobertura; bloqueio indevido é causa de abertura de chamado recorrente</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="callout callout-warn" style="margin-top:20px">
+    <div class="callout-icon">⚠️</div>
+    <div class="callout-text">
+      <strong>Problema estrutural identificado:</strong> os 33 testes existentes cobrem apenas <strong>happy paths de envio e login</strong> — exatamente o que menos quebra em produção. Os 120+ issues abertos são em <strong>failure paths e casos de borda</strong> (distribuição incorreta, mensagem não chega, status offline indevido) que ainda não têm nenhuma cobertura automatizada.
+    </div>
+  </div>
+</div>
+
+<!-- Roadmap -->
+<div class="section">
+  <div class="section-title">
+    <span style="color:#4f8ef7">→</span> Plano de execução — produção com pod isolado
+  </div>
+
+  <div class="callout" style="margin-bottom:20px">
+    <div class="callout-icon">🏭</div>
+    <div class="callout-text">
+      <strong>Estratégia:</strong> cada card é subido em um <strong>pod isolado em produção</strong> antes de ser promovido ao pool principal. Os testes do Regressivo_v2 rodam contra esse pod, com dados e infra reais. Não há gate de alpha/beta/gamma/staging — o isolamento de pod é o único ambiente de validação pré-merge.
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Fase</th>
+        <th>O que executar</th>
+        <th>Cenários</th>
+        <th>Critério de avanço</th>
+        <th>Estimativa</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="badge badge-red">Fase 1</span></td>
+        <td>Happy paths dos 3 fluxos mais críticos (01, 02, 03) — criar testes no Regressivo_v2</td>
+        <td>C01, C02 de cada fluxo = <strong>6 cenários</strong></td>
+        <td>6/6 PASS no pod isolado de prod</td>
+        <td style="color:#6e7681">1–2 dias</td>
+      </tr>
+      <tr>
+        <td><span class="badge badge-orange">Fase 2</span></td>
+        <td>Happy paths login/permissões (04, 05) + failure paths fluxos 01–03</td>
+        <td>~18 cenários</td>
+        <td>Happy paths 100% · Failure paths com PASS/FAIL documentado</td>
+        <td style="color:#6e7681">3–4 dias</td>
+      </tr>
+      <tr>
+        <td><span class="badge badge-yellow">Fase 3</span></td>
+        <td>Failure paths RBAC e billing + regressões dos Jira issues mais frequentes</td>
+        <td>~20 cenários</td>
+        <td>Todos os issues Highest cobertos por pelo menos 1 teste automatizado</td>
+        <td style="color:#6e7681">4–5 dias</td>
+      </tr>
+      <tr>
+        <td><span class="badge badge-blue">Fase 4</span></td>
+        <td>Cenários SPOF (coordenação com Infra para restart controlado) + multi-tenant</td>
+        <td>~11 cenários</td>
+        <td>55/55 cenários com resultado registrado</td>
+        <td style="color:#6e7681">2–3 dias + janela com Infra</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="callout" style="margin-top:20px">
+    <div class="callout-icon">🎯</div>
+    <div class="callout-text">
+      <strong>Meta:</strong> 100% de cobertura nos 55 cenários, todos executados via Cypress contra <strong>pod isolado em produção</strong>. Cada deploy de card nos fluxos 01, 02 e 03 deve ter ao menos o happy path correspondente passando antes de ser promovido ao pool principal.
+    </div>
+  </div>
+</div>
+
+</div><!-- /tab-executivo -->
+
+<!-- Tab 2: Dependências por Fluxo -->
+<div id="tab-dependencias" class="tab-content">
+
+  <div class="callout" style="margin-bottom:24px">
+    <div class="callout-icon">🔗</div>
+    <div class="callout-text">
+      Cada card mostra os serviços necessários para o fluxo funcionar, organizados por camada. Serviços marcados com <strong style="color:#f87171">⚠</strong> são SPOFs (1 replica em produção) — a queda de qualquer um deles afeta todos os fluxos que o utilizam simultaneamente. Serviços <em style="color:#9ca3af">externos</em> são fora da nossa infra (Z-API, Meta).
+    </div>
+  </div>
+
+  <!-- Shared services matrix -->
+  <div class="section" style="margin-bottom:24px">
+    <div class="section-title"><span style="color:#f97316">▲</span> Serviços compartilhados entre fluxos — maior risco de impacto em cascata</div>
+    <table class="shared-matrix">
+      <thead>
+        <tr>
+          <th class="col-svc">Serviço</th>
+          <th>01<br><span style="font-size:.65rem;color:#6e7681">Inbound</span></th>
+          <th>02<br><span style="font-size:.65rem;color:#6e7681">Distribuição</span></th>
+          <th>03<br><span style="font-size:.65rem;color:#6e7681">Outbound</span></th>
+          <th>04<br><span style="font-size:.65rem;color:#6e7681">Login</span></th>
+          <th>05<br><span style="font-size:.65rem;color:#6e7681">Bot</span></th>
+          <th>06<br><span style="font-size:.65rem;color:#6e7681">Disparador</span></th>
+          <th>07<br><span style="font-size:.65rem;color:#6e7681">Reconexão</span></th>
+          <th>Fluxos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-svc">polichat-spa</td>
+          <td><span class="dot-yes"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-yes"></span></td>
+          <td><span class="badge badge-red">7/7</span></td>
+        </tr>
+        <tr>
+          <td class="col-svc">Aurora MySQL</td>
+          <td><span class="dot-yes"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-yes"></span></td>
+          <td><span class="badge badge-red">7/7</span></td>
+        </tr>
+        <tr>
+          <td class="col-svc" style="color:#f87171">⚠ dispatch-websocket</td>
+          <td><span class="dot-spof"></span></td><td><span class="dot-spof"></span></td><td><span class="dot-no"></span></td><td><span class="dot-no"></span></td><td><span class="dot-spof"></span></td><td><span class="dot-no"></span></td><td><span class="dot-no"></span></td>
+          <td><span class="badge badge-red">3/7</span></td>
+        </tr>
+        <tr>
+          <td class="col-svc" style="color:#f87171">⚠ dispatch-queue-service</td>
+          <td><span class="dot-spof"></span></td><td><span class="dot-spof"></span></td><td><span class="dot-no"></span></td><td><span class="dot-no"></span></td><td><span class="dot-spof"></span></td><td><span class="dot-no"></span></td><td><span class="dot-no"></span></td>
+          <td><span class="badge badge-red">3/7</span></td>
+        </tr>
+        <tr>
+          <td class="col-svc" style="color:#f87171">⚠ RabbitMQ</td>
+          <td><span class="dot-spof"></span></td><td><span class="dot-no"></span></td><td><span class="dot-spof"></span></td><td><span class="dot-no"></span></td><td><span class="dot-no"></span></td><td><span class="dot-spof"></span></td><td><span class="dot-no"></span></td>
+          <td><span class="badge badge-red">3/7</span></td>
+        </tr>
+        <tr>
+          <td class="col-svc">dispatch-service</td>
+          <td><span class="dot-yes"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-no"></span></td><td><span class="dot-no"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-no"></span></td><td><span class="dot-no"></span></td>
+          <td><span class="badge badge-orange">3/7</span></td>
+        </tr>
+        <tr>
+          <td class="col-svc">zapi-consumer</td>
+          <td><span class="dot-yes"></span></td><td><span class="dot-no"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-no"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-no"></span></td>
+          <td><span class="badge badge-orange">4/7</span></td>
+        </tr>
+        <tr>
+          <td class="col-svc">Z-API <em style="color:#6e7681">(ext)</em></td>
+          <td><span class="dot-yes"></span></td><td><span class="dot-no"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-no"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-yes"></span></td>
+          <td><span class="badge badge-orange">5/7</span></td>
+        </tr>
+        <tr>
+          <td class="col-svc">Meta / WABA <em style="color:#6e7681">(ext)</em></td>
+          <td><span class="dot-yes"></span></td><td><span class="dot-no"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-no"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-yes"></span></td>
+          <td><span class="badge badge-orange">5/7</span></td>
+        </tr>
+        <tr>
+          <td class="col-svc">Redis</td>
+          <td><span class="dot-yes"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-no"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-no"></span></td><td><span class="dot-no"></span></td>
+          <td><span class="badge badge-orange">4/7</span></td>
+        </tr>
+        <tr>
+          <td class="col-svc">laravel-01</td>
+          <td><span class="dot-no"></span></td><td><span class="dot-no"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-no"></span></td><td><span class="dot-no"></span></td><td><span class="dot-yes"></span></td><td><span class="dot-yes"></span></td>
+          <td><span class="badge badge-yellow">3/7</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="callout callout-warn" style="margin-top:16px">
+      <div class="callout-icon">⚠️</div>
+      <div class="callout-text"><strong>dispatch-websocket, dispatch-queue-service e RabbitMQ</strong> são os três SPOFs de maior impacto cruzado — cada um afeta 3 fluxos críticos simultaneamente. Uma queda em qualquer um deles derruba inbound, distribuição e bot (ou outbound + disparador) ao mesmo tempo.</div>
+    </div>
+  </div>
+
+  <!-- Flow dependency cards -->
+  <div class="dep-grid">
+
+    <div class="dep-card">
+      <div class="dep-card-header">
+        <span class="dep-flow-num">01</span>
+        <span class="dep-flow-name">Recebimento de mensagem (inbound)</span>
+        <span class="badge badge-red" style="margin-left:auto">Crítico</span>
+      </div>
+      <div class="dep-layer"><div class="dep-layer-label">Interface</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">polichat-spa</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Webhook</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">laravel-webhook</span><span class="dep-svc dep-svc-normal">laravel-webhook-waba</span><span class="dep-svc dep-svc-normal">waba-webhook</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Fila</div><div class="dep-svcs"><span class="dep-svc dep-svc-spof">RabbitMQ</span><span class="dep-svc dep-svc-normal">BullMQ</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Processing</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">zapi-consumer</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Distribuição</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">dispatch-service</span><span class="dep-svc dep-svc-spof">dispatch-queue-service</span><span class="dep-svc dep-svc-spof">dispatch-websocket</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Dados</div><div class="dep-svcs"><span class="dep-svc dep-svc-data">Aurora MySQL</span><span class="dep-svc dep-svc-data">Redis</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Externo</div><div class="dep-svcs"><span class="dep-svc dep-svc-ext">Z-API</span><span class="dep-svc dep-svc-ext">Meta / WABA</span></div></div>
+    </div>
+
+    <div class="dep-card">
+      <div class="dep-card-header">
+        <span class="dep-flow-num">02</span>
+        <span class="dep-flow-name">Distribuição de chats</span>
+        <span class="badge badge-red" style="margin-left:auto">Crítico</span>
+      </div>
+      <div class="dep-layer"><div class="dep-layer-label">Interface</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">polichat-spa</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Distribuição</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">dispatch-service</span><span class="dep-svc dep-svc-spof">dispatch-queue-service</span><span class="dep-svc dep-svc-spof">dispatch-websocket</span><span class="dep-svc dep-svc-spof">dispatch-cron-service</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Fila</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">BullMQ</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Dados</div><div class="dep-svcs"><span class="dep-svc dep-svc-data">Aurora MySQL</span><span class="dep-svc dep-svc-data">Redis</span></div></div>
+    </div>
+
+    <div class="dep-card">
+      <div class="dep-card-header">
+        <span class="dep-flow-num">03</span>
+        <span class="dep-flow-name">Envio de mensagem (outbound)</span>
+        <span class="badge badge-red" style="margin-left:auto">Crítico</span>
+      </div>
+      <div class="dep-layer"><div class="dep-layer-label">Interface</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">polichat-spa</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Backend</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">laravel-01</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Fila</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">zapi-producer</span><span class="dep-svc dep-svc-spof">RabbitMQ</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Processing</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">zapi-consumer</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Dados</div><div class="dep-svcs"><span class="dep-svc dep-svc-data">Aurora MySQL</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Externo</div><div class="dep-svcs"><span class="dep-svc dep-svc-ext">Z-API</span><span class="dep-svc dep-svc-ext">Meta / WABA</span></div></div>
+    </div>
+
+    <div class="dep-card">
+      <div class="dep-card-header">
+        <span class="dep-flow-num">04</span>
+        <span class="dep-flow-name">Login e autenticação</span>
+        <span class="badge badge-red" style="margin-left:auto">Crítico</span>
+      </div>
+      <div class="dep-layer"><div class="dep-layer-label">Interface</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">polichat-spa</span><span class="dep-svc dep-svc-spof">omnispa</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Gateway</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">api-gateway</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Auth</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">users-service</span><span class="dep-svc dep-svc-normal">heimdall (JWT)</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">WebSocket</div><div class="dep-svcs"><span class="dep-svc dep-svc-spof">soketi-omni</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Dados</div><div class="dep-svcs"><span class="dep-svc dep-svc-data">Aurora MySQL</span><span class="dep-svc dep-svc-data">Redis</span></div></div>
+    </div>
+
+    <div class="dep-card">
+      <div class="dep-card-header">
+        <span class="dep-flow-num">05</span>
+        <span class="dep-flow-name">Bot e Automação</span>
+        <span class="badge badge-red" style="margin-left:auto">Crítico</span>
+      </div>
+      <div class="dep-layer"><div class="dep-layer-label">Externo</div><div class="dep-svcs"><span class="dep-svc dep-svc-ext">Z-API</span><span class="dep-svc dep-svc-ext">Meta / WABA</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Inbound</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">zapi-consumer</span><span class="dep-svc dep-svc-normal">waba-webhook</span><span class="dep-svc dep-svc-normal">laravel-webhook</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Bot Engine</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">automacao-service</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Distribuição</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">dispatch-service</span><span class="dep-svc dep-svc-spof">dispatch-queue-service</span><span class="dep-svc dep-svc-spof">dispatch-websocket</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Interface</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">polichat-spa</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Dados</div><div class="dep-svcs"><span class="dep-svc dep-svc-data">Aurora MySQL</span><span class="dep-svc dep-svc-data">Redis</span></div></div>
+    </div>
+
+    <div class="dep-card">
+      <div class="dep-card-header">
+        <span class="dep-flow-num">06</span>
+        <span class="dep-flow-name">Disparador / Bulk Sending</span>
+        <span class="badge badge-red" style="margin-left:auto">Crítico</span>
+      </div>
+      <div class="dep-layer"><div class="dep-layer-label">Interface</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">polichat-spa</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Backend</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">laravel-01</span><span class="dep-svc dep-svc-normal">disparador-service</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Fila</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">zapi-producer</span><span class="dep-svc dep-svc-spof">RabbitMQ</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Processing</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">zapi-consumer</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Dados</div><div class="dep-svcs"><span class="dep-svc dep-svc-data">Aurora MySQL</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Externo</div><div class="dep-svcs"><span class="dep-svc dep-svc-ext">Z-API</span><span class="dep-svc dep-svc-ext">Meta / WABA</span></div></div>
+    </div>
+
+    <div class="dep-card">
+      <div class="dep-card-header">
+        <span class="dep-flow-num">07</span>
+        <span class="dep-flow-name">Reconexão de Canal</span>
+        <span class="badge badge-red" style="margin-left:auto">Crítico</span>
+      </div>
+      <div class="dep-layer"><div class="dep-layer-label">Interface</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">polichat-spa</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Backend</div><div class="dep-svcs"><span class="dep-svc dep-svc-normal">laravel-01</span><span class="dep-svc dep-svc-normal">channel-customer</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Dados</div><div class="dep-svcs"><span class="dep-svc dep-svc-data">Aurora MySQL</span></div></div>
+      <div class="dep-layer"><div class="dep-layer-label">Externo</div><div class="dep-svcs"><span class="dep-svc dep-svc-ext">Z-API</span><span class="dep-svc dep-svc-ext">Meta / WABA</span></div></div>
+    </div>
+
+  </div><!-- /dep-grid -->
+</div><!-- /tab-dependencias -->
+
+<!-- Tab 3: Serviços Críticos -->
+<div id="tab-servicos" class="tab-content">
+
+  <div class="callout" style="margin-bottom:24px">
+    <div class="callout-icon">🎯</div>
+    <div class="callout-text">
+      <strong>Critério:</strong> um serviço é crítico quando, ao parar, clientes perdem capacidade de operar na plataforma.
+      <strong>P0</strong> = plataforma inoperante para <em>todos</em> os clientes.
+      <strong>P1</strong> = funcionalidade essencial (auth, inbound, outbound, distribuição) quebrada para maioria dos clientes.
+      <strong>P2</strong> = canal ou feature específica indisponível.
+      Baseado no service map K8s + análise dos 7 fluxos críticos + matriz de impacto cruzado.
+    </div>
+  </div>
+
+  <div class="stats" style="margin-bottom:24px">
+    <div class="stat-card">
+      <div class="num num-red">7</div>
+      <div class="label">Serviços P0</div>
+    </div>
+    <div class="stat-card">
+      <div class="num num-orange">7</div>
+      <div class="label">Serviços P1</div>
+    </div>
+    <div class="stat-card">
+      <div class="num num-yellow">5</div>
+      <div class="label">Serviços P2</div>
+    </div>
+    <div class="stat-card">
+      <div class="num num-red">5</div>
+      <div class="label">SPOFs em P0+P1</div>
+    </div>
+  </div>
+
+  <!-- P0 -->
+  <div class="section">
+    <div class="section-title">
+      <span style="color:#ef4444">●</span> P0 — Plataforma inoperante para TODOS os clientes (7 serviços)
+    </div>
+    <p style="font-size:.82rem;color:#8b949e;margin-bottom:16px">
+      Se qualquer um desses para, nenhum cliente consegue operar — seja por perda total de acesso, sem mensagens ou sem capacidade de resposta.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Serviço</th>
+          <th>Namespace / Infra</th>
+          <th>Replicas</th>
+          <th>Stack</th>
+          <th>Se parar…</th>
+          <th>Fluxos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="flow-name">Aurora MySQL</div>
+            <div class="flow-sub">Banco principal de todos os serviços core</div>
+          </td>
+          <td><span class="svc">AWS RDS (managed)</span></td>
+          <td><span class="badge badge-green">Managed HA</span></td>
+          <td style="font-size:.78rem;color:#8b949e">Aurora MySQL</td>
+          <td style="font-size:.82rem;color:#8b949e">Todos os serviços core param — zero operações possíveis em toda a plataforma</td>
+          <td><span class="badge badge-red">7/7</span></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="flow-name">Redis</div>
+            <div class="flow-sub">Sessions, BullMQ, cache de distribuição</div>
+          </td>
+          <td><span class="svc">AWS ElastiCache (managed)</span></td>
+          <td><span class="badge badge-green">Managed</span></td>
+          <td style="font-size:.78rem;color:#8b949e">Redis</td>
+          <td style="font-size:.82rem;color:#8b949e">Auth/session para, BullMQ para, estado de distribuição perdido — login e chats quebrados simultaneamente</td>
+          <td><span class="badge badge-red">4/7</span></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="flow-name" style="color:#f87171">⚠ RabbitMQ</div>
+            <div class="flow-sub">SPOF · 1 replica · Broker Z-API</div>
+          </td>
+          <td><span class="svc">rabbitmq</span></td>
+          <td><span class="badge badge-red">1 replica</span></td>
+          <td style="font-size:.78rem;color:#8b949e">bitnami/rabbitmq:3.10.8</td>
+          <td style="font-size:.82rem;color:#8b949e">Toda ingestão Z-API para — inbound e outbound Z-API mortos; backlog acumula sem requeue garantido (lição: incidente 2026-04-08)</td>
+          <td><span class="badge badge-red">3/7</span></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="flow-name" style="color:#f87171">⚠ dispatch-websocket</div>
+            <div class="flow-sub">SPOF · 1 replica · Entrega em tempo real</div>
+          </td>
+          <td><span class="svc">poli-chat-system</span></td>
+          <td><span class="badge badge-red">1 replica</span></td>
+          <td style="font-size:.78rem;color:#8b949e">dispatch:v0.0.11</td>
+          <td style="font-size:.82rem;color:#8b949e">Nenhum chat novo chega para atendentes na interface legada (polichat-spa) — atendimento para em tempo real</td>
+          <td><span class="badge badge-red">3/7</span></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="flow-name" style="color:#f87171">⚠ dispatch-queue-service</div>
+            <div class="flow-sub">SPOF · 1 replica · Consumer BullMQ</div>
+          </td>
+          <td><span class="svc">poli-chat-distribution-system</span></td>
+          <td><span class="badge badge-red">1 replica</span></td>
+          <td style="font-size:.78rem;color:#8b949e">dispatch:v0.0.36</td>
+          <td style="font-size:.82rem;color:#8b949e">Eventos de distribuição param de ser processados — chats ficam na fila indefinidamente mesmo com mensagens chegando</td>
+          <td><span class="badge badge-red">3/7</span></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="flow-name">omniapi</div>
+            <div class="flow-sub">FoundationAPI — core da nova interface</div>
+          </td>
+          <td><span class="svc">poli-core-api-system</span></td>
+          <td><span class="badge badge-green">21–50 replicas</span></td>
+          <td style="font-size:.78rem;color:#8b949e">PHP 8.4 / Laravel 12</td>
+          <td style="font-size:.82rem;color:#8b949e">Nova interface (omnispa/foundation-spa) completamente sem API — todos os usuários da nova UI sem operação</td>
+          <td><span class="badge badge-orange">4/7</span></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="flow-name">laravel-01</div>
+            <div class="flow-sub">polichat-web-app — core da interface legada</div>
+          </td>
+          <td><span class="svc">poli-core-system</span></td>
+          <td><span class="badge badge-green">Múltiplas</span></td>
+          <td style="font-size:.78rem;color:#8b949e">PHP / Laravel</td>
+          <td style="font-size:.82rem;color:#8b949e">Interface legada sem backend — envio, configuração de canais e atendimento legado param</td>
+          <td><span class="badge badge-orange">3/7</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- P1 -->
+  <div class="section">
+    <div class="section-title">
+      <span style="color:#f97316">▲</span> P1 — Funcionalidade crítica inoperante para maioria dos clientes (7 serviços)
+    </div>
+    <p style="font-size:.82rem;color:#8b949e;margin-bottom:16px">
+      Plataforma parcialmente acessível, mas auth, canal principal ou distribuição deixam de funcionar para todos ou a maior parte dos clientes.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Serviço</th>
+          <th>Namespace</th>
+          <th>Replicas</th>
+          <th>Se parar…</th>
+          <th>Fluxos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="flow-name">api-gateway</div>
+            <div class="flow-sub">Proxy de todas as requisições do SPA legado</div>
+          </td>
+          <td><span class="svc">poli-core-gateway</span></td>
+          <td><span class="badge badge-green">Normal</span></td>
+          <td style="font-size:.82rem;color:#8b949e">Todos os requests do polichat-spa param — SPA legado sem backend, operação legada morta</td>
+          <td><span class="badge badge-orange">5/7</span></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="flow-name" style="color:#f87171">⚠ soketi-omni</div>
+            <div class="flow-sub">SPOF · 1 replica · WebSocket nova interface</div>
+          </td>
+          <td><span class="svc">omni</span></td>
+          <td><span class="badge badge-red">1 replica</span></td>
+          <td style="font-size:.82rem;color:#8b949e">Nova interface (omnispa) perde atualizações em tempo real — Pusher-compatible WebSocket morto para todos os usuários da nova UI</td>
+          <td><span class="badge badge-orange">2/7</span></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="flow-name">users-service</div>
+            <div class="flow-sub">Autenticação e login de todos os usuários</div>
+          </td>
+          <td><span class="svc">poli-core-identity-system</span></td>
+          <td><span class="badge badge-green">Normal</span></td>
+          <td style="font-size:.82rem;color:#8b949e">Nenhum usuário consegue fazer login — plataforma inacessível para novos acessos; sessões ativas podem persistir até expirar</td>
+          <td><span class="badge badge-orange">2/7</span></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="flow-name">heimdall</div>
+            <div class="flow-sub">BFF/JWT da nova interface (Fastify 5 + Firebase)</div>
+          </td>
+          <td><span class="svc">poli-chat-system</span></td>
+          <td><span class="badge badge-green">Normal</span></td>
+          <td style="font-size:.82rem;color:#8b949e">Auth da nova interface cai — omnispa sem capacidade de autenticar ou manter sessão</td>
+          <td><span class="badge badge-orange">2/7</span></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="flow-name">zapi-consumer</div>
+            <div class="flow-sub">Processa mensagens Z-API da fila RabbitMQ</div>
+          </td>
+          <td><span class="svc">rabbitmq</span></td>
+          <td><span class="badge badge-green">Normal</span></td>
+          <td style="font-size:.82rem;color:#8b949e">Mensagens Z-API param de ser processadas — inbound e outbound Z-API mortos mesmo com RabbitMQ saudável</td>
+          <td><span class="badge badge-orange">4/7</span></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="flow-name">waba-webhook</div>
+            <div class="flow-sub">Recebe webhooks do Meta / WABA</div>
+          </td>
+          <td><span class="svc">poli-core-meta-system</span></td>
+          <td><span class="badge badge-green">Normal</span></td>
+          <td style="font-size:.82rem;color:#8b949e">Webhooks do Meta/WABA não são recebidos — inbound WABA para completamente; Meta descarta eventos não entregues</td>
+          <td><span class="badge badge-orange">3/7</span></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="flow-name">meta-whatsapp-cloud-api</div>
+            <div class="flow-sub">Envia mensagens via WhatsApp Cloud API</div>
+          </td>
+          <td><span class="svc">poli-core-meta-system</span></td>
+          <td><span class="badge badge-green">Normal</span></td>
+          <td style="font-size:.82rem;color:#8b949e">Envio via WABA para — outbound WABA morto para todos os clientes que usam canal WABA/Cloud API</td>
+          <td><span class="badge badge-orange">3/7</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- P2 -->
+  <div class="section">
+    <div class="section-title">
+      <span style="color:#eab308">◆</span> P2 — Canal ou feature específica indisponível (5 serviços)
+    </div>
+    <p style="font-size:.82rem;color:#8b949e;margin-bottom:16px">
+      Plataforma continua operando, mas canal ou funcionalidade específica fica indisponível para os clientes que dependem dela.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Serviço</th>
+          <th>Namespace</th>
+          <th>Replicas</th>
+          <th>Se parar…</th>
+          <th>Quem é afetado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="flow-name">dispatch-service</div>
+            <div class="flow-sub">Engine de distribuição de chats (NestJS/Bull)</div>
+          </td>
+          <td><span class="svc">poli-chat-distribution-system</span></td>
+          <td><span class="badge badge-green">Normal</span></td>
+          <td style="font-size:.82rem;color:#8b949e">Regras de roteamento não são aplicadas — chats param de ser distribuídos automaticamente para departamentos e atendentes</td>
+          <td><span class="badge badge-orange">Todos clientes</span></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="flow-name" style="color:#f87171">⚠ dispatch-cron-service</div>
+            <div class="flow-sub">SPOF · 1 replica · Redistribuição automática</div>
+          </td>
+          <td><span class="svc">poli-chat-distribution-system</span></td>
+          <td><span class="badge badge-red">1 replica</span></td>
+          <td style="font-size:.82rem;color:#8b949e">Chats na fila sem atendente não são redistribuídos automaticamente — acúmulo silencioso sem alerta</td>
+          <td><span class="badge badge-orange">Todos clientes</span></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="flow-name" style="color:#f87171">⚠ facebookmessage</div>
+            <div class="flow-sub">SPOF · 1 replica · Integração Facebook Messenger</div>
+          </td>
+          <td><span class="svc">poli-chat-facebook-system</span></td>
+          <td><span class="badge badge-red">1 replica</span></td>
+          <td style="font-size:.82rem;color:#8b949e">Todos os canais Facebook/Messenger de todos os clientes param — sem recuperação automática</td>
+          <td><span class="badge badge-yellow">Clientes c/ Messenger</span></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="flow-name">automatic-actions</div>
+            <div class="flow-sub">+ middleware-automatic-actions · Bots/Automações</div>
+          </td>
+          <td><span class="svc">poli-bot-system</span></td>
+          <td><span class="badge badge-green">Normal</span></td>
+          <td style="font-size:.82rem;color:#8b949e">Bots e automações param — contatos sem resposta automática, handoff humano não disparado</td>
+          <td><span class="badge badge-yellow">Clientes c/ bot ativo</span></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="flow-name">contacts-service</div>
+            <div class="flow-sub">Gestão e identificação de contatos</div>
+          </td>
+          <td><span class="svc">poli-core-identity-system</span></td>
+          <td><span class="badge badge-green">Normal</span></td>
+          <td style="font-size:.82rem;color:#8b949e">Gestão e criação de contatos para — histórico e identificação de clientes afetados; enriquecimento de dados na conversa quebrado</td>
+          <td><span class="badge badge-yellow">Todos clientes</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Resumo executivo -->
+  <div class="section">
+    <div class="section-title"><span style="color:#4f8ef7">→</span> Resumo executivo — ações prioritárias</div>
+
+    <div class="callout callout-warn" style="margin-bottom:16px">
+      <div class="callout-icon">⚠️</div>
+      <div class="callout-text">
+        <strong>5 dos 14 serviços P0+P1 são SPOFs</strong> (1 replica em produção): RabbitMQ, dispatch-websocket, dispatch-queue-service, soketi-omni e dispatch-cron-service. Uma queda em qualquer um afeta <strong>todos os clientes simultaneamente</strong> sem recuperação automática (avg restart K8s: 30–90s).
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Prioridade</th>
+          <th>Serviço(s)</th>
+          <th>Ação recomendada</th>
+          <th>Justificativa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="badge badge-red">P0 · Urgente</span></td>
+          <td><div class="services"><span class="svc svc-red">dispatch-websocket</span><span class="svc svc-red">dispatch-queue-service</span></div></td>
+          <td style="font-size:.82rem">Escalar para 2+ replicas mínimas</td>
+          <td style="font-size:.8rem;color:#8b949e">Afetam 3 fluxos P0 em cascata — inbound, distribuição e bot param juntos</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-red">P0 · Urgente</span></td>
+          <td><div class="services"><span class="svc svc-red">RabbitMQ</span></div></td>
+          <td style="font-size:.82rem">Cluster 3 nós (RabbitMQ HA) ou migrar para SQS</td>
+          <td style="font-size:.8rem;color:#8b949e">Backlog acumula sem requeue garantido — lição do incidente 2026-04-08</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-orange">P1 · Alto</span></td>
+          <td><div class="services"><span class="svc svc-red">soketi-omni</span></div></td>
+          <td style="font-size:.82rem">Escalar para 2+ replicas mínimas</td>
+          <td style="font-size:.8rem;color:#8b949e">Todos os usuários da nova interface perdem tempo real — impacto crescente com adoção do omnispa</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-yellow">P2 · Médio</span></td>
+          <td><div class="services"><span class="svc svc-red">dispatch-cron-service</span><span class="svc svc-red">facebookmessage</span></div></td>
+          <td style="font-size:.82rem">Escalar para 2+ replicas</td>
+          <td style="font-size:.8rem;color:#8b949e">SPOFs com impacto localizado — baixo esforço, elimina ponto único de falha silencioso</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout" style="margin-top:16px">
+      <div class="callout-icon">💡</div>
+      <div class="callout-text">
+        <strong>Cobertura de monitoramento recomendada:</strong> todos os 7 serviços P0 devem ter alertas de pod restart e latência configurados no Grafana. Os 3 SPOFs de maior impacto (dispatch-websocket, dispatch-queue-service, RabbitMQ) devem ter alertas de <em>downtime imediato</em> com notificação para o time de plantão.
+      </div>
+    </div>
+  </div>
+
+</div><!-- /tab-servicos -->
+
+<script>
+function switchTab(id, btn) {
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+
+<div class="footer">
+  Poli Digital · QA · Mapa de Fluxos Críticos · 2026-04-30 · <a href="INDEX.md" style="color:#4f8ef7">QA Index</a>
+</div>
+
+</body>
+</html>

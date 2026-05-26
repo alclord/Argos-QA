@@ -67,7 +67,10 @@
   },
   "jira": {
     "cloudId": "SEU_JIRA_CLOUD_ID",
-    "baseUrl": "https://sua-org.atlassian.net/browse"
+    "baseUrl": "https://sua-org.atlassian.net/browse",
+    "supportProject": "SM",
+    "supportQueue": "Fila Nível 1",
+    "devProjects": ["DEV4", "GPD"]
   },
   "testContacts": {
     "default": {
