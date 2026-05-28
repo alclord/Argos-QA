@@ -103,12 +103,87 @@ const REPORT = {
 
   // ── COBERTURA (pressão vs atenção do dev) ────────────────
   cobertura: [
-    { modulo: "Upload / Mídia",        pressao: 8,  atencao: 0,  zona: "Negligenciada" },
-    { modulo: "Permissões / Roles",    pressao: 4,  atencao: 0,  zona: "Negligenciada" },
-    { modulo: "Chat / Mensagens",      pressao: 29, atencao: 5,  zona: "Subatendida"   },
-    { modulo: "Nova Interface",        pressao: 16, atencao: 1,  zona: "Subatendida"   },
-    { modulo: "Canais / WhatsApp",     pressao: 14, atencao: 1,  zona: "Subatendida"   },
-    { modulo: "Distribuição / Filas",  pressao: 6,  atencao: 1,  zona: "Subatendida"   }
+    {
+      modulo: "Upload / Mídia", pressao: 8, atencao: 0, zona: "Negligenciada",
+      bugs_cards: [
+        { id:"SM-7520", titulo:"Envio de arquivos instável na plataforma",                    tipo:"N1 Bug" },
+        { id:"SM-7503", titulo:"PDF não aparece na plataforma (interface antiga e nova)",      tipo:"N1 Bug" }
+      ],
+      dev_cards: []
+    },
+    {
+      modulo: "Permissões / Roles", pressao: 4, atencao: 0, zona: "Negligenciada",
+      bugs_cards: [
+        { id:"REVENDEDOR-API-Y", titulo:"Exception 403 Forbidden — 416 usuários | Sentry crônico", tipo:"🚨 Sentry" }
+      ],
+      dev_cards: []
+    },
+    {
+      modulo: "Chat / Mensagens", pressao: 29, atencao: 5, zona: "Subatendida",
+      bugs_cards: [
+        { id:"SM-7544", titulo:"Erro no envio de mensagens na Polichat",                tipo:"N1 Bug" },
+        { id:"SM-7518", titulo:"Mensagens não aparecem no chat — atualização manual",   tipo:"N1 Bug" },
+        { id:"SM-7519", titulo:"Atendente não consegue enviar após resposta a template",tipo:"N1 Bug" },
+        { id:"SM-7574", titulo:"Mensagens não chegam no tablet — dois números",         tipo:"N1 Bug" },
+        { id:"SM-7539", titulo:"Não consegue responder — possível restrição Meta",     tipo:"N1 Bug" },
+        { id:"SM-7528", titulo:"Cliente sem atendimento — problema recorrente",         tipo:"N1 Bug" },
+        { id:"SM-7498", titulo:"Emojis aparecem automaticamente nas mensagens",         tipo:"N1 Bug" },
+        { id:"SM-7582", titulo:"Erro 500 na rota GET /accounts/{uuid}/messages",        tipo:"N1 Bug" },
+        { id:"POLICHAT-SPA-CZ", titulo:"Mime encoder quebrado — 1.817 usuários | Sentry crônico", tipo:"🚨 Sentry" }
+      ],
+      dev_cards: [
+        { id:"DEV4-4078", titulo:"[Corretivo] Status de envio não atualiza — ícone ⏳ permanente", tipo:"Em Dev (Highest!)" },
+        { id:"DEV4-4229", titulo:"Mensagens agendadas — Filtros, edição e criação",               tipo:"Em Dev ⚠️ área instável" },
+        { id:"PR#1495",   titulo:"fix: Atualiza ACK das mensagens no cache (DEV4-4233)", tipo:"PR", repo:"SPA" },
+        { id:"PR#1488",   titulo:"feat: Lista global de mensagens front (DEV4-4114)",    tipo:"PR", repo:"SPA" },
+        { id:"PR#1492",   titulo:"fix: Enter envia mensagem em template com variável",   tipo:"PR", repo:"SPA" },
+        { id:"PR#304",    titulo:"feat: template flow API",                               tipo:"PR", repo:"polichat-web-app" },
+        { id:"PR#299",    titulo:"fix: normalizar JID de grupos WhatsApp",                tipo:"PR", repo:"polichat-web-app" }
+      ]
+    },
+    {
+      modulo: "Nova Interface", pressao: 16, atencao: 1, zona: "Subatendida",
+      bugs_cards: [
+        { id:"SM-7496",      titulo:"Extensão parou de funcionar após atualização",         tipo:"N1 Bug"  },
+        { id:"SM-7527",      titulo:"Atalhos Ctrl não estão funcionando",                   tipo:"N1 Bug"  },
+        { id:"OMNISPA-1ZWW", titulo:"AxiosError 404 — 3.433 usuários | crônico 05/Mai",    tipo:"🚨 Sentry"},
+        { id:"OMNISPA-2QCV", titulo:"TypeError: plugin undefined — ESCALANDO | 49 usuários",tipo:"🚨 Sentry"},
+        { id:"OMNISPA-20VC", titulo:"Network Error — 806 usuários",                         tipo:"🚨 Sentry"},
+        { id:"OMNISPA-2NFQ", titulo:"AxiosError 401 refreshToken — 133 usuários",           tipo:"🚨 Sentry"}
+      ],
+      dev_cards: [
+        { id:"PR#1493",   titulo:"feat: Migração da Iterup para nova interface",         tipo:"PR ⚠️ suspeito do TypeError plugin", repo:"SPA" },
+        { id:"DEV4-4158", titulo:"Showcase — Galeria de componentes do Design System",  tipo:"Card em Dev"       },
+        { id:"DEV4-4166", titulo:"Nova Estrutura de Páginas (Epic) — BLOQUEADO até spike",tipo:"Pronto para Dev" },
+        { id:"DEV4-4202", titulo:"Novas contas indexadas na Nova Interface por padrão", tipo:"Aguardando Handoff"}
+      ]
+    },
+    {
+      modulo: "Canais / WhatsApp", pressao: 14, atencao: 1, zona: "Subatendida",
+      bugs_cards: [
+        { id:"SM-7588", titulo:"Erro ao configurar canal do Instagram",             tipo:"N1 Bug" },
+        { id:"SM-7532", titulo:"Template aprovado e vinculado não aparece para uso",tipo:"N1 Bug" }
+      ],
+      dev_cards: [
+        { id:"DEV4-4023", titulo:"Estrutura base do PLBV — ciclo de vida da verificação Meta", tipo:"Em Dev ⚠️ área com bugs" },
+        { id:"DEV4-4040", titulo:"Sincronização de status via webhooks da Meta",               tipo:"Aguardando Handoff" },
+        { id:"DEV4-4044", titulo:"Integração PLBV com a Meta (self-certify API)",             tipo:"Aguardando Handoff" },
+        { id:"PR#304",    titulo:"feat: template flow API",                                    tipo:"PR", repo:"polichat-web-app" },
+        { id:"PR#299",    titulo:"fix: normalizar JID de grupos WhatsApp",                     tipo:"PR", repo:"polichat-web-app" }
+      ]
+    },
+    {
+      modulo: "Distribuição / Filas", pressao: 6, atencao: 1, zona: "Subatendida",
+      bugs_cards: [
+        { id:"SM-7592", titulo:"Bot não fez direcionamento para atendente",        tipo:"N1 Bug" },
+        { id:"SM-7569", titulo:"Chat preso — mensagens não distribuídas após bot", tipo:"N1 Bug" }
+      ],
+      dev_cards: [
+        { id:"PR#1123",   titulo:"fix: DistributeChatAction — impacto nos bugs incerto", tipo:"PR", repo:"foundation-api" },
+        { id:"DEV4-4003", titulo:"Tela de Gestão de Chats (feature — não corretivo)",   tipo:"Pronto para Dev ⚠️" },
+        { id:"DEV4-3446", titulo:"Fechamento automático de chats por inatividade",       tipo:"Aguardando Handoff" }
+      ]
+    }
   ],
 
   // ── SERVIÇOS SOB PRESSÃO ─────────────────────────────────
