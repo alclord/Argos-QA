@@ -1,78 +1,90 @@
-# Cenários de Teste — dev4-4244
+# Cenários de Teste — DEV4-4244
 > Card: Reação a mensagem em chat encerrado abre novo atendimento sem acionar o bot
-> Gerado em: 2026-05-26
-> Card atualizado em: 2026-05-26T11:30:25-03:00
+> Gerado em: 2026-05-28
+> Card atualizado em: 2026-05-26T14:56:31.739-0300
 
 ---
 
-## Estratégia de Teste
+## BLOCO 1 — Estratégia de Teste
 
-O bug impacta o pipeline de inbound do `polichat-web-app`, especificamente o parsing de payloads do webhook Meta (WABA/Cloud API). O escopo é cirúrgico: tratar corretamente o tipo de evento `reaction` no ponto de entrada do webhook. Tipos de teste aplicáveis: **funcional** (tratamento do payload), **regressão** (reabertura por texto deve permanecer intacta), **integração** (integridade da tabela `chat_history`) e **segurança** (tentativa de bypass via payload forjado). Prioridade de execução: testes de reabertura indevida por reação primeiro, seguidos da regressão de texto e dos casos de borda. Risco principal: a correção pode inadvertidamente quebrar o fluxo legítimo de reabertura por mensagem de texto, que usa o mesmo pipeline.
+O bug impacta o pipeline de inbound do `polichat-web-app` (via `CloudApiWebHook` → `MessageReceiverController`), especificamente o parsing de payloads recebidos do webhook Meta (WABA/Cloud API). O escopo é cirúrgico: tratar corretamente o tipo de evento `reaction` no ponto de entrada do webhook, diferenciando-o de mensagens de texto antes da criação de registros em `chat_history`. Tipos de teste aplicáveis: **funcional** (tratamento correto do payload de reação), **regressão** (reabertura por mensagem de texto deve permanecer intacta), **integração** (integridade da tabela `chat_history` e status do chat) e **segurança** (bypass via payload forjado). Prioridade de execução: cenários de reabertura indevida por reação primeiro (bloqueia o bug principal), seguidos da regressão de texto e dos casos de borda. Risco principal: a correção pode inadvertidamente quebrar o fluxo legítimo de reabertura por mensagem de texto, que usa o mesmo pipeline de `MessageReceiverController`.
 
 ---
 
-## Mapa de Riscos
+## BLOCO 2 — Mapa de Riscos
 
-| Risco | Probabilidade (A/M/B) | Impacto (A/M/B) | Prioridade |
+| Risco | Probabilidade | Impacto | Prioridade |
 |---|---|---|---|
 | Reação reabre chat encerrado sem acionar bot (bug principal) | A | A | 🔴 Alta |
 | Registro inválido inserido em `chat_history` por evento de reação | A | A | 🔴 Alta |
-| Mensagem de texto após reação não é processada pelo bot ("envenenamento") | A | A | 🔴 Alta |
-| Fix quebra o fluxo de reabertura legítima por mensagem de texto | M | A | 🔴 Alta |
-| Reação em chat ativo (`attending`/`waiting`) cria comportamento inesperado | M | M | 🟡 Média |
+| Mensagem de texto enviada após reação não é processada pelo bot ("envenenamento de estado") | A | A | 🔴 Alta |
+| Fix quebra o fluxo de reabertura legítima por mensagem de texto (regressão) | M | A | 🔴 Alta |
+| Payload forjado com `type="text"` + campo `reaction` contorna a validação | M | A | 🔴 Alta |
 | Race condition entre reação e mensagem de texto simultâneas gera duplicidade em `chat_history` | B | M | 🟡 Média |
-| Payload de reação com campo `type` ausente/malformado causa erro não tratado no webhook | M | M | 🟡 Média |
+| Payload de reação com campo `type` ausente ou malformado causa erro não tratado no webhook | M | M | 🟡 Média |
+| Múltiplas reações consecutivas acumulam registros indevidos em `chat_history` | M | M | 🟡 Média |
 
 ---
 
-## Cenários de Teste
+## BLOCO 3 — Tabela de Cenários
 
 | ID | Nome do Cenário | Pré-requisitos | Passo a Passo | Resultado Esperado | Criticidade | Modo | Depende de |
 |---|---|---|---|---|---|---|---|
-| CT-WEBHOOK-001 | Reação em chat encerrado não reabre | Chat com status `resolved` existente no ambiente; número de teste com histórico de mensagem enviada pela plataforma. ⚠️ Bloqueável — criável via API: `PATCH /api/spa/chats/{uuid}/resolve` | 1. Enviar payload de reação (`type: "reaction"`, campo `reaction.emoji` preenchido) via `POST /api/webhook/wabaoficial/{uid}` para o número do chat encerrado. 2. Consultar o status do chat via `GET /api/spa/chats/{uuid}`. 3. Verificar registros em `chat_history` para o contato. | Chat permanece em status `resolved`; nenhum novo registro criado em `chat_history`; webhook responde HTTP 200. | 🔴 Alta | API | — |
-| CT-WEBHOOK-002 | Reabertura por texto continua funcionando | Chat com status `resolved` existente. | 1. Enviar payload de mensagem de texto (`type: "text"`) via `POST /api/webhook/wabaoficial/{uid}`. 2. Consultar status do chat. 3. Verificar se o bot respondeu (nova mensagem `direction: OUT` registrada). | Chat reabre (novo registro em `chat_history`); status muda de `resolved` para `bot` ou `waiting`; bot é acionado e responde. | 🔴 Alta | API | — |
-| CT-WEBHOOK-003 | Reação seguida de texto — bot processa texto | Chat com status `resolved` existente. | 1. Enviar payload de reação via webhook. 2. Aguardar processamento do webhook antes de enviar o próximo payload. 3. Enviar payload de mensagem de texto (`type: "text"`) via webhook. 4. Verificar status do chat e resposta do bot. | Nenhum registro em `chat_history` atribuído ao evento de reação; ao menos um registro gerado pela mensagem de texto; bot acionado após o texto e responde (nova mensagem `direction: OUT` registrada). | 🔴 Alta | API | CT-WEBHOOK-001 |
-| CT-WEBHOOK-004 | Múltiplas reações não reabrem o chat | Chat com status `resolved` existente. | 1. Enviar 3 payloads de reação distintos (emojis diferentes: 👍, ❤️, 😂) em sequência, com intervalo suficiente para processamento individual de cada payload. 2. Consultar `chat_history` e status do chat após cada envio. | Chat permanece `resolved` após as 3 reações; nenhum registro indevido inserido em `chat_history`; webhook responde HTTP 200 em todos. | 🟡 Média | API | CT-WEBHOOK-001 |
-| CT-WEBHOOK-005 | Payload com `type` ausente — sem registro indevido | Acesso ao endpoint de webhook; chat `resolved` existente. | 1. Enviar payload de reação com campo `type` omitido do JSON via `POST /api/webhook/wabaoficial/{uid}`. 2. Consultar `chat_history` e status do chat. | Nenhum registro inserido em `chat_history`; chat permanece `resolved`. | 🟡 Média | API | — |
-| CT-WEBHOOK-005b | Payload com `type: null` — sem registro indevido | Acesso ao endpoint de webhook; chat `resolved` existente. | 1. Enviar payload de reação com campo `type` definido como `null` via `POST /api/webhook/wabaoficial/{uid}`. 2. Consultar `chat_history` e status do chat. | Nenhum registro inserido em `chat_history`; chat permanece `resolved`. | 🟡 Média | API | — |
-| CT-WEBHOOK-006 | Reação em chat encerrado há mais de 24h | Chat com status `resolved` e `resolved_at` superior a 24 horas. | 1. Enviar payload de reação via webhook para contato com chat encerrado há mais de 24h. 2. Consultar status do chat e `chat_history`. | Chat permanece `resolved`; nenhum registro indevido em `chat_history`; comportamento idêntico ao CT-WEBHOOK-001. | 🟢 Baixa | API | CT-WEBHOOK-001 |
-| CT-WEBHOOK-007 | Reação e texto simultâneos — sem duplicidade | Chat `resolved` existente. | 1. Enviar payload de reação e payload de mensagem de texto via webhook com o menor intervalo possível, para exercitar processamento concorrente. 2. Consultar `chat_history`. 3. Verificar quantidade de registros e status do chat. | Nenhum registro em `chat_history` atribuído ao evento de reação; chat não é reaberto mais de uma vez; bot responde normalmente à mensagem de texto. | 🟡 Média | API | CT-WEBHOOK-002 |
-| CT-WEBHOOK-008 | Payload forjado com `type="text"` para bypass | Acesso ao endpoint de webhook; chat `resolved`. | 1. Construir payload de reação (campo `reaction.emoji` presente) mas com campo `type` alterado para `"text"`. 2. Enviar via `POST /api/webhook/wabaoficial/{uid}`. 3. Consultar status do chat e `chat_history`. | Chat permanece `resolved`; nenhum registro indevido em `chat_history`; webhook responde HTTP 200. | 🔴 Alta | API | — |
-| CT-WEBHOOK-009 | Reabertura por reação aciona bot (estratégia configurada) | Configuração da conta definida para reabrir chat ao receber reação (verificar com o time de desenvolvimento se esta flag existe no ambiente); chat `resolved` existente. ⚠️ Bloqueável — dependente de configuração de estratégia a ser validada com o time. | 1. Verificar que a configuração de reabertura por reação está ativa para a conta de teste. 2. Enviar payload de reação via `POST /api/webhook/wabaoficial/{uid}` para número com chat encerrado. 3. Consultar status do chat. 4. Verificar se o bot respondeu. | Chat reabre (novo registro em `chat_history`); bot é acionado e responde (nova mensagem `direction: OUT` registrada). | 🟡 Média | API | — |
+| CT-WEBHOOK-001 | Reação em chat encerrado não reabre o atendimento | Chat com status `resolved` existente para o contato de teste; acesso ao endpoint `POST /api/webhook/wabaoficial/{uid}`; payload de reação Meta no formato `{"type": "reaction", "reaction": {"emoji": "👍", "message_id": "..."}}`  ⚠️ Bloqueável — chat resolvido criável via API: `PATCH /api/spa/chats/{uuid}/resolve` | 1. Enviar payload de reação via `POST /api/webhook/wabaoficial/{uid}` para o número do contato com chat encerrado. 2. Consultar o status do chat via `GET /api/spa/chats/{uuid}`. 3. Verificar registros em `chat_history` para o contato. | Chat permanece em status `resolved`; nenhum novo registro criado em `chat_history`; webhook responde HTTP 200. | 🔴 Alta | API | — |
+| CT-WEBHOOK-002 | Reabertura por mensagem de texto continua funcionando (regressão) | Chat com status `resolved` existente; payload de mensagem de texto Meta no formato `{"type": "text", "text": {"body": "Olá"}}` | 1. Enviar payload de mensagem de texto (`type: "text"`) via `POST /api/webhook/wabaoficial/{uid}`. 2. Aguardar processamento. 3. Consultar status do chat. 4. Verificar se nova mensagem com `direction: OUT` foi registrada (resposta do bot). | Chat é reaberto (novo registro em `chat_history`); status muda de `resolved` para `bot` ou `waiting`; bot é acionado e registra resposta (`direction: OUT`). | 🔴 Alta | API | — |
+| CT-WEBHOOK-003 | Reação seguida de mensagem de texto — bot processa apenas o texto | Chat com status `resolved` existente. | 1. Enviar payload de reação (`type: "reaction"`) via webhook. 2. Aguardar confirmação de processamento (HTTP 200). 3. Enviar payload de mensagem de texto (`type: "text"`) via webhook. 4. Verificar status do chat, registros em `chat_history` e resposta do bot. | Nenhum registro em `chat_history` atribuído ao evento de reação; ao menos um registro criado pela mensagem de texto; chat reaberto pela mensagem de texto; bot acionado e responde (nova mensagem `direction: OUT` registrada). | 🔴 Alta | API | CT-WEBHOOK-001 |
+| CT-WEBHOOK-004 | Múltiplas reações consecutivas não geram registros indevidos | Chat com status `resolved` existente. | 1. Enviar 3 payloads de reação distintos (emojis: 👍, ❤️, 😂) em sequência, com intervalo suficiente para processamento individual. 2. Consultar `chat_history` e status do chat após cada envio. | Chat permanece `resolved` após as 3 reações; nenhum registro indevido inserido em `chat_history`; webhook responde HTTP 200 em todos os envios. | 🟡 Média | API | CT-WEBHOOK-001 |
+| CT-WEBHOOK-005 | Payload de reação com campo `type` ausente não gera registro indevido | Chat com status `resolved` existente; payload de reação com campo `type` omitido: `{"reaction": {"emoji": "👍", "message_id": "..."}}` — requer conhecimento do schema da Meta; consulte a [documentação de payloads da Meta Cloud API](https://developers.facebook.com/docs/whatsapp/cloud-api/webhooks/components) para montar o payload sem o campo `type`. | 1. Enviar payload de reação com campo `type` omitido via `POST /api/webhook/wabaoficial/{uid}`. 2. Consultar `chat_history` e status do chat. | Nenhum registro indevido inserido em `chat_history`; chat permanece `resolved`; webhook responde sem erro 500 (HTTP 200 ou 400 com mensagem de erro tratada). | 🟡 Média | API | — |
+| CT-WEBHOOK-006 | Payload forjado com `type="text"` e campo `reaction` presente não reabre o chat (segurança) | Chat com status `resolved` existente; payload forjado no formato: `{"type": "text", "text": {"body": ""}, "reaction": {"emoji": "👍", "message_id": "..."}}` — consulte a documentação da Meta Cloud API para o schema correto dos campos. | 1. Construir payload com campo `reaction.emoji` preenchido e campo `type` alterado para `"text"`. 2. Enviar via `POST /api/webhook/wabaoficial/{uid}`. 3. Consultar status do chat e `chat_history`. | Chat permanece `resolved`; nenhum registro indevido em `chat_history`; webhook responde HTTP 200. O sistema não deve ser enganado pela manipulação do campo `type`. | 🔴 Alta | API | — |
+| CT-WEBHOOK-007 | Reação em chat encerrado há mais de 24h não reabre (borda) | Chat com status `resolved` e `resolved_at` superior a 24 horas (borda da janela receptiva da Meta). ⚠️ Nota: o comportamento esperado é o mesmo do CT-WEBHOOK-001 — o card não define diferença de tratamento por janela de tempo para eventos de reação. Confirmar com o time se a janela receptiva de 24h afeta o processamento de `reaction`. | 1. Enviar payload de reação via webhook para contato com chat encerrado há mais de 24h. 2. Consultar status do chat e `chat_history`. | Chat permanece `resolved`; nenhum registro indevido em `chat_history`; comportamento idêntico ao CT-WEBHOOK-001. | 🟢 Baixa | API | CT-WEBHOOK-001 |
+| CT-WEBHOOK-008 | Concorrência: reação e mensagem de texto enviadas simultaneamente — sem duplicidade em `chat_history` | Chat com status `resolved` existente; capacidade de enviar duas requisições HTTP com mínimo intervalo. ⚠️ Nota: verificar com o time se há mecanismo de deduplicação (ex: Redis lock) que já proteja este cenário. | 1. Enviar payload de reação e payload de mensagem de texto via webhook com o menor intervalo possível (exercitar processamento concorrente). 2. Consultar `chat_history` e status do chat após ambos os processamentos. 3. Verificar quantidade de registros criados. | Nenhum registro em `chat_history` atribuído ao evento de reação; chat reaberto apenas uma vez (pelo texto); bot responde normalmente à mensagem de texto; sem duplicidade de registros. | 🟡 Média | API | CT-WEBHOOK-002 |
+| CT-WEBHOOK-009 | Reação em chat no status `attending` não altera o status (borda) | Chat com status `attending` existente (chat em atendimento ativo). ⚠️ Bloqueável — comportamento esperado não está explicitamente definido no card; confirmar com o time de produto/desenvolvimento antes de executar. | 1. Enviar payload de reação (`type: "reaction"`) via webhook para contato com chat em status `attending`. 2. Consultar status do chat e `chat_history`. | Status do chat não é alterado; chat permanece em `attending`; nenhum registro indevido criado em `chat_history`. ⚠️ Resultado esperado a confirmar com produto — o card documenta apenas o comportamento para chats `resolved`. | 🟡 Média | API | — |
+| CT-WEBHOOK-010 | Reação em chat no status `waiting` não altera o status (borda) | Chat com status `waiting` existente (chat na fila de espera). ⚠️ Bloqueável — comportamento esperado não está explicitamente definido no card; confirmar com o time de produto/desenvolvimento antes de executar. | 1. Enviar payload de reação (`type: "reaction"`) via webhook para contato com chat em status `waiting`. 2. Consultar status do chat e `chat_history`. | Status do chat não é alterado; chat permanece em `waiting`; nenhum registro indevido criado em `chat_history`. ⚠️ Resultado esperado a confirmar com produto — o card documenta apenas o comportamento para chats `resolved`. | 🟢 Baixa | API | — |
 
 ---
 
-## Cenários Gherkin (BDD)
+## BLOCO 4 — Gherkin (BDD)
+
+Os dois cenários 🔴 Alta mais relacionados ao bug/feature principal:
 
 ```gherkin
-Cenário: Reação a mensagem não reabre chat encerrado
-  Dado que existe um chat com status "resolved" para o contato de teste
-  E que o atendimento foi encerrado pela plataforma
-  Quando o cliente reage a uma mensagem no WhatsApp (envia payload tipo "reaction")
-  Então o webhook responde com HTTP 200
-  E o chat permanece com status "resolved"
-  E nenhum novo registro é inserido em "chat_history" para este contato
+# CT-WEBHOOK-001 — Critério de Aceite 1 e 5
+Funcionalidade: Tratamento de eventos de reação do WhatsApp no webhook de entrada
+
+  Cenário: Reação a mensagem não reabre chat encerrado
+    Dado que existe um chat com status "resolved" para o contato de teste
+    E que o atendimento foi encerrado pela plataforma via PATCH /api/spa/chats/{uuid}/resolve
+    Quando é enviado ao webhook um payload do tipo "reaction" contendo o campo "reaction.emoji"
+    Então o webhook responde com HTTP 200
+    E o chat permanece com status "resolved"
+    E nenhum novo registro é inserido em "chat_history" para este contato
+    E o bot não é acionado
 ```
 
 ```gherkin
-Cenário: Payload de reação forjado com type="text" não reabre chat encerrado
-  Dado que existe um chat com status "resolved" para o contato de teste
-  Quando é enviado ao webhook um payload contendo o campo "reaction.emoji"
-  E o campo "type" do payload está definido como "text"
-  Então o chat permanece com status "resolved"
-  E nenhum registro indevido é inserido em "chat_history"
-  E o webhook responde com HTTP 200
+# CT-WEBHOOK-006 — Segurança: bypass via payload forjado
+  Cenário: Payload de reação forjado com type="text" não reabre chat encerrado
+    Dado que existe um chat com status "resolved" para o contato de teste
+    Quando é enviado ao webhook um payload contendo o campo "reaction.emoji" preenchido
+    E o campo "type" do payload está definido como "text" (tentativa de bypass)
+    Então o chat permanece com status "resolved"
+    E nenhum registro indevido é inserido em "chat_history"
+    E o webhook responde com HTTP 200
+    E o sistema não processa o evento como mensagem de texto
 ```
 
 ---
 
-## Validação por Agente Crítico
+## Validação por Agente Crítico Independente
 
-✅ Validação por agente crítico concluída:
-- Aprovados sem alteração: 2 (CT-WEBHOOK-001, CT-WEBHOOK-002)
-- Revisados: 6 (CT-WEBHOOK-003, CT-WEBHOOK-004, CT-WEBHOOK-005, CT-WEBHOOK-006, CT-WEBHOOK-007, CT-WEBHOOK-008)
-- Adicionados por cobertura insuficiente: 2 (CT-WEBHOOK-005b, CT-WEBHOOK-009)
+- Aprovados sem alteração: 6 (CT-WEBHOOK-001, CT-WEBHOOK-002, CT-WEBHOOK-003, CT-WEBHOOK-004, CT-WEBHOOK-006, CT-WEBHOOK-008)
+- Revisados: 4 (CT-WEBHOOK-005, CT-WEBHOOK-007, CT-WEBHOOK-009, CT-WEBHOOK-010)
+  - CT-WEBHOOK-005: adicionada referência à doc da Meta para montagem do payload sem `type`
+  - CT-WEBHOOK-007: reclassificado como borda com nota de confirmação de comportamento (janela 24h não documentada no card para reações)
+  - CT-WEBHOOK-009: adicionado aviso de comportamento não definido no card; marcado como ⚠️ Bloqueável com confirmação obrigatória
+  - CT-WEBHOOK-010: idem CT-WEBHOOK-009
+- Adicionados por cobertura insuficiente: 0
 
 ---
 
-**Resumo:** 10 cenários — 🔴 4 Alta | 🟡 5 Média | 🟢 1 Baixa | 2 cenários Gherkin
+**Resumo:** 10 cenários — 🔴 3 Alta | 🟡 4 Média | 🟢 3 Baixa | 2 cenários Gherkin

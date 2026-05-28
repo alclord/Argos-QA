@@ -1,13 +1,23 @@
 # Cenários de Teste — DEV4-4224
-> Card: "Minha Empresa": Migração para Nova Interface
-> Gerado em: 2026-05-25
-> Card atualizado em: 2026-05-25T15:58:26-03:00
+> Card: Dados Cadastrais (Nova interface)
+> Gerado em: 2026-05-28
+> Card atualizado em: 2026-05-27T12:56:03.438-0300
 
 ---
 
 ## BLOCO 1 — Estratégia de Teste
 
-Este card migra três abas da tela "Minha Empresa" (Dados da Empresa, Dados do Plano e Ações) do legado para a nova interface Poli. O escopo é funcional e de UX — não há mudança de regras de negócio. Tipos de teste aplicáveis: funcional, regressão de acesso por perfil, e segurança (ação irreversível de exclusão). Prioridade de execução: segurança (acesso por perfil Gestor) → Exclusão de dados (irreversível, "CONFIRMAR") → Gerenciar adicionais (remoção com bloqueios de negócio) → CEP auto-fill → demais fluxos. Maior risco: exclusão de dados sem guard adequado e remoção de adicionais com canais ativos.
+**Escopo:** Migração da aba "Dados da Empresa" do legado para nova interface autônoma em Configurações > Dados cadastrais, cobrindo leitura/edição de dados cadastrais via foundation-spa + foundation-api.
+
+**Tipos de teste aplicáveis:** UI (formulário, feedbacks visuais, acessibilidade WCAG AA), API (endpoints GET/PATCH de dados da conta), integração com API externa ViaCEP (auto-preenchimento de endereço), controle de acesso por role.
+
+**Prioridade de execução:** (1) Campos obrigatórios + fluxo de salvar → (2) Toggle Documento Internacional → (3) Auto-preenchimento CEP → (4) Acesso por role → (5) Acessibilidade e Design System.
+
+**Riscos principais:**
+- Regressão no toggle de máscara (ativar/desativar Documento Internacional sem limpar campo corretamente)
+- Falha silenciosa no auto-fill de CEP por timeout ou indisponibilidade da API ViaCEP
+- Acesso não autorizado por roles abaixo de Gestor (controle de acesso ausente ou mal configurado)
+- Estado de loading não exibido no botão Salvar em conexões lentas
 
 ---
 
@@ -15,74 +25,88 @@ Este card migra três abas da tela "Minha Empresa" (Dados da Empresa, Dados do P
 
 | Risco | Probabilidade (A/M/B) | Impacto (A/M/B) | Prioridade |
 |---|---|---|---|
-| Exclusão de dados executada sem exigir "CONFIRMAR" | M | A | 🔴 Alta |
-| Remoção de adicional com canal ativo não bloqueia | A | A | 🔴 Alta |
-| Tabela de plano exibindo dados incorretos (adicionais + total) | M | A | 🔴 Alta |
-| Usuário não-Gestor consegue acessar "Minha Empresa" | B | A | 🔴 Alta |
-| CEP válido não dispara auto-preenchimento | M | M | 🟡 Média |
-| "Solicitar upgrade" não abre WhatsApp ou monta URL errada | M | M | 🟡 Média |
-| Backup disponível para download enquanto status = Processando | B | A | 🟡 Média |
-| Segunda solicitação de backup no mês não é bloqueada | M | M | 🟡 Média |
-| Coluna "Adicionais" não atualiza sem reload após remoção | M | M | 🟡 Média |
-| Financeiro com regressão (embed quebrado) | B | M | 🟡 Média |
-| Salvar dados sem toast de feedback (sucesso ou erro) | B | B | 🟢 Baixa |
+| Toggle Documento Internacional não limpa campo ao ativar | A | A | 🔴 Alta |
+| CEP inválido não exibe mensagem inline (erro silencioso) | M | A | 🔴 Alta |
+| Campos não carregam pré-preenchidos (GET falha silenciosamente) | B | A | 🔴 Alta |
+| Role não-Gestor consegue acessar seção (falha de controle de acesso) | B | A | 🔴 Alta |
+| Erro de servidor não exibe toast de erro (feedback ausente) | B | A | 🔴 Alta |
+| XSS via campos de texto livre (segurança) | B | A | 🔴 Alta |
+| CEP válido não dispara auto-preenchimento (timeout ViaCEP) | M | M | 🟡 Média |
+| Botão Salvar não exibe estado de loading (feedback visual ausente) | M | M | 🟡 Média |
 
 ---
 
-## BLOCO 3 — Tabela de Cenários de Teste
+## BLOCO 3 — Tabela de Cenários
 
-| ID | Nome do Cenário | Pré-requisitos | Passo a Passo | Resultado Esperado | Criticidade |
-|---|---|---|---|---|---|
-| CT-EMPRESA-001 | Gestor salva dados da empresa com sucesso | Gestor autenticado; tela "Minha Empresa > Dados da Empresa" aberta; campos carregados com dados atuais | 1. Alterar o campo "Nome da empresa". 2. Clicar em "Salvar alterações". | Toast "Dados salvos com sucesso!" exibido. Campos permanecem com os novos valores após save. (RN: Nome obrigatório; AC: toast de sucesso) | 🔴 Alta |
-| CT-EMPRESA-002 | CEP válido preenche endereço automaticamente | Gestor autenticado; aba Dados da Empresa aberta | 1. Preencher campo CEP com um CEP brasileiro válido de 8 dígitos. 2. Aguardar auto-preenchimento. | Campos Logradouro, Bairro, Estado e Cidade preenchidos automaticamente via ViaCEP. Campo Número e Complemento permanecem editáveis. (RN: CEP com 8 dígitos dispara ViaCEP) | 🟡 Média |
-| CT-EMPRESA-003 | Salvar sem nome da empresa exibe erro por campo | Gestor autenticado; aba Dados da Empresa aberta | 1. Limpar o campo "Nome da empresa". 2. Clicar em "Salvar alterações". | Campo "Nome da empresa" fica destacado em coral. Mensagem "Este campo é obrigatório" exibida abaixo do campo. Dados não são salvos. (RN: Nome obrigatório; AC: destaque coral + mensagem) | 🔴 Alta |
-| CT-EMPRESA-004 | CEP inválido exibe erro inline | Gestor autenticado; aba Dados da Empresa aberta | 1. Digitar CEP com menos de 8 dígitos ou CEP inexistente (ex: "00000000"). 2. Aguardar resposta da API. | Mensagem de erro inline "CEP não encontrado. Verifique o número." exibida abaixo do campo CEP. Campos de endereço não são preenchidos. (AC: CEP inválido → mensagem de erro inline) | 🟡 Média |
-| CT-EMPRESA-005 | Erro de servidor no save exibe toast de erro | Gestor autenticado; aba Dados da Empresa aberta; simular falha de API | 1. Preencher dados válidos. 2. Simular erro 500 na API de save. 3. Clicar em "Salvar alterações". | Toast de erro resolutivo exibido (ex: "Não foi possível salvar. Tente novamente."). Nenhuma navegação acontece. (AC: Erro de servidor → toast de erro) | 🟡 Média |
-| CT-EMPRESA-006 | Toggle Documento Internacional altera máscara | Gestor autenticado; aba Dados da Empresa aberta | 1. Verificar máscara do campo Documento (CNPJ: XX.XXX.XXX/XXXX-XX). 2. Ativar o checkbox "Documento Internacional". 3. Verificar máscara. | Com toggle ativo: campo Documento aceita texto livre sem máscara. Com toggle inativo: máscara CNPJ/CPF restaurada. (RN: Toggle altera máscara) | 🟡 Média |
-| CT-EMPRESA-007 | Não-Gestor não acessa "Minha Empresa" | Usuário com perfil Operador ou Supervisor autenticado | 1. Acessar a URL da tela "Minha Empresa" diretamente. | Usuário não tem acesso à tela. Redireciona ou exibe mensagem de acesso negado. (RN: Apenas Gestores têm acesso — Segurança) | 🔴 Alta |
-| CT-EMPRESA-008 | Tabela de plano carrega com dados corretos | Gestor autenticado; conta com plano e adicionais cadastrados | 1. Acessar aba "Dados do Plano". | Skeleton exibido durante carregamento. Tabela renderiza com colunas: Recursos, Plano base, Adicionais, Total. Valores de cada linha somam corretamente (Plano base + Adicionais = Total). Ícones de canal exibidos corretamente. (AC: tabela com skeleton + dados corretos) | 🟡 Média |
-| CT-EMPRESA-009 | Upgrade de plano redireciona para WhatsApp | Gestor autenticado; aba Dados do Plano aberta | 1. Clicar em "Aumentar meu plano". 2. Modal abre com lista de planos. 3. Selecionar um plano. 4. Clicar em "Solicitar upgrade". | Nova aba abre para `https://wa.me/[número]?text=[mensagem]` com mensagem pré-preenchida contendo o nome do plano selecionado. (RN: URL WhatsApp com mensagem do plano selecionado) | 🟡 Média |
-| CT-EMPRESA-010 | Remover adicional com sucesso atualiza tabela | Gestor autenticado; conta com adicional sem canal ativo e sem usuários acima do limite | 1. Clicar em "Gerenciar adicionais". 2. Clicar em "Remover" para um adicional elegível. 3. Confirmar na tela de confirmação. 4. Clicar em "Confirmar remoção". | Modal fecha. Toast "Adicional removido com sucesso!" exibido. Coluna "Adicionais" da tabela atualizada sem reload de página. Log de auditoria registrado. (RN: remoção via API + atualização sem reload + log) | 🔴 Alta |
-| CT-EMPRESA-011 | Remover adicional com canal ativo é bloqueado | Gestor autenticado; conta com adicional de canal conectado e recebendo mensagens | 1. Clicar em "Gerenciar adicionais". 2. Localizar adicional com canal ativo em uso. 3. Verificar o botão "Remover". | Botão "Remover" bloqueado (desabilitado). Aviso explicativo exibido sem botão de confirmação. Remoção não é possível. (RN: Canal ativo em uso impede remoção) | 🔴 Alta |
-| CT-EMPRESA-012 | Remover adicional de usuários além do limite é bloqueado | Gestor autenticado; conta com usuários ativos em quantidade maior que o total resultante após remoção (ex: 130 ativos, plano base = 2, remover 10 adicionais = 12 total < 130) | 1. Clicar em "Gerenciar adicionais". 2. Localizar adicional de usuários. 3. Verificar o botão "Remover". | Botão "Remover" bloqueado. Aviso explicativo exibido informando que a quantidade de usuários ativos excede o total resultante. (RN: usuários ativos > total após remoção impede remoção) | 🔴 Alta |
-| CT-EMPRESA-013 | "Voltar" na confirmação não executa remoção | Gestor autenticado; modal de adicionais aberto com adicional elegível | 1. Clicar em "Remover" em um adicional elegível. 2. Tela de confirmação exibida. 3. Clicar em "Voltar". | Modal retorna à listagem de adicionais sem executar nenhuma remoção. Estado da tabela de plano permanece inalterado. (AC: Voltar → retorna à listagem sem ação) | 🟡 Média |
-| CT-EMPRESA-014 | Reduzir/Cancelar plano redireciona para WhatsApp | Gestor autenticado; aba Dados do Plano aberta | 1. Clicar em "Reduzir / Cancelar Plano". 2. Modal de confirmação abre com aviso de perda de recursos. 3. Clicar em "Enviar solicitação". | Nova aba abre para `https://wa.me/[número]?text=[mensagem]` com mensagem pré-preenchida sobre redução/cancelamento. (RN: Reduzir/Cancelar → WhatsApp com mensagem) | 🟡 Média |
-| CT-EMPRESA-015 | Solicitar backup com sucesso exibe toast | Gestor autenticado; conta sem solicitação de backup no mês corrente | 1. Acessar aba "Ações". 2. Clicar no botão de solicitar backup. 3. Confirmar no modal. | Toast de confirmação exibido. Tabela de histórico atualizada com novo registro em status "Processando". (AC: Nova solicitação válida → modal → disparo → toast) | 🟡 Média |
-| CT-EMPRESA-016 | Exclusão de dados com "CONFIRMAR" digitado | Gestor autenticado; aba Ações aberta; dados de contatos existentes no período | 1. Acessar seção "Zona de Perigo". 2. Clicar em "Excluir contatos ou conversas". 3. Definir data de referência (data de criação do contato). 4. Digitar "CONFIRMAR" no campo de confirmação. 5. Clicar no botão de confirmar. | Botão de confirmar habilitado ao digitar "CONFIRMAR". Exclusão executada. Toast "Exclusão realizada com sucesso!" exibido. Log de auditoria registrado. (RN: data de criação; AC: CONFIRMAR; log) | 🔴 Alta |
-| CT-EMPRESA-017 | Segunda solicitação de backup no mês é bloqueada | Gestor autenticado; já existe 1 solicitação de backup no mês corrente | 1. Acessar aba "Ações". 2. Tentar solicitar novo backup. | Aviso de bloqueio exibido com data do próximo backup disponível (ex: "Backup já solicitado este mês. Próximo disponível em [data]."). Botão de solicitação desabilitado. (RN: máximo 1 backup/mês) | 🟡 Média |
-| CT-EMPRESA-018 | Confirmação de exclusão bloqueada sem "CONFIRMAR" | Gestor autenticado; modal de exclusão aberto | 1. Acessar modal de exclusão de dados. 2. Deixar campo de confirmação vazio ou digitar texto diferente de "CONFIRMAR". 3. Verificar botão de confirmação. | Botão de confirmar permanece desabilitado enquanto o texto digitado for diferente de "CONFIRMAR". Nenhuma exclusão é disparada. (AC: Botão desabilitado até digitar "CONFIRMAR") | 🟡 Média |
-| CT-EMPRESA-019 | Link de download inativo quando backup em Processando | Gestor autenticado; tabela de backups com registro em status "Processando" | 1. Acessar aba "Ações". 2. Verificar tabela de histórico de backups. 3. Localizar registro com status "Processando". 4. Observar o link "Baixar". | Link "Baixar" desabilitado/inativo para registros com status "Processando". Apenas registros com status "Disponível" exibem link de download ativo. (AC: Link ativo apenas quando status = Disponível) | 🟢 Baixa |
-| CT-EMPRESA-020 | Aba Financeiro exibe embed e aviso de transição | Gestor autenticado | 1. Acessar aba "Financeiro". | Aviso contextual exibido acima do iframe (ex: "Seus dados financeiros serão integrados em breve..."). Iframe da Super Lógica carrega corretamente sem regressão. (AC: aviso + iframe sem regressão) | 🟢 Baixa |
+| ID | Nome do Cenário | Pré-requisitos | Passo a Passo | Resultado Esperado | Criticidade | Modo | Depende de |
+|----|----------------|----------------|---------------|--------------------|-------------|------|------------|
+| CT-CADAST-001 | Carregar formulário pré-preenchido | Conta com dados cadastrais existentes (nome, documento, telefone, email, endereço, área, site); usuário autenticado com role Gestor. ⚠️ Bloqueável — criável via API: POST /v3/accounts | 1. Fazer login com usuário Gestor; 2. Navegar até Configurações > Dados cadastrais | Todos os campos (nome, documento, telefone, email, logradouro, número, complemento, bairro, estado, cidade, área de atuação, site) exibem os valores atuais da conta sem interação adicional | 🔴 Alta | UI | — |
+| CT-CADAST-002 | Salvar alterações com dados válidos | Formulário carregado (CT-CADAST-001); campo Nome da empresa preenchido | 1. Alterar o campo "Nome da empresa" para um novo valor válido (ex: "Empresa Teste Atualizada"); 2. Clicar no botão "Salvar alterações" | Botão entra em estado de loading durante a requisição; ao concluir, exibe toast "Dados salvos com sucesso!"; campos permanecem preenchidos com os novos valores | 🔴 Alta | UI | CT-CADAST-001 |
+| CT-CADAST-003 | Toggle Documento Internacional — ativar | Formulário carregado; campo Documento preenchido com valor no formato CNPJ ou CPF | 1. Marcar o checkbox "Documento Internacional"; 2. Observar o campo Documento | Máscara do campo Documento muda para texto livre (sem formatação CNPJ/CPF) e o valor anterior é limpo (campo fica vazio) | 🔴 Alta | UI | CT-CADAST-001 |
+| CT-CADAST-004 | Toggle Documento Internacional — desativar | Toggle "Documento Internacional" ativado (CT-CADAST-003); campo Documento vazio ou com texto livre | 1. Desmarcar o checkbox "Documento Internacional"; 2. Observar o campo Documento | Máscara CNPJ/CPF é restaurada no campo Documento; campo permanece vazio aguardando novo valor formatado | 🟡 Média | UI | CT-CADAST-003 |
+| CT-CADAST-005 | Auto-preenchimento com CEP válido | Formulário carregado; campos de endereço vazios ou com valores anteriores | 1. Preencher o campo CEP com 8 dígitos numéricos válidos (ex: 01310100); 2. Sair do campo (blur/Tab) | Campos Logradouro, Bairro, Estado e Cidade são preenchidos automaticamente com os dados retornados pela API ViaCEP; campo Número e Complemento permanecem para preenchimento manual | 🔴 Alta | UI | CT-CADAST-001 |
+| CT-CADAST-006 | CEP inválido — mensagem de erro inline | Formulário carregado | 1. Preencher o campo CEP com valor inexistente (ex: 00000000); 2. Sair do campo (blur/Tab) | Mensagem de erro inline "CEP não encontrado. Verifique o número." é exibida abaixo do campo CEP; campos de endereço (Logradouro, Bairro, Estado, Cidade) não são alterados | 🔴 Alta | UI | CT-CADAST-001 |
+| CT-CADAST-007 | Salvar com "Nome da empresa" vazio | Formulário carregado | 1. Limpar completamente o campo "Nome da empresa"; 2. Clicar no botão "Salvar alterações" | Campo "Nome da empresa" é destacado com borda/fundo coral + mensagem "Este campo é obrigatório" abaixo; foco é movido automaticamente para o campo inválido; nenhuma requisição é enviada ao servidor (dados não são submetidos) | 🔴 Alta | UI | CT-CADAST-001 |
+| CT-CADAST-008 | Erro de servidor ao salvar | Formulário carregado; servidor configurado para retornar HTTP 500 | 1. Alterar qualquer campo válido (ex: telefone); 2. Clicar em "Salvar alterações" | Toast de erro "Não foi possível salvar. Tente novamente." é exibido; dados do formulário permanecem preenchidos com os valores editados (não revertem) | 🔴 Alta | UI | CT-CADAST-001 |
+| CT-CADAST-009 | Acesso negado para role não-Gestor | Usuário autenticado com role Atendente (agent) na mesma conta | 1. Fazer login com usuário de role Atendente; 2. Tentar acessar Configurações > Dados cadastrais (via menu ou URL direta) | Seção "Dados cadastrais" não é exibida no menu de Configurações; acesso por URL direta resulta em redirecionamento ou exibição de página de erro de permissão (não exibe o formulário) | 🔴 Alta | UI | — |
+| CT-CADAST-010 | CEP com menos de 8 dígitos — não dispara auto-preenchimento | Formulário carregado | 1. Preencher o campo CEP com apenas 7 dígitos numéricos (ex: 0131010); 2. Sair do campo (blur/Tab) | Auto-preenchimento NÃO é disparado; campos de endereço permanecem com os valores anteriores; nenhuma chamada à API ViaCEP é realizada | 🟡 Média | UI | CT-CADAST-001 |
+| CT-CADAST-011 | CEP alfanumérico — não dispara auto-preenchimento | Formulário carregado | 1. Tentar preencher o campo CEP com entrada alfanumérica (ex: "0131010A"); 2. Sair do campo (blur/Tab) | Auto-preenchimento NÃO é disparado após o blur; campos de endereço não são alterados. Comportamento mínimo aceitável: o campo não dispara preenchimento com entrada que não satisfaz os 8 dígitos numéricos (o campo pode rejeitar letras via máscara ou aceitar e ignorar para o disparo do auto-fill — ambos são válidos) | 🟡 Média | UI | CT-CADAST-001 |
+| CT-CADAST-012 | Injeção XSS em campo Nome da empresa | Formulário carregado | 1. Preencher "Nome da empresa" com `<script>alert('xss')</script>`; 2. Clicar em "Salvar alterações" | O valor é tratado como texto simples (sanitizado pelo frontend/backend ou rejeitado por validação); nenhum script é executado na interface; se salvo, o valor exibido de volta é o texto literal sem interpretação HTML | 🔴 Alta | UI | CT-CADAST-001 |
 
 ---
 
-## BLOCO 4 — Cenários Gherkin (BDD)
+## BLOCO 4 — Gherkin (BDD)
+
+### Cenário de Alta Criticidade #1 — Salvar alterações com dados válidos (CT-CADAST-002)
 
 ```gherkin
-Cenário: Adicional com canal ativo em uso não pode ser removido
-  Dado que estou autenticado como Gestor na aba "Dados do Plano"
-  E existe um adicional de canal com status "conectado e recebendo mensagens"
-  Quando abro o modal "Gerenciar adicionais"
-  E localizo o adicional com canal ativo
-  Então o botão "Remover" está bloqueado (desabilitado)
-  E um aviso explicativo é exibido sem botão de confirmação
-  E nenhuma remoção é executada
+Funcionalidade: Dados Cadastrais — Salvar alterações
+
+  Cenário: Gestor salva alterações com dados válidos
+    Dado que o usuário está autenticado com role Gestor
+    E está na página Configurações > Dados cadastrais
+    E o formulário está pré-preenchido com os dados atuais da conta
+    Quando o usuário altera o campo "Nome da empresa" para "Empresa Teste Atualizada"
+    E clica no botão "Salvar alterações"
+    Então o botão exibe estado de loading durante a requisição
+    E ao concluir é exibido o toast "Dados salvos com sucesso!"
+    E os campos do formulário permanecem preenchidos com os novos valores
 ```
 
+### Cenário de Alta Criticidade #2 — Toggle Documento Internacional (CT-CADAST-003)
+
 ```gherkin
-Cenário: Exclusão de dados exige digitação de "CONFIRMAR" para habilitar o botão
-  Dado que estou autenticado como Gestor na aba "Ações"
-  E acesso a seção "Zona de Perigo"
-  Quando abro o modal de exclusão de contatos e conversas
-  E o campo de confirmação está vazio ou contém texto diferente de "CONFIRMAR"
-  Então o botão de confirmar está desabilitado
-  Quando digito exatamente "CONFIRMAR" no campo de confirmação
-  Então o botão de confirmar é habilitado
-  E ao clicar, a exclusão é executada e o toast "Exclusão realizada com sucesso!" é exibido
-  E o log de auditoria é registrado
+Funcionalidade: Dados Cadastrais — Toggle Documento Internacional
+
+  Cenário: Ativar toggle Documento Internacional limpa campo e remove máscara
+    Dado que o usuário está autenticado com role Gestor
+    E está na página Configurações > Dados cadastrais
+    E o campo "Documento" está preenchido com valor no formato CNPJ ou CPF
+    E o checkbox "Documento Internacional" está desmarcado
+    Quando o usuário marca o checkbox "Documento Internacional"
+    Então a máscara de formatação CNPJ/CPF é removida do campo "Documento"
+    E o campo "Documento" é limpo (fica vazio)
+    E o campo passa a aceitar texto livre sem formatação
+
+  Cenário: Desativar toggle Documento Internacional restaura máscara
+    Dado que o usuário está autenticado com role Gestor
+    E o checkbox "Documento Internacional" está marcado
+    E o campo "Documento" está no modo texto livre
+    Quando o usuário desmarca o checkbox "Documento Internacional"
+    Então a máscara CNPJ/CPF é restaurada no campo "Documento"
+    E o campo permanece vazio aguardando novo valor formatado
 ```
 
 ---
 
-## Validação LLM
-✅ 20 cenários aprovados | 0 revisados | 0 removidos
+## Validação por Agente Crítico Independente
+
+- Aprovados sem alteração: 11
+- Revisados: 1 (CT-CADAST-011)
+- Adicionados por cobertura insuficiente: 0
+
+**Detalhes da revisão:**
+
+| CT-ID | Critério | Problema identificado | Correção aplicada |
+|---|---|---|---|
+| CT-CADAST-011 | Assunção indevida / Resultado ambíguo | Resultado esperado original usava "OU" de forma ambígua — tornava o cenário não determinístico para execução manual | Resultado esperado reescrito para especificar o comportamento mínimo aceitável: auto-preenchimento não disparado após blur com entrada alfanumérica, com nota explicativa dos dois comportamentos válidos |

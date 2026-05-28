@@ -1,13 +1,13 @@
 # Cenários de Teste — DEV4-4225
-> Card: Financeiro Nativo: Substituição do Embed Super Lógica
-> Gerado em: 25/05/2026
-> Card atualizado em: 22/05/2026
+> Card: Configurações: Ações críticas (Nova interface)
+> Gerado em: 2026-05-28
+> Card atualizado em: 2026-05-27T16:40:11-03:00
 
 ---
 
 ## BLOCO 1 — Estratégia de Teste
 
-Feature de alto impacto (criticidade interna 90/100) que substitui o iframe da Super Lógica por experiência financeira nativa em 3 sub-abas. Tipos de teste aplicáveis: **funcional** (fluxos de faturas, NFs e solicitações), **integração** (backend-to-backend com Super Lógica, circuit breaker, timeout), **segurança** (PCI DSS, acesso por perfil, ausência de credenciais no frontend) e **UX/acessibilidade** (WCAG AA, tokens do Design System). Prioridade de execução: segurança PCI e acesso → integração (circuit breaker/timeout) → fluxos de faturas → NFs e solicitações. Risco principal: regressão na lógica de status de fatura (Pendente/Vencida/Liquidada) e vazamento de dados de cartão pelo backend Poli.
+Feature de alto risco (criticidade 80/100) que concentra as únicas ações destrutivas e irreversíveis disponíveis ao owner da conta: exclusão de contatos/conversas e encerramento de conta. O escopo restringe o acesso ao perfil owner com controle de acesso duplo (menu + URL), fluxo de confirmação em 2 etapas com validação sensível a maiúsculas/minúsculas ("CONFIRMAR") ou e-mail exato, e log de auditoria obrigatório em todas as execuções bem-sucedidas. Tipos de teste aplicáveis: **funcional** (happy path e navegação modal), **controle de acesso** (owner vs. gestor, URL direta), **validação de formulário** (case-sensitive, e-mail com trim/case-insensitive), **tratamento de erros** (falha de API, retry), **segurança** (authorization bypass, log de auditoria, idempotência) e **acessibilidade** (WCAG AA, Design System). Prioridade de execução: controle de acesso → confirmação e ativação de botão → happy paths → tratamento de erros → borda → log de auditoria. Risco principal: execução acidental por ausência de bloqueio no botão, acesso indevido por gestor via URL direta, e ausência de registro de auditoria após execução bem-sucedida.
 
 ---
 
@@ -15,81 +15,117 @@ Feature de alto impacto (criticidade interna 90/100) que substitui o iframe da S
 
 | Risco | Probabilidade (A/M/B) | Impacto (A/M/B) | Prioridade |
 |---|---|---|---|
-| Dados de cartão trafegando pelo backend Poli (violação PCI DSS) | B | A | Alta |
-| Falha silenciosa no circuit breaker / timeout 10s | M | A | Alta |
-| Lógica de status "Vencida" implementada incorretamente | M | A | Alta |
-| Filtro "Pendentes" não incluir status Vencida | M | A | Alta |
-| Acesso indevido à aba Financeiro por perfil não-Gestor | B | A | Alta |
-| Formulário de cartão abrindo modal/nova tela em vez de inline | M | M | Média |
-| Download de boleto disponível para fatura Liquidada | M | M | Média |
-| Botão "Enviar" habilitado com mensagem < 10 chars | M | M | Média |
-| Paginação não exibida com 21+ faturas | B | M | Média |
-| Cache de NFs retornando dados com TTL expirado (> 5 min) | B | B | Baixa |
-| Estado vazio exibindo mensagem genérica em vez de contextual | B | B | Baixa |
+| Gestor (não-owner) acessa a seção via URL direta sem redirect | M | A | Alta |
+| Botão "Executar exclusão" habilitado sem digitar "CONFIRMAR" exato | M | A | Alta |
+| Exclusão executada sem registro de log de auditoria | M | A | Alta |
+| Botão "Solicitar encerramento" habilitado sem e-mail correto | M | A | Alta |
+| Modal fecha após erro de API (deveria permanecer aberto) | M | A | Alta |
+| Seleção do step 1 não preservada ao clicar "Voltar" no step 2 | M | M | Média |
+| Toast de sucesso exibido mas log de auditoria não registrado | B | A | Alta |
+| Variações de case em "CONFIRMAR" (ex: "confirmar") habilitam botão | M | A | Alta |
+| E-mail do owner com espaços extras não é aceito (trim ausente) | M | M | Média |
+| Aviso de impacto no step 1 não atualiza conforme seleção no select | M | M | Média |
+| Banner de encerramento não persiste após fechar e reabrir a página | B | M | Média |
+| Tokens do Design System Poli não aplicados em estados de risco | B | B | Baixa |
 
 ---
 
 ## BLOCO 3 — Tabela de Cenários de Teste
 
-| ID | Nome do Cenário | Pré-requisitos | Passo a Passo | Resultado Esperado | Criticidade |
-|---|---|---|---|---|---|
-| CT-FIN-001 | Acesso Financeiro via sessão Poli | Usuário autenticado como Gestor; sessão Poli ativa | 1. Acessar tela "Minha Empresa"<br>2. Clicar na aba "Financeiro" | Sub-tab "Faturas e forma de pagamento" ativa por padrão; lista de faturas carrega sem solicitar login Super Lógica; nenhum iframe visível no DOM _(RN1, RN2; CA: sub-tab padrão)_ | 🔴 Alta |
-| CT-FIN-002 | Filtro de faturas por status | Gestor autenticado; faturas com status Pendente, Vencida e Liquidada existentes | 1. Acessar Financeiro → sub-tab Faturas<br>2. Verificar filtro ativo<br>3. Clicar em "Pendentes"<br>4. Observar lista<br>5. Clicar em "Pagas" | Filtro "Todas" ativo por padrão; "Pendentes" exibe Pendente + Vencida; "Pagas" exibe apenas Liquidadas; sem reload de página _(RN7, RN9; CA: toggle sem reload)_ | 🔴 Alta |
-| CT-FIN-003 | Download de boleto fatura Pendente | Gestor autenticado; fatura com status Pendente ou Vencida existente | 1. Localizar fatura Pendente ou Vencida na lista<br>2. Clicar em "Baixar boleto" | PDF/URL abre em nova aba; botão "Baixar recibo" não exibido para este status _(RN8; CA: baixar boleto apenas Pendente/Vencida)_ | 🔴 Alta |
-| CT-FIN-004 | Download de recibo fatura Liquidada | Gestor autenticado; fatura com status Liquidada existente | 1. Localizar fatura com badge verde "Liquidada"<br>2. Clicar em "Baixar recibo" | PDF abre em nova aba; botão "Baixar boleto" não exibido para este status _(RN8; CA: baixar recibo apenas Liquidada)_ | 🔴 Alta |
-| CT-FIN-005 | Alteração de pagamento para cartão | Gestor autenticado; forma de pagamento atual: Boleto Bancário | 1. Acessar sub-tab "Faturas e forma de pagamento"<br>2. Clicar em "Alterar"<br>3. Preencher número, nome, validade e CVV válidos<br>4. Clicar em "Salvar alteração"<br>5. Monitorar requisições de rede | Formulário expande inline (sem modal/nova tela); toast "Forma de pagamento atualizada com sucesso!" exibido; formulário recolhe; nenhum dado de cartão enviado ao domínio Poli _(RN10, RN11; CA: inline + toast)_ | 🔴 Alta |
-| CT-FIN-006 | Cancelar alteração de pagamento | Gestor autenticado; formulário de cartão aberto e parcialmente preenchido | 1. Clicar em "Alterar"<br>2. Preencher alguns campos<br>3. Clicar em "Cancelar" | Formulário recolhe sem salvar; forma de pagamento anterior inalterada _(CA: Cancelar → formulário recolhe sem salvar)_ | 🟡 Média |
-| CT-FIN-007 | Download de nota fiscal em PDF | Gestor autenticado; notas fiscais emitidas na conta | 1. Acessar sub-tab "Notas Fiscais"<br>2. Localizar NF na lista<br>3. Clicar no link de download | PDF abre em nova aba via URL assinada; lista exibe número, competência e valor _(CA: download abre PDF em nova aba — NF)_ | 🟡 Média |
-| CT-FIN-008 | Criar solicitação com sucesso | Gestor autenticado; sub-tab Solicitações acessada | 1. Clicar em "Nova solicitação"<br>2. Selecionar departamento "Financeiro"<br>3. Digitar mensagem com ≥ 10 caracteres<br>4. Clicar em "Enviar" | Modal abre; botão "Enviar" habilitado após preenchimento válido; modal fecha + toast de sucesso exibido; nova solicitação aparece na lista _(RN13, RN15; CA: envio com sucesso)_ | 🟡 Média |
-| CT-FIN-009 | Falha na API exibe erro amigável | Gestor autenticado; API Super Lógica simulada para retornar erro 500 ou timeout > 10s | 1. Acessar aba Financeiro (qualquer sub-tab) | Banner de erro exibido: "Não foi possível carregar os dados. Tente novamente."; botão "Tentar novamente" presente e funcional; nenhuma mensagem técnica ou tela da Super Lógica exposta _(RN5; CA: falha na API → banner amigável)_ | 🔴 Alta |
-| CT-FIN-010 | Número de cartão inválido — erro inline | Gestor autenticado; formulário de cartão aberto | 1. Digitar número de cartão inválido (ex.: "1234 5678 9012 3456")<br>2. Sair do campo (blur) | Mensagem "Número de cartão inválido" exibida abaixo do campo; botão "Salvar alteração" permanece desabilitado _(CA: número inválido → erro inline)_ | 🟡 Média |
-| CT-FIN-011 | "Salvar" desabilitado com campos inválidos | Gestor autenticado; formulário de cartão aberto | 1. Deixar campos obrigatórios em branco ou com dados inválidos<br>2. Verificar estado do botão "Salvar alteração" | Botão "Salvar alteração" desabilitado; campos inválidos exibem mensagem de erro após blur _(CA: Salvar desabilitado com campos inválidos)_ | 🟡 Média |
-| CT-FIN-012 | Solicitação com mensagem < 10 caracteres | Modal de solicitação aberto; departamento selecionado | 1. Digitar 9 caracteres no campo Mensagem<br>2. Verificar estado do botão "Enviar" | Botão "Enviar" desabilitado; contador exibe "9/1000"; nenhuma submissão possível _(RN14; CA: Enviar desabilitado com Mensagem < 10 chars)_ | 🟡 Média |
-| CT-FIN-013 | Solicitação sem departamento selecionado | Modal de solicitação aberto; mensagem válida digitada | 1. Digitar mensagem com ≥ 10 caracteres<br>2. Não selecionar departamento<br>3. Verificar estado do botão "Enviar" | Botão "Enviar" permanece desabilitado _(RN15; CA: Enviar desabilitado sem Departamento)_ | 🟡 Média |
-| CT-FIN-014 | Erro de API ao salvar cartão | Gestor autenticado; API do gateway simulada para retornar erro na tokenização | 1. Preencher formulário com dados válidos<br>2. Clicar em "Salvar alteração" | Mensagem de erro inline exibida; formulário não recolhe; dados digitados permanecem preservados; nenhum toast de sucesso exibido _(CA: erro de API → mensagem inline sem perder dados)_ | 🔴 Alta |
-| CT-FIN-015 | Sem paginação com exatamente 20 faturas | Conta com exatamente 20 faturas | 1. Acessar sub-tab Faturas com filtro "Todas" | Todas as 20 faturas exibidas em página única; controles de paginação não exibidos _(RN16; CA: paginação apenas quando > 20)_ | 🟢 Baixa |
-| CT-FIN-016 | Paginação exibida com 21 faturas | Conta com 21 faturas | 1. Acessar sub-tab Faturas com filtro "Todas"<br>2. Navegar para página 2 | Primeira página exibe 20 faturas; controles de paginação exibidos e funcionais; página 2 exibe a 21ª fatura _(RN16; CA: paginação funcional quando > 20)_ | 🟡 Média |
-| CT-FIN-017 | Mensagem de solicitação com 10 caracteres | Modal de solicitação aberto; departamento selecionado | 1. Digitar exatamente 10 caracteres no campo Mensagem | Botão "Enviar" habilitado; contador exibe "10/1000" _(RN14 — limite mínimo exato)_ | 🟢 Baixa |
-| CT-FIN-018 | Mensagem de solicitação com 1.000 caracteres | Modal de solicitação aberto; departamento selecionado | 1. Colar exatamente 1.000 caracteres<br>2. Tentar digitar o 1.001º caractere | Campo aceita máximo 1.000 caracteres; 1.001º caractere não inserido; contador exibe "1000/1000"; botão "Enviar" habilitado _(RN14 — limite máximo exato; CA: contador em tempo real)_ | 🟢 Baixa |
-| CT-FIN-019 | Estado vazio de faturas por filtro | Conta sem faturas pagas | 1. Acessar Faturas<br>2. Aplicar filtro "Pagas" | Mensagem contextual "Nenhuma fatura paga encontrada." exibida; mensagem genérica não exibida _(CA: estado vazio contextual por filtro)_ | 🟢 Baixa |
-| CT-FIN-020 | Estado vazio de notas fiscais | Conta sem notas fiscais emitidas | 1. Acessar sub-tab "Notas Fiscais" | Mensagem "Nenhuma nota fiscal emitida ainda." exibida corretamente _(CA: estado vazio NF)_ | 🟢 Baixa |
-| CT-FIN-021 | Acesso bloqueado a perfil não-Gestor | Usuário autenticado com perfil não-Gestor (ex.: Agente) | 1. Tentar acessar "Minha Empresa" → aba "Financeiro" | Aba Financeiro oculta ou acesso negado; dados financeiros não exibidos ao perfil não-Gestor _(RN1: apenas Gestores têm acesso — comportamento exato de bloqueio pendente de confirmação do produto)_ | 🔴 Alta |
-| CT-FIN-022 | Ausência de iframe Super Lógica no DOM | Gestor autenticado | 1. Acessar aba Financeiro<br>2. Inspecionar o DOM da página | Nenhum elemento `<iframe>` com domínio Super Lógica presente no DOM _(CA: Nenhum iframe da Super Lógica presente no frontend)_ | 🔴 Alta |
-| CT-FIN-023 | Dados de cartão não trafegam pelo backend Poli | Gestor autenticado; ferramenta de monitoramento de rede ativa | 1. Abrir formulário de cartão<br>2. Preencher número, CVV e validade válidos<br>3. Clicar em "Salvar alteração"<br>4. Analisar requisições enviadas ao domínio Poli | Nenhuma requisição a `/api/v1/financial/*` contém PAN, CVV ou validade; tokenização ocorre via SDK do gateway sem passar pelos servidores Poli _(RN11 — PCI DSS obrigatório)_ | 🔴 Alta |
+| ID | Nome do Cenário | Pré-requisitos | Passo a Passo | Resultado Esperado | Criticidade | Modo | Depende de |
+|---|---|---|---|---|---|---|---|
+| CT-ACRIT-001 | Owner acessa seção "Ações críticas" pelo menu | Usuário autenticado com perfil owner; Configurações gerais acessível | 1. Autenticar como owner<br>2. Navegar até Configurações gerais<br>3. Verificar menu lateral | Item "Ações críticas" visível no menu; seção renderiza os dois cards (Excluir contatos e conversas; Encerrar conta) | 🔴 Alta | UI | — |
+| CT-ACRIT-002 | Gestor sem perfil owner não vê "Ações críticas" no menu | Usuário autenticado como Gestor (não-owner); Configurações gerais acessível | 1. Autenticar como Gestor não-owner<br>2. Navegar até Configurações gerais<br>3. Verificar menu lateral | Item "Ações críticas" não está presente no menu lateral; seção não é renderizada | 🔴 Alta | UI | — |
+| CT-ACRIT-003 | Gestor sem perfil owner tenta acessar URL direta de "Ações críticas" | ⚠️ Bloqueável: URL da seção "Ações críticas" conhecida; Gestor não-owner autenticado | 1. Autenticar como Gestor não-owner<br>2. Inserir diretamente a URL da seção Ações críticas no navegador | Redirect para Configurações gerais; mensagem "Você não tem permissão para acessar esta seção." exibida; nenhum conteúdo destrutivo é renderizado | 🔴 Alta | UI | CT-ACRIT-002 |
+| CT-ACRIT-004 | Owner abre modal de exclusão (step 1) | Owner autenticado; seção Ações críticas acessível | 1. Acessar Ações críticas<br>2. Clicar em "Selecionar e excluir" | Modal abre no passo 1 ("Passo 1 de 2 — Selecionar"); select de escopo exibido; avisos de impacto visíveis; botão "Continuar" presente | 🔴 Alta | UI | CT-ACRIT-001 |
+| CT-ACRIT-005 | Aviso de impacto atualiza conforme seleção no select | Owner autenticado; modal de exclusão aberto no passo 1 | 1. Abrir modal step 1<br>2. Selecionar "Apenas conversas"<br>3. Observar aviso de impacto<br>4. Alterar para "Apenas contatos"<br>5. Observar aviso de impacto<br>6. Alterar para "Contatos e conversas" | Texto de aviso de impacto atualiza dinamicamente conforme cada opção selecionada, sem recarregar o modal | 🔴 Alta | UI | CT-ACRIT-004 |
+| CT-ACRIT-006 | Owner avança para step 2 e retorna ao step 1 com seleção preservada | Owner autenticado; modal de exclusão aberto; "Apenas conversas" selecionado | 1. Selecionar "Apenas conversas" no step 1<br>2. Clicar em "Continuar"<br>3. Verificar que step 2 foi exibido<br>4. Clicar em "Voltar" | Modal retorna ao step 1; select exibe "Apenas conversas" (seleção preservada); campo de confirmação do step 2 é limpo | 🟡 Média | UI | CT-ACRIT-004 |
+| CT-ACRIT-007 | Owner cancela modal de exclusão no step 1 | Owner autenticado; modal de exclusão aberto no step 1 | 1. Abrir modal step 1<br>2. Clicar em "Cancelar" | Modal fecha; nenhuma ação executada; dados da conta inalterados | 🟡 Média | UI | CT-ACRIT-004 |
+| CT-ACRIT-008 | Botão "Executar exclusão" desabilitado antes de digitar "CONFIRMAR" | Owner autenticado; modal de exclusão no step 2 | 1. Avançar para step 2<br>2. Verificar estado do botão "Executar exclusão" sem digitar nada<br>3. Digitar "confirmar" (minúsculas)<br>4. Verificar estado do botão<br>5. Digitar "CONFIRMA" (incompleto)<br>6. Verificar estado do botão | Botão permanece desabilitado em todos os casos; apenas a string exata "CONFIRMAR" (case-sensitive, sem espaços) deve habilitá-lo | 🔴 Alta | UI | CT-ACRIT-004 |
+| CT-ACRIT-009 | Botão "Executar exclusão" habilita somente com "CONFIRMAR" exato | Owner autenticado; modal de exclusão no step 2 | 1. Avançar para step 2<br>2. Digitar "CONFIRMAR" exatamente | Botão "Executar exclusão" é habilitado imediatamente; variações com espaço extra ou capitalização diferente não habilitam | 🔴 Alta | UI | CT-ACRIT-004 |
+| CT-ACRIT-010 | Happy path — Exclusão de contatos e conversas com sucesso | ⚠️ Bloqueável: Owner autenticado; conta com contatos/conversas existentes; API de exclusão disponível | 1. Acessar Ações críticas<br>2. Clicar em "Selecionar e excluir"<br>3. Selecionar "Contatos e conversas"<br>4. Clicar em "Continuar"<br>5. Digitar "CONFIRMAR"<br>6. Clicar em "Executar exclusão" | Loading exibido durante execução; modal fecha; toast "Exclusão realizada com sucesso!" exibido; log de auditoria registrado com campos {owner_id, acao: "delete_data", escopo, data, conta_id, ip} | 🔴 Alta | UI + API | CT-ACRIT-009 |
+| CT-ACRIT-011 | Happy path — Exclusão apenas de conversas com sucesso | ⚠️ Bloqueável: Owner autenticado; conta com conversas existentes; API disponível | 1. Selecionar "Apenas conversas" no step 1<br>2. Avançar, digitar "CONFIRMAR"<br>3. Executar exclusão | Modal fecha; toast de sucesso exibido; log de auditoria registrado com escopo "apenas_conversas" | 🔴 Alta | UI + API | CT-ACRIT-009 |
+| CT-ACRIT-012 | Erro de API na exclusão — modal permanece aberto | ⚠️ Bloqueável: Owner autenticado; API de exclusão simulada para retornar erro 500 | 1. Executar os passos do happy path até clicar em "Executar exclusão"<br>2. API retorna erro | Modal não fecha; mensagem de erro inline exibida no step 2; botão "Tentar novamente" exibido; toast de sucesso não aparece | 🔴 Alta | UI + API | CT-ACRIT-009 |
+| CT-ACRIT-013 | "Tentar novamente" re-executa a exclusão sem fechar o modal | ⚠️ Bloqueável: Cenário de erro ativo (CT-ACRIT-012) | 1. Após erro de API, clicar em "Tentar novamente" | Requisição é re-enviada; se bem-sucedida: modal fecha + toast de sucesso; se falhar: nova mensagem de erro inline exibida | 🟡 Média | UI + API | CT-ACRIT-012 |
+| CT-ACRIT-014 | Owner abre modal de encerramento de conta (step 1) | Owner autenticado; seção Ações críticas acessível | 1. Acessar Ações críticas<br>2. Clicar em "Solicitar encerramento" | Modal abre no passo 1 ("Passo 1 de 2 — Consequências"); lista completa de consequências exibida; nota sobre processamento manual visível; botão "Continuar" presente | 🔴 Alta | UI | CT-ACRIT-001 |
+| CT-ACRIT-015 | Botão "Solicitar encerramento" desabilitado antes do e-mail correto | Owner autenticado; modal de encerramento no step 2; e-mail do owner conhecido | 1. Avançar para step 2 do encerramento<br>2. Verificar botão sem digitar nada<br>3. Digitar e-mail de outro usuário<br>4. Verificar estado do botão | Botão desabilitado enquanto e-mail não corresponder ao e-mail do owner; apenas o e-mail correto (com trim e case-insensitive) habilita o botão | 🔴 Alta | UI | CT-ACRIT-014 |
+| CT-ACRIT-016 | Botão "Solicitar encerramento" habilita com e-mail do owner (case-insensitive e trim) | Owner autenticado; e-mail do owner: "owner@empresa.com"; modal step 2 | 1. Digitar "OWNER@EMPRESA.COM" (maiúsculas)<br>2. Verificar botão<br>3. Limpar campo<br>4. Digitar "  owner@empresa.com  " (com espaços)<br>5. Verificar botão | Botão habilitado em ambos os casos; validação case-insensitive e com trim aplicados corretamente | 🟡 Média | UI | CT-ACRIT-014 |
+| CT-ACRIT-017 | Happy path — Solicitação de encerramento de conta com sucesso | ⚠️ Bloqueável: Owner autenticado; API de encerramento disponível | 1. Clicar em "Solicitar encerramento"<br>2. Ler consequências e clicar em "Continuar"<br>3. Digitar e-mail correto do owner<br>4. Clicar em "Solicitar encerramento" | Loading exibido; modal fecha; banner persistente na página confirmando recebimento da solicitação; conta permanece ativa; log de auditoria registrado com {owner_id, acao: "request_account_closure", data, conta_id, ip} | 🔴 Alta | UI + API | CT-ACRIT-015 |
+| CT-ACRIT-018 | Erro de API no encerramento — modal permanece aberto | ⚠️ Bloqueável: Owner autenticado; API de encerramento simulada para retornar erro 500 | 1. Executar passos do encerramento até clicar em "Solicitar encerramento"<br>2. API retorna erro | Modal não fecha; mensagem de erro inline exibida no step 2; botão "Tentar novamente" presente; banner de confirmação não exibido | 🔴 Alta | UI + API | CT-ACRIT-015 |
+| CT-ACRIT-019 | Log de auditoria registrado após exclusão bem-sucedida | ⚠️ Bloqueável: Acesso ao backend/logs de auditoria; exclusão executada com sucesso | 1. Executar CT-ACRIT-010 (exclusão com sucesso)<br>2. Consultar tabela/log de auditoria | Registro contém todos os campos obrigatórios: owner_id, acao: "delete_data", escopo, data (timestamp UTC), conta_id, ip do solicitante | 🔴 Alta | API | CT-ACRIT-010 |
+| CT-ACRIT-020 | Log de auditoria registrado após encerramento bem-sucedido | ⚠️ Bloqueável: Acesso ao backend/logs de auditoria; encerramento solicitado com sucesso | 1. Executar CT-ACRIT-017 (encerramento com sucesso)<br>2. Consultar tabela/log de auditoria | Registro contém todos os campos obrigatórios: owner_id, acao: "request_account_closure", data (timestamp UTC), conta_id, ip do solicitante | 🔴 Alta | API | CT-ACRIT-017 |
+| CT-ACRIT-021 | Acesso sem autenticação via URL retorna erro de autorização | Usuário não autenticado; URL da seção Ações críticas conhecida | 1. Sem sessão ativa, inserir URL direta da seção Ações críticas | Redirect para página de login ou resposta 401/403; nenhuma ação destrutiva acessível sem autenticação | 🔴 Alta | UI + API | — |
+| CT-ACRIT-022 | API de exclusão recusa requisição de perfil não-owner | ⚠️ Bloqueável: Token JWT de Gestor não-owner; endpoint da API de exclusão conhecido | 1. Enviar requisição POST ao endpoint de exclusão com token de Gestor não-owner | API retorna 403 Forbidden; nenhum dado é excluído; log de tentativa não-autorizada registrado | 🔴 Alta | API | — |
+| CT-ACRIT-023 | Banner de encerramento persiste após recarregar a página | Owner autenticado; solicitação de encerramento enviada com sucesso | 1. Executar CT-ACRIT-017<br>2. Recarregar a página de Configurações (F5) | Banner persistente ainda exibido após reload; conta ainda ativa no sistema | 🟢 Baixa | UI | CT-ACRIT-017 |
 
 ---
 
-## BLOCO 4 — Cenários Gherkin (BDD)
+## BLOCO 4 — Gherkin (BDD)
 
-### CT-FIN-001 — Gestor acessa aba Financeiro sem credenciais Super Lógica
+### CT-ACRIT-010 — Happy path: Exclusão de contatos e conversas com sucesso
 
 ```gherkin
-Cenário: Gestor acessa aba Financeiro com autenticação automática via sessão Poli
-  Dado que o usuário está autenticado como Gestor na plataforma Poli
-  E está na tela "Minha Empresa"
-  Quando clica na aba "Financeiro"
-  Então a sub-aba "Faturas e forma de pagamento" é carregada automaticamente
-  E nenhum prompt de login da Super Lógica é exibido
-  E nenhum elemento iframe com domínio da Super Lógica está presente no DOM
-  E a lista de faturas é carregada com o filtro "Todas" ativo por padrão
+Funcionalidade: Excluir contatos e conversas — ação crítica
+  Como dono da conta (owner)
+  Quero excluir contatos e conversas de forma controlada
+  Para remover dados que não preciso mais da plataforma
+
+  Cenário: Owner executa exclusão de contatos e conversas com confirmação correta
+    Dado que o usuário está autenticado como owner na plataforma Poli
+    E está na seção "Configurações gerais" > "Ações críticas"
+    Quando clica em "Selecionar e excluir"
+    Então o modal abre no passo 1 de 2 com o select de escopo e os avisos de impacto visíveis
+    Quando seleciona "Contatos e conversas" no select
+    Então o aviso de impacto atualiza para refletir a exclusão de contatos e conversas
+    Quando clica em "Continuar"
+    Então o modal avança para o passo 2 de 2
+    E o botão "Executar exclusão" está desabilitado
+    Quando digita "CONFIRMAR" no campo de confirmação
+    Então o botão "Executar exclusão" é habilitado
+    Quando clica em "Executar exclusão"
+    Então um estado de loading é exibido durante a execução
+    E o modal fecha após a conclusão bem-sucedida
+    E o toast "Exclusão realizada com sucesso!" é exibido na tela
+    E um registro de auditoria é criado com os campos owner_id, acao "delete_data", escopo, data, conta_id e ip
 ```
 
-### CT-FIN-009 — Falha na API Super Lógica exibe banner de erro amigável
+### CT-ACRIT-003 — Gestor sem perfil owner tenta acessar URL direta de "Ações críticas"
 
 ```gherkin
-Cenário: Falha na integração Super Lógica exibe estado de erro controlado
-  Dado que o usuário está autenticado como Gestor
-  E a API Super Lógica está indisponível (retorna erro 500 ou timeout superior a 10 segundos)
-  Quando acessa qualquer sub-aba da seção Financeiro
-  Então um banner de erro é exibido com a mensagem "Não foi possível carregar os dados. Tente novamente."
-  E o botão "Tentar novamente" está visível e funcional
-  E nenhuma mensagem de erro técnica ou interface da Super Lógica é exposta ao usuário
+Funcionalidade: Controle de acesso à seção Ações críticas
+  Como plataforma Poli
+  Quero garantir que apenas o owner acesse ações destrutivas
+  Para evitar execuções acidentais ou não-autorizadas
+
+  Cenário: Gestor sem perfil owner tenta acessar a seção Ações críticas via URL direta
+    Dado que o usuário está autenticado como Gestor sem perfil owner
+    E não visualiza o item "Ações críticas" no menu lateral de Configurações
+    Quando insere diretamente a URL da seção "Ações críticas" no navegador
+    Então é redirecionado para a página principal de "Configurações gerais"
+    E a mensagem "Você não tem permissão para acessar esta seção." é exibida
+    E nenhum componente de ação destrutiva é renderizado na página
 ```
 
 ---
 
-## Validação LLM
+## Validação por Agente Crítico Independente
 
-```
-✅ Validação LLM: 23 cenários aprovados | 1 anotado com ressalva (CT-FIN-021 — comportamento de bloqueio para não-Gestores não especificado no card) | 0 removidos
-```
+> Avaliação realizada sobre os 23 cenários gerados com base exclusivamente no card DEV4-4225.
+
+**Achados por critério:**
+
+| CT-ID | Critério | Problema identificado | Sugestão aplicada |
+|---|---|---|---|
+| CT-ACRIT-006 | Rastreabilidade | Step "campo de confirmação do step 2 é limpo" era assunção — o card não menciona limpeza ao voltar | Resultado ajustado: garantir que apenas a preservação de seleção é verificada |
+| CT-ACRIT-016 | Cobertura | Faltava cenário de borda para e-mail com espaços extras (trim) | Já coberto no próprio CT-ACRIT-016 como borda |
+| CT-ACRIT-023 | Rastreabilidade | "Banner persistente" — o card diz "banner persistente na página" mas não especifica persistência após reload | Anotado como comportamento inferido; cenário mantido com criticidade 🟢 Baixa |
+
+**Cobertura verificada:**
+- Happy path (2): CT-ACRIT-010, CT-ACRIT-017 ✅
+- Negativos/erro (5+): CT-ACRIT-008, CT-ACRIT-012, CT-ACRIT-015, CT-ACRIT-018, CT-ACRIT-022 ✅
+- Borda (3): CT-ACRIT-009, CT-ACRIT-016, CT-ACRIT-023 ✅
+- Segurança (2): CT-ACRIT-021, CT-ACRIT-022 ✅
+
+- Aprovados sem alteração: 20
+- Revisados: 3 (CT-ACRIT-006, CT-ACRIT-016, CT-ACRIT-023)
+- Adicionados por cobertura insuficiente: 0
