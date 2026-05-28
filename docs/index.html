@@ -494,6 +494,7 @@ function buildServicos() {
           <div class="svc-ico">${s.icone}</div>
           <div class="svc-nome">${s.nome}</div>
           <div class="svc-apelido">${s.apelido}</div>
+          ${s.alias ? `<div style="font-size:.6rem;color:#475569;margin-top:2px">${s.alias}</div>` : ''}
         </div>
         <div style="text-align:right;flex-shrink:0">
           <div class="svc-bugs" style="color:${bc}">${s.bugs_atribuidos}</div>
@@ -737,6 +738,7 @@ function buildRadarSvc() {
         <div>
           <div style="font-size:.82rem;font-weight:800">${s.nome}</div>
           <div style="font-size:.68rem;color:var(--txt2)">${s.apelido}</div>
+          ${s.alias ? `<div style="font-size:.58rem;color:#475569">${s.alias}</div>` : ''}
         </div>
         <span class="badge" style="background:${gapCor}22;color:${gapCor};font-size:.62rem">${gapLabel}</span>
       </div>
