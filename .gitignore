@@ -19,3 +19,6 @@ tests/reports/
 # Logs e memória de execuções — dados operacionais, não devem ser versionados
 tests/logs/
 tests/memory/
+
+# Logs e snapshots de sessões Playwright MCP — dados de sessão, não devem ser versionados
+.playwright-mcp/

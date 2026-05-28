@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Argos Predict — QA Risk Intelligence</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="data.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:       #0F172A;
+    --card:     #1E293B;
+    --border:   #334155;
+    --txt1:     #F1F5F9;
+    --txt2:     #94A3B8;
+    --red:      #EF4444;
+    --amber:    #F59E0B;
+    --orange:   #F97316;
+    --green:    #22C55E;
+    --indigo:   #6366F1;
+    --red-bg:   rgba(239,68,68,.12);
+    --amber-bg: rgba(245,158,11,.12);
+    --orange-bg:rgba(249,115,22,.12);
+    --green-bg: rgba(34,197,94,.12);
+  }
+
+  html, body { height: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--txt1);
+    overflow: hidden;
+  }
+
+  /* ── NAVIGATION BAR ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 24px;
+    background: rgba(15,23,42,.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-brand { display: flex; align-items: center; gap: 8px; font-size: .85rem; color: var(--txt2); }
+  .nav-brand span { color: var(--indigo); font-weight: 700; font-size: .95rem; }
+  .nav-dots { display: flex; gap: 6px; }
+  .nav-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--border); cursor: pointer; transition: background .2s, transform .2s;
+  }
+  .nav-dot.active { background: var(--indigo); transform: scale(1.35); }
+  .nav-arrows { display: flex; gap: 8px; }
+  .nav-btn {
+    background: var(--card); border: 1px solid var(--border);
+    color: var(--txt1); width: 34px; height: 34px; border-radius: 8px;
+    cursor: pointer; font-size: 1rem; display: flex; align-items: center;
+    justify-content: center; transition: background .15s;
+  }
+  .nav-btn:hover { background: var(--border); }
+  .nav-counter { font-size: .8rem; color: var(--txt2); min-width: 44px; text-align: center; }
+
+  /* ── SLIDES CONTAINER ── */
+  .deck {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  .slide {
+    position: absolute; inset: 0;
+    padding: 70px 48px 32px;
+    overflow-y: auto;
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity .35s ease, transform .35s ease;
+    pointer-events: none;
+  }
+  .slide.active {
+    opacity: 1; transform: translateX(0); pointer-events: all;
+  }
+  .slide.exit {
+    opacity: 0; transform: translateX(-60px);
+  }
+
+  /* ── TYPOGRAPHY ── */
+  .slide-title {
+    font-size: 1.1rem; font-weight: 600; color: var(--indigo);
+    letter-spacing: .06em; text-transform: uppercase; margin-bottom: 6px;
+  }
+  h1 { font-size: 2.6rem; font-weight: 800; line-height: 1.15; }
+  h2 { font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; }
+  .subtitle { font-size: 1.05rem; color: var(--txt2); margin-top: 8px; }
+  .tag {
+    display: inline-block; padding: 3px 10px; border-radius: 99px;
+    font-size: .75rem; font-weight: 600; letter-spacing: .04em;
+  }
+
+  /* ── CARDS GRID ── */
+  .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 18px 20px;
+  }
+  .card-sm { padding: 14px 16px; border-radius: 10px; }
+
+  /* ── KPI CARDS ── */
+  .kpi-num { font-size: 2.2rem; font-weight: 800; line-height: 1; margin-bottom: 4px; }
+  .kpi-label { font-size: .78rem; color: var(--txt2); font-weight: 500; text-transform: uppercase; letter-spacing: .06em; }
+  .kpi-detail { font-size: .73rem; color: var(--txt2); margin-top: 6px; }
+  .kpi-icon { font-size: 1.1rem; margin-bottom: 4px; }
+
+  .kpi-red    { border-left: 3px solid var(--red);    background: linear-gradient(135deg, var(--red-bg), var(--card)); }
+  .kpi-amber  { border-left: 3px solid var(--amber);  background: linear-gradient(135deg, var(--amber-bg), var(--card)); }
+  .kpi-orange { border-left: 3px solid var(--orange); background: linear-gradient(135deg, var(--orange-bg), var(--card)); }
+  .kpi-green  { border-left: 3px solid var(--green);  background: linear-gradient(135deg, var(--green-bg), var(--card)); }
+
+  .color-red    { color: var(--red); }
+  .color-amber  { color: var(--amber); }
+  .color-orange { color: var(--orange); }
+  .color-green  { color: var(--green); }
+
+  /* ── CHARTS ── */
+  .chart-wrap {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 20px;
+  }
+  canvas { max-height: 420px; }
+
+  /* ── TABLE ── */
+  table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+  th {
+    text-align: left; padding: 8px 12px;
+    color: var(--txt2); font-size: .72rem; letter-spacing: .08em;
+    text-transform: uppercase; border-bottom: 1px solid var(--border);
+  }
+  td { padding: 9px 12px; border-bottom: 1px solid rgba(51,65,85,.5); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: rgba(99,102,241,.05); }
+  .badge {
+    display: inline-block; padding: 2px 8px; border-radius: 6px;
+    font-size: .7rem; font-weight: 700; letter-spacing: .04em;
+  }
+  .badge-red    { background: var(--red-bg);    color: var(--red); }
+  .badge-amber  { background: var(--amber-bg);  color: var(--amber); }
+  .badge-orange { background: var(--orange-bg); color: var(--orange); }
+  .badge-green  { background: var(--green-bg);  color: var(--green); }
+  .badge-indigo { background: rgba(99,102,241,.15); color: var(--indigo); }
+  .badge-escalando { background: rgba(239,68,68,.2); color: var(--red); animation: pulse 1.5s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.6} }
+
+  /* ── BOMB CARDS ── */
+  .bomb-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 14px; padding: 22px 22px 18px;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .bomb-card:nth-child(1) { border-top: 3px solid var(--red); }
+  .bomb-card:nth-child(2) { border-top: 3px solid var(--orange); }
+  .bomb-card:nth-child(3) { border-top: 3px solid var(--amber); }
+  .bomb-rank { font-size: .72rem; color: var(--txt2); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+  .bomb-score { font-size: 2.4rem; font-weight: 900; }
+  .bomb-modulo { font-size: 1rem; font-weight: 700; margin-top: -6px; }
+  .bomb-section { font-size: .72rem; color: var(--txt2); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 2px; }
+  .bomb-text { font-size: .82rem; color: var(--txt2); line-height: 1.5; }
+  .bomb-acao {
+    font-size: .8rem; padding: 8px 12px;
+    background: rgba(99,102,241,.1); border: 1px solid rgba(99,102,241,.3);
+    border-radius: 8px; color: #A5B4FC;
+  }
+
+  /* ── CAPA SLIDE ── */
+  .capa-content {
+    height: 100%; display: flex; flex-direction: column;
+    justify-content: center;
+  }
+  .capa-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 5px 14px; border-radius: 99px;
+    background: var(--red-bg); border: 1px solid rgba(239,68,68,.3);
+    color: var(--red); font-size: .8rem; font-weight: 600;
+    margin-bottom: 20px; width: fit-content;
+  }
+  .capa-meta { margin-top: 20px; display: flex; gap: 32px; }
+  .capa-meta-item { font-size: .8rem; color: var(--txt2); }
+  .capa-meta-item span { display: block; font-size: 1.05rem; font-weight: 700; color: var(--txt1); }
+  .capa-rule { width: 64px; height: 4px; background: var(--indigo); border-radius: 2px; margin: 18px 0; }
+
+  /* ── HEAT MAP TABLE ── */
+  .heat-row { display: grid; grid-template-columns: 2fr 1fr 1fr 2fr; gap: 8px; align-items: center; padding: 9px 14px; border-bottom: 1px solid rgba(51,65,85,.4); }
+  .heat-row:last-child { border-bottom: none; }
+  .heat-header { font-size: .72rem; color: var(--txt2); text-transform: uppercase; letter-spacing: .07em; padding: 6px 14px; }
+  .bar-container { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 4px; }
+
+  /* ── FOOTER ── */
+  .slide-footer {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    padding: 8px 24px;
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: .7rem; color: var(--txt2);
+    border-top: 1px solid var(--border);
+    background: rgba(15,23,42,.9);
+    backdrop-filter: blur(8px);
+  }
+
+  /* ── PRINT ── */
+  @media print {
+    body { overflow: visible; }
+    .deck { height: auto; overflow: visible; }
+    .slide { position: relative; opacity: 1; transform: none; pointer-events: all; break-after: page; }
+    nav, .slide-footer { display: none; }
+  }
+
+  /* ── SCROLLBAR ── */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<!-- ── NAVBAR ── -->
+<nav>
+  <div class="nav-brand">
+    <span>🔮 Argos Predict</span>
+    <span style="color:var(--txt2);font-weight:400">QA Risk Intelligence</span>
+  </div>
+  <div class="nav-dots" id="dots"></div>
+  <div style="display:flex;align-items:center;gap:10px">
+    <div class="nav-counter" id="counter">1 / 9</div>
+    <div class="nav-arrows">
+      <button class="nav-btn" id="btnPrev" onclick="goTo(current-1)">&#8592;</button>
+      <button class="nav-btn" id="btnNext" onclick="goTo(current+1)">&#8594;</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ── SLIDES ── -->
+<div class="deck" id="deck">
+
+  <!-- SLIDE 1: CAPA -->
+  <div class="slide active" data-slide="0">
+    <div class="capa-content">
+      <div class="capa-badge">⚠️ 3 módulos em risco crítico</div>
+      <div class="slide-title">Qualidade · Risco · Produto</div>
+      <h1>QA Risk<br>Intelligence</h1>
+      <div class="capa-rule"></div>
+      <p class="subtitle">Mapa de risco preditivo baseado em sinais reais:<br>suporte ao cliente, erros em produção e atividade de código.</p>
+      <div class="capa-meta" id="capaMeta"></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 2: KPIs -->
+  <div class="slide" data-slide="1">
+    <div class="slide-title">Visão Geral</div>
+    <h2>Indicadores Executivos</h2>
+    <div class="grid-4" id="kpiGrid" style="gap:12px"></div>
+  </div>
+
+  <!-- SLIDE 3: RANKING -->
+  <div class="slide" data-slide="2">
+    <div class="slide-title">Mapa de Risco</div>
+    <h2>Score de Risco por Módulo</h2>
+    <div class="chart-wrap">
+      <canvas id="chartRanking"></canvas>
+    </div>
+    <p style="font-size:.75rem;color:var(--txt2);margin-top:10px">
+      Score = risco técnico (bugs conhecidos, erros Sentry, churn de código) + impacto ao usuário (tickets de suporte ativos)
+    </p>
+  </div>
+
+  <!-- SLIDE 4: MAPA DE CALOR -->
+  <div class="slide" data-slide="3">
+    <div class="slide-title">Cobertura</div>
+    <h2>Pressão de Clientes vs Atenção do Dev</h2>
+    <div class="card" style="margin-bottom:14px">
+      <div class="heat-header heat-row">
+        <div>Módulo</div><div>Pressão Clientes</div><div>Atenção Dev</div><div>Zona</div>
+      </div>
+      <div id="heatRows"></div>
+    </div>
+    <p style="font-size:.78rem;color:var(--txt2)">
+      🔴 <b>Negligenciada</b> — pressão alta, zero atenção do dev &nbsp;·&nbsp;
+      🟡 <b>Subatendida</b> — pressão &gt; atenção &nbsp;·&nbsp;
+      🟢 <b>Balanceada</b> — proporção adequada
+    </p>
+  </div>
+
+  <!-- SLIDE 5: TENDÊNCIA -->
+  <div class="slide" data-slide="4">
+    <div class="slide-title">Evolução</div>
+    <h2>Tendência vs Semana Anterior</h2>
+    <div class="chart-wrap">
+      <canvas id="chartTendencia"></canvas>
+    </div>
+    <p style="font-size:.75rem;color:var(--txt2);margin-top:10px">
+      🔴 Score subindo = risco aumentando &nbsp;·&nbsp; 🟢 Score caindo = situação melhorando
+    </p>
+  </div>
+
+  <!-- SLIDE 6: DISTRIBUIÇÃO DE BUGS -->
+  <div class="slide" data-slide="5">
+    <div class="slide-title">Bugs Confirmados N2</div>
+    <h2>O que acontece com os 47 bugs confirmados?</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center">
+      <div class="chart-wrap">
+        <canvas id="chartDonut"></canvas>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px" id="donutLegend"></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 7: TOP 3 BOMBAS -->
+  <div class="slide" data-slide="6">
+    <div class="slide-title">Cenários Críticos</div>
+    <h2>💣 Top 3 Riscos Imediatos</h2>
+    <div class="grid-3" id="bombasGrid"></div>
+  </div>
+
+  <!-- SLIDE 8: SENTRY -->
+  <div class="slide" data-slide="7">
+    <div class="slide-title">Produção</div>
+    <h2>Erros Afetando Usuários Reais</h2>
+    <div class="chart-wrap" style="margin-bottom:14px">
+      <canvas id="chartSentry"></canvas>
+    </div>
+    <div class="card card-sm">
+      <p style="font-size:.8rem;color:var(--txt2)">
+        🔴 <b>Sinal Oculto</b> — erro afeta usuários em produção mas <b>não tem ticket de suporte correspondente</b>.
+        O suporte ainda não escalou — mas é questão de tempo.
+      </p>
+    </div>
+  </div>
+
+  <!-- SLIDE 9: AÇÕES -->
+  <div class="slide" data-slide="8">
+    <div class="slide-title">Próximos Passos</div>
+    <h2>Ações Recomendadas</h2>
+    <div class="card" style="padding:0;overflow:hidden">
+      <table id="acoesTable">
+        <thead><tr>
+          <th>Prioridade</th><th>Módulo</th><th>Ação</th><th>Prazo</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /deck -->
+
+<!-- ── FOOTER ── -->
+<div class="slide-footer">
+  <span id="footerFonte"></span>
+  <span>Use ← → para navegar · F para tela cheia · P para imprimir</span>
+</div>
+
+<!-- ── SCRIPTS ── -->
+<script>
+// ── STATE ─────────────────────────────────────────────────
+let current = 0;
+const slides = document.querySelectorAll('.slide');
+const TOTAL = slides.length;
+let charts = {};
+
+// ── NAVIGATION ────────────────────────────────────────────
+function goTo(n) {
+  if (n < 0 || n >= TOTAL) return;
+  slides[current].classList.remove('active');
+  slides[current].classList.add('exit');
+  setTimeout(() => slides[current].classList.remove('exit'), 380);
+  current = n;
+  slides[current].classList.add('active');
+  updateNav();
+  initSlide(current);
+}
+
+function updateNav() {
+  document.getElementById('counter').textContent = `${current+1} / ${TOTAL}`;
+  document.querySelectorAll('.nav-dot').forEach((d,i) => d.classList.toggle('active', i === current));
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === 'ArrowDown')  goTo(current+1);
+  if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')    goTo(current-1);
+  if (e.key === 'f' || e.key === 'F') document.documentElement.requestFullscreen?.();
+  if (e.key === 'p' || e.key === 'P') window.print();
+});
+
+// ── BUILD DOTS ────────────────────────────────────────────
+(function buildDots() {
+  const container = document.getElementById('dots');
+  slides.forEach((_,i) => {
+    const d = document.createElement('div');
+    d.className = 'nav-dot' + (i===0?' active':'');
+    d.onclick = () => goTo(i);
+    container.appendChild(d);
+  });
+})();
+
+// ── INIT SLIDES ───────────────────────────────────────────
+function initSlide(n) {
+  if (n === 0) buildCapa();
+  if (n === 1) buildKPIs();
+  if (n === 2) buildRanking();
+  if (n === 3) buildHeatMap();
+  if (n === 4) buildTendencia();
+  if (n === 5) buildDonut();
+  if (n === 6) buildBombas();
+  if (n === 7) buildSentry();
+  if (n === 8) buildAcoes();
+}
+
+// ── HELPERS ───────────────────────────────────────────────
+const colorMap = { red:'red', amber:'amber', orange:'orange', green:'green' };
+function badgeCor(nivel) {
+  if (nivel==='ALTO')    return 'badge-red';
+  if (nivel==='MÉDIO')   return 'badge-amber';
+  if (nivel==='ATENÇÃO') return 'badge-orange';
+  return 'badge-green';
+}
+function priorityCor(p) {
+  if (p.includes('P0')) return 'badge-red';
+  if (p.includes('P1')) return 'badge-orange';
+  return 'badge-indigo';
+}
+
+// ── SLIDE 1: CAPA ─────────────────────────────────────────
+function buildCapa() {
+  document.getElementById('capaMeta').innerHTML = `
+    <div class="capa-meta-item">Data<span>${REPORT.meta.geradoEm}</span></div>
+    <div class="capa-meta-item">Janela<span>${REPORT.meta.janela}</span></div>
+  `;
+  document.getElementById('footerFonte').textContent = `Fontes: ${REPORT.meta.fontes}`;
+}
+
+// ── SLIDE 2: KPIs ─────────────────────────────────────────
+function buildKPIs() {
+  const g = document.getElementById('kpiGrid');
+  if (g.innerHTML) return;
+  g.innerHTML = REPORT.kpis.map(k => `
+    <div class="card kpi-${k.cor}">
+      <div class="kpi-icon">${k.icone}</div>
+      <div class="kpi-num color-${k.cor}">${k.valor}</div>
+      <div class="kpi-label">${k.label}</div>
+      <div class="kpi-detail">${k.detalhe}</div>
+    </div>`).join('');
+}
+
+// ── SLIDE 3: RANKING ──────────────────────────────────────
+function buildRanking() {
+  if (charts.ranking) return;
+  const data = [...REPORT.ranking].reverse();
+  charts.ranking = new Chart(document.getElementById('chartRanking'), {
+    type: 'bar',
+    data: {
+      labels: data.map(d => d.modulo),
+      datasets: [
+        { label: 'Score Técnico', data: data.map(d => d.tec), backgroundColor: '#6366F1', borderRadius: 4, stack: 'a' },
+        { label: 'Score Usuários', data: data.map(d => d.usr), backgroundColor: data.map(d => d.cor + 'CC'), borderRadius: 4, stack: 'a' }
+      ]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: {
+        legend: { labels: { color: '#94A3B8', font: { size: 11 } } },
+        tooltip: { callbacks: { footer: (items) => {
+          const d = data[items[0].dataIndex];
+          return `Total: ${d.total} · Nível: ${d.nivel}`;
+        }}}
+      },
+      scales: {
+        x: { stacked: true, ticks: { color: '#94A3B8' }, grid: { color: '#1E293B' } },
+        y: { stacked: true, ticks: { color: '#F1F5F9', font: { size: 11 } }, grid: { display: false } }
+      }
+    }
+  });
+}
+
+// ── SLIDE 4: HEAT MAP ─────────────────────────────────────
+function buildHeatMap() {
+  const container = document.getElementById('heatRows');
+  if (container.innerHTML) return;
+  const maxP = Math.max(...REPORT.mapaCalor.map(d => d.pressao));
+  container.innerHTML = REPORT.mapaCalor.map(d => {
+    const pPct = Math.round(d.pressao / maxP * 100);
+    const aPct = Math.round(d.atencao / maxP * 100);
+    const zona = d.zona === 'Negligenciada'
+      ? `<span class="badge badge-red">🔴 Negligenciada</span>`
+      : d.zona === 'Subatendida'
+        ? `<span class="badge badge-amber">🟡 Subatendida</span>`
+        : `<span class="badge badge-green">🟢 Balanceada</span>`;
+    return `<div class="heat-row">
+      <div style="font-size:.82rem;font-weight:600">${d.modulo}</div>
+      <div>
+        <div style="font-size:.75rem;color:var(--txt2);margin-bottom:3px">${d.pressao} pts</div>
+        <div class="bar-container"><div class="bar-fill" style="width:${pPct}%;background:var(--red)"></div></div>
+      </div>
+      <div>
+        <div style="font-size:.75rem;color:var(--txt2);margin-bottom:3px">${d.atencao} pts</div>
+        <div class="bar-container"><div class="bar-fill" style="width:${aPct}%;background:var(--green)"></div></div>
+      </div>
+      ${zona}
+    </div>`;
+  }).join('');
+}
+
+// ── SLIDE 5: TENDÊNCIA ────────────────────────────────────
+function buildTendencia() {
+  if (charts.tendencia) return;
+  const data = [...REPORT.tendencia].sort((a,b) => b.delta - a.delta);
+  const cores = data.map(d => d.delta > 0 ? '#EF444499' : d.delta < 0 ? '#22C55E99' : '#6B728099');
+  const coresBorder = data.map(d => d.delta > 0 ? '#EF4444' : d.delta < 0 ? '#22C55E' : '#6B7280');
+  charts.tendencia = new Chart(document.getElementById('chartTendencia'), {
+    type: 'bar',
+    data: {
+      labels: data.map(d => d.modulo),
+      datasets: [{
+        label: 'Delta vs semana anterior',
+        data: data.map(d => d.delta),
+        backgroundColor: cores,
+        borderColor: coresBorder,
+        borderWidth: 2,
+        borderRadius: 4
+      }]
+    },
+    options: {
+      indexAxis: 'y', responsive: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: (c) => {
+          const d = data[c.dataIndex];
+          return ` ${d.delta >= 0 ? '+' : ''}${d.delta}  (${d.ontem} → ${d.hoje})`;
+        }}}
+      },
+      scales: {
+        x: { ticks: { color: '#94A3B8' }, grid: { color: '#1E293B' } },
+        y: { ticks: { color: '#F1F5F9', font: { size: 11 } }, grid: { display: false } }
+      }
+    }
+  });
+}
+
+// ── SLIDE 6: DONUT ────────────────────────────────────────
+function buildDonut() {
+  if (charts.donut) return;
+  const d = REPORT.bugDistribuicao;
+  charts.donut = new Chart(document.getElementById('chartDonut'), {
+    type: 'doughnut',
+    data: {
+      labels: d.map(x => x.label),
+      datasets: [{ data: d.map(x => x.valor), backgroundColor: d.map(x => x.cor), borderWidth: 2, borderColor: '#0F172A' }]
+    },
+    options: {
+      cutout: '68%', responsive: true,
+      plugins: { legend: { display: false }, tooltip: { callbacks: {
+        label: c => ` ${c.raw} bugs (${Math.round(c.raw / d.reduce((a,x)=>a+x.valor,0) * 100)}%)`
+      }}}
+    }
+  });
+  const total = d.reduce((a,x)=>a+x.valor,0);
+  document.getElementById('donutLegend').innerHTML = d.map(x => `
+    <div class="card card-sm" style="border-left:4px solid ${x.cor}">
+      <div style="font-size:1.8rem;font-weight:900;color:${x.cor}">${x.valor}</div>
+      <div style="font-size:.78rem;font-weight:600;margin-top:2px">${x.label}</div>
+      <div style="font-size:.72rem;color:var(--txt2);margin-top:2px">${Math.round(x.valor/total*100)}% do total</div>
+    </div>`).join('');
+}
+
+// ── SLIDE 7: BOMBAS ───────────────────────────────────────
+function buildBombas() {
+  const g = document.getElementById('bombasGrid');
+  if (g.innerHTML) return;
+  g.innerHTML = REPORT.bombas.map(b => `
+    <div class="bomb-card">
+      <div>
+        <div class="bomb-rank">💣 #${b.pos} Bomba Ativa</div>
+        <div class="bomb-score color-red">${b.score}</div>
+        <div class="bomb-modulo">${b.modulo}</div>
+      </div>
+      <div>
+        <div class="bomb-section">O que pode acontecer</div>
+        <div class="bomb-text">${b.problema}</div>
+      </div>
+      <div>
+        <div class="bomb-section">Gatilho</div>
+        <div class="bomb-text" style="color:var(--amber)">${b.gatilho}</div>
+      </div>
+      <div class="bomb-acao">⚡ ${b.acao}</div>
+    </div>`).join('');
+}
+
+// ── SLIDE 8: SENTRY ───────────────────────────────────────
+function buildSentry() {
+  if (charts.sentry) return;
+  const d = [...REPORT.sentry].reverse();
+  charts.sentry = new Chart(document.getElementById('chartSentry'), {
+    type: 'bar',
+    data: {
+      labels: d.map(x => x.erro + ' · ' + x.projeto),
+      datasets: [{
+        label: 'Usuários afetados',
+        data: d.map(x => x.usuarios),
+        backgroundColor: d.map(x => x.status === 'ESCALANDO' ? '#EF4444' : x.oculto ? '#6366F188' : '#F59E0B88'),
+        borderColor: d.map(x => x.status === 'ESCALANDO' ? '#EF4444' : x.oculto ? '#6366F1' : '#F59E0B'),
+        borderWidth: 2,
+        borderRadius: 4
+      }]
+    },
+    options: {
+      indexAxis: 'y', responsive: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { footer: (items) => {
+          const x = d[items[0].dataIndex];
+          return `${x.oculto ? '🔴 Sinal oculto — sem ticket SM' : '✅ Tem ticket SM'} · ${x.status}`;
+        }}}
+      },
+      scales: {
+        x: { ticks: { color: '#94A3B8' }, grid: { color: '#1E293B' } },
+        y: { ticks: { color: '#F1F5F9', font: { size: 10 } }, grid: { display: false } }
+      }
+    }
+  });
+}
+
+// ── SLIDE 9: AÇÕES ────────────────────────────────────────
+function buildAcoes() {
+  const tbody = document.querySelector('#acoesTable tbody');
+  if (tbody.innerHTML) return;
+  tbody.innerHTML = REPORT.acoes.map(a => `
+    <tr>
+      <td><span class="badge ${priorityCor(a.prioridade)}">${a.prioridade}</span></td>
+      <td style="color:var(--txt2);font-size:.8rem;white-space:nowrap">${a.modulo}</td>
+      <td style="font-size:.82rem">${a.acao}</td>
+      <td style="font-size:.8rem;color:var(--txt2);white-space:nowrap">${a.prazo}</td>
+    </tr>`).join('');
+}
+
+// ── INIT ──────────────────────────────────────────────────
+buildCapa();
+updateNav();
+</script>
+</body>
+</html>
