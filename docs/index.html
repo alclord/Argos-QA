@@ -240,7 +240,7 @@ footer {
 <div class="slide">
   <div class="slide-tag">Mapa de Risco</div>
   <h2>Onde estão os problemas</h2>
-  <p class="sub-h">Score = reclamações de clientes + erros em produção + atividade de código. Quanto maior, mais urgente.</p>
+  <p class="sub-h">Baseado em sinais ativos: bugs N1 abertos, erros em produção (Sentry) e atividade de código. Quanto maior a barra, mais urgente.</p>
   <div class="chart-box"><canvas id="cRanking"></canvas></div>
 </div>
 
@@ -287,7 +287,7 @@ footer {
         <div id="covRows"></div>
       </div>
       <div style="padding:12px 14px;background:var(--red-bg);border:1px solid rgba(239,68,68,.25);border-radius:10px;font-size:.78rem;color:var(--red);line-height:1.5">
-        ⚠️ <b>5 áreas negligenciadas.</b> A área vermelha do radar é muito maior que a verde — o dev está em áreas de baixa pressão de clientes enquanto os bugs críticos acumulam.
+        ⚠️ <b>2 áreas negligenciadas (Upload e Permissões) e 4 subatendidas.</b> Chat tem a maior pressão (29 pts) com apenas 5 pts de atenção — e parte é feature nova, não correção.
       </div>
       <div style="padding:12px 14px;background:var(--card2);border:1px solid var(--border);border-radius:10px;font-size:.75rem;color:var(--txt2);line-height:1.6">
         💡 <b>Como ler o gráfico:</b> cada eixo é um módulo. Quando a linha vermelha (problema) fica bem fora da linha verde (atenção), há um <b>desalinhamento</b> — esse módulo está sendo ignorado pelo dev.
@@ -454,27 +454,25 @@ function buildKPIs() {
 
 // ── SLIDE 2: RANKING ──────────────────────────────────────
 function buildRanking() {
-  const d = [...REPORT.ranking].reverse();
-  charts.ranking = new Chart(document.getElementById('cRanking'),{
-    type:'bar',
-    data:{
-      labels: d.map(x=>x.modulo),
-      datasets:[
-        { label:'Bugs N2 (confirmados)', data:d.map(x=>x.bugs_n2*4), backgroundColor:'#EF444466', stack:'a', borderRadius:3 },
-        { label:'Bugs N1 (clientes)',    data:d.map(x=>x.bugs_n1*2), backgroundColor:'#F59E0B66', stack:'a', borderRadius:3 },
-        { label:'Outros sinais',         data:d.map(x=>Math.max(0,x.total-x.bugs_n2*4-x.bugs_n1*2)), backgroundColor:'#6366F155', stack:'a', borderRadius:3 }
+  if (charts.ranking) return;
+  const d = [...REPORT.ranking].sort((a,b) => a.total - b.total);
+  charts.ranking = new Chart(document.getElementById('cRanking'), {
+    type: 'bar',
+    data: {
+      labels: d.map(x => x.modulo),
+      datasets: [
+        { label:'Bugs N1 (clientes ativos)', data:d.map(x=>x.bugs_n1*3), backgroundColor:'#F59E0BAA', stack:'a', borderRadius:3 },
+        { label:'Sentry + KB + Churn',       data:d.map(x=>Math.max(0,x.total-x.bugs_n1*3)),          backgroundColor:'#6366F188', stack:'a', borderRadius:3 }
       ]
     },
-    options:{
+    options: {
       indexAxis:'y', responsive:true,
       plugins:{
         legend:{ labels:{ color:'#94A3B8', font:{size:11} } },
-        tooltip:{ callbacks:{
-          footer: items => {
-            const x = d[items[0].dataIndex];
-            return `Score total: ${x.total} · ${x.bugs_n2} bugs confirmados · ${x.bugs_n1} reclamações N1`;
-          }
-        }}
+        tooltip:{ callbacks:{ footer: items => {
+          const x = d[items[0].dataIndex];
+          return `Score: ${x.total} · ${x.bugs_n1} bugs N1 ativos · ${x.nivel}`;
+        }}}
       },
       scales:{
         x:{ stacked:true, ticks:{color:'#94A3B8'}, grid:{color:'rgba(30,58,95,.4)'} },
@@ -533,15 +531,15 @@ function buildDrill(idx, elId) {
       <div style="display:flex;flex-direction:column;gap:10px">
         <div class="card drill-stat">
           <div class="drill-num" style="color:${d.cor}">${d.total_reclamacoes}</div>
-          <div class="drill-lbl">reclamações de clientes</div>
+          <div class="drill-lbl">bugs N1 abertos agora</div>
         </div>
         <div class="card drill-stat">
           <div class="drill-num" style="color:${d.cor}">${d.bugs_confirmados}</div>
-          <div class="drill-lbl">bugs confirmados pelo N2</div>
+          <div class="drill-lbl">reclamações esta semana</div>
         </div>
         <div class="card drill-stat">
-          <div class="drill-num c-amber">${d.dias_maior_bug}</div>
-          <div class="drill-lbl">dias sem fix no maior bug</div>
+          <div class="drill-num c-amber">${d.dias_sentry}</div>
+          <div class="drill-lbl">dias do erro mais antigo no Sentry</div>
         </div>
       </div>
       <div style="display:flex;flex-direction:column;gap:10px">
