@@ -215,6 +215,174 @@ const REPORT = {
     { erro: "Plugin não carregado",              projeto: "Nova Interface",   usuarios: 49,   status: "ESCALANDO", oculto: true,  desde: "27/Mai" }
   ],
 
+  // ── RADAR DE SERVIÇOS ────────────────────────────────────
+  // bugs: bugs atribuídos ao serviço (PROBLEM_CLUSTERS)
+  // dev_ativo: PRs mesclados esta semana + cards em dev que tocam o serviço (score ponderado)
+  // dev_planejado: cards em backlog que vão mexer no serviço (score ponderado)
+  servicos_radar: [
+    {
+      nome: "polichat-web-app", apelido: "Backend Msgs",
+      bugs: 12, dev_ativo: 5, dev_planejado: 3,
+      notas: {
+        bugs: "12 bugs: delay de mensagens, impossibilidade de envio, upload quebrado",
+        ativo: "4 PRs mesclados esta semana + DEV4-4229 (agendamentos)",
+        planejado: "DEV4-4188, DEV4-4154, DEV4-4227"
+      },
+      bugs_cards: [
+        { id:"SM-5430", titulo:"Mensagens com atraso de 20-30 minutos na plataforma",        tipo:"N2 Bug" },
+        { id:"SM-5245", titulo:"Grupos não recebem mensagens dos operadores",                tipo:"N2 Bug" },
+        { id:"SM-4996", titulo:"Lentidão no carregamento de mensagens/chamados",             tipo:"N2 Bug" },
+        { id:"SM-5033", titulo:"Usuários não conseguem enviar mensagens para contato",       tipo:"N2 Bug" },
+        { id:"SM-5334", titulo:"Não é possível responder com dois canais ativos",            tipo:"N2 Bug" },
+        { id:"SM-2581", titulo:"Problema ao Enviar Mensagens e Encerrar Chats",              tipo:"N2 Bug" },
+        { id:"SM-2091", titulo:"Cliente não consegue enviar PDF",                            tipo:"N2 Bug" },
+        { id:"SM-7544", titulo:"Erro no envio de mensagens na Polichat",                     tipo:"N1 Bug" },
+        { id:"SM-7518", titulo:"Mensagens não aparecem no chat — atualização manual",        tipo:"N1 Bug" },
+        { id:"SM-7519", titulo:"Atendente não consegue enviar após resposta a template",     tipo:"N1 Bug" },
+        { id:"SM-7574", titulo:"Mensagens não chegam no tablet — dois números",              tipo:"N1 Bug" },
+        { id:"SM-7539", titulo:"Não consegue responder — possível restrição Meta",          tipo:"N1 Bug" }
+      ],
+      dev_ativo_items: [
+        { id:"PR#304",  titulo:"feat: template flow API (send_flow_template)",  tipo:"PR", repo:"polichat-web-app" },
+        { id:"PR#301",  titulo:"feat: rota v1 para listar flows via api-gateway",tipo:"PR", repo:"polichat-web-app" },
+        { id:"PR#299",  titulo:"fix: normalizar JID de grupos WhatsApp",         tipo:"PR", repo:"polichat-web-app" },
+        { id:"PR#305",  titulo:"fix: verificação de status no banner",           tipo:"PR", repo:"polichat-web-app" },
+        { id:"DEV4-4229",titulo:"Mensagens agendadas — Filtros, edição e criação",tipo:"Card em Dev" }
+      ],
+      dev_planejado_items: [
+        { id:"DEV4-4188", titulo:"Criar evento 'Atendimento finalizado' para API", tipo:"Aguardando Handoff" },
+        { id:"DEV4-4154", titulo:"Corrigir placeholder de anotações",              tipo:"Pronto para Dev" },
+        { id:"DEV4-4227", titulo:"Remover filtro 'Cliente aguardando' de produção",tipo:"Pronto para Dev" }
+      ]
+    },
+    {
+      nome: "dispatch-service", apelido: "Distribuição",
+      bugs: 10, dev_ativo: 1, dev_planejado: 2,
+      notas: {
+        bugs: "10 bugs: chats presos, bot não direciona, atribuição automática quebrada (87 dias)",
+        ativo: "PR1123 no FoundationAPI (fix DistributeChatAction)",
+        planejado: "DEV4-4003, DEV4-3446 — features, não correções"
+      },
+      bugs_cards: [
+        { id:"SM-5918", titulo:"Chats ficando na aba 'sem atendente' sem distribuir",        tipo:"N2 Bug" },
+        { id:"SM-5911", titulo:"Encaminhamento de clientes para filas não funciona",         tipo:"N2 Bug" },
+        { id:"SM-5716", titulo:"Distribuição do bot não está coerente com o fluxo",          tipo:"N2 Bug" },
+        { id:"SM-4668", titulo:"Problema com redirecionamento de bots",                      tipo:"N2 Bug" },
+        { id:"SM-3958", titulo:"Bot não direcionando",                                       tipo:"N2 Bug" },
+        { id:"SM-5016", titulo:"Mensagens não direcionadas automaticamente após implantação", tipo:"N2 Bug" },
+        { id:"SM-3840", titulo:"Bot funciona de forma intermitente",                         tipo:"N2 Bug" },
+        { id:"SM-3927", titulo:"Falha na Ativação do Bot — sem geração de Chat_ID",         tipo:"N2 Bug" },
+        { id:"SM-2099", titulo:"Falha no Redirecionamento Automático (86 dias!)",            tipo:"N2 Bug" },
+        { id:"SM-2035", titulo:"Erro na atribuição automática de atendentes (87 dias!)",     tipo:"N2 Bug" }
+      ],
+      dev_ativo_items: [
+        { id:"PR#1123", titulo:"fix: DistributeChatAction — correção de distribuição", tipo:"PR", repo:"FoundationAPI" }
+      ],
+      dev_planejado_items: [
+        { id:"DEV4-4003", titulo:"Tela de Gestão de Chats para Gestor e Supervisor", tipo:"Pronto para Dev" },
+        { id:"DEV4-3446", titulo:"Fechamento automático de chats por inatividade",   tipo:"Aguardando Handoff" }
+      ]
+    },
+    {
+      nome: "omnispa", apelido: "Nova Interface",
+      bugs: 7, dev_ativo: 3, dev_planejado: 4,
+      notas: {
+        bugs: "7 bugs: 404 crônico (3.433 usuários), TypeError plugin escalando, extensões quebradas",
+        ativo: "PR1493 (migração Iterup) + DEV4-4158 (showcase)",
+        planejado: "DEV4-4166, DEV4-4202, DEV4-4267"
+      },
+      bugs_cards: [
+        { id:"SM-5326", titulo:"Nova versão do sistema está muito lenta (35 dias)",          tipo:"N2 Bug" },
+        { id:"SM-5311", titulo:"Cliente não consegue acessar — tela em branco",              tipo:"N2 Bug" },
+        { id:"SM-5308", titulo:"Conversas não estão abrindo na plataforma",                  tipo:"N2 Bug" },
+        { id:"SM-2209", titulo:"Loading infinito na aba de chats (83 dias)",                 tipo:"N2 Bug" },
+        { id:"SM-2151", titulo:"Plataforma Travando (84 dias)",                              tipo:"N2 Bug" },
+        { id:"SM-7496", titulo:"Extensão parou de funcionar após atualização",               tipo:"N1 Bug" },
+        { id:"SM-7527", titulo:"Atalhos Ctrl não estão funcionando na plataforma",           tipo:"N1 Bug" }
+      ],
+      dev_ativo_items: [
+        { id:"PR#1493", titulo:"feat: Migração da Iterup para nova interface",      tipo:"PR", repo:"SPA" },
+        { id:"DEV4-4158",titulo:"Showcase — Galeria de componentes do Design System",tipo:"Card em Dev" }
+      ],
+      dev_planejado_items: [
+        { id:"DEV4-4166", titulo:"Nova Estrutura de Páginas na Nova Interface (Epic)", tipo:"Pronto para Dev" },
+        { id:"DEV4-4202", titulo:"Novas contas indexadas na Nova Interface por padrão", tipo:"Aguardando Handoff" },
+        { id:"DEV4-4267", titulo:"Exportação de Conversas (Nova interface)",            tipo:"Aguardando Cenários" },
+        { id:"DEV4-4225", titulo:"Configurações: Ações críticas (Nova interface)",      tipo:"Aguardando Cenários" }
+      ]
+    },
+    {
+      nome: "waba-webhook", apelido: "WhatsApp API",
+      bugs: 6, dev_ativo: 1, dev_planejado: 5,
+      notas: {
+        bugs: "6 bugs: ACK 0 em @lid, grupos sem mensagem, templates bloqueados",
+        ativo: "DEV4-4023 (PLBV base) em dev",
+        planejado: "DEV4-4040, DEV4-4044, DEV4-4031, DEV4-4043"
+      },
+      bugs_cards: [
+        { id:"SM-5831", titulo:"CHATSHUB Falha de Envio (ACK 0) — Contatos @lid",          tipo:"N2 Bug" },
+        { id:"SM-4820", titulo:"Demora e falha na entrega de mensagens do WhatsApp",        tipo:"N2 Bug" },
+        { id:"SM-5181", titulo:"Cliente não consegue enviar número por canal específico",   tipo:"N2 Bug" },
+        { id:"SM-2678", titulo:"Canal não envia mensagem (62 dias)",                        tipo:"N2 Bug" },
+        { id:"SM-7539", titulo:"Não consegue responder — possível restrição Meta",         tipo:"N1 Bug" },
+        { id:"SM-5245", titulo:"Grupos não recebem mensagens dos operadores",               tipo:"N2 Bug" }
+      ],
+      dev_ativo_items: [
+        { id:"DEV4-4023", titulo:"Estrutura base do PLBV — pré-requisitos, estados e ciclo de vida da verificação", tipo:"Card em Dev" }
+      ],
+      dev_planejado_items: [
+        { id:"DEV4-4040", titulo:"Sincronização de status via webhooks da Meta",            tipo:"Aguardando Handoff" },
+        { id:"DEV4-4044", titulo:"Integração PLBV com a Meta (self-certify API)",           tipo:"Aguardando Handoff" },
+        { id:"DEV4-4031", titulo:"Desbloqueio/bloqueio automático com base no status PLBV", tipo:"Aguardando Handoff" },
+        { id:"DEV4-4043", titulo:"Fluxo interno de compliance — análise e aprovação",       tipo:"Aguardando Handoff" },
+        { id:"DEV4-4198", titulo:"Atualizar Embedded Signup para v4.0",                     tipo:"Aguardando Handoff" }
+      ]
+    },
+    {
+      nome: "channel-customer", apelido: "Canais",
+      bugs: 4, dev_ativo: 0, dev_planejado: 0,
+      notas: {
+        bugs: "4 bugs: Instagram desconectado, Badge Leads sem envio, ReferenceError em runtime",
+        ativo: "Nenhum PR ou card ativo",
+        planejado: "Nenhum card no backlog"
+      },
+      bugs_cards: [
+        { id:"SM-5383", titulo:"Instagram mostra desconectado mesmo após reconectar",       tipo:"N2 Bug" },
+        { id:"SM-5412", titulo:"Cliente não consegue enviar pelo canal Badge Leads",        tipo:"N2 Bug" },
+        { id:"SM-7588", titulo:"Erro ao configurar canal do Instagram",                     tipo:"N1 Bug" },
+        { id:"SM-5423", titulo:"Chatbot parou de funcionar no feriado — sem opções de menu",tipo:"N2 Bug" }
+      ],
+      dev_ativo_items: [],
+      dev_planejado_items: []
+    },
+    {
+      nome: "foundation-spa", apelido: "SPA (Frontend)",
+      bugs: 3, dev_ativo: 6, dev_planejado: 2,
+      notas: {
+        bugs: "3 bugs: status de mensagem (⏳), filtros de chat com falha",
+        ativo: "6 PRs: ACK fix, lista msgs, Enter template, etiquetas, templates bulk, cache",
+        planejado: "DEV4-4078 (fix corretivo principal), DEV4-4229 (agendamentos)"
+      },
+      bugs_cards: [
+        { id:"SM-5910", titulo:"Mensagens demoram para aparecer após certo tempo",          tipo:"N2 Bug" },
+        { id:"SM-5401", titulo:"Filtro de não lidos não funciona corretamente",             tipo:"N2 Bug" },
+        { id:"SM-7498", titulo:"Emojis aparecem automaticamente nas mensagens enviadas",    tipo:"N1 Bug" }
+      ],
+      dev_ativo_items: [
+        { id:"PR#1495", titulo:"fix: Atualiza ACK das mensagens no cache (DEV4-4233)", tipo:"PR", repo:"SPA" },
+        { id:"PR#1488", titulo:"feat: Lista global de mensagens front (DEV4-4114)",    tipo:"PR", repo:"SPA" },
+        { id:"PR#1492", titulo:"fix: Enter envia mensagem em template com variável",   tipo:"PR", repo:"SPA" },
+        { id:"PR#1480", titulo:"feat: Construtor de Etiquetas (DEV4-4178)",            tipo:"PR", repo:"SPA" },
+        { id:"PR#1476", titulo:"feat: Listagem de templates com bulk delete",          tipo:"PR", repo:"SPA" },
+        { id:"PR#1482", titulo:"fix: Restaurar cache compartilhado de contato",        tipo:"PR", repo:"SPA" }
+      ],
+      dev_planejado_items: [
+        { id:"DEV4-4078", titulo:"[Corretivo] Status de envio não atualiza — ícone ⏳ permanente", tipo:"Em Dev (Highest!)" },
+        { id:"DEV4-4229", titulo:"Mensagens agendadas — Filtros, edição e criação",               tipo:"Em Dev" }
+      ]
+    }
+  ],
+
   // ── AÇÕES ─────────────────────────────────────────────────
   acoes: [
     { prioridade: "P0 — HOJE",         cor: "red",    modulo: "Chat",          acao: "Testar e aprovar DEV4-4078 (correção de status de mensagem) antes de qualquer merge",         prazo: "Hoje" },
