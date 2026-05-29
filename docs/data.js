@@ -489,6 +489,105 @@ const REPORT = {
     { erro: "Plugin não carregado",             projeto: "Nova Interface",   usuarios: 49,   status: "ESCALANDO", oculto: true,  desde: "27/Mai" }
   ],
 
+  // ── AJUDA CONTEXTUAL (botão ? por slide) ────────────────
+  help: [
+    {
+      slide: "Visão Geral",
+      intro: "Este relatório é gerado automaticamente toda semana cruzando 3 fontes de dados reais.",
+      termos: [
+        { termo: "Suporte (N1)", def: "Ticket aberto por um cliente diretamente no suporte. Sinal direto de problema percebido." },
+        { termo: "Sentry", def: "Sistema que detecta erros em produção automaticamente — mesmo antes do cliente ligar. Como uma câmera de segurança do código." },
+        { termo: "Dev / Development", def: "Time de desenvolvimento. Cards = tarefas que eles estão fazendo ou planejando." },
+        { termo: "Serviço", def: "Um sistema de software responsável por uma parte da plataforma (ex: o sistema que entrega mensagens, o que autentica usuários, etc.)." }
+      ]
+    },
+    {
+      slide: "Indicadores Executivos",
+      intro: "Oito números que resumem o estado atual da plataforma.",
+      termos: [
+        { termo: "Reclamação ativa (N1)", def: "Cliente abriu chamado no suporte nos últimos 14 dias — problema confirmado por quem usa." },
+        { termo: "Usuários afetados em produção", def: "Pessoas que encontraram um erro no sistema mas não necessariamente ligaram para o suporte. Detectado automaticamente pelo Sentry." },
+        { termo: "Sinal oculto", def: "Erro que o sistema detectou em produção mas o suporte ainda não recebeu como chamado — é uma bomba-relógio." },
+        { termo: "Feature sobre área instável", def: "O dev está adicionando funcionalidade nova em uma área que já tem bugs ativos. Risco de piorar." }
+      ]
+    },
+    {
+      slide: "Mapa de Risco",
+      intro: "Cada barra é uma área da plataforma. Quanto maior, mais urgente. Clique em qualquer barra para ver os chamados abertos.",
+      termos: [
+        { termo: "Reclamações de clientes (âmbar)", def: "Proporção do score que vem de chamados abertos no suporte." },
+        { termo: "Erros em produção + análise técnica (roxo)", def: "Proporção que vem de erros detectados automaticamente (Sentry), fragilidades documentadas e atividade de código." },
+        { termo: "Score", def: "Número que representa a urgência: N1 ticket = 1pt · Sentry >1.000 usuários = 3pts · Sentry 100-1.000 = 2pts." },
+        { termo: "ALTO / MÉDIO / ATENÇÃO", def: "ALTO = score ≥ 30, precisa de ação esta semana. MÉDIO = score 15-29, monitorar. ATENÇÃO = score < 15, acompanhar." }
+      ]
+    },
+    {
+      slide: "Causa Raiz",
+      intro: "Para cada área com problemas, tentamos identificar qual sistema específico está causando.",
+      termos: [
+        { termo: "Confiança da atribuição", def: "Alta = temos prova (erro no Sentry + documentação). Média = evidências parciais. Especulativa = apenas por sintoma." },
+        { termo: "Score de problemas", def: "Soma de reclamações de clientes + erros em produção (ponderados por usuários afetados) para aquele serviço." },
+        { termo: "Alias / Sentry", def: "O mesmo serviço pode ter nomes diferentes: o nome canônico (técnico), o nome no repositório de código e o nome no sistema de monitoramento." }
+      ]
+    },
+    {
+      slide: "Análise Detalhada",
+      intro: "Zoom em um módulo específico: qual o problema, qual sistema provavelmente causa, e o que o dev está fazendo.",
+      termos: [
+        { termo: "Reclamações ativas agora", def: "Chamados abertos pelo suporte nos últimos 14 dias para esta área." },
+        { termo: "Serviços suspeitos", def: "Os sistemas mais prováveis de serem a causa raiz. A barra indica a quantidade de sinais apontando para cada um." },
+        { termo: "Padrão dos problemas", def: "Os chamados agrupados por tipo de sintoma — para identificar se é um problema pontual ou sistêmico." },
+        { termo: "Dev ativo / Planejado", def: "O que o time de desenvolvimento está fazendo agora e o que está na fila para breve." }
+      ]
+    },
+    {
+      slide: "Análise Detalhada",
+      intro: "Zoom nos canais de comunicação (WhatsApp, Instagram, etc.).",
+      termos: [
+        { termo: "Canal", def: "Meio pelo qual o cliente se comunica com a empresa (WhatsApp, Instagram, webchat, etc.)." },
+        { termo: "waba-webhook", def: "Sistema que processa as mensagens do WhatsApp Business (API oficial da Meta). Falhas aqui impedem envio/recebimento via WhatsApp." },
+        { termo: "PLBV / WABA", def: "Verificação de negócio junto à Meta (WhatsApp). Processo necessário para usar recursos avançados do WhatsApp Business." }
+      ]
+    },
+    {
+      slide: "Análise Detalhada",
+      intro: "Zoom no sistema que decide qual atendente recebe cada conversa.",
+      termos: [
+        { termo: "Distribuição / Fila", def: "Quando um cliente inicia uma conversa, o sistema decide automaticamente qual atendente vai recebê-la. Falha = conversa sem atendente." },
+        { termo: "dispatch-service", def: "Sistema responsável por esta distribuição automática. Usa um mecanismo de bloqueio no Redis para evitar duas pessoas pegando o mesmo cliente." },
+        { termo: "Bot / URA", def: "Sistema automático que atende o cliente antes de um humano. Frequentemente o ponto de falha inicial na distribuição." }
+      ]
+    },
+    {
+      slide: "Radar de Serviços",
+      intro: "Cada ponta do gráfico é um sistema. Quanto maior a área colorida, mais sinais naquele sistema. Clique nos pontos para ver os chamados.",
+      termos: [
+        { termo: "Score de problemas (vermelho)", def: "Reclamações de clientes + erros em produção ponderados por usuários afetados. Maior = mais urgente." },
+        { termo: "Dev trabalhando agora (verde)", def: "Quantidade de atividade do time de desenvolvimento neste sistema esta semana (PRs de código + cards ativos)." },
+        { termo: "Dev planejado (azul tracejado)", def: "O que está na fila para ser desenvolvido em breve — indica atenção futura ao serviço." },
+        { termo: "Gap grande (vermelho > verde)", def: "O sistema tem muitos problemas mas pouca atenção do dev. Zona de risco." }
+      ]
+    },
+    {
+      slide: "Riscos Imediatos",
+      intro: "Os 3 cenários onde uma decisão errada de deploy pode transformar um problema controlado em crise visível para os clientes.",
+      termos: [
+        { termo: "Bomba ativa", def: "Combinação de: bug confirmado + correção em andamento + nova feature sobre a mesma área. Se o deploy errar, o problema piora." },
+        { termo: "Gatilho", def: "O evento específico que pode detonar o problema — geralmente um deploy ou merge de código sem os devidos testes." },
+        { termo: "Score da bomba", def: "Quanto maior, mais fatores de risco combinados. Não é o score de risco do módulo — é uma medida de urgência para ação imediata." }
+      ]
+    },
+    {
+      slide: "Próximos Passos",
+      intro: "Ações priorizadas com base em todos os sinais coletados. Ordenadas por impacto e urgência.",
+      termos: [
+        { termo: "P0 — HOJE", def: "Ação que deve ser tomada antes do fim do dia. Ignorar aumenta significativamente o risco de crise." },
+        { termo: "P1 — ESTA SEMANA", def: "Ação importante para esta sprint. Ignorar pode gerar problemas no próximo deploy." },
+        { termo: "P2 — PRÓXIMA SPRINT", def: "Relevante mas não emergencial. Priorizar no próximo planejamento." }
+      ]
+    }
+  ],
+
   // ── AÇÕES ─────────────────────────────────────────────────
   acoes: [
     { prioridade: "P0 — HOJE",         cor: "red",    modulo: "Chat",          acao: "Testar e aprovar DEV4-4078 (fix status de mensagem) antes de qualquer merge",                      prazo: "Hoje" },

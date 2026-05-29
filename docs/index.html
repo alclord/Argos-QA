@@ -185,6 +185,39 @@ footer {
 /* ── CHART WRAP ── */
 .chart-box { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
 
+/* ── HELP PANEL ── */
+#helpBtn {
+  position: fixed; bottom: 44px; right: 16px; z-index: 150;
+  width: 34px; height: 34px; border-radius: 50%;
+  background: var(--card2); border: 1px solid var(--border);
+  color: var(--txt2); font-size: .95rem; font-weight: 700;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: background .15s, color .15s, border-color .15s;
+}
+#helpBtn:hover, #helpBtn.active { background: var(--indigo); color: #fff; border-color: var(--indigo); }
+
+#helpPanel {
+  position: fixed; top: 52px; right: 0; bottom: 36px; z-index: 140;
+  width: min(360px, 92vw);
+  background: #0D1525; border-left: 1px solid var(--border);
+  display: flex; flex-direction: column;
+  transform: translateX(100%);
+  transition: transform .25s ease;
+  box-shadow: -8px 0 32px rgba(0,0,0,.5);
+}
+#helpPanel.open { transform: translateX(0); }
+#helpPanel-header {
+  padding: 18px 18px 12px; border-bottom: 1px solid var(--border);
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; flex-shrink: 0;
+}
+#helpPanel-title { font-size: .78rem; font-weight: 700; color: var(--indigo); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 4px; }
+#helpPanel-intro { font-size: .8rem; color: var(--txt2); line-height: 1.55; }
+#helpPanel-body  { overflow-y: auto; padding: 14px 18px; display: flex; flex-direction: column; gap: 10px; }
+.help-term { background: var(--card); border: 1px solid var(--border); border-radius: 9px; padding: 11px 14px; }
+.help-term-name { font-size: .78rem; font-weight: 700; color: var(--txt1); margin-bottom: 4px; }
+.help-term-def  { font-size: .75rem; color: var(--txt2); line-height: 1.55; }
+#helpPanel-footer { padding: 10px 18px; border-top: 1px solid var(--border); font-size: .68rem; color: #475569; flex-shrink: 0; }
+
 /* ── PRINT ── */
 @media print {
   body { overflow: visible; }
@@ -274,15 +307,15 @@ footer {
       <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap">
         <button id="svcLegBtn0" onclick="toggleRadarLine(0)"
           style="display:flex;align-items:center;gap:6px;font-size:.72rem;padding:4px 10px;border-radius:6px;border:1px solid #EF444455;background:transparent;color:var(--txt2);cursor:pointer;transition:.15s">
-          <span style="width:22px;height:3px;background:#EF4444;display:inline-block;border-radius:2px"></span> Bugs confirmados
+          <span style="width:22px;height:3px;background:#EF4444;display:inline-block;border-radius:2px"></span> Score de problemas
         </button>
         <button id="svcLegBtn1" onclick="toggleRadarLine(1)"
           style="display:flex;align-items:center;gap:6px;font-size:.72rem;padding:4px 10px;border-radius:6px;border:1px solid #22C55E55;background:transparent;color:var(--txt2);cursor:pointer;transition:.15s">
-          <span style="width:22px;height:3px;background:#22C55E;display:inline-block;border-radius:2px"></span> Dev ativo agora
+          <span style="width:22px;height:3px;background:#22C55E;display:inline-block;border-radius:2px"></span> Dev trabalhando agora
         </button>
         <button id="svcLegBtn2" onclick="toggleRadarLine(2)"
           style="display:flex;align-items:center;gap:6px;font-size:.72rem;padding:4px 10px;border-radius:6px;border:1px solid #6366F155;background:transparent;color:var(--txt2);cursor:pointer;transition:.15s">
-          <span style="width:18px;height:2px;border-top:2px dashed #6366F1;display:inline-block"></span> Planejado (backlog)
+          <span style="width:18px;height:2px;border-top:2px dashed #6366F1;display:inline-block"></span> Dev planejado (em breve)
         </button>
         <button onclick="toggleRadarLine(-1)"
           style="font-size:.68rem;padding:4px 10px;border-radius:6px;border:1px solid var(--border);background:transparent;color:#475569;cursor:pointer">
@@ -343,6 +376,22 @@ footer {
   </div>
 </div>
 
+<!-- BOTÃO ? -->
+<button id="helpBtn" onclick="toggleHelp()" title="Como ler este slide">?</button>
+
+<!-- PAINEL DE AJUDA -->
+<div id="helpPanel">
+  <div id="helpPanel-header">
+    <div>
+      <div id="helpPanel-title"></div>
+      <div id="helpPanel-intro"></div>
+    </div>
+    <button onclick="toggleHelp()" style="background:none;border:none;color:#94A3B8;font-size:1.1rem;cursor:pointer;flex-shrink:0;padding:2px">✕</button>
+  </div>
+  <div id="helpPanel-body"></div>
+  <div id="helpPanel-footer">Clique fora do painel para fechar</div>
+</div>
+
 <footer>
   <span id="footerTxt"></span>
   <span>Gerado por Argos Predict · Atualizado semanalmente</span>
@@ -368,6 +417,7 @@ function go(n) {
 function updateNav() {
   document.getElementById('slabel').textContent = `${cur+1} / ${N}`;
   document.querySelectorAll('.dot').forEach((d,i) => d.classList.toggle('active', i === cur));
+  if (helpOpen) refreshHelp(cur);
 }
 
 document.addEventListener('keydown', e => {
@@ -434,8 +484,8 @@ function buildRanking() {
     data: {
       labels: rankingData.map(x => x.modulo),
       datasets: [
-        { label:'Bugs N1 (clientes ativos)', data:rankingData.map(x=>x.bugs_n1*3), backgroundColor:'#F59E0BAA', stack:'a', borderRadius:3 },
-        { label:'Sentry + KB + Churn',       data:rankingData.map(x=>Math.max(0,x.total-x.bugs_n1*3)), backgroundColor:'#6366F188', stack:'a', borderRadius:3 }
+        { label:'Reclamações de clientes', data:rankingData.map(x=>x.bugs_n1*3), backgroundColor:'#F59E0BAA', stack:'a', borderRadius:3 },
+        { label:'Erros em produção + análise técnica', data:rankingData.map(x=>Math.max(0,x.total-x.bugs_n1*3)), backgroundColor:'#6366F188', stack:'a', borderRadius:3 }
       ]
     },
     options: {
@@ -491,7 +541,7 @@ function showRankingModal(mod) {
           <div style="flex:1">
             <div style="font-size:.82rem;font-weight:600;margin-bottom:3px">${item.titulo}</div>
             <div style="display:flex;gap:6px;align-items:center">
-              <span style="font-size:.65rem;font-weight:700;padding:1px 7px;border-radius:4px;${tipoCardStyle(item.tipo)}">${item.tipo}</span>
+              <span style="font-size:.65rem;font-weight:700;padding:1px 7px;border-radius:4px;${tipoCardStyle(item.tipo)}">${tipoLabel(item.tipo)}</span>
               <span style="font-size:.65rem;color:#475569;font-family:monospace">${item.id}</span>
             </div>
           </div>
@@ -816,7 +866,26 @@ function tipoCardStyle(tipo) {
   if (tipo.includes('N1'))        return 'background:rgba(245,158,11,.15);color:#F59E0B';
   if (tipo.includes('PR'))        return 'background:rgba(34,197,94,.15);color:#22C55E';
   if (tipo.includes('Em Dev'))    return 'background:rgba(99,102,241,.2);color:#A5B4FC';
+  if (tipo.includes('Sentry'))    return 'background:rgba(239,68,68,.15);color:#EF4444';
   return 'background:rgba(148,163,184,.1);color:#94A3B8';
+}
+
+// Traduz rótulos técnicos para linguagem gerencial
+function tipoLabel(tipo) {
+  if (!tipo) return tipo;
+  if (tipo.includes('N1 Bug') || tipo.includes('N1 Bug'))
+    return tipo.replace('N1 Bug', 'Reclamação de cliente');
+  if (tipo.includes('🚨 Sentry · 3pts')) return 'Erro em produção — alto impacto';
+  if (tipo.includes('🚨 Sentry · 2pts')) return 'Erro em produção — médio impacto';
+  if (tipo.includes('🚨 Sentry · 1pt'))  return 'Erro em produção — baixo impacto';
+  if (tipo.includes('🚨 Sentry'))        return 'Erro em produção';
+  if (tipo.includes('Card em Dev'))      return 'Em desenvolvimento';
+  if (tipo.includes('Em Dev (Highest!)')|| tipo.includes('Em Dev'))
+    return tipo.replace('Em Dev', 'Em desenvolvimento').replace('Highest!', 'prioridade máxima');
+  if (tipo.includes('Pronto para Dev'))  return 'Aguardando desenvolvimento';
+  if (tipo.includes('Aguardando Handoff')) return 'Aguardando aprovação de produto';
+  if (tipo.includes('Aguardando Cenários')) return 'Aguardando casos de teste';
+  return tipo;
 }
 
 function cardLink(item) {
@@ -847,7 +916,7 @@ function showModal(svcIdx, datasetIdx) {
           <div style="flex:1">
             <div style="font-size:.8rem;font-weight:600;margin-bottom:4px">${item.titulo}</div>
             <div style="display:flex;gap:6px;align-items:center">
-              <span style="font-size:.65rem;font-weight:700;padding:1px 7px;border-radius:4px;${tipoCardStyle(item.tipo)}">${item.tipo}${tag}</span>
+              <span style="font-size:.65rem;font-weight:700;padding:1px 7px;border-radius:4px;${tipoCardStyle(item.tipo)}">${tipoLabel(item.tipo)}${tag}</span>
               <span style="font-size:.65rem;color:#475569">${item.id}</span>
             </div>
           </div>
@@ -867,6 +936,40 @@ function closeModal(e) {
 }
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+// ── HELP PANEL ────────────────────────────────────────────
+let helpOpen = false;
+
+function toggleHelp() {
+  helpOpen = !helpOpen;
+  document.getElementById('helpPanel').classList.toggle('open', helpOpen);
+  document.getElementById('helpBtn').classList.toggle('active', helpOpen);
+  if (helpOpen) refreshHelp(cur);
+}
+
+function refreshHelp(slideIdx) {
+  const h = REPORT.help[slideIdx];
+  if (!h) return;
+  document.getElementById('helpPanel-title').textContent = '📖 ' + h.slide;
+  document.getElementById('helpPanel-intro').textContent = h.intro;
+  document.getElementById('helpPanel-body').innerHTML = h.termos.map(t => `
+    <div class="help-term">
+      <div class="help-term-name">${t.termo}</div>
+      <div class="help-term-def">${t.def}</div>
+    </div>`).join('');
+}
+
+// Fecha painel ao clicar fora
+document.addEventListener('click', e => {
+  if (!helpOpen) return;
+  const panel = document.getElementById('helpPanel');
+  const btn   = document.getElementById('helpBtn');
+  if (!panel.contains(e.target) && e.target !== btn) {
+    helpOpen = false;
+    panel.classList.remove('open');
+    btn.classList.remove('active');
+  }
+});
 
 // ── INIT ──────────────────────────────────────────────────
 render(0); updateNav();
