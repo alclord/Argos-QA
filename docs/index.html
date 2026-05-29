@@ -478,7 +478,7 @@ function buildKPIs() {
 let rankingData = [];
 function buildRanking() {
   if (charts.ranking) return;
-  rankingData = [...REPORT.ranking].sort((a,b) => a.total - b.total);
+  rankingData = [...REPORT.ranking].sort((a,b) => b.total - a.total); // mais urgente no topo
   charts.ranking = new Chart(document.getElementById('cRanking'), {
     type: 'bar',
     data: {
@@ -590,9 +590,9 @@ function buildServicos() {
 function buildDrill(idx, elId) {
   const d   = REPORT.drilldown[idx];
   const el  = document.getElementById(elId);
-  const maxBugs = d.servico_principal.bugs + d.servico_secundario.bugs;
-  const p1pct   = Math.round(d.servico_principal.bugs   / maxBugs * 100);
-  const p2pct   = Math.round(d.servico_secundario.bugs  / maxBugs * 100);
+  const maxBugs = d.servico_principal.bugs + (d.servico_secundario?.bugs || 0);
+  const p1pct   = Math.round(d.servico_principal.bugs / Math.max(maxBugs, 1) * 100);
+  const p2pct   = d.servico_secundario ? Math.round(d.servico_secundario.bugs / Math.max(maxBugs, 1) * 100) : 0;
 
   el.innerHTML = `
     <div class="slide-tag" style="color:${d.cor}">Zoom: ${d.nivel}</div>
@@ -622,11 +622,11 @@ function buildDrill(idx, elId) {
             <div class="bar-track"><div class="bar-fill" style="width:${p1pct}%;background:${d.servico_principal.cor}"></div></div>
             <span style="font-size:.85rem;font-weight:700;color:${d.servico_principal.cor};min-width:24px">${d.servico_principal.bugs}</span>
           </div>
-          <div class="servico-bar" style="margin-top:6px">
+          ${d.servico_secundario ? `<div class="servico-bar" style="margin-top:6px">
             <div class="bar-lbl" style="min-width:160px;font-size:.8rem;font-weight:700">${d.servico_secundario.nome}</div>
             <div class="bar-track"><div class="bar-fill" style="width:${p2pct}%;background:${d.servico_secundario.cor}"></div></div>
             <span style="font-size:.85rem;font-weight:700;color:${d.servico_secundario.cor};min-width:24px">${d.servico_secundario.bugs}</span>
-          </div>
+          </div>` : ''}
         </div>
       </div>
     </div>

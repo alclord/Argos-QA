@@ -129,8 +129,8 @@ const REPORT = {
       total_reclamacoes: 2,
       bugs_confirmados: 2,
       dias_sentry: 23,
-      servico_principal: { nome: "foundation-spa", bugs: 6, cor: "#EF4444" },
-      servico_secundario: { nome: "foundation-spa", bugs: 1, cor: "#F59E0B" },
+      servico_principal: { nome: "foundation-spa", bugs: 7, cor: "#EF4444" },
+      servico_secundario: null,
       clusters: [
         { sintoma: "Erro 404 crônico (sem ticket no suporte)",            qtd: 1, servico: "omnispa", urgencia: "🔴" },
         { sintoma: "TypeError plugin escalando (surgiu ontem)",           qtd: 1, servico: "omnispa", urgencia: "🔴" },
