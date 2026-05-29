@@ -270,16 +270,24 @@ footer {
 
     <!-- RADAR SERVIÇOS -->
     <div class="chart-box" style="padding:20px 16px">
-      <div style="display:flex;gap:20px;margin-bottom:14px;flex-wrap:wrap">
-        <span style="display:flex;align-items:center;gap:6px;font-size:.72rem;color:var(--txt2)">
-          <span style="width:28px;height:3px;background:#EF4444;display:inline-block;border-radius:2px"></span> Bugs confirmados
-        </span>
-        <span style="display:flex;align-items:center;gap:6px;font-size:.72rem;color:var(--txt2)">
-          <span style="width:28px;height:3px;background:#22C55E;display:inline-block;border-radius:2px"></span> Dev ativo agora
-        </span>
-        <span style="display:flex;align-items:center;gap:6px;font-size:.72rem;color:var(--txt2)">
-          <span style="width:22px;height:2px;background:#6366F1;display:inline-block;border-radius:2px;border-top:2px dashed #6366F1"></span> Planejado (backlog)
-        </span>
+      <!-- Legenda clicável -->
+      <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap">
+        <button id="svcLegBtn0" onclick="toggleRadarLine(0)"
+          style="display:flex;align-items:center;gap:6px;font-size:.72rem;padding:4px 10px;border-radius:6px;border:1px solid #EF444455;background:transparent;color:var(--txt2);cursor:pointer;transition:.15s">
+          <span style="width:22px;height:3px;background:#EF4444;display:inline-block;border-radius:2px"></span> Bugs confirmados
+        </button>
+        <button id="svcLegBtn1" onclick="toggleRadarLine(1)"
+          style="display:flex;align-items:center;gap:6px;font-size:.72rem;padding:4px 10px;border-radius:6px;border:1px solid #22C55E55;background:transparent;color:var(--txt2);cursor:pointer;transition:.15s">
+          <span style="width:22px;height:3px;background:#22C55E;display:inline-block;border-radius:2px"></span> Dev ativo agora
+        </button>
+        <button id="svcLegBtn2" onclick="toggleRadarLine(2)"
+          style="display:flex;align-items:center;gap:6px;font-size:.72rem;padding:4px 10px;border-radius:6px;border:1px solid #6366F155;background:transparent;color:var(--txt2);cursor:pointer;transition:.15s">
+          <span style="width:18px;height:2px;border-top:2px dashed #6366F1;display:inline-block"></span> Planejado (backlog)
+        </button>
+        <button onclick="toggleRadarLine(-1)"
+          style="font-size:.68rem;padding:4px 10px;border-radius:6px;border:1px solid var(--border);background:transparent;color:#475569;cursor:pointer">
+          resetar
+        </button>
       </div>
       <canvas id="cRadarSvc" style="max-height:360px"></canvas>
     </div>
@@ -701,6 +709,51 @@ function buildAcoes() {
       <td style="font-size:.82rem">${a.acao}</td>
       <td style="white-space:nowrap;font-size:.78rem;color:var(--txt2)">${a.prazo}</td>
     </tr>`).join('');
+}
+
+// ── HIGHLIGHT DO RADAR DE SERVIÇOS ────────────────────────
+const RADAR_CONFIGS = [
+  { borderColor:'#EF4444', bg:'rgba(239,68,68,0.20)', dim:'rgba(239,68,68,0.08)', borderDash:[]  },
+  { borderColor:'#22C55E', bg:'rgba(34,197,94,0.15)',  dim:'rgba(34,197,94,0.05)',  borderDash:[]  },
+  { borderColor:'#6366F1', bg:'rgba(99,102,241,0.08)', dim:'rgba(99,102,241,0.03)', borderDash:[5,4] }
+];
+let radarHighlight = -1; // índice ativo (-1 = nenhum)
+
+function toggleRadarLine(idx) {
+  if (!charts.radarSvc) return;
+  radarHighlight = (radarHighlight === idx) ? -1 : idx; // toggle
+  applyRadarHighlight();
+}
+
+function applyRadarHighlight() {
+  if (!charts.radarSvc) return;
+  const btns = [0,1,2].map(i => document.getElementById(`svcLegBtn${i}`));
+  const none = radarHighlight === -1;
+
+  charts.radarSvc.data.datasets.forEach((ds, i) => {
+    const cfg = RADAR_CONFIGS[i];
+    const active = none || i === radarHighlight;
+    ds.borderColor       = active ? cfg.borderColor : cfg.dim;
+    ds.backgroundColor   = active ? cfg.bg : 'transparent';
+    ds.borderWidth       = active && !none ? 3.5 : (none ? 2 : 1);
+    ds.pointRadius       = active && !none ? 8   : (none ? 5 : 2);
+    ds.pointHoverRadius  = active && !none ? 10  : (none ? 8 : 2);
+    ds.borderDash        = cfg.borderDash;
+    ds.order             = active ? 0 : 1;
+  });
+
+  // Atualiza visual dos botões
+  btns.forEach((btn, i) => {
+    if (!btn) return;
+    const active = none || i === radarHighlight;
+    const selected = i === radarHighlight && !none;
+    btn.style.background = selected ? RADAR_CONFIGS[i].borderColor + '22' : 'transparent';
+    btn.style.color      = active   ? 'var(--txt1)' : '#334155';
+    btn.style.borderColor= selected ? RADAR_CONFIGS[i].borderColor : (active ? RADAR_CONFIGS[i].borderColor+'55' : '#1E3A5F');
+    btn.style.transform  = selected ? 'scale(1.05)' : 'scale(1)';
+  });
+
+  charts.radarSvc.update('none'); // sem animação para ser instantâneo
 }
 
 // ── MODAL ─────────────────────────────────────────────────
