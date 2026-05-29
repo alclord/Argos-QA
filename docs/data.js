@@ -27,17 +27,75 @@ const REPORT = {
 
   // ── RANKING (apenas sinais ativos — N2 excluído) ────────
   ranking: [
-    { modulo: "Chat / Mensagens",     total: 42, bugs_n1: 7,  nivel: "ALTO",    cor: "#EF4444", delta: +3  },
-    { modulo: "Nova Interface",       total: 22, bugs_n1: 2,  nivel: "MÉDIO",   cor: "#F59E0B", delta: +5  },
-    { modulo: "Canais / WhatsApp",    total: 22, bugs_n1: 2,  nivel: "MÉDIO",   cor: "#F59E0B", delta: +3  },
-    { modulo: "Distribuição / Filas", total: 13, bugs_n1: 2,  nivel: "ATENÇÃO", cor: "#F97316", delta: -6  },
-    { modulo: "Upload / Mídia",       total: 11, bugs_n1: 2,  nivel: "ATENÇÃO", cor: "#F97316", delta:  0  },
-    { modulo: "Autenticação",         total: 11, bugs_n1: 0,  nivel: "ATENÇÃO", cor: "#F97316", delta: -2  },
-    { modulo: "Permissões / Roles",   total: 8,  bugs_n1: 0,  nivel: "ATENÇÃO", cor: "#F97316", delta: +1  },
-    { modulo: "CRM / Integrações",    total: 8,  bugs_n1: 1,  nivel: "ATENÇÃO", cor: "#F97316", delta: -10 },
-    { modulo: "WebSocket / Presença", total: 8,  bugs_n1: 1,  nivel: "ATENÇÃO", cor: "#F97316", delta: -3  },
-    { modulo: "Jarvis / IA",          total: 2,  bugs_n1: 0,  nivel: "ESTÁVEL", cor: "#22C55E", delta: -5  },
-    { modulo: "Contatos",             total: 0,  bugs_n1: 0,  nivel: "ESTÁVEL", cor: "#22C55E", delta: -9  }
+    {
+      modulo: "Chat / Mensagens", total: 42, bugs_n1: 7, nivel: "ALTO", cor: "#EF4444", delta: +3,
+      bugs_cards: [
+        { id:"SM-7544", titulo:"Erro no envio de mensagens na Polichat",                tipo:"N1 Bug" },
+        { id:"SM-7518", titulo:"Mensagens não aparecem no chat — atualização manual",   tipo:"N1 Bug" },
+        { id:"SM-7519", titulo:"Atendente não consegue enviar após resposta a template",tipo:"N1 Bug" },
+        { id:"SM-7574", titulo:"Mensagens não chegam no tablet — dois números",         tipo:"N1 Bug" },
+        { id:"SM-7539", titulo:"Não consegue responder — possível restrição Meta",     tipo:"N1 Bug" },
+        { id:"SM-7528", titulo:"Cliente sem atendimento — problema recorrente",         tipo:"N1 Bug" },
+        { id:"SM-7498", titulo:"Emojis aparecem automaticamente nas mensagens enviadas",tipo:"N1 Bug" },
+        { id:"SM-7582", titulo:"Erro 500 na rota GET /accounts/{uuid}/messages",        tipo:"N1 Bug" }
+      ]
+    },
+    {
+      modulo: "Nova Interface", total: 22, bugs_n1: 2, nivel: "MÉDIO", cor: "#F59E0B", delta: +5,
+      bugs_cards: [
+        { id:"SM-7496", titulo:"Extensão parou de funcionar após atualização da nova interface", tipo:"N1 Bug" },
+        { id:"SM-7527", titulo:"Atalhos utilizando Ctrl não estão funcionando na plataforma",    tipo:"N1 Bug" }
+      ]
+    },
+    {
+      modulo: "Canais / WhatsApp", total: 22, bugs_n1: 2, nivel: "MÉDIO", cor: "#F59E0B", delta: +3,
+      bugs_cards: [
+        { id:"SM-7588", titulo:"Erro ao configurar canal do Instagram",              tipo:"N1 Bug" },
+        { id:"SM-7532", titulo:"Template aprovado e vinculado ao canal não aparece", tipo:"N1 Bug" }
+      ]
+    },
+    {
+      modulo: "Distribuição / Filas", total: 13, bugs_n1: 2, nivel: "ATENÇÃO", cor: "#F97316", delta: -6,
+      bugs_cards: [
+        { id:"SM-7592", titulo:"Bot não fez direcionamento para atendente",        tipo:"N1 Bug" },
+        { id:"SM-7569", titulo:"Chat preso — mensagens não distribuídas após bot", tipo:"N1 Bug" }
+      ]
+    },
+    {
+      modulo: "Upload / Mídia", total: 11, bugs_n1: 2, nivel: "ATENÇÃO", cor: "#F97316", delta: 0,
+      bugs_cards: [
+        { id:"SM-7520", titulo:"Envio de arquivos instável na plataforma",           tipo:"N1 Bug" },
+        { id:"SM-7503", titulo:"PDF não aparece na plataforma (interface antiga e nova)", tipo:"N1 Bug" }
+      ]
+    },
+    {
+      modulo: "Autenticação", total: 11, bugs_n1: 0, nivel: "ATENÇÃO", cor: "#F97316", delta: -2,
+      bugs_cards: []
+    },
+    {
+      modulo: "Permissões / Roles", total: 8, bugs_n1: 0, nivel: "ATENÇÃO", cor: "#F97316", delta: +1,
+      bugs_cards: []
+    },
+    {
+      modulo: "CRM / Integrações", total: 8, bugs_n1: 1, nivel: "ATENÇÃO", cor: "#F97316", delta: -10,
+      bugs_cards: [
+        { id:"SM-7567", titulo:"Webhook não recebe eventos mesmo com configuração correta", tipo:"N1 Bug" }
+      ]
+    },
+    {
+      modulo: "WebSocket / Presença", total: 8, bugs_n1: 1, nivel: "ATENÇÃO", cor: "#F97316", delta: -3,
+      bugs_cards: [
+        { id:"SM-7511", titulo:"Novas mensagens não notificam o atendente", tipo:"N1 Bug" }
+      ]
+    },
+    {
+      modulo: "Jarvis / IA", total: 2, bugs_n1: 0, nivel: "ESTÁVEL", cor: "#22C55E", delta: -5,
+      bugs_cards: []
+    },
+    {
+      modulo: "Contatos", total: 0, bugs_n1: 0, nivel: "ESTÁVEL", cor: "#22C55E", delta: -9,
+      bugs_cards: []
+    }
   ],
 
   // ── DRILLDOWN DOS 3 MÓDULOS COM MAIS SINAIS ──────────────

@@ -425,16 +425,17 @@ function buildKPIs() {
 }
 
 // ── SLIDE 2: RANKING ──────────────────────────────────────
+let rankingData = [];
 function buildRanking() {
   if (charts.ranking) return;
-  const d = [...REPORT.ranking].sort((a,b) => a.total - b.total);
+  rankingData = [...REPORT.ranking].sort((a,b) => a.total - b.total);
   charts.ranking = new Chart(document.getElementById('cRanking'), {
     type: 'bar',
     data: {
-      labels: d.map(x => x.modulo),
+      labels: rankingData.map(x => x.modulo),
       datasets: [
-        { label:'Bugs N1 (clientes ativos)', data:d.map(x=>x.bugs_n1*3), backgroundColor:'#F59E0BAA', stack:'a', borderRadius:3 },
-        { label:'Sentry + KB + Churn',       data:d.map(x=>Math.max(0,x.total-x.bugs_n1*3)),          backgroundColor:'#6366F188', stack:'a', borderRadius:3 }
+        { label:'Bugs N1 (clientes ativos)', data:rankingData.map(x=>x.bugs_n1*3), backgroundColor:'#F59E0BAA', stack:'a', borderRadius:3 },
+        { label:'Sentry + KB + Churn',       data:rankingData.map(x=>Math.max(0,x.total-x.bugs_n1*3)), backgroundColor:'#6366F188', stack:'a', borderRadius:3 }
       ]
     },
     options: {
@@ -442,9 +443,14 @@ function buildRanking() {
       plugins:{
         legend:{ labels:{ color:'#94A3B8', font:{size:11} } },
         tooltip:{ callbacks:{ footer: items => {
-          const x = d[items[0].dataIndex];
-          return `Score: ${x.total} · ${x.bugs_n1} bugs N1 ativos · ${x.nivel}`;
+          const x = rankingData[items[0].dataIndex];
+          const hint = x.bugs_n1 > 0 ? '\n💡 Clique para ver os tickets abertos' : '';
+          return `Score: ${x.total} · ${x.bugs_n1} N1 ativos · ${x.nivel}${hint}`;
         }}}
+      },
+      // onClick via addEventListener abaixo (mais confiável com Playwright)
+      onHover: (e, elements) => {
+        e.native.target.style.cursor = elements.length ? 'pointer' : 'default';
       },
       scales:{
         x:{ stacked:true, ticks:{color:'#94A3B8'}, grid:{color:'rgba(30,58,95,.4)'} },
@@ -452,6 +458,48 @@ function buildRanking() {
       }
     }
   });
+
+  // Click nativo — mais confiável que o onClick do Chart.js em ambientes headless
+  document.getElementById('cRanking').addEventListener('click', function(e) {
+    const els = charts.ranking.getElementsAtEventForMode(e, 'nearest', { intersect: true }, false);
+    if (!els.length) return;
+    const mod = rankingData[els[0].index];
+    if (!mod) return;
+    showRankingModal(mod);
+  });
+}
+
+function showRankingModal(mod) {
+  const cards = mod.bugs_cards || [];
+  document.getElementById('modalTag').textContent  = '🐛 Bugs N1 abertos';
+  document.getElementById('modalTag').style.color  = mod.cor;
+  document.getElementById('modalTitle').textContent = mod.modulo;
+  document.getElementById('modalSub').textContent   =
+    `Score ${mod.total} · ${mod.bugs_n1} bug${mod.bugs_n1!==1?'s':''} aberto${mod.bugs_n1!==1?'s':''} · ${mod.nivel}`;
+
+  document.getElementById('modalBody').innerHTML = cards.length === 0
+    ? `<div style="text-align:center;padding:28px 16px;color:#475569;font-size:.85rem;line-height:1.7">
+        <div style="font-size:1.5rem;margin-bottom:8px">✅</div>
+        Nenhum bug N1 aberto neste módulo.<br>
+        <span style="font-size:.75rem">O risco vem de Sentry, KB ou Code Churn — sem ticket ativo no suporte.</span>
+       </div>`
+    : cards.map(item => {
+        const href = item.id.startsWith('SM-') ? `https://poli-digital.atlassian.net/browse/${item.id}` : null;
+        return `<a href="${href||'#'}" target="_blank" rel="noopener"
+          style="display:flex;align-items:center;gap:12px;padding:11px 14px;background:#1F2937;border:1px solid #1E3A5F;border-radius:10px;text-decoration:none;color:inherit;transition:background .15s"
+          onmouseover="this.style.background='#263348'" onmouseout="this.style.background='#1F2937'">
+          <div style="flex:1">
+            <div style="font-size:.82rem;font-weight:600;margin-bottom:3px">${item.titulo}</div>
+            <div style="display:flex;gap:6px;align-items:center">
+              <span style="font-size:.65rem;font-weight:700;padding:1px 7px;border-radius:4px;${tipoCardStyle(item.tipo)}">${item.tipo}</span>
+              <span style="font-size:.65rem;color:#475569;font-family:monospace">${item.id}</span>
+            </div>
+          </div>
+          ${href ? '<span style="color:#475569;font-size:.85rem;flex-shrink:0">↗</span>' : ''}
+        </a>`;
+      }).join('');
+
+  document.getElementById('modalOverlay').style.display = 'flex';
 }
 
 // ── SLIDE 3: SERVIÇOS ─────────────────────────────────────
