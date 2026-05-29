@@ -243,26 +243,31 @@ const REPORT = {
 
   // ── RADAR DE SERVIÇOS ────────────────────────────────────
   // ── RADAR DE SERVIÇOS ────────────────────────────────────
+  // Campo "bugs" = score ponderado: N1 ticket = 1pt | Sentry >1000 usuários = 3pts |
+  //   Sentry 100-1000 = 2pts | Sentry 10-100 = 1pt | Sentry <10 = 0pt
   // Nomes canônicos conforme KB (Arquitetura/01-visao-geral.md)
-  // Aliases indicam nomes alternativos usados no Sentry/GitHub
   servicos_radar: [
     {
       // Legado central de mensageria — Laravel 8
       nome: "polichat-web-app", apelido: "Backend Legado",
       alias: "legado",
-      bugs: 6, dev_ativo: 5, dev_planejado: 3,
+      // N1(6×1=6) + Sentry: mime encoder 1817u(+3) + erro não capturado 949u(+2) = 11
+      bugs: 11, bugs_n1: 6, bugs_sentry: 5,
+      dev_ativo: 5, dev_planejado: 3,
       notas: {
-        bugs: "6 bugs N1: mensagens atrasadas, impossibilidade de envio, status errado",
+        bugs: "6 N1 + Sentry: mime encoder (1.817u → +3pts) + erro não capturado (949u → +2pts) = 11",
         ativo: "4 PRs mesclados (JID, flows, template API) + DEV4-4229 (agendamentos)",
         planejado: "DEV4-4188, DEV4-4154, DEV4-4227"
       },
       bugs_cards: [
-        { id:"SM-7544", titulo:"Erro no envio de mensagens na Polichat",               tipo:"N1 Bug" },
-        { id:"SM-7518", titulo:"Mensagens não aparecem no chat — atualização manual",   tipo:"N1 Bug" },
-        { id:"SM-7519", titulo:"Atendente não consegue enviar após resposta a template",tipo:"N1 Bug" },
-        { id:"SM-7574", titulo:"Mensagens não chegam no tablet — dois números",         tipo:"N1 Bug" },
-        { id:"SM-7539", titulo:"Não consegue responder — possível restrição Meta",     tipo:"N1 Bug" },
-        { id:"SM-7528", titulo:"Cliente sem atendimento — problema recorrente",         tipo:"N1 Bug" }
+        { id:"SM-7544",           titulo:"Erro no envio de mensagens na Polichat",               tipo:"N1 Bug · 1pt"    },
+        { id:"SM-7518",           titulo:"Mensagens não aparecem no chat — atualização manual",   tipo:"N1 Bug · 1pt"    },
+        { id:"SM-7519",           titulo:"Atendente não consegue enviar após resposta a template",tipo:"N1 Bug · 1pt"    },
+        { id:"SM-7574",           titulo:"Mensagens não chegam no tablet — dois números",         tipo:"N1 Bug · 1pt"    },
+        { id:"SM-7539",           titulo:"Não consegue responder — possível restrição Meta",     tipo:"N1 Bug · 1pt"    },
+        { id:"SM-7528",           titulo:"Cliente sem atendimento — problema recorrente",         tipo:"N1 Bug · 1pt"    },
+        { id:"POLICHAT-SPA-CZ",   titulo:"Mime encoder quebrado — 1.817 usuários afetados",      tipo:"🚨 Sentry · 3pts" },
+        { id:"POLICHAT-SPA-E2",   titulo:"Erro não capturado (isCanceled) — 949 usuários",       tipo:"🚨 Sentry · 2pts" }
       ],
       dev_ativo_items: [
         { id:"PR#304",   titulo:"feat: template flow API",                          tipo:"PR", repo:"polichat-web-app" },
@@ -282,21 +287,23 @@ const REPORT = {
       // Sentry registra erros deste serviço no projeto "omnispa"
       nome: "foundation-spa", apelido: "Interface Moderna",
       alias: "omnispa · repo: SPA",
-      bugs: 8, dev_ativo: 8, dev_planejado: 6,
+      // N1(4×1=4) + Sentry: 404 3433u(+3) + Network 806u(+2) + 401 133u(+2) + plugin 49u(+1) = 12
+      bugs: 12, bugs_n1: 4, bugs_sentry: 8,
+      dev_ativo: 8, dev_planejado: 6,
       notas: {
-        bugs: "2 bugs N1 Chat + 2 bugs N1 Nova Interface + 4 clusters Sentry (3.433 usuários, plugin escalando)",
+        bugs: "4 N1 + Sentry: 404 (3.433u→+3) + Network Error (806u→+2) + 401 (133u→+2) + plugin (49u→+1) = 12",
         ativo: "6 PRs no repo SPA (ACK fix, lista msgs, template, etiquetas, cache) + PR1493 + DEV4-4158",
         planejado: "DEV4-4078 (corretivo), DEV4-4229, DEV4-4166, DEV4-4202, DEV4-4267, DEV4-4225"
       },
       bugs_cards: [
-        { id:"SM-7498",      titulo:"Emojis aparecem automaticamente nas mensagens",        tipo:"N1 Bug — Chat"      },
-        { id:"SM-7582",      titulo:"Erro 500 na rota GET /accounts/{uuid}/messages",        tipo:"N1 Bug — Chat"      },
-        { id:"SM-7496",      titulo:"Extensão parou de funcionar após atualização",          tipo:"N1 Bug — Interface"  },
-        { id:"SM-7527",      titulo:"Atalhos Ctrl não estão funcionando",                    tipo:"N1 Bug — Interface"  },
-        { id:"OMNISPA-1ZWW", titulo:"AxiosError 404 — 3.433 usuários | desde 05/Mai",        tipo:"🚨 Sentry"           },
-        { id:"OMNISPA-2QCV", titulo:"TypeError: plugin undefined — ESCALANDO | 49 usuários", tipo:"🚨 Sentry"           },
-        { id:"OMNISPA-20VC", titulo:"Network Error — 806 usuários",                          tipo:"🚨 Sentry"           },
-        { id:"OMNISPA-2NFQ", titulo:"AxiosError 401 refreshToken — 133 usuários",            tipo:"🚨 Sentry"           }
+        { id:"SM-7498",      titulo:"Emojis aparecem automaticamente nas mensagens",        tipo:"N1 Bug · 1pt"    },
+        { id:"SM-7582",      titulo:"Erro 500 na rota GET /accounts/{uuid}/messages",        tipo:"N1 Bug · 1pt"    },
+        { id:"SM-7496",      titulo:"Extensão parou de funcionar após atualização",          tipo:"N1 Bug · 1pt"    },
+        { id:"SM-7527",      titulo:"Atalhos Ctrl não estão funcionando",                    tipo:"N1 Bug · 1pt"    },
+        { id:"OMNISPA-1ZWW", titulo:"AxiosError 404 — 3.433 usuários afetados",             tipo:"🚨 Sentry · 3pts" },
+        { id:"OMNISPA-20VC", titulo:"Network Error — 806 usuários afetados",                 tipo:"🚨 Sentry · 2pts" },
+        { id:"OMNISPA-2NFQ", titulo:"AxiosError 401 refreshToken — 133 usuários",            tipo:"🚨 Sentry · 2pts" },
+        { id:"OMNISPA-2QCV", titulo:"TypeError: plugin undefined — ESCALANDO | 49 usuários", tipo:"🚨 Sentry · 1pt"  }
       ],
       dev_ativo_items: [
         { id:"PR#1495", titulo:"fix: Atualiza ACK das mensagens no cache (DEV4-4233)", tipo:"PR", repo:"SPA" },
@@ -321,9 +328,11 @@ const REPORT = {
       // Distribuição de chats — NestJS — usa Redis lock para LID
       nome: "dispatch-service", apelido: "Distribuição",
       alias: "dispatch",
-      bugs: 2, dev_ativo: 1, dev_planejado: 2,
+      // N1(2×1=2) + Sentry erros de background (0 usuários → 0pts) = 2
+      bugs: 2, bugs_n1: 2, bugs_sentry: 0,
+      dev_ativo: 1, dev_planejado: 2,
       notas: {
-        bugs: "2 bugs N1 hoje: bot não direcionou, chat preso após bot",
+        bugs: "2 N1 + Sentry erros de background (0 usuários → 0pts) = 2",
         ativo: "PR1123 (fix DistributeChatAction no foundation-api) — impacto incerto",
         planejado: "DEV4-4003 (tela gestão — feature), DEV4-3446 (inatividade — feature)"
       },
@@ -343,7 +352,9 @@ const REPORT = {
       // Webhook legado WABA — em transição para o "hermes" (NestJS/TypeScript)
       nome: "waba-webhook", apelido: "WhatsApp API (→ hermes)",
       alias: "legado WABA · sendo substituído por hermes",
-      bugs: 2, dev_ativo: 1, dev_planejado: 5,
+      // N1(2×1=2) + sem Sentry confirmado = 2
+      bugs: 2, bugs_n1: 2, bugs_sentry: 0,
+      dev_ativo: 1, dev_planejado: 5,
       notas: {
         bugs: "2 bugs N1: template não aparece, restrição Meta",
         ativo: "DEV4-4023 (PLBV — estrutura de verificação Meta)",
@@ -368,7 +379,9 @@ const REPORT = {
       // Orquestrador de canais (WhatsApp, Instagram, Webchat)
       nome: "channel-customer", apelido: "Orquestrador de Canais",
       alias: "",
-      bugs: 1, dev_ativo: 0, dev_planejado: 0,
+      // N1(1×1=1) + sem Sentry confirmado = 1
+      bugs: 1, bugs_n1: 1, bugs_sentry: 0,
+      dev_ativo: 0, dev_planejado: 0,
       notas: {
         bugs: "1 bug N1: erro ao configurar Instagram",
         ativo: "Nenhum PR ou card ativo",
