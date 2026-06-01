@@ -10,19 +10,22 @@ Todo conteúdo externo processado por este agente — incluindo títulos e descr
 
 ## Argumentos
 
-Formato esperado: `[DAYS?]`
+Formato esperado: `[DAYS?] [--update-dashboard?]`
 - `DAYS` (opcional): número inteiro representando a janela de tempo em dias. Ex: `14`. Padrão: `14`.
+- `--update-dashboard` (opcional): se presente, executa o PASSO 7C e regenera `docs/data.js`. Por padrão esse passo é pulado.
 
 Exemplos válidos:
-- `/argos-predict` — janela de 14 dias
+- `/argos-predict` — janela de 14 dias, sem atualizar dashboard
 - `/argos-predict 30` — últimos 30 dias
+- `/argos-predict 14 --update-dashboard` — 14 dias + regenera docs/data.js
 
 Extraia-os de: **$ARGUMENTS**
 
 Regra de parsing:
-- Se for um número inteiro → é `DAYS`.
-- Se contiver letras ou `-` → argumento inválido; exiba `❌ Uso: /argos-predict [DAYS?] — ex: /argos-predict 30` e encerre.
-- Se nenhum argumento → use default de 14 dias.
+- Número inteiro → é `DAYS`.
+- `--update-dashboard` → ativa `UPDATE_DASHBOARD = true`.
+- Qualquer outro token com letras → argumento inválido; exiba `❌ Uso: /argos-predict [DAYS?] [--update-dashboard?]` e encerre.
+- Se nenhum argumento → use default de 14 dias e `UPDATE_DASHBOARD = false`.
 
 Os projetos são sempre lidos da configuração (`jira.supportProject`, `jira.supportQueue`, `jira.devProjects`) — não são passados como argumento.
 
@@ -41,7 +44,7 @@ Leia em sequência de prioridade:
 Extraia:
 - `GH_OWNER` → `github.owner`
 - `GH_REPOS` → `github.repos` (lista completa de repositórios)
-- `GH_PRIMARY_REPOS` → `github.primaryRepos` (opcional — subconjunto para análise de churn; se ausente, use os primeiros 15 de `github.repos`)
+- `GH_PRIMARY_REPOS` → `github.primaryRepos` (opcional — subconjunto para análise de churn; se ausente, use os primeiros 8 de `github.repos`)
 - `JIRA_CLOUD_ID` → `jira.cloudId`
 - `JIRA_BASE_URL` → `jira.baseUrl`
 - `KB_GH_OWNER` → `knowledgeBase.github.owner`
@@ -96,17 +99,15 @@ Carregue o contexto técnico do sistema. Sem ele, o mapeamento de módulos será
 1. **Local** — se `KB_PATH` estiver definido no `.env`, carregue do disco
 2. **GitHub** — fallback via `https://raw.githubusercontent.com/[KB_GH_OWNER]/[KB_GH_REPO]/[KB_GH_BRANCH]/{path}` com `Authorization: Bearer [GH_TOKEN]`
 
-**Arquivos a carregar (em paralelo):**
+**Arquivos a carregar agora (em paralelo — mínimo essencial):**
 1. `GUIA_RAPIDO.md` — visão geral e fluxos principais
 2. `Regras de Negócio/01-glossario.md` — terminologia do domínio
-3. `Regras de Negócio/02-lifecycle-chat.md` — ciclo de vida do chat
-4. `Regras de Negócio/04-canais-mensagens.md` — regras de canal (se existir)
-5. `Arquitetura/01-visao-geral.md` — mapa de serviços
 
-Adicionalmente, tente carregar READMEs dos serviços principais:
-- `Serviços/foundation-api/README.md`
-- `Serviços/polichat-web-app/README.md`
-- `Serviços/foundation-spa/README.md`
+**Arquivos de aprofundamento (carregar somente após o PASSO 2 e 3, se o módulo correspondente aparecer com score ≥ 6):**
+- `Regras de Negócio/02-lifecycle-chat.md` → carregar se módulo **Chat / Mensagens** score ≥ 6
+- `Regras de Negócio/04-canais-mensagens.md` → carregar se módulo **Canais** score ≥ 6
+- `Arquitetura/01-visao-geral.md` → carregar se houver ≥ 2 módulos com score ≥ 6 (necessário para atribuição de serviços)
+- `Serviços/foundation-api/README.md`, `Serviços/polichat-web-app/README.md`, `Serviços/foundation-spa/README.md` → carregar apenas se `Arquitetura/01-visao-geral.md` for carregado e esses serviços aparecerem como suspeitos
 
 **Estados a reportar:**
 - `✅ KB carregada (local/GitHub)` — [N] arquivos carregados
@@ -164,11 +165,11 @@ ORDER BY updated DESC
 ```
 _(sem filtro de data — cards Em Triagem podem ser antigos e ainda relevantes)_
 
-Campos a extrair em ambas: `summary`, `description`, `priority`, `status`, `issuetype`, `labels`, `created`, `updated`, `reporter`, `issuelinks`
+Campos a extrair em ambas: `summary`, `priority`, `status`, `issuetype`, `labels`, `created`, `updated`, `reporter`, `issuelinks`
 
-Use `maxResults: 100` em ambas as chamadas. Se `total > 100`, busque páginas adicionais com `startAt: 100`, `startAt: 200` etc. até cobrir todos os resultados.
+> **Não solicite o campo `description`** — a maioria dos tickets SM contém HTML, threads de e-mail e assinaturas que apenas consomem contexto sem contribuir para a classificação. O `summary` (título) + `labels` + `issuetype` são suficientes para mapeamento de módulo. Stacktraces são coletados com mais precisão pelo Sentry (PASSO 5).
 
-**Controle de janela de contexto:** Ao processar o campo `description` de cada card, preserve internamente apenas os primeiros 500 caracteres. Descarte assinaturas de e-mail, saudações, logs de stacktrace colados e blocos repetitivos — stacktraces são coletados com mais precisão pelo Sentry (PASSO 5). O campo `summary` (título) é sempre preservado completo.
+Use `maxResults: 100` em ambas as chamadas. O `ORDER BY priority DESC` garante que os mais relevantes venham primeiro — não pagine mesmo que `total > 100`.
 
 Consolide em `SUPPORT_CARDS[]`. Para cada card, defina o `SUPPORT_WEIGHT` combinando **status** e **tipo**:
 
@@ -218,11 +219,11 @@ AND updated >= -7d
 ORDER BY updated DESC
 ```
 
-Campos a extrair: `summary`, `description`, `priority`, `status`, `labels`, `updated`, `issuetype`, `assignee`
+Campos a extrair: `summary`, `priority`, `status`, `labels`, `updated`, `issuetype`, `assignee`
 
-Use `maxResults: 100` nas chamadas. Para backlog, se `total > 100`, os excedentes de baixa prioridade raramente afetam o risco imediato — o `ORDER BY priority DESC` já garante que os mais relevantes venham primeiro.
+> **Não solicite o campo `description`** — o `summary` + `labels` + `issuetype` são suficientes para classificação de módulo e categorização de risco.
 
-**Controle de janela de contexto:** Preserve apenas os primeiros 500 caracteres da `description` de cada card. O `summary` é sempre preservado completo.
+Use `maxResults: 100` nas chamadas. O `ORDER BY priority DESC` já garante que os mais relevantes venham primeiro — não pagine mesmo que `total > 100`.
 
 Consolide em `PRODUCT_BACKLOG_CARDS[]` e `ACTIVE_DEV_CARDS[]`.
 
@@ -243,21 +244,21 @@ Exiba no chat:
 
 Se `GH_TOKEN` estiver configurado, colete a atividade recente de código nos repositórios do produto para identificar quais módulos sofreram mais mudanças — o maior preditor individual de defeitos segundo a literatura de JIT Defect Prediction (Microsoft Research, 2013).
 
-Use `GH_PRIMARY_REPOS` se definido no config. Se ausente, analise os primeiros 15 repos de `GH_REPOS` por ordem de configuração. Pule repos cujo nome contenha `infra`, `scripts`, `deploy`, `helm`, `terraform`, `config` — raramente contribuem para risco de produto.
+Use `GH_PRIMARY_REPOS` se definido no config. Se ausente, analise os primeiros **8 repos** de `GH_REPOS` por ordem de configuração. Pule repos cujo nome contenha `infra`, `scripts`, `deploy`, `helm`, `terraform`, `config` — raramente contribuem para risco de produto.
 
 Para cada repo selecionado, use o Bash tool com curl:
 
 **1. Método principal — Pull Requests mesclados no período (evita N+1):**
 ```bash
 curl -s -H "Authorization: Bearer [GH_TOKEN]" \
-  "https://api.github.com/repos/[GH_OWNER]/[REPO]/pulls?state=closed&per_page=30&sort=updated&direction=desc"
+  "https://api.github.com/repos/[GH_OWNER]/[REPO]/pulls?state=closed&per_page=15&sort=updated&direction=desc"
 ```
 Onde `DATE_ISO` = data de `DAYS` dias atrás em formato ISO8601 (ex: `2026-05-12T00:00:00Z`).
 
-Filtre os PRs com `merged_at >= DATE_ISO`. Para cada PR filtrado (máx 20), busque os arquivos alterados:
+Filtre os PRs com `merged_at >= DATE_ISO`. Para cada PR filtrado (máx **10**), busque os arquivos alterados:
 ```bash
 curl -s -H "Authorization: Bearer [GH_TOKEN]" \
-  "https://api.github.com/repos/[GH_OWNER]/[REPO]/pulls/[PR_NUMBER]/files?per_page=100"
+  "https://api.github.com/repos/[GH_OWNER]/[REPO]/pulls/[PR_NUMBER]/files?per_page=50"
 ```
 Use `user.login` do PR como `author.login`. Extraia de cada arquivo: `filename`, `additions`, `deletions`, `changes`.
 
@@ -268,7 +269,7 @@ Vantagem: 1 chamada de arquivos por PR vs 1 por commit — consolida múltiplos 
 Se o repo não tiver PRs mesclados no período, busque commits recentes:
 ```bash
 curl -s -H "Authorization: Bearer [GH_TOKEN]" \
-  "https://api.github.com/repos/[GH_OWNER]/[REPO]/commits?since=[DATE_ISO]&per_page=30"
+  "https://api.github.com/repos/[GH_OWNER]/[REPO]/commits?since=[DATE_ISO]&per_page=15"
 ```
 
 Execute as buscas de detalhes de SHA em **paralelo** (lotes de 5) para reduzir latência:
@@ -664,236 +665,79 @@ Se o relatório de ontem não existir: `DELTA = {}` — exiba apenas o estado at
 
 ---
 
-Exiba o relatório completo no chat:
+Exiba **somente o resumo compacto** no chat — o relatório completo é salvo em arquivo no PASSO 7:
 
 ```
-## 🔮 Argos Predict — Mapa de Risco Preditivo
-> Gerado em: [DATA_HORA] | Janela: últimos [DAYS] dias
-> Fontes: Jira Suporte ([N] cards) + Jira Produto ([N] cards) + KB [+ Sentry se disponível]
+## 🔮 Argos Predict — Resumo
+> [DATA_HORA] | Janela: [DAYS] dias | Fontes: Jira Suporte ([N] N2 + [N] N1) · DEV4 ([N] cards) [· Sentry se disponível]
 
----
-
-### 📊 Sumário Executivo
+### 📊 Sumário
 
 | Indicador | Valor |
 |---|---|
-| 🔴 SM Em Triagem — N2 investigando | [N] tickets |
-| 🟡 SM Aberto — N1 ativo | [N] tickets |
+| 🔴 SM Em Triagem (N2) | [N] tickets |
+| 🟡 SM Aberto (N1) | [N] tickets |
 | 🛠️ DEV4 em backlog/ready | [N] cards |
 | ⚡ DEV4 em desenvolvimento ativo | [N] cards |
-| 🔧 Cards corretivos em dev | [N] |
+| 🔧 Corretivos em dev | [N] |
 | ⚠️ Features em área instável em dev | [N] |
-| 💣 Módulos com bomba ativa (fix + bugs abertos) | [N] |
-| ↗️ Módulos com tendência crescente de bugs | [N] — atenção especial |
-| 📊 Módulo com maior code churn | [MODULO] ([N] linhas em [DAYS] dias) |
-| 📈 Módulos com risco crescente vs ontem | [N] (ex: Chat +12, Canais +8) — omitir se sem relatório anterior |
-| 📉 Módulos com risco reduzido vs ontem | [N] (ex: Upload -5) — omitir se sem relatório anterior |
+| ↗️ Módulos com tendência crescente | [N] |
+| 📊 Maior churn | [MODULO] ([N] linhas) |
+[omitir linhas de delta se sem relatório anterior]
 
----
+### 🗺️ Ranking de Risco
 
-### 🗺️ Mapa de Risco por Módulo
+[Tabela compacta — todos os módulos com score ≥ 3, ordenado por total decrescente]
 
-[Para cada módulo com pontuação ≥ 3, ordenado por pontuação decrescente:]
-
-#### [EMOJI_RISCO] [NÍVEL] — [NOME DO MÓDULO] [TREND_ARROW] (pontuação: [X] | técnico: [SCORE_TEC] | usuários: [SCORE_USR][, se DELTA disponível: ex. "↑+8 vs ontem" ou "↓-3 vs ontem" ou "novo"])
-
-**🔥 O problema atual:**
-> [1–2 frases resumindo o que está quebrando neste módulo com base nos SM cards. Ex: "Clientes relatam mensagens com atraso de 20–30 minutos e falha de entrega — 14 bugs confirmados pelo N2, problema recorrente há semanas."]
-
-**📊 Breakdown do score:** `KB +[N] | SM N2 +[N] (×decay) | SM N1 +[N] (×decay) | Sentry +[N] | Churn +[N] | DEV +[N]`
-[Se TREND[modulo].indicador = "↗️":] `↗️ tendência crescente — [taxa_recente] bugs/dia vs [taxa_anterior] bugs/dia no período anterior`
-[Se TREND[modulo].idade_media_dias > 60:] `⚠️ backlog crônico — idade média dos bugs N2: [N] dias sem resolução`
-
-[Se KB marcou como frágil:]
-**🧠 Fragilidade documentada na KB:**
-> [descrição do problema conhecido — ex: "race condition no LID generation via Redis lock em alto volume"]
-
-**🔬 Problemas identificados — [NOME DO MÓDULO]**
-
-| Problema | Cards SM | Serviço(s) suspeito(s) | Confiança | Evidência principal |
-|---|---|---|---|---|
-| [nome do cluster] | [SM-ID, SM-ID] ([N] cards) | [servico-a > servico-b] | 🟢 Alta | [Sentry: X erros em Y + KB: Z] |
-| [nome do cluster] | [SM-ID] (1 card) | [servico] | 🟡 Média | [KB: responsabilidade documentada] |
-| [nome do cluster] | [SM-ID, SM-ID] ([N] cards) | [servico] | 🔴 Especulativa | [Apenas sintoma — sem Sentry ou KB correlacionados] |
-
-[Se algum serviço aparece em ≥ 2 clusters do módulo:]
-> ⚠️ `[servico]` aparece como suspeito em [N] clusters deste módulo — candidato prioritário de investigação.
-
-**📋 SM Em Triagem (N2):** [N bugs — N corroborados | N possíveis stale]
-_(agrupados por cluster acima — listagem individual para rastreabilidade)_
-  • [[SM-ID]]([JIRA_BASE_URL]/[SM-ID]): [summary] `[nome do cluster]` _(corroborado: critério [1/2/3])_
-  • [[SM-ID]]([JIRA_BASE_URL]/[SM-ID]): [summary] `[nome do cluster]` ⚠️ _sem corroboração — possível stale (último update: [N] dias atrás)_
-  [listar todos — máx 8, depois "… e mais N similares (N corroborados | N possíveis stale)"]
-
-**🚨 Reclamações ativas — SM Aberto (N1):** [N bugs]
-  • [[SM-ID]]([JIRA_BASE_URL]/[SM-ID]): [summary] `[nome do cluster]`
-  [listar bugs apenas — ignorar Dúvidas e Solicitações nesta seção]
-
-[Se Sentry disponível e tem erros neste módulo:]
-**🚨 Sentry — erros em produção:**
-  • [título do erro] — [X] ocorrências | [Y] usuários | projeto: [project.name] | última: [lastSeen]
-
-[Se CHURN_DISPONIVEL e churn_lines > 0 neste módulo:]
-**📊 Code Churn (últimos [DAYS] dias):** [N] linhas alteradas | [N] commits | [N] autores únicos[, ⚠️ ownership difuso se unique_authors_count > 3]
-
-**⚡ O que está em desenvolvimento agora:**
-
-[Para cada card em dev ativo mapeado para este módulo:]
-| Card | Classificação | O que faz | Por que importa |
-|---|---|---|---|
-| [[CARD-ID]]([JIRA_BASE_URL]/[CARD-ID]) | 🔧 Corretivo | [resumo em 5 palavras] | Corrige diretamente [SM-ID(s)] — validar se cobre todos os cenários |
-| [[CARD-ID]]([JIRA_BASE_URL]/[CARD-ID]) | ⚠️ Feature em área instável | [resumo em 5 palavras] | Adiciona [X] sobre camada já com bugs — risco de regressão |
-| [[CARD-ID]]([JIRA_BASE_URL]/[CARD-ID]) | ✨ Feature em área estável | [resumo em 5 palavras] | Baixo risco — área sem SM bugs |
-
-**🛠️ Cards em backlog/ready que vão mexer neste módulo:** [N cards]
-  [Listar apenas os classificados como 🔧 Corretivo ou ⚠️ Feature em área instável — ignorar ✨ Feature em área estável nesta seção]
-  • [[CARD-ID]]([JIRA_BASE_URL]/[CARD-ID]): [summary] _(classificação: 🔧/⚠️ | status: [S] | prioridade: [P])_
-
-**💣 Cenário de risco:**
-> [Narrativa de 2–4 frases explicando POR QUE esta combinação é perigosa. Seja específico sobre o que pode acontecer. Ex: "DEV4-4078 está corrigindo o mecanismo de atualização de status via WebSocket — exatamente o que causa os 14 bugs N2 de mensagem presa em ⏳. O risco é que o fix seja incompleto: se não cobrir o cenário de reconexão de WebSocket (SM-5916) ou o recálculo pós-F5, os bugs persistem e o deploy cria uma falsa sensação de resolução. Paralelamente, DEV4-4229 (agendamentos) adiciona um novo fluxo de envio de mensagem sobre a mesma store — se entrar sem regressivo, pode introduzir nova quebra na camada que está sendo corrigida."]
-
-**✅ Ação recomendada:**
-> [Ação concreta e específica. Não apenas "executar /qa-jira" — diga O QUE testar e POR QUÊ. Ex: "Executar /qa-jira DEV4-4078 cobrindo obrigatoriamente: reconexão de WebSocket, F5 pós-entrega e múltiplas mensagens em sequência. Bloquear merge de DEV4-4229 até DEV4-4078 estar em produção estável — os dois tocam a mesma store de mensagens."]
-
----
-
-[Repetir para cada módulo em risco]
-
----
-
-### 🌡️ Mapa de Calor — Clientes vs Dev
-
-Mostre todos os módulos com `HEAT_PRESSURE > 0` ou `DEV_ATTENTION > 0`, ordenados por `COVERAGE_GAP` decrescente (mais negligenciados primeiro).
-
-**Barra visual:** cada █ representa 1 ponto (máx 10 caracteres; normalize se algum valor > 10 usando escala proporcional).
-
-```
-| Módulo | Pressão Clientes | Atenção Dev | Gap | Zona |
-|---|---|---|---|---|
-| [Módulo] | [████████ N] | [██ N] | [−N] | 🔴 Negligenciada |
-| [Módulo] | [█████ N]    | [███ N] | [−N] | 🟡 Subatendida   |
-| [Módulo] | [███ N]      | [████ N] | [+N] | 🟢 Balanceada    |
-| [Módulo] | [█ N]        | [████████ N] | [+N] | 🔵 Sobre-investida |
-```
-
-[Se houver módulos 🔴 Negligenciada:]
-> ⚠️ **Zonas negligenciadas:** [lista de módulos]
-> Clientes reportam problemas ativos, mas nenhum card DEV4 corretivo está em andamento ou planejado.
-
-[Se houver módulos 🔵 Sobre-investida:]
-> 🔵 **Sobre-investidas:** [lista de módulos]
-> Alto investimento do dev em área com baixa pressão de clientes — pode indicar refactor preventivo (ok) ou repriorização necessária (avaliar).
-
-[Se todos os módulos estiverem em 🟢:]
-> ✅ Distribuição balanceada — dev está atuando proporcionalmente às reclamações de clientes.
-
----
-
-### 🔧 Serviços Sob Pressão
-
-[Apenas se `PROBLEM_CLUSTERS` tiver ao menos 1 entrada]
-
-Liste os serviços que aparecem como suspeitos em clusters de múltiplos módulos. São os candidatos prioritários para investigação de causa raiz — um mesmo serviço quebrando em lugares diferentes é sinal de problema estrutural.
-
-| Serviço | Módulos afetados | Clusters de problema | Confiança média |
-|---|---|---|---|
-| [servico] | [Módulo A, Módulo B] | [cluster 1, cluster 2, cluster 3] ([N] clusters) | 🟢 Alta |
-| [servico] | [Módulo A] | [cluster 1, cluster 2] ([N] clusters) | 🟡 Média |
-
-Ordenar por número de clusters decrescente. Incluir apenas serviços com confiança ≥ Média.
-
-[Se nenhum serviço aparece em múltiplos módulos:]
-> ✅ Nenhum serviço concentra problemas de múltiplos módulos no período.
-
-[Se há serviços com confiança Especulativa dominante:]
-> ⚠️ Serviços com atribuição especulativa foram omitidos. Configure Sentry para aumentar a precisão da atribuição.
-
----
-
-### 🔍 Sinais Ocultos — Erros em Produção sem SM Ticket
-
-[Apenas se `SENTRY_DISPONIVEL = true`]
-
-Liste os issues Sentry com `count > 50` **ou** `userCount > 10` que **não possuem SM ticket ativo correspondente** — nenhum card SM no mesmo módulo com sintoma similar. Esses são os problemas que o suporte ainda não escalou mas que já afetam usuários em produção.
-
-| Erro | Projeto | Ocorrências | Usuários | Primeiro visto | Risco oculto |
-|---|---|---|---|---|---|
-| [título do erro] | [project.name] | [count] | [userCount] | [firstSeen] | [por que o suporte ainda não reportou — e quando provavelmente vai] |
-
-Se não houver sinais ocultos: `✅ Todos os erros Sentry com volume relevante têm SM ticket correspondente.`
-
-Se `SENTRY_DISPONIVEL = false`: omitir esta seção inteiramente.
-
----
+| # | Módulo | Score | Técnico | Usuários | Tendência | Zona |
+|---|---|---|---|---|---|---|
+| 1 | [nome] | [N] | [N] | [N] | [↗️/→/↘️] | 🔴 |
+| 2 | [nome] | [N] | [N] | [N] | [→] | 🟡 |
+...
 
 ### 💣 Top 3 Bombas
 
-Selecione os 3 cenários com maior `BOMBA_SCORE`, calculado para cada módulo:
-
+[Calcule BOMBA_SCORE para cada módulo:]
 ```
 BOMBA_SCORE = SCORE_TOTAL
-  + (tem card 🔧 Corretivo em dev ativo?            +5)  ← fix em andamento cria expectativa de resolução
-  + (tem card ⚠️ Feature instável em dev ativo?     +4)  ← risco de regressão ativo agora
-  + (TREND = "↗️"?                                  +3)  ← situação piorando, não estabilizada
-  + (algum Sentry issue com userCount > 100?        +2)  ← impacto em escala já visível
-  + (idade_media_dias > 60?                         +2)  ← crônico sem resolução estrutural
-  + (bugs N2 sem nenhum DEV4 corretivo associado?   +3)  ← crescendo sem ação em desenvolvimento
+  + (tem card 🔧 Corretivo em dev ativo?            +5)
+  + (tem card ⚠️ Feature instável em dev ativo?     +4)
+  + (TREND = "↗️"?                                  +3)
+  + (algum Sentry issue com userCount > 100?        +2)
+  + (idade_media_dias > 60?                         +2)
+  + (bugs N2 sem nenhum DEV4 corretivo associado?   +3)
 ```
 
-Em caso de empate no `BOMBA_SCORE`, prefira o módulo com maior `userCount` total no Sentry.
+1. **[Módulo]** (BOMBA_SCORE: [N])
+   **Por que é bomba:** [2 frases concretas]
+   **Gatilho:** [o evento que vai detonar]
+   **Ação:** [o que fazer agora]
 
-1. **[Cenário #1]**
-   **Módulo:** [nome]
-   **Por que é bomba:** [2–3 frases concretas — qual é o gatilho, o que quebra, quem é afetado]
-   **Gatilho:** [o evento que vai detonar — ex: "merge de DEV4-4078 sem cobrir reconexão de WebSocket"]
-   **Ação antes que estoure:** [o que fazer agora]
-
-2. **[Cenário #2]**
+2. **[Módulo]** (BOMBA_SCORE: [N])
    [mesma estrutura]
 
-3. **[Cenário #3]**
+3. **[Módulo]** (BOMBA_SCORE: [N])
    [mesma estrutura]
 
----
+### ✅ Ações Prioritárias
 
-### 📋 Cards que precisam de atenção antes do próximo deploy
-
-[Apenas cards classificados como 🔧 Corretivo ou ⚠️ Feature em área instável — ignorar ✨ Feature em área estável]
-
-| Card | Módulo | Classificação | Risco | O que validar |
-|---|---|---|---|---|
-| [CARD-ID] | [Módulo] | 🔧 Corretivo | 🔴 | [cenários específicos a cobrir] |
-| [CARD-ID] | [Módulo] | ⚠️ Feature instável | 🔴 | [regressão a verificar] |
-| [CARD-ID] | [Módulo] | ⚠️ Feature instável | 🟡 | [o que monitorar] |
-
----
-
-### 🟢 Módulos Estáveis
-
-[Lista em linha — módulos com pontuação 0–1 ou com apenas ✨ Features em área estável]
-
----
-
-### ✅ Ações Recomendadas
-
-[Lista numerada, priorizada, específica. Para cada ação: o que fazer + por quê agora + o que acontece se não fizer.]
 1. 🔴 [ação] — [consequência se ignorar]
 2. 🔴 [ação] — [consequência se ignorar]
 3. 🟡 [ação] — [consequência se ignorar]
 
 [Se SENTRY_DISPONIVEL = false:]
----
-⚠️ **Sentry não configurado** — análise sem erros reais de produção. Configure `SENTRY_HOST`, `SENTRY_ORG` e `SENTRY_AUTH_TOKEN` no `.env`.
+⚠️ Sentry não configurado — análise sem erros reais de produção.
+
+📄 Relatório completo: tests/reports/argos-predict-[YYYY-MM-DD].md
 ```
+
+> O relatório salvo em arquivo contém o detalhamento completo por módulo (breakdown de score, clusters de problema, serviços suspeitos, cards em dev, cenário de risco, mapa de calor, sinais ocultos). O chat exibe apenas o que é necessário para decisão imediata.
 
 ---
 
-## PASSO 7 — Salvar Relatório
+## PASSO 7 — Salvar Relatório Completo
 
-Salve o relatório gerado em:
-```
-tests/reports/argos-predict-[YYYY-MM-DD].md
-```
+Salve o relatório completo em `tests/reports/argos-predict-[YYYY-MM-DD].md`. O arquivo contém o detalhamento que não foi exibido no chat.
 
 Com cabeçalho:
 ```markdown
@@ -902,15 +746,30 @@ Com cabeçalho:
 > Fontes: Jira Suporte + Jira Produto + KB [+ Sentry se disponível]
 ```
 
-Se já existir um relatório do dia, sobrescreva-o (roda uma vez por dia é o padrão).
+O arquivo deve incluir, para cada módulo com score ≥ 3 (ordenado por score decrescente):
 
-Salve também uma cópia em `tests/reports/argos-predict-latest.md` (sobrescreva sempre — representa o estado mais recente independente da data).
+- Breakdown do score (`KB | SM N2 | SM N1 | Sentry | Churn | DEV`)
+- Tendência e backlog crônico (se aplicável)
+- Fragilidade documentada na KB (se aplicável)
+- Tabela de clusters de problema com serviços suspeitos e confiança
+- Lista de SM Em Triagem (N2) com marcação de corroboração
+- Lista de SM Aberto (N1) — apenas bugs
+- Erros Sentry do módulo (se disponível)
+- Code churn do módulo (se disponível)
+- Cards em desenvolvimento ativo (com classificação 🔧/⚠️/✨)
+- Cards em backlog/ready (apenas 🔧 e ⚠️)
+- Cenário de risco (narrativa)
+- Ação recomendada
 
-Exiba ao final:
-```
-💾 Relatório salvo em tests/reports/argos-predict-[YYYY-MM-DD].md
-💾 Cópia atual em tests/reports/argos-predict-latest.md
-```
+Ao final do arquivo, inclua:
+- Mapa de calor (pressão clientes vs atenção dev) — tabela completa com barras visuais
+- Serviços sob pressão (apenas se ≥1 serviço em múltiplos módulos, confiança ≥ Média)
+- Sinais ocultos Sentry (apenas se `SENTRY_DISPONIVEL = true`)
+- Módulos estáveis (lista em linha)
+
+Se já existir um relatório do dia, sobrescreva-o.
+
+Salve também uma cópia em `tests/reports/argos-predict-latest.md` (sobrescreva sempre).
 
 ---
 
@@ -1026,7 +885,9 @@ Se algum arquivo falhar ao ser escrito, registre o erro e continue com os demais
 
 ---
 
-## PASSO 7C — Atualizar Apresentação HTML (docs/data.js)
+## PASSO 7C — Atualizar Apresentação HTML (docs/data.js) _(apenas se `UPDATE_DASHBOARD = true`)_
+
+> **Pule este passo** a menos que o argumento `--update-dashboard` tenha sido passado. Regenerar o `docs/data.js` é custoso em tokens de output e raramente necessário em execuções diárias — execute apenas quando quiser publicar os dados no GitHub Pages.
 
 Após salvar os CSVs, regenere o arquivo `docs/data.js` para que a apresentação publicada no GitHub Pages reflita os dados da semana atual.
 

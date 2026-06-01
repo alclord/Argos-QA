@@ -1,19 +1,17 @@
 # Argos
 
-Sistema de QA automatizado para a plataforma **Poli Digital**. Combina agentes de IA via Claude Code com Cypress e Playwright para geração e execução de testes end-to-end, com integração direta ao Jira.
+Sistema de QA automatizado para a plataforma **Poli Digital**. Combina agentes de IA via Claude Code com Cypress e Playwright para geração, execução e previsão de riscos em testes end-to-end, com integração direta ao Jira.
 
 ---
 
-## Como funciona
+## Comandos disponíveis
 
-O Argos opera em dois fluxos principais, acionados por comandos no Claude Code:
-
-```
-/qa-jira [CARD-ID]                        → gera cenários de teste a partir do card
-/qa-executor [CARD-ID] [ENV?] [PR-NUMBER?] → executa os cenários e publica o resultado no Jira
-```
-
-Além disso, há testes Cypress estáveis para fluxos críticos que podem ser rodados independentemente.
+| Comando | O que faz |
+|---|---|
+| `/qa-jira [CARD-ID]` | Gera cenários de teste a partir de um card Jira |
+| `/qa-executor [CARD-ID] [ENV?] [PR?]` | Executa os cenários e publica o resultado no Jira |
+| `/qa-pr-impact [PR-NUMBERS] [ENV?]` | Analisa o risco de um ou mais PRs sem executar testes |
+| `/argos-predict [DAYS?] [--update-dashboard?]` | Mapa preditivo de risco cruzando Jira, Sentry e GitHub |
 
 ---
 
@@ -22,30 +20,25 @@ Além disso, há testes Cypress estáveis para fluxos críticos que podem ser ro
 - [Claude Code](https://claude.ai/code) instalado
 - Node.js 18+
 - Conta Jira com acesso à organização
-- Token GitHub com acesso aos repositórios da organização (para análise de PR)
+- Token GitHub com acesso aos repositórios da organização
 
 ---
 
 ## Instalação
 
 ```bash
-# Clone o repositório
 git clone https://github.com/sua-org/argos.git
 cd argos
-
-# Instale as dependências
 npm install
-
-# Configure as credenciais
 cp .env.example .env
-# Edite .env com suas credenciais (veja seção Configuração abaixo)
+# edite .env com suas credenciais
 ```
 
 ---
 
 ## Configuração
 
-Copie `.env.example` para `.env` e preencha:
+### `.env`
 
 ```env
 # Credenciais de Staging
@@ -56,14 +49,29 @@ STAGING_OPERATOR_PASSWORD=sua_senha
 CANARY_OPERATOR_EMAIL=seu@email.com
 CANARY_OPERATOR_PASSWORD=sua_senha
 
-# GitHub — necessário para análise de PR no /qa-executor
+# GitHub — necessário para /qa-executor, /qa-pr-impact e /argos-predict
 GH_TOKEN=ghp_...
 
-# Base de conhecimento local (opcional — se vazio, busca do GitHub com GH_TOKEN)
+# Base de conhecimento local (opcional — se vazio, busca do GitHub via GH_TOKEN)
 KB_PATH=
+
+# Sentry — opcional, habilita análise de erros em produção no /argos-predict
+SENTRY_HOST=https://sentry.suaempresa.com
+SENTRY_ORG=sua-org
+SENTRY_AUTH_TOKEN=sntrys_...
+
+# Cypress — contato dedicado para testes de envio de mensagem
+TEST_CONTACT_CHAT_UUID=
 ```
 
-> As URLs de ambiente, configurações do Jira e contatos de teste estão em `tests/config/qa-environment.template.json` — esse arquivo é versionado e não precisa ser editado.
+### `tests/config/qa-environment.local.json`
+
+Criado a partir do `qa-environment.template.json` (versionado). Configure:
+- URLs de cada ambiente (`staging`, `canary`, `production`)
+- Cloud ID e projetos Jira (`jira.cloudId`, `jira.supportProject`, `jira.devProjects`)
+- Repositórios GitHub (`github.owner`, `github.repos`, `github.primaryRepos`)
+- Localização da base de conhecimento (`knowledgeBase.github.*`)
+- Contatos de teste (`testContacts.default`)
 
 ---
 
@@ -73,13 +81,12 @@ KB_PATH=
 
 Lê um card do Jira e gera cenários de teste estruturados.
 
-**O que faz:**
-- Busca o card e extrai requisitos e critérios de aceite
+- Extrai requisitos e critérios de aceite do card
 - Gera cenários `CT-[MÓDULO]-[N]` com pré-condições, passos e resultado esperado
 - Classifica por criticidade (🔴 Alta / 🟡 Média / 🟢 Baixa)
-- Gera cenários Gherkin para testes de alta criticidade
+- Gera Gherkin para cenários de alta criticidade
 - Salva em `tests/scenarios/[CARD-ID]-cenarios.md`
-- Publica os cenários como comentário no card do Jira
+- Publica os cenários como comentário no card Jira
 
 ```bash
 /qa-jira DEV4-4203
@@ -89,34 +96,73 @@ Lê um card do Jira e gera cenários de teste estruturados.
 
 ### `/qa-executor [CARD-ID] [ENV?] [PR-NUMBER?]`
 
-Executa os cenários de teste de forma autônoma via Playwright e publica o relatório no Jira.
+Executa os cenários gerados pelo `/qa-jira` de forma autônoma via Playwright e publica o relatório no Jira.
 
 **Argumentos:**
 - `CARD-ID` — obrigatório (ex: `DEV4-4203`)
 - `ENV` — opcional: `staging` | `canary` | `production` (padrão: `staging`)
-- `PR-NUMBER` — opcional: número do PR no GitHub para análise de impacto
+- `PR-NUMBER` — opcional: número do PR para priorizar cenários por impacto
 
-**Exemplos:**
 ```bash
 /qa-executor DEV4-4203
 /qa-executor DEV4-4203 canary
 /qa-executor DEV4-4203 canary 421
-/qa-executor DEV4-4203 421
 ```
 
-**O que faz:**
-1. Carrega configurações do `.env` e `qa-environment.template.json`
-2. Lê a base de conhecimento (local ou direto do GitHub)
-3. Se PR informado, analisa arquivos alterados e prioriza cenários por impacto
-4. Verifica acessibilidade do ambiente e valida credenciais
-5. Executa cada cenário com screenshots por passo
-6. Aguarda confirmação antes de publicar
-7. Salva relatório em `tests/reports/[CARD-ID]-relatorio.md`
-8. Publica resultado como comentário no Jira
+**Saídas:**
+- Relatório: `tests/reports/[CARD-ID]-relatorio.md`
+- Evidências: `tests/evidence/[CARD-ID]/` (screenshots por passo)
+- Comentário publicado no card Jira
 
-**Evidências geradas em** `tests/evidence/[CARD-ID]/`:
-- `preflight_ambiente.png` / `preflight_login.png`
-- `[CT-ID]_passo[N]_ok.png` ou `_falhou.png`
+---
+
+### `/qa-pr-impact [PR-NUMBERS] [ENV?]`
+
+Analisa o risco de um ou mais PRs com base nos arquivos alterados — sem executar testes. Útil para triagem rápida antes de um deploy.
+
+```bash
+/qa-pr-impact 421
+/qa-pr-impact 421,422,423 canary
+```
+
+**O que entrega:**
+- Classificação de impacto por módulo (🔴 Alto / 🟡 Médio / 🟢 Baixo)
+- Lista de cenários de teste prioritários para cada módulo afetado
+- Status de CI e reviews dos PRs
+- Recomendação de go/no-go
+
+---
+
+### `/argos-predict [DAYS?] [--update-dashboard?]`
+
+Cruza sinais de suporte (Jira SM), produto (DEV4/GPD), base de conhecimento, Sentry e GitHub para identificar onde a próxima falha vai acontecer.
+
+**Argumentos:**
+- `DAYS` — janela de análise em dias (padrão: `14`)
+- `--update-dashboard` — regenera `docs/data.js` para o GitHub Pages (omitir no dia a dia para economizar tokens)
+
+```bash
+/argos-predict
+/argos-predict 30
+/argos-predict 14 --update-dashboard
+```
+
+**O que entrega (no chat):**
+- Sumário executivo com contadores de tickets N1/N2 e cards DEV4
+- Ranking de módulos por score de risco (técnico + impacto ao usuário)
+- Top 3 bombas: cenários com maior probabilidade de quebrar no próximo ciclo
+- Ações prioritárias com consequências de inação
+
+**Saídas em arquivo:**
+- `tests/reports/argos-predict-[YYYY-MM-DD].md` — relatório completo com breakdown por módulo
+- `tests/reports/argos-predict-latest.md` — cópia do relatório mais recente
+- `tests/reports/argos-predict-[YYYY-MM-DD]-risco-modulos.csv`
+- `tests/reports/argos-predict-[YYYY-MM-DD]-tickets-sm.csv`
+- `tests/reports/argos-predict-[YYYY-MM-DD]-cards-dev.csv`
+- `tests/reports/argos-predict-[YYYY-MM-DD]-sentry.csv` (se Sentry configurado)
+- `tests/reports/argos-predict-[YYYY-MM-DD]-clusters.csv`
+
+> Requer `JIRA_CLOUD_ID`, `jira.supportProject` e `jira.devProjects` configurados. Sentry e GitHub são opcionais mas aumentam a precisão.
 
 ---
 
@@ -125,17 +171,12 @@ Executa os cenários de teste de forma autônoma via Playwright e publica o rela
 Testes estáveis para o fluxo de envio de mensagens no ambiente canary.
 
 ```bash
-# Abre o runner interativo
-npm run cy:open
-
-# Roda todos os testes headless
-npm run cy:run
-
-# Roda apenas os testes de envio de mensagem
-npm run cy:run:chat
+npm run cy:open        # runner interativo
+npm run cy:run         # headless completo
+npm run cy:run:chat    # apenas testes de chat
 ```
 
-> Requer `CANARY_OPERATOR_EMAIL` e `CANARY_OPERATOR_PASSWORD` configurados no `.env`.
+> Requer `CANARY_OPERATOR_EMAIL` e `CANARY_OPERATOR_PASSWORD` no `.env`.
 
 ---
 
@@ -145,52 +186,47 @@ npm run cy:run:chat
 argos/
 ├── .claude/
 │   └── commands/
-│       ├── qa-jira.md          # Agente de geração de cenários
-│       └── qa-executor.md      # Agente de execução de testes
+│       ├── qa-jira.md            # Agente de geração de cenários
+│       ├── qa-executor.md        # Agente de execução de testes
+│       ├── qa-pr-impact.md       # Agente de análise de risco de PRs
+│       └── argos-predict.md      # Agente de previsão de risco
 ├── cypress/
 │   ├── e2e/chat/
 │   │   └── envio-mensagem.cy.js
 │   └── support/
-│       ├── commands.js         # cy.login(), cy.typeMessage(), cy.sendMessage()
+│       ├── commands.js           # cy.login(), cy.typeMessage(), cy.sendMessage()
 │       └── e2e.js
+├── docs/
+│   └── data.js                   # Dados para o dashboard GitHub Pages
 ├── tests/
 │   ├── config/
-│   │   └── qa-environment.template.json  # URLs e config (versionado)
-│   ├── scenarios/              # Cenários gerados pelo /qa-jira
-│   ├── evidence/               # Screenshots por execução
-│   └── reports/                # Relatórios em markdown
-├── .env.example                # Template de credenciais
-├── .mcp.json                   # Config do Playwright MCP
+│   │   ├── qa-environment.template.json  # Config versionada (não editar)
+│   │   └── qa-environment.local.json     # Config local (não versionar)
+│   ├── memory/                   # Histórico de flakiness por módulo
+│   ├── scenarios/                # Cenários gerados pelo /qa-jira
+│   ├── evidence/                 # Screenshots por execução
+│   └── reports/                  # Relatórios e CSVs gerados
+├── .env.example                  # Template de credenciais
+├── .env                          # Credenciais locais (não versionar)
+├── .mcp.json                     # Config do Playwright MCP
 └── cypress.config.js
 ```
 
 ---
 
-## Ambientes suportados
-
-| Ambiente | Variável de configuração |
-|---|---|
-| Staging | `environments.staging.url` em `qa-environment.local.json` |
-| Canary | `environments.canary.url` em `qa-environment.local.json` |
-| Production | `environments.production.url` em `qa-environment.local.json` |
-
-Configure as URLs no arquivo `tests/config/qa-environment.local.json` (criado a partir do template).
-
----
-
 ## Base de conhecimento
 
-O `/qa-executor` usa uma base de conhecimento configurada via `knowledgeBase.github` em `qa-environment.local.json` para entender o domínio e as regras de negócio durante a execução dos testes.
+Todos os agentes usam uma base de conhecimento para entender o domínio e as regras de negócio da plataforma.
 
 - Se `KB_PATH` estiver configurado no `.env`, lê os arquivos localmente
 - Caso contrário, busca direto do GitHub usando o `GH_TOKEN`
 
+Configurada em `qa-environment.local.json` nos campos `knowledgeBase.github.*`.
+
 ---
 
-## Contato de teste
+## Aviso sobre contatos de teste
 
-Para testes que envolvem envio de mensagens outbound, configure um contato dedicado em `tests/config/qa-environment.local.json` no campo `testContacts.default`.
+Para testes que envolvem envio de mensagens outbound, configure um contato dedicado em `testContacts.default` no `qa-environment.local.json` e em `TEST_CONTACT_CHAT_UUID` no `.env`.
 
-> Configure `TEST_CONTACT_CHAT_UUID` no `.env` para os testes Cypress.
-
-**Nunca** usar contatos reais da lista de atendimento — risco de enviar mensagens para clientes reais.
+**Nunca usar contatos reais** — risco de enviar mensagens para clientes em produção.
