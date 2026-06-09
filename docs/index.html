@@ -2928,10 +2928,10 @@ document.addEventListener('keydown', e => {
       alert('Serviço de autenticação não carregou. Recarregue a página.');
       return;
     }
-    ao.style.zIndex = '0';
+    ao.style.display = 'none';
     netlifyIdentity.open();
     netlifyIdentity.on('close', function() {
-      if (!netlifyIdentity.currentUser()) ao.style.zIndex = '99999';
+      if (!netlifyIdentity.currentUser()) ao.style.display = 'flex';
     });
   };
 
