@@ -2935,8 +2935,15 @@ document.addEventListener('keydown', e => {
     });
   };
 
+  // Invite e recovery: esconde overlay para o widget abrir o modal de definição de senha
+  var isTokenFlow = location.hash.indexOf('invite_token') !== -1 || location.hash.indexOf('recovery_token') !== -1;
+  if (isTokenFlow) ao.style.display = 'none';
+
   try {
-    netlifyIdentity.on('init',function(u){ if(u) showDash(); });
+    netlifyIdentity.on('init',function(u){
+      if(u) { showDash(); return; }
+      if(isTokenFlow) netlifyIdentity.open();
+    });
     netlifyIdentity.on('login',showDash);
     netlifyIdentity.on('logout',function(){ showLogin(); });
     netlifyIdentity.init({ APIUrl: 'https://argospredict.netlify.app/.netlify/identity' });
