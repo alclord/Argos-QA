@@ -573,7 +573,7 @@ footer {
 
 /* 🎫 SM TABLE */
 .sm-table { width:100%; border-collapse:collapse; font-size:.78rem; }
-.sm-table th { text-align:left; padding:10px 14px; font-weight:600; color:#64748B; text-transform:uppercase; font-size:.65rem; letter-spacing:.06em; border-bottom:1px solid var(--border); background:rgba(15,23,42,.4); }
+.sm-table th { text-align:left; padding:10px 14px; font-weight:600; color:#64748B; text-transform:uppercase; font-size:.65rem; letter-spacing:.06em; border-bottom:1px solid var(--border); background:rgba(15,23,42,.97); position:sticky; top:0; z-index:1; }
 .sm-table td { padding:9px 14px; border-bottom:1px solid rgba(30,58,95,.25); color:var(--txt1); }
 .sm-table tr:last-child td { border-bottom:none; }
 .sm-table tr:hover td { background:rgba(30,41,59,.4); }
@@ -854,7 +854,7 @@ footer {
   <div style="margin-bottom:8px;display:flex;gap:6px;flex-wrap:wrap" id="smModFilterBar"></div>
   <div style="margin-bottom:14px;display:flex;gap:6px;flex-wrap:wrap" id="smFilterBar"></div>
   <div class="card" style="padding:0;overflow:hidden">
-    <div style="overflow-x:auto" id="smTableContainer"></div>
+    <div style="overflow-x:auto;overflow-y:auto;max-height:calc(100vh - 310px)" id="smTableContainer"></div>
   </div>
 </div>
 
