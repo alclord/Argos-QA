@@ -82,5 +82,88 @@
       "contactUuid": "00000000-0000-0000-0000-000000000000",
       "note": "Contato oficial para testes de envio de mensagem outbound. NUNCA enviar mensagens para outros contatos da lista de atendimento."
     }
+  },
+  "mobileTesting": {
+    "enabled": true,
+    "viewport": { "width": 375, "height": 812 },
+    "deviceScaleFactor": 2,
+    "timeoutMultiplier": 2.0,
+    "touchEnabled": true
+  },
+  "testMedia": {
+    "image": {
+      "path": "tests/fixtures/media/test-image.jpg",
+      "mimeType": "image/jpeg",
+      "caption": "Argos QA — teste de envio de imagem"
+    },
+    "document": {
+      "path": "tests/fixtures/media/test-document.pdf",
+      "mimeType": "application/pdf",
+      "filename": "argos-qa-test.pdf",
+      "caption": "Argos QA — teste de envio de documento"
+    },
+    "video": {
+      "path": "tests/fixtures/media/test-video.mp4",
+      "mimeType": "video/mp4",
+      "caption": "Argos QA — teste de envio de vídeo"
+    }
+  },
+  "performanceThresholds": {
+    "defaultMs": 800,
+    "endpoints": {
+      "**/v3/auth**": 568,
+      "**/v3/accounts/**/chats**": 3612,
+      "**/v3/settings**": 284,
+      "**/v3/accounts**": 479,
+      "**/v3/contacts**": 317,
+      "**/v3/messages**": 268
+    },
+    "timeToFirstChat": {
+      "newMs": 3000,
+      "legacyMs": 8000,
+      "_calibrated": "2026-06-10 — Nova p95=2631ms, Legada p95=6479ms (5 rodadas Playwright, produção)"
+    }
+  },
+  "argos": {
+    "scoring": {
+      "decayFactors": [1.0, 0.8, 0.6, 0.4],
+      "supportWeights": { "Bug": 3, "Solicitação": 2, "Dúvida": 1, "História": 1, "Tarefa": 0 },
+      "crossServiceWeights": {
+        "heimdall": 2.0,
+        "api-gateway": 1.8,
+        "dispatch-service": 1.5,
+        "foundation-api": 1.3,
+        "polichat-web-app": 1.3
+      },
+      "churnThresholds": { "high": 500, "medium": 100 },
+      "entropyThresholds": { "high": 3.5, "medium": 2.0 },
+      "newcomerFactorThreshold": 0.50,
+      "doraThresholds": { "cfr_instavel": 0.30, "cfr_atencao": 0.15 },
+      "releaseHealthThresholds": { "critico": -2.0, "atencao": -0.5 }
+    },
+    "alerts": {
+      "webhook": {
+        "url": "",
+        "enabled": false,
+        "nota": "Compatível com Slack Incoming Webhooks, Discord, Teams, n8n"
+      },
+      "thresholds": {
+        "modulo_alto_para_alerta": 10,
+        "delta_critico_para_alerta": 5,
+        "novos_modulos_alto_para_alerta": 2
+      }
+    },
+    "history": {
+      "retentionDays": 90,
+      "historyPath": "tests/reports/history",
+      "nota": "Populado automaticamente pelo /argos-predict — não editar manualmente"
+    },
+    "autoEscalate": {
+      "enabled": false,
+      "scoreMinimo": 10,
+      "somentesNegligenciados": true,
+      "label": "argos-predict-auto",
+      "nota": "Usar /argos-predict --auto-escalate para ativar por execução"
+    }
   }
 }

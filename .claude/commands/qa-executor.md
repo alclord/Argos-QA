@@ -17,6 +17,8 @@ Formato esperado: `[CARD-ID] [ENV?] [PR-REFS?]`
   - `REPO:PR_NUMBER` — repo explícito, sem auto-descoberta. Ex: `SPA:421` ou `SPA:421,SPA:422`
   - `PR_NUMBER` — somente número; o repo será descoberto automaticamente via `GH_REPOS`. Ex: `421` ou `421,422`
   - Formatos podem ser misturados: `SPA:421,422` (SPA explícito para 421, auto-descoberta para 422)
+- `--baseline` (opcional): ativa o modo de coleta de baseline. Os tempos de resposta são coletados e salvos em `tests/memory/performance-baseline.json`, mas **não comparados contra thresholds**. Use nas primeiras execuções para calibrar os limites automaticamente. A partir de 3 amostras por endpoint, thresholds são sugeridos automaticamente.
+- `--dry-run` (opcional): se presente, o agente lê e valida todos os cenários do card, exibe o plano de execução (lista de cenários com pré-condições), mas **não executa nenhum passo** e não faz login. Útil para validar sintaxe e cobertura antes de rodar. Use em CI para verificação rápida.
 
 Exemplos válidos:
 - `/qa-executor PROJ-123`
@@ -27,10 +29,16 @@ Exemplos válidos:
 - `/qa-executor PROJ-123 canary 421,422`
 - `/qa-executor PROJ-123 REPO:421`
 - `/qa-executor PROJ-123 421,422`
+- `/qa-executor PROJ-123 --baseline`
+- `/qa-executor PROJ-123 canary --baseline`
+- `/qa-executor PROJ-123 --dry-run`
+- `/qa-executor PROJ-123 canary --dry-run`
 
 Extraia-os de: **$ARGUMENTS**
 
 Regra de parsing:
+- **Antes de tudo:** se `--dry-run` estiver presente → defina `DRY_RUN = true` e remova-o da lista antes de continuar o parsing. Caso contrário, `DRY_RUN = false`.
+- **Antes de tudo:** se `--baseline` estiver presente nos argumentos → defina `BASELINE_MODE = true` e remova-o da lista antes de continuar o parsing. Caso contrário, `BASELINE_MODE = false`.
 - O primeiro argumento é sempre `CARD-ID`.
 - Se o segundo argumento for exatamente `staging`, `canary` ou `production` → é `ENV`.
 - Se o segundo argumento contiver `REPO:NUMBER`, um número inteiro, ou vírgulas entre esses formatos → é `PR-REFS` (use o `defaultEnvironment` do config como ENV).
@@ -82,6 +90,7 @@ Do arquivo de config carregado no passo anterior (`local.json` ou `template.json
 - `APP_SPA_URL` → `environments[ENV].appSpaUrl`
 - `LEGADO_URL` → `environments[ENV].legadoUrl`
 - `FOUNDATION_API_URL` → `environments[ENV].foundationApiUrl`
+- `WABA_WEBHOOK_URL` → `environments[ENV].wabaWebhookUrl` (opcional — usado em cards de webhook; registre `⚠️ wabaWebhookUrl não configurado` se ausente e prossiga)
 - `TIMEOUT_STEP` → `environments[ENV].timeouts.step` (padrão: `8000` ms se não configurado)
 - `TIMEOUT_NAVIGATION` → `environments[ENV].timeouts.navigation` (padrão: `20000` ms se não configurado)
 - `OBSERVER_SESSION_TIMEOUT_MS` → `environments[ENV].timeouts.observerSession` (padrão: `600000` = 10 min)
@@ -101,6 +110,50 @@ Do arquivo de config carregado no passo anterior (`local.json` ou `template.json
 - `TEST_CONTACT_ACCOUNT_UUID` → `testContacts.default.accountUuid`
 - `TEST_CONTACT_CONTACT_UUID` → `testContacts.default.contactUuid`
 - `TEST_CONTACT_NOTE` → `testContacts.default.note`
+- `TEST_MEDIA_IMAGE_PATH` → `testMedia.image.path` (padrão: `tests/fixtures/media/test-image.jpg`)
+- `TEST_MEDIA_IMAGE_MIME` → `testMedia.image.mimeType` (padrão: `image/jpeg`)
+- `TEST_MEDIA_IMAGE_CAPTION` → `testMedia.image.caption` (padrão: `"Argos QA — teste de envio de imagem"`)
+- `TEST_MEDIA_DOCUMENT_PATH` → `testMedia.document.path` (padrão: `tests/fixtures/media/test-document.pdf`)
+- `TEST_MEDIA_DOCUMENT_MIME` → `testMedia.document.mimeType` (padrão: `application/pdf`)
+- `TEST_MEDIA_DOCUMENT_FILENAME` → `testMedia.document.filename` (padrão: `argos-qa-test.pdf`)
+- `TEST_MEDIA_VIDEO_PATH` → `testMedia.video.path` (padrão: `tests/fixtures/media/test-video.mp4` — opcional, marque BLOQUEADO se não existir)
+- `PERF_THRESHOLDS` → `performanceThresholds` (padrão: `{ defaultMs: 1000, endpoints: {} }`)
+- `PERF_VIOLATIONS` → inicialize como lista vazia `[]` — acumulará violações de performance durante a execução
+- `PERF_COLLECTED_TIMINGS` → inicialize como `{}` — acumulará todos os tempos coletados por endpoint normalizado, independente de violação
+- `BASELINE_MODE` → extraído do parsing de argumentos (`true` se `--baseline` foi passado)
+- `BASELINE_FILE` → `tests/memory/performance-baseline.json`
+- `TTFC_NEW_MS` → inicialize como `null` — Time to First Chat da nova interface, medido no preflight
+- `TTFC_LEGACY_MS` → inicialize como `null` — Time to First Chat da interface legada, medido no preflight (se testada)
+
+**Função normalizeEndpoint:** Remove IDs variáveis da URL para agrupar amostras pelo padrão do endpoint:
+```
+normalizeEndpoint(url, baseApiUrl):
+  Remova a baseApiUrl do início da url
+  Remova query string (tudo após "?")
+  Substitua UUIDs (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx) por ":uuid"
+  Substitua segmentos puramente numéricos por ":id"
+  Resultado: "/v3/contacts/:uuid/messages" em vez de "/v3/contacts/abc-123/messages"
+```
+
+**Função matchThreshold:** Defina internamente para resolução de threshold por URL:
+```
+matchThreshold(url, thresholds):
+  Para cada [padrão, ms] em Object.entries(thresholds.endpoints || {}):
+    Converta o padrão em regex: substitua "**" por ".*" e "*" por "[^/]*"
+    Se regex.test(url) → retorne ms
+  Retorne thresholds.defaultMs ?? 1000
+```
+
+**Carregamento do baseline (executar após carregar PERF_THRESHOLDS do config):**
+
+Verifique se `BASELINE_FILE` existe:
+- Se existir: carregue o JSON e extraia `baseline.endpoints`
+- Para cada endpoint no baseline com `count >= 3` amostras:
+  - Calcule `suggested_threshold_ms` = `Math.round(avg * 1.3)` (média + 30% de margem)
+  - Se o endpoint **não estiver** já definido em `PERF_THRESHOLDS.endpoints` → adicione com o threshold derivado
+  - Se já estiver → mantenha o valor do config (config tem prioridade)
+- Registre: `📊 Baseline carregado: N endpoints com threshold derivado automaticamente`
+- Se baseline não existir: registre `ℹ️ Baseline de performance não encontrado — execute com --baseline para calibrar` e prossiga com os valores do config
 
 Registre no chat:
 `🧪 Contato de teste: [TEST_CONTACT_NAME] | phone: [TEST_CONTACT_PHONE] | chatUuid: [TEST_CONTACT_CHAT_UUID]`
@@ -139,13 +192,29 @@ Antes de qualquer execução, exiba no chat para confirmação do usuário:
   🔀 PRs:      [PR-REFS ou "nenhum"] (ex: SPA:421, 422→auto-descoberta)
   ⏱️ Timeouts: step=[TIMEOUT_STEP]ms | nav=[TIMEOUT_NAVIGATION]ms
   🎭 Mocks:    [MOCKS_ENABLED ? "habilitados (N intercepts)" : "desabilitados"]
+  🔬 Baseline: [BASELINE_MODE ? "MODO COLETA — thresholds não serão verificados" : "Normal (N endpoints com threshold derivado | M do config)"]
 ```
 
 Se algo estiver errado, o usuário pode corrigir antes de prosseguir.
 
 Registre internamente: `START_TIME` = timestamp atual em ISO8601 (ex: `2026-05-26T14:32:00.000Z`). Este valor será usado no relatório como "Iniciado em".
 
-### 0.4 — Guardrail de Produção
+### 0.4 — Modo DRY-RUN (verificação antecipada)
+
+Se `DRY_RUN = true`, execute apenas os passos 0.1 e 0.5A (leitura de cenários) e encerre com o seguinte output:
+
+```
+🔎 Modo DRY-RUN ativado — nenhum passo será executado.
+Plano de execução:
+  [Lista de cenários encontrados com classificação API/UI/Híbrido e pré-condições]
+
+Total: [N] cenários | [N] API | [N] UI | [N] Híbrido
+✅ Validação concluída — execute sem --dry-run para rodar os testes.
+```
+
+Não faça login, não navegue, não crie evidências, não publique no Jira e não atualize histórico.
+
+### 0.5 — Guardrail de Produção
 
 Se `ENV = production`, exiba a seguinte mensagem e **aguarde confirmação explícita** antes de continuar:
 
@@ -201,15 +270,16 @@ https://raw.githubusercontent.com/[KB_GH_OWNER]/[KB_GH_REPO]/[KB_GH_BRANCH]/{pat
 Header: Authorization: Bearer [GH_TOKEN]
 ```
 
-**Arquivos a carregar:**
+**Arquivos a carregar (mínimo essencial — em paralelo):**
 1. `GUIA_RAPIDO.md`
-2. `Arquitetura/01-visao-geral.md`
-3. `Regras de Negócio/01-glossario.md`
-4. `Regras de Negócio/02-lifecycle-chat.md`
+2. `Regras de Negócio/01-glossario.md`
 
-Após identificar o serviço impactado pelo card, carregue também:
-- `Serviços/{serviço}/README.md`
-- Todos os arquivos em `Serviços/{serviço}/rules/`
+**Arquivos de aprofundamento (somente se relevante ao card):**
+- `Arquitetura/01-visao-geral.md` → se o card envolver múltiplos serviços ou roteamento entre serviços
+- `Regras de Negócio/02-lifecycle-chat.md` → se o card mencionar chat, mensagem, status de conversa ou janela 24h
+- `Serviços/{serviço}/README.md` e `Serviços/{serviço}/rules/` → após identificar o serviço impactado, se o módulo for crítico para os cenários
+
+Se nenhum arquivo de aprofundamento for necessário, prossiga apenas com os 2 essenciais.
 
 ### C) Contexto dos PRs (se PR-REFS fornecido)
 
@@ -222,10 +292,34 @@ Para cada item em `PR-REFS`:
 
 **Etapa 2 — Detalhes completos do PR:**
 1. Detalhes: título, descrição, branch, repo.
-2. Arquivos alterados: `GET .../pulls/[N]/files` → lista de `filename`.
+2. Arquivos alterados: `GET .../pulls/[N]/files?per_page=100` → lista de `filename`. Se o response indicar `total > 100`, busque a segunda página e registre: `⚠️ PR #N tem [total] arquivos — analisados os primeiros 100+. Classificação pode estar incompleta.`
 3. Reviews e comentários.
 
 **Consolidação:** Una os `filename` de todos os PRs sem duplicatas.
+
+**Detecção de superfície de API (mudança 6):**
+
+Ao consolidar os arquivos dos PRs, classifique cada arquivo em:
+
+**Grupo A — mudança de superfície** (frontend observa):
+- `Controllers/`, `Actions/`, `Services/` que tratam requisições HTTP
+- `Validators/`, `Rules/`, `Exceptions/` — novos erros chegam ao frontend
+- `Resources/`, `Formatters/`, `Transformers/` — formato de response muda
+- `Routes/` — novos endpoints ou mudança de assinatura
+- Qualquer arquivo com `message`, `error`, `response`, `status` no nome
+
+**Grupo B — mudança interna** (frontend não observa):
+- `Jobs/`, `Queues/`, `Providers/`, `Infrastructure/`, `Adapters/` sem expor HTTP
+- Arquivos de migração sem novos campos expostos na API
+- `config/`, `.env.example`, CI/CD (`.github/workflows/`)
+- Arquivos de teste unitário apenas
+
+Se **todos** os arquivos forem Grupo B → pule o login App SPA no PASSO 1.2 e marque cenários de UI como N/A. Registre:
+`⚠️ PRs com mudanças exclusivamente internas — UI não testada. Se o comportamento observável mudou, adicione cenário de regressão manual.`
+
+Se **qualquer** arquivo for Grupo A → mantenha o fluxo completo.
+
+Armazene internamente: `SURFACE_IMPACT = true | false`
 
 **Cruzamento semântico com cenários:**
 Para cada cenário, determine a prioridade usando correspondência semântica (não apenas o módulo do ID):
@@ -272,7 +366,13 @@ Para cenários com `taxa_flakiness > 0.15` (>15%):
 
 ## PASSO 1 — Pré-flight Check
 
-### 1.0 — Limpeza, Dialog Handler e Mocks (OBRIGATÓRIO)
+### 1.0 — Criação da Pasta de Evidências, Limpeza, Dialog Handler e Mocks (OBRIGATÓRIO)
+
+**Criação da pasta de evidências (PRIMEIRO — antes de qualquer screenshot):**
+
+Crie (se não existir): `tests/evidence/[CARD_ID_SAFE]/`
+
+Todos os screenshots desta execução usarão o caminho completo `tests/evidence/[CARD_ID_SAFE]/[arquivo].png`. Nunca use apenas o nome do arquivo sem o caminho completo.
 
 Execute via Playwright antes de qualquer interação:
 
@@ -319,10 +419,87 @@ Se falhar: marque **TODOS** os cenários como BLOQUEADO, registre `❌ Ambiente 
 
 Se falhar: marque todos como BLOQUEADO e encerre.
 
-**Conta principal — App SPA:**
+**Extração do Bearer Token (executar imediatamente após o login):**
+1. `browser_network_requests` com `filter="/v3/"` — capture o índice da primeira requisição autenticada
+2. Se nenhuma requisição `/v3/` ainda existir, navegue para `[FOUNDATION_API_URL]/v3/settings` para forçar uma
+3. `browser_network_request(index, 'request-headers')` → extraia o header `authorization`
+4. Armazene como `BEARER_TOKEN` — será usado em todos os cenários API (via `browser_evaluate` + `fetch`)
+
+**Medição de Time to First Chat — Nova Interface (executar logo após o Bearer Token):**
+
+Use `browser_run_code_unsafe` com o código abaixo. A página já está em `/chat` após o login — o código faz uma nova navegação limpa para medir desde o início:
+
+```javascript
+async (page) => {
+  page.on('dialog', d => d.accept().catch(() => {}));
+  const chatUrl = page.url().split('?')[0]; // já está em /chat
+  await page.addInitScript(() => {
+    window.__ttfc = null;
+    const watch = () => new MutationObserver((_, obs) => {
+      if (document.querySelector('.contact-component')) {
+        window.__ttfc = Math.round(performance.now());
+        obs.disconnect();
+      }
+    }).observe(document.documentElement, { childList: true, subtree: true });
+    document.readyState === 'loading'
+      ? document.addEventListener('DOMContentLoaded', watch)
+      : watch();
+  });
+  await page.goto(chatUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
+  try { await page.waitForSelector('.contact-component', { timeout: 20000 }); }
+  catch (e) { return { ttfc_ms: null, error: 'timeout — chats não apareceram em 20s' }; }
+  const ttfc = await page.evaluate(() => window.__ttfc ?? Math.round(performance.now()));
+  return { ttfc_ms: ttfc };
+}
+```
+
+- Armazene o resultado em `TTFC_NEW_MS`
+- Threshold: `PERF_THRESHOLDS.timeToFirstChat?.newMs ?? 3000`
+- Se `TTFC_NEW_MS > threshold`: adicione a `PERF_VIOLATIONS`:
+  `{ ct_id: 'PREFLIGHT', step: 'TTFC-nova', endpoint: 'nova_interface:/chat', actualMs: TTFC_NEW_MS, thresholdMs: threshold, pctOver: Math.round((TTFC_NEW_MS/threshold - 1) * 100) }`
+- Registre: `⏱️ Time to First Chat (nova interface): [TTFC_NEW_MS]ms [✅ OK / ⚠️ acima do limite de [threshold]ms]`
+- Se `ttfc_ms: null`: registre `⚠️ TTFC não medido — chats não apareceram no timeout` e continue
+
+**Conta principal — App SPA (condicional):**
+
+> Execute este bloco **somente se `SURFACE_IMPACT = true`** (detectado na análise de PRs do PASSO 0.5C). Se `SURFACE_IMPACT = false`, pule e registre: `ℹ️ App SPA login ignorado — PRs sem impacto de superfície de API.`
+
 4. Login em `[APP_SPA_URL]/login` com as mesmas credenciais
 5. Screenshot: `tests/evidence/[CARD_ID_SAFE]/preflight_login_appspa.png`
 6. Registre: `✅ App SPA autenticado: [APP_SPA_URL]`
+
+**Medição de Time to First Chat — Interface Legada (executar logo após o login no App SPA):**
+
+Use `browser_run_code_unsafe` com o código abaixo (mesmo padrão da nova interface, mas com seletor `.chatListItem`):
+
+```javascript
+async (page) => {
+  page.on('dialog', d => d.accept().catch(() => {}));
+  const chatUrl = page.url().split('?')[0];
+  await page.addInitScript(() => {
+    window.__ttfc_legacy = null;
+    const watch = () => new MutationObserver((_, obs) => {
+      if (document.querySelector('.chatListItem')) {
+        window.__ttfc_legacy = Math.round(performance.now());
+        obs.disconnect();
+      }
+    }).observe(document.documentElement, { childList: true, subtree: true });
+    document.readyState === 'loading'
+      ? document.addEventListener('DOMContentLoaded', watch)
+      : watch();
+  });
+  await page.goto(chatUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
+  try { await page.waitForSelector('.chatListItem', { timeout: 25000 }); }
+  catch (e) { return { ttfc_ms: null, error: 'timeout — chats não apareceram em 25s' }; }
+  const ttfc = await page.evaluate(() => window.__ttfc_legacy ?? Math.round(performance.now()));
+  return { ttfc_ms: ttfc };
+}
+```
+
+- Armazene em `TTFC_LEGACY_MS`
+- Threshold: `PERF_THRESHOLDS.timeToFirstChat?.legacyMs ?? 8000`
+- Se `TTFC_LEGACY_MS > threshold`: adicione a `PERF_VIOLATIONS` com `endpoint: 'legado:/chat'`
+- Registre: `⏱️ Time to First Chat (legado): [TTFC_LEGACY_MS]ms [✅ OK / ⚠️ acima do limite de [threshold]ms]`
 
 Se falhar: identifique os cenários cujos pré-requisitos mencionam `APP_SPA_URL` ou "App SPA" e marque-os como BLOQUEADO com motivo `"Login no App SPA falhou"`. Prossiga com os demais.
 
@@ -357,12 +534,7 @@ const OBSERVER_FIXTURE_PATH = `tests/fixtures/observer-${ENV}-storageState.json`
 
 Se o login do observador falhar: identifique os cenários que dependem da conta observadora (pelos pré-requisitos) e marque-os como BLOQUEADO com motivo `"Login da conta observadora falhou"`. Prossiga com os demais.
 
-### 1.3 — Criação da Pasta de Evidências
-
-Crie (se não existir): `tests/evidence/[CARD_ID_SAFE]/`
-Todos os screenshots desta execução usarão `CARD_ID_SAFE` no caminho.
-
-### 1.4 — Resolução de Dependências e Ordenação Final dos Cenários
+### 1.3 — Resolução de Dependências e Ordenação Final dos Cenários
 
 **Resolução de dependências (`Depende de`):**
 
@@ -420,7 +592,7 @@ async function runInChunks(cenarios, chunkSize = 5) {
 
 Cada cenário recebe seu próprio token de autenticação e não compartilha estado com os demais.
 
-**Cenários `UI`:** Execute um por vez, na ordem definida no PASSO 1.4. Aguarde a conclusão de todos os cenários API do grupo antes de iniciar os UI do mesmo grupo.
+**Cenários `UI`:** Execute um por vez, na ordem definida no PASSO 1.3. Aguarde a conclusão de todos os cenários API do grupo antes de iniciar os UI do mesmo grupo.
 
 ### 2.1 — Anúncio do Cenário
 
@@ -433,12 +605,147 @@ Cada cenário recebe seu próprio token de autenticação e não compartilha est
 **Verificação de sessão do observador (para cenários que dependem da conta observadora):**
 Antes de executar qualquer cenário cujos pré-requisitos mencionem "conta observadora", "segundo usuário" ou "conta secundária", verifique se `OBSERVER_SESSION_TIMEOUT_MS` foi excedido desde `OBSERVER_LOGIN_TIME`. Se sim, re-autentique silenciosamente na página do observador e atualize `OBSERVER_LOGIN_TIME`.
 
-**Contato de teste obrigatório:**
-Sempre que um cenário precisar interagir com um contato, canal, conversa ou mensagem, use **exclusivamente** o contato de teste configurado em `testContacts.default`:
-- Navegue para: `[ENV_URL]/[TEST_CONTACT_CHAT_UUID]`
-- Canal padrão: `[TEST_CONTACT_CHANNEL_ID]`
-- **NUNCA** use contatos reais da fila de atendimento — risco de enviar mensagens para clientes reais.
-- Se o chat do contato de teste não existir no ambiente, registre `⚠️ Chat do contato de teste não encontrado — cenário marcado como BLOQUEADO` e avance.
+**Contato de teste obrigatório — com probe de estado:**
+Sempre que um cenário precisar interagir com um contato, canal, conversa ou mensagem, use **exclusivamente** o contato de teste configurado em `testContacts.default`. **NUNCA** use contatos reais da fila de atendimento.
+
+Antes de navegar, verifique o estado do chat via API (1 call, evita tool calls desperdiçadas):
+```js
+// Probe de estado — executar ANTES de page.goto para o chat
+const probe = await page.evaluate(async ({ url, token }) => {
+  const r = await fetch(url, { headers: { 'Authorization': `Bearer ${token}` } });
+  const d = await r.json();
+  return d.chat_status || d.data?.chat_status || 'unknown';
+}, { url: `${FOUNDATION_API_URL}/v3/contacts/${TEST_CONTACT_CHAT_UUID}?include=chat_status`, token: BEARER_TOKEN });
+```
+
+- Se `chat_status = "resolved"` → **não navegue**. Marque os cenários dependentes como BLOQUEADO com motivo: `"Chat do contato de teste encerrado — abra o atendimento manualmente antes de reexecutar, ou configure um contato alternativo com chat ativo em testContacts."`. Não crie atendimento automaticamente.
+- Se `chat_status = "attending"` ou `"waiting"` ou `"bot"` → navegue normalmente.
+- Se `probe` retornar `"unknown"` ou erro → navegue e observe o estado na UI.
+
+**Hierarquia de verificação de resultados:**
+
+Após cada ação, use o método de verificação na seguinte ordem de preferência:
+
+1. 🥇 **`browser_network_requests` + `browser_network_request`** — quando a ação dispara uma requisição de rede. Verifique `status HTTP` e campos do response body. É a fonte de verdade mais confiável.
+2. 🥈 **`browser_evaluate`** — para verificar valores específicos do DOM ou store sem precisar de snapshot: `document.querySelector('input').value`, estado de botão, conteúdo de campo. Use quando a pergunta é "qual é o valor de X?" e não "o que está na tela?".
+3. 🥉 **`browser_snapshot`** — apenas quando as duas anteriores não são suficientes (verificação de layout, presença de elemento, estado visual). Sempre use com `target` e `depth ≤ 3`. Nunca chame sem `target` exceto para descoberta inicial de refs.
+
+**Coleta e verificação de performance (executar após cada 🥇 `browser_network_request`):**
+
+Toda vez que usar `browser_network_request` para verificar uma requisição, extraia o tempo de resposta e acumule:
+
+```js
+// timing.responseEnd e timing.requestStart são timestamps em ms desde navigationStart
+const actualMs = requestData.timing
+  ? Math.round(requestData.timing.responseEnd - requestData.timing.requestStart)
+  : null; // indisponível para fetch() direto via browser_evaluate
+
+if (actualMs !== null) {
+  // Sempre acumula para o baseline, independente do modo
+  const endpoint = normalizeEndpoint(requestData.url, FOUNDATION_API_URL);
+  if (!PERF_COLLECTED_TIMINGS[endpoint]) {
+    PERF_COLLECTED_TIMINGS[endpoint] = { method: requestData.method, samples: [] };
+  }
+  PERF_COLLECTED_TIMINGS[endpoint].samples.push(actualMs);
+
+  // Verificação de violação — somente fora do modo baseline
+  if (!BASELINE_MODE) {
+    const threshold = matchThreshold(requestData.url, PERF_THRESHOLDS);
+    if (actualMs > threshold) {
+      const pctOver = Math.round((actualMs / threshold - 1) * 100);
+      PERF_VIOLATIONS.push({
+        ct_id: CT_ID_ATUAL,
+        step: PASSO_ATUAL,
+        url: requestData.url,
+        method: requestData.method,
+        actual_ms: actualMs,
+        threshold_ms: threshold,
+        pct_over: pctOver
+      });
+      // Registre no chat (não falha o cenário — é métrica, não bloqueio):
+      // ⚠️ PERF [METHOD] [endpoint]: Xms (limite: Yms, +Z% acima do limite)
+    }
+  }
+  // Em modo baseline: registre apenas a coleta
+  // 🔬 BASELINE [METHOD] [endpoint]: Xms coletado (N amostras total)
+}
+```
+
+> Violações de performance **não reprovam o cenário** — são registradas como métrica. O cenário permanece ✅ PASSOU se o resultado funcional estiver correto. Classificação por gravidade: 🔴 > 200% | 🟡 50–200% | 🟢 < 50% acima do limite.
+
+**Padrão para chamadas de API durante execução de cenários:**
+
+Use exclusivamente `browser_evaluate` com `fetch()` — evita shell escaping, usa o contexto autenticado do browser:
+```js
+const result = await page.evaluate(async ({ url, token, method, payload }) => {
+  const r = await fetch(url, {
+    method: method || 'GET',
+    headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
+    body: payload ? JSON.stringify(payload) : undefined
+  });
+  return { status: r.status, body: await r.json() };
+}, { url: `${FOUNDATION_API_URL}/v3/...`, token: BEARER_TOKEN, method: 'POST', payload: { ... } });
+// Verificar: result.status === 200 && result.body.campo === valorEsperado
+```
+
+> **Nunca use `curl` ou `Bash` para chamadas autenticadas durante a execução de cenários.** Use o padrão acima.
+
+**Toolkit de Envio de Mídia:**
+
+Ative quando o cenário mencionar explicitamente: `imagem`, `foto`, `documento`, `PDF`, `vídeo`, `áudio`, `arquivo`, `mídia` ou `anexo`. Classifique internamente como `MEDIA_SCENARIO = true` e determine o tipo: `IMAGE` | `DOCUMENT` | `VIDEO`.
+
+**Verificação de fixture antes de executar:**
+```
+IMAGE    → TEST_MEDIA_IMAGE_PATH    existe no disco? Se não → BLOQUEADO (test-data)
+DOCUMENT → TEST_MEDIA_DOCUMENT_PATH existe no disco? Se não → BLOQUEADO (test-data)
+VIDEO    → TEST_MEDIA_VIDEO_PATH    existe no disco? Se não → BLOQUEADO (test-data)
+```
+
+**Fluxo de UI para envio de mídia (ordem dos passos):**
+
+1. **Abrir menu de anexo** — botão de clipe/câmera na toolbar do chat:
+   - `getByTestId('attach-button')` → `getByRole('button', { name: /anexo|imagem|arquivo|attach/i })` → CSS `[data-testid*="attach"]`
+   - Se o clique abrir um submenu: selecione a opção pelo tipo (`Imagem`, `Documento`, `Vídeo`)
+
+2. **Upload via `browser_file_upload`:**
+```js
+// O input[type="file"] pode estar oculto até o menu abrir
+const input = page.locator('input[type="file"]');
+await input.setInputFiles(TEST_MEDIA_IMAGE_PATH);     // ou DOCUMENT_PATH / VIDEO_PATH
+```
+
+3. **Confirmar preview antes de enviar:**
+   - Imagem: aguardar thumbnail da foto aparecer na área de composição
+   - Documento: aguardar nome do arquivo (`argos-qa-test.pdf`) aparecer
+   - Vídeo: aguardar thumbnail ou nome do arquivo aparecer
+
+4. **Enviar:** clicar no botão de envio (mesmo botão de texto ou botão dedicado de confirmação de mídia)
+
+5. **Verificação via rede (🥇 fonte de verdade):**
+```js
+// POST /messages deve retornar 201 com `type` diferente de TEXT:
+// Imagem:    { type: 'IMAGE',    ack: 'CREATED', components: { header: { type: 'IMAGE',    image:    { url: '...' } } } }
+// Documento: { type: 'DOCUMENT', ack: 'CREATED', components: { header: { type: 'DOCUMENT', document: { url: '...', filename: '...' } } } }
+// Vídeo:     { type: 'VIDEO',    ack: 'CREATED', components: { header: { type: 'VIDEO',    video:    { url: '...' } } } }
+```
+Verifique: `status === 201` AND `body.type === 'IMAGE'` (ou `DOCUMENT` / `VIDEO`) AND `body.ack === 'CREATED'`
+
+6. **Verificação visual (🥉 complementar):**
+   - Imagem: bolha exibe thumbnail/preview da foto
+   - Documento: bolha exibe ícone de arquivo + nome (`argos-qa-test.pdf`)
+   - Vídeo: bolha exibe thumbnail ou player inline
+
+> ⚠️ **Comportamento esperado em staging:** `ack` de mensagens de mídia pode permanecer `CREATED` se o canal WABA de staging não despachar para a Meta. Valide apenas `ack: CREATED` + `type` correto — não considere falha se não progredir para `SENT`.
+
+**Detecção de falha em cascata:**
+
+Mantenha internamente um contador `CASCADE_FAILURES = { causa_raiz: string, mensagem: string, count: number }`.
+
+Se **2 cenários consecutivos** falharem com a mesma `causa_raiz` E a mesma mensagem de erro:
+1. Registre: `🔗 Falha em cascata detectada (2×) — causa: [causa_raiz] | erro: [mensagem]. Cenários subsequentes com o mesmo serviço/endpoint serão marcados como BLOQUEADO.`
+2. Para cada cenário restante que dependa do mesmo serviço ou endpoint, marque como BLOQUEADO com motivo `"Falha em cascata: [causa]"` em vez de executar.
+3. Continue executando cenários que dependem de **outros** serviços/endpoints.
+4. Reporte os bloqueios em cascata no PASSO 2.5 separadamente dos bloqueios por pré-requisito.
 
 **Prioridade de seletores (skill: playwright-e2e):** Ao localizar elementos via Playwright, use nesta ordem:
 1. `getByRole` — reflete a árvore de acessibilidade (ex: `getByRole('button', { name: 'Enviar' })`)
@@ -550,6 +857,34 @@ await fetch(`${FOUNDATION_API_URL}/v3/contacts/${TEST_CONTACT_CHAT_UUID}/message
   })
 });
 
+// Mensagem de imagem outbound (URL pública — não requer upload de arquivo)
+await fetch(`${FOUNDATION_API_URL}/v3/contacts/${TEST_CONTACT_CHAT_UUID}/messages`, {
+  method: 'POST',
+  headers: { 'Authorization': `Bearer ${TOKEN}`, 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    provider: 'WABA', version: 'v3', type: 'IMAGE',
+    account_channel_uuid: TEST_CONTACT_CHANNEL_ID,
+    components: {
+      header: { type: 'IMAGE', image: { url: 'https://picsum.photos/seed/argos/400/300' } },
+      body: { text: TEST_MEDIA_IMAGE_CAPTION }
+    }
+  })
+});
+
+// Mensagem de documento outbound (URL pública de PDF)
+await fetch(`${FOUNDATION_API_URL}/v3/contacts/${TEST_CONTACT_CHAT_UUID}/messages`, {
+  method: 'POST',
+  headers: { 'Authorization': `Bearer ${TOKEN}`, 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    provider: 'WABA', version: 'v3', type: 'DOCUMENT',
+    account_channel_uuid: TEST_CONTACT_CHANNEL_ID,
+    components: {
+      header: { type: 'DOCUMENT', document: { url: 'https://www.w3.org/WAI/WCAG21/wcag21.pdf', filename: TEST_MEDIA_DOCUMENT_FILENAME } },
+      body: { text: TEST_MEDIA_DOCUMENT_CAPTION }
+    }
+  })
+});
+
 // Nota em contato (use UUIDs de account e contact do qa-environment.template.json)
 // TEST_CONTACT_ACCOUNT_UUID → testContacts.default.accountUuid
 // TEST_CONTACT_UUID         → testContacts.default.contactUuid
@@ -560,8 +895,18 @@ await fetch(`${FOUNDATION_API_URL}/v3/accounts/${TEST_CONTACT_ACCOUNT_UUID}/cont
 });
 ```
 
+**Retry com backoff exponencial para criação de dados:**
+
+Para qualquer criação de recurso via API durante setup:
+- Tentativa 1: executa imediatamente
+- Tentativa 2 (se falhar): aguarda 1s e tenta novamente
+- Tentativa 3 (se ainda falhar): aguarda 2s e tenta novamente
+- Após 3 tentativas sem sucesso: marque o cenário como BLOQUEADO com causa `"test-data-setup"` e prossiga para o próximo cenário
+
+Registre no relatório: `⚠️ Setup falhou após 3 tentativas: [endpoint] — cenário [CT-ID] marcado como BLOQUEADO`
+
 4. Se criação retornar HTTP 201: registre `✅ Dado criado via API — retentando cenário` e execute
-5. Se criação falhar (4xx/5xx): marque como BLOQUEADO com motivo original + erro da API
+5. Se criação falhar (4xx/5xx) após 3 tentativas: marque como BLOQUEADO com motivo original + erro da API
 6. Se dado foi criado artificialmente, **adicione o UUID retornado à lista `ARGOS_CREATED_RESOURCES`** (ex: `{ type: 'message', uuid: '...', endpoint: '/v3/contacts/.../messages/...' }`) e registre no relatório: `⚠️ Dado criado pelo Argos via API — será removido no teardown (PASSO 4.3)`
 
 **Cenário BLOQUEADO:** Se nenhuma das estratégias acima desbloquear (page.route() nem criação via API), registre com motivo e avance.
@@ -586,6 +931,19 @@ Progresso após cada cenário:
 
 Após executar todos os cenários, exiba **obrigatoriamente**:
 
+**Clustering de falhas similares:**
+
+Após executar todos os cenários, agrupe as falhas por padrão de erro:
+```
+FAILURE_CLUSTERS = agrupe falhas pelo primeiro erro distinto (tipo + primeira linha de stack trace ou mensagem principal)
+```
+
+Exiba no início da seção de resultados:
+- Se 3+ cenários falharam com o mesmo erro: `🔴 Falha sistêmica: "[CAUSA]" — [N] cenários afetados`
+- Se 1 cenário falhou com erro único: `🟡 Falha isolada: [CT-ID] — [mensagem]`
+
+Isso identifica rapidamente se múltiplas falhas têm uma raiz comum (problema de ambiente, autenticação expirada, dado de teste corrompido) vs. falhas independentes.
+
 ```
 📊 Execução concluída para [CARD-ID]:
 
@@ -599,6 +957,7 @@ Resumo: ✅ X Passou | ❌ X Falhou | ⏭️ X Bloqueado
 Taxa de sucesso: X%
 
 🔧 Self-healing ativado: N vezes
+⚡ Performance: N violações (ex: GET /v3/messages 1250ms > 800ms +56%) | ou "sem violações"
 🐛 Bugs encontrados: X (lista resumida se houver)
 
 ⚠️ Revisione o resumo acima antes de publicar.
@@ -671,6 +1030,28 @@ Salve em `tests/reports/[CARD_ID_SAFE]-relatorio.md`:
 | ID | CT de Origem | Descrição | Severidade | Causa Raiz | Evidência |
 |---|---|---|---|---|---|
 | BUG-001 | CT-XXX-001 | [descrição objetiva] | 🔴/🟡/🟢 | timing/state-leakage/... | [arquivo.png] |
+
+## Performance
+
+> Omita esta seção se `PERF_VIOLATIONS` estiver vazio e `TTFC_NEW_MS` for null.
+
+**Time to First Chat (preflight):**
+
+| Interface | Tempo Medido | Limite | Status |
+|---|---|---|---|
+| Nova (`spa.poli.digital`) | [TTFC_NEW_MS]ms | 3000ms | ✅/⚠️ |
+| Legada (`app-spa.poli.digital`) | [TTFC_LEGACY_MS ou N/A]ms | 8000ms | ✅/⚠️/N/A |
+
+> Baseline calibrado em produção (2026-06-10): Nova p50=2094ms p95=2631ms · Legada p50=3667ms p95=6479ms
+
+**Violações de API durante execução:**
+
+| CT | Passo | Método | Endpoint | Tempo Real | Limite | Excesso |
+|---|---|---|---|---|---|---|
+| CT-XXX-001 | 3 | GET | /v3/messages | 1250ms | 800ms | 🔴 +56% |
+
+> 🔴 > 200% acima do limite | 🟡 50–200% | 🟢 < 50%
+> Omita a tabela de violações de API se `PERF_VIOLATIONS` estiver vazio.
 ```
 
 ### 3.2 — Publicar como Comentário no Jira
@@ -715,6 +1096,16 @@ Use `mcp__claude_ai_Atlassian__addCommentToJiraIssue`:
 
 ---
 
+### ⚡ Performance
+
+> Omita esta seção se `PERF_VIOLATIONS` estiver vazio.
+
+| CT | Método | Endpoint | Tempo Real | Limite | Excesso |
+|---|---|---|---|---|---|
+| CT-XXX-001 | GET | /v3/messages | 1250ms | 800ms | 🔴 +56% |
+
+---
+
 **Evidências:** `tests/evidence/[CARD_ID_SAFE]/`
 **Relatório completo:** `tests/reports/[CARD_ID_SAFE]-relatorio.md`
 **PRs analisados:** #[PR1], #[PR2], #[PR3]
@@ -728,7 +1119,7 @@ Se a publicação falhar, informe o erro mas **não interrompa** — o arquivo l
 Crie o diretório `tests/logs/` se não existir e adicione uma linha ao arquivo `tests/logs/execucoes.jsonl` (append, nunca sobrescreva):
 
 ```json
-{"timestamp":"[ISO8601]","iniciado_em":"[START_TIME]","card":"[CARD-ID]","env":"[ENV]","prs":["REPO:PR_NUMBER ou PR_NUMBER por item"],"total":N,"passed":N,"failed":N,"blocked":N,"taxa":"N%","duracao_ms":N,"self_healings":N,"mocks_ativos":N}
+{"timestamp":"[ISO8601]","iniciado_em":"[START_TIME]","card":"[CARD-ID]","env":"[ENV]","prs":["REPO:PR_NUMBER ou PR_NUMBER por item"],"total":N,"passed":N,"failed":N,"blocked":N,"taxa":"N%","duracao_ms":N,"self_healings":N,"mocks_ativos":N,"perf_violations":N}
 ```
 
 ---
@@ -775,6 +1166,63 @@ Se alguma remoção falhar, liste os recursos pendentes no relatório final em s
 
 > **Não execute teardown em `ENV = production`** — mesmo que recursos tenham sido criados erroneamente, remoção automática em produção é proibida. Liste e alerte o operador.
 
+### 4.4 — Persistir Baseline de Performance
+
+Execute sempre, ao final de qualquer execução (modo normal ou `--baseline`).
+
+Carregue `BASELINE_FILE` se existir (crie do zero se não existir). Para cada endpoint em `PERF_COLLECTED_TIMINGS`:
+
+1. **Mescle as novas amostras** com as já existentes no arquivo (append, nunca sobrescreva o histórico)
+2. **Recalcule as estatísticas:**
+```js
+const allSamples = [...existingSamples, ...newSamples].sort((a, b) => a - b);
+const count = allSamples.length;
+const avg = Math.round(allSamples.reduce((s, v) => s + v, 0) / count);
+const p95index = Math.ceil(count * 0.95) - 1;
+const p95 = allSamples[p95index];
+const suggested_threshold_ms = Math.round(avg * 1.3); // média + 30%
+```
+3. **Salve o arquivo atualizado:**
+```json
+{
+  "last_updated": "[ISO8601]",
+  "total_executions": N,
+  "endpoints": {
+    "/v3/contacts/:uuid/messages": {
+      "method": "POST",
+      "count": 12,
+      "samples": [450, 489, 523, 478, 612, 510, 498, 534, 467, 501, 489, 516],
+      "avg": 506,
+      "p95": 612,
+      "suggested_threshold_ms": 658,
+      "margin_pct": 30
+    }
+  }
+}
+```
+
+**Exiba no chat:**
+
+```
+📊 Baseline atualizado: tests/memory/performance-baseline.json
+   N endpoints | M amostras totais
+
+[Se BASELINE_MODE = true — exiba tabela de sugestões:]
+⚡ Thresholds sugeridos (avg + 30%):
+
+| Endpoint | Amostras | Avg | P95 | Threshold Sugerido | Status |
+|---|---|---|---|---|---|
+| POST /v3/contacts/:uuid/messages | 12 | 506ms | 612ms | 658ms | ✅ Calibrado |
+| GET /v3/settings | 2 | 389ms | 412ms | 506ms | ⚠️ Poucas amostras (mín. 3) |
+
+Para aplicar, copie os valores para "endpoints" em performanceThresholds no qa-environment.local.json,
+ou execute mais vezes com --baseline até atingir 3+ amostras por endpoint.
+```
+
+> Se `BASELINE_MODE = false`: exiba apenas a linha de atualização, sem a tabela de sugestões.
+
+---
+
 ### 4.2 — Atualizar Memória de Episódios
 
 Após a publicação, atualize `tests/memory/[CARD-ID]-historico.json` (crie se não existir):
@@ -801,6 +1249,18 @@ Para cada cenário executado:
 - Se passou: incremente `execucoes`, `taxa_flakiness` = `falhas / execucoes`
 - Se falhou: incremente `execucoes` e `falhas`, adicione `causa_raiz` ao array, atualize `ultima_falha`
 - Se self-healing foi ativado: incremente `self_healings`
+
+**Manutenção do histórico (keep-last-90):**
+
+Após atualizar `tests/memory/[CARD-ID]-historico.json`, verifique o campo `total_execucoes`.
+
+Se `total_execucoes > 90`:
+- Para cada cenário no arquivo, mantenha apenas as últimas 90 execuções nos campos de histórico interno
+- Recalcule `taxa_flakiness` com base nas últimas 90 execuções apenas
+- Atualize `total_execucoes = 90`
+
+Isso evita crescimento ilimitado do arquivo após meses de execuções diárias.
+Registre: `🗂️ Histórico compactado: [N] execuções antigas removidas de [CARD-ID]`
 
 ---
 
