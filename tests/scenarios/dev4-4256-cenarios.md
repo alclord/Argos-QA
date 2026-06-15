@@ -1,127 +1,100 @@
 # Cenários de Teste — DEV4-4256
-> Card: Dados do Plano (Nova Interface)
-> Gerado em: 2026-05-28
-> Card atualizado em: 2026-05-27T13:19:41.339-0300
+> Card: Dados do Plano (Nova interface)
+> Gerado em: 2026-06-12
+> Card atualizado em: 2026-06-10T17:25:47 -0300
 
 ---
 
 ## BLOCO 1 — Estratégia de Teste
 
-A feature migra a aba "Dados do Plano" do legado para a nova interface (foundation-spa), introduzindo tabela de recursos contratados, quatro ações principais (Aumentar plano, Reduzir/Cancelar, Adquirir canais, Adquirir usuários) e o modal "Gerenciar adicionais" com remoção individual. Os tipos de teste aplicáveis são: UI funcional (fluxos de modal e redirecionamento), controle de acesso (apenas Gestor acessa), API (remoção de adicional, log de auditoria, bloqueio de remoção), borda (limites de usuários ativos) e segurança (escalada de privilégio, manipulação direta de endpoint). Prioridade de execução: 1º controle de acesso, 2º fluxo de remoção de adicional (com bloqueio, erro e sucesso), 3º redirecionamentos WhatsApp, 4º tabela/skeleton, 5º internacionalização. Riscos principais: remoção de adicional sem confirmação, abertura de nova aba bloqueada por pop-up blocker, botão "Solicitar upgrade" habilitado sem seleção e ausência de log de auditoria após remoção.
+Esta entrega unifica duas telas legadas (Dados do Plano + Assinaturas) em uma única seção da nova interface, e introduz funcionalidade inédita: **desativação de recorrência de assinatura diretamente pela plataforma**, eliminando a intervenção manual no banco de dados. Tipos de teste aplicáveis: UI funcional (modais, redirecionamentos, estados condicionais), API (controle de acesso, logs de auditoria, validações de compra) e regressão (fluxo de pagamento via cartão não rompido). Prioridade de execução: 1º controle de acesso (Gestor only), 2º desativação de recorrência — irreversível e com log obrigatório, 3º regras condicionais de exibição de botões por status, 4º validações de formulário, 5º happy paths de tabela e listagem. Riscos principais: inconsistência de estado após falha no endpoint de desativação, exibição incorreta do botão "Desativar recorrência" para status indevidos, ausência de log de auditoria e validação insuficiente na compra de assinaturas.
 
 ---
 
 ## BLOCO 2 — Mapa de Riscos
 
 | Risco | Probabilidade | Impacto | Prioridade |
-|-------|:---:|:---:|:---:|
-| Botão "Solicitar upgrade" habilitado sem seleção de plano | M | A | 🔴 Alta |
-| Remoção de adicional sem exibir confirmação (pula tela) | B | A | 🔴 Alta |
-| Log de auditoria não registrado após remoção bem-sucedida | M | A | 🔴 Alta |
-| Adicional com canal ativo não bloqueia botão "Remover" | M | A | 🔴 Alta |
-| Adicional de usuários acima do limite não bloqueia remoção | M | A | 🔴 Alta |
-| Tabela não atualiza coluna "Adicionais" após remoção sem reload | M | M | 🟡 Média |
-| Redirecionamento WhatsApp sem mensagem pré-preenchida | M | M | 🟡 Média |
-| Usuário não-Gestor consegue acessar Configurações > Dados do Plano | B | A | 🔴 Alta |
-| Pop-up blocker impede abertura do WhatsApp em nova aba | A | M | 🟡 Média |
-| Modal "Gerenciar adicionais" fecha ao clicar "Voltar" sem executar remoção | B | M | 🟡 Média |
-| Skeleton não exibido durante fetch da tabela | M | B | 🟢 Baixa |
-| Textos não traduzidos em EN/ES | M | B | 🟢 Baixa |
-| Erro de remoção fecha o modal indevidamente | B | M | 🟡 Média |
+|---|---|---|---|
+| Endpoint de desativação falha silenciosamente — UI atualiza mas backend não persiste | M | A | Alta |
+| Botão "Desativar recorrência" exibido para status diferentes de "Recorrente" | M | A | Alta |
+| Log de auditoria não registrado após desativação ou remoção de adicional | B | A | Alta |
+| Opções de Pagamento exibidas para status "Pagamento Aprovado" | M | A | Alta |
+| Acesso de Operadores à seção sem permissão de Gestor | B | A | Alta |
+| Badge não atualiza sem reload após desativação bem-sucedida | M | M | Média |
+| Cálculo de valor total não reage dinamicamente a mudanças de pacote/quantidade | M | M | Média |
+| Lista de assinaturas não recarrega após compra bem-sucedida | M | M | Média |
+| Remoção de adicional com canal ativo não bloqueada corretamente | B | A | Alta |
+| "Solicitar upgrade" habilitado sem seleção de plano | B | M | Média |
 
 ---
 
-## BLOCO 3 — Tabela de Cenários
+## BLOCO 3 — Tabela de Cenários de Teste
 
 | ID | Nome do Cenário | Pré-requisitos | Passo a Passo | Resultado Esperado | Criticidade | Modo | Depende de |
-|----|----------------|----------------|---------------|-------------------|:-----------:|:----:|-----------|
-| CT-PLANO-001 | Tabela carrega com skeleton e exibe dados do plano | Usuário autenticado como Gestor; account com plano base + adicionais configurados | 1. Acessar Configurações > Dados do plano | Skeleton exibido durante fetch; tabela renderizada com colunas Recurso / Plano base / Adicionais / Total; linhas para WhatsApp, WABA, Facebook Messenger, Instagram, WebChat, Usuários; ícones de canal corretos | 🔴 Alta | UI | — |
-| CT-PLANO-002 | Fluxo completo de upgrade: selecionar plano e redirecionar para WhatsApp | Usuário autenticado como Gestor; modal de upgrade disponível com planos do site embedados | 1. Clicar em "Aumentar meu plano" 2. Verificar que botão "Solicitar upgrade" está desabilitado 3. Selecionar um plano no modal 4. Verificar que botão "Solicitar upgrade" está habilitado 5. Clicar em "Solicitar upgrade" | Modal abre com planos disponíveis; botão "Solicitar upgrade" desabilitado antes da seleção; após seleção botão habilita; clicar redireciona para `https://wa.me/[número]?text=Olá!+Gostaria+de+fazer+upgrade+para+o+[plano+selecionado].` em nova aba; evento `plan_upgrade_whatsapp_redirected` disparado | 🔴 Alta | UI | CT-PLANO-001 |
-| CT-PLANO-003 | Fluxo completo de remoção de adicional: sucesso | ⚠️ Bloqueável: account com pelo menos um adicional removível (sem canal ativo e sem exceder limite de usuários) | 1. Clicar em "Gerenciar adicionais" 2. Verificar listagem com botões "Remover" 3. Clicar em "Remover" em um adicional elegível 4. Verificar tela de confirmação inline (breadcrumb + destaque do item + aviso de impacto) 5. Clicar em "Confirmar remoção" | Modal exibe listagem; ao clicar "Remover" modal muda para tela de confirmação sem abrir segundo modal; breadcrumb visível; clicar "Confirmar remoção" executa remoção via API; modal retorna à listagem atualizada + banner de sucesso no topo; coluna "Adicionais" da tabela atualiza sem reload da página; log de auditoria registrado via API | 🔴 Alta | UI | CT-PLANO-001 |
-| CT-PLANO-004 | Acesso negado para usuário não-Gestor | Usuário autenticado com role `agent` (atendente) | 1. Tentar acessar Configurações > Dados do plano diretamente via URL | Item "Dados do plano" não visível no menu de Configurações; acesso direto via URL retorna tela de erro de permissão ou redireciona; nenhuma informação de plano exposta | 🔴 Alta | UI | — |
-| CT-PLANO-005 | Botão "Solicitar upgrade" permanece desabilitado sem seleção de plano | Usuário autenticado como Gestor | 1. Clicar em "Aumentar meu plano" 2. NÃO selecionar nenhum plano 3. Tentar clicar em "Solicitar upgrade" | Botão "Solicitar upgrade" permanece desabilitado (não clicável); nenhum redirecionamento ocorre; nenhuma requisição disparada | 🔴 Alta | UI | CT-PLANO-001 |
-| CT-PLANO-006 | Adicional com canal ativo: botão "Remover" desabilitado + aviso inline | ⚠️ Bloqueável: account com adicional de canal cujo canal está com status ativo na plataforma | 1. Clicar em "Gerenciar adicionais" 2. Localizar adicional com canal ativo | Botão "Remover" do adicional bloqueado está desabilitado; aviso explicativo exibido inline ("Este canal está em uso e não pode ser removido agora."); botões de adicionais elegíveis permanecem habilitados | 🔴 Alta | UI | CT-PLANO-001 |
-| CT-PLANO-007 | Adicional de usuários bloqueado quando ativos excedem limite pós-remoção | ⚠️ Bloqueável: account com usuários_ativos > (plano_base.usuarios + adicional.quantidade - quantidade_remover) | 1. Clicar em "Gerenciar adicionais" 2. Localizar adicional de usuários que, se removido, deixaria ativos acima do limite | Botão "Remover" do adicional de usuários bloqueado está desabilitado; aviso inline exibido ("Existem usuários ativos que excedem o limite resultante.") | 🔴 Alta | UI | CT-PLANO-001 |
-| CT-PLANO-008 | Erro na remoção de adicional: modal não fecha + banner de erro + botão "Tentar novamente" | ⚠️ Bloqueável: ambiente com capacidade de simular falha na API de remoção (ex: mock de 500) | 1. Clicar em "Gerenciar adicionais" 2. Clicar em "Remover" em adicional elegível 3. Clicar em "Confirmar remoção" 4. API retorna erro (500 ou 422) | Modal permanece aberto na tela de confirmação; banner de erro exibido com mensagem "Não foi possível remover o adicional. Tente novamente."; botão "Tentar novamente" visível e funcional; coluna "Adicionais" da tabela não alterada; log de auditoria NÃO registrado | 🔴 Alta | UI | CT-PLANO-003 |
-| CT-PLANO-009 | "Voltar" na confirmação de remoção retorna à listagem sem ação | Usuário autenticado como Gestor; modal "Gerenciar adicionais" aberto | 1. Clicar em "Gerenciar adicionais" 2. Clicar em "Remover" em adicional elegível 3. Na tela de confirmação, clicar em "Voltar" | Modal retorna à listagem de adicionais; nenhuma remoção executada; nenhuma requisição de remoção disparada; dados da tabela inalterados | 🟡 Média | UI | CT-PLANO-003 |
-| CT-PLANO-010 | Fluxo "Reduzir / Cancelar Plano" abre modal de confirmação e redireciona WhatsApp | Usuário autenticado como Gestor | 1. Clicar em "Reduzir / Cancelar Plano" 2. Verificar modal de confirmação com aviso de perda de recursos 3. Verificar que "Enviar solicitação" está desabilitado sem seleção/preenchimento 4. Preencher campos obrigatórios 5. Clicar em "Enviar solicitação" | Modal de confirmação abre com aviso claro de perda de recursos; botão "Enviar solicitação" desabilitado antes do preenchimento; após preenchimento habilita; clicar redireciona para WhatsApp em nova aba com mensagem resumindo a solicitação | 🟡 Média | UI | CT-PLANO-001 |
-| CT-PLANO-011 | "Adquirir canais" redireciona para /channels sem modal | Usuário autenticado como Gestor | 1. Clicar em "Adquirir canais" | Usuário redirecionado para `/channels` da plataforma; nenhum modal intermediário exibido; evento `plan_acquire_channels_clicked` disparado | 🟡 Média | UI | CT-PLANO-001 |
-| CT-PLANO-012 | "Adquirir usuários" redireciona para /users sem modal | Usuário autenticado como Gestor | 1. Clicar em "Adquirir usuários" | Usuário redirecionado para `/users` da plataforma; nenhum modal intermediário exibido; evento `plan_acquire_users_clicked` disparado | 🟡 Média | UI | CT-PLANO-001 |
-| CT-PLANO-013 | Log de auditoria registrado após remoção bem-sucedida | ⚠️ Bloqueável: acesso a logs de auditoria ou endpoint de verificação do log | 1. Executar fluxo de remoção de adicional com sucesso (CT-PLANO-003) 2. Consultar log de auditoria via API ou banco | Log registrado contendo: `usuario_id`, `adicional_tipo`, `quantidade`, `data`, `conta_id` | 🔴 Alta | API | CT-PLANO-003 |
-| CT-PLANO-014 | Tentativa de remoção de adicional por usuário não-Gestor via API | Usuário autenticado com role `agent` | 1. Disparar requisição de remoção de adicional via API (DELETE/POST no endpoint de remoção) autenticado como `agent` | API retorna 403 Forbidden; nenhuma remoção executada; nenhum log de auditoria registrado | 🔴 Alta | API | — |
-| CT-PLANO-015 | Tabela exibe estado de erro com opção de retry ao falhar o fetch | ⚠️ Bloqueável: ambiente com capacidade de simular falha na API de dados do plano | 1. Acessar Configurações > Dados do plano com API de dados retornando erro (503) | Skeleton exibido durante tentativa; componente de erro exibido após falha; botão de retry disponível | 🟢 Baixa | UI | — |
-| CT-PLANO-016 | Interface exibe textos corretos em inglês (EN) | Usuário autenticado como Gestor com idioma configurado para EN | 1. Acessar Configurações > Dados do plano com interface em inglês | Todos os textos exibidos em inglês conforme tabela de traduções: "Plan details", "Base plan", "Add-ons", "Total", "Upgrade my plan", "Manage add-ons", "Remove", etc. | 🟢 Baixa | UI | CT-PLANO-001 |
-| CT-PLANO-017 | Coluna "Adicionais" atualiza sem reload após remoção bem-sucedida | ⚠️ Bloqueável: account com adicional removível | 1. Anotar valor da coluna "Adicionais" de um recurso 2. Realizar remoção bem-sucedida (CT-PLANO-003) 3. Verificar coluna "Adicionais" sem recarregar a página | Valor da coluna "Adicionais" e "Total" atualizados imediatamente após remoção; sem reload de página | 🔴 Alta | UI | CT-PLANO-003 |
+|---|---|---|---|---|---|---|---|
+| CT-PLAN-001 | Tabela plano e adicionais carrega | Usuário logado como Gestor | 1. Navegar para Minha Empresa > Dados do Plano 2. Observar estado de carregamento 3. Aguardar tabela renderizar | Skeleton exibido durante fetch; tabela exibe linhas para WhatsApp, WABA, Facebook Messenger, Instagram, WebChat e Usuários com colunas "Plano base \| Adicionais \| Total"; ícones de canal com identidade visual correta por plataforma | 🔴 Alta | UI | — |
+| CT-PLAN-002 | Upgrade de plano abre WhatsApp em nova aba | Usuário Gestor; seção Plano e adicionais acessada | 1. Clicar em "Aumentar meu plano" 2. Selecionar um plano via radio button no modal 3. Clicar em "Solicitar upgrade" | Modal abre com radio buttons de planos disponíveis; "Solicitar upgrade" habilitado somente após seleção; nova aba abre com URL `https://wa.me/[número]?text=Olá!%20Gostaria%20de%20fazer%20upgrade%20para%20o%20[plano%20selecionado].` com mensagem pré-preenchida contendo o plano selecionado | 🔴 Alta | UI | CT-PLAN-001 |
+| CT-PLAN-003 | Remover adicional com sucesso | Usuário Gestor; conta possui adicional com canal inativo e usuários dentro do limite ⚠️ Bloqueável — verificar via "Gerenciar adicionais" | 1. Clicar em "Gerenciar adicionais" 2. Clicar em "Remover" no item desejado 3. Confirmar remoção inline (2 etapas) | Modal lista adicionais; após confirmação: listagem atualizada + banner verde "Adicional removido com sucesso!" + toast externo; log de auditoria gerado com {usuario_id, adicional_tipo, quantidade, data, conta_id} | 🔴 Alta | UI | CT-PLAN-001 |
+| CT-PLAN-004 | Adquirir canais redireciona sem modal | Usuário Gestor | 1. Clicar em "Adquirir canais" | Redirecionamento direto para `/channels` sem modal intermediário | 🟡 Média | UI | CT-PLAN-001 |
+| CT-PLAN-005 | Adquirir usuários redireciona sem modal | Usuário Gestor | 1. Clicar em "Adquirir usuários" | Redirecionamento direto para `/users` sem modal intermediário | 🟡 Média | UI | CT-PLAN-001 |
+| CT-PLAN-006 | Lista assinaturas ordenada desc com skeleton | Usuário Gestor; conta com ≥ 2 assinaturas em datas distintas ⚠️ Bloqueável — verificar existência de assinaturas no ambiente | 1. Navegar para Dados do Plano > Assinaturas 2. Verificar ordem das linhas e colunas | Skeleton exibido durante carregamento; lista ordenada por Data Solicitação decrescente (mais recente no topo); cada linha exibe: Serviço, Quantidade, Data, Valor Total, badge de Status e ícone olho | 🔴 Alta | UI | — |
+| CT-PLAN-007 | Modal Resumo da transação exibe dados corretos | Conta com ≥ 1 assinatura | 1. Clicar no ícone olho de uma assinatura na lista | Modal abre exibindo corretamente: Razão Social, E-mail cadastrado, Status, Vencimento e Valor Total correspondentes à linha selecionada; nenhum campo vazio ou incorreto | 🔴 Alta | UI | CT-PLAN-006 |
+| CT-PLAN-008 | Desativar recorrência com sucesso | Usuário Gestor; assinatura com status "Recorrente" ⚠️ Bloqueável — verificar existência de assinatura recorrente no ambiente | 1. Clicar no ícone olho da assinatura com status "Recorrente" 2. Clicar em "Desativar recorrência" 3. Clicar em "Confirmar" no modal de confirmação | POST executado em `/api/v1/subscriptions/:id/deactivate`; toast verde "Recorrência desativada com sucesso!" exibido; badge da linha na lista atualiza para "Recorrência desativada" sem reload de página; botão "Desativar recorrência" desaparece do modal; log registrado com {userId, subscriptionId, action: "deactivate_recurrence", timestamp} | 🔴 Alta | UI | CT-PLAN-006 |
+| CT-PLAN-009 | Adicionar assinatura com dados válidos | Usuário Gestor; pacotes disponíveis no sistema ⚠️ Bloqueável — verificar via GET /api/v1/subscriptions/packages | 1. Clicar em "Adicionar assinatura ⊕" 2. Selecionar pacote no dropdown 3. Informar quantidade ≥ 1 4. Verificar valor total calculado 5. Clicar em "Comprar" | Modal fecha; toast verde "Assinatura adicionada com sucesso!" exibido; lista de assinaturas recarregada com o novo item; novo item aparece no topo ordenado por data | 🔴 Alta | UI | CT-PLAN-006 |
+| CT-PLAN-010 | Baixar boleto inicia download com toast | Assinatura em status que exibe Opções de Pagamento (ex: Pagamento Pendente) | 1. Clicar no ícone olho da assinatura 2. Clicar em "Baixar boleto" | Download do PDF iniciado; toast "Download do boleto iniciado com sucesso!" exibido | 🟡 Média | UI | CT-PLAN-007 |
+| CT-PLAN-011 | Solicitar upgrade bloqueado sem seleção | Usuário Gestor | 1. Clicar em "Aumentar meu plano" 2. Não selecionar nenhum plano 3. Observar botão "Solicitar upgrade" | Botão "Solicitar upgrade" permanece desabilitado; nenhum redirecionamento ou requisição executada | 🔴 Alta | UI | CT-PLAN-001 |
+| CT-PLAN-012 | Remover adicional com canal ativo — bloqueado | Conta com adicional cujo canal está ativo | 1. Clicar em "Gerenciar adicionais" 2. Verificar botão "Remover" do canal ativo | Botão "Remover" desabilitado; aviso "Este canal está em uso e não pode ser removido agora." exibido; botões de adicionais elegíveis permanecem habilitados | 🔴 Alta | UI | CT-PLAN-001 |
+| CT-PLAN-013 | Remover adicional de usuários acima do limite — bloqueado | Conta com usuários ativos que excedem o limite resultante da remoção | 1. Clicar em "Gerenciar adicionais" 2. Verificar botão "Remover" do adicional de usuários | Botão "Remover" desabilitado; aviso de bloqueio exibido com motivo; nenhuma remoção executada | 🟡 Média | UI | CT-PLAN-001 |
+| CT-PLAN-014 | Voltar na confirmação de remoção sem executar | Modal "Gerenciar adicionais" na tela de confirmação inline | 1. Clicar em "Remover" em um item 2. Clicar em "Voltar" na confirmação inline | Tela retorna à listagem de adicionais sem executar remoção; item permanece na lista; nenhum toast ou banner exibido; nenhuma requisição de remoção disparada | 🟡 Média | UI | CT-PLAN-001 |
+| CT-PLAN-015 | Desativar recorrência — erro backend preserva status | Assinatura com status "Recorrente"; endpoint de desativação retorna erro | 1. Abrir modal da assinatura recorrente 2. Clicar em "Desativar recorrência" 3. Confirmar | Toast coral resolutivo exibido; badge da linha permanece "Recorrente" sem atualização; botão "Desativar recorrência" permanece visível no modal; status local não alterado; nenhum log de auditoria registrado | 🔴 Alta | UI | CT-PLAN-008 |
+| CT-PLAN-016 | Comprar assinatura sem pacote — validação | Modal "Adicionar assinatura" aberto | 1. Não selecionar pacote 2. Clicar em "Comprar" | Erro de validação no campo de pacote: "Selecione um pacote para continuar." Compra não executada; modal permanece aberto | 🟡 Média | UI | CT-PLAN-006 |
+| CT-PLAN-017 | Comprar assinatura com quantidade < 1 — validação | Modal "Adicionar assinatura" aberto; pacote selecionado | 1. Selecionar pacote 2. Informar quantidade 0 3. Clicar em "Comprar" | Erro de validação no campo Qtd: "A quantidade deve ser no mínimo 1." Compra não executada | 🟡 Média | UI | CT-PLAN-006 |
+| CT-PLAN-018 | Cancelar modal de adicionar assinatura sem ação | Modal "Adicionar assinatura" com campos preenchidos | 1. Selecionar pacote e quantidade 2. Clicar em "Cancelar" | Modal fecha sem executar compra; lista de assinaturas não recarregada; nenhuma cobrança registrada | 🟢 Baixa | UI | CT-PLAN-006 |
+| CT-PLAN-019 | Voltar na confirmação de desativação sem ação | Modal da assinatura recorrente com modal de confirmação visível | 1. Clicar em "Desativar recorrência" 2. Clicar em "Voltar" no modal de confirmação | Modal de confirmação fecha; modal de Resumo da transação permanece aberto; status da assinatura não alterado; botão "Desativar recorrência" permanece visível | 🟡 Média | UI | CT-PLAN-008 |
+| CT-PLAN-020 | Opções de Pagamento ausentes para "Pagamento Aprovado" | Conta com assinatura em status "Pagamento aprovado" | 1. Clicar no ícone olho da assinatura 2. Verificar seção "Opções de Pagamento" no modal | Seção "Opções de Pagamento" NÃO exibida; botões "Pagar via Cartão" e "Baixar boleto" ausentes | 🔴 Alta | UI | CT-PLAN-006 |
+| CT-PLAN-021 | Opções de Pagamento presentes para 4 status aplicáveis | Conta com assinaturas em: Pagamento Atrasado, Pagamento Pendente, Liberação Manual e Recorrente ⚠️ Bloqueável — verificar disponibilidade de cada status no ambiente | Para cada um dos 4 status: 1. Abrir modal da assinatura correspondente 2. Verificar seção "Opções de Pagamento" | Em todos os 4 casos: seção "Opções de Pagamento" exibida com botões "Pagar via Cartão" e "Baixar boleto" visíveis | 🔴 Alta | UI | CT-PLAN-006 |
+| CT-PLAN-022 | Botão desativação exclusivo para status Recorrente | Conta com assinaturas em múltiplos status: Aprovado, Pendente, Atrasado, Recorrência desativada e Recorrente | Para cada status diferente de "Recorrente": 1. Abrir modal 2. Verificar ausência do botão. Para status "Recorrente": 1. Abrir modal 2. Verificar presença do botão | Botão "Desativar recorrência" presente SOMENTE no modal da assinatura com status "Recorrente"; ausente em todos os outros status | 🔴 Alta | UI | CT-PLAN-006 |
+| CT-PLAN-023 | Badge e botão atualizam sem reload após desativação | Desativação bem-sucedida em progresso (CT-PLAN-008) | Após confirmar desativação, sem recarregar a página: 1. Verificar badge na linha da lista 2. Verificar botão no modal ainda aberto | Badge atualiza de "Recorrente" para "Recorrência desativada" (bg `#E9EAED`, texto `#636B7B`) na lista sem reload; botão "Desativar recorrência" desaparece do modal sem reload; atualização via estado local | 🔴 Alta | UI | CT-PLAN-008 |
+| CT-PLAN-024 | Estado vazio de assinaturas exibido | Conta sem assinaturas cadastradas | 1. Navegar para Dados do Plano > Assinaturas | Mensagem de estado vazio exibida: "Nenhum pacote contratado ainda. Adicione sua primeira assinatura."; botão "Adicionar assinatura ⊕" visível; sem erro de runtime | 🟡 Média | UI | — |
+| CT-PLAN-025 | Cálculo dinâmico do valor total no modal | Modal "Adicionar assinatura" aberto; ≥ 2 pacotes com preços distintos disponíveis | 1. Selecionar pacote A com quantidade 1 2. Alterar quantidade para 3 3. Alterar pacote para B | Valor Total atualiza automaticamente a cada mudança (pacote × quantidade) sem necessidade de submit; atualização ocorre em tempo real | 🟡 Média | UI | CT-PLAN-006 |
+| CT-PLAN-026 | Política de assinaturas exibida no modal | Modal "Adicionar assinatura" aberto | 1. Verificar área de política no modal | Texto exibido: "Créditos não utilizados não acumulam para o mês seguinte. Cancelamentos antes de 3 meses geram cobrança proporcional de R$ 0,89 por crédito." | 🟢 Baixa | UI | CT-PLAN-006 |
+| CT-PLAN-027 | Acesso restrito a Gestores | Usuário logado como Operador (sem perfil Gestor) | 1. Tentar navegar para Dados do Plano via UI 2. Tentar chamar GET /api/v1/subscriptions com token de Operador | UI: seção não acessível ou ações desabilitadas/ocultas para Operador; API: HTTP 403 Forbidden retornado para token sem permissão de Gestor | 🔴 Alta | UI | — |
+| CT-PLAN-028 | Log de auditoria registrado após remoção de adicional | Usuário Gestor; adicional removível; acesso ao sistema de logs | 1. Realizar remoção de adicional via UI (CT-PLAN-003) 2. Verificar log de auditoria no backend | Log gerado com todos os campos obrigatórios: {usuario_id, adicional_tipo, quantidade, data, conta_id}; nenhum campo ausente ou nulo | 🔴 Alta | API | CT-PLAN-003 |
+| CT-PLAN-029 | Log de auditoria registrado após desativação de recorrência | Assinatura com status "Recorrente"; acesso ao sistema de logs | 1. Realizar desativação de recorrência via UI (CT-PLAN-008) 2. Verificar log de auditoria no backend | Log gerado com todos os campos obrigatórios: {userId, subscriptionId, action: "deactivate_recurrence", timestamp}; nenhum campo ausente ou nulo | 🔴 Alta | API | CT-PLAN-008 |
 
 ---
 
-## BLOCO 4 — Gherkin (BDD)
+## BLOCO 4 — Cenários Gherkin (BDD)
 
-### Cenário 1 — CT-PLANO-003: Remoção bem-sucedida de adicional
+### CT-PLAN-008 — Desativar recorrência com sucesso
 
 ```gherkin
-# language: pt
-
-Funcionalidade: Gerenciar adicionais do plano
-  Como Gestor
-  Quero remover adicionais que não preciso mais
-  Para reduzir custos diretamente na plataforma
-
-  Contexto:
-    Dado que estou autenticado como Gestor
-    E acesso "Configurações > Dados do plano"
-    E a tabela de recursos é exibida com skeleton e depois com dados
-
-  Cenário: Remoção bem-sucedida de adicional elegível
-    Quando clico em "Gerenciar adicionais"
-    Então um modal é aberto com a listagem de adicionais
-    E cada adicional elegível exibe o botão "Remover" habilitado
-    Quando clico em "Remover" no adicional "WhatsApp adicional"
-    Então o modal exibe a tela de confirmação inline
-    E um breadcrumb é exibido indicando o passo atual
-    E o item selecionado está destacado com aviso de impacto
-    E o botão "Confirmar remoção" está visível
-    Quando clico em "Confirmar remoção"
-    Então a API de remoção é chamada com os dados corretos
-    E o modal retorna à listagem de adicionais atualizada
-    E um banner de sucesso "Adicional removido com sucesso!" é exibido no topo
-    E a coluna "Adicionais" da tabela principal é atualizada sem recarregar a página
-    E um log de auditoria é registrado com usuario_id, adicional_tipo, quantidade, data e conta_id
+Cenário: Gestor desativa recorrência de assinatura ativa
+  Dado que o usuário está logado como Gestor
+  E existe uma assinatura com status "Recorrente" na lista de assinaturas
+  Quando o usuário clica no ícone olho da assinatura recorrente
+  E clica em "Desativar recorrência" no modal de Resumo da transação
+  E clica em "Confirmar" no modal de confirmação
+  Então um toast verde "Recorrência desativada com sucesso!" é exibido
+  E o badge da linha na lista atualiza para "Recorrência desativada" sem reload de página
+  E o botão "Desativar recorrência" desaparece do modal
+  E um log de auditoria é registrado com userId, subscriptionId, action "deactivate_recurrence" e timestamp
 ```
 
-### Cenário 2 — CT-PLANO-004 / CT-PLANO-014: Controle de acesso — não-Gestor
+### CT-PLAN-015 — Falha na desativação preserva estado
 
 ```gherkin
-# language: pt
-
-Funcionalidade: Controle de acesso à seção Dados do Plano
-  Como plataforma
-  Quero garantir que apenas Gestores acessem Dados do Plano
-  Para proteger informações e ações críticas de plano
-
-  Cenário: Atendente não visualiza "Dados do plano" no menu
-    Dado que estou autenticado como Atendente (role agent)
-    Quando acesso o menu "Configurações"
-    Então o item "Dados do plano" não está visível no menu
-
-  Cenário: Atendente não consegue acessar a página via URL direta
-    Dado que estou autenticado como Atendente (role agent)
-    Quando acesso diretamente a URL de "Dados do plano"
-    Então sou redirecionado ou recebo tela de erro de permissão
-    E nenhuma informação de plano é exibida
-
-  Cenário: Atendente não consegue remover adicional via API
-    Dado que estou autenticado como Atendente (role agent)
-    Quando envio uma requisição de remoção de adicional diretamente pela API
-    Então a API retorna status 403 Forbidden
-    E nenhuma remoção é executada
-    E nenhum log de auditoria é registrado
+Cenário: Falha no backend ao desativar recorrência não altera estado local
+  Dado que o usuário está logado como Gestor
+  E existe uma assinatura com status "Recorrente"
+  E o endpoint POST /api/v1/subscriptions/:id/deactivate retornará erro
+  Quando o usuário confirma a desativação da recorrência
+  Então um toast coral resolutivo de erro é exibido
+  E o badge da linha permanece como "Recorrente" sem alteração
+  E o botão "Desativar recorrência" permanece visível no modal
+  E nenhum log de desativação é registrado
 ```
 
 ---
 
-## Validação por Agente Crítico Independente
-
-- Aprovados sem alteração: 12
-- Revisados: 3 (CT-PLANO-002, CT-PLANO-010, CT-PLANO-013)
-- Adicionados por cobertura insuficiente: 2 (CT-PLANO-016, CT-PLANO-017)
+**Resumo:** 29 cenários — 🔴 16 Alta | 🟡 10 Média | 🟢 3 Baixa

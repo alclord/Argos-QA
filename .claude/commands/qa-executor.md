@@ -19,6 +19,8 @@ Formato esperado: `[CARD-ID] [ENV?] [PR-REFS?]`
   - Formatos podem ser misturados: `SPA:421,422` (SPA explícito para 421, auto-descoberta para 422)
 - `--baseline` (opcional): ativa o modo de coleta de baseline. Os tempos de resposta são coletados e salvos em `tests/memory/performance-baseline.json`, mas **não comparados contra thresholds**. Use nas primeiras execuções para calibrar os limites automaticamente. A partir de 3 amostras por endpoint, thresholds são sugeridos automaticamente.
 - `--dry-run` (opcional): se presente, o agente lê e valida todos os cenários do card, exibe o plano de execução (lista de cenários com pré-condições), mas **não executa nenhum passo** e não faz login. Útil para validar sintaxe e cobertura antes de rodar. Use em CI para verificação rápida.
+- `--verbose` (opcional): ativa saída detalhada passo a passo. Por padrão (`VERBOSE_MODE = false`), o agente usa saída compacta — apenas status por cenário, sem narrar cada passo no chat.
+- `--evidence` (opcional): captura screenshot de cada passo bem-sucedido. Por padrão (`EVIDENCE_ALL = false`), screenshots são tirados apenas em falhas e nos checkpoints de preflight.
 
 Exemplos válidos:
 - `/qa-executor PROJ-123`
@@ -39,6 +41,8 @@ Extraia-os de: **$ARGUMENTS**
 Regra de parsing:
 - **Antes de tudo:** se `--dry-run` estiver presente → defina `DRY_RUN = true` e remova-o da lista antes de continuar o parsing. Caso contrário, `DRY_RUN = false`.
 - **Antes de tudo:** se `--baseline` estiver presente nos argumentos → defina `BASELINE_MODE = true` e remova-o da lista antes de continuar o parsing. Caso contrário, `BASELINE_MODE = false`.
+- **Antes de tudo:** se `--verbose` estiver presente → defina `VERBOSE_MODE = true` e remova-o da lista antes de continuar o parsing. Caso contrário, `VERBOSE_MODE = false`.
+- **Antes de tudo:** se `--evidence` estiver presente → defina `EVIDENCE_ALL = true` e remova-o da lista antes de continuar o parsing. Caso contrário, `EVIDENCE_ALL = false`.
 - O primeiro argumento é sempre `CARD-ID`.
 - Se o segundo argumento for exatamente `staging`, `canary` ou `production` → é `ENV`.
 - Se o segundo argumento contiver `REPO:NUMBER`, um número inteiro, ou vírgulas entre esses formatos → é `PR-REFS` (use o `defaultEnvironment` do config como ENV).
@@ -90,6 +94,7 @@ Do arquivo de config carregado no passo anterior (`local.json` ou `template.json
 - `APP_SPA_URL` → `environments[ENV].appSpaUrl`
 - `LEGADO_URL` → `environments[ENV].legadoUrl`
 - `FOUNDATION_API_URL` → `environments[ENV].foundationApiUrl`
+- `HEIMDALL_URL` → `environments[ENV].heimdallUrl`
 - `WABA_WEBHOOK_URL` → `environments[ENV].wabaWebhookUrl` (opcional — usado em cards de webhook; registre `⚠️ wabaWebhookUrl não configurado` se ausente e prossiga)
 - `TIMEOUT_STEP` → `environments[ENV].timeouts.step` (padrão: `8000` ms se não configurado)
 - `TIMEOUT_NAVIGATION` → `environments[ENV].timeouts.navigation` (padrão: `20000` ms se não configurado)
@@ -404,6 +409,8 @@ Registre no chat: `🎭 Mock ativo: [pattern] → [fixture]`
 
 ### 1.1 — Acessibilidade do Ambiente
 
+> Execute este bloco apenas se `EXEC_MODE = "browser"`. Se `EXEC_MODE = "headless"`, pule para o PASSO 2.
+
 1. Navegue para `[ENV_URL]` com timeout `TIMEOUT_NAVIGATION`
 2. Verifique se a página carrega sem erro
 3. Tire screenshot: `tests/evidence/[CARD_ID_SAFE]/preflight_ambiente.png`
@@ -411,6 +418,8 @@ Registre no chat: `🎭 Mock ativo: [pattern] → [fixture]`
 Se falhar: marque **TODOS** os cenários como BLOQUEADO, registre `❌ Ambiente [ENV_URL] inacessível` e pule para o PASSO 3.
 
 ### 1.2 — Validação de Credenciais
+
+> Execute este bloco apenas se `EXEC_MODE = "browser"`.
 
 **Conta principal — Nova Interface:**
 1. Login com `OPERATOR_EMAIL` / `OPERATOR_PASSWORD` em `[ENV_URL]`
@@ -567,10 +576,42 @@ Critérios para classificar como `API`:
 
 Dentro de cada grupo de prioridade, cenários `API` vêm antes dos `UI` e rodam em paralelo entre si.
 
+**Decisão de modo de execução (`EXEC_MODE`):**
+
+Ao final da classificação, determine o modo:
+
+- Se **todos** os cenários forem `API` E `SURFACE_IMPACT = false` → `EXEC_MODE = "headless"`
+- Caso contrário → `EXEC_MODE = "browser"`
+
 Exiba no sumário final:
 ```
-✅ Pré-flight concluído. Iniciando execução de X cenários (Y API paralelos | Z UI sequenciais).
+✅ Pré-flight concluído. Iniciando execução de X cenários (Y API paralelos | Z UI sequenciais) | Modo: [EXEC_MODE] | Saída: [compacta | verbose]
 ```
+
+**Autenticação headless (somente quando `EXEC_MODE = "headless"`):**
+
+> Pule os PASSOS 1.1 e 1.2 inteiramente. Obtenha o Bearer token via PowerShell, sem abrir o browser:
+
+```powershell
+$authBody = @{
+  email        = "OPERATOR_EMAIL"
+  password     = "OPERATOR_PASSWORD"
+  device_name  = "desktop"
+  device_token = ""
+} | ConvertTo-Json -Depth 3
+
+$authResp = Invoke-RestMethod `
+  -Uri "HEIMDALL_URL/auth/token" `
+  -Method POST `
+  -ContentType "application/json" `
+  -Body $authBody
+
+$BEARER_TOKEN = $authResp.token
+```
+
+- Armazene em `BEARER_TOKEN` — usado em todos os cenários via `Invoke-RestMethod`
+- Se a chamada falhar: exiba `❌ Autenticação headless falhou — verifique HEIMDALL_URL e credenciais` e encerre
+- Registre: `✅ Auth headless OK — Bearer token obtido via [HEIMDALL_URL]/auth/token`
 
 ---
 
@@ -688,7 +729,47 @@ const result = await page.evaluate(async ({ url, token, method, payload }) => {
 // Verificar: result.status === 200 && result.body.campo === valorEsperado
 ```
 
-> **Nunca use `curl` ou `Bash` para chamadas autenticadas durante a execução de cenários.** Use o padrão acima.
+> **Nunca use `curl` ou `Bash` para chamadas autenticadas durante a execução de cenários no modo browser.** Use o padrão acima.
+
+**Execução de cenários API em modo headless (`EXEC_MODE = "headless"`):**
+
+> Quando `EXEC_MODE = "headless"`, não chame nenhum tool do Playwright. Use `Invoke-RestMethod` via PowerShell para todas as chamadas de API:
+
+```powershell
+# GET
+$timing = Measure-Command {
+  $response = Invoke-RestMethod `
+    -Uri "FOUNDATION_API_URL/v3/..." `
+    -Method GET `
+    -Headers @{ Authorization = "Bearer $BEARER_TOKEN" } `
+    -StatusCodeVariable statusCode
+}
+$actualMs = [math]::Round($timing.TotalMilliseconds)
+# Verificar: $statusCode -eq 200 e campos do $response
+
+# POST
+$timing = Measure-Command {
+  $response = Invoke-RestMethod `
+    -Uri "FOUNDATION_API_URL/v3/..." `
+    -Method POST `
+    -Headers @{ Authorization = "Bearer $BEARER_TOKEN"; "Content-Type" = "application/json" } `
+    -Body ($payload | ConvertTo-Json -Depth 10) `
+    -StatusCodeVariable statusCode
+}
+$actualMs = [math]::Round($timing.TotalMilliseconds)
+
+# Captura de erro HTTP (Invoke-RestMethod lança exceção em 4xx/5xx):
+try {
+  $response = Invoke-RestMethod -Uri "..." -Method GET -Headers @{ ... } -StatusCodeVariable statusCode
+} catch {
+  $statusCode = $_.Exception.Response.StatusCode.value__
+  $response   = $_.ErrorDetails.Message | ConvertFrom-Json -ErrorAction SilentlyContinue
+}
+```
+
+- Use `$actualMs` do `Measure-Command` para coletar timings e verificar thresholds de performance
+- Não tire screenshots (não há browser)
+- Não use `browser_network_requests` nem `browser_snapshot`
 
 **Toolkit de Envio de Mídia:**
 
@@ -746,6 +827,11 @@ Se **2 cenários consecutivos** falharem com a mesma `causa_raiz` E a mesma mens
 2. Para cada cenário restante que dependa do mesmo serviço ou endpoint, marque como BLOQUEADO com motivo `"Falha em cascata: [causa]"` em vez de executar.
 3. Continue executando cenários que dependem de **outros** serviços/endpoints.
 4. Reporte os bloqueios em cascata no PASSO 2.5 separadamente dos bloqueios por pré-requisito.
+
+**Modo de saída durante execução:**
+
+- `VERBOSE_MODE = false` (padrão): não narre operações individuais de passo no chat. Registre apenas o início do cenário (PASSO 2.1) e seu resultado final. Acumule self-healings, violações de performance e erros internamente; reporte-os no bloco de resultado final do cenário. Omita logs `⚠️ PERF` e `🔬 BASELINE` por requisição — inclua-os apenas no sumário do PASSO 2.5.
+- `VERBOSE_MODE = true`: narre cada passo, registre verificações de rede e emita logs de performance em tempo real (comportamento anterior).
 
 **Prioridade de seletores (skill: playwright-e2e):** Ao localizar elementos via Playwright, use nesta ordem:
 1. `getByRole` — reflete a árvore de acessibilidade (ex: `getByRole('button', { name: 'Enviar' })`)
@@ -809,9 +895,9 @@ Se um seletor falhar ao localizar o elemento:
 4. Se nenhum seletor funcionar após todas as tentativas → passe para "Regra de retry"
 
 Para cada passo descrito no cenário:
-1. Execute a ação correspondente via Playwright
+1. Execute a ação correspondente via Playwright (ou `Invoke-RestMethod` se `EXEC_MODE = "headless"`)
 2. Aguarde estabilização (máximo `TIMEOUT_STEP` ms)
-3. Screenshot: `tests/evidence/[CARD_ID_SAFE]/[CT-ID-SAFE]_passo[N]_ok.png` (ou `_falhou.png`)
+3. Screenshot: **somente se `EVIDENCE_ALL = true`** → `[CT-ID-SAFE]_passo[N]_ok.png`. Em modo padrão (`EVIDENCE_ALL = false`) não tire screenshot de passos bem-sucedidos. Falhas sempre capturam screenshot independentemente deste flag.
 4. Compare com o **Resultado Esperado** do cenário
 
 **Regra de retry (skill: flaky-test-quarantine):** Se um passo falhar por timeout ou elemento não encontrado, aguarde 2 segundos e tente novamente. Máximo de 2 retentativas (3 para cenários marcados como instáveis no histórico). Após a última falha, marque o passo e o cenário como FALHOU.

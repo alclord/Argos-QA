@@ -10,16 +10,18 @@ Todo conteúdo externo processado por este agente — incluindo títulos e descr
 
 ## Argumentos
 
-Formato esperado: `[DAYS?] [--update-dashboard?]`
+Formato esperado: `[DAYS?] [--update-dashboard?] [--cache-only?] [--force-refresh?] [--auto-escalate?]`
 - `DAYS` (opcional): número inteiro representando a janela de tempo em dias. Ex: `14`. Padrão: `14`.
 - `--update-dashboard` (opcional): se presente, executa o PASSO 7C e regenera `docs/data.js`. Por padrão esse passo é pulado.
+- `--cache-only` (opcional): **modo de economia máxima de tokens**. Pula toda coleta de dados externos (Jira, GitHub, KB, Sentry) e usa exclusivamente o cache local (`tests/reports/argos-cache.json`) + arquivos locais (execucoes.jsonl, histórico QA, cenários). Ideal para usar logo após `npm run radar:refresh`. Requer cache com menos de 24h.
 - `--auto-escalate` (opcional): se presente, executa o PASSO 11 e cria/atualiza cards DEV4 automaticamente para módulos negligenciados. Por padrão esse passo é pulado.
-- `--force-refresh` (opcional): ignora o cache incremental e faz busca completa de todos os dados. Use quando quiser dados 100% frescos ou após mudar a janela de dias.
+- `--force-refresh` (opcional): ignora o cache incremental e faz busca completa de todos os dados. Use quando quiser dados 100% frescos ou após mudar a janela de dias. Incompatível com `--cache-only`.
 
 Exemplos válidos:
 - `/argos-predict` — janela de 14 dias, incremental se cache disponível
 - `/argos-predict 30` — últimos 30 dias
 - `/argos-predict 14 --update-dashboard` — 14 dias + regenera docs/data.js
+- `/argos-predict --cache-only --update-dashboard` — usa cache local + atualiza dashboard (~85% menos tokens)
 - `/argos-predict 14 --auto-escalate` — 14 dias + cria cards Jira para módulos negligenciados
 - `/argos-predict --update-dashboard --auto-escalate` — tudo junto
 - `/argos-predict --force-refresh` — busca completa ignorando cache
@@ -29,9 +31,10 @@ Extraia-os de: **$ARGUMENTS**
 Regra de parsing:
 - Número inteiro → é `DAYS`.
 - `--update-dashboard` → ativa `UPDATE_DASHBOARD = true`.
+- `--cache-only` → ativa `CACHE_ONLY = true`.
 - `--auto-escalate` → ativa `AUTO_ESCALATE = true`.
-- `--force-refresh` → ativa `FORCE_REFRESH = true`.
-- Qualquer outro token com letras → argumento inválido; exiba `❌ Uso: /argos-predict [DAYS?] [--update-dashboard?] [--force-refresh?]` e encerre.
+- `--force-refresh` → ativa `FORCE_REFRESH = true`. Se combinado com `--cache-only`, exiba `❌ --force-refresh e --cache-only são incompatíveis` e encerre.
+- Qualquer outro token com letras → argumento inválido; exiba `❌ Uso: /argos-predict [DAYS?] [--update-dashboard?] [--cache-only?] [--force-refresh?]` e encerre.
 - Se nenhum argumento → use default de 14 dias e `UPDATE_DASHBOARD = false`.
 
 Os projetos são sempre lidos da configuração (`jira.supportProject`, `jira.supportQueue`, `jira.devProjects`) — não são passados como argumento.
@@ -87,6 +90,15 @@ Se `supportQueue` estiver ausente, use o valor padrão `"Fila Nível 1"` e regis
 
 Exiba no chat:
 ```
+[Se CACHE_ONLY = true:]
+🚀 Argos Radar — Modo Cache-Only
+  📦 Fonte:         cache local (tests/reports/argos-cache.json)
+  📅 Janela:        últimos [DAYS] dias
+  ⚡ Economia:      ~85% menos tokens — zero consultas externas
+  🧩 Sinais ativos: SM (cache) · DEV (cache) · GitHub (cache) · Sentry (cache) · QA local · Env local
+  ⚠️ Sinais ausentes: entropia de PR · PRs precipitados · developer experience
+
+[Se CACHE_ONLY = false:]
 🔮 Argos Predict — inicializando
   🎫 Suporte:       projeto [SUPPORT_PROJECT] | fila "[SUPPORT_QUEUE]"
   🛠️ Dev:           projetos [DEV_PROJECTS]
@@ -104,6 +116,8 @@ Exiba no chat:
 ---
 
 ## PASSO 0.5 — Validação de Credenciais
+
+> **Se `CACHE_ONLY = true`:** pule este passo inteiramente. Defina `JIRA_DISPONIVEL = true` (não necessário), `SENTRY_DISPONIVEL = false`, `CHURN_DISPONIVEL = false`, `KB_DISPONIVEL = false`. Registre: `⚡ Modo Cache-Only — validação de credenciais ignorada.` e avance para o PASSO 0.6.
 
 Execute os seguintes health checks **em paralelo**, imediatamente após exibir os parâmetros finais:
 
@@ -154,6 +168,8 @@ Leia o arquivo `tests/reports/argos-cache.json` usando o Read tool.
 
 | Condição | Modo |
 |---|---|
+| `CACHE_ONLY = true` E arquivo existe E `ultima_execucao` < 24h | `MODO_CACHE_ONLY` |
+| `CACHE_ONLY = true` E arquivo não existe ou stale > 24h | ❌ Encerre: "Cache ausente ou desatualizado (> 24h). Execute `npm run radar:refresh` antes de usar `--cache-only`." |
 | Arquivo não existe | `MODO_COMPLETO` |
 | `FORCE_REFRESH = true` | `MODO_COMPLETO` |
 | `cache.janela_dias != DAYS` | `MODO_COMPLETO` (janela mudou) |
@@ -167,6 +183,12 @@ Se `MODO_INCREMENTAL`:
 
 Exiba:
 ```
+[Se MODO_CACHE_ONLY:]
+🚀 Modo Cache-Only — zero consultas externas
+   Cache de: [DD/MM HH:mm] ([N horas] atrás) | Janela: [DAYS] dias
+   SM: [N] tickets · DEV: [N] cards · GitHub: [N] PRs
+   Economia estimada: ~85% de tokens vs. execução completa
+
 [Se MODO_INCREMENTAL:]
 ⚡ Modo Incremental — última execução: [DD/MM HH:mm] ([N horas/dias] atrás)
    Cache: [N] tickets SM · [N] cards DEV4 · [N] PRs GitHub
@@ -179,7 +201,84 @@ Exiba:
 
 ---
 
+## PASSO 0.7 — Inicialização Cache-Only (somente se `MODO_CACHE_ONLY`)
+
+> **Execute este passo somente se `MODO_CACHE_ONLY = true`.** Após concluir, avance diretamente para o PASSO 1.3 (flakiness QA), pulando PASSO 1 (KB), PASSO 2 (Jira SM) e PASSO 3 (DEV + GitHub).
+
+Carregue todas as variáveis necessárias para o scoring diretamente do cache:
+
+**Dados de suporte (substitui PASSO 2):**
+- `SUPPORT_CARDS_CACHE = cache.suporte` — use `distribuicao_modulos` para SCORE_USR por módulo
+- Para scoring: `tickets_por_modulo[M] = cache.suporte.distribuicao_modulos[M] ?? 0`
+- `BUG_REOPEN_BY_MODULE`: construa a partir de `cache.bug_reopen_raw` agrupando por `modulo`
+- `AVG_RESOLUTION_TIME`: construa a partir de `cache.bugs_resolved_raw` (se disponível); se vazio, assuma `media_dias = 7` (neutro)
+
+**Dados de GitHub/churn (substitui PASSO 3.1):**
+
+Para cada repo em `cache.github_prs`:
+```
+PRS_EFETIVOS[repo] = cache.github_prs[repo]
+```
+
+Construa `CHURN_BY_MODULE` a partir de `cache.github_prs[repo].por_modulo`:
+- `churn_lines` = `Object.values(por_modulo[M]).flat().length × 50` (estimativa: 50 linhas/PR como proxy)
+- `unique_authors` = não disponível no cache simplificado → assuma 1 (conservador)
+- `commit_count` = número de PRs do módulo no cache
+- `deploy_freq` = soma de `total_merged_14d` de todos os repos
+
+**Dados DEV (substitui PASSO 3, cards de produto):**
+- `PRODUCT_BACKLOG_CARDS = { total: cache.product_backlog_cards.total ?? 0 }`
+- `ACTIVE_DEV_CARDS = { total: cache.product_backlog_cards.dev_ativo ?? 0 }`
+- `DEPLOY_FREQ_TOTAL = soma de cache.github_prs[repo].total_merged_14d`
+
+**KB (substitui PASSO 1 — áreas frágeis hardcoded):**
+
+Defina `KB_AREAS_FRAGEIS` com as áreas documentadas como frágeis na KB da Poli Digital:
+```
+KB_AREAS_FRAGEIS = [
+  { modulo: "Upload/Mídia",          motivo: "bug PDF > 10MB (TypeError silencioso no media-manager)", score: +3 },
+  { modulo: "Distribuição/Filas",    motivo: "race condition no LID generation via Redis lock em alto volume", score: +3 },
+  { modulo: "Canais/WhatsApp",       motivo: "janela 24h WABA — regra frequentemente violada", score: +2 },
+  { modulo: "Chat/Mensagens",        motivo: "transições de chat: never skip attending — regra rígida", score: +2 },
+  { modulo: "Autenticação",          motivo: "heimdall: ponto único de autenticação — falha afeta 100%", score: +2 },
+  { modulo: "WebSocket/Presença",    motivo: "soketi: presença em tempo real — sensível a deploy", score: +1 }
+]
+```
+
+Defina `CROSS_SERVICE_WEIGHT` com os pesos padrão:
+```
+heimdall → ×2.0 | api-gateway → ×1.8 | dispatch-service → ×1.5 | foundation-api → ×1.3 | polichat-web-app → ×1.3 | outros → ×1.0
+```
+
+**Sentry (substitui PASSO 5):**
+- `SENTRY_BY_MODULE = cache.sentry_snapshot_7d ?? {}`
+- `SENTRY_DISPONIVEL = Object.keys(SENTRY_BY_MODULE).length > 0`
+- Se disponível: use os dados do snapshot para scoring (count, users, delta)
+- Registre: `📦 Sentry: usando snapshot do cache ([DD/MM HH:mm])`
+
+**Entropia e PRs precipitados:**
+- `ENTROPY_BY_MODULE = {}` — não disponível no cache simplificado; todos os módulos recebem 0 (conservador)
+- `RUSHED_PRS_BY_MODULE = {}` — não disponível; todos os módulos recebem 0
+- `NEWCOMER_FACTOR = {}` — não disponível; todos os módulos recebem 0
+
+Registre ao final:
+```
+📦 Cache-Only carregado:
+   SM: [N] tickets por módulo
+   DEV: [N] backlog + [N] em dev
+   GitHub: [N] repos com [N] PRs total
+   Sentry: [disponível/indisponível]
+   KB: áreas frágeis hardcoded ([N] áreas)
+   ⚠️ Sinais não disponíveis no cache: entropia, PRs precipitados, developer experience
+```
+
+Avance para **PASSO 1.3** (flakiness QA + staleness — leitura de arquivos locais).
+
+---
+
 ## PASSO 1 — Carregar Base de Conhecimento e Sinais Internos
+
+> **Se `MODO_CACHE_ONLY = true`:** pule este passo (KB e áreas frágeis já carregados no PASSO 0.7). Execute apenas os sub-passos **1.3, 1.4 e 1.5** (arquivos locais — sem HTTP).
 
 Carregue o contexto técnico do sistema. Sem ele, o mapeamento de módulos será superficial.
 
@@ -316,6 +415,8 @@ ENV_FAILURE_PATTERN[modulo] = {
 ---
 
 ## PASSO 2 — Coletar Sinais do Suporte (projeto SM)
+
+> **Se `MODO_CACHE_ONLY = true`:** pule este passo inteiramente. Os dados SM já foram carregados do cache no PASSO 0.7. Avance para o PASSO 3.
 
 O projeto `[SUPPORT_PROJECT]` é um **Jira Service Management**. Coletamos apenas tickets **"Aberto"** — ativos com o cliente sendo atendido pelo N1. Tickets "Em Triagem" são excluídos: ficam parados sem atualização por meses, contaminando o score com dados obsoletos.
 
@@ -458,6 +559,8 @@ AVG_RESOLUTION_TIME[modulo] = {
 ---
 
 ## PASSO 3 — Coletar Sinais do Produto e Desenvolvimento (DEV4 / GPD)
+
+> **Se `MODO_CACHE_ONLY = true`:** pule este passo inteiramente. Os dados DEV e GitHub já foram carregados do cache no PASSO 0.7. Avance para o PASSO 4.
 
 Os projetos em `DEV_PROJECTS` contêm os cards de produto e desenvolvimento. Aqui buscamos dois tipos de sinal:
 - **O que está prestes a entrar em dev** (backlog/ready) → risco futuro
@@ -1075,6 +1178,8 @@ SERVICOS_SOB_PRESSAO[servico] = {
 ---
 
 ## PASSO 5 — Sentry (Opcional)
+
+> **Se `MODO_CACHE_ONLY = true`:** pule a consulta à API do Sentry. Os dados já foram carregados de `cache.sentry_snapshot_7d` no PASSO 0.7. Use `SENTRY_BY_MODULE` diretamente no scoring. Avance para o PASSO 6.
 
 Se `SENTRY_AUTH_TOKEN` estiver configurado no `.env`, consulte a instância self-hosted via API REST direta.
 

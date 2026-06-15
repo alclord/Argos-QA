@@ -2,10 +2,14 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "cy:run:chat": "cypress run --spec cypress/e2e/chat/envio-mensagem.cy.js"
+    "cy:run:chat": "cypress run --spec cypress/e2e/chat/envio-mensagem.cy.js",
+    "gen": "node scripts/generate-scenarios.js",
+    "radar:refresh": "node scripts/refresh-radar.mjs",
+    "radar:refresh:30": "node scripts/refresh-radar.mjs 30"
   },
   "dependencies": {
-    "@anthropic-ai/claude-code": "^2.1.144"
+    "@anthropic-ai/claude-code": "^2.1.144",
+    "@anthropic-ai/sdk": "^0.36.3"
   },
   "devDependencies": {
     "cypress": "^13.17.0",

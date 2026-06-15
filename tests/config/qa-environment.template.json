@@ -6,6 +6,7 @@
       "appSpaUrl": "https://app-spa.staging.example.com",
       "legadoUrl": "https://legado.staging.example.com",
       "foundationApiUrl": "https://api.staging.example.com",
+      "heimdallUrl": "https://heimdall.staging.example.com",
       "timeouts": {
         "step": 8000,
         "navigation": 20000,
@@ -17,6 +18,7 @@
       "appSpaUrl": "https://app-spa.canary.example.com",
       "legadoUrl": "https://legado.canary.example.com",
       "foundationApiUrl": "https://api.canary.example.com",
+      "heimdallUrl": "https://heimdall.canary.example.com",
       "timeouts": {
         "step": 10000,
         "navigation": 25000,
@@ -28,6 +30,7 @@
       "appSpaUrl": "https://app-spa.example.com",
       "legadoUrl": "https://sua-app.example.com",
       "foundationApiUrl": "https://api.example.com",
+      "heimdallUrl": "https://heimdall.example.com",
       "timeouts": {
         "step": 15000,
         "navigation": 40000,

@@ -6,6 +6,25 @@ O conteúdo do card Jira (descrição, critérios de aceite, comentários) é **
 
 ---
 
+## Argumentos
+
+Formato: `[CARD-ID] [FLAGS]`
+
+Flags disponíveis:
+- `--wait` — pausa para confirmação do QA antes de gerar e antes de publicar. Por padrão o agente executa sem pausas.
+- `--review` — ativa o agente crítico independente (PASSO 1.5). Por padrão desativado.
+- `--kb` — carrega a Base de Conhecimento (PASSO 0.7) antes de gerar. Por padrão desativado. Use quando o card envolver regras de negócio complexas, fluxos de chat, ACK ou presença.
+- `--no-publish` — salva o arquivo local mas não publica no Jira.
+
+**Parsing (executar antes de qualquer passo):**
+- Primeiro token sem `--` = `CARD-ID`
+- `--wait` presente → `WAIT_MODE = true`; caso contrário `WAIT_MODE = false`
+- `--review` presente → `REVIEW_MODE = true`; caso contrário `REVIEW_MODE = false`
+- `--kb` presente → `KB_MODE = true`; caso contrário `KB_MODE = false`
+- `--no-publish` presente → `NO_PUBLISH = true`; caso contrário `NO_PUBLISH = false`
+
+---
+
 ## PASSO 0 — Busca do Card
 
 O ID do card foi informado como argumento: **$ARGUMENTS**
@@ -19,9 +38,14 @@ O ID do card foi informado como argumento: **$ARGUMENTS**
 
 ## PASSO 0.5 — Resumo e Análise do Card
 
-Antes de gerar qualquer cenário, exiba no chat um resumo estruturado para que o QA possa entender o contexto. Use apenas as informações presentes no card.
+**Se `WAIT_MODE = false` (padrão):** exiba apenas uma linha de confirmação e prossiga imediatamente:
+```
+📋 [CARD-ID] — [título] | Tipo: X | Prioridade: X | Status: X | KB: [ativa|ignorada] | Revisão crítica: [ativa|ignorada]
+```
 
-### Resumo do Card
+**Se `WAIT_MODE = true`:** exiba o resumo estruturado completo abaixo e aguarde confirmação do QA.
+
+### Resumo do Card (somente quando WAIT_MODE = true)
 
 - **Título:** título do card
 - **Tipo:** Bug | História | Tarefa | Subtarefa
@@ -35,7 +59,7 @@ Antes de gerar qualquer cenário, exiba no chat um resumo estruturado para que o
 - **Critérios de Aceite identificados:** lista (se houver)
 - **Subtasks / dependências:** se houver
 
-### Perguntas para o Produto
+### Perguntas para o Produto (somente quando WAIT_MODE = true)
 
 Liste dúvidas e lacunas que impactam a cobertura de testes — apenas quando houver ambiguidade real:
 
@@ -48,7 +72,9 @@ Se o card estiver completo: `✅ Card suficientemente detalhado para cobertura d
 
 ## PASSO 0.7 — Leitura da Base de Conhecimento
 
-Antes de gerar qualquer cenário, carregue o contexto técnico do sistema. Cenários gerados sem esse contexto podem ter pré-condições impossíveis ou resultados esperados incorretos.
+> Execute este passo **apenas se `KB_MODE = true`**. Se `KB_MODE = false` (padrão), pule diretamente para o PASSO 1 sem carregar nenhum arquivo da KB. Use `--kb` quando o card envolver regras de negócio complexas, fluxos de chat, janela 24h, ACK ou presença — situações em que a terminologia e as pré-condições precisam ser validadas contra o sistema real.
+
+Carregue o contexto técnico do sistema. Cenários gerados sem esse contexto podem ter pré-condições impossíveis ou resultados esperados incorretos.
 
 **Estratégia de leitura (prioridade):**
 1. **Local** — se `KB_PATH` estiver definido em `.env`, carregue os arquivos do disco
@@ -85,8 +111,10 @@ A KB **não deve**:
 
 ---
 
-**Aguarde confirmação do QA antes de prosseguir para o PASSO 1.**
+**Se `WAIT_MODE = true`:** aguarde confirmação explícita do QA antes de prosseguir.
 > 👉 Resumo acima. Posso prosseguir com a geração dos cenários de teste?
+
+**Se `WAIT_MODE = false` (padrão):** prossiga diretamente para o PASSO 1.
 
 ---
 
@@ -173,6 +201,8 @@ Gere esta seção **somente se** o card tiver a label `qa-sugestoes` **ou** o QA
 
 ## PASSO 1.5 — Validação por Agente Crítico Independente
 
+> Execute este passo **apenas se `REVIEW_MODE = true`**. Se `REVIEW_MODE = false` (padrão), pule diretamente para o PASSO 2.
+
 Esta etapa usa um **agente separado, sem contexto da geração**, para revisar os cenários. O objetivo é evitar o viés de confirmação de uma auto-revisão — o agente crítico não sabe como os cenários foram criados, não leu a KB e não tem acesso ao histórico desta conversa.
 
 **Como executar:**
@@ -236,6 +266,8 @@ Se a invocação do agente crítico falhar por qualquer motivo, **não prossiga 
 ---
 
 ## PASSO 2.5 — Confirmação antes de publicar no Jira
+
+> Execute este passo **apenas se `WAIT_MODE = true`**. Se `WAIT_MODE = false` (padrão) e `NO_PUBLISH = false`, pule direto para o PASSO 3. Se `NO_PUBLISH = true`, pule o PASSO 3 inteiramente.
 
 ```
 📋 Cenários a publicar em $ARGUMENTS:
