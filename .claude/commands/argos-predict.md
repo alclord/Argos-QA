@@ -181,13 +181,19 @@ Se `MODO_INCREMENTAL`:
 - `ULTIMA_EXECUCAO_ISO = cache.ultima_execucao` (usado nas JQL queries)
 - Carregue do cache: `SUPPORT_CARDS_CACHE`, `PRODUCT_BACKLOG_CACHE`, `ACTIVE_DEV_CACHE`, `PRS_CACHE`
 
+Se `MODO_CACHE_ONLY`: calcule também o flag **`SM_STALE`**:
+- `sm_ultima = cache.sm_ultima_atualizacao ?? cache.ultima_execucao`
+- `SM_STALE = (agora - sm_ultima) > 24h`
+- Se `SM_STALE = true`: registre internamente — o PASSO 0.7 fará mini-refresh do SM.
+
 Exiba:
 ```
 [Se MODO_CACHE_ONLY:]
 🚀 Modo Cache-Only — zero consultas externas
    Cache de: [DD/MM HH:mm] ([N horas] atrás) | Janela: [DAYS] dias
    SM: [N] tickets · DEV: [N] cards · GitHub: [N] PRs
-   Economia estimada: ~85% de tokens vs. execução completa
+   [Se SM_STALE:] ⚠️ SM desatualizado ([N horas/dias] desde último refresh) — mini-refresh em PASSO 0.7
+   Economia estimada: ~[70-85]% de tokens vs. execução completa
 
 [Se MODO_INCREMENTAL:]
 ⚡ Modo Incremental — última execução: [DD/MM HH:mm] ([N horas/dias] atrás)
@@ -212,6 +218,38 @@ Carregue todas as variáveis necessárias para o scoring diretamente do cache:
 - Para scoring: `tickets_por_modulo[M] = cache.suporte.distribuicao_modulos[M] ?? 0`
 - `BUG_REOPEN_BY_MODULE`: construa a partir de `cache.bug_reopen_raw` agrupando por `modulo`
 - `AVG_RESOLUTION_TIME`: construa a partir de `cache.bugs_resolved_raw` (se disponível); se vazio, assuma `media_dias = 7` (neutro)
+
+### PASSO 0.7.1 — Mini-Refresh SM (somente se `SM_STALE = true`)
+
+> **Execute somente se `SM_STALE = true`** (detectado no PASSO 0.6). Caso contrário, pule para "Dados de GitHub/churn".
+
+O SM tem alto volume diário (~100 tickets/dia) e os dados do dashboard ficam obsoletos rapidamente. Quando o cache SM tem mais de 24h, faça um refresh incremental antes de continuar.
+
+**Busque o delta de tickets SM** via `mcp__claude_ai_Atlassian__searchJiraIssuesUsingJql`:
+
+```
+project = "[SUPPORT_PROJECT]"
+AND statusCategory = "new"
+AND updated >= "[sm_ultima]"
+ORDER BY updated DESC
+```
+
+Use `maxResults: 200`. Pagine até o fim (`isLast = true`).
+
+**Reconcilie com `SUPPORT_CARDS_CACHE`** (mesma lógica do PASSO 2 MODO_INCREMENTAL):
+- `statusCategory = "new"` E `created >= -[DAYS]d` → adicione ou atualize no cache
+- `statusCategory != "new"` (fechado/resolvido) → remova do cache se presente
+- `statusCategory = "new"` MAS `created < -[DAYS]d` → ignore (fora da janela)
+
+Atualize `tickets_por_modulo[M]` a partir do `SUPPORT_CARDS_CACHE` reconciliado.
+
+Registre:
+```
+🔄 SM mini-refresh: +[N] novos · [N] fechados removidos · [N] atualizados
+   Último ticket: SM-XXXX ([DD/MM]) → SM atualizado até agora
+```
+
+Defina `sm_ultima_atualizacao_nova = agora` (usado no PASSO 7 para salvar no cache).
 
 **Dados de GitHub/churn (substitui PASSO 3.1):**
 
@@ -264,7 +302,7 @@ heimdall → ×2.0 | api-gateway → ×1.8 | dispatch-service → ×1.5 | founda
 Registre ao final:
 ```
 📦 Cache-Only carregado:
-   SM: [N] tickets por módulo
+   SM: [N] tickets por módulo [Se SM_STALE foi true: "(atualizado agora — era [N]h stale)"]
    DEV: [N] backlog + [N] em dev
    GitHub: [N] repos com [N] PRs total
    Sentry: [disponível/indisponível]
@@ -1508,6 +1546,7 @@ Salve `tests/reports/history/scores-[YYYY-MM-DD].json`:
 ```json
 {
   "ultima_execucao": "[DATA_HORA_ISO — ex: 2026-06-11T14:30:00-03:00]",
+  "sm_ultima_atualizacao": "[DATA_HORA_ISO — mesmo valor de ultima_execucao em MODO_COMPLETO/INCREMENTAL; ou sm_ultima_atualizacao_nova se SM_STALE foi true em MODO_CACHE_ONLY; ou preserva o valor anterior se SM não foi atualizado]",
   "janela_dias": [DAYS],
   "support_cards": [ /* SUPPORT_CARDS[] completo — todos os campos coletados */ ],
   "product_backlog_cards": [ /* PRODUCT_BACKLOG_CARDS[] completo */ ],
