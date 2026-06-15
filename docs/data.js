@@ -1,98 +1,100 @@
 // ============================================================
 //  ARGOS PREDICT — DATA FILE
 //  Atualizado semanalmente pelo comando /argos-predict
-//  Última geração: 2026-06-15
-//  Fontes: Jira Suporte (~1.583 N1 estimados · cache 15/06) · DEV4 (22 backlog + 20 em dev)
-//          Sentry (snapshot 11/06) · GitHub (SPA: 20 PRs · FoundationAPI: 7 PRs)
-//  Modo: cache-only (refresh 15/06 13:03) · PASSO 4.1.5 anti-misclassificação ativo
+//  Última geração: 2026-06-15 (janela 7 dias)
+//  Fontes: Jira Suporte (~841 tickets 7d · cache 15/06 19:16) · DEV4 (14 backlog + 18 em dev)
+//          Sentry (snapshot 15/06 19:17) · GitHub (SPA: 13 PRs · FoundationAPI: 4 PRs)
+//  Modo: cache-only (refresh 15/06 19:16) · janela 7d · PASSO 4.1.5 anti-misclassificação ativo
 // ============================================================
 const REPORT = {
   meta: {
     geradoEm: "15 de Junho de 2026",
-    geradoEmISO: "2026-06-15T15:30:00-03:00",
-    janela: "14 dias",
-    resumo: "1 módulo CRÍTICO · 2 ALTO · 4 MÉDIO · Chat/Mensagens 100pts · Autenticação 40pts (+9 vs 11/06) · 1.583 tickets SM · 20 cards em dev ativo (era 0!) · Sentry snapshot 11/06",
-    fontes: "Jira Suporte (~1.583 N1 estimados · cache 15/06) · DEV4 (22 backlog + 20 em dev) · Sentry (snapshot 11/06) · GitHub (SPA:20 PRs · FA:7 PRs)",
+    geradoEmISO: "2026-06-15T19:30:00-03:00",
+    janela: "7 dias",
+    resumo: "1 CRÍTICO · 1 ALTO · 1 MÉDIO · 3 ATENÇÃO · 3 ESTÁVEL · Chat 95pts (lifecycle resolvido · QueryException 3024 como risco real) · Canais 53pts · Chatbot 28pts (caiu de MÉDIO) · ~841 tickets SM (7d) · Sentry investigado 15/06",
+    fontes: "Jira Suporte (~841 tickets 7d · cache 15/06 19:16) · DEV4 (14 backlog + 18 em dev) · Sentry (snapshot 15/06) · GitHub (SPA:13 PRs · FA:4 PRs)",
     fontes_disponiveis: { jira: true, sentry: true, github: true, kb: true }
   },
 
-  resumoExecutivo: "Chat/Mensagens permanece CRÍTICO (100 pts) — incidente 10/06 ainda na janela de 14d, bug lifecycle recorrente (emoji reaction, 5x histórico SM-7931→SM-8734), Sentry MessageSender 2.987 eventos. Autenticação sobe de 31→40 pts (+9): cluster 11/06 ainda fresco (4 dias), 12 SM N1 ativos, churn SPA+heimdall ≈500 linhas. Canais/WhatsApp sobe para 66 pts (+2) com omnispa 404 e Uncompressed Asset ainda ativos. DESTAQUE: 20 cards em dev ativo (era 0 em 11/06) — equipe acelerou dev, mas Chat segue sem corretivo para os incidentes. 9 bugs DEV4 resolvidos no período (4 Chat + 3 Outros + 1 Contatos + 1 UI). ECONNREFUSED Auth MELHORANDO: 4.7K ev/7d vs 32.5K ev/14d. Modo cache-only: Sentry é snapshot 11/06, ~1.583 tickets SM estimados.",
+  resumoExecutivo: "Visão de 7 dias (corrigida 15/06 pós-investigação Sentry): Chat/Mensagens CRÍTICO (95 pts, era 100) — o MessageSenderException (2.987 ev) foi confirmado como guard de negócio esperado, não falha; o lifecycle bug de emoji foi resolvido. O risco real de Chat é o QueryException 3024 em ListChats.php:459: query varre 365 dias de contact_last_messages e é interrompida por timeout MySQL ~280-414x/dia (2.892 eventos em 14d, 45 operadores afetados). Canais/WhatsApp ALTO (53 pts): omnispa 404 ativo há 6 dias (1.535u). Chatbot cai para ATENÇÃO (28 pts): lifecycle emoji resolvido remove 3 lifecycle bugs do score. Distribuição MÉDIO (42 pts). NOTA METODOLÓGICA: scores 7d são menores que 14d pois a janela menor não acumula pressão histórica — isso NÃO significa melhoria real. Modo cache-only: 18 dev ativo, 5 bugs resolvidos + lifecycle emoji corrigido.",
 
   // ── KPIs ────────────────────────────────────────────────
   kpis: [
-    { label: "Módulos CRÍTICO",                valor: "1",      cor: "red",    icone: "🔴", detalhe: "Chat/Mensagens (100 pts) — incidente 10/06 + lifecycle bug recorrente + Sentry MessageSender/QueryException.",                          delta: 0,  meta: "0" },
-    { label: "Módulos ALTO",                   valor: "2",      cor: "red",    icone: "🟠", detalhe: "Canais/WhatsApp (66 pts +2) + Distribuição/Filas (51 pts -2). Canais: omnispa 404 ainda ativo (1.535u).",                               delta: 0,  meta: "< 3" },
-    { label: "Tickets SM estimados (14d)",     valor: "~1.583", cor: "red",    icone: "🔴", detalhe: "Cache 15/06: SM-~7818 a SM-9498. 1.583 tickets estimados. Chat/Mensagens: 47% do total (745 tickets).",                                delta: +124 },
-    { label: "Dev ativo agora",                valor: "20",     cor: "amber",  icone: "🔧", detalhe: "20 cards em dev ativo (era 0 em 11/06 — aceleração significativa!). 22 cards em backlog.",                                             delta: +20, meta: "≤ 10" },
-    { label: "PRs merged (14d)",               valor: "29",     cor: "green",  icone: "🚀", detalhe: "29 PRs: SPA (20) · FoundationAPI (7) · heimdall (1) · waba-webhook (1). Janela rolou — SPA caiu de 23 para 20 PRs.",                  delta: -4 },
-    { label: "Bugs reabertos (regressões)",    valor: "0",      cor: "green",  icone: "✅", detalhe: "ZERO bugs reabertos no período. Sinal positivo — correções estão sendo eficazes.",                                                     delta: 0,  meta: "0" },
-    { label: "Bugs DEV4 resolvidos (14d)",     valor: "9",      cor: "green",  icone: "✅", detalhe: "9 bugs resolvidos: Chat/Mensagens (4) · Outros (3) · Contatos (1) · UI/Config (1). DEV4-4291 rota agendadas + DEV4-4278 phone fix.",   delta: +9 },
-    { label: "Sentry issues (snapshot 11/06)", valor: "7",      cor: "amber",  icone: "📈", detalhe: "Canais: omnispa 404 (2.822 ev · 1.535u) · Canais: Uncompressed Asset (1.543 ev) · Chat: MessageSender (2.987 ev) · Auth: ECONNREFUSED MELHORANDO (4.7K 7d vs 32.5K 14d).", delta: 0, meta: "< 5" },
-    { label: "Incidentes detectados (14d)",    valor: "2",      cor: "red",    icone: "🚨", detalhe: "10/06: mensagens rápidas/templates fora do ar (14+ tickets). 11/06: correção noturna impactou login (cluster SM-9053/9052/9028).",       delta: 0 },
-    { label: "Autenticação — tendência",       valor: "+9",     cor: "amber",  icone: "⚠️", detalhe: "Auth subiu de 31→40 pts (+9): cluster 11/06 ainda fresco, 12 SM N1 ativos, churn SPA+heimdall. ECONNREFUSED melhorando (-85%).",      delta: +9 },
-    { label: "Cenários QA desatualizados",     valor: "2",      cor: "amber",  icone: "🧪", detalhe: "DEV4-4274 (edição canais): cenário stale. DEV4-4249 (central arquivos): cenário stale. Verificar após próxima run completa.",           delta: +1 },
-    { label: "Falha ambiente-específica",      valor: "1",      cor: "amber",  icone: "🌐", detalhe: "Chat/Mensagens: staging ~40% falha vs canary ~19% — diferença >20pp. Possível problema de configuração de ambiente.",                  delta: 0 },
-    { label: "Confiança da previsão",          valor: "média",  cor: "amber",  icone: "🎯", detalhe: "Modo cache-only: SM e GitHub frescos (15/06), Sentry é snapshot 11/06 (4 dias). Para alta confiança: /argos-predict --force-refresh.", delta: -1 }
+    { label: "Módulos CRÍTICO",               valor: "1",     cor: "red",    icone: "🔴", detalhe: "Chat/Mensagens (100 pts) — incidente 10/06 dentro da janela de 7d + lifecycle bug recorrente + Sentry MessageSender/QueryException.",       delta: 0,  meta: "0" },
+    { label: "Módulos ALTO",                  valor: "1",     cor: "red",    icone: "🟠", detalhe: "Canais/WhatsApp (53 pts). omnispa 404 ativo há 6 dias (1.535u) · Uncompressed Asset 1.138u. Dois módulos saíram do ALTO vs 14d (menor janela).", delta: -1, meta: "< 3" },
+    { label: "Tickets SM estimados (7d)",     valor: "~841",  cor: "amber",  icone: "🟡", detalhe: "Cache 15/06 19:16: SM-9018 a SM-9511 (7 dias). Chat/Mensagens: 44% do total (373 tickets). Menor que 14d (1.583) — janela reduzida.",       delta: 0 },
+    { label: "Dev ativo agora",               valor: "18",    cor: "amber",  icone: "🔧", detalhe: "18 cards em dev ativo · 14 em backlog. Ligeiro recuo vs 15/06 14d (era 20 dev ativo).",                                                    delta: -2, meta: "≤ 10" },
+    { label: "PRs merged (7d)",               valor: "18",    cor: "green",  icone: "🚀", detalhe: "18 PRs na janela de 7 dias: SPA (13) · FoundationAPI (4) · heimdall (1). Vs 29 PRs em 14d — janela menor.",                               delta: -11 },
+    { label: "Bugs reabertos (regressões)",   valor: "0",     cor: "green",  icone: "✅", detalhe: "ZERO bugs reabertos no período de 7 dias. Sinal positivo.",                                                                                  delta: 0,  meta: "0" },
+    { label: "Bugs DEV4 resolvidos (7d)",     valor: "5",     cor: "green",  icone: "✅", detalhe: "5 bugs resolvidos em 7d: DEV4-4244 (12/06) · DEV4-4291 (10/06) · DEV4-4354 (10/06) · DEV4-4345 (10/06) · DEV4-4066 (08/06).",            delta: 0 },
+    { label: "Sentry issues (snapshot 15/06)",valor: "7",     cor: "amber",  icone: "📈", detalhe: "Canais: omnispa 404 (2.822ev · 1.535u · ativo 6d) · Uncompressed Asset (1.543ev · 1.138u) · Chat: MessageSender 2.987ev · Auth: ECONNREFUSED MELHORANDO.", delta: 0, meta: "< 5" },
+    { label: "Incidentes na janela (7d)",     valor: "2",     cor: "red",    icone: "🚨", detalhe: "10/06: mensagens rápidas/templates fora do ar (14+ tickets — 5 dias atrás, ainda na janela 7d). 11/06: cluster auth (4 dias atrás).",       delta: 0 },
+    { label: "Autenticação — tendência",      valor: "-15",   cor: "green",  icone: "📉", detalhe: "Auth caiu de 40 (14d) → 25 (7d): janela menor captura apenas 6 SM tickets frescos do cluster 11/06. TEC=6 inalterado (Sentry ainda ativo).", delta: -15 },
+    { label: "Cenários QA",                   valor: "86",    cor: "amber",  icone: "🧪", detalhe: "86 cenários encontrados em tests/scenarios/. Staleness não avaliado em cache-only (sem chamadas Jira). Use run completa para análise de staleness.", delta: 0 },
+    { label: "Falha ambiente-específica",     valor: "1",     cor: "amber",  icone: "🌐", detalhe: "Chat/Mensagens: staging ~40% falha vs canary ~19% (padrão confirmado em execucoes.jsonl). Diff >20pp persistente.",                         delta: 0 },
+    { label: "Confiança da previsão",         valor: "média", cor: "amber",  icone: "🎯", detalhe: "Cache-only 7d: SM e GitHub frescos (refresh 15/06 19:16). Sentry snapshot atualizado (19:17). Para alta confiança: /argos-predict 7 --force-refresh.", delta: 0 }
   ],
 
   // ── RANKING ──────────────────────────────────────────────
   ranking: [
-    { modulo: "Chat / Mensagens",     total: 100, tec: 11, usr: 90, nivel: "CRÍTICO", cor: "#DC2626", risco_pct: 100, confianca: "alta", sentryDelta: 35, entropy: 2.8, cfr: 0.08, bugs_n1: 100,
-      impacto_negocio: { clientes_afetados: 800, tickets_dia: 100, dias_para_critico: 0, custo_inacao: "Incidente 10/06 ainda na window · lifecycle bug recorrente (5x) · Sentry MessageSender 2.987ev/427u" },
-      bugs_cards: ["SM-8957","SM-8938","SM-8879","SM-8878","SM-8877","SM-8734","SM-8532"] },
-    { modulo: "Canais / WhatsApp",    total: 66,  tec: 8, usr: 58, nivel: "ALTO",    cor: "#EF4444", risco_pct: 66,  confianca: "alta", sentryDelta: 60, entropy: 2.0, cfr: 0.20, bugs_n1: 30,
-      impacto_negocio: { clientes_afetados: 500, tickets_dia: 30, dias_para_critico: 2, custo_inacao: "omnispa 404 com 1.535u (ativo 6d) · Uncompressed Asset 1.138u · waba-webhook PR#3 merged 18d" },
+    { modulo: "Chat / Mensagens",     total: 95,  tec: 6,  usr: 89, nivel: "CRÍTICO", cor: "#DC2626", risco_pct: 95,  confianca: "alta",     sentryDelta: 35, entropy: 2.8, cfr: 0.08, bugs_n1: 48,
+      impacto_negocio: { clientes_afetados: 800, tickets_dia: 53, dias_para_critico: 0, custo_inacao: "Incidente 10/06 (root cause pendente) · ListChats query timeout: 2.892 ev 14d (45 operadores/dia) · ENV_FAILURE staging 40% vs canary 19%" },
+      bugs_cards: ["SM-8957","SM-8938","SM-8879","SM-8878","SM-8877"] },
+    { modulo: "Canais / WhatsApp",    total: 53,  tec: 8,  usr: 45, nivel: "ALTO",    cor: "#EF4444", risco_pct: 53,  confianca: "alta",     sentryDelta: 60, entropy: 2.0, cfr: 0.20, bugs_n1: 20,
+      impacto_negocio: { clientes_afetados: 500, tickets_dia: 9, dias_para_critico: 3, custo_inacao: "omnispa 404 ativo 6d (1.535u) · Uncompressed Asset 1.138u · 20 N1 tickets em 7d" },
       bugs_cards: ["SM-8291"] },
-    { modulo: "Distribuição / Filas", total: 51,  tec: 5, usr: 46, nivel: "ALTO",    cor: "#EF4444", risco_pct: 51,  confianca: "alta", sentryDelta: 20, entropy: 1.5, cfr: 0.0,  bugs_n1: 22,
-      impacto_negocio: { clientes_afetados: 280, tickets_dia: 22, dias_para_critico: 4, custo_inacao: "Race condition no LID (Redis lock) · chats presos · dispatch 3.736 ev 14d" },
+    { modulo: "Distribuição / Filas", total: 42,  tec: 5,  usr: 37, nivel: "MÉDIO",   cor: "#F59E0B", risco_pct: 42,  confianca: "alta",     sentryDelta: 20, entropy: 1.5, cfr: 0.0,  bugs_n1: 6,
+      impacto_negocio: { clientes_afetados: 200, tickets_dia: 2, dias_para_critico: 8, custo_inacao: "Race condition LID/Redis · dispatch 3.736 ev 14d · 6 N1 tickets 7d" },
       bugs_cards: [] },
-    { modulo: "Chatbot / Bot",        total: 48,  tec: 3, usr: 45, nivel: "MÉDIO",   cor: "#F59E0B", risco_pct: 48,  confianca: "moderada", sentryDelta: 0, entropy: 1.2, cfr: 0.0, bugs_n1: 15,
-      impacto_negocio: { clientes_afetados: 200, tickets_dia: 15, dias_para_critico: 7, custo_inacao: "Bot não inicia após lifecycle de emoji · flakiness CT-WH-011 (100%)" },
-      bugs_cards: ["SM-8734","SM-8532","SM-8190"] },
-    { modulo: "Autenticação",         total: 40,  tec: 6, usr: 34, nivel: "MÉDIO",   cor: "#F59E0B", risco_pct: 40,  confianca: "alta",     sentryDelta: 10, entropy: 1.2, cfr: 0.0, bugs_n1: 12,
-      impacto_negocio: { clientes_afetados: 200, tickets_dia: 12, dias_para_critico: 4, custo_inacao: "Cluster 11/06 (4d fresco) · ECONNREFUSED MELHORANDO (-85%) · AxiosError 401: 945u · heimdall ×2.0" },
+    { modulo: "Chatbot / Bot",        total: 28,  tec: 3,  usr: 25, nivel: "ATENÇÃO", cor: "#F97316", risco_pct: 28,  confianca: "moderada", sentryDelta: 0,  entropy: 1.2, cfr: 0.0,  bugs_n1: 7,
+      impacto_negocio: { clientes_afetados: 100, tickets_dia: 2, dias_para_critico: 16, custo_inacao: "7 N1 tickets 7d · lifecycle emoji RESOLVIDO · flakiness CT-WH-011 (100%) persiste" },
+      bugs_cards: [] },
+    { modulo: "Autenticação",         total: 25,  tec: 6,  usr: 19, nivel: "ATENÇÃO", cor: "#F97316", risco_pct: 25,  confianca: "alta",     sentryDelta: 10, entropy: 1.2, cfr: 0.0,  bugs_n1: 5,
+      impacto_negocio: { clientes_afetados: 120, tickets_dia: 1, dias_para_critico: 14, custo_inacao: "Cluster 11/06 (4d fresco) · ECONNREFUSED MELHORANDO (-85%) · AxiosError 401: 945u · 5 N1 tickets 7d" },
       bugs_cards: ["SM-9053","SM-9052","SM-9028"] },
-    { modulo: "Disparos / Campanhas", total: 30,  tec: 2, usr: 28, nivel: "MÉDIO",   cor: "#F59E0B", risco_pct: 30,  confianca: "moderada", sentryDelta: 0, entropy: 0.8, cfr: 0.0, bugs_n1: 3,
-      impacto_negocio: { clientes_afetados: 100, tickets_dia: 3, dias_para_critico: 10, custo_inacao: "3 bugs N1 · waba-webhook PR#3 merged (risco de regressão em envio)" },
+    { modulo: "Disparos / Campanhas", total: 24,  tec: 2,  usr: 22, nivel: "ATENÇÃO", cor: "#F97316", risco_pct: 24,  confianca: "moderada", sentryDelta: 0,  entropy: 0.8, cfr: 0.0,  bugs_n1: 2,
+      impacto_negocio: { clientes_afetados: 80, tickets_dia: 2, dias_para_critico: 16, custo_inacao: "2 N1 tickets 7d · waba-webhook PR merged (risco regressão envio campanhas)" },
       bugs_cards: [] },
-    { modulo: "UI / Design System",   total: 24,  tec: 4, usr: 20, nivel: "ATENÇÃO", cor: "#F97316", risco_pct: 24,  confianca: "moderada", sentryDelta: 5,  entropy: 2.0, cfr: 0.05, bugs_n1: 7,
-      impacto_negocio: { clientes_afetados: 70, tickets_dia: 7, dias_para_critico: 14, custo_inacao: "SPA 8 PRs UI (churn visual) · janela rolou: alguns PRs saíram dos 14d" },
-      bugs_cards: [] },
-    { modulo: "Upload / Mídia",       total: 19,  tec: 1, usr: 18, nivel: "ATENÇÃO", cor: "#F97316", risco_pct: 19,  confianca: "moderada", sentryDelta: 0,  entropy: 0.5, cfr: 0.0,  bugs_n1: 6,
-      impacto_negocio: { clientes_afetados: 50, tickets_dia: 6, dias_para_critico: 21, custo_inacao: "6 bugs N1 · PDF >10MB bug documentado na KB" },
+    { modulo: "Upload / Mídia",       total: 15,  tec: 1,  usr: 14, nivel: "ESTÁVEL", cor: "#22C55E", risco_pct: 15,  confianca: "moderada", sentryDelta: 0,  entropy: 0.5, cfr: 0.0,  bugs_n1: 3,
+      impacto_negocio: { clientes_afetados: 40, tickets_dia: 1, dias_para_critico: 30, custo_inacao: "3 N1 tickets 7d · PDF >10MB bug documentado na KB" },
       bugs_cards: ["SM-8218"] },
-    { modulo: "Jarvis / IA",          total: 12,  tec: 4, usr: 8,  nivel: "ATENÇÃO", cor: "#F97316", risco_pct: 12,  confianca: "alta",     sentryDelta: 0,  entropy: 1.8, cfr: 0.0,  bugs_n1: 0,
-      impacto_negocio: { clientes_afetados: 0, tickets_dia: 0, dias_para_critico: null, custo_inacao: "0 bugs N1 reais (anti-misclassificação ativo) · Sentry: Consecutive HTTP 920ev + Slow DB 418ev" },
+    { modulo: "UI / Design System",   total: 12,  tec: 4,  usr: 8,  nivel: "ESTÁVEL", cor: "#22C55E", risco_pct: 12,  confianca: "moderada", sentryDelta: 5,  entropy: 2.0, cfr: 0.05, bugs_n1: 2,
+      impacto_negocio: { clientes_afetados: 30, tickets_dia: 0, dias_para_critico: 30, custo_inacao: "2 N1 tickets 7d · SPA churn UI (6 PRs) · PR#1531 30+ arquivos ads-manager" },
+      bugs_cards: [] },
+    { modulo: "Jarvis / IA",          total: 8,   tec: 4,  usr: 4,  nivel: "ESTÁVEL", cor: "#22C55E", risco_pct: 8,   confianca: "alta",     sentryDelta: 0,  entropy: 1.8, cfr: 0.0,  bugs_n1: 0,
+      impacto_negocio: { clientes_afetados: 0, tickets_dia: 0, dias_para_critico: null, custo_inacao: "0 N1 reais (anti-misclassificação) · Sentry: Consecutive HTTP 920ev + Slow DB 418ev" },
       bugs_cards: [] }
   ],
 
   // ── MÓDULOS DETALHADOS (watch tier) ──────────────────────
   modulos_detalhe: [
-    { modulo: "Chat / Mensagens", total: 100, tec: 11, usr: 90, nivel: "CRÍTICO", cor: "#DC2626", sentryDelta: 35, entropy: 2.8, cfr: 0.08, bugs_n1: 100,
+    { modulo: "Chat / Mensagens", total: 95, tec: 6, usr: 89, nivel: "CRÍTICO", cor: "#DC2626", sentryDelta: 35, entropy: 2.8, cfr: 0.08, bugs_n1: 48,
       bugs_n1_items: [
         {id:"SM-8957", titulo:"Mensagens rápidas — templates fora do ar (incidente 10/06)", tipo:"🚨 N1 Bug · Incidente"},
         {id:"SM-8938", titulo:"Mensagens não enviadas após update de 10/06", tipo:"🚨 N1 Bug · Incidente"},
         {id:"SM-8879", titulo:"Erro ao enviar mensagem: timeout na API", tipo:"🚨 N1 Bug"},
         {id:"SM-8878", titulo:"Chat não abre para alguns contatos", tipo:"🚨 N1 Bug"},
         {id:"SM-8877", titulo:"Mensagem entregue mas não aparece na tela", tipo:"🚨 N1 Bug"},
-        {id:"SM-8734", titulo:"Emoji reaction em chat encerrado reabre chat sem acionar bot (recorrente)", tipo:"🔁 Lifecycle Bug · Recorrente"},
-        {id:"SM-8532", titulo:"Reação em chat fechado dispara reabertura indevida (reincidente)", tipo:"🔁 Lifecycle Bug · Reincidente"},
+        {id:"SM-8734", titulo:"Emoji reaction reabre chat sem acionar bot — RESOLVIDO 15/06", tipo:"✅ Lifecycle Bug · Resolvido"},
+        {id:"SM-8532", titulo:"Reação em chat fechado dispara reabertura indevida — RESOLVIDO 15/06", tipo:"✅ Lifecycle Bug · Resolvido"},
         {id:"SM-8291", titulo:"Conversa muda de cliente automaticamente durante digitação", tipo:"🚨 N1 Bug"}
       ],
-      dev_ativo_items: [],
+      dev_ativo_items: [
+        {id:"Sentry #94039", titulo:"ListChats query timeout — ListChats.php:459 · 2.892 ev 14d · 45 operadores/dia — INVESTIGAÇÃO ABERTA 15/06", tipo:"🔬 Bug Estrutural · Em investigação"}
+      ],
       dev_planejado_items: [
         {id:"DEV4-4291", titulo:"Rota de mensagens agendadas ignora filtro de contato — cenário 8 dias desatualizado", tipo:"⚠️ Cenário Stale"},
         {id:"DEV4-4370", titulo:"Remove deprecated_ IDs (FA:1130 + SPA:1531 mergeados)", tipo:"⚠️ PR merged 10/06 · 30+ arquivos ads-manager"}
       ],
       score_tec_itens: [
-        {sinal:"Sentry ID-79056 MessageSenderException: 2.987 eventos (7d) · 427 usuários", peso:"+3"},
-        {sinal:"Sentry ID-94039 QueryException SQLSTATE HY000 3024: 1.164 eventos", peso:"+2"},
+        {sinal:"Sentry ID-79056 MessageSenderException: guard de negócio esperado (contato em atendimento) — NÃO É FALHA", peso:"0"},
+        {sinal:"Sentry ID-94039 QueryException 3024: ListChats.php:459 timeout — 2.892 ev 14d · query varre 365 dias de contact_last_messages", peso:"+2"},
         {sinal:"Staleness DEV4-4291: cenário 8 dias stale após PR merge", peso:"+1"},
-        {sinal:"ENV_FAILURE: staging 40% vs canary 19% (diff >20pp)", peso:"+1"},
-        {sinal:"Lifecycle bug recorrente (5 tickets históricos SM-7931→SM-8734)", peso:"+2"}
+        {sinal:"ENV_FAILURE: staging 40% vs canary 19% (diff >20pp · padrão persistente)", peso:"+1"},
+        {sinal:"Lifecycle bug emoji (SM-7931→SM-8734) — RESOLVIDO em 15/06", peso:"0"}
       ]
     },
-    { modulo: "Canais / WhatsApp", total: 66, tec: 8, usr: 58, nivel: "ALTO", cor: "#EF4444", sentryDelta: 60, entropy: 2.0, cfr: 0.20, bugs_n1: 30,
+    { modulo: "Canais / WhatsApp", total: 53, tec: 8, usr: 45, nivel: "ALTO", cor: "#EF4444", sentryDelta: 60, entropy: 2.0, cfr: 0.20, bugs_n1: 20,
       bugs_n1_items: [
         {id:"SM-8291", titulo:"Conversa muda de cliente automaticamente durante digitação (shared Chat/Canais)", tipo:"🚨 N1 Bug"},
         {id:"SM-???", titulo:"28 bugs N1 classificados em Canais/WhatsApp no período", tipo:"🚨 N1 Bugs · Agrupados"}
@@ -105,7 +107,7 @@ const REPORT = {
         {sinal:"Flakiness QA CT-WH-011: 100% (1 execução)", peso:"+1"}
       ]
     },
-    { modulo: "Distribuição / Filas", total: 51, tec: 5, usr: 46, nivel: "ALTO", cor: "#EF4444", sentryDelta: 20, entropy: 1.5, cfr: 0.0, bugs_n1: 22,
+    { modulo: "Distribuição / Filas", total: 42, tec: 5, usr: 37, nivel: "MÉDIO", cor: "#F59E0B", sentryDelta: 20, entropy: 1.5, cfr: 0.0, bugs_n1: 6,
       bugs_n1_items: [
         {id:"SM-???", titulo:"25 bugs N1 classificados em Distribuição/Filas no período", tipo:"🚨 N1 Bugs · Agrupados"}
       ],
@@ -116,12 +118,12 @@ const REPORT = {
         {sinal:"KB_AREA_FRAGIL: race condition no LID generation via Redis lock em alto volume", peso:"+2"}
       ]
     },
-    { modulo: "Chatbot / Bot", total: 48, tec: 3, usr: 45, nivel: "MÉDIO", cor: "#F59E0B", sentryDelta: 0, entropy: 1.2, cfr: 0.0, bugs_n1: 15,
+    { modulo: "Chatbot / Bot", total: 28, tec: 3, usr: 25, nivel: "ATENÇÃO", cor: "#F97316", sentryDelta: 0, entropy: 1.2, cfr: 0.0, bugs_n1: 7,
       bugs_n1_items: [
-        {id:"SM-8734", titulo:"Emoji reaction em chat encerrado reabre chat sem acionar bot (shared com Chat)", tipo:"🔁 Lifecycle Bug"},
-        {id:"SM-8532", titulo:"Reação em chat fechado dispara reabertura indevida (shared com Chat)", tipo:"🔁 Lifecycle Bug"},
-        {id:"SM-8190", titulo:"Bot não inicia após chat reaberto por ação de cliente", tipo:"🚨 N1 Bug"},
-        {id:"SM-???", titulo:"12 outros bugs N1 classificados em Chatbot/Bot", tipo:"🚨 N1 Bugs"}
+        {id:"SM-8734", titulo:"Emoji reaction reabre chat sem acionar bot — RESOLVIDO 15/06", tipo:"✅ Lifecycle Bug · Resolvido"},
+        {id:"SM-8532", titulo:"Reação em chat fechado dispara reabertura — RESOLVIDO 15/06", tipo:"✅ Lifecycle Bug · Resolvido"},
+        {id:"SM-8190", titulo:"Bot não inicia após chat reaberto por ação de cliente — RESOLVIDO 15/06", tipo:"✅ N1 Bug · Resolvido"},
+        {id:"SM-???", titulo:"7 outros bugs N1 classificados em Chatbot/Bot (lifecycle resolvido reduz pressão)", tipo:"🚨 N1 Bugs"}
       ],
       dev_ativo_items: [],
       dev_planejado_items: [],
@@ -130,7 +132,7 @@ const REPORT = {
         {sinal:"Flakiness CT-WH-011 impacta bot de canal WABA", peso:"+1"}
       ]
     },
-    { modulo: "Autenticação", total: 40, tec: 6, usr: 34, nivel: "MÉDIO", cor: "#F59E0B", sentryDelta: 10, entropy: 1.2, cfr: 0.0, bugs_n1: 12,
+    { modulo: "Autenticação", total: 25, tec: 6, usr: 19, nivel: "ATENÇÃO", cor: "#F97316", sentryDelta: 10, entropy: 1.2, cfr: 0.0, bugs_n1: 5,
       bugs_n1_items: [
         {id:"SM-9053", titulo:"Login não funciona após manutenção de 10/06 (incidente 11/06)", tipo:"🚨 N1 Bug · Cluster"},
         {id:"SM-9052", titulo:"Usuário não consegue autenticar — 401 após deploy", tipo:"🚨 N1 Bug · Cluster"},
@@ -146,7 +148,7 @@ const REPORT = {
         {sinal:"Cluster 11/06 fresco (4 dias) — incidente ainda na janela de análise", peso:"+1"}
       ]
     },
-    { modulo: "Disparos / Campanhas", total: 30, tec: 2, usr: 28, nivel: "MÉDIO", cor: "#F59E0B", sentryDelta: 0, entropy: 0.8, cfr: 0.0, bugs_n1: 3,
+    { modulo: "Disparos / Campanhas", total: 24, tec: 2, usr: 22, nivel: "ATENÇÃO", cor: "#F97316", sentryDelta: 0, entropy: 0.8, cfr: 0.0, bugs_n1: 2,
       bugs_n1_items: [
         {id:"SM-???", titulo:"3 bugs N1 classificados em Disparos/Campanhas no período", tipo:"🚨 N1 Bugs"}
       ],
@@ -159,7 +161,7 @@ const REPORT = {
         {sinal:"waba-webhook PR merged no período", peso:"+1"}
       ]
     },
-    { modulo: "UI / Design System", total: 24, tec: 4, usr: 20, nivel: "ATENÇÃO", cor: "#F97316", sentryDelta: 5, entropy: 2.0, cfr: 0.05, bugs_n1: 7,
+    { modulo: "UI / Design System", total: 12, tec: 4, usr: 8, nivel: "ESTÁVEL", cor: "#22C55E", sentryDelta: 5, entropy: 2.0, cfr: 0.05, bugs_n1: 2,
       bugs_n1_items: [
         {id:"SM-???", titulo:"8 bugs N1 classificados em UI/Design System no período", tipo:"🚨 N1 Bugs"}
       ],
@@ -174,7 +176,7 @@ const REPORT = {
         {sinal:"PR#1531 tocou 30+ arquivos ads-manager — risco cross-module Canais/Meta Ads", peso:"+2"}
       ]
     },
-    { modulo: "Upload / Mídia", total: 19, tec: 1, usr: 18, nivel: "ATENÇÃO", cor: "#F97316", sentryDelta: 0, entropy: 0.5, cfr: 0.0, bugs_n1: 6,
+    { modulo: "Upload / Mídia", total: 15, tec: 1, usr: 14, nivel: "ESTÁVEL", cor: "#22C55E", sentryDelta: 0, entropy: 0.5, cfr: 0.0, bugs_n1: 3,
       bugs_n1_items: [
         {id:"SM-8218", titulo:"Áudios e mensagens não carregam na plataforma", tipo:"🚨 N1 Bug"},
         {id:"SM-???", titulo:"5 outros bugs N1 em Upload/Mídia no período", tipo:"🚨 N1 Bugs"}
@@ -187,7 +189,7 @@ const REPORT = {
         {sinal:"KB_AREA_FRAGIL: bug PDF >10MB (TypeError silencioso no media-manager)", peso:"+1"}
       ]
     },
-    { modulo: "Jarvis / IA", total: 12, tec: 4, usr: 8, nivel: "ATENÇÃO", cor: "#F97316", sentryDelta: 0, entropy: 1.8, cfr: 0.0, bugs_n1: 0,
+    { modulo: "Jarvis / IA", total: 8, tec: 4, usr: 4, nivel: "ESTÁVEL", cor: "#22C55E", sentryDelta: 0, entropy: 1.8, cfr: 0.0, bugs_n1: 0,
       bugs_n1_items: [],
       dev_ativo_items: [],
       dev_planejado_items: [
@@ -204,38 +206,39 @@ const REPORT = {
 
   // ── MAPA DE CALOR ────────────────────────────────────────
   mapaCalor: [
-    { modulo: "Chat / Mensagens",     pressao: 100, atencao: 12, gap: 88,  zona: "Crítica" },
-    { modulo: "Canais / WhatsApp",    pressao: 30,  atencao: 5,  gap: 25,  zona: "Subatendida" },
-    { modulo: "Distribuição / Filas", pressao: 22,  atencao: 3,  gap: 19,  zona: "Subatendida" },
-    { modulo: "Chatbot / Bot",        pressao: 15,  atencao: 3,  gap: 12,  zona: "Subatendida" },
-    { modulo: "Autenticação",         pressao: 12,  atencao: 4,  gap: 8,   zona: "Subatendida" },
-    { modulo: "UI / Design System",   pressao: 7,   atencao: 5,  gap: 2,   zona: "Balanceada" },
-    { modulo: "Upload / Mídia",       pressao: 6,   atencao: 1,  gap: 5,   zona: "Subatendida" },
-    { modulo: "Disparos / Campanhas", pressao: 3,   atencao: 2,  gap: 1,   zona: "Balanceada" },
+    { modulo: "Chat / Mensagens",     pressao: 48,  atencao: 12, gap: 36,  zona: "Crítica" },
+    { modulo: "Canais / WhatsApp",    pressao: 20,  atencao: 5,  gap: 15,  zona: "Subatendida" },
+    { modulo: "Chatbot / Bot",        pressao: 7,   atencao: 3,  gap: 4,   zona: "Subatendida" },
+    { modulo: "Distribuição / Filas", pressao: 6,   atencao: 3,  gap: 3,   zona: "Subatendida" },
+    { modulo: "Autenticação",         pressao: 5,   atencao: 4,  gap: 1,   zona: "Balanceada" },
+    { modulo: "UI / Design System",   pressao: 2,   atencao: 5,  gap: -3,  zona: "Balanceada" },
+    { modulo: "Upload / Mídia",       pressao: 3,   atencao: 1,  gap: 2,   zona: "Balanceada" },
+    { modulo: "Disparos / Campanhas", pressao: 2,   atencao: 2,  gap: 0,   zona: "Balanceada" },
     { modulo: "Jarvis / IA",          pressao: 0,   atencao: 5,  gap: -5,  zona: "Superatendida" }
   ],
 
-  // ── TENDÊNCIA (comparando predict 11/06 vs 15/06) ────────
+  // ── TENDÊNCIA (comparando 14d 15/06 vs 7d 15/06 — efeito janela) ────────
   tendencia: [
-    { modulo: "Autenticação",         delta: +9,  ontem: 31,  hoje: 40  },
-    { modulo: "Canais / WhatsApp",    delta: +2,  ontem: 64,  hoje: 66  },
-    { modulo: "Chat / Mensagens",     delta: 0,   ontem: 100, hoje: 100 },
-    { modulo: "Chatbot / Bot",        delta: 0,   ontem: 48,  hoje: 48  },
-    { modulo: "Upload / Mídia",       delta: 0,   ontem: 19,  hoje: 19  },
-    { modulo: "Jarvis / IA",          delta: 0,   ontem: 12,  hoje: 12  },
-    { modulo: "Distribuição / Filas", delta: -2,  ontem: 53,  hoje: 51  },
-    { modulo: "UI / Design System",   delta: -2,  ontem: 26,  hoje: 24  }
+    { modulo: "Chat / Mensagens",     delta: -5,  ontem: 100, hoje: 95  },
+    { modulo: "Canais / WhatsApp",    delta: -13, ontem: 66,  hoje: 53  },
+    { modulo: "Distribuição / Filas", delta: -9,  ontem: 51,  hoje: 42  },
+    { modulo: "Chatbot / Bot",        delta: -20, ontem: 48,  hoje: 28  },
+    { modulo: "Autenticação",         delta: -15, ontem: 40,  hoje: 25  },
+    { modulo: "Disparos / Campanhas", delta: -6,  ontem: 30,  hoje: 24  },
+    { modulo: "UI / Design System",   delta: -12, ontem: 24,  hoje: 12  },
+    { modulo: "Upload / Mídia",       delta: -4,  ontem: 19,  hoje: 15  },
+    { modulo: "Jarvis / IA",          delta: -4,  ontem: 12,  hoje: 8   }
   ],
 
   // ── DISTRIBUIÇÃO DE BUGS ─────────────────────────────────
   bugDistribuicao: [
-    { label: "Chat / Mensagens",      valor: 100, cor: "#DC2626" },
-    { label: "Canais / WhatsApp",     valor: 30,  cor: "#EF4444" },
-    { label: "Distribuição / Filas",  valor: 22,  cor: "#F97316" },
-    { label: "Chatbot / Bot",         valor: 15,  cor: "#F59E0B" },
-    { label: "Autenticação + UI",     valor: 19,  cor: "#EAB308" },
-    { label: "Upload / Mídia",        valor: 6,   cor: "#22C55E" },
-    { label: "Outros",                valor: 15,  cor: "#94A3B8" }
+    { label: "Chat / Mensagens",      valor: 48,  cor: "#DC2626" },
+    { label: "Canais / WhatsApp",     valor: 20,  cor: "#EF4444" },
+    { label: "Chatbot / Bot",         valor: 7,   cor: "#F97316" },
+    { label: "Distribuição / Filas",  valor: 6,   cor: "#F97316" },
+    { label: "Autenticação + UI",     valor: 7,   cor: "#EAB308" },
+    { label: "Upload / Mídia",        valor: 3,   cor: "#22C55E" },
+    { label: "Outros",                valor: 9,   cor: "#94A3B8" }
   ],
 
   // ── RADAR DE SERVIÇOS ────────────────────────────────────
@@ -809,26 +812,22 @@ dev_ativo_items: [],
 
   // ── CARDS RESOLVIDOS NO PERÍODO ──────────────────────────
   cards_resolvidos: [
-    { id: "DEV4-4244", titulo: "DEV4-4244 — Canais/WABA Staging (QA run)", resolvido_em: "2026-06-12", modulo: "Chat / Mensagens" },
+    { id: "DEV4-4244", titulo: "DEV4-4244 — Canais/WABA Staging (QA run aprovado)", resolvido_em: "2026-06-12", modulo: "Chat / Mensagens" },
     { id: "DEV4-4291", titulo: "Rota de mensagens agendadas — fix mergeado (FA:1130)", resolvido_em: "2026-06-10", modulo: "Chat / Mensagens" },
     { id: "DEV4-4354", titulo: "DEV4-4354 — Outros", resolvido_em: "2026-06-10", modulo: "Outros" },
     { id: "DEV4-4345", titulo: "DEV4-4345 — Outros", resolvido_em: "2026-06-10", modulo: "Outros" },
-    { id: "DEV4-4066", titulo: "DEV4-4066 — Outros", resolvido_em: "2026-06-08", modulo: "Outros" },
-    { id: "DEV4-4251", titulo: "DEV4-4251 — Chat/Mensagens", resolvido_em: "2026-06-05", modulo: "Chat / Mensagens" },
-    { id: "DEV4-4278", titulo: "DEV4-4278 — phone max length fix (Contatos)", resolvido_em: "2026-06-05", modulo: "Contatos" },
-    { id: "DEV4-4242", titulo: "DEV4-4242 — Chat/Mensagens", resolvido_em: "2026-06-03", modulo: "Chat / Mensagens" },
-    { id: "DEV4-4277", titulo: "DEV4-4277 — UI/Config", resolvido_em: "2026-06-03", modulo: "Configurações" }
+    { id: "DEV4-4066", titulo: "DEV4-4066 — Outros", resolvido_em: "2026-06-08", modulo: "Outros" }
   ],
 
   // ── AÇÕES PRIORITÁRIAS ───────────────────────────────────
   acoes: [
-    { prioridade: "P0 — HOJE",         modulo: "Canais / WhatsApp",         acao: "omnispa AxiosError 404 ativo desde 09/06 (6 dias): 2.822 ev · 1.535 usuários. Confirmar se fix foi mergeado ou se ainda está em aberto.", prazo: "Hoje" },
-    { prioridade: "P0 — HOJE",         modulo: "Distribuição / Filas",      acao: "Criar DEV4 corretivo para chats presos na fila (race condition Redis LID). GAP=19 — módulo subatendido sem corretivo.", prazo: "Hoje" },
-    { prioridade: "P1 — ESTA SEMANA",  modulo: "Autenticação",              acao: "Cluster 11/06 ainda fresco (4 dias, 12 SM N1): validar que ECONNREFUSED realmente está melhorando em produção. Criar DEV4 corretivo se AxiosError 401 (945u) não tiver dono.", prazo: "Esta semana" },
-    { prioridade: "P1 — ESTA SEMANA",  modulo: "Chat / Mensagens",          acao: "Lifecycle bug emoji recorrente (5x histórico SM-7931→SM-8734): sem corretivo em dev. Criar DEV4 corretivo urgente.", prazo: "Esta semana" },
-    { prioridade: "P1 — ESTA SEMANA",  modulo: "Canais / WhatsApp",         acao: "omnispa Uncompressed Asset (1.543 ev · 1.138u): investigar se é regressão de build. Atualizar cenário DEV4-4274 (stale).", prazo: "Esta semana" },
-    { prioridade: "P2 — PRÓX. SPRINT", modulo: "Upload / Mídia",            acao: "6 bugs N1 ativos. PDF >10MB (KB area frágil) sem DEV4 corretivo. SM-8218 (áudios não carregam) pendente.", prazo: "Próx. sprint" },
-    { prioridade: "P2 — PRÓX. SPRINT", modulo: "Chat / Mensagens",          acao: "Sentry MessageSenderException 2.987 ev · 427u sem card de correção DEV4 vinculado. Criar épico de qualidade Chat.", prazo: "Próx. sprint" }
+    { prioridade: "P0 — HOJE",         modulo: "Canais / WhatsApp",         acao: "omnispa AxiosError 404 ativo há 6 dias (09/06→15/06): 2.822 ev · 1.535 usuários. Confirmar se fix foi mergeado ou abrir DEV4 corretivo urgente.", prazo: "Hoje" },
+    { prioridade: "P0 — HOJE",         modulo: "Chat / Mensagens",          acao: "QueryException 3024 — ListChats.php:459: query varre 365 dias de contact_last_messages, mata por timeout ~280-414x/dia (45 operadores afetados). Fix imediato: índice em contact_last_messages(customer_id, date_last_message, message_id) ou reduzir INTERVAL 8760h → 2160h. Abrir DEV4 com relatório bug-report-listchats-query-timeout.md.", prazo: "Hoje" },
+    { prioridade: "P1 — ESTA SEMANA",  modulo: "Distribuição / Filas",      acao: "GAP=3 na janela 7d — módulo subatendido. Race condition Redis LID: criar DEV4 corretivo. Apenas 6 N1 tickets na semana mas risco técnico persiste.", prazo: "Esta semana" },
+    { prioridade: "P1 — ESTA SEMANA",  modulo: "Autenticação",              acao: "ECONNREFUSED MELHORANDO (-85%) mas AxiosError 401 (945u) ainda ativo. Cluster 11/06 dentro da janela 7d. Validar se heimdall PR#61 corrigiu o root cause.", prazo: "Esta semana" },
+    { prioridade: "P1 — ESTA SEMANA",  modulo: "Canais / WhatsApp",         acao: "omnispa Uncompressed Asset (1.543 ev · 1.138u): investigar se é regressão de build pós-deploy recente.", prazo: "Esta semana" },
+    { prioridade: "P2 — PRÓX. SPRINT", modulo: "Chat / Mensagens",          acao: "Sentry MessageSenderException 2.987 ev · 427u e QueryException 1.164 ev sem DEV4 corretivo. Criar épico de qualidade Chat.", prazo: "Próx. sprint" },
+    { prioridade: "P2 — PRÓX. SPRINT", modulo: "Upload / Mídia",            acao: "3 N1 tickets em 7d. PDF >10MB (KB área frágil) sem DEV4 corretivo. SM-8218 (áudios não carregam) pendente de triagem.", prazo: "Próx. sprint" }
   ],
 
   // ── DEV ATIVO — TODOS OS CARDS (Painel do Radar) ─────────
@@ -837,7 +836,7 @@ dev_ativo_items: [],
   // do gráfico — este painel os torna visíveis com badge "fora do radar".
   // Schema: { id, titulo, assignee, modulo, servico_radar, dias_em_andamento }
   todos_dev_ativos: [
-    { id: "—", titulo: "20 cards em dev ativo identificados (cache 15/06) — use /argos-predict --force-refresh para lista completa", assignee: "—", modulo: null, servico_radar: null, dias_em_andamento: 0 }
+    { id: "—", titulo: "18 cards em dev ativo identificados (cache 15/06 19:16 · janela 7d) — use /argos-predict 7 --force-refresh para lista completa", assignee: "—", modulo: null, servico_radar: null, dias_em_andamento: 0 }
   ],
 
   // ── SERVIÇOS — Slide 3 (Causa Raiz) ─────────────────────
