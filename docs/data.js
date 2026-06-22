@@ -5,14 +5,14 @@
 // ============================================================
 const ARGOS_DATA = {
   "meta": {
-    "geradoEm": "22/06/2026, 12:46",
+    "geradoEm": "22/06/2026, 13:25",
     "janela": "14 dias",
     "fontes": ""
   },
   "kpis": [
     {
       "label": "SM Aberto (N1)",
-      "valor": 1749,
+      "valor": 1743,
       "cor": "amber",
       "icone": "🟡",
       "detalhe": ""
@@ -56,9 +56,9 @@ const ARGOS_DATA = {
   "ranking": [
     {
       "modulo": "Chat / Mensagens",
-      "total": 736,
+      "total": 733.6,
       "tec": 22,
-      "usr": 714,
+      "usr": 711.6,
       "nivel": "ALTO",
       "cor": "#EF4444",
       "sentryDelta": 35
@@ -74,18 +74,18 @@ const ARGOS_DATA = {
     },
     {
       "modulo": "Contatos",
-      "total": 423.6,
+      "total": 420.4,
       "tec": 0,
-      "usr": 423.6,
+      "usr": 420.4,
       "nivel": "ALTO",
       "cor": "#EF4444",
       "sentryDelta": 0
     },
     {
       "modulo": "Configurações",
-      "total": 277.4,
+      "total": 274.2,
       "tec": 1,
-      "usr": 276.4,
+      "usr": 273.2,
       "nivel": "ALTO",
       "cor": "#EF4444",
       "sentryDelta": 0
@@ -101,9 +101,9 @@ const ARGOS_DATA = {
     },
     {
       "modulo": "Distribuição / Filas",
-      "total": 151.4,
+      "total": 149,
       "tec": 20,
-      "usr": 131.4,
+      "usr": 129,
       "nivel": "ALTO",
       "cor": "#EF4444",
       "sentryDelta": 35
@@ -146,9 +146,9 @@ const ARGOS_DATA = {
     },
     {
       "modulo": "Disparos / Campanhas",
-      "total": 51.6,
+      "total": 50.8,
       "tec": 1,
-      "usr": 50.6,
+      "usr": 49.8,
       "nivel": "ALTO",
       "cor": "#EF4444",
       "sentryDelta": 0
@@ -270,7 +270,7 @@ const ARGOS_DATA = {
       "modulo": "Chat / Mensagens",
       "delta": 0,
       "ontem": 0,
-      "hoje": 736
+      "hoje": 733.6
     },
     {
       "modulo": "Jarvis / IA",
@@ -282,13 +282,13 @@ const ARGOS_DATA = {
       "modulo": "Contatos",
       "delta": 0,
       "ontem": 0,
-      "hoje": 423.6
+      "hoje": 420.4
     },
     {
       "modulo": "Configurações",
       "delta": 0,
       "ontem": 0,
-      "hoje": 277.4
+      "hoje": 274.2
     },
     {
       "modulo": "Canais",
@@ -300,7 +300,7 @@ const ARGOS_DATA = {
       "modulo": "Distribuição / Filas",
       "delta": 0,
       "ontem": 0,
-      "hoje": 151.4
+      "hoje": 149
     },
     {
       "modulo": "Upload / Mídia",
@@ -330,7 +330,7 @@ const ARGOS_DATA = {
       "modulo": "Disparos / Campanhas",
       "delta": 0,
       "ontem": 0,
-      "hoje": 51.6
+      "hoje": 50.8
     },
     {
       "modulo": "Integrações Externas",
@@ -367,8 +367,8 @@ const ARGOS_DATA = {
       "nome": "Chat / Mensagens",
       "apelido": "Chat",
       "alias": "",
-      "bugs": 813,
-      "bugs_n1": 798,
+      "bugs": 810,
+      "bugs_n1": 795,
       "bugs_sentry": 15,
       "dev_ativo": 4,
       "dev_planejado": 9,
@@ -407,8 +407,8 @@ const ARGOS_DATA = {
       "nome": "Contatos",
       "apelido": "Contatos",
       "alias": "",
-      "bugs": 740,
-      "bugs_n1": 740,
+      "bugs": 736,
+      "bugs_n1": 736,
       "bugs_sentry": 0,
       "dev_ativo": 1,
       "dev_planejado": 9,
@@ -427,8 +427,8 @@ const ARGOS_DATA = {
       "nome": "Configurações",
       "apelido": "Configurações",
       "alias": "",
-      "bugs": 328,
-      "bugs_n1": 328,
+      "bugs": 326,
+      "bugs_n1": 326,
       "bugs_sentry": 0,
       "dev_ativo": 3,
       "dev_planejado": 14,
@@ -467,8 +467,8 @@ const ARGOS_DATA = {
       "nome": "Distribuição / Filas",
       "apelido": "Distribuição",
       "alias": "",
-      "bugs": 104,
-      "bugs_n1": 93,
+      "bugs": 103,
+      "bugs_n1": 92,
       "bugs_sentry": 11,
       "dev_ativo": 1,
       "dev_planejado": 4,
@@ -528,8 +528,8 @@ const ARGOS_DATA = {
     {
       "pos": 1,
       "modulo": "Chat / Mensagens",
-      "score": 741,
-      "problema": "Score 736 (22 tecnico + 714 usuarios). 798 tickets SM ativos.",
+      "score": 738.6,
+      "problema": "Score 733.6 (22 tecnico + 711.6 usuarios). 795 tickets SM ativos.",
       "gatilho": "Proximo deploy pode gerar regressao",
       "acao": "Investigar sinais e priorizar correcoes."
     },
@@ -544,8 +544,8 @@ const ARGOS_DATA = {
     {
       "pos": 3,
       "modulo": "Contatos",
-      "score": 426.6,
-      "problema": "Score 423.6 (0 tecnico + 423.6 usuarios). 740 tickets SM ativos.",
+      "score": 423.4,
+      "problema": "Score 420.4 (0 tecnico + 420.4 usuarios). 736 tickets SM ativos.",
       "gatilho": "Proximo deploy pode gerar regressao",
       "acao": "Investigar sinais e priorizar correcoes."
     }
@@ -949,6 +949,37 @@ const ARGOS_DATA = {
     }
   ],
   "cards_resolvidos": [],
-  "acoes": [],
+  "acoes": [
+    {
+      "prioridade": "P0 — HOJE",
+      "modulo": "Chat / Mensagens",
+      "acao": "Corrigir bugs e investigar Sinais",
+      "prazo": "Hoje"
+    },
+    {
+      "prioridade": "P1 — ESTA SEMANA",
+      "modulo": "Jarvis / IA",
+      "acao": "Reforçar testes de regressão",
+      "prazo": "Esta semana"
+    },
+    {
+      "prioridade": "P2 — PRÓX. SPRINT",
+      "modulo": "Contatos",
+      "acao": "Monitorar tendência e planejar correção",
+      "prazo": "Próximo sprint"
+    },
+    {
+      "prioridade": "P2 — PRÓX. SPRINT",
+      "modulo": "Configurações",
+      "acao": "Revisar cobertura de testes",
+      "prazo": "Próximo sprint"
+    },
+    {
+      "prioridade": "P2 — PRÓX. SPRINT",
+      "modulo": "Canais",
+      "acao": "Acompanhar evolução dos Sinais",
+      "prazo": "Próximo sprint"
+    }
+  ],
   "drilldown": {}
 };

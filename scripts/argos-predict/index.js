@@ -477,6 +477,16 @@ function processData(config, rawData, days) {
       resolvido_em: b.fields?.resolutiondate || b.fields?.updated,
       modulo: mapper.mapTicketToModule(b.fields?.summary || '', b.fields?.labels || []),
     })),
+    acoes: rankedModules.slice(0, 5).map((m, i) => {
+      const priorities = ['P0 — HOJE', 'P1 — ESTA SEMANA', 'P2 — PRÓX. SPRINT', 'P2 — PRÓX. SPRINT', 'P2 — PRÓX. SPRINT'];
+      const defaults = ['Corrigir bugs e investigar Sinais', 'Reforçar testes de regressão', 'Monitorar tendência e planejar correção', 'Revisar cobertura de testes', 'Acompanhar evolução dos Sinais'];
+      return {
+        prioridade: priorities[i],
+        modulo: m.name,
+        acao: defaults[i] || 'Monitorar',
+        prazo: i === 0 ? 'Hoje' : i === 1 ? 'Esta semana' : 'Próximo sprint',
+      };
+    }),
   };
 
   return {
