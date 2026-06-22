@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Argos Predict — Mapa de Risco Preditivo</title>
+<style>
+  :root {
+    --bg: #0f172a; --card: #1e293b; --border: #334155;
+    --text: #e2e8f0; --muted: #94a3b8; --accent: #38bdf8;
+    --red: #EF4444; --amber: #F59E0B; --orange: #F97316; --green: #22C55E;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--text); font-family:'Segoe UI',system-ui,sans-serif; line-height:1.5; }
+  .container { max-width:1400px; margin:0 auto; padding:20px; }
+  header { text-align:center; padding:30px 0 20px; border-bottom:1px solid var(--border); margin-bottom:24px; }
+  header h1 { font-size:2rem; color:var(--accent); margin-bottom:4px; }
+  header p { color:var(--muted); font-size:.9rem; }
+  
+  .kpi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin-bottom:24px; }
+  .kpi-card { background:var(--card); border-radius:10px; padding:16px; border:1px solid var(--border); }
+  .kpi-card .icon { font-size:1.5rem; margin-bottom:4px; }
+  .kpi-card .value { font-size:1.6rem; font-weight:700; }
+  .kpi-card .label { font-size:.8rem; color:var(--muted); margin-top:2px; }
+  .kpi-card .detalhe { font-size:.75rem; color:var(--muted); margin-top:4px; }
+  .kpi-card.red { border-left:4px solid var(--red); }
+  .kpi-card.amber { border-left:4px solid var(--amber); }
+  .kpi-card.orange { border-left:4px solid var(--orange); }
+  .kpi-card.green { border-left:4px solid var(--green); }
+  
+  .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:24px; }
+  .grid-3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; margin-bottom:24px; }
+  @media (max-width:900px) { .grid-2,.grid-3 { grid-template-columns:1fr; } }
+  
+  .panel { background:var(--card); border-radius:10px; border:1px solid var(--border); padding:20px; }
+  .panel h2 { font-size:1.1rem; margin-bottom:14px; color:var(--accent); border-bottom:1px solid var(--border); padding-bottom:8px; }
+  
+  table { width:100%; border-collapse:collapse; font-size:.85rem; }
+  th { text-align:left; color:var(--muted); font-weight:600; padding:8px 10px; border-bottom:2px solid var(--border); font-size:.75rem; text-transform:uppercase; letter-spacing:.5px; }
+  td { padding:8px 10px; border-bottom:1px solid var(--border); }
+  tr:hover { background:rgba(56,189,248,.05); }
+  
+  .badge { display:inline-block; padding:2px 8px; border-radius:4px; font-size:.7rem; font-weight:700; }
+  .badge-alto { background:var(--red); color:#fff; }
+  .badge-medio { background:var(--amber); color:#000; }
+  .badge-atencao { background:var(--orange); color:#fff; }
+  .badge-estavel { background:var(--green); color:#000; }
+
+  .bomba-card { background:var(--bg); border-radius:8px; padding:16px; margin-bottom:12px; border-left:4px solid var(--red); }
+  .bomba-card h3 { font-size:1rem; margin-bottom:6px; }
+  .bomba-card .score { font-size:2rem; font-weight:700; color:var(--red); float:right; }
+  .bomba-card p { font-size:.85rem; color:var(--muted); margin-bottom:4px; }
+  .bomba-card .action { color:var(--accent); font-weight:600; }
+
+  .acao-item { padding:10px 14px; margin-bottom:8px; border-radius:6px; background:var(--bg); display:flex; gap:10px; align-items:flex-start; }
+  .acao-item .prio { font-weight:700; font-size:.8rem; min-width:80px; }
+  .acao-item .prio.p0 { color:var(--red); }
+  .acao-item .prio.p1 { color:var(--amber); }
+  .acao-item .prio.p2 { color:var(--orange); }
+
+  .radar-box { min-height:320px; }
+
+  .footer { text-align:center; padding:30px; color:var(--muted); font-size:.8rem; border-top:1px solid var(--border); margin-top:40px; }
+
+  .pr-card { background:var(--bg); padding:10px 14px; border-radius:6px; margin-bottom:6px; font-size:.82rem; }
+  .pr-card .repo { color:var(--accent); font-weight:600; }
+
+  .cluster-list { list-style:none; }
+  .cluster-list li { padding:6px 0; border-bottom:1px solid var(--border); font-size:.82rem; }
+
+  canvas { max-width:100%; }
+
+  .tab-bar { display:flex; gap:4px; margin-bottom:16px; }
+  .tab-btn { padding:6px 16px; border-radius:6px 6px 0 0; border:none; background:var(--border); color:var(--muted); cursor:pointer; font-size:.8rem; }
+  .tab-btn.active { background:var(--accent); color:var(--bg); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>🔮 Argos Predict — Mapa de Risco Preditivo</h1>
+  <p id="meta-line">Carregando...</p>
+</header>
+
+<section class="kpi-grid" id="kpi-grid"></section>
+
+<div class="grid-2">
+  <div class="panel">
+    <h2>🗺️ Ranking de Risco</h2>
+    <table>
+      <thead><tr><th>#</th><th>Módulo</th><th>Score</th><th>Técnico</th><th>Usuários</th><th>Nível</th><th>Δ Sentry</th></tr></thead>
+      <tbody id="ranking-tbody"></tbody>
+    </table>
+  </div>
+  <div class="panel">
+    <h2>💣 Top 3 Bombas</h2>
+    <div id="bombas-container"><p class="muted">Nenhum módulo atinge critério de bomba.</p></div>
+  </div>
+</div>
+
+<div class="grid-2">
+  <div class="panel">
+    <h2>📡 Radar de Serviços</h2>
+    <div class="radar-box"><canvas id="radarChart"></canvas></div>
+  </div>
+  <div class="panel">
+    <h2>🔥 Mapa de Calor — Pressão vs Atenção</h2>
+    <table>
+      <thead><tr><th>Módulo</th><th>Pressão</th><th>Atenção Dev</th><th>Gap</th><th>Zona</th></tr></thead>
+      <tbody id="heatmap-tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="grid-2">
+  <div class="panel">
+    <h2>⚡ Qualidade de Processo</h2>
+    <div id="qualidade-container"></div>
+  </div>
+  <div class="panel">
+    <h2>⚠️ PRs com Risco de Regressão</h2>
+    <div id="prs-container"><p class="muted">Nenhum PR perigoso detectado.</p></div>
+  </div>
+</div>
+
+<div class="panel" style="margin-bottom:24px;">
+  <h2>📋 Painel Dev Ativo</h2>
+  <table>
+    <thead><tr><th>ID</th><th>Título</th><th>Assignee</th><th>Módulo</th><th>Dias</th></tr></thead>
+    <tbody id="dev-ativos-tbody"></tbody>
+  </table>
+</div>
+
+<div class="panel" style="margin-bottom:24px;">
+  <h2>🪲 Erros Sentry Ativos</h2>
+  <table>
+    <thead><tr><th>Erro</th><th>Projeto</th><th>Usuários</th><th>Δ Semana</th><th>Status</th></tr></thead>
+    <tbody id="sentry-tbody"></tbody>
+  </table>
+</div>
+
+<div class="panel" style="margin-bottom:24px;">
+  <h2>✅ Ações Prioritárias</h2>
+  <div id="acoes-container"></div>
+</div>
+
+<footer class="footer">
+  Argos Predict v4.0 · Atualizado automaticamente · <span id="footer-date"></span>
+</footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="data.js"></script>
+<script>
+(function() {
+  const D = ARGOS_DATA;
+  if (!D || !D.meta) { document.body.innerHTML = '<p style="text-align:center;padding:40px;">Nenhum dado disponível. Execute <code>node scripts/argos-predict/index.js --update-dashboard</code> primeiro.</p>'; return; }
+
+  document.getElementById('meta-line').textContent = `Gerado em: ${D.meta.geradoEm} | ${D.meta.janela} | ${D.meta.fontes}`;
+  document.getElementById('footer-date').textContent = D.meta.geradoEm;
+
+  // KPIs
+  const kpiGrid = document.getElementById('kpi-grid');
+  if (D.kpis) {
+    D.kpis.forEach(k => {
+      const card = document.createElement('div');
+      card.className = `kpi-card ${k.cor}`;
+      card.innerHTML = `<div class="icon">${k.icone || ''}</div><div class="value" style="color:${k.cor === 'red' ? 'var(--red)' : k.cor === 'amber' ? 'var(--amber)' : 'var(--green)'}">${k.valor}</div><div class="label">${k.label}</div>${k.detalhe ? '<div class="detalhe">'+k.detalhe+'</div>' : ''}`;
+      kpiGrid.appendChild(card);
+    });
+  }
+
+  // Ranking
+  const tbody = document.getElementById('ranking-tbody');
+  if (D.ranking) {
+    D.ranking.forEach((r,i) => {
+      const badge = r.nivel === 'ALTO' ? 'badge-alto' : r.nivel === 'MÉDIO' ? 'badge-medio' : r.nivel === 'ATENÇÃO' ? 'badge-atencao' : 'badge-estavel';
+      const delta = r.sentryDelta > 0 ? `+${r.sentryDelta}%` : '—';
+      tbody.innerHTML += `<tr><td>${i+1}</td><td><strong>${r.modulo}</strong></td><td><strong>${r.total}</strong></td><td>${r.tec}</td><td>${r.usr}</td><td><span class="badge ${badge}">${r.nivel}</span></td><td>${delta}</td></tr>`;
+    });
+  }
+
+  // Bombas
+  const bombasC = document.getElementById('bombas-container');
+  if (D.bombas && D.bombas.length > 0) {
+    bombasC.innerHTML = '';
+    D.bombas.forEach(b => {
+      bombasC.innerHTML += `<div class="bomba-card"><span class="score">${b.score}</span><h3>#${b.pos} ${b.modulo}</h3><p><strong>Problema:</strong> ${b.problema}</p><p><strong>Gatilho:</strong> ${b.gatilho}</p><p class="action">Ação: ${b.acao}</p></div>`;
+    });
+  }
+
+  // Heatmap
+  const htbody = document.getElementById('heatmap-tbody');
+  if (D.mapaCalor) {
+    D.mapaCalor.forEach(h => {
+      htbody.innerHTML += `<tr><td>${h.modulo}</td><td>${h.pressao}</td><td>${h.atencao}</td><td style="color:${h.gap > 0 ? 'var(--red)' : 'var(--green)'}">${h.gap}</td><td>${h.zona}</td></tr>`;
+    });
+  }
+
+  // Radar
+  if (D.servicos_radar && D.servicos_radar.length >= 3 && typeof Chart !== 'undefined') {
+    const ctx = document.getElementById('radarChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'radar',
+      data: {
+        labels: D.servicos_radar.map(s => s.apelido || s.nome),
+        datasets: [
+          {
+            label: 'Bugs (N1 + Sentry)',
+            data: D.servicos_radar.map(s => s.bugs || 0),
+            borderColor: '#EF4444',
+            backgroundColor: 'rgba(239,68,68,0.15)',
+          },
+          {
+            label: 'Dev Ativo',
+            data: D.servicos_radar.map(s => s.dev_ativo || 0),
+            borderColor: '#F59E0B',
+            backgroundColor: 'rgba(245,158,11,0.15)',
+          },
+          {
+            label: 'Score Técnico',
+            data: D.servicos_radar.map(s => s.score_tec || 0),
+            borderColor: '#38bdf8',
+            backgroundColor: 'rgba(56,189,248,0.15)',
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: { r: { ticks: { display: false }, pointLabels: { color: '#94a3b8', font: { size: 10 } }, grid: { color: '#334155' } } },
+        plugins: { legend: { labels: { color: '#94a3b8', font: { size: 10 } } } }
+      }
+    });
+  }
+
+  // Qualidade
+  const qc = document.getElementById('qualidade-container');
+  if (D.qualidadeProcesso) {
+    const q = D.qualidadeProcesso;
+    qc.innerHTML = `
+      <p><strong>🔄 Bugs Reabertos:</strong> ${q.bugsReabertos?.total || 0} no período</p>
+      <p><strong>🏃 PRs Precipitados:</strong> ${q.prsPrecipitados?.total || 0} (&lt;2h review, &gt;10 arquivos)</p>
+      <p><strong>🧪 Cenários Desatualizados:</strong> ${q.stalenessQA?.total || 0} módulos</p>
+      <p><strong>🌐 Falhas por Ambiente:</strong> ${q.envFailures?.total || 0} padrões detectados</p>
+    `;
+  }
+
+  // PRs perigosos
+  const prsC = document.getElementById('prs-container');
+  if (D.prs_perigosos && D.prs_perigosos.length > 0) {
+    prsC.innerHTML = '';
+    D.prs_perigosos.slice(0,5).forEach(p => {
+      prsC.innerHTML += `<div class="pr-card"><span class="repo">${p.repo}</span> #${p.pr_number} — ${p.titulo} · Entropia: ${p.entropy} · Churn: ${p.churn_lines} linhas</div>`;
+    });
+  }
+
+  // Dev Ativos
+  const datbody = document.getElementById('dev-ativos-tbody');
+  if (D.todos_dev_ativos && D.todos_dev_ativos.length > 0) {
+    D.todos_dev_ativos.forEach(d => {
+      const modBadge = d.servico_radar ? d.servico_radar : (d.modulo || '⚠️ fora do radar');
+      datbody.innerHTML += `<tr><td><a href="#" style="color:var(--accent)">${d.id}</a></td><td>${d.titulo}</td><td>${d.assignee}</td><td>${modBadge}</td><td>${d.dias_em_andamento}d</td></tr>`;
+    });
+  } else {
+    datbody.innerHTML = '<tr><td colspan="5">Nenhum card em desenvolvimento ativo.</td></tr>';
+  }
+
+  // Sentry
+  const stbody = document.getElementById('sentry-tbody');
+  if (D.sentry && D.sentry.length > 0) {
+    D.sentry.forEach(s => {
+      const statusBadge = s.status === 'ESCALANDO' ? 'badge-alto' : 'badge-atencao';
+      stbody.innerHTML += `<tr><td>${s.erro}</td><td>${s.projeto}</td><td>${s.usuarios}</td><td>${s.delta}</td><td><span class="badge ${statusBadge}">${s.status}</span></td></tr>`;
+    });
+  } else {
+    stbody.innerHTML = '<tr><td colspan="5">Nenhum erro Sentry registrado ou Sentry não configurado.</td></tr>';
+  }
+
+  // Acoes
+  const acoesC = document.getElementById('acoes-container');
+  if (D.acoes && D.acoes.length > 0) {
+    D.acoes.forEach(a => {
+      const prioClass = a.prioridade.includes('P0') ? 'p0' : a.prioridade.includes('P1') ? 'p1' : 'p2';
+      acoesC.innerHTML += `<div class="acao-item"><span class="prio ${prioClass}">${a.prioridade}</span><span><strong>${a.modulo}</strong> — ${a.acao} <em style="color:var(--muted)">(${a.prazo})</em></span></div>`;
+    });
+  } else {
+    acoesC.innerHTML = '<p>Nenhuma ação priorizada.</p>';
+  }
+})();
+</script>
+</body>
+</html>

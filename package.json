@@ -1,0 +1,23 @@
+{
+  "name": "Argos-QA",
+  "version": "4.0.0",
+  "private": true,
+  "description": "Argos Predict — QA Preditivo + Dashboard",
+  "scripts": {
+    "predict": "node scripts/argos-predict/index.js",
+    "predict:dashboard": "node scripts/argos-predict/index.js --update-dashboard",
+    "radar:refresh": "node scripts/argos-predict/index.js --force-refresh --update-dashboard",
+    "radar:cache": "node scripts/argos-predict/index.js --cache-only --update-dashboard",
+    "test": "playwright test",
+    "test:reg": "playwright test tests/e2e/regressivo-canary.spec.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-code": "^2.1.144",
+    "@anthropic-ai/sdk": "^0.36.3",
+    "dotenv": "^17.4.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.0",
+    "cypress": "^13.17.0"
+  }
+}
