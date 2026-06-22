@@ -3,292 +3,2964 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Argos Predict — Mapa de Risco Preditivo</title>
+<title>Argos Predict — QA Risk Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script src="data.js"></script>
 <style>
-  :root {
-    --bg: #0f172a; --card: #1e293b; --border: #334155;
-    --text: #e2e8f0; --muted: #94a3b8; --accent: #38bdf8;
-    --red: #EF4444; --amber: #F59E0B; --orange: #F97316; --green: #22C55E;
-  }
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { background:var(--bg); color:var(--text); font-family:'Segoe UI',system-ui,sans-serif; line-height:1.5; }
-  .container { max-width:1400px; margin:0 auto; padding:20px; }
-  header { text-align:center; padding:30px 0 20px; border-bottom:1px solid var(--border); margin-bottom:24px; }
-  header h1 { font-size:2rem; color:var(--accent); margin-bottom:4px; }
-  header p { color:var(--muted); font-size:.9rem; }
-  
-  .kpi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin-bottom:24px; }
-  .kpi-card { background:var(--card); border-radius:10px; padding:16px; border:1px solid var(--border); }
-  .kpi-card .icon { font-size:1.5rem; margin-bottom:4px; }
-  .kpi-card .value { font-size:1.6rem; font-weight:700; }
-  .kpi-card .label { font-size:.8rem; color:var(--muted); margin-top:2px; }
-  .kpi-card .detalhe { font-size:.75rem; color:var(--muted); margin-top:4px; }
-  .kpi-card.red { border-left:4px solid var(--red); }
-  .kpi-card.amber { border-left:4px solid var(--amber); }
-  .kpi-card.orange { border-left:4px solid var(--orange); }
-  .kpi-card.green { border-left:4px solid var(--green); }
-  
-  .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:24px; }
-  .grid-3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; margin-bottom:24px; }
-  @media (max-width:900px) { .grid-2,.grid-3 { grid-template-columns:1fr; } }
-  
-  .panel { background:var(--card); border-radius:10px; border:1px solid var(--border); padding:20px; }
-  .panel h2 { font-size:1.1rem; margin-bottom:14px; color:var(--accent); border-bottom:1px solid var(--border); padding-bottom:8px; }
-  
-  table { width:100%; border-collapse:collapse; font-size:.85rem; }
-  th { text-align:left; color:var(--muted); font-weight:600; padding:8px 10px; border-bottom:2px solid var(--border); font-size:.75rem; text-transform:uppercase; letter-spacing:.5px; }
-  td { padding:8px 10px; border-bottom:1px solid var(--border); }
-  tr:hover { background:rgba(56,189,248,.05); }
-  
-  .badge { display:inline-block; padding:2px 8px; border-radius:4px; font-size:.7rem; font-weight:700; }
-  .badge-alto { background:var(--red); color:#fff; }
-  .badge-medio { background:var(--amber); color:#000; }
-  .badge-atencao { background:var(--orange); color:#fff; }
-  .badge-estavel { background:var(--green); color:#000; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  .bomba-card { background:var(--bg); border-radius:8px; padding:16px; margin-bottom:12px; border-left:4px solid var(--red); }
-  .bomba-card h3 { font-size:1rem; margin-bottom:6px; }
-  .bomba-card .score { font-size:2rem; font-weight:700; color:var(--red); float:right; }
-  .bomba-card p { font-size:.85rem; color:var(--muted); margin-bottom:4px; }
-  .bomba-card .action { color:var(--accent); font-weight:600; }
+:root {
+  --bg:         #0A0F1E;
+  --bg2:        #0D1525;
+  --card:       #111827;
+  --card2:      #1F2937;
+  --card3:      #263348;
+  --border:     #1E3A5F;
+  --border2:    #2D4A6F;
+  --txt1:       #F1F5F9;
+  --txt2:       #94A3B8;
+  --txt3:       #475569;
+  --critical:   #EF4444;  --critical-bg:   rgba(239,68,68,.12);
+  --red:        var(--critical);  --red-bg:   var(--critical-bg);
+  --warning:    #F59E0B;  --warning-bg:    rgba(245,158,11,.12);
+  --amber:      var(--warning);   --amber-bg: var(--warning-bg);
+  --orange:     #F97316;  --orange-bg:     rgba(249,115,22,.12);
+  --success:    #22C55E;  --success-bg:    rgba(34,197,94,.12);
+  --green:      var(--success);   --green-bg: var(--success-bg);
+  --info:       #3B82F6;  --info-bg:       rgba(59,130,246,.12);
+  --indigo:     #6366F1;  --indigo-bg:     rgba(99,102,241,.12);
+  --glass:      rgba(17,24,39,0.75);
+  --shadow:     0 4px 24px rgba(0,0,0,.4);
+  --shadow-lg:  0 8px 48px rgba(0,0,0,.5);
 
-  .acao-item { padding:10px 14px; margin-bottom:8px; border-radius:6px; background:var(--bg); display:flex; gap:10px; align-items:flex-start; }
-  .acao-item .prio { font-weight:700; font-size:.8rem; min-width:80px; }
-  .acao-item .prio.p0 { color:var(--red); }
-  .acao-item .prio.p1 { color:var(--amber); }
-  .acao-item .prio.p2 { color:var(--orange); }
+  --font-sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono:  'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
 
-  .radar-box { min-height:320px; }
+  --step--2: clamp(0.58rem, 0.55rem + 0.15vw, 0.65rem);
+  --step--1: clamp(0.65rem, 0.6rem + 0.2vw, 0.75rem);
+  --step-0:  clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --step-1:  clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+  --step-2:  clamp(1rem, 0.9rem + 0.5vw, 1.25rem);
+  --step-3:  clamp(1.25rem, 1.1rem + 0.75vw, 1.75rem);
+  --step-4:  clamp(1.5rem, 1.3rem + 1vw, 2.2rem);
+  --step-5:  clamp(1.8rem, 1.5rem + 1.5vw, 2.8rem);
+}
 
-  .footer { text-align:center; padding:30px; color:var(--muted); font-size:.8rem; border-top:1px solid var(--border); margin-top:40px; }
+html, body { height: 100%; font-family: var(--font-sans); background: var(--bg); color: var(--txt1); overflow: hidden; }
 
-  .pr-card { background:var(--bg); padding:10px 14px; border-radius:6px; margin-bottom:6px; font-size:.82rem; }
-  .pr-card .repo { color:var(--accent); font-weight:600; }
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
 
-  .cluster-list { list-style:none; }
-  .cluster-list li { padding:6px 0; border-bottom:1px solid var(--border); font-size:.82rem; }
+/* ── ANIMATIONS ── */
+@keyframes fadeInUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes slideInRight { from { opacity:0; transform:translateX(30px); } to { opacity:1; transform:translateX(0); } }
+@keyframes shimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.5} }
+@keyframes healthPulse { 0%,100%{box-shadow:0 0 8px rgba(239,68,68,.3)} 50%{box-shadow:0 0 20px rgba(239,68,68,.6)} }
 
-  canvas { max-width:100%; }
+/* ── FRESHNESS BANNER ── */
+#freshnessBanner { display:none; padding:6px 28px; font-size:var(--step--1); color:#A5B4FC; border-bottom:1px solid #6366F133; background:rgba(99,102,241,.08); }
 
-  .tab-bar { display:flex; gap:4px; margin-bottom:16px; }
-  .tab-btn { padding:6px 16px; border-radius:6px 6px 0 0; border:none; background:var(--border); color:var(--muted); cursor:pointer; font-size:.8rem; }
-  .tab-btn.active { background:var(--accent); color:var(--bg); }
+/* ── SEARCH MODAL ── */
+#searchOverlay { display:none; position:fixed; inset:0; z-index:300; background:rgba(0,0,0,.7); backdrop-filter:blur(6px); align-items:flex-start; justify-content:center; padding-top:80px; }
+#searchOverlay.open { display:flex; }
+#searchBox { background:rgba(17,24,39,.95); border:1px solid var(--indigo); border-radius:14px; width:min(520px,90vw); overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,.6); }
+#searchInput { width:100%; padding:16px 20px; background:transparent; border:none; color:var(--txt1); font-size:var(--step-1); outline:none; }
+#searchInput::placeholder { color:var(--txt3); }
+#searchResults { max-height:340px; overflow-y:auto; border-top:1px solid var(--border); }
+.search-item { padding:10px 20px; cursor:pointer; display:flex; align-items:center; gap:12px; transition:background .15s; }
+.search-item:first-child { background:rgba(99,102,241,.08); }
+.search-item:hover { background:var(--card2); }
+.search-item-icon { font-size:var(--step-1); width:24px; text-align:center; flex-shrink:0; }
+.search-item-label { font-size:var(--step-0); font-weight:600; }
+.search-item-sub { font-size:var(--step--1); color:var(--txt2); }
+
+/* ── SIDEBAR ── */
+.sidebar {
+  position: fixed; top:0; left:0; bottom:0; z-index:100;
+  width: 220px;
+  background: rgba(10,15,30,.95); backdrop-filter:blur(16px);
+  border-right:1px solid var(--border);
+  display:flex; flex-direction:column;
+  transition:transform .3s ease;
+}
+.sidebar-brand {
+  padding:16px 16px 12px;
+  display:flex; align-items:center; gap:10px;
+  border-bottom:1px solid var(--border);
+}
+.sidebar-brand .logo { font-size:1.3rem; }
+.sidebar-brand .name { font-size:var(--step-0); font-weight:800; color:var(--indigo); }
+.sidebar-brand .sub  { font-size:var(--step--2); color:var(--txt2); }
+.sidebar-items { flex:1; overflow-y:auto; padding:8px 8px; display:flex; flex-direction:column; gap:2px; }
+.sidebar-item {
+  display:flex; align-items:center; gap:10px;
+  padding:8px 12px; border-radius:8px;
+  font-size:var(--step--1); font-weight:500;
+  background:transparent; border:none; color:var(--txt2);
+  cursor:pointer; transition:all .15s; text-align:left; width:100%;
+}
+.sidebar-item:hover { background:var(--card2); color:var(--txt1); }
+.sidebar-item.active { background:rgba(99,102,241,.15); color:#A5B4FC; }
+.sidebar-item .si-icon { font-size:var(--step-0); width:20px; text-align:center; flex-shrink:0; }
+.sidebar-item .si-label { flex:1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.sidebar-item .si-badge {
+  width:8px; height:8px; border-radius:50%; flex-shrink:0;
+  animation:pulse 1.4s infinite;
+}
+.sidebar-footer {
+  padding:10px 12px; border-top:1px solid var(--border);
+  font-size:var(--step--2); color:var(--txt3); text-align:center;
+}
+
+/* ── HEALTH BAR ── */
+#healthBar {
+  display:flex; align-items:center; gap:12px;
+  padding:8px 20px;
+  background:rgba(17,24,39,.8); backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--border);
+  flex-wrap:wrap;
+}
+.health-indicator { display:flex; align-items:center; gap:8px; }
+.health-dot { width:10px; height:10px; border-radius:50%; flex-shrink:0; }
+.health-dot.critical { background:var(--critical); box-shadow:0 0 12px rgba(239,68,68,.5); }
+.health-dot.warning  { background:var(--warning); box-shadow:0 0 8px rgba(245,158,11,.4); }
+.health-dot.success  { background:var(--success); box-shadow:0 0 8px rgba(34,197,94,.4); }
+.health-score { font-size:var(--step-2); font-weight:900; line-height:1; }
+.health-label { font-size:var(--step--1); color:var(--txt2); letter-spacing:.04em; }
+.health-trend { font-size:var(--step--1); font-weight:600; }
+.health-pills { display:flex; gap:6px; flex-wrap:wrap; flex:1; }
+.health-pill {
+  font-size:var(--step--2); padding:2px 8px; border-radius:99px;
+  font-weight:600; white-space:nowrap;
+  animation:fadeIn .3s ease backwards;
+}
+
+/* ── NAV ── */
+.topnav {
+  position: fixed; top:0; left:220px; right:0; z-index:90;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:8px 20px; height:44px;
+  background:rgba(10,15,30,.85); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.nav-left { display:flex; align-items:center; gap:8px; }
+.nav-dots { display:flex; gap:4px; }
+.dot { width:6px; height:6px; border-radius:50%; background:var(--border); cursor:pointer; transition:all .2s; }
+.dot.active { background:var(--indigo); transform:scale(1.4); }
+.dot.dim { opacity:.28; }
+.nav-right { display:flex; align-items:center; gap:8px; }
+.slide-label { font-size:var(--step--1); color:var(--txt2); }
+#slideNameLabel { font-size:var(--step--1); color:var(--txt2); font-weight:600; max-width:140px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.btn {
+  background:var(--card2); border:1px solid var(--border); color:var(--txt1);
+  width:30px; height:30px; border-radius:7px; cursor:pointer;
+  font-size:var(--step-0); display:flex; align-items:center; justify-content:center;
+  transition:all .15s;
+}
+.btn:hover { background:var(--border2); border-color:var(--border2); transform:translateY(-1px); }
+.btn-sm { width:28px; height:28px; font-size:var(--step--1); }
+
+/* ── DECK ── */
+.deck { height:100vh; overflow:hidden; position:relative; margin-left:220px; padding-top:44px; }
+.slide {
+  position:absolute; inset:0;
+  padding:clamp(12px, 2.5vw, 28px) clamp(16px, 3vw, 36px) 48px;
+  overflow-y:auto;
+  opacity:0; transform:translateX(40px);
+  transition:opacity .3s ease, transform .3s ease;
+  pointer-events:none;
+}
+.slide.active { opacity:1; transform:none; pointer-events:all; }
+.slide.exit   { opacity:0; transform:translateX(-40px); }
+.slide-tag { font-size:var(--step--1); font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--indigo); margin-bottom:4px; }
+h2 { font-size:var(--step-2); font-weight:800; margin-bottom:14px; line-height:1.2; color:var(--txt1); }
+.sub-h { font-size:var(--step-0); color:var(--txt3); margin-bottom:14px; margin-top:-10px; line-height:1.5; }
+
+/* ── LAYOUTS (responsivos) ── */
+.g2 { display:grid; grid-template-columns:repeat(auto-fit, minmax(min(320px,100%), 1fr)); gap:14px; }
+.g3 { display:grid; grid-template-columns:repeat(auto-fit, minmax(min(280px,100%), 1fr)); gap:14px; }
+.g4 { display:grid; grid-template-columns:repeat(auto-fit, minmax(min(220px,100%), 1fr)); gap:12px; }
+
+/* ── CARDS (glassmorphism) ── */
+.card {
+  background:var(--glass); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+  border:1px solid rgba(30,58,95,.5); border-radius:12px; padding:16px 18px;
+  box-shadow:var(--shadow);
+  transition:transform .2s, box-shadow .2s, border-color .2s;
+}
+.card:hover { transform:translateY(-1px); box-shadow:var(--shadow-lg); border-color:var(--border2); }
+.card-sm { border-radius:9px; padding:12px 14px; }
+
+/* ── KPI ── */
+.kpi { border-left:4px solid; }
+.kpi.red    { border-color:var(--critical); }
+.kpi.amber  { border-color:var(--warning); }
+.kpi.orange { border-color:var(--orange); }
+.kpi.green  { border-color:var(--success); }
+.kpi.blue   { border-color:var(--info); }
+.kpi-ico  { font-size:var(--step-2); margin-bottom:4px; }
+.kpi-num  { font-size:var(--step-4); font-weight:900; line-height:1; letter-spacing:-.03em; }
+.kpi-lbl  { font-size:var(--step--1); color:var(--txt2); text-transform:uppercase; letter-spacing:.06em; margin-top:3px; font-weight:600; }
+.kpi-det  { font-size:var(--step--1); color:var(--txt3); margin-top:4px; line-height:1.5; }
+.kpi-hero { min-height:110px; }
+.c-red    { color:var(--critical); }
+.c-amber  { color:var(--warning); }
+.c-orange { color:var(--orange); }
+.c-green  { color:var(--success); }
+
+/* ── BADGES ── */
+.badge { display:inline-block; padding:2px 9px; border-radius:99px; font-size:var(--step--1); font-weight:700; letter-spacing:.05em; }
+.b-critical { background:var(--critical-bg); color:var(--critical); }
+.b-warning  { background:var(--warning-bg);  color:var(--warning); }
+.b-orange   { background:var(--orange-bg);   color:var(--orange); }
+.b-success  { background:var(--success-bg);  color:var(--success); }
+.b-info     { background:var(--info-bg);     color:var(--info); }
+.b-indigo   { background:var(--indigo-bg);   color:#A5B4FC; }
+.b-pulse  { animation:pulse 1.4s infinite; }
+
+/* ── SERVIÇO CARDS ── */
+.svc-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 14px; padding: 18px;
+  display: flex; flex-direction: column; gap: 10px;
+}
+.svc-card.critico { border-top: 3px solid var(--red); }
+.svc-card.alto    { border-top: 3px solid var(--amber); }
+.svc-card.medio   { border-top: 3px solid var(--orange); }
+.svc-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+.svc-ico  { font-size: 1.6rem; }
+.svc-nome { font-size: .85rem; font-weight: 800; }
+.svc-apelido { font-size: .7rem; color: var(--txt2); }
+.svc-bugs { font-size: 1.8rem; font-weight: 900; line-height: 1; }
+.svc-bugs-lbl { font-size: .65rem; color: var(--txt2); }
+.svc-desc { font-size: .75rem; color: var(--txt2); line-height: 1.5; }
+.svc-modulos { display: flex; flex-wrap: wrap; gap: 4px; }
+.svc-sinal { font-size: .7rem; color: var(--txt2); display: flex; align-items: flex-start; gap: 5px; }
+.svc-sinal::before { content: "→"; color: var(--indigo); flex-shrink: 0; }
+.svc-sinais { display: flex; flex-direction: column; gap: 3px; }
+.conf-bar { height: 4px; border-radius: 2px; margin-top: 6px; }
+
+/* ── DRILLDOWN ── */
+.drill-hero { display: grid; grid-template-columns: 1fr 2fr; gap: 18px; margin-bottom: 16px; }
+.drill-stat { text-align: center; padding: 14px; }
+.drill-num  { font-size: 2.8rem; font-weight: 900; line-height: 1; }
+.drill-lbl  { font-size: .7rem; color: var(--txt2); text-transform: uppercase; letter-spacing: .07em; margin-top: 3px; }
+.drill-narrative { font-size: .85rem; color: var(--txt2); line-height: 1.65; padding: 14px; background: var(--card2); border-radius: 10px; border-left: 3px solid var(--indigo); }
+.cluster-row { display: grid; grid-template-columns: 1fr auto auto; gap: 10px; align-items: center; padding: 9px 12px; border-bottom: 1px solid rgba(30,58,95,.5); }
+.cluster-row:last-child { border-bottom: none; }
+.cluster-sintoma { font-size: .82rem; font-weight: 500; }
+.cluster-qtd { font-size: 1.3rem; font-weight: 900; text-align: right; min-width: 32px; }
+.cluster-svc { font-size: .7rem; color: var(--txt2); text-align: right; }
+.servico-bar { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
+.bar-track { flex: 1; height: 10px; background: var(--card2); border-radius: 5px; overflow: hidden; }
+.bar-fill  { height: 100%; border-radius: 5px; transition: width .6s ease; }
+.bar-lbl   { font-size: .75rem; white-space: nowrap; }
+.dev-box { margin-top: 12px; padding: 10px 14px; border-radius: 9px; font-size: .8rem; }
+.dev-box.warn  { background: var(--amber-bg); border: 1px solid rgba(245,158,11,.25); color: var(--amber); }
+.dev-box.acao  { background: var(--blue-bg);  border: 1px solid rgba(59,130,246,.25);  color: #93C5FD; }
+
+/* ── COBERTURA ── */
+.cov-row { display: grid; grid-template-columns: 180px 1fr 1fr auto; align-items: center; gap: 12px; padding: 10px 14px; border-bottom: 1px solid rgba(30,58,95,.4); }
+.cov-row:last-child { border-bottom: none; }
+.cov-lbl { font-size: .82rem; font-weight: 600; }
+.bar-wrap { display: flex; flex-direction: column; gap: 3px; }
+.bar-sub  { font-size: .65rem; color: var(--txt2); }
+
+/* ── BOMBAS ── */
+.bomb { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+.bomb:nth-child(1) { border-top: 3px solid var(--red); }
+.bomb:nth-child(2) { border-top: 3px solid var(--amber); }
+.bomb:nth-child(3) { border-top: 3px solid var(--orange); }
+.bomb-rank  { font-size: .65rem; color: var(--txt2); font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.bomb-score { font-size: 2.6rem; font-weight: 900; line-height: 1; }
+.bomb-mod   { font-size: .95rem; font-weight: 700; margin-top: -4px; }
+.bomb-sec   { font-size: .65rem; color: var(--txt2); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 2px; }
+.bomb-txt   { font-size: .78rem; color: var(--txt2); line-height: 1.55; }
+.bomb-gtlh  { font-size: .78rem; color: var(--amber); }
+.bomb-acao  { padding: 8px 12px; background: rgba(99,102,241,.1); border: 1px solid rgba(99,102,241,.3); border-radius: 8px; font-size: .78rem; color: #A5B4FC; }
+
+/* 📊 SIDEBAR BADGE */
+.sidebar-badge { margin-left:auto; background:var(--indigo); color:#fff; font-size:.58rem; font-weight:700; padding:1px 6px; border-radius:7px; line-height:1.5; }
+
+/* ── SENTRY ── */
+.sentry-row { display: grid; grid-template-columns: 2fr auto auto auto; align-items: center; gap: 10px; padding: 10px 14px; border-bottom: 1px solid rgba(30,58,95,.4); }
+.sentry-row:last-child { border-bottom: none; }
+
+/* ── TABLE ── */
+table { width: 100%; border-collapse: collapse; font-size: .82rem; }
+th { text-align: left; padding: 8px 12px; color: var(--txt2); font-size: .68rem; letter-spacing: .09em; text-transform: uppercase; border-bottom: 1px solid var(--border); }
+td { padding: 9px 12px; border-bottom: 1px solid rgba(30,58,95,.4); vertical-align: middle; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: rgba(99,102,241,.04); }
+
+/* ── CAPA ── */
+.capa { height: 100%; display: flex; flex-direction: column; justify-content: center; }
+.capa-badge { display: inline-flex; align-items: center; gap: 6px; padding: 5px 14px; border-radius: 99px; background: var(--red-bg); border: 1px solid rgba(239,68,68,.3); color: var(--red); font-size: .8rem; font-weight: 700; margin-bottom: 18px; width: fit-content; }
+.capa-rule  { width: 56px; height: 4px; background: var(--indigo); border-radius: 2px; margin: 16px 0; }
+.capa-meta  { display: flex; gap: 36px; margin-top: 18px; }
+.capa-mi    { font-size: .75rem; color: var(--txt2); }
+.capa-mi span { display: block; font-size: 1rem; font-weight: 700; color: var(--txt1); margin-top: 2px; }
+
+/* ── FOOTER ── */
+footer {
+  position: fixed; bottom: 0; left: 220px; right: 0; height: 36px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 20px; font-size: var(--step--1); color: var(--txt3);
+  border-top: 1px solid var(--border); background: rgba(10,15,30,.9);
+}
+
+/* ── CHART WRAP ── */
+.chart-box { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
+
+/* ── HELP PANEL ── */
+#helpBtn {
+  position: fixed; bottom: 44px; left: 238px; z-index: 150;
+  width: 34px; height: 34px; border-radius: 50%;
+  background: var(--card2); border: 1px solid var(--border);
+  color: var(--txt2); font-size: .95rem; font-weight: 700;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: background .15s, color .15s, border-color .15s;
+}
+#helpBtn:hover, #helpBtn.active { background: var(--indigo); color: #fff; border-color: var(--indigo); }
+@media (max-width: 768px) { #helpBtn { left: 16px; } }
+
+/* ── GLOBAL HELP SECTIONS ── */
+#helpGlobal-content { flex-direction:column; gap:8px; }
+.help-global-section {
+  background:#1A2332; border:1px solid #1E3A5F; border-radius:10px; overflow:hidden;
+}
+.help-global-section[open] { background:#1E293B; }
+.help-global-summary {
+  padding:10px 14px; cursor:pointer; font-size:.78rem; font-weight:700; color:#E2E8F0;
+  list-style:none; display:flex; align-items:center; gap:8px; user-select:none;
+}
+.help-global-summary::-webkit-details-marker { display:none; }
+.help-global-summary::before { content:'▶'; font-size:.6rem; color:#3B82F6; transition:transform .2s; }
+.help-global-section[open] .help-global-summary::before { transform:rotate(90deg); }
+.help-global-body { padding:0 14px 12px; font-size:.76rem; color:#CBD5E1; line-height:1.6; }
+.help-global-body p { margin:6px 0; }
+.help-global-body ul, .help-global-body ol { margin:4px 0; }
+.help-global-body li { margin:2px 0; }
+
+/* ── HELP MODE TABS ── */
+.helpPanel-modes {
+  display:flex; gap:4px; padding:0 16px 8px; flex-shrink:0;
+}
+.help-mode-btn {
+  flex:1; padding:6px 10px; border:1px solid #1E3A5F; border-radius:8px;
+  background:transparent; color:#94A3B8; font-size:.72rem; font-weight:600;
+  cursor:pointer; transition:all .15s; letter-spacing:.02em;
+}
+.help-mode-btn:hover { background:rgba(59,130,246,.08); color:#E2E8F0; }
+.help-mode-btn.active { background:rgba(59,130,246,.15); border-color:#3B82F6; color:#93C5FD; }
+
+#helpPanel {
+  position: fixed; top: 0; right: 0; bottom: 0; z-index: 140;
+  width: min(360px, 92vw);
+  background: #0D1525; border-left: 1px solid var(--border);
+  display: flex; flex-direction: column;
+  transform: translateX(100%);
+  transition: transform .25s ease;
+  box-shadow: -8px 0 32px rgba(0,0,0,.5);
+}
+#helpPanel.open { transform: translateX(0); }
+#helpPanel-header {
+  padding: 18px 18px 12px; border-bottom: 1px solid var(--border);
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; flex-shrink: 0;
+}
+#helpPanel-title { font-size: .78rem; font-weight: 700; color: var(--indigo); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 4px; }
+#helpPanel-intro { font-size: .8rem; color: var(--txt2); line-height: 1.55; }
+#helpPanel-body  { overflow-y: auto; padding: 14px 18px; display: flex; flex-direction: column; gap: 10px; }
+.help-term { background: var(--card); border: 1px solid var(--border); border-radius: 9px; padding: 11px 14px; }
+.help-term-name { font-size: .78rem; font-weight: 700; color: var(--txt1); margin-bottom: 4px; }
+.help-term-def  { font-size: .75rem; color: var(--txt2); line-height: 1.55; }
+#helpPanel-footer { padding: 10px 18px; border-top: 1px solid var(--border); font-size: .68rem; color: #475569; flex-shrink: 0; }
+
+/* ── PRs PERIGOSOS ── */
+.prs-table th { font-size:.62rem; }
+.prs-table td { font-size:.77rem; vertical-align:top; }
+.entropy-bar  { display:inline-block; height:8px; border-radius:4px; vertical-align:middle; margin-right:4px; }
+.pr-bug-tag   { display:inline-block; padding:1px 7px; border-radius:4px; font-size:.62rem; font-weight:700; background:rgba(239,68,68,.15); color:#EF4444; margin:1px 2px 1px 0; }
+.pr-sentry-tag{ display:inline-block; padding:1px 7px; border-radius:4px; font-size:.62rem; font-weight:700; background:rgba(245,158,11,.15); color:#F59E0B; margin:1px 2px 1px 0; }
+.pr-ok-tag    { display:inline-block; padding:1px 7px; border-radius:4px; font-size:.62rem; font-weight:700; background:rgba(34,197,94,.12); color:#22C55E; margin:1px 0; }
+.entropy-critical { color:#EF4444; font-weight:700; }
+.entropy-medium   { color:#F59E0B; font-weight:700; }
+.entropy-low      { color:#22C55E; }
+
+/* ── TIMELINE RESOLUCOES ── */
+.resol-grid { display:flex; flex-wrap:wrap; gap:8px; }
+.resol-card { display:flex; align-items:flex-start; gap:8px; padding:8px 12px; background:rgba(34,197,94,.06); border:1px solid rgba(34,197,94,.2); border-radius:8px; flex:1; min-width:200px; }
+.resol-icon { font-size:1rem; flex-shrink:0; margin-top:1px; }
+.resol-id   { font-size:.62rem; font-family:monospace; color:#22C55E; font-weight:700; }
+.resol-titulo { font-size:.72rem; color:var(--txt1); line-height:1.4; }
+.resol-data   { font-size:.62rem; color:#475569; margin-top:2px; }
+.resol-modulo { font-size:.6rem; padding:1px 6px; border-radius:3px; background:rgba(99,102,241,.15); color:#A5B4FC; }
+
+/* ── PRINT ── */
+@media print {
+  body { overflow: visible; background: #fff; color: #000; }
+  .sidebar, .topnav, #healthBar, footer, #helpBtn, #freshnessBanner, #searchOverlay { display: none !important; }
+  .deck { height: auto; overflow: visible; margin-left: 0; }
+  .slide { position: relative !important; opacity: 1 !important; transform: none !important; pointer-events: all !important; break-after: page; padding: 20px !important; }
+  .card { background: #f5f5f5 !important; backdrop-filter: none !important; border: 1px solid #ccc !important; }
+  .kpi-num, h2, .slide-tag { color: #000 !important; }
+}
+::-webkit-scrollbar { width: 5px; } ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+/* ── SCORE ZONES ── */
+.zone-ref { position:absolute; top:0; bottom:0; border-right:1px dashed rgba(255,255,255,.12); pointer-events:none; }
+.zone-label-bar { position:absolute; bottom:0; font-size:.55rem; color:#475569; padding:0 2px; }
+
+/* ── TREND ARROWS ── */
+.trend-up   { color:#EF4444; font-size:.8rem; font-weight:700; }
+.trend-dn   { color:#22C55E; font-size:.8rem; font-weight:700; }
+.trend-eq   { color:#475569; font-size:.8rem; }
+
+/* ── KPI GROUPS ── */
+.kpi-group-header { font-size:.68rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#475569; margin-bottom:6px; margin-top:12px; padding:0 4px; border-left:2px solid var(--border); padding-left:8px; }
+.kpi-group-now  .kpi { border-left-width:4px; }
+.kpi-hero { min-height:100px; }
+
+/* ── HERO ZONE (CAPA) ── */
+.hero-grid { display:grid; grid-template-columns:1fr 1.4fr; gap:0; border:1px solid var(--border); border-radius:14px; overflow:hidden; margin-top:20px; }
+.hero-left { background:var(--red-bg); border-right:1px solid rgba(239,68,68,.25); padding:20px 24px; display:flex; flex-direction:column; gap:10px; }
+.hero-right { padding:20px 24px; display:flex; flex-direction:column; gap:8px; }
+.hero-positive { background:rgba(34,197,94,.08); border:1px solid rgba(34,197,94,.2); border-radius:10px; padding:12px 16px; margin-top:8px; font-size:.8rem; color:#4ADE80; }
+.hero-num { font-size:3rem; font-weight:900; line-height:1; color:var(--red); }
+.hero-lbl { font-size:.72rem; color:var(--txt2); text-transform:uppercase; letter-spacing:.06em; }
+.hero-sub { font-size:.75rem; color:#EF4444; opacity:.8; }
+.hero-action { display:flex; align-items:flex-start; gap:8px; font-size:.8rem; color:var(--txt1); padding:6px 0; border-bottom:1px solid rgba(255,255,255,.06); }
+.hero-action:last-child { border-bottom:none; }
+.hero-action-badge { font-size:.62rem; font-weight:700; padding:2px 7px; border-radius:4px; flex-shrink:0; margin-top:1px; }
+.hero-section-title { font-size:.65rem; text-transform:uppercase; letter-spacing:.1em; color:#475569; font-weight:700; margin-bottom:4px; }
+.capa-status { display:inline-flex; align-items:center; gap:8px; padding:6px 16px; border-radius:8px; font-size:.82rem; font-weight:700; width:fit-content; }
+
+/* ── ZONE BAND (Ranking) ── */
+.zone-band { display:flex; height:3px; border-radius:2px; overflow:hidden; margin-top:6px; }
+.zone-band-seg { display:flex; align-items:center; justify-content:center; font-size:.5rem; color:rgba(255,255,255,.5); }
+
+/* ── BOMB REDESIGN ── */
+.bomb-urgency-bar { height:8px; border-radius:4px; overflow:hidden; background:var(--card2); margin:4px 0 2px; position:relative; }
+.bomb-urgency-fill { height:100%; border-radius:4px; transition:width .6s ease; }
+.bomb-context-row { display:flex; align-items:center; gap:16px; font-size:.75rem; color:var(--txt2); padding:6px 0; border-bottom:1px solid rgba(30,58,95,.5); }
+.bomb-context-icon { font-size:1rem; }
+.bomb-context-val  { font-size:.9rem; font-weight:700; color:var(--txt1); }
+.bomb-urgency-label { font-size:.6rem; font-weight:700; letter-spacing:.1em; }
+
+/* ── RADAR GRID TOGGLE ── */
+.radar-toggle { display:flex; gap:6px; margin-bottom:12px; }
+.radar-toggle-btn { padding:4px 12px; border-radius:6px; border:1px solid var(--border); background:transparent; color:var(--txt2); font-size:.72rem; cursor:pointer; transition:.15s; }
+.radar-toggle-btn.active { background:var(--indigo); color:#fff; border-color:var(--indigo); }
+#radarGrid { display:none; overflow-x:auto; }
+#radarGrid table { font-size:.75rem; }
+#radarGrid th { font-size:.62rem; text-align:center; }
+#radarGrid td { text-align:center; padding:7px 10px; }
+
+/* ── INLINE TOOLTIPS ── */
+.tip { cursor:help; border-bottom:1px dashed #475569; color:inherit; text-decoration:none; position:relative; }
+.tip { cursor:help; border-bottom:1px dashed #475569; color:inherit; text-decoration:none; }
+
+/* ── SLIDE NAME ── */
+#slideNameLabel { font-size:.72rem; color:var(--txt2); font-weight:600; max-width:160px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
+/* ── SKELETON LOADER ── */
+@keyframes shimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+.skeleton-box { background:linear-gradient(90deg,var(--card2) 25%,rgba(255,255,255,.05) 50%,var(--card2) 75%); background-size:200% 100%; animation:shimmer 1.4s infinite; border-radius:10px; }
+.skeleton-chart-h { height:260px; width:100%; }
+
+/* ── ZONE FILTER BAR (Ranking) ── */
+.zone-filter-wrap { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px; align-items:center; }
+.zone-filter-btn { padding:3px 11px; border-radius:6px; border:1px solid var(--border); background:transparent; color:var(--txt2); font-size:.7rem; cursor:pointer; transition:.15s; white-space:nowrap; }
+.zone-filter-btn:hover { background:var(--card2); }
+.zone-filter-btn.active { color:#fff !important; }
+
+/* ── SHORTCUTS ── */
+#helpShortcuts { padding:10px 18px 6px; border-top:1px solid var(--border); flex-shrink:0; }
+.shortcuts-section-title { font-size:.62rem; font-weight:700; text-transform:uppercase; letter-spacing:.09em; color:#475569; margin-bottom:6px; }
+.shortcuts-grid { display:grid; grid-template-columns:1fr 1fr; gap:5px; }
+.shortcut-row { display:flex; align-items:center; gap:7px; padding:6px 8px; background:var(--card); border-radius:6px; }
+.shortcut-key { display:inline-flex; align-items:center; justify-content:center; padding:1px 6px; min-width:28px; background:var(--card2); border:1px solid var(--border); border-radius:4px; font-size:.68rem; font-family:monospace; color:var(--txt1); flex-shrink:0; }
+.shortcut-desc { font-size:.7rem; color:var(--txt2); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .sidebar { transform: translateX(-100%); width: 200px; z-index: 200; }
+  .sidebar.open { transform: translateX(0); }
+  .topnav, footer { left: 0; }
+  .deck { margin-left: 0; }
+  .health-pills { display: none; }
+  #sidebarToggle { display: flex; }
+  .g2, .g3, .g4 { grid-template-columns: 1fr; }
+}
+@media (min-width: 769px) {
+  #sidebarToggle { display: none; }
+}
+@media (max-width: 480px) {
+  .topnav { padding: 6px 10px; }
+  .mode-toggle .mode-btn { font-size: var(--step--2); padding: 2px 6px; }
+  .nav-dots { gap: 3px; }
+  .dot { width: 5px; height: 5px; }
+  .slide { padding: 10px 12px; }
+  .kpi-num { font-size: var(--step-3); }
+  .card { padding: 12px; }
+  #helpPanel { width: 100vw; }
+  .hero-grid { grid-template-columns: 1fr; }
+}
+
+/* ── SIDEBAR TOGGLE (mobile) ── */
+#sidebarToggle {
+  display: none; position: fixed; bottom: 16px; left: 16px; z-index: 210;
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--indigo); border: none; color: #fff;
+  font-size: 1.2rem; align-items: center; justify-content: center;
+  cursor: pointer; box-shadow: 0 4px 16px rgba(99,102,241,.4);
+}
+
+/* ── KPI DELTA ── */
+.kpi-delta { font-size:.72rem; font-weight:700; margin-top:5px; }
+.kpi-meta  { font-size:.63rem; color:#475569; margin-top:2px; }
+.delta-up  { color:var(--red); }
+.delta-dn  { color:var(--green); }
+.delta-eq  { color:#475569; }
+
+/* ── NARRATIVE STRIP ── */
+.narrative-strip { display:flex; gap:5px; flex-wrap:wrap; margin:6px 0 10px; }
+.narrative-pill  { font-size:.71rem; padding:2px 9px; border-radius:5px; font-weight:600; }
+.narrative-worse { background:rgba(239,68,68,.12); color:#EF4444; border:1px solid rgba(239,68,68,.25); }
+.narrative-better{ background:rgba(34,197,94,.10); color:#22C55E; border:1px solid rgba(34,197,94,.2); }
+
+/* ── PROGRESSIVE DISCLOSURE ── */
+.disclosure-btn { display:flex; align-items:center; gap:6px; background:none; border:1px solid var(--border); color:var(--txt2); font-size:.7rem; padding:4px 12px; border-radius:6px; cursor:pointer; margin-top:8px; transition:.15s; }
+.disclosure-btn:hover { background:var(--card2); color:var(--txt1); }
+.disclosure-body { overflow:hidden; transition:max-height .35s ease; }
+
+/* ── TIMELINE EVENTS ── */
+.tl-event-strip { display:flex; gap:5px; flex-wrap:wrap; align-items:center; padding:8px 12px; background:rgba(99,102,241,.05); border:1px solid rgba(99,102,241,.15); border-radius:8px; margin-top:8px; }
+.tl-event-lbl  { font-size:.62rem; font-weight:700; color:#475569; flex-shrink:0; }
+.tl-ev-deploy  { font-size:.64rem; padding:2px 8px; border-radius:4px; background:rgba(239,68,68,.12); color:#EF4444; border:1px solid rgba(239,68,68,.2); }
+.tl-ev-fix     { font-size:.64rem; padding:2px 8px; border-radius:4px; background:rgba(34,197,94,.10); color:#22C55E; border:1px solid rgba(34,197,94,.2); }
+
+/* ── MODE TOGGLE ── */
+.mode-toggle { display:flex; border:1px solid var(--border); border-radius:7px; overflow:hidden; }
+.mode-btn { padding:2px 9px; background:transparent; border:none; color:var(--txt2); font-size:.67rem; cursor:pointer; transition:.15s; white-space:nowrap; }
+.mode-btn.active { background:var(--indigo); color:#fff; }
+.dot.dim { opacity:.28; }
+
+/* ── OVERVIEW OVERLAY ── */
+#overviewOverlay { display:none; position:fixed; inset:0; z-index:250; background:rgba(5,8,20,.96); backdrop-filter:blur(10px); overflow-y:auto; padding:54px 32px 32px; }
+#overviewOverlay.open { display:block; }
+#overviewClose { position:fixed; top:10px; right:14px; z-index:251; background:var(--card2); border:1px solid var(--border); color:var(--txt2); font-size:.75rem; padding:4px 14px; border-radius:7px; cursor:pointer; transition:.15s; }
+#overviewClose:hover { background:var(--border); }
+.ov-hdr { margin-bottom:16px; }
+.ov-title { font-size:1rem; font-weight:800; margin-bottom:2px; }
+.ov-sub   { font-size:.75rem; color:var(--txt2); }
+.overview-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(185px,1fr)); gap:10px; }
+.ov-card  { background:var(--card); border:1px solid var(--border); border-top-width:3px; border-radius:10px; padding:12px 14px; cursor:pointer; transition:border-color .15s, background .15s; }
+.ov-card:hover { background:var(--card2); border-color:var(--indigo) !important; }
+.ov-score { font-size:1.5rem; font-weight:900; line-height:1; }
+.ov-mod   { font-size:.78rem; font-weight:700; margin-top:2px; }
+.ov-zone  { font-size:.65rem; margin-top:3px; }
+.ov-delta { font-size:.68rem; font-weight:700; }
+.ov-bug   { font-size:.64rem; color:var(--txt2); margin-top:6px; line-height:1.4; border-top:1px solid rgba(30,58,95,.4); padding-top:5px; }
+
+/* 🎫 SM TABLE */
+.sm-table { width:100%; border-collapse:collapse; font-size:.78rem; }
+.sm-table th { text-align:left; padding:10px 14px; font-weight:600; color:#64748B; text-transform:uppercase; font-size:.65rem; letter-spacing:.06em; border-bottom:1px solid var(--border); background:rgba(15,23,42,.97); position:sticky; top:0; z-index:1; }
+.sm-table td { padding:9px 14px; border-bottom:1px solid rgba(30,58,95,.25); color:var(--txt1); }
+.sm-table tr:last-child td { border-bottom:none; }
+.sm-table tr:hover td { background:rgba(30,41,59,.4); }
+.sm-id { color:var(--indigo); text-decoration:none; font-weight:600; font-size:.82rem; }
+.sm-id:hover { text-decoration:underline; }
+.sm-mod { font-weight:600; font-size:.75rem; white-space:nowrap; }
+.sm-tit { max-width:320px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:var(--txt2); font-size:.75rem; }
+.sm-tag { display:inline-block; font-size:.6rem; padding:2px 7px; border-radius:4px; background:rgba(239,68,68,.1); color:#F87171; white-space:nowrap; }
+.sm-tag-novo { background:rgba(239,68,68,.18); color:#FCA5A5; font-weight:600; }
+.sm-tag-sentry { background:rgba(99,102,241,.15); color:#A5B4FC; }
+.sm-acao { max-width:240px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:var(--txt2); font-size:.72rem; }
+.sm-filter-btn { font-size:.72rem; padding:5px 12px; border-radius:6px; border:1px solid var(--border); background:transparent; color:var(--txt2); cursor:pointer; transition:.15s; }
+.sm-filter-btn:hover { border-color:var(--indigo); color:var(--txt1); }
+.sm-filter-btn.active { background:var(--indigo); color:#fff; border-color:var(--indigo); }
+.sm-mod-btn { font-size:.7rem; padding:4px 10px; border-radius:5px; border:1px solid var(--border); background:transparent; color:var(--txt2); cursor:pointer; transition:.15s; }
+.sm-mod-btn:hover { border-color:#F97316; color:var(--txt1); }
+.sm-mod-btn.active { background:rgba(249,115,22,.2); color:#F97316; border-color:#F97316; font-weight:600; }
+.sm-status { display:inline-block; font-size:.6rem; padding:2px 7px; border-radius:4px; background:rgba(99,102,241,.1); color:#A5B4FC; white-space:nowrap; }
+.sm-st-aberto { background:rgba(34,197,94,.1); color:#4ADE80; }
+.sm-st-concluido { background:rgba(148,163,184,.1); color:#94A3B8; }
+.sm-st-handoff { background:rgba(245,158,11,.12); color:#FBBF24; }
+
+/* 🎨 COLOR LEGEND (fixed bottom-right) */
+#colorLegend { position:fixed; bottom:12px; right:12px; z-index:100; display:flex; gap:6px; padding:6px 12px; background:rgba(15,23,42,.85); backdrop-filter:blur(6px); border:1px solid rgba(30,58,95,.5); border-radius:8px; font-size:.62rem; color:var(--txt2); align-items:center; }
+.cl-item { display:flex; align-items:center; gap:4px; }
+.cl-dot { width:8px; height:8px; border-radius:50%; display:inline-block; }
+@media (max-width:768px) { #colorLegend { display:none; } }
+.drill-tab { padding:6px 14px; font-size:.78rem; border-radius:8px; border:1px solid var(--border); background:transparent; color:var(--txt2); cursor:pointer; transition:.15s; font-weight:600; }
+.drill-tab:hover { background:rgba(99,102,241,.12); border-color:#6366F166; }
+.drill-tab.active { background:#6366F1; color:#fff; border-color:#6366F1; }
+#authOverlay { position:fixed; inset:0; z-index:99999; display:flex; align-items:center; justify-content:center; background:var(--grad-1,var(--bg)); flex-direction:column; }
+#authOverlay .auth-card { text-align:center; max-width:360px; }
+#authOverlay .auth-logo { font-size:4rem; margin-bottom:.75rem; }
+#authOverlay .auth-title { font-size:var(--step-4); font-weight:800; color:var(--txt1); }
+#authOverlay .auth-subtitle { font-size:var(--step-1); color:var(--txt2); margin-bottom:1.5rem; }
+#loginBtn:hover { background:#4F46E5; transform:translateY(-1px); }
+#logoutBtn { opacity:.6; } #logoutBtn:hover { opacity:1; }
 </style>
 </head>
 <body>
-<div class="container">
 
-<header>
-  <h1>🔮 Argos Predict — Mapa de Risco Preditivo</h1>
-  <p id="meta-line">Carregando...</p>
-</header>
+<!-- AUTH OVERLAY -->
+<div id="authOverlay">
+  <div class="auth-card">
+    <div class="auth-logo">🔮</div>
+    <div class="auth-title">Argos Predict</div>
+    <div class="auth-subtitle">QA Risk Intelligence</div>
+    <p style="color:var(--txt3);margin-bottom:1.5rem;font-size:var(--step-0)">Faça login com seu email corporativo</p>
+    <button id="loginBtn" onclick="openLogin()" style="background:#6366F1;color:#fff;border:none;padding:10px 32px;border-radius:8px;font-size:.9rem;font-weight:600;cursor:pointer;transition:.15s">Entrar</button>
+  </div>
+</div>
 
-<section class="kpi-grid" id="kpi-grid"></section>
+<!-- SIDEBAR -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-brand">
+    <span class="logo">🔮</span>
+    <div><div class="name">Argos Predict</div><div class="sub">QA Risk Intelligence</div></div>
+  </div>
+  <div class="sidebar-items" id="sidebarItems"></div>
+  <div class="sidebar-footer">← → Navegar • O Overview • ? Ajuda • E Exportar</div>
+</div>
 
-<div class="grid-2">
-  <div class="panel">
-    <h2>🗺️ Ranking de Risco</h2>
-    <table>
-      <thead><tr><th>#</th><th>Módulo</th><th>Score</th><th>Técnico</th><th>Usuários</th><th>Nível</th><th>Δ Sentry</th></tr></thead>
-      <tbody id="ranking-tbody"></tbody>
+<!-- SIDEBAR TOGGLE (mobile) -->
+<button id="sidebarToggle" onclick="toggleSidebar()">☰</button>
+
+<!-- HEALTH BAR -->
+<div id="healthBar">
+  <div class="health-indicator">
+    <span class="health-dot critical" id="healthDot"></span>
+    <span class="health-score" id="healthScore">—</span>
+    <span class="health-label">SAÚDE</span>
+  </div>
+  <div class="health-pills" id="healthPills"></div>
+</div>
+
+<!-- TOP NAV -->
+<div class="topnav">
+  <div class="nav-left">
+    <div class="mode-toggle" title="Modo de visualização">
+      <button class="mode-btn active" id="modeBtnOp" onclick="setMode('operacional')">🚨 Agora</button>
+      <button class="mode-btn" id="modeBtnStr" onclick="setMode('estrategico')">📈 Tendência</button>
+    </div>
+    <div class="nav-dots" id="dots"></div>
+  </div>
+  <div class="nav-right">
+    <span class="slide-label" id="slabel">—</span>
+    <span id="slideNameLabel">—</span>
+    <button class="btn btn-sm" onclick="toggleOverview()" title="Overview (O)">⊞</button>
+    <button class="btn btn-sm" onclick="go(cur-1)" title="Anterior (←)">◀</button>
+    <button class="btn btn-sm" onclick="go(cur+1)" title="Próximo (→)">▶</button>
+    <button class="btn btn-sm" id="logoutBtn" onclick="netlifyIdentity.logout()" title="Sair">🚪</button>
+    <button class="btn btn-sm" onclick="exportSlide()" title="Exportar slide (E)">⬇</button>
+  </div>
+</div>
+
+<!-- SLIDES -->
+<!-- FRESHNESS BANNER -->
+<div id="freshnessBanner"></div>
+
+<!-- SEARCH MODAL -->
+<div id="searchOverlay" onclick="if(event.target===this)closeSearch()">
+  <div id="searchBox">
+    <input id="searchInput" type="text" placeholder="Buscar módulo, slide ou ação... (Esc para fechar)" oninput="updateSearch(this.value)" onkeydown="handleSearchKey(event)" autocomplete="off" spellcheck="false">
+    <div id="searchResults"></div>
+  </div>
+</div>
+
+<div class="deck">
+
+<!-- 0: CAPA -->
+<div class="slide active">
+  <div class="capa">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">
+      <div id="capaStatus" class="capa-status"></div>
+      <div style="font-size:.8rem;color:var(--txt2)" id="capaData">—</div>
+    </div>
+    <h1 style="font-size:2.2rem;font-weight:900;line-height:1.1;margin-bottom:4px">Argos Predict</h1>
+    <div style="font-size:.85rem;color:var(--txt2);margin-bottom:0">Mapa de risco semanal · <span id="capaFontes">—</span></div>
+
+    <div class="hero-grid" id="heroGrid">
+      <div class="hero-left" id="heroLeft">
+        <div class="hero-section-title">Situação atual</div>
+        <div id="heroNums"></div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-section-title">⚡ Ação imediata</div>
+        <div id="heroAcoes"></div>
+        <div class="hero-positive" id="heroPositivo" style="display:none"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 1: KPIs -->
+<div class="slide">
+  <div class="slide-tag">Visão Geral</div>
+  <h2>O que está acontecendo esta semana</h2>
+  <div id="kpiGroups"></div>
+</div>
+
+<!-- 2: RANKING -->
+<div class="slide">
+  <div class="slide-tag">Mapa de Risco</div>
+  <h2>Onde estão os problemas</h2>
+  <p class="sub-h">Baseado em sinais ativos: bugs N1 abertos, erros em produção (Sentry) e atividade de código. Quanto maior a barra, mais urgente.</p>
+  <div class="chart-box"><canvas id="cRanking"></canvas></div>
+</div>
+
+<!-- 3: SERVIÇOS -->
+<div class="slide">
+  <div class="slide-tag">Causa Raiz</div>
+  <h2>Quais serviços estão causando os problemas</h2>
+  <p class="sub-h">Para cada área com problemas, identificamos qual sistema é o mais provável responsável.</p>
+  <div class="g3" id="svcGrid" style="gap:12px"></div>
+</div>
+
+<!-- 4: ANÁLISE DETALHADA -->
+<div class="slide" id="drillPane">
+  <div class="slide-tag" id="drillTag">Zoom</div>
+  <div id="drillTabs" style="display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap"></div>
+  <div id="drillBody"></div>
+</div>
+
+<!-- 5: RADAR SERVIÇOS -->
+<div class="slide">
+  <div class="slide-tag">Zoom nos Serviços</div>
+  <h2>Cobertura de dev vs. pressão por serviço</h2>
+  <p class="sub-h">Cada eixo é um serviço. Vermelho = bugs. Verde = dev ativo. Âmbar = risco técnico (KB + Sentry + churn). Azul tracejado = planejado. Abaixo, o radar de Reclamações N1 em escala própria.</p>
+  <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:16px;align-items:start">
+
+    <!-- RADAR SERVIÇOS -->
+    <div class="chart-box" style="padding:20px 16px">
+      <!-- Legenda clicável -->
+      <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap">
+        <button id="svcLegBtn0" onclick="toggleRadarLine(0)"
+          style="display:flex;align-items:center;gap:6px;font-size:.72rem;padding:4px 10px;border-radius:6px;border:1px solid #EF444455;background:transparent;color:var(--txt2);cursor:pointer;transition:.15s">
+          <span style="width:22px;height:3px;background:#EF4444;display:inline-block;border-radius:2px"></span> Score de problemas
+        </button>
+        <button id="svcLegBtn1" onclick="toggleRadarLine(1)"
+          style="display:flex;align-items:center;gap:6px;font-size:.72rem;padding:4px 10px;border-radius:6px;border:1px solid #22C55E55;background:transparent;color:var(--txt2);cursor:pointer;transition:.15s">
+          <span style="width:22px;height:3px;background:#22C55E;display:inline-block;border-radius:2px"></span> Dev trabalhando agora
+        </button>
+        <button id="svcLegBtn2" onclick="toggleRadarLine(2)"
+          style="display:flex;align-items:center;gap:6px;font-size:.72rem;padding:4px 10px;border-radius:6px;border:1px solid #6366F155;background:transparent;color:var(--txt2);cursor:pointer;transition:.15s">
+          <span style="width:18px;height:2px;border-top:2px dashed #6366F1;display:inline-block"></span> Dev planejado (em breve)
+        </button>
+        <button id="svcLegBtn3" onclick="toggleRadarLine(3)"
+          style="display:flex;align-items:center;gap:6px;font-size:.72rem;padding:4px 10px;border-radius:6px;border:1px solid #F59E0B55;background:transparent;color:var(--txt2);cursor:pointer;transition:.15s">
+          <span style="width:22px;height:3px;background:#F59E0B;display:inline-block;border-radius:2px"></span> Risco técnico
+        </button>
+        <button onclick="toggleRadarLine(-1)"
+          style="font-size:.68rem;padding:4px 10px;border-radius:6px;border:1px solid var(--border);background:transparent;color:#475569;cursor:pointer">
+          resetar
+        </button>
+      </div>
+      <div class="radar-toggle">
+        <button class="radar-toggle-btn active" onclick="showRadarView('chart')">🕸️ Radar</button>
+        <button class="radar-toggle-btn" onclick="showRadarView('grid')">📊 Tabela</button>
+      </div>
+      <canvas id="cRadarSvc" style="max-height:340px"></canvas>
+      <div id="radarN1Section" style="margin-top:16px">
+        <div style="display:flex;gap:8px;margin-bottom:8px;align-items:center">
+          <span style="width:22px;height:3px;background:#F97316;display:inline-block;border-radius:2px"></span>
+          <span style="font-size:.72rem;color:var(--txt2);font-weight:600">Reclamações N1</span>
+        </div>
+        <canvas id="cRadarN1" style="max-height:200px;display:none"></canvas>
+      </div>
+      <div id="radarGrid"></div>
+    </div>
+
+    <!-- TABELA SERVIÇOS -->
+    <div style="display:flex;flex-direction:column;gap:8px" id="svcRadarCards"></div>
+  </div>
+
+  <!-- PAINEL DEV ATIVO TOTAL -->
+  <div id="devAtivoPanel" style="margin-top:14px"></div>
+</div>
+
+<!-- 9: BOMBAS -->
+<div class="slide">
+  <div class="slide-tag">Risco Imediato</div>
+  <h2>💣 Riscos que podem virar crise esta semana</h2>
+  <p class="sub-h">Cada "bomba" é um cenário onde um deploy ou inação nos próximos dias pode gerar impacto visível para os clientes. Barra = risco relativo entre os 3 cenários.</p>
+  <div class="g3" id="bombGrid"></div>
+</div>
+
+<!-- 9: QUALIDADE DO PROCESSO -->
+<div class="slide">
+  <div class="slide-tag">Sinais de Processo</div>
+  <h2>🔬 Qualidade do processo de desenvolvimento</h2>
+  <p class="sub-h">Sinais que revelam fragilidades no ciclo de desenvolvimento antes que virem bugs: regressões confirmadas, revisões precipitadas, cobertura desatualizada e padrões de falha por ambiente.</p>
+  <div id="qualGrid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:16px"></div>
+  <div id="qualDetalhe" style="display:grid;grid-template-columns:1fr 1fr;gap:14px"></div>
+</div>
+
+<!-- 10: PRs EM RISCO -->
+<div class="slide">
+  <div class="slide-tag">Rastreabilidade de Deploy</div>
+  <h2>🔍 PRs em risco — Dispersão + DORA CFR</h2>
+  <p class="sub-h">Cada PR que tocou muitos módulos ao mesmo tempo, ou que gerou bugs nos 3 dias seguintes ao merge. Clique no título para abrir no GitHub.</p>
+  <div id="prsRiscoSection"></div>
+</div>
+
+<!-- 11: TIMELINE -->
+<div class="slide">
+  <div class="slide-tag">Evolução Histórica</div>
+  <h2>Tendência de risco — últimas 8 semanas</h2>
+  <p class="sub-h">Picos revelam eventos críticos (deploys arriscados, escalada de erros). Quedas indicam resolução efetiva. Marcadores ✅ mostram correções entregues.</p>
+  <div class="chart-box"><canvas id="cTimeline"></canvas></div>
+  <div id="timelineResolucoes" style="margin-top:14px"></div>
+</div>
+
+<!-- 11: AÇÕES -->
+<div class="slide">
+  <div class="slide-tag">Próximos Passos</div>
+  <h2>O que precisa ser feito agora</h2>
+  <div class="card" style="padding:0;overflow:hidden;margin-bottom:14px">
+    <table id="acoesTable">
+      <thead><tr><th>Prioridade</th><th>Área</th><th>Ação</th><th>Prazo</th></tr></thead>
+      <tbody></tbody>
     </table>
   </div>
-  <div class="panel">
-    <h2>💣 Top 3 Bombas</h2>
-    <div id="bombas-container"><p class="muted">Nenhum módulo atinge critério de bomba.</p></div>
+  <div style="padding:12px 16px;background:var(--blue-bg);border:1px solid rgba(59,130,246,.25);border-radius:10px;font-size:.8rem;color:#93C5FD">
+    💡 Use <b>← →</b> para navegar entre os slides &nbsp;·&nbsp; <b>F</b> = tela cheia &nbsp;·&nbsp; <b>P</b> = imprimir / exportar PDF
   </div>
 </div>
 
-<div class="grid-2">
-  <div class="panel">
-    <h2>📡 Radar de Serviços</h2>
-    <div class="radar-box"><canvas id="radarChart"></canvas></div>
+<!-- 13: CHAMADOS SM -->
+<div class="slide">
+  <div class="slide-tag">Suporte</div>
+  <h2>🎫 Chamados SM — bugs ativos por módulo</h2>
+  <div style="display:flex;gap:0;margin-bottom:12px;border-bottom:2px solid #1E3A5F">
+    <button class="sm-tab-btn active" data-tab="sm" onclick="setSMTab('sm')" style="background:none;border:none;border-bottom:2px solid transparent;margin-bottom:-2px;padding:8px 18px;color:var(--txt2);font-size:.82rem;font-weight:600;cursor:pointer;transition:all .15s">Geral (SM)</button>
+    <button class="sm-tab-btn" data-tab="n2" onclick="setSMTab('n2')" style="background:none;border:none;border-bottom:2px solid transparent;margin-bottom:-2px;padding:8px 18px;color:var(--txt2);font-size:.82rem;font-weight:600;cursor:pointer;transition:all .15s">Chamados N2</button>
   </div>
-  <div class="panel">
-    <h2>🔥 Mapa de Calor — Pressão vs Atenção</h2>
-    <table>
-      <thead><tr><th>Módulo</th><th>Pressão</th><th>Atenção Dev</th><th>Gap</th><th>Zona</th></tr></thead>
-      <tbody id="heatmap-tbody"></tbody>
-    </table>
-  </div>
-</div>
-
-<div class="grid-2">
-  <div class="panel">
-    <h2>⚡ Qualidade de Processo</h2>
-    <div id="qualidade-container"></div>
-  </div>
-  <div class="panel">
-    <h2>⚠️ PRs com Risco de Regressão</h2>
-    <div id="prs-container"><p class="muted">Nenhum PR perigoso detectado.</p></div>
+  <p class="sub-h" id="smSubtitle">Todos os chamados de suporte abertos no período. Clique no ID para abrir no Jira. Filtre por tipo usando os botões abaixo.</p>
+  <div id="smSummary" style="margin-bottom:10px"></div>
+  <div style="margin-bottom:8px;display:flex;gap:6px;flex-wrap:wrap" id="smModFilterBar"></div>
+  <div style="margin-bottom:14px;display:flex;gap:6px;flex-wrap:wrap" id="smFilterBar"></div>
+  <div class="card" style="padding:0;overflow:hidden">
+    <div style="overflow-x:auto;overflow-y:auto;max-height:calc(100vh - 310px)" id="smTableContainer"></div>
   </div>
 </div>
 
-<div class="panel" style="margin-bottom:24px;">
-  <h2>📋 Painel Dev Ativo</h2>
-  <table>
-    <thead><tr><th>ID</th><th>Título</th><th>Assignee</th><th>Módulo</th><th>Dias</th></tr></thead>
-    <tbody id="dev-ativos-tbody"></tbody>
-  </table>
+</div><!-- /deck -->
+
+<!-- MODAL DE CARDS -->
+<div id="modalOverlay" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.65);backdrop-filter:blur(4px);align-items:center;justify-content:center" onclick="closeModal(event)">
+  <div id="modalBox" style="background:#111827;border:1px solid #1E3A5F;border-radius:16px;width:min(600px,92vw);max-height:80vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.6)">
+    <!-- Header -->
+    <div id="modalHeader" style="padding:18px 22px 14px;border-bottom:1px solid #1E3A5F;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-shrink:0">
+      <div>
+        <div id="modalTag"  style="font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px"></div>
+        <div id="modalTitle" style="font-size:1.05rem;font-weight:800"></div>
+        <div id="modalSub"  style="font-size:.75rem;color:#94A3B8;margin-top:3px"></div>
+      </div>
+      <button onclick="closeModal()" style="background:none;border:none;color:#94A3B8;font-size:1.3rem;cursor:pointer;padding:4px;line-height:1;flex-shrink:0">✕</button>
+    </div>
+    <!-- Body -->
+    <div id="modalBody" style="overflow-y:auto;padding:14px 22px 20px;display:flex;flex-direction:column;gap:8px"></div>
+    <!-- Footer hint -->
+    <div style="padding:10px 22px;border-top:1px solid #1E3A5F;font-size:.68rem;color:#475569;flex-shrink:0">
+      Clique fora para fechar · Links abrem no Jira/GitHub
+    </div>
+  </div>
 </div>
 
-<div class="panel" style="margin-bottom:24px;">
-  <h2>🪲 Erros Sentry Ativos</h2>
-  <table>
-    <thead><tr><th>Erro</th><th>Projeto</th><th>Usuários</th><th>Δ Semana</th><th>Status</th></tr></thead>
-    <tbody id="sentry-tbody"></tbody>
-  </table>
+<!-- BOTÃO ? -->
+<button id="helpBtn" onclick="toggleHelp()" title="Como ler este slide">?</button>
+
+<!-- PAINEL DE AJUDA -->
+<div id="helpPanel">
+  <div id="helpPanel-header">
+    <div>
+      <div id="helpPanel-title"></div>
+      <div id="helpPanel-intro"></div>
+    </div>
+    <button onclick="toggleHelp()" style="background:none;border:none;color:#94A3B8;font-size:1.1rem;cursor:pointer;flex-shrink:0;padding:2px">✕</button>
+  </div>
+  <div class="helpPanel-modes">
+    <button class="help-mode-btn active" data-mode="slide" onclick="setHelpMode('slide')">📖 Ajuda do slide</button>
+    <button class="help-mode-btn" data-mode="global" onclick="setHelpMode('global')">📚 Metodologia</button>
+  </div>
+  <div id="helpPanel-body">
+    <div id="helpSlide-content"></div>
+    <div id="helpGlobal-content" style="display:none"></div>
+  </div>
+  <div id="helpShortcuts">
+    <div class="shortcuts-section-title">Atalhos de teclado</div>
+    <div class="shortcuts-grid">
+      <div class="shortcut-row"><span class="shortcut-key">← →</span><span class="shortcut-desc">Navegar slides</span></div>
+      <div class="shortcut-row"><span class="shortcut-key">Ctrl K</span><span class="shortcut-desc">Busca global</span></div>
+      <div class="shortcut-row"><span class="shortcut-key">F</span><span class="shortcut-desc">Tela cheia</span></div>
+      <div class="shortcut-row"><span class="shortcut-key">P</span><span class="shortcut-desc">Exportar PDF</span></div>
+      <div class="shortcut-row"><span class="shortcut-key">?</span><span class="shortcut-desc">Abrir ajuda</span></div>
+      <div class="shortcut-row"><span class="shortcut-key">Esc</span><span class="shortcut-desc">Fechar modal</span></div>
+    </div>
+  </div>
+  <div id="helpPanel-footer">Clique fora do painel para fechar</div>
 </div>
 
-<div class="panel" style="margin-bottom:24px;">
-  <h2>✅ Ações Prioritárias</h2>
-  <div id="acoes-container"></div>
+<div id="overviewOverlay">
+  <button id="overviewClose" onclick="toggleOverview()">✕ Fechar  <kbd style="font-size:.6rem;opacity:.6">O</kbd></button>
+  <div class="ov-hdr">
+    <div class="ov-title">⊞ Visão Geral — Todos os Módulos</div>
+    <div class="ov-sub" id="overviewSub">—</div>
+  </div>
+  <div class="overview-grid" id="overviewGrid"></div>
 </div>
 
-<footer class="footer">
-  Argos Predict v4.0 · Atualizado automaticamente · <span id="footer-date"></span>
+<footer>
+  <span id="footerTxt"></span>
+  <span>Gerado por Argos Predict · Atualizado semanalmente</span>
 </footer>
 
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-<script src="data.js"></script>
 <script>
-(function() {
-  const D = ARGOS_DATA;
-  if (!D || !D.meta) { document.body.innerHTML = '<p style="text-align:center;padding:40px;">Nenhum dado disponível. Execute <code>node scripts/argos-predict/index.js --update-dashboard</code> primeiro.</p>'; return; }
+// ── STATE ─────────────────────────────────────────────────
+let cur = 0;
+const slides = document.querySelectorAll('.slide');
+const N = slides.length;
+const charts = {};
+let built = {};
 
-  document.getElementById('meta-line').textContent = `Gerado em: ${D.meta.geradoEm} | ${D.meta.janela} | ${D.meta.fontes}`;
-  document.getElementById('footer-date').textContent = D.meta.geradoEm;
+const SLIDE_NAMES = [
+  'Capa', 'Indicadores', 'Ranking de Risco', 'Causa Raiz',
+  'Análise Detalhada',
+  'Radar de Serviços', 'Bombas', 'Qualidade',
+  'PRs em Risco', 'Timeline', 'Ações', 'Chamados SM'
+];
 
-  // KPIs
-  const kpiGrid = document.getElementById('kpi-grid');
-  if (D.kpis) {
-    D.kpis.forEach(k => {
-      const card = document.createElement('div');
-      card.className = `kpi-card ${k.cor}`;
-      card.innerHTML = `<div class="icon">${k.icone || ''}</div><div class="value" style="color:${k.cor === 'red' ? 'var(--red)' : k.cor === 'amber' ? 'var(--amber)' : 'var(--green)'}">${k.valor}</div><div class="label">${k.label}</div>${k.detalhe ? '<div class="detalhe">'+k.detalhe+'</div>' : ''}`;
-      kpiGrid.appendChild(card);
+const SLIDE_ICONS = ['🏠','📊','🏆','🔍','🔍','📡','💣','✅','📝','📅','🎯','🎫'];
+
+// ── SIDEBAR ──
+function buildSidebar() {
+  const container = document.getElementById('sidebarItems');
+  SLIDE_NAMES.forEach((name, i) => {
+    const item = document.createElement('button');
+    item.className = 'sidebar-item' + (i === 0 ? ' active' : '');
+    item.setAttribute('data-slide', i);
+    const isSM = i === 11;
+    const smCount = isSM ? (REPORT.sm_tickets_raw || []).length : 0;
+    item.innerHTML = `<span class="si-icon">${SLIDE_ICONS[i]||'•'}</span><span class="si-label">${name}</span>${isSM && smCount ? `<span class="sidebar-badge">${smCount}</span>` : ''}`;
+    item.onclick = () => go(i);
+    container.appendChild(item);
+  });
+}
+
+// ── HEALTH BAR ──
+function buildHealthBar() {
+  const kpis = REPORT.kpis || [];
+  if (kpis.length === 0) return;
+  const first = kpis[0];
+  const score = parseInt(first.valor) || 0;
+  const dot = document.getElementById('healthDot');
+  const scoreEl = document.getElementById('healthScore');
+  const pillsEl = document.getElementById('healthPills');
+  let level = 'critical';
+  if (score <= 30) level = 'success';
+  else if (score <= 50) level = 'warning';
+  dot.className = 'health-dot ' + level;
+  scoreEl.textContent = score + (first.unidade || '%');
+  // Build pills from remaining KPIs
+  kpis.slice(1, 6).forEach((k, i) => {
+    const pill = document.createElement('span');
+    const val = parseInt(k.valor) || 0;
+    let cl = 'b-info';
+    if (k.cor === 'green') cl = 'b-success';
+    else if (k.cor === 'red' || k.cor === 'critical') cl = 'b-critical';
+    else if (k.cor === 'amber' || k.cor === 'warning') cl = 'b-warning';
+    pill.className = 'health-pill ' + cl;
+    pill.textContent = `${k.icone||''} ${k.label}: ${k.valor}${k.unidade||''}`;
+    pill.style.animationDelay = (i * 0.08) + 's';
+    pillsEl.appendChild(pill);
+  });
+}
+
+// Score zone thresholds
+const ZONE_THRESHOLDS = [
+  { min: 0,  max: 9,  label: 'Estável',    cor: '#22C55E', emoji: '✅' },
+  { min: 10, max: 19, label: 'Atenção',    cor: '#3B82F6', emoji: '🔵' },
+  { min: 20, max: 39, label: 'Alto',       cor: '#F59E0B', emoji: '🟡' },
+  { min: 40, max: 59, label: 'Crítico',    cor: '#EF4444', emoji: '🔴' },
+  { min: 60, max: 999,label: 'Emergência', cor: '#DC2626', emoji: '🚨' }
+];
+
+function getZone(score) {
+  return ZONE_THRESHOLDS.find(z => score >= z.min && score <= z.max) || ZONE_THRESHOLDS[0];
+}
+
+function go(n) {
+  if (n < 0 || n >= N) return;
+  slides[cur].classList.remove('active'); slides[cur].classList.add('exit');
+  setTimeout(() => slides[cur].classList.remove('exit'), 320);
+  cur = n;
+  slides[cur].classList.add('active');
+  updateNav(); render(cur);
+  // Close sidebar on mobile after navigation
+  document.getElementById('sidebar').classList.remove('open');
+}
+
+function updateNav() {
+  document.getElementById('slabel').textContent = `${cur+1} / ${N}`;
+  const nameEl = document.getElementById('slideNameLabel');
+  if (nameEl) nameEl.textContent = SLIDE_NAMES[cur] || '';
+  document.querySelectorAll('.dot').forEach((d,i) => {
+    d.classList.toggle('active', i === cur);
+    d.title = SLIDE_NAMES[i] || `Slide ${i+1}`;
+  });
+  // Sync sidebar
+  document.querySelectorAll('.sidebar-item').forEach((item, i) => {
+    if (i < SLIDE_NAMES.length) {
+      item.classList.toggle('active', i === cur);
+    }
+  });
+  if (helpOpen) refreshHelp(cur);
+}
+
+// ── EXPORT SLIDE AS PNG ──
+function exportSlide() {
+  const slide = slides[cur];
+  const name = (SLIDE_NAMES[cur] || 'slide').replace(/[^a-z0-9]/gi, '_').toLowerCase();
+  // Clone slide to avoid layout disruption
+  const clone = slide.cloneNode(true);
+  clone.style.position = 'fixed';
+  clone.style.left = '-9999px';
+  clone.style.top = '0';
+  clone.style.width = '1200px';
+  clone.style.opacity = '0';
+  clone.style.pointerEvents = 'none';
+  // Copy computed styles for cards/charts
+  document.body.appendChild(clone);
+  // Use html2canvas if available, otherwise fallback
+  if (typeof html2canvas !== 'undefined') {
+    html2canvas(clone, { scale: 2, backgroundColor: '#0A0F1E', allowTaint: false, useCORS: true }).then(canvas => {
+      const link = document.createElement('a');
+      link.download = `argos-${name}.png`;
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+      document.body.removeChild(clone);
+    }).catch(() => {
+      document.body.removeChild(clone);
+      fallbackExport(name);
     });
+  } else {
+    document.body.removeChild(clone);
+    fallbackExport(name);
+  }
+}
+
+function fallbackExport(name) {
+  // Print-based fallback: open print dialog
+  window.print();
+}
+
+document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+  if (e.key==='ArrowRight'||e.key==='ArrowDown') { e.preventDefault(); go(cur+1); }
+  if (e.key==='ArrowLeft' ||e.key==='ArrowUp')   { e.preventDefault(); go(cur-1); }
+  if (e.key==='f'||e.key==='F') document.documentElement.requestFullscreen?.();
+  if (e.key==='p'||e.key==='P') window.print();
+  if (e.key==='e'||e.key==='E') exportSlide();
+  if (e.key==='g'||e.key==='G') toggleOverview();
+  if (e.key==='o'||e.key==='O') toggleOverview();
+  if ((e.key==='?'||e.key==='/') && !e.ctrlKey && !e.metaKey) { e.preventDefault(); toggleHelp(); }
+  if (e.key==='Escape' && document.getElementById('searchOverlay').classList.contains('open')) closeSearch();
+});
+
+// ── TOUCH / SWIPE ─────────────────────────────────────────
+let _touchX = 0, _touchY = 0;
+document.addEventListener('touchstart', e => {
+  _touchX = e.touches[0].clientX;
+  _touchY = e.touches[0].clientY;
+}, { passive: true });
+document.addEventListener('touchend', e => {
+  const dx = e.changedTouches[0].clientX - _touchX;
+  const dy = e.changedTouches[0].clientY - _touchY;
+  if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 50) {
+    dx < 0 ? go(cur + 1) : go(cur - 1);
+  }
+}, { passive: true });
+
+// dots
+(()=>{ const c = document.getElementById('dots');
+  slides.forEach((_,i)=>{ const d=document.createElement('div'); d.className='dot'+(i===0?' active':'');
+    d.onclick=()=>go(i); c.appendChild(d); }); })();
+
+// ── SIDEBAR TOGGLE (mobile) ──
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+
+// ── HELPERS ───────────────────────────────────────────────
+const nivelBadge = n => ({CRÍTICO:'b-red',ALTO:'b-amber',MÉDIO:'b-orange',ESTÁVEL:'b-green'})[n]||'b-orange';
+const corBadge   = p => p.includes('P0')?'b-red':p.includes('P1')?'b-orange':'b-blue';
+const barColor   = v => v > 30 ? '#EF4444' : v > 10 ? '#F59E0B' : '#22C55E';
+const maxPressao = (REPORT.cobertura||[]).length ? Math.max(...REPORT.cobertura.map(d=>d.pressao)) : 10;
+
+// ── RENDER DISPATCHER ─────────────────────────────────────
+const CHART_CANVAS = { 2: 'cRanking', 5: 'cRadarSvc', 9: 'cTimeline' };
+
+function render(n) {
+  if (built[n]) return;
+  built[n] = true;
+
+  // Chart slides: show skeleton shimmer while Chart.js builds
+  if (CHART_CANVAS[n]) {
+    const cvEl = document.getElementById(CHART_CANVAS[n]);
+    let skEl = null;
+    if (cvEl) {
+      skEl = document.createElement('div');
+      skEl.className = 'skeleton-box skeleton-chart-h';
+      cvEl.style.display = 'none';
+      cvEl.parentElement.insertBefore(skEl, cvEl);
+    }
+    // Two rAFs: first paints skeleton, second lets Chart.js run after repaint
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      if (n===2)  buildRanking();
+      if (n===5)  buildRadarSvc();
+      if (n===9) buildTimeline();
+      if (skEl) skEl.remove();
+      if (cvEl) cvEl.style.display = '';
+    }));
+    return;
   }
 
-  // Ranking
-  const tbody = document.getElementById('ranking-tbody');
-  if (D.ranking) {
-    D.ranking.forEach((r,i) => {
-      const badge = r.nivel === 'ALTO' ? 'badge-alto' : r.nivel === 'MÉDIO' ? 'badge-medio' : r.nivel === 'ATENÇÃO' ? 'badge-atencao' : 'badge-estavel';
-      const delta = r.sentryDelta > 0 ? `+${r.sentryDelta}%` : '—';
-      tbody.innerHTML += `<tr><td>${i+1}</td><td><strong>${r.modulo}</strong></td><td><strong>${r.total}</strong></td><td>${r.tec}</td><td>${r.usr}</td><td><span class="badge ${badge}">${r.nivel}</span></td><td>${delta}</td></tr>`;
-    });
+  if (n===0)  buildCapa();
+  if (n===1)  buildKPIs();
+  if (n===3)  buildServicos();
+  if (n===4)  buildDrillDetailed();
+  if (n===6)  buildBombas();
+  if (n===7)  buildQualidade();
+  if (n===8)  buildPRsRisco();
+  if (n===10) buildAcoes();
+  if (n===11) buildSMTickets();
+}
+
+// ── SLIDE 0: CAPA ─────────────────────────────────────────
+function buildCapa() {
+  document.getElementById('footerTxt').textContent = `Argos Predict · ${REPORT.meta.geradoEm} · ${REPORT.meta.janela}`;
+  document.getElementById('capaData').textContent = `${REPORT.meta.geradoEm} · Janela: ${REPORT.meta.janela}`;
+  document.getElementById('capaFontes').textContent = REPORT.meta.fontes || '';
+
+  // Narrative strip — pioras e melhoras da semana
+  const narrativeEl = document.createElement('div');
+  narrativeEl.className = 'narrative-strip';
+  const pioras = (REPORT.tendencia||[]).filter(t => t.delta > 0).sort((a,b) => b.delta - a.delta).slice(0,3);
+  const melhoras = (REPORT.tendencia||[]).filter(t => t.delta < 0).sort((a,b) => a.delta - b.delta).slice(0,2);
+  narrativeEl.innerHTML =
+    pioras.map(t => `<span class="narrative-pill narrative-worse">↑ ${t.modulo.split(' / ')[0]} +${t.delta}pts</span>`).join('') +
+    melhoras.map(t => `<span class="narrative-pill narrative-better">↓ ${t.modulo.split(' / ')[0]} ${t.delta}pts</span>`).join('');
+  document.getElementById('heroGrid').parentElement.insertBefore(narrativeEl, document.getElementById('heroGrid'));
+
+  // Resumo executivo (v3.0)
+  if (REPORT.resumoExecutivo) {
+    const resumoEl = document.createElement('div');
+    resumoEl.style.cssText = 'background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.3);border-radius:12px;padding:16px 20px;margin:16px 0;font-size:.85rem;line-height:1.6;color:var(--txt1);';
+    resumoEl.innerHTML = `<div style="font-weight:700;color:#6366F1;margin-bottom:8px;font-size:.9rem;">📋 Resumo Executivo</div>${REPORT.resumoExecutivo}`;
+    document.getElementById('heroGrid').parentElement.insertBefore(resumoEl, document.getElementById('heroGrid'));
   }
 
-  // Bombas
-  const bombasC = document.getElementById('bombas-container');
-  if (D.bombas && D.bombas.length > 0) {
-    bombasC.innerHTML = '';
-    D.bombas.forEach(b => {
-      bombasC.innerHTML += `<div class="bomba-card"><span class="score">${b.score}</span><h3>#${b.pos} ${b.modulo}</h3><p><strong>Problema:</strong> ${b.problema}</p><p><strong>Gatilho:</strong> ${b.gatilho}</p><p class="action">Ação: ${b.acao}</p></div>`;
-    });
+  // Contar módulos críticos e em emergência
+  const criticos = (REPORT.ranking || []).filter(r => r.total >= 20).length;
+  const emAtencao = (REPORT.ranking || []).filter(r => r.total >= 10 && r.total < 20).length;
+  const emDev = (REPORT.ranking || []).filter(r => r.nivel === 'ALTO' && r.bugs_n1 > 0).length;
+
+  // Status badge
+  const statusEl = document.getElementById('capaStatus');
+  if (criticos > 0) {
+    statusEl.innerHTML = `🚨 SITUAÇÃO CRÍTICA`;
+    statusEl.style.cssText = 'background:rgba(239,68,68,.15);border:1px solid rgba(239,68,68,.4);color:#EF4444;display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:8px;font-size:.82rem;font-weight:700;';
+  } else if (emAtencao > 0) {
+    statusEl.innerHTML = `⚠️ ATENÇÃO NECESSÁRIA`;
+    statusEl.style.cssText = 'background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.4);color:#F59E0B;display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:8px;font-size:.82rem;font-weight:700;';
+  } else {
+    statusEl.innerHTML = `✅ SITUAÇÃO ESTÁVEL`;
+    statusEl.style.cssText = 'background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.3);color:#22C55E;display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:8px;font-size:.82rem;font-weight:700;';
   }
 
-  // Heatmap
-  const htbody = document.getElementById('heatmap-tbody');
-  if (D.mapaCalor) {
-    D.mapaCalor.forEach(h => {
-      htbody.innerHTML += `<tr><td>${h.modulo}</td><td>${h.pressao}</td><td>${h.atencao}</td><td style="color:${h.gap > 0 ? 'var(--red)' : 'var(--green)'}">${h.gap}</td><td>${h.zona}</td></tr>`;
-    });
+  // Hero numbers (left)
+  const heroNums = document.getElementById('heroNums');
+  const modAlto = (REPORT.ranking || []).filter(r => r.total >= 20);
+  heroNums.innerHTML = modAlto.slice(0, 3).map(r => {
+    const z = getZone(r.total);
+    return `<div style="display:flex;align-items:baseline;gap:8px;margin-bottom:6px">
+      <span class="hero-num" style="color:${z.cor};font-size:2.2rem">${r.total}</span>
+      <div>
+        <div style="font-size:.78rem;font-weight:700;color:var(--txt1)">${r.modulo}</div>
+        <div style="font-size:.65rem;color:${z.cor}">${z.emoji} ${z.label}</div>
+      </div>
+    </div>`;
+  }).join('') + `<div style="margin-top:8px;font-size:.72rem;color:var(--txt2)">${(REPORT.ranking||[]).filter(r=>r.total>=10).length} módulos em zona de risco</div>`;
+
+  // Actions (right)
+  const heroAcoes = document.getElementById('heroAcoes');
+  const acoes = (REPORT.acoes || []).slice(0, 3);
+  heroAcoes.innerHTML = acoes.map(a => {
+    const cor = a.prioridade.includes('P0') ? '#EF4444' : a.prioridade.includes('P1') ? '#F59E0B' : '#6366F1';
+    const bg  = a.prioridade.includes('P0') ? 'rgba(239,68,68,.15)' : a.prioridade.includes('P1') ? 'rgba(245,158,11,.15)' : 'rgba(99,102,241,.15)';
+    return `<div class="hero-action">
+      <span class="hero-action-badge" style="background:${bg};color:${cor}">${a.prioridade.split(' — ')[0]}</span>
+      <span style="font-size:.78rem;line-height:1.4">${a.acao.length > 80 ? a.acao.substring(0,80)+'…' : a.acao}</span>
+    </div>`;
+  }).join('');
+
+  // Positive section: green KPIs + modules improving
+  const posEl = document.getElementById('heroPositivo');
+  const greenKpis = (REPORT.kpis || []).filter(k => k.cor === 'green' || k.label.toLowerCase().includes('resolvido'));
+  const posMod = (REPORT.ranking || []).filter(r => {
+    const t = (REPORT.tendencia || []).find(t => t.modulo === r.modulo);
+    return t && t.delta < -5;
+  });
+  const posItems = [];
+  greenKpis.forEach(k => posItems.push(`<strong>${k.icone} ${k.label}</strong>: ${k.detalhe.substring(0, 60)}…`));
+  posMod.forEach(r => {
+    const t = (REPORT.tendencia||[]).find(t => t.modulo === r.modulo);
+    if (t) posItems.push(`<strong>${r.modulo}</strong> ${t.delta} pts (melhorando)`);
+  });
+  if (posItems.length > 0) {
+    posEl.style.display = 'block';
+    posEl.innerHTML = posItems.join('<br>');
+  }
+}
+
+// ── SLIDE 1: KPIs ─────────────────────────────────────────
+function buildKPIs() {
+  const kpis = REPORT.kpis || [];
+  // Grupo 1: críticos (cor red/amber com valor alto)
+  const agora    = kpis.filter(k => k.cor === 'red' && !k.label.includes('Resolvido') && !k.label.includes('escalating'));
+  const positivo = kpis.filter(k => k.cor === 'green' || k.label.toLowerCase().includes('resolvido') || k.label.toLowerCase().includes('0 escalating'));
+  const contexto = kpis.filter(k => !agora.includes(k) && !positivo.includes(k));
+
+  const renderKpi = (k, big) => {
+    let deltaHtml = '';
+    if (k.delta !== undefined) {
+      const sign = k.delta > 0 ? '+' : '';
+      const cls  = k.delta > 0 ? 'delta-up' : k.delta < 0 ? 'delta-dn' : 'delta-eq';
+      const icon = k.delta > 0 ? '↑' : k.delta < 0 ? '↓' : '→';
+      const absVal = Math.abs(k.delta);
+      const valStr = absVal > 999 ? (k.delta/1000).toFixed(1)+'K' : k.delta;
+      deltaHtml = `<div class="kpi-delta ${cls}">${icon} ${sign}${valStr} vs semana anterior</div>`;
+    }
+    const metaHtml = k.meta ? `<div class="kpi-meta">Meta: ${k.meta}</div>` : '';
+    return `
+    <div class="card kpi ${k.cor} ${big?'kpi-hero':''}" title="${k.detalhe}">
+      <div class="kpi-ico">${k.icone}</div>
+      <div class="kpi-num c-${k.cor}" style="${big?'font-size:2.6rem':''}">${k.valor}</div>
+      <div class="kpi-lbl">${k.label}</div>
+      <div class="kpi-det">${k.detalhe.length>80?k.detalhe.substring(0,80)+'…':k.detalhe}</div>
+      ${deltaHtml}${metaHtml}
+    </div>`;
+  };
+
+  let html = '';
+
+  if (agora.length) {
+    html += `<div class="kpi-group-header kpi-group-now">🔴 &nbsp;Requer atenção agora</div>`;
+    html += `<div class="g${Math.min(agora.length,3)}" style="margin-bottom:10px">`;
+    html += agora.slice(0,3).map((k,i) => renderKpi(k, i===0)).join('');
+    html += `</div>`;
   }
 
-  // Radar
-  if (D.servicos_radar && D.servicos_radar.length >= 3 && typeof Chart !== 'undefined') {
-    const ctx = document.getElementById('radarChart').getContext('2d');
-    new Chart(ctx, {
-      type: 'radar',
-      data: {
-        labels: D.servicos_radar.map(s => s.apelido || s.nome),
-        datasets: [
-          {
-            label: 'Bugs (N1 + Sentry)',
-            data: D.servicos_radar.map(s => s.bugs || 0),
-            borderColor: '#EF4444',
-            backgroundColor: 'rgba(239,68,68,0.15)',
+  if (contexto.length) {
+    html += `<div class="kpi-group-header">📊 &nbsp;Contexto — dimensão do problema</div>`;
+    html += `<div class="g4" style="margin-bottom:10px">`;
+    html += contexto.slice(0,8).map(k => renderKpi(k, false)).join('');
+    html += `</div>`;
+  }
+
+  if (positivo.length) {
+    html += `<div class="kpi-group-header" style="border-left-color:#22C55E;color:#22C55E">✅ &nbsp;Melhorias desta semana</div>`;
+    html += `<div class="g${Math.min(positivo.length,3)}" style="margin-bottom:10px">`;
+    html += positivo.map(k => renderKpi(k, false)).join('');
+    html += `</div>`;
+  }
+
+  document.getElementById('kpiGroups').innerHTML = html;
+}
+
+// ── SLIDE 2: RANKING ──────────────────────────────────────
+let rankingData = [];
+let rankingDisplayData = [];
+
+function applyZoneFilter(zoneIdx) {
+  rankingDisplayData = zoneIdx < 0
+    ? rankingData
+    : rankingData.filter(r => ZONE_THRESHOLDS.findIndex(z => r.total >= z.min && r.total <= z.max) === zoneIdx);
+
+  document.querySelectorAll('#rankingFilterBar .zone-filter-btn').forEach((btn, i) => {
+    const btnZone = parseInt(btn.dataset.zone);
+    const isActive = i === 0 ? zoneIdx < 0 : btnZone === zoneIdx;
+    btn.classList.toggle('active', isActive);
+    if (isActive && i > 0) {
+      const z = ZONE_THRESHOLDS[btnZone];
+      btn.style.cssText = `background:${z.cor}22;color:${z.cor};border-color:${z.cor}`;
+    } else if (isActive) {
+      btn.style.cssText = 'background:var(--indigo);color:#fff;border-color:var(--indigo)';
+    } else {
+      btn.style.cssText = i > 0 ? `border-color:${ZONE_THRESHOLDS[parseInt(btn.dataset.zone)].cor}55` : '';
+    }
+  });
+
+  sessionStorage.setItem('rankingZoneFilter', String(zoneIdx));
+
+  if (!charts.ranking) return;
+  charts.ranking.data.labels = rankingDisplayData.map(x => x.modulo);
+  charts.ranking.data.datasets[0].data = rankingDisplayData.map(x => x.bugs_n1 * 3);
+  charts.ranking.data.datasets[1].data = rankingDisplayData.map(x => Math.max(0, x.total - x.bugs_n1 * 3));
+  charts.ranking.update();
+}
+
+function buildRanking() {
+  if (charts.ranking) return;
+  rankingData = [...REPORT.ranking].sort((a,b) => b.total - a.total);
+  rankingDisplayData = rankingData;
+  // Restore saved filter after chart is built
+  const _savedZone = sessionStorage.getItem('rankingZoneFilter');
+  if (_savedZone !== null) setTimeout(() => applyZoneFilter(parseInt(_savedZone)), 50);
+
+  // Zone filter bar
+  const chartBoxEl = document.getElementById('cRanking').parentElement;
+  const filterBar = document.createElement('div');
+  filterBar.id = 'rankingFilterBar';
+  filterBar.className = 'zone-filter-wrap';
+  filterBar.innerHTML =
+    `<span style="font-size:.68rem;color:#475569;flex-shrink:0">Zona:</span>` +
+    `<button class="zone-filter-btn active" data-zone="-1" onclick="applyZoneFilter(-1)"
+      style="background:var(--indigo);color:#fff;border-color:var(--indigo)">Todos</button>` +
+    ZONE_THRESHOLDS.map((z, i) =>
+      `<button class="zone-filter-btn" data-zone="${i}" onclick="applyZoneFilter(${i})"
+        style="border-color:${z.cor}55">${z.emoji} ${z.label}</button>`
+    ).join('');
+  chartBoxEl.parentElement.insertBefore(filterBar, chartBoxEl);
+
+  charts.ranking = new Chart(document.getElementById('cRanking'), {
+    type: 'bar',
+    data: {
+      labels: rankingData.map(x => x.modulo),
+      datasets: [
+        { label:'Reclamações de clientes', data:rankingData.map(x=>x.bugs_n1*3), backgroundColor:'#F59E0BAA', stack:'a', borderRadius:3 },
+        { label:'Erros em produção + análise técnica', data:rankingData.map(x=>Math.max(0,x.total-x.bugs_n1*3)), backgroundColor:'#6366F188', stack:'a', borderRadius:3 }
+      ]
+    },
+    options: {
+      indexAxis:'y', responsive:true,
+      plugins:{
+        legend:{ labels:{ color:'#94A3B8', font:{size:11} } },
+        tooltip:{ callbacks:{
+          label: items => {
+            const x = rankingData[items.dataIndex];
+            const z = getZone(x.total);
+            const t = (REPORT.tendencia||[]).find(t => t.modulo === x.modulo);
+            const deltaStr = t ? (t.delta > 0 ? ` ↑${t.delta}` : t.delta < 0 ? ` ↓${Math.abs(t.delta)}` : ' →') : '';
+            return `${items.dataset.label}: ${items.raw}`;
           },
-          {
-            label: 'Dev Ativo',
-            data: D.servicos_radar.map(s => s.dev_ativo || 0),
-            borderColor: '#F59E0B',
-            backgroundColor: 'rgba(245,158,11,0.15)',
-          },
-          {
-            label: 'Score Técnico',
-            data: D.servicos_radar.map(s => s.score_tec || 0),
-            borderColor: '#38bdf8',
-            backgroundColor: 'rgba(56,189,248,0.15)',
+          footer: items => {
+            const x = rankingData[items[0].dataIndex];
+            const z = getZone(x.total);
+            const t = (REPORT.tendencia||[]).find(t => t.modulo === x.modulo);
+            const deltaStr = t ? (t.delta > 0 ? `↑${t.delta} vs semana anterior` : t.delta < 0 ? `↓${Math.abs(t.delta)} (melhorando!)` : 'estável') : '';
+            const hint = x.bugs_n1 > 0 ? '\n💡 Clique para ver os bugs abertos' : '';
+            return `Score total: ${x.total} · Zona: ${z.emoji} ${z.label}\n${deltaStr}${hint}`;
           }
-        ]
+        }}
       },
-      options: {
-        responsive: true,
-        scales: { r: { ticks: { display: false }, pointLabels: { color: '#94a3b8', font: { size: 10 } }, grid: { color: '#334155' } } },
-        plugins: { legend: { labels: { color: '#94a3b8', font: { size: 10 } } } }
+      // onClick via addEventListener abaixo (mais confiável com Playwright)
+      onHover: (e, elements) => {
+        e.native.target.style.cursor = elements.length ? 'pointer' : 'default';
+      },
+      scales:{
+        x:{ stacked:true, ticks:{color:'#94A3B8'}, grid:{color:'rgba(30,58,95,.4)'} },
+        y:{ stacked:true, ticks:{color:'#F1F5F9', font:{size:11}}, grid:{display:false} }
       }
-    });
+    }
+  });
+
+  // Click nativo — mais confiável que o onClick do Chart.js em ambientes headless
+  document.getElementById('cRanking').addEventListener('click', function(e) {
+    const els = charts.ranking.getElementsAtEventForMode(e, 'nearest', { intersect: true }, false);
+    if (!els.length) return;
+    const mod = rankingDisplayData[els[0].index];
+    if (!mod) return;
+    if (REPORT.drilldown[mod.modulo]) {
+      if (cur === 4) {
+        selectDrillModule(mod.modulo);
+      } else {
+        drillModule = mod.modulo;
+        built[4] = false;
+        go(4);
+      }
+    } else {
+      showRankingModal(mod);
+    }
+  });
+
+  // Zona reference band abaixo do gráfico
+  const zoneContainer = document.createElement('div');
+  zoneContainer.style.cssText = 'margin-top:8px;padding:0 8px';
+  zoneContainer.innerHTML = `
+    <div style="display:flex;height:6px;border-radius:3px;overflow:hidden;margin-bottom:3px">
+      ${ZONE_THRESHOLDS.map(z => `<div style="flex:1;background:${z.cor}40"></div>`).join('')}
+    </div>
+    <div style="display:flex;justify-content:space-between;font-size:.58rem;color:#475569">
+      ${ZONE_THRESHOLDS.map(z => `<span>${z.emoji} ${z.label}</span>`).join('')}
+    </div>
+    <div style="text-align:right;font-size:.58rem;color:#334155;margin-top:2px">As barras são proporcionais ao score total · Clique em qualquer barra para ver detalhes</div>`;
+  document.getElementById('cRanking').parentElement.appendChild(zoneContainer);
+
+  // Tabela de tendências lateral
+  const trendHtml = rankingData.map(r => {
+    const t = (REPORT.tendencia||[]).find(t => t.modulo === r.modulo);
+    const z = getZone(r.total);
+    let arrow = '', arrowClass = 'trend-eq';
+    if (t) {
+      if (t.delta > 0)      { arrow = `↑${t.delta}`; arrowClass = 'trend-up'; }
+      else if (t.delta < 0) { arrow = `↓${Math.abs(t.delta)}`; arrowClass = 'trend-dn'; }
+      else                  { arrow = '→'; }
+    }
+    // v3.0: risco_pct e confianca
+    const riscoPct = r.risco_pct != null ? r.risco_pct : Math.min(Math.round((r.total / 20) * 100), 100);
+    const confianca = r.confianca || '—';
+    const confiancaColor = confianca === 'alta' ? '#22C55E' : confianca === 'moderada' ? '#F59E0B' : '#94A3B8';
+    return `<div style="display:flex;align-items:center;justify-content:space-between;padding:3px 0;font-size:.72rem;border-bottom:1px solid rgba(30,58,95,.3)">
+      <span style="color:${z.cor}">${z.emoji}</span>
+      <span style="flex:1;padding:0 6px;color:var(--txt1)">${r.modulo}</span>
+      <span style="min-width:40px;text-align:right;color:var(--txt1);font-weight:600">${riscoPct}%</span>
+      <span style="min-width:24px;text-align:center;font-size:.6rem;color:${confiancaColor}" title="Confiança: ${confianca}">●</span>
+      <span class="${arrowClass}" style="min-width:36px;text-align:right">${arrow}</span>
+    </div>`;
+  }).join('');
+
+  const rankingSlide = document.getElementById('cRanking').closest('.slide');
+  if (rankingSlide && !rankingSlide.querySelector('.ranking-trend-col')) {
+    const trendCol = document.createElement('div');
+    trendCol.className = 'ranking-trend-col card';
+    trendCol.style.cssText = 'padding:12px 14px;margin-top:12px;';
+    trendCol.innerHTML = `<div style="font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;color:#475569;margin-bottom:6px">Risco · Confiança · Variação</div>${trendHtml}`;
+    rankingSlide.appendChild(trendCol);
+  }
+}
+
+function showRankingModal(mod) {
+  const cards = mod.bugs_cards || [];
+  document.getElementById('modalTag').textContent  = '🐛 Bugs N1 abertos';
+  document.getElementById('modalTag').style.color  = mod.cor;
+  document.getElementById('modalTitle').textContent = mod.modulo;
+  document.getElementById('modalSub').textContent   =
+    `Score ${mod.total} · ${mod.bugs_n1} bug${mod.bugs_n1!==1?'s':''} aberto${mod.bugs_n1!==1?'s':''} · ${mod.nivel}`;
+
+  document.getElementById('modalBody').innerHTML = cards.length === 0
+    ? `<div style="text-align:center;padding:28px 16px;color:#475569;font-size:.85rem;line-height:1.7">
+        <div style="font-size:1.5rem;margin-bottom:8px">✅</div>
+        Nenhum bug N1 aberto neste módulo.<br>
+        <span style="font-size:.75rem">O risco vem de Sentry, KB ou Code Churn — sem ticket ativo no suporte.</span>
+       </div>`
+    : cards.map(item => {
+        const href = item.id.startsWith('SM-') ? `https://poli-digital.atlassian.net/browse/${item.id}` : null;
+        return `<a href="${href||'#'}" target="_blank" rel="noopener"
+          style="display:flex;align-items:center;gap:12px;padding:11px 14px;background:#1F2937;border:1px solid #1E3A5F;border-radius:10px;text-decoration:none;color:inherit;transition:background .15s"
+          onmouseover="this.style.background='#263348'" onmouseout="this.style.background='#1F2937'">
+          <div style="flex:1">
+            <div style="font-size:.82rem;font-weight:600;margin-bottom:3px">${item.titulo}</div>
+            ${item.descricao ? `<div style="font-size:.75rem;color:#94A3B8;line-height:1.5;margin-bottom:4px">${item.descricao}</div>` : ''}
+            ${item.acao ? `<div style="font-size:.72rem;color:#6366F1;line-height:1.4;margin-bottom:4px">⚡ ${item.acao}</div>` : ''}
+            <div style="display:flex;gap:6px;align-items:center">
+              <span style="font-size:.65rem;font-weight:700;padding:1px 7px;border-radius:4px;${tipoCardStyle(item.tipo)}">${tipoLabel(item.tipo)}</span>
+              <span style="font-size:.65rem;color:#475569;font-family:monospace">${item.id}</span>
+            </div>
+          </div>
+          ${href ? '<span style="color:#475569;font-size:.85rem;flex-shrink:0">↗</span>' : ''}
+        </a>`;
+      }).join('');
+
+  document.getElementById('modalOverlay').style.display = 'flex';
+}
+
+// ── SLIDE 3: SERVIÇOS ─────────────────────────────────────
+function buildServicos() {
+  document.getElementById('svcGrid').innerHTML = REPORT.servicos.map(s=>{
+    const cls = {CRÍTICO:'critico',ALTO:'alto',MÉDIO:'medio'}[s.risco]||'medio';
+    const bc  = {CRÍTICO:'#EF4444',ALTO:'#F59E0B',MÉDIO:'#F97316'}[s.risco]||'#F97316';
+    const bd  = {Alta:100,Média:60,Baixa:35}[s.confianca]||50;
+    return `<div class="svc-card ${cls}">
+      <div class="svc-head">
+        <div>
+          <div class="svc-ico">${s.icone}</div>
+          <div class="svc-nome">${s.nome}</div>
+          <div class="svc-apelido">${s.apelido}</div>
+          ${s.alias ? `<div style="font-size:.6rem;color:#475569;margin-top:2px">${s.alias}</div>` : ''}
+        </div>
+        <div style="text-align:right;flex-shrink:0">
+          <div class="svc-bugs" style="color:${bc}">${s.bugs_atribuidos}</div>
+          <div class="svc-bugs-lbl">bugs<br>atribuídos</div>
+        </div>
+      </div>
+      <div class="svc-desc">${s.descricao}</div>
+      <div class="svc-modulos">${s.modulos.map(m=>`<span class="badge b-blue" style="font-size:.62rem">${m}</span>`).join('')}</div>
+      <div class="svc-sinais">${s.sinais.map(sg=>`<div class="svc-sinal">${sg}</div>`).join('')}</div>
+      <div>
+        <div style="display:flex;justify-content:space-between;font-size:.65rem;color:var(--txt2);margin-bottom:3px">
+          <span>Confiança da atribuição</span><span>${s.confianca}</span>
+        </div>
+        <div style="height:4px;background:var(--card2);border-radius:2px;overflow:hidden">
+          <div style="height:100%;width:${bd}%;background:${bc};border-radius:2px"></div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ── SLIDE 4: ANÁLISE DETALHADA (drilldown dinâmico) ──────
+let drillModule = null;
+const DRILL_MODULES = Object.keys(REPORT.drilldown || {});
+
+function renderDrillTabs() {
+  const tabsEl = document.getElementById('drillTabs');
+  tabsEl.innerHTML = DRILL_MODULES.map(m =>
+    `<button class="drill-tab${drillModule === m ? ' active' : ''}" onclick="selectDrillModule('${m.replace(/'/g, "\\'")}')">${m}</button>`
+  ).join('');
+}
+
+function selectDrillModule(mod) {
+  drillModule = mod;
+  renderDrillTabs();
+  const d = REPORT.drilldown[mod];
+  if (!d) return;
+  const el = document.getElementById('drillBody');
+  const maxBugs = d.servico_principal.bugs + (d.servico_secundario?.bugs || 0);
+  const p1pct   = Math.round(d.servico_principal.bugs / Math.max(maxBugs, 1) * 100);
+  const p2pct   = d.servico_secundario ? Math.round(d.servico_secundario.bugs / Math.max(maxBugs, 1) * 100) : 0;
+
+  document.getElementById('drillTag').innerHTML = `Zoom: <span style="color:${d.cor}">${d.nivel}</span>`;
+
+  el.innerHTML = `
+    <h2 style="font-size:1.3rem;margin-bottom:12px">${mod}</h2>
+
+    <div class="drill-hero">
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div class="card drill-stat" style="cursor:pointer" onclick="showDrillBugs('${mod}','n1')" title="Clique para ver os bugs N1">
+          <div class="drill-num" style="color:${d.cor}">${d.total_reclamacoes}</div>
+          <div class="drill-lbl">bugs N1 abertos agora ↝</div>
+        </div>
+        <div class="card drill-stat" style="cursor:pointer" onclick="showDrillBugs('${mod}','reclamacoes')" title="Clique para ver as reclamações">
+          <div class="drill-num" style="color:${d.cor}">${d.bugs_confirmados}</div>
+          <div class="drill-lbl">reclamações esta semana ↝</div>
+        </div>
+        <div class="card drill-stat">
+          <div class="drill-num c-amber">${d.dias_sentry}</div>
+          <div class="drill-lbl">dias do erro mais antigo no Sentry</div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div class="drill-narrative">${d.resumo_gerencial}</div>
+        <div class="card" style="padding:14px">
+          <div style="font-size:.7rem;color:var(--txt2);text-transform:uppercase;letter-spacing:.07em;margin-bottom:10px">Serviços suspeitos</div>
+          <div class="servico-bar">
+            <div class="bar-lbl" style="min-width:160px;font-size:.8rem;font-weight:700">${d.servico_principal.nome}</div>
+            <div class="bar-track"><div class="bar-fill" style="width:${p1pct}%;background:${d.servico_principal.cor}"></div></div>
+            <span style="font-size:.85rem;font-weight:700;color:${d.servico_principal.cor};min-width:24px">${d.servico_principal.bugs}</span>
+          </div>
+          ${d.servico_secundario ? `<div class="servico-bar" style="margin-top:6px">
+            <div class="bar-lbl" style="min-width:160px;font-size:.8rem;font-weight:700">${d.servico_secundario.nome}</div>
+            <div class="bar-track"><div class="bar-fill" style="width:${p2pct}%;background:${d.servico_secundario.cor}"></div></div>
+            <span style="font-size:.85rem;font-weight:700;color:${d.servico_secundario.cor};min-width:24px">${d.servico_secundario.bugs}</span>
+          </div>` : ''}
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="padding:0;overflow:hidden;margin-bottom:12px">
+      <div style="padding:10px 14px;border-bottom:1px solid var(--border);font-size:.7rem;color:var(--txt2);text-transform:uppercase;letter-spacing:.08em">
+        Padrão dos problemas — ${d.bugs_confirmados} bugs agrupados por sintoma
+      </div>
+      ${d.clusters.map(c=>`
+        <div class="cluster-row">
+          <div>
+            <div class="cluster-sintoma">${c.urgencia} ${c.sintoma}</div>
+            <div style="font-size:.68rem;color:var(--txt2);margin-top:2px">Provável origem: <b>${c.servico}</b></div>
+          </div>
+          <div class="cluster-qtd" style="color:${c.urgencia==='🔴'?'var(--red)':'var(--amber)'}">${c.qtd}</div>
+          <div class="cluster-svc">bugs</div>
+        </div>`).join('')}
+    </div>
+
+    <button class="disclosure-btn" onclick="toggleDisclosure('disc-drill')">
+      <span id="disc-drill-icon">▶</span> Ver análise técnica e recomendações
+    </button>
+    <div id="disc-drill" class="disclosure-body" style="max-height:0">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
+        <div class="dev-box warn">🔧 <b>O que o dev está fazendo:</b> ${d.em_desenvolvimento}</div>
+        <div class="dev-box acao">⚡ <b>Ação recomendada:</b> ${d.acao_imediata}</div>
+      </div>
+      ${d.explicacao ? `<div class="card" style="padding:14px;margin-top:10px;background:rgba(99,102,241,.08);border-color:rgba(99,102,241,.3)">
+        <div style="font-size:.7rem;color:#6366F1;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">🔍 Por que este módulo está em risco</div>
+        <div style="font-size:.82rem;line-height:1.6;color:var(--txt1)">${d.explicacao}</div>
+      </div>` : ''}
+      ${d.risco_pct != null ? `<div style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap">
+        <div class="card" style="padding:10px 14px;flex:1;min-width:120px">
+          <div style="font-size:.65rem;color:var(--txt2);text-transform:uppercase;letter-spacing:.07em">Risco</div>
+          <div style="font-size:1.4rem;font-weight:700;color:${d.cor}">${d.risco_pct}%</div>
+        </div>
+        <div class="card" style="padding:10px 14px;flex:1;min-width:120px">
+          <div style="font-size:.65rem;color:var(--txt2);text-transform:uppercase;letter-spacing:.07em">Confiança</div>
+          <div style="font-size:1.1rem;font-weight:700;color:${d.confianca === 'alta' ? '#22C55E' : d.confianca === 'moderada' ? '#F59E0B' : '#94A3B8'}">${d.confianca || '—'}</div>
+        </div>
+        ${d.impacto_negocio ? `<div class="card" style="padding:10px 14px;flex:2;min-width:200px">
+          <div style="font-size:.65rem;color:var(--txt2);text-transform:uppercase;letter-spacing:.07em">Impacto no Negócio</div>
+          <div style="font-size:.82rem;line-height:1.5;color:#F59E0B">💰 ${d.impacto_negocio.clientes_afetados || '—'} clientes · ~${d.impacto_negocio.tickets_dia || '—'} tickets/dia</div>
+          <div style="font-size:.72rem;color:var(--txt2);margin-top:2px">${d.impacto_negocio.custo_inacao || ''}</div>
+        </div>` : ''}
+      </div>` : ''}
+      ${d.whatif ? `<div class="card" style="padding:14px;margin-top:10px">
+        <div style="font-size:.7rem;color:#22C55E;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px">🧪 Simulação What-If</div>
+        <div style="font-size:.82rem;line-height:1.6;color:var(--txt1)">
+          <b>Recomendação:</b> ${d.whatif.recomendacao || '—'}<br>
+          <span style="color:var(--txt2)">${d.whatif.justificativa || ''}</span>
+        </div>
+        ${d.whatif.cenarios ? `<div style="margin-top:8px">
+          ${d.whatif.cenarios.map(c => `<div style="display:flex;justify-content:space-between;padding:4px 0;font-size:.75rem;border-bottom:1px solid rgba(30,58,95,.3)">
+            <span style="color:${c.recomendado ? '#22C55E' : 'var(--txt1)'};font-weight:${c.recomendado ? '700' : '400'}">${c.recomendado ? '✓ ' : ''}${c.nome}</span>
+            <span style="color:var(--txt2)">Risco 7d: ${c.risco_7d}% ${c.reducao > 0 ? `(↓${c.reducao})` : ''}</span>
+            <span style="color:var(--txt2);min-width:60px;text-align:right">${c.custo}</span>
+          </div>`).join('')}
+        </div>` : ''}
+      </div>` : ''}
+    </div>`;
+}
+
+function buildDrillDetailed() {
+  if (DRILL_MODULES.length === 0) return;
+  if (!drillModule) drillModule = DRILL_MODULES[0];
+  renderDrillTabs();
+  selectDrillModule(drillModule);
+}
+
+function showDrillBugs(mod, type) {
+  const svc = (REPORT.servicos_radar || []).find(s => s.nome.startsWith(mod) || s.apelido === mod);
+  if (!svc) return;
+  const items = (type === 'n1' || type === 'reclamacoes') ? (svc.bugs_n1_items || []) : (svc.bugs_cards || []);
+  const label = type === 'n1' ? 'Bugs N1 abertos' : 'Reclamações esta semana';
+  const cor = type === 'n1' ? '#F97316' : '#EF4444';
+  document.getElementById('modalTag').textContent = '🐛 ' + label;
+  document.getElementById('modalTag').style.color = cor;
+  document.getElementById('modalTitle').textContent = svc.nome;
+  document.getElementById('modalSub').textContent = svc.apelido + ' · ' + items.length + ' itens';
+  document.getElementById('modalBody').innerHTML = items.length === 0
+    ? '<div style="text-align:center;padding:24px;color:#475569;font-size:.85rem">Nenhum item registrado para este serviço.</div>'
+    : items.map(item => {
+        const link = item.id && item.id.startsWith('SM-') ? `https://poli-digital.atlassian.net/browse/${item.id}` : null;
+        return `<a href="${link||'#'}" target="_blank" rel="noopener"
+          style="display:flex;align-items:flex-start;gap:10px;padding:11px 14px;background:#1F2937;border:1px solid #1E3A5F;border-radius:10px;text-decoration:none;color:inherit;transition:background .15s"
+          onmouseover="this.style.background='#263348'" onmouseout="this.style.background='#1F2937'">
+          <div style="flex:1">
+            <div style="font-size:.8rem;font-weight:600;margin-bottom:4px">${item.titulo}</div>
+            <div style="display:flex;gap:6px;align-items:center">
+              <span style="font-size:.65rem;font-weight:700;padding:1px 7px;border-radius:4px;background:${cor}18;color:${cor}">${item.tipo||'N1'}</span>
+              <span style="font-size:.65rem;color:#475569">${item.id||''}</span>
+            </div>
+          </div>
+          ${link ? '<span style="color:#475569;font-size:.8rem;flex-shrink:0">↗</span>' : ''}
+        </a>`;
+      }).join('');
+  const overlay = document.getElementById('modalOverlay');
+  overlay.style.display = 'flex';
+  setTimeout(() => { overlay.style.opacity = '1'; }, 10);
+}
+
+// ── SLIDE 7: RADAR DE SERVIÇOS ────────────────────────────
+function buildRadarSvc() {
+  if (charts.radarSvc) return;
+  const d = REPORT.servicos_radar;
+  const labels = d.map(s => s.apelido);
+  const maxVal = Math.max(...d.map(s => Math.max(s.bugs, s.dev_ativo, s.dev_planejado))) + 2;
+
+  charts.radarSvc = new Chart(document.getElementById('cRadarSvc'), {
+    type: 'radar',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: 'Bugs confirmados',
+          data: d.map(s => s.bugs),
+          borderColor: '#EF4444',
+          backgroundColor: 'rgba(239,68,68,0.2)',
+          pointBackgroundColor: '#EF4444',
+          pointBorderColor: '#0A0F1E',
+          pointRadius: 5,
+          borderWidth: 2.5,
+          order: 1
+        },
+        {
+          label: 'Dev ativo agora',
+          data: d.map(s => s.dev_ativo),
+          borderColor: '#22C55E',
+          backgroundColor: 'rgba(34,197,94,0.15)',
+          pointBackgroundColor: '#22C55E',
+          pointBorderColor: '#0A0F1E',
+          pointRadius: 5,
+          borderWidth: 2.5,
+          order: 2
+        },
+        {
+          label: 'Planejado (backlog)',
+          data: d.map(s => s.dev_planejado),
+          borderColor: '#6366F1',
+          backgroundColor: 'rgba(99,102,241,0.08)',
+          pointBackgroundColor: '#6366F1',
+          pointBorderColor: '#0A0F1E',
+          pointRadius: 4,
+          borderWidth: 2,
+          borderDash: [5, 4],
+          order: 3
+        },
+        {
+          label: 'Risco técnico latente',
+          data: d.map(s => s.score_tec || 0),
+          borderColor: '#F59E0B',
+          backgroundColor: 'rgba(245,158,11,0.10)',
+          pointBackgroundColor: '#F59E0B',
+          pointBorderColor: '#0A0F1E',
+          pointRadius: 4,
+          borderWidth: 2,
+          borderDash: [3, 3],
+          order: 4
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: { display: false } },
+      onClick: (_e, elements) => {
+        if (!elements.length) return;
+        showModal(elements[0].index, elements[0].datasetIndex);
+      },
+      onHover: (e, elements) => {
+        e.native.target.style.cursor = elements.length ? 'pointer' : 'default';
+      },
+      scales: {
+        r: {
+          min: 0, max: maxVal,
+          ticks: { color: '#475569', backdropColor: 'transparent', font: { size: 9 }, stepSize: 3 },
+          grid:        { color: 'rgba(30,58,95,0.6)' },
+          angleLines:  { color: 'rgba(30,58,95,0.8)' },
+          pointLabels: {
+            color: '#F1F5F9', font: { size: 11.5, weight: '700' },
+            padding: 8
+          }
+        }
+      }
+    }
+  });
+
+  // Cards laterais
+  buildDevAtivoPanel();
+
+  document.getElementById('svcRadarCards').innerHTML = d.map(s => {
+    const gap = s.bugs - s.dev_ativo - s.dev_planejado;
+    const gapCor = gap > 8 ? '#EF4444' : gap > 4 ? '#F59E0B' : '#22C55E';
+    const gapLabel = gap > 8 ? '🔴 Crítico' : gap > 4 ? '🟡 Atenção' : '🟢 OK';
+    const maxBar = Math.max(s.bugs, 12);
+    return `<div class="card" style="padding:12px 14px;border-left:3px solid ${gapCor}">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">
+        <div>
+          <div style="font-size:.82rem;font-weight:800">${s.nome}</div>
+          <div style="font-size:.68rem;color:var(--txt2)">${s.apelido}</div>
+          ${s.alias ? `<div style="font-size:.58rem;color:#475569">${s.alias}</div>` : ''}
+        </div>
+        <span class="badge" style="background:${gapCor}22;color:${gapCor};font-size:.62rem">${gapLabel}</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:5px">
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:.65rem;color:#EF4444;min-width:90px">🐛 Score bugs</span>
+          <div style="flex:1;height:7px;background:var(--card2);border-radius:4px;overflow:hidden">
+            <div style="height:100%;width:${Math.round(s.bugs/maxBar*100)}%;background:#EF4444;border-radius:4px"></div>
+          </div>
+          <span style="font-size:.75rem;font-weight:700;color:#EF4444;min-width:22px">${s.bugs}</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:.65rem;color:#22C55E;min-width:90px">⚡ Dev ativo</span>
+          <div style="flex:1;height:7px;background:var(--card2);border-radius:4px;overflow:hidden">
+            <div style="height:100%;width:${Math.round(s.dev_ativo/maxBar*100)}%;background:#22C55E;border-radius:4px"></div>
+          </div>
+          <span style="font-size:.75rem;font-weight:700;color:#22C55E;min-width:16px">${s.dev_ativo}</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:.65rem;color:#6366F1;min-width:90px">📋 Planejado</span>
+          <div style="flex:1;height:7px;background:var(--card2);border-radius:4px;overflow:hidden">
+            <div style="height:100%;width:${Math.round(s.dev_planejado/maxBar*100)}%;background:#6366F1;border-radius:4px"></div>
+          </div>
+          <span style="font-size:.75rem;font-weight:700;color:#6366F1;min-width:16px">${s.dev_planejado}</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:.65rem;color:#F59E0B;min-width:90px">🔬 Risco tec.</span>
+          <div style="flex:1;height:7px;background:var(--card2);border-radius:4px;overflow:hidden">
+            <div style="height:100%;width:${Math.round((s.score_tec||0)/maxBar*100)}%;background:#F59E0B;border-radius:4px"></div>
+          </div>
+          <span style="font-size:.75rem;font-weight:700;color:#F59E0B;min-width:16px">${s.score_tec||0}</span>
+        </div>
+      </div>
+      <div style="margin-top:7px;font-size:.67rem;color:var(--txt2);line-height:1.4">${s.notas.bugs}</div>
+    </div>`;
+  }).join('');
+
+  buildRadarN1();
+}
+
+// ── RADAR N1 ────────────────────────────────────────────
+function buildRadarN1() {
+  if (charts.radarN1) return;
+  const d = REPORT.servicos_radar;
+  const labels = d.map(s => s.apelido);
+  const n1Max = Math.max(...d.map(s => s.bugs_n1 || 0)) + 5;
+
+  const el = document.getElementById('cRadarN1');
+  if (!el) return;
+  el.style.display = '';
+
+  charts.radarN1 = new Chart(el, {
+    type: 'radar',
+    data: {
+      labels,
+      datasets: [{
+        label: 'Reclamações N1',
+        data: d.map(s => s.bugs_n1 || 0),
+        borderColor: '#F97316',
+        backgroundColor: 'rgba(249,115,22,0.15)',
+        pointBackgroundColor: '#F97316',
+        pointBorderColor: '#0A0F1E',
+        pointRadius: 5,
+        borderWidth: 2.5,
+        borderDash: [6, 3]
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: { display: false } },
+      onClick: (_e, elements) => {
+        if (!elements.length) return;
+        showModal(elements[0].index, 1);
+      },
+      onHover: (e, elements) => {
+        e.native.target.style.cursor = elements.length ? 'pointer' : 'default';
+      },
+      scales: {
+        r: {
+          min: 0, max: n1Max,
+          ticks: { color: '#475569', backdropColor: 'transparent', font: { size: 9 }, stepSize: Math.ceil(n1Max/6) },
+          grid: { color: 'rgba(30,58,95,0.6)' },
+          angleLines: { color: 'rgba(30,58,95,0.8)' },
+          pointLabels: {
+            color: '#F1F5F9', font: { size: 11, weight: '700' },
+            padding: 8
+          }
+        }
+      }
+    }
+  });
+}
+
+// ── RADAR/GRID TOGGLE ─────────────────────────────────────
+function showRadarView(view) {
+  document.querySelectorAll('.radar-toggle-btn').forEach((b,i) => {
+    b.classList.toggle('active', (i===0 && view==='chart') || (i===1 && view==='grid'));
+  });
+  document.getElementById('cRadarSvc').style.display = view === 'chart' ? 'block' : 'none';
+  const n1Section = document.getElementById('radarN1Section');
+  if (n1Section) n1Section.style.display = view === 'chart' ? 'block' : 'none';
+  document.getElementById('radarGrid').style.display  = view === 'grid'  ? 'block' : 'none';
+  if (view === 'grid') buildRadarGrid();
+}
+
+function buildRadarGrid() {
+  const d = REPORT.servicos_radar || [];
+  if (!d.length) return;
+  const maxB = Math.max(...d.map(s=>s.bugs), 1);
+  const maxT = Math.max(...d.map(s=>s.score_tec||0), 1);
+
+  const cellColor = (val, max, inverse) => {
+    const pct = val / max;
+    if (inverse) return pct > .6 ? '#EF4444' : pct > .3 ? '#F59E0B' : '#22C55E';
+    return pct > .6 ? '#22C55E' : pct > .3 ? '#F59E0B' : '#EF4444';
+  };
+
+  const html = `<table style="width:100%;border-collapse:collapse;font-size:.75rem">
+    <thead>
+      <tr style="border-bottom:1px solid var(--border)">
+        <th style="text-align:left;padding:6px 10px;color:var(--txt2);font-size:.65rem">Serviço</th>
+        <th style="color:#EF4444;font-size:.65rem">🐛 Bugs</th>
+        <th style="color:#22C55E;font-size:.65rem">⚡ Dev Ativo</th>
+        <th style="color:#6366F1;font-size:.65rem">📋 Planejado</th>
+        <th style="color:#F59E0B;font-size:.65rem">🔬 Risco Tec.</th>
+        <th style="font-size:.65rem;color:var(--txt2)">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${d.map(s => {
+        const gap = s.bugs - s.dev_ativo - s.dev_planejado;
+        const z = getZone(s.score_tec || s.bugs);
+        const gapLabel = gap > 8 ? '🔴 Crítico' : gap > 4 ? '🟡 Atenção' : '🟢 OK';
+        const cell = (val, max, inv) => {
+          const c = cellColor(val, max, inv);
+          return `<td style="text-align:center;padding:8px 10px;font-weight:700;color:${c}">${val}</td>`;
+        };
+        return `<tr style="border-bottom:1px solid rgba(30,58,95,.4);cursor:pointer" title="${s.notas?.bugs||''}">
+          <td style="padding:8px 10px">
+            <div style="font-weight:700;font-size:.8rem">${s.apelido}</div>
+            <div style="font-size:.62rem;color:#475569">${s.alias||''}</div>
+          </td>
+          ${cell(s.bugs, maxB, true)}
+          ${cell(s.dev_ativo, 5, false)}
+          ${cell(s.dev_planejado, 8, false)}
+          ${cell(s.score_tec||0, maxT, true)}
+          <td style="text-align:center;padding:8px 6px;font-size:.7rem">${gapLabel}</td>
+        </tr>`;
+      }).join('')}
+    </tbody>
+  </table>`;
+
+  document.getElementById('radarGrid').innerHTML = html;
+}
+
+// ── DEV ATIVO — PAINEL COMPLETO ───────────────────────────
+function buildDevAtivoPanel() {
+  const el = document.getElementById('devAtivoPanel');
+  if (!el) return;
+
+  const todos = REPORT.todos_dev_ativos || [];
+  const radarSet = new Set((REPORT.servicos_radar || []).map(s => s.apelido));
+  const mapeados    = todos.filter(c => c.servico_radar && radarSet.has(c.servico_radar));
+  const naoMapeados = todos.filter(c => !c.servico_radar || !radarSet.has(c.servico_radar));
+
+  if (!todos.length) {
+    el.innerHTML = `
+      <div style="border:1px solid rgba(30,58,95,.5);border-radius:10px;padding:14px 18px;background:var(--card);display:flex;align-items:flex-start;gap:14px">
+        <div style="font-size:1.4rem;line-height:1">⚡</div>
+        <div>
+          <div style="font-size:.75rem;font-weight:800;color:var(--txt2);letter-spacing:.06em;margin-bottom:6px">DEV ATIVO — TODOS OS CARDS EM DESENVOLVIMENTO</div>
+          <div style="font-size:.82rem;color:#F59E0B;font-weight:700">0 cards em desenvolvimento ativo no sistema inteiro</div>
+          <div style="font-size:.71rem;color:#475569;margin-top:4px;line-height:1.5">Nenhum card DEV4 encontrado com status "Em Desenvolvimento" no período. Todos os cards estão em backlog ou ready — nenhuma correção ou feature rastreável está sendo codada agora.</div>
+        </div>
+      </div>`;
+    return;
   }
 
-  // Qualidade
-  const qc = document.getElementById('qualidade-container');
-  if (D.qualidadeProcesso) {
-    const q = D.qualidadeProcesso;
-    qc.innerHTML = `
-      <p><strong>🔄 Bugs Reabertos:</strong> ${q.bugsReabertos?.total || 0} no período</p>
-      <p><strong>🏃 PRs Precipitados:</strong> ${q.prsPrecipitados?.total || 0} (&lt;2h review, &gt;10 arquivos)</p>
-      <p><strong>🧪 Cenários Desatualizados:</strong> ${q.stalenessQA?.total || 0} módulos</p>
-      <p><strong>🌐 Falhas por Ambiente:</strong> ${q.envFailures?.total || 0} padrões detectados</p>
-    `;
+  const diasCor = d => !d ? '#475569' : d > 14 ? '#EF4444' : d > 7 ? '#F59E0B' : '#94A3B8';
+
+  const rows = todos.map(c => {
+    const mapeado = c.servico_radar && radarSet.has(c.servico_radar);
+    const badgeCor = mapeado ? '#22C55E' : '#F59E0B';
+    const badge = mapeado
+      ? `<span style="font-size:.6rem;padding:2px 7px;border-radius:3px;background:${badgeCor}22;color:${badgeCor};font-weight:600">${c.servico_radar}</span>`
+      : `<span style="font-size:.6rem;padding:2px 7px;border-radius:3px;background:#F59E0B22;color:#F59E0B;font-weight:600">⚠️ fora do radar</span>`;
+    return `<tr style="border-bottom:1px solid rgba(30,58,95,.3)${!mapeado ? ';background:rgba(245,158,11,.05)' : ''}">
+      <td style="padding:7px 12px;font-size:.72rem;font-weight:700;color:${badgeCor};white-space:nowrap">${c.id}</td>
+      <td style="padding:7px 12px;font-size:.72rem;max-width:340px">${c.titulo}</td>
+      <td style="padding:7px 12px;font-size:.68rem;color:var(--txt2);white-space:nowrap">${c.assignee || '—'}</td>
+      <td style="padding:7px 12px">${badge}</td>
+      <td style="padding:7px 12px;font-size:.7rem;font-weight:700;color:${diasCor(c.dias_em_andamento)};text-align:center;white-space:nowrap">${c.dias_em_andamento != null ? c.dias_em_andamento + 'd' : '—'}</td>
+    </tr>`;
+  }).join('');
+
+  const foraCount = naoMapeados.length;
+  const foraBadge = foraCount > 0
+    ? `<span style="font-size:.65rem;padding:2px 8px;border-radius:4px;background:#F59E0B22;color:#F59E0B;font-weight:700">⚠️ ${foraCount} fora do radar</span>`
+    : `<span style="font-size:.65rem;padding:2px 8px;border-radius:4px;background:#22C55E22;color:#22C55E;font-weight:700">✅ todos mapeados</span>`;
+
+  el.innerHTML = `
+    <div style="border:1px solid rgba(30,58,95,.5);border-radius:10px;overflow:hidden">
+      <div style="display:flex;align-items:center;gap:10px;padding:11px 16px;background:var(--card);border-bottom:1px solid rgba(30,58,95,.4);flex-wrap:wrap">
+        <span style="font-size:.75rem;font-weight:800;color:var(--txt2);letter-spacing:.06em">⚡ DEV ATIVO — TODOS OS CARDS EM DESENVOLVIMENTO</span>
+        <span style="font-size:.65rem;padding:2px 8px;border-radius:4px;background:#22C55E22;color:#22C55E;font-weight:700">${todos.length} card${todos.length > 1 ? 's' : ''}</span>
+        ${foraBadge}
+        ${foraCount > 0 ? `<span style="font-size:.63rem;color:#475569">· ${mapeados.length} visíveis no radar</span>` : ''}
+      </div>
+      <table style="width:100%;border-collapse:collapse;background:var(--card)">
+        <thead>
+          <tr style="background:var(--card2)">
+            <th style="text-align:left;padding:6px 12px;font-size:.63rem;color:#475569;font-weight:600">ID</th>
+            <th style="text-align:left;padding:6px 12px;font-size:.63rem;color:#475569;font-weight:600">Card</th>
+            <th style="text-align:left;padding:6px 12px;font-size:.63rem;color:#475569;font-weight:600">Assignee</th>
+            <th style="text-align:left;padding:6px 12px;font-size:.63rem;color:#475569;font-weight:600">Serviço no Radar</th>
+            <th style="text-align:center;padding:6px 12px;font-size:.63rem;color:#475569;font-weight:600">Dias em dev</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+}
+
+// ── SLIDE 9: BOMBAS ───────────────────────────────────────
+function buildBombas() {
+  const MAX_BOMB = Math.max(...(REPORT.bombas||[]).map(b=>b.score), 80);
+  const urgLabels = ['ALTO', 'ALTO', 'ATENÇÃO'];
+  document.getElementById('bombGrid').innerHTML = (REPORT.bombas||[]).map((b,bi)=>{
+    const pct = Math.min(Math.round(b.score / MAX_BOMB * 100), 100);
+    const diasTxt = b.dias_sem_corretivo ? `⏰ ${b.dias_sem_corretivo} dias sem correção` : '';
+    const usersTxt = b.usuarios_afetados ? `👥 ${b.usuarios_afetados} usuários afetados` : '';
+    const urgLabel = bi === 0 ? '🚨 URGÊNCIA MÁXIMA' : bi === 1 ? '🔴 URGENTE' : '🟡 ALTO RISCO';
+    // v3.0: confianca, risco_pct, impacto_negocio, roi_acao
+    const riscoPct = b.risco_pct != null ? b.risco_pct : Math.min(Math.round((b.score / 20) * 100), 100);
+    const confianca = b.confianca || '—';
+    const confiancaColor = confianca === 'alta' ? '#22C55E' : confianca === 'moderada' ? '#F59E0B' : '#94A3B8';
+    const impactoNegocio = b.impacto_negocio;
+    const roiAcao = b.roi_acao;
+    return `<div class="bomb">
+      <div>
+        <div class="bomb-rank" style="color:${b.cor}">${urgLabel}</div>
+        <div class="bomb-mod" style="margin-top:4px">${b.modulo}</div>
+        <div class="bomb-urgency-bar" title="Score de risco: ${b.score}">
+          <div class="bomb-urgency-fill" style="width:${pct}%;background:${b.cor}"></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:.6rem;color:#475569">
+          <span>Risco: ${riscoPct}%</span>
+          <span style="color:${confiancaColor}">● ${confianca}</span>
+          <span>Score: ${b.score}</span>
+        </div>
+      </div>
+      ${(diasTxt || usersTxt) ? `<div style="display:flex;gap:16px;padding:6px 0;border-top:1px solid rgba(30,58,95,.5);border-bottom:1px solid rgba(30,58,95,.5)">
+        ${diasTxt ? `<div style="font-size:.75rem;color:${b.cor};font-weight:600">${diasTxt}</div>` : ''}
+        ${usersTxt ? `<div style="font-size:.75rem;color:var(--txt2)">${usersTxt}</div>` : ''}
+      </div>` : ''}
+      <div>
+        <div class="bomb-sec">A situação</div>
+        <div class="bomb-txt">${b.situacao}</div>
+      </div>
+      <div>
+        <div class="bomb-sec">Gatilho</div>
+        <div class="bomb-gtlh">${b.gatilho}</div>
+      </div>
+      <div>
+        <div class="bomb-sec">Impacto se não agir</div>
+        <div class="bomb-txt">${b.impacto}</div>
+        ${impactoNegocio ? `<div style="font-size:.72rem;color:#F59E0B;margin-top:4px;line-height:1.4">💰 ${impactoNegocio.clientes_afetados || '—'} clientes · ~${impactoNegocio.tickets_dia || '—'} tickets/dia · ${impactoNegocio.custo_inacao || ''}</div>` : ''}
+      </div>
+      <div class="bomb-acao">⚡ ${b.acao}</div>
+      ${roiAcao ? `<div style="font-size:.72rem;color:#22C55E;padding:6px 0;border-top:1px solid rgba(30,58,95,.3);line-height:1.4">📈 ROI: ${roiAcao}</div>` : ''}
+    </div>`;
+  }).join('');
+}
+
+// ── SLIDE 9: QUALIDADE DO PROCESSO ───────────────────────
+function buildQualidade() {
+  const q = REPORT.qualidadeProcesso || {};
+
+  const sinais = [
+    {
+      icone: '🔄', label: 'Bugs Reabertos', cor: 'red',
+      valor: q.bugsReabertos?.total ?? '—',
+      detalhe: 'Regressões confirmadas — fix não resolveu',
+      modulos: q.bugsReabertos?.modulos || [],
+      hint: 'Cada reabertura indica que um fix anterior foi incompleto ou gerou regressão. Módulos com ≥2 reaberturas no período são candidatos a backlog crônico.'
+    },
+    {
+      icone: '🏃', label: 'Deploys Arriscados', cor: 'amber',
+      valor: q.prsPrecipitados?.total ?? '—',
+      detalhe: 'PRs grandes revisados em < 2h — alta chance de bug',
+      modulos: q.prsPrecipitados?.modulos || [],
+      hint: 'PRs complexos revisados em menos de 2h têm alta probabilidade de introduzir bugs. São um sinal antecipado de regressão antes do bug aparecer no suporte.'
+    },
+    {
+      icone: '📈', label: 'Erros Crescendo', cor: 'red',
+      valor: q.sentryEscalando?.total ?? '—',
+      detalhe: 'Módulos com erros em produção crescendo >50%/semana',
+      modulos: q.sentryEscalando?.modulos || [],
+      hint: 'Erros crescendo 50%+ em uma semana indicam degradação ativa em produção. Diferente do volume absoluto — um novo bug escalando é mais urgente que um bug crônico estável.'
+    },
+    {
+      icone: '🌐', label: 'Falha por Ambiente', cor: 'amber',
+      valor: q.envFailures?.total ?? '—',
+      detalhe: 'Módulo falha muito mais em staging do que em canary',
+      modulos: q.envFailures?.modulos || [],
+      hint: 'Módulos com taxa de falha significativamente diferente entre staging e canary indicam problema de configuração, dados de ambiente ou dependência de infraestrutura.'
+    },
+    {
+      icone: '⏱️', label: 'Bugs Sem Solução', cor: 'orange',
+      valor: q.resolucaoLenta?.total ?? '—',
+      detalhe: 'Módulos com tempo médio de correção > 14 dias',
+      modulos: q.resolucaoLenta?.modulos || [],
+      hint: 'Tempo médio de resolução acima de 14 dias indica alta complexidade técnica, falta de priorização ou dependência externa. Esses módulos são candidatos a refatoração.'
+    }
+  ];
+
+  // Cards de KPI de processo
+  document.getElementById('qualGrid').innerHTML = sinais.map(s => `
+    <div class="card kpi ${s.cor}" style="cursor:${s.modulos.length?'pointer':'default'}" onclick="toggleQualDetail('${s.label}', this)">
+      <div class="kpi-ico">${s.icone}</div>
+      <div class="kpi-num c-${s.cor}">${s.valor}</div>
+      <div class="kpi-lbl">${s.label}</div>
+      <div class="kpi-det">${s.detalhe}</div>
+    </div>`).join('');
+
+  // Painel de detalhe (começa vazio)
+  document.getElementById('qualDetalhe').innerHTML = `
+    <div id="qualModulos" class="card" style="padding:0;overflow:hidden;min-height:80px">
+      <div style="padding:12px 16px;border-bottom:1px solid var(--border);font-size:.7rem;color:var(--txt2);text-transform:uppercase;letter-spacing:.08em">
+        Selecione um sinal acima para ver os módulos afetados
+      </div>
+      <div id="qualModulosList" style="padding:14px 16px;color:#475569;font-size:.8rem">—</div>
+    </div>
+    <div id="qualHint" class="card" style="background:var(--blue-bg);border-color:rgba(59,130,246,.25);font-size:.82rem;color:#93C5FD;line-height:1.6;padding:16px 18px">
+      <div style="font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;color:#6366F1;font-weight:700;margin-bottom:6px">Como interpretar este sinal</div>
+      Clique em um dos indicadores acima para ver a explicação e os módulos afetados.
+    </div>`;
+
+  // Tabela de comparação staging vs canary (env failures)
+  if (q.envFailures?.modulos?.length) {
+    document.getElementById('qualDetalhe').insertAdjacentHTML('beforeend', `
+      <div class="card" style="grid-column:1/-1;padding:0;overflow:hidden">
+        <div style="padding:10px 14px;border-bottom:1px solid var(--border);font-size:.7rem;color:var(--txt2);text-transform:uppercase;letter-spacing:.08em">
+          Comparativo de falhas por ambiente (staging vs canary)
+        </div>
+        <table><thead><tr><th>Módulo</th><th>Taxa Staging</th><th>Taxa Canary</th><th>Diferença</th></tr></thead><tbody>
+          ${q.envFailures.modulos.map(m => {
+            const diff = Math.abs(m.staging - m.canary);
+            const cor = diff > 0.3 ? 'var(--red)' : diff > 0.15 ? 'var(--amber)' : 'var(--green)';
+            return `<tr>
+              <td style="font-weight:600">${m.modulo}</td>
+              <td>${Math.round(m.staging*100)}%</td>
+              <td>${Math.round(m.canary*100)}%</td>
+              <td style="color:${cor};font-weight:700">Δ${Math.round(diff*100)}%</td>
+            </tr>`;
+          }).join('')}
+        </tbody></table>
+      </div>`);
   }
 
-  // PRs perigosos
-  const prsC = document.getElementById('prs-container');
-  if (D.prs_perigosos && D.prs_perigosos.length > 0) {
-    prsC.innerHTML = '';
-    D.prs_perigosos.slice(0,5).forEach(p => {
-      prsC.innerHTML += `<div class="pr-card"><span class="repo">${p.repo}</span> #${p.pr_number} — ${p.titulo} · Entropia: ${p.entropy} · Churn: ${p.churn_lines} linhas</div>`;
-    });
+}
+
+// ── SLIDE 10: PRs EM RISCO ────────────────────────────────
+function buildPRsRisco() {
+  const prs = REPORT.prs_perigosos || [];
+  const el  = document.getElementById('prsRiscoSection');
+  if (!el) return;
+  if (!prs.length) {
+    el.innerHTML = `<div style="text-align:center;padding:40px 20px;color:#475569;font-size:.85rem">
+      <div style="font-size:2rem;margin-bottom:12px">✅</div>
+      Nenhum PR de risco detectado neste período.<br>
+      <span style="font-size:.75rem">Execute <code>/argos-predict --update-dashboard</code> para atualizar com dados reais.</span>
+    </div>`;
+    return;
   }
 
-  // Dev Ativos
-  const datbody = document.getElementById('dev-ativos-tbody');
-  if (D.todos_dev_ativos && D.todos_dev_ativos.length > 0) {
-    D.todos_dev_ativos.forEach(d => {
-      const modBadge = d.servico_radar ? d.servico_radar : (d.modulo || '⚠️ fora do radar');
-      datbody.innerHTML += `<tr><td><a href="#" style="color:var(--accent)">${d.id}</a></td><td>${d.titulo}</td><td>${d.assignee}</td><td>${modBadge}</td><td>${d.dias_em_andamento}d</td></tr>`;
-    });
-  } else {
-    datbody.innerHTML = '<tr><td colspan="5">Nenhum card em desenvolvimento ativo.</td></tr>';
+  const maxEntropy = Math.max(...prs.map(p => p.entropy), 4);
+
+  const entropyClass = e => e > 3.5 ? 'entropy-critical' : e > 2.0 ? 'entropy-medium' : 'entropy-low';
+  const entropyLabel = e => e > 3.5 ? '🔴 Alta' : e > 2.0 ? '🟡 Média' : '🟢 Baixa';
+
+  el.innerHTML = `
+    <div style="margin-top:8px">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+        <div style="font-size:.72rem;font-weight:700;color:var(--txt2);text-transform:uppercase;letter-spacing:.09em">PRs com maior risco — DORA CFR + Dispersão das mudanças</div>
+        <span style="font-size:.65rem;color:#475569">(últimos 14 dias · clique para abrir no GitHub)</span>
+      </div>
+      <div class="card" style="padding:0;overflow:hidden">
+        <table class="prs-table" id="prsTable">
+          <thead>
+            <tr>
+              <th style="width:38%">PR / Título</th>
+              <th>Módulos tocados</th>
+              <th title="Quão espalhado o PR estava — maior = mais arriscado">Dispersão <span class="tip" data-tip="Entropia de Shannon: mede quantos módulos diferentes o PR tocou. Alta = mudança muito espalhada = maior risco de efeito colateral.">ℹ️</span></th>
+              <th title="Este PR gerou bug confirmado nos 3 dias após o merge?">CFR <span class="tip" data-tip="Change Failure Rate (individual): este PR específico gerou bugs nos 3 dias após o merge? 'Sim' significa que este PR foi a causa de um incidente.">ℹ️</span></th>
+              <th>Bugs / Sentry correlacionado</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${prs.map(p => {
+              const barW = Math.round(p.entropy / maxEntropy * 100);
+              const hasBugs  = p.bugs_pos_merge?.length > 0;
+              const hasSentry = p.sentry_correlacao?.length > 0;
+              const rowBg = (hasBugs || hasSentry) ? 'background:rgba(239,68,68,.04)' : '';
+              const ghUrl = `https://github.com/poli-digital/${p.repo}/pull/${p.pr_number}`;
+              return `<tr style="${rowBg}">
+                <td>
+                  <a href="${ghUrl}" target="_blank" rel="noopener"
+                     style="font-size:.78rem;font-weight:600;color:var(--txt1);text-decoration:none;display:block;line-height:1.35"
+                     onmouseover="this.style.color='#A5B4FC'" onmouseout="this.style.color='var(--txt1)'">
+                    ${p.titulo.length > 55 ? p.titulo.substring(0,55)+'…' : p.titulo} ↗
+                  </a>
+                  <div style="font-size:.63rem;color:#475569;margin-top:2px">${p.repo} #${p.pr_number} · ${p.merged_at} · @${p.author} · ${p.churn_lines} linhas</div>
+                </td>
+                <td style="font-size:.72rem">${p.modulos.map(m => `<span class="badge b-blue" style="font-size:.6rem;margin:1px 2px 1px 0">${m.split(' / ')[0]}</span>`).join('')}</td>
+                <td>
+                  <div style="display:flex;align-items:center;gap:6px">
+                    <div style="width:60px;height:6px;background:var(--card2);border-radius:3px;overflow:hidden;flex-shrink:0">
+                      <div style="height:100%;width:${barW}%;background:${p.entropy>3.5?'#EF4444':p.entropy>2?'#F59E0B':'#22C55E'};border-radius:3px"></div>
+                    </div>
+                    <span class="${entropyClass(p.entropy)}" style="font-size:.75rem">${p.entropy.toFixed(1)} ${entropyLabel(p.entropy)}</span>
+                  </div>
+                </td>
+                <td style="text-align:center">
+                  ${p.risco_cfr
+                    ? '<span style="color:#EF4444;font-size:.85rem;font-weight:700">⚠️ Sim</span>'
+                    : '<span style="color:#22C55E;font-size:.85rem">✅ Não</span>'}
+                </td>
+                <td style="font-size:.72rem">
+                  ${p.bugs_pos_merge?.map(b => `<span class="pr-bug-tag">${b.id}</span>`).join('') || ''}
+                  ${p.sentry_correlacao?.map(s => `<span class="pr-sentry-tag" title="${s}">Sentry ↗</span>`).join('') || ''}
+                  ${(!hasBugs && !hasSentry) ? '<span class="pr-ok-tag">✅ Sem bugs</span>' : ''}
+                </td>
+              </tr>`;
+            }).join('')}
+          </tbody>
+        </table>
+      </div>
+      <div style="font-size:.65rem;color:#334155;margin-top:6px;text-align:right">
+        Dispersão alta (>3.5) = PR tocou muitos módulos diferentes — maior risco de efeito colateral não previsto
+      </div>
+    </div>`;
+}
+
+let qualAtivo = null;
+function toggleQualDetail(label, el) {
+  const q = REPORT.qualidadeProcesso || {};
+  const mapa = {
+    'Bugs Reabertos':         { key:'bugsReabertos',  fmt: m => `${m.modulo} — ${m.count} reabertura${m.count>1?'s':''}` },
+    'PRs Precipitados':       { key:'prsPrecipitados', fmt: m => `${m.modulo} — ${m.count} PR${m.count>1?'s':''} precipitado${m.count>1?'s':''}` },
+    'Sentry Escalando':       { key:'sentryEscalando', fmt: m => `${m.modulo} — +${m.delta}%` },
+    'Falha Env-Específica':   { key:'envFailures',     fmt: m => `${m.modulo} — Δ${Math.round(Math.abs(m.staging-m.canary)*100)}%` },
+    'Resolução Lenta':        { key:'resolucaoLenta',  fmt: m => `${m.modulo} — ${m.media_dias} dias em média` }
+  };
+
+  const sinaisInfo = {
+    'Bugs Reabertos': 'Cada reabertura indica que um fix anterior foi incompleto ou gerou regressão. Módulos com ≥2 reaberturas são candidatos a backlog crônico.',
+    'PRs Precipitados': 'PRs complexos (>10 arquivos) revisados em <2h têm alta probabilidade de introduzir bugs. Sinal antecipado de regressão antes do bug aparecer no suporte.',
+    'Sentry Escalando': 'Erros crescendo 50%+ em uma semana indicam degradação ativa. Um bug escalando é mais urgente que um bug crônico estável.',
+    'Falha Env-Específica': 'Módulos com taxa de falha diferente entre staging e canary indicam problema de configuração, dados de ambiente ou dependência de infraestrutura.',
+    'Resolução Lenta': 'Tempo médio >14 dias indica alta complexidade técnica, falta de priorização ou dependência externa.'
+  };
+
+  // Toggle
+  if (qualAtivo === label) { qualAtivo = null; document.getElementById('qualModulosList').innerHTML = '—'; document.getElementById('qualHint').innerHTML = '<div style="font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;color:#6366F1;font-weight:700;margin-bottom:6px">Como interpretar este sinal</div>Clique em um dos indicadores acima para ver a explicação e os módulos afetados.'; return; }
+  qualAtivo = label;
+
+  const info = mapa[label];
+  if (!info) return;
+  const lista = (q[info.key]?.modulos || []);
+  document.getElementById('qualModulosList').innerHTML = lista.length
+    ? lista.map(m => `<div style="padding:6px 0;border-bottom:1px solid rgba(30,58,95,.3);font-size:.82rem">${info.fmt(m)}</div>`).join('')
+    : '<span style="color:#475569">Nenhum módulo afetado neste período.</span>';
+
+  document.getElementById('qualHint').innerHTML = `
+    <div style="font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;color:#6366F1;font-weight:700;margin-bottom:6px">Como interpretar: ${label}</div>
+    ${sinaisInfo[label] || ''}`;
+}
+
+// ── SLIDE 10: AÇÕES ────────────────────────────────────────
+function buildAcoes() {
+  document.querySelector('#acoesTable tbody').innerHTML = REPORT.acoes.map(a=>`
+    <tr>
+      <td><span class="badge ${corBadge(a.prioridade)}">${a.prioridade}</span></td>
+      <td style="color:var(--txt2);white-space:nowrap;font-size:.78rem">${a.modulo}</td>
+      <td style="font-size:.82rem">${a.acao}</td>
+      <td style="white-space:nowrap;font-size:.78rem;color:var(--txt2)">${a.prazo}</td>
+    </tr>`).join('');
+}
+
+// ── CLASSIFICAÇÃO POR MÓDULO (SM) ─────────────────────────
+const SM_MODULO_KEYWORDS = [
+  { nome: 'Chat/Mensagens', keywords: ['chat', 'mensagem', 'message', 'envio', 'recebimento', 'compose', 'resposta', 'template', 'conversa', 'conversation'] },
+  { nome: 'Canais/WhatsApp', keywords: ['whatsapp', 'waba', 'z-api', 'zapi', 'webchat', 'instagram', 'sms', 'canal', 'channel'] },
+  { nome: 'Distribuição/Filas', keywords: ['fila', 'queue', 'distribuicao', 'assign', 'atribuicao', 'dispatch', 'espera', 'waiting', 'atendimento'] },
+  { nome: 'Autenticação', keywords: ['login', 'logout', 'auth', 'sessao', 'session', 'senha', 'password', 'token', 'jwt', 'heimdall', 'acesso', 'entrar'] },
+  { nome: 'WebSocket/Presença', keywords: ['websocket', 'presenca', 'online', 'offline', 'real-time', 'tempo real', 'notificacao', 'notification', 'socket'] },
+  { nome: 'Upload/Mídia', keywords: ['arquivo', 'file', 'upload', 'pdf', 'imagem', 'image', 'midia', 'media', 'anexo', 'attachment', 'foto', 'video', 'audio'] },
+  { nome: 'Jarvis/IA', keywords: ['ia', 'ai', 'jarvis', 'transcricao', 'resumo', 'sugestao', 'inteligencia artificial', 'assistente', 'llm'] },
+  { nome: 'Integrações', keywords: ['crm', 'erp', 'integracao', 'webhook', 'api externa', 'zapier', 'hubspot', 'salesforce'] }
+];
+function classifySM(sumario) {
+  const s = sumario.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  for (const m of SM_MODULO_KEYWORDS) {
+    for (const kw of m.keywords) {
+      if (s.includes(kw)) return m.nome;
+    }
+  }
+  return 'Outros';
+}
+function classifyTickets(all) {
+  return all.map(t => ({ ...t, modulo: classifySM(t.sumario) }));
+}
+
+// ── SLIDE 13: CHAMADOS SM ─────────────────────────────────
+let smFilter = 'todos';
+let smFilterMod = 'todos';
+let smTab = 'sm';
+let smAllModulos = [];
+
+function buildSMTickets() {
+  const raw = smTab === 'n2' ? (REPORT.sm_tickets_n2 || []) : (REPORT.sm_tickets_raw || []);
+  const all = classifyTickets(raw);
+  smAllModulos = [...new Set(all.map(t => t.modulo))].sort();
+  renderSMModFilter(all);
+  renderSMSummary(all);
+  const tipos = [...new Set(all.map(t => t.tipo))];
+  document.getElementById('smFilterBar').innerHTML =
+    '<button class="sm-filter-btn active" data-filter="todos" onclick="setSMFilter(\'todos\')">Todos (' + all.length + ')</button>' +
+    tipos.map(t => `<button class="sm-filter-btn" data-filter="${t}" onclick="setSMFilter('${t}')">${t} (${all.filter(x => x.tipo === t).length})</button>`).join('');
+  renderSMTable(all);
+  document.getElementById('smSubtitle').textContent = smTab === 'n2'
+    ? 'Chamados N2: bugs com suporte N2. Filtre por módulo (serviço) ou tipo.'
+    : 'Todos os chamados de suporte abertos no período. Filtre por módulo (serviço) ou tipo.';
+}
+
+function renderSMModFilter(all) {
+  const modCounts = {};
+  all.forEach(t => { modCounts[t.modulo] = (modCounts[t.modulo] || 0) + 1; });
+  const el = document.getElementById('smModFilterBar');
+  if (!el) return;
+  const modOrder = ['Chat/Mensagens','Canais/WhatsApp','Distribuição/Filas','Autenticação','WebSocket/Presença','Upload/Mídia','Jarvis/IA','Integrações'];
+  const sorted = modOrder.filter(m => modCounts[m]).concat(smAllModulos.filter(m => !modOrder.includes(m)));
+  el.innerHTML =
+    '<button class="sm-mod-btn active" data-mod="todos" onclick="setSMModFilter(\'todos\')">Todos (' + all.length + ')</button>' +
+    sorted.map(m => `<button class="sm-mod-btn" data-mod="${m}" onclick="setSMModFilter('${m}')">${m} (${modCounts[m]})</button>`).join('');
+}
+
+function setSMTab(tab) {
+  smTab = tab;
+  smFilter = 'todos';
+  smFilterMod = 'todos';
+  document.querySelectorAll('.sm-tab-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.tab === tab);
+    b.style.borderBottomColor = b.dataset.tab === tab ? '#3B82F6' : 'transparent';
+    b.style.color = b.dataset.tab === tab ? 'var(--txt1)' : 'var(--txt2)';
+  });
+  buildSMTickets();
+}
+
+function setSMFilter(tipo) {
+  smFilter = tipo;
+  document.querySelectorAll('.sm-filter-btn').forEach(b => b.classList.toggle('active', b.dataset.filter === tipo));
+  applySMFilters();
+}
+
+function setSMModFilter(modulo) {
+  smFilterMod = modulo;
+  document.querySelectorAll('.sm-mod-btn').forEach(b => b.classList.toggle('active', b.dataset.mod === modulo));
+  applySMFilters();
+}
+
+function applySMFilters() {
+  const raw = smTab === 'n2' ? (REPORT.sm_tickets_n2 || []) : (REPORT.sm_tickets_raw || []);
+  let all = classifyTickets(raw);
+  if (smFilterMod !== 'todos') all = all.filter(t => t.modulo === smFilterMod);
+  if (smFilter !== 'todos') all = all.filter(t => t.tipo === smFilter);
+  renderSMSummary(all);
+  renderSMTable(all);
+}
+
+function renderSMSummary(tickets) {
+  const bugs = tickets.filter(t => t.tipo === 'Bug').length;
+  const total = tickets.length;
+  const el = document.getElementById('smSummary');
+  if (el) el.innerHTML = `<span style="font-size:.82rem;color:var(--txt2)">${total} chamados · <b style="color:#F87171">${bugs} bugs</b> · ${tickets.filter(t => t.status === 'Aberto').length} abertos · ${tickets.filter(t => t.status === 'Concluído').length} concluídos · ${tickets.filter(t => t.status === 'Handoff').length} handoff</span>`;
+}
+
+function renderSMTable(tickets) {
+  const sorted = [...tickets].sort((a, b) => parseInt(b.id.replace('SM-','')) - parseInt(a.id.replace('SM-','')));
+  const container = document.getElementById('smTableContainer');
+  if (!sorted.length) {
+    container.innerHTML = '<div style="padding:24px;text-align:center;color:#475569;font-size:.85rem">Nenhum chamado encontrado para este filtro.</div>';
+    return;
+  }
+  const tipoCores = {Bug:'#EF4444',Solicitação:'#3B82F6',Dúvida:'#F59E0B',Tarefa:'#6366F1',História:'#22C55E'};
+  const modCores = { 'Chat/Mensagens':'#3B82F6','Canais/WhatsApp':'#22C55E','Distribuição/Filas':'#F59E0B','Autenticação':'#8B5CF6','WebSocket/Presença':'#06B6D4','Upload/Mídia':'#EC4899','Jarvis/IA':'#F97316','Integrações':'#6366F1' };
+  container.innerHTML = `<table class="sm-table">
+    <thead><tr><th>ID</th><th>Data</th><th>Status</th><th>Chamado</th><th>Módulo</th><th>Tipo</th></tr></thead>
+    <tbody>${sorted.map(t => {
+      const href = `https://poli-digital.atlassian.net/browse/${t.id}`;
+      const cor = tipoCores[t.tipo] || '#64748B';
+      const modCor = modCores[t.modulo] || '#64748B';
+      const statusCls = t.status === 'Handoff' ? 'sm-st-handoff' : t.status === 'Aberto' ? 'sm-st-aberto' : t.status === 'Concluído' ? 'sm-st-concluido' : '';
+      return `<tr>
+        <td><a href="${href}" target="_blank" class="sm-id">${t.id}</a></td>
+        <td style="color:var(--txt2);font-size:.72rem;white-space:nowrap">${t.criado}</td>
+        <td><span class="sm-status ${statusCls}">${t.status}</span></td>
+        <td class="sm-tit">${t.sumario}</td>
+        <td><span class="sm-tag" style="background:${modCor}18;color:${modCor}">${t.modulo}</span></td>
+        <td><span class="sm-tag" style="background:${cor}18;color:${cor}">${t.tipo}</span></td>
+      </tr>`;
+    }).join('')}</tbody></table>`;
+}
+
+// ── HIGHLIGHT DO RADAR DE SERVIÇOS ────────────────────────
+const RADAR_CONFIGS = [
+  { borderColor:'#EF4444', bg:'rgba(239,68,68,0.20)', dim:'rgba(239,68,68,0.08)', borderDash:[]  },
+  { borderColor:'#22C55E', bg:'rgba(34,197,94,0.15)',  dim:'rgba(34,197,94,0.05)',  borderDash:[]  },
+  { borderColor:'#6366F1', bg:'rgba(99,102,241,0.08)', dim:'rgba(99,102,241,0.03)', borderDash:[5,4] },
+  { borderColor:'#F59E0B', bg:'rgba(245,158,11,0.12)', dim:'rgba(245,158,11,0.03)', borderDash:[3,3] }
+];
+let radarHighlight = -1; // índice ativo (-1 = nenhum)
+
+function toggleRadarLine(idx) {
+  if (!charts.radarSvc) return;
+  radarHighlight = (radarHighlight === idx) ? -1 : idx; // toggle
+  applyRadarHighlight();
+}
+
+function applyRadarHighlight() {
+  if (!charts.radarSvc) return;
+  const btns = [0,1,2,3].map(i => document.getElementById(`svcLegBtn${i}`));
+  const none = radarHighlight === -1;
+
+  charts.radarSvc.data.datasets.forEach((ds, i) => {
+    const cfg = RADAR_CONFIGS[i];
+    const active = none || i === radarHighlight;
+    ds.borderColor       = active ? cfg.borderColor : cfg.dim;
+    ds.backgroundColor   = active ? cfg.bg : 'transparent';
+    ds.borderWidth       = active && !none ? 3.5 : (none ? 2 : 1);
+    ds.pointRadius       = active && !none ? 8   : (none ? 5 : 2);
+    ds.pointHoverRadius  = active && !none ? 10  : (none ? 8 : 2);
+    ds.borderDash        = cfg.borderDash;
+    ds.order             = active ? 0 : 1;
+  });
+
+  // Atualiza visual dos botões
+  btns.forEach((btn, i) => {
+    if (!btn) return;
+    const active = none || i === radarHighlight;
+    const selected = i === radarHighlight && !none;
+    btn.style.background = selected ? RADAR_CONFIGS[i].borderColor + '22' : 'transparent';
+    btn.style.color      = active   ? 'var(--txt1)' : '#334155';
+    btn.style.borderColor= selected ? RADAR_CONFIGS[i].borderColor : (active ? RADAR_CONFIGS[i].borderColor+'55' : '#1E3A5F');
+    btn.style.transform  = selected ? 'scale(1.05)' : 'scale(1)';
+  });
+
+  charts.radarSvc.update('none'); // sem animação para ser instantâneo
+}
+
+// ── MODAL ─────────────────────────────────────────────────
+const DATASET_META = [
+  { label: 'Bugs confirmados',        cor: '#EF4444', key: 'bugs_cards',          emoji: '🐛', vazio: 'Nenhum bug atribuído a este serviço.' },
+  { label: 'Dev ativo agora',         cor: '#22C55E', key: 'dev_ativo_items',     emoji: '⚡', vazio: 'Nenhum card ou PR ativo neste serviço no momento.' },
+  { label: 'Planejado (backlog)',     cor: '#6366F1', key: 'dev_planejado_items', emoji: '📋', vazio: 'Nenhum card planejado para este serviço.' },
+  { label: 'Risco técnico latente',   cor: '#F59E0B', key: 'score_tec_itens',     emoji: '🔬', vazio: 'Nenhuma fragilidade técnica documentada para este serviço.' },
+  { label: 'Reclamações N1',          cor: '#F97316', key: 'bugs_n1_items',       emoji: '📞', vazio: 'Nenhuma reclamação N1 registrada para este serviço.' }
+];
+
+function tipoCardStyle(tipo) {
+  if (tipo.includes('N2'))        return 'background:rgba(239,68,68,.15);color:#EF4444';
+  if (tipo.includes('N1'))        return 'background:rgba(245,158,11,.15);color:#F59E0B';
+  if (tipo.includes('PR'))        return 'background:rgba(34,197,94,.15);color:#22C55E';
+  if (tipo.includes('Em Dev'))    return 'background:rgba(99,102,241,.2);color:#A5B4FC';
+  if (tipo.includes('Sentry'))    return 'background:rgba(239,68,68,.15);color:#EF4444';
+  return 'background:rgba(148,163,184,.1);color:#94A3B8';
+}
+
+// Traduz rótulos técnicos para linguagem gerencial
+function tipoLabel(tipo) {
+  if (!tipo) return tipo;
+  if (tipo.includes('N1 Bug') || tipo.includes('N1 Bug'))
+    return tipo.replace('N1 Bug', 'Reclamação de cliente');
+  if (tipo.includes('🚨 Sentry · 3pts')) return 'Erro em produção — alto impacto';
+  if (tipo.includes('🚨 Sentry · 2pts')) return 'Erro em produção — médio impacto';
+  if (tipo.includes('🚨 Sentry · 1pt'))  return 'Erro em produção — baixo impacto';
+  if (tipo.includes('🚨 Sentry'))        return 'Erro em produção';
+  if (tipo.includes('Card em Dev'))      return 'Em desenvolvimento';
+  if (tipo.includes('Em Dev (Highest!)')|| tipo.includes('Em Dev'))
+    return tipo.replace('Em Dev', 'Em desenvolvimento').replace('Highest!', 'prioridade máxima');
+  if (tipo.includes('Pronto para Dev'))  return 'Aguardando desenvolvimento';
+  if (tipo.includes('Aguardando Handoff')) return 'Aguardando aprovação de produto';
+  if (tipo.includes('Aguardando Cenários')) return 'Aguardando casos de teste';
+  return tipo;
+}
+
+function cardLink(item) {
+  if (item.id.startsWith('SM-'))   return `https://poli-digital.atlassian.net/browse/${item.id}`;
+  if (item.id.startsWith('DEV4-')) return `https://poli-digital.atlassian.net/browse/${item.id}`;
+  if (item.id.startsWith('PR#') && item.repo) return `https://github.com/poli-digital/${item.repo}/pulls`;
+  return null;
+}
+
+function showModal(svcIdx, datasetIdx) {
+  const svc  = REPORT.servicos_radar[svcIdx];
+  const meta = DATASET_META[datasetIdx];
+  const items = svc[meta.key] || [];
+
+  document.getElementById('modalTag').textContent   = meta.emoji + ' ' + meta.label;
+  document.getElementById('modalTag').style.color   = meta.cor;
+  document.getElementById('modalTitle').textContent  = svc.nome;
+  document.getElementById('modalSub').textContent    = svc.apelido + ' · ' + items.length + ' ' + (datasetIdx===0?'bugs':'itens');
+
+  document.getElementById('modalBody').innerHTML = items.length === 0
+    ? `<div style="text-align:center;padding:24px;color:#475569;font-size:.85rem">${meta.vazio}</div>`
+    : items.map(item => {
+        const link = cardLink(item);
+        const tag  = item.repo ? ` · ${item.repo}` : '';
+        return `<a href="${link||'#'}" target="_blank" rel="noopener"
+          style="display:flex;align-items:flex-start;gap:10px;padding:11px 14px;background:#1F2937;border:1px solid #1E3A5F;border-radius:10px;text-decoration:none;color:inherit;transition:background .15s"
+          onmouseover="this.style.background='#263348'" onmouseout="this.style.background='#1F2937'">
+          <div style="flex:1">
+            <div style="font-size:.8rem;font-weight:600;margin-bottom:4px">${item.titulo}</div>
+            ${item.descricao ? `<div style="font-size:.74rem;color:#94A3B8;line-height:1.5;margin-bottom:4px">${item.descricao}</div>` : ''}
+            ${item.acao ? `<div style="font-size:.71rem;color:#6366F1;line-height:1.4;margin-bottom:4px">⚡ ${item.acao}</div>` : ''}
+            <div style="display:flex;gap:6px;align-items:center">
+              <span style="font-size:.65rem;font-weight:700;padding:1px 7px;border-radius:4px;${tipoCardStyle(item.tipo)}">${tipoLabel(item.tipo)}${tag}</span>
+              <span style="font-size:.65rem;color:#475569">${item.id}</span>
+            </div>
+          </div>
+          ${link ? '<span style="color:#475569;font-size:.8rem;flex-shrink:0">↗</span>' : ''}
+        </a>`;
+      }).join('');
+
+  const overlay = document.getElementById('modalOverlay');
+  overlay.style.display = 'flex';
+  setTimeout(() => { overlay.style.opacity = '1'; }, 10);
+}
+
+function closeModal(e) {
+  if (e && e.target !== document.getElementById('modalOverlay') && e.type !== 'click') return;
+  if (e && e.target === document.getElementById('modalBox')) return;
+  document.getElementById('modalOverlay').style.display = 'none';
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+// ── TIMELINE BREAKDOWN MODAL ────────────────────────────
+function showTimelineBreakdown(datasetIndex, dataIndex) {
+  const tl = REPORT.timeline;
+  if (!tl || !tl.length) return;
+  const modulos = Object.keys(tl[0].modulos).slice(0, 5);
+  const modName = modulos[datasetIndex];
+  const week = tl[dataIndex];
+  if (!modName || !week) return;
+
+  const bd = week.breakdown?.[modName];
+  const total = week.modulos[modName] || 0;
+
+  document.getElementById('modalTag').textContent = '📈 ' + modName;
+  document.getElementById('modalTag').style.color = '#6366F1';
+  document.getElementById('modalTitle').textContent = week.data + ' — ' + (bd ? 'TEC ' + bd.tec + ' × USR ' + bd.usr : 'Sem detalhamento');
+  document.getElementById('modalSub').textContent = 'Score total: ' + total;
+
+  document.getElementById('modalBody').innerHTML = bd
+    ? '<div style="display:flex;gap:16px;padding:8px 0">'
+      + '<div style="flex:1;background:#1F2937;border-radius:12px;padding:16px;text-align:center;border-left:4px solid #EF4444">'
+        + '<div style="font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#EF4444;margin-bottom:6px">TEC</div>'
+        + '<div style="font-size:1.8rem;font-weight:800;color:#F1F5F9">' + bd.tec + '</div>'
+        + '<div style="font-size:.7rem;color:#94A3B8;margin-top:4px">' + Math.round(bd.tec/(bd.tec+bd.usr||1)*100) + '% do score</div>'
+      + '</div>'
+      + '<div style="flex:1;background:#1F2937;border-radius:12px;padding:16px;text-align:center;border-left:4px solid #22C55E">'
+        + '<div style="font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#22C55E;margin-bottom:6px">USR</div>'
+        + '<div style="font-size:1.8rem;font-weight:800;color:#F1F5F9">' + bd.usr + '</div>'
+        + '<div style="font-size:.7rem;color:#94A3B8;margin-top:4px">' + Math.round(bd.usr/(bd.tec+bd.usr||1)*100) + '% do score</div>'
+      + '</div>'
+    + '</div>'
+    + '<div style="font-size:.75rem;color:#94A3B8;line-height:1.6;padding:8px 4px">'
+      + '<strong style="color:#F1F5F9">TEC</strong> = divida técnica (bugs + débitos)<br>'
+      + '<strong style="color:#F1F5F9">USR</strong> = user story (funcionalidades em andamento)<br><br>'
+      + 'A fórmula do score é calculada como <code style="background:#1E3A5F;padding:1px 6px;border-radius:4px;font-size:.72rem">max(TEC, USR) + min(TEC, USR) * 0.3</code>, '
+      + 'ponderando o maior componente com peso total e o menor com 30%.'
+    + '</div>'
+    : '<div style="text-align:center;padding:24px;color:#475569;font-size:.85rem">Nenhum detalhamento disponível para este módulo nesta semana</div>';
+
+  const overlay = document.getElementById('modalOverlay');
+  overlay.style.display = 'flex';
+  setTimeout(() => { overlay.style.opacity = '1'; }, 10);
+}
+
+// ── TOOLTIPS (.tip elements) ────────────────────────────
+(function() {
+  let tipEl = null;
+  document.addEventListener('mouseover', e => {
+    const t = e.target.closest('.tip');
+    if (!t) { if (tipEl) { tipEl.remove(); tipEl = null; } return; }
+    const text = t.getAttribute('data-tip');
+    if (!text) return;
+    if (tipEl) tipEl.remove();
+    tipEl = document.createElement('div');
+    tipEl.textContent = text;
+    tipEl.style.cssText = 'position:fixed;background:#1F2937;border:1px solid var(--border);border-radius:8px;padding:7px 12px;font-size:.72rem;color:var(--txt1);white-space:pre-wrap;min-width:180px;max-width:260px;z-index:999;line-height:1.5;pointer-events:none;box-shadow:0 8px 24px rgba(0,0,0,.5);';
+    document.body.appendChild(tipEl);
+    const pos = t.getBoundingClientRect();
+    const tipW = tipEl.offsetWidth;
+    let left = pos.left + pos.width/2 - tipW/2;
+    if (left < 8) left = 8;
+    if (left + tipW > window.innerWidth - 8) left = window.innerWidth - tipW - 8;
+    tipEl.style.left = left + 'px';
+    tipEl.style.top = (pos.top - tipEl.offsetHeight - 8) + 'px';
+    // If above viewport, show below instead
+    if (pos.top - tipEl.offsetHeight - 8 < 4) {
+      tipEl.style.top = (pos.bottom + 8) + 'px';
+    }
+  });
+  document.addEventListener('mouseout', e => {
+    if (e.target.closest('.tip')) return;
+    if (tipEl) { tipEl.remove(); tipEl = null; }
+  });
+})();
+
+// ── HELP PANEL ────────────────────────────────────────────
+let helpOpen = false;
+let helpMode = 'slide'; // 'slide' | 'global'
+
+function toggleHelp() {
+  helpOpen = !helpOpen;
+  document.getElementById('helpPanel').classList.toggle('open', helpOpen);
+  document.getElementById('helpBtn').classList.toggle('active', helpOpen);
+  if (helpOpen) { refreshHelp(cur); setHelpMode(helpMode); }
+}
+
+function setHelpMode(mode) {
+  helpMode = mode;
+  document.querySelectorAll('.help-mode-btn').forEach(b => b.classList.toggle('active', b.dataset.mode === mode));
+  document.getElementById('helpSlide-content').style.display = mode === 'slide' ? 'flex' : 'none';
+  document.getElementById('helpGlobal-content').style.display = mode === 'global' ? 'flex' : 'none';
+}
+
+function refreshHelp(slideIdx) {
+  // Slide help
+  const h = REPORT.help[slideIdx];
+  if (h) {
+    document.getElementById('helpPanel-title').textContent = '📖 ' + h.slide;
+    document.getElementById('helpPanel-intro').textContent = h.intro;
+    document.getElementById('helpSlide-content').innerHTML = h.termos.map(t => `
+      <div class="help-term">
+        <div class="help-term-name">${t.termo}</div>
+        <div class="help-term-def">${t.def}</div>
+      </div>`).join('');
   }
 
-  // Sentry
-  const stbody = document.getElementById('sentry-tbody');
-  if (D.sentry && D.sentry.length > 0) {
-    D.sentry.forEach(s => {
-      const statusBadge = s.status === 'ESCALANDO' ? 'badge-alto' : 'badge-atencao';
-      stbody.innerHTML += `<tr><td>${s.erro}</td><td>${s.projeto}</td><td>${s.usuarios}</td><td>${s.delta}</td><td><span class="badge ${statusBadge}">${s.status}</span></td></tr>`;
-    });
-  } else {
-    stbody.innerHTML = '<tr><td colspan="5">Nenhum erro Sentry registrado ou Sentry não configurado.</td></tr>';
+  // Global methodology
+  const g = REPORT.helpGlobal;
+  if (g) {
+    document.getElementById('helpGlobal-content').innerHTML = g.secoes.map(s => `
+      <details class="help-global-section" ${s === g.secoes[0] ? 'open' : ''}>
+        <summary class="help-global-summary">${s.titulo}</summary>
+        <div class="help-global-body">${s.html}</div>
+      </details>`).join('');
   }
+}
 
-  // Acoes
-  const acoesC = document.getElementById('acoes-container');
-  if (D.acoes && D.acoes.length > 0) {
-    D.acoes.forEach(a => {
-      const prioClass = a.prioridade.includes('P0') ? 'p0' : a.prioridade.includes('P1') ? 'p1' : 'p2';
-      acoesC.innerHTML += `<div class="acao-item"><span class="prio ${prioClass}">${a.prioridade}</span><span><strong>${a.modulo}</strong> — ${a.acao} <em style="color:var(--muted)">(${a.prazo})</em></span></div>`;
-    });
-  } else {
-    acoesC.innerHTML = '<p>Nenhuma ação priorizada.</p>';
+// Fecha painel ao clicar fora
+document.addEventListener('click', e => {
+  if (!helpOpen) return;
+  const panel = document.getElementById('helpPanel');
+  const btn   = document.getElementById('helpBtn');
+  if (!panel.contains(e.target) && e.target !== btn) {
+    helpOpen = false;
+    panel.classList.remove('open');
+    btn.classList.remove('active');
   }
+});
+
+// ── SLIDE 10: TIMELINE ────────────────────────────────────
+function buildTimeline() {
+  if (!REPORT.timeline || !REPORT.timeline.length) return;
+  const tl = REPORT.timeline;
+  const labels = tl.map(w => w.data);
+  const modulos = Object.keys(tl[0].modulos).slice(0, 5);
+  const colors = ['#EF4444','#F59E0B','#F97316','#22C55E','#6366F1'];
+
+  // Detectar semanas com resoluções para destacar os pontos no tooltip
+  const resolucoes = REPORT.cards_resolvidos || [];
+  const resolPorData = {};
+  resolucoes.forEach(r => {
+    // Encontra a semana mais próxima na timeline
+    const resolDate = r.resolvido_em;
+    const closest = tl.reduce((best, w) => {
+      return Math.abs(new Date(w.data) - new Date(resolDate)) < Math.abs(new Date(best.data) - new Date(resolDate)) ? w : best;
+    }, tl[0]);
+    if (!resolPorData[closest.data]) resolPorData[closest.data] = [];
+    resolPorData[closest.data].push(r);
+  });
+
+  new Chart(document.getElementById('cTimeline'), {
+    type: 'line',
+    data: {
+      labels,
+      datasets: modulos.map((mod, i) => ({
+        label: mod,
+        data: tl.map(w => w.modulos[mod] || 0),
+        borderColor: colors[i],
+        backgroundColor: colors[i] + '18',
+        pointRadius: tl.map(w => resolPorData[w.data] ? 7 : 4),
+        pointHoverRadius: 9,
+        pointBackgroundColor: tl.map(w => resolPorData[w.data] ? '#22C55E' : colors[i]),
+        pointStyle: tl.map(w => resolPorData[w.data] ? 'rectRot' : 'circle'),
+        tension: 0.3,
+        fill: false,
+        borderWidth: 2.5
+      }))
+    },
+    options: {
+      responsive: true,
+      onClick: (_e, elements) => {
+        if (!elements.length) return;
+        showTimelineBreakdown(elements[0].datasetIndex, elements[0].index);
+      },
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { position: 'bottom', labels: { color: '#94A3B8', boxWidth: 14, font: { size: 11 }}},
+        tooltip: {
+          backgroundColor: '#111827', titleColor: '#F1F5F9', bodyColor: '#94A3B8',
+          callbacks: {
+            label: ctx => {
+              const bd = tl[ctx.dataIndex]?.breakdown?.[ctx.dataset.label];
+              const total = ctx.raw;
+              if (!bd) return ctx.dataset.label + ': ' + total;
+              return ctx.dataset.label + ': ' + total + '  (TEC:' + bd.tec + ' | USR:' + bd.usr + ')';
+            },
+            afterBody: items => {
+              const data = tl[items[0].dataIndex];
+              var lines = [];
+              var fixes = resolPorData[data?.data] || [];
+              if (fixes.length) lines.push('✅ Fixes: ' + fixes.map(f => f.id).join(', '));
+              if (data?.breakdown) lines.push('\n📊 Clique para ver detalhe TEC vs USR');
+              return lines.length ? '\n' + lines.join('\n') : '';
+            }
+          }
+        }
+      },
+      scales: {
+        x: { ticks: { color: '#475569', font: { size: 10 }}, grid: { color: 'rgba(30,58,95,.4)' }},
+        y: { min: 0, ticks: { color: '#475569', font: { size: 10 }}, grid: { color: 'rgba(30,58,95,.4)' },
+             title: { display: true, text: 'Score de Risco', color: '#475569', font: { size: 11 }}}
+      }
+    }
+  });
+
+  // ── Painel de cards resolvidos abaixo do gráfico ──────────
+  const resolEl = document.getElementById('timelineResolucoes');
+  if (!resolEl || !resolucoes.length) return;
+
+  // Agrupar por data de resolução (mais recente primeiro)
+  const sorted = [...resolucoes].sort((a, b) => new Date(b.resolvido_em) - new Date(a.resolvido_em));
+
+  resolEl.innerHTML = `
+    <div style="font-size:.68rem;font-weight:700;color:#22C55E;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px">
+      ✅ Cards resolvidos no período — contribuíram para quedas no score
+    </div>
+    <div class="resol-grid">
+      ${sorted.map(r => `
+        <div class="resol-card">
+          <div class="resol-icon">✅</div>
+          <div>
+            <div style="display:flex;align-items:center;gap:6px;margin-bottom:3px">
+              <span class="resol-id">${r.id}</span>
+              <span class="resol-modulo">${r.modulo.split(' / ')[0]}</span>
+            </div>
+            <div class="resol-titulo">${r.titulo}</div>
+            <div class="resol-data">Resolvido em ${r.resolvido_em}</div>
+          </div>
+        </div>`).join('')}
+    </div>`;
+
+  // Event strip — deploys e PRs arriscados do período
+  const evStrip = document.createElement('div');
+  evStrip.className = 'tl-event-strip';
+  const deploys = (REPORT.prs_perigosos||[]).filter(p => p.risco_cfr);
+  evStrip.innerHTML = `<span class="tl-event-lbl">Deploys do período:</span>` +
+    (REPORT.cards_resolvidos||[]).map(r =>
+      `<span class="tl-ev-fix" title="Resolvido em ${r.resolvido_em}">✅ ${r.id}</span>`).join('') +
+    deploys.map(p =>
+      `<span class="tl-ev-deploy" title="Merge: ${p.merged_at} · CFR: ⚠️">🚀 ${p.repo}#${p.pr_number}</span>`).join('');
+  const timelineSlide = document.getElementById('cTimeline').closest('.slide');
+  timelineSlide.appendChild(evStrip);
+}
+
+// ── PROGRESSIVE DISCLOSURE ────────────────────────────────
+function toggleDisclosure(id) {
+  const body = document.getElementById(id);
+  const icon = document.getElementById(id + '-icon');
+  if (!body) return;
+  const isOpen = body.style.maxHeight !== '0px' && body.style.maxHeight !== '0';
+  body.style.maxHeight = isOpen ? '0' : body.scrollHeight + 'px';
+  if (icon) icon.textContent = isOpen ? '▶' : '▼';
+}
+
+// ── MODE TOGGLE (Operacional / Estratégico) ───────────────
+let dashMode = 'operacional';
+const MODE_SLIDES = { operacional: [0,1,2,3,6,11], estrategico: [0,5,7,8,9,10] };
+
+function setMode(mode) {
+  dashMode = mode;
+  document.getElementById('modeBtnOp').classList.toggle('active', mode === 'operacional');
+  document.getElementById('modeBtnStr').classList.toggle('active', mode === 'estrategico');
+  const relevant = MODE_SLIDES[mode];
+  document.querySelectorAll('.dot').forEach((d, i) => {
+    d.classList.toggle('dim', !relevant.includes(i));
+  });
+  // Navigate to first relevant slide of the mode (skip slide 0 if already there)
+  const first = relevant.find(i => i !== 0) ?? 0;
+  if (cur === 0 || !relevant.includes(cur)) go(first);
+}
+
+// ── OVERVIEW MODE ─────────────────────────────────────────
+let overviewBuilt = false;
+function toggleOverview() {
+  const el = document.getElementById('overviewOverlay');
+  const opening = !el.classList.contains('open');
+  el.classList.toggle('open', opening);
+  if (opening && !overviewBuilt) { buildOverview(); overviewBuilt = true; }
+}
+
+function buildOverview() {
+  const all = [...REPORT.ranking].sort((a,b) => b.total - a.total);
+  const total = all.reduce((s,m) => s + m.total, 0);
+  document.getElementById('overviewSub').textContent =
+    `${all.length} módulos · Score total: ${total} · Gerado em ${REPORT.meta.geradoEm}`;
+
+  document.getElementById('overviewGrid').innerHTML = all.map(m => {
+    const z = getZone(m.total);
+    const t = (REPORT.tendencia||[]).find(t => t.modulo === m.modulo);
+    const deltaStr = t ? (t.delta > 0 ? `+${t.delta} ↑` : t.delta < 0 ? `${t.delta} ↓` : '→') : '';
+    const deltaCls = t ? (t.delta > 0 ? 'delta-up' : t.delta < 0 ? 'delta-dn' : '') : '';
+    const topBug = m.bugs_cards?.[0];
+    return `<div class="ov-card" style="border-top-color:${z.cor}" onclick="toggleOverview();go(2)" title="Ver no ranking">
+      <div style="display:flex;align-items:baseline;justify-content:space-between">
+        <span class="ov-score" style="color:${z.cor}">${m.total}</span>
+        ${deltaStr ? `<span class="ov-delta ${deltaCls}">${deltaStr}</span>` : ''}
+      </div>
+      <div class="ov-mod">${m.modulo}</div>
+      <div class="ov-zone">${z.emoji} ${z.label}</div>
+      ${topBug ? `<div class="ov-bug">${topBug.titulo.length > 52 ? topBug.titulo.substring(0,52)+'…' : topBug.titulo}</div>` : ''}
+    </div>`;
+  }).join('');
+}
+
+// ── BUSCA GLOBAL (Ctrl+K) ─────────────────────────────────
+const SEARCH_INDEX = [];
+function buildSearchIndex() {
+  const slideNames = [
+    'Visão Geral','KPIs','Ranking','Serviços','Análise Detalhada',
+    'Radar de Serviços','Bombas','Qualidade',
+    'PRs em Risco','Timeline','Ações','Chamados SM'
+  ];
+  slideNames.forEach((name, i) => SEARCH_INDEX.push({ type: 'slide', label: name, sub: 'Ir para slide', icon: '📊', action: () => go(i) }));
+  (REPORT.ranking || []).forEach(r => SEARCH_INDEX.push({ type: 'modulo', label: r.modulo, sub: `Score: ${r.total} — ${r.nivel}`, icon: r.total >= 10 ? '🔴' : r.total >= 6 ? '🟡' : '🟠', action: () => go(2) }));
+  (REPORT.acoes || []).forEach(a => SEARCH_INDEX.push({ type: 'acao', label: a.acao.substring(0, 60), sub: a.prioridade + ' · ' + a.modulo, icon: a.prioridade.includes('P0') ? '🔴' : '🟡', action: () => go(10) }));
+}
+function openSearch() {
+  document.getElementById('searchOverlay').classList.add('open');
+  setTimeout(() => document.getElementById('searchInput').focus(), 50);
+  updateSearch('');
+}
+function closeSearch() {
+  document.getElementById('searchOverlay').classList.remove('open');
+  document.getElementById('searchInput').value = '';
+}
+function updateSearch(q) {
+  const results = q.length < 1
+    ? SEARCH_INDEX.slice(0, 8)
+    : SEARCH_INDEX.filter(i => i.label.toLowerCase().includes(q.toLowerCase()) || i.sub.toLowerCase().includes(q.toLowerCase())).slice(0, 8);
+  document.getElementById('searchResults').innerHTML = results.map((r, idx) =>
+    `<div class="search-item" data-idx="${idx}" onclick="selectSearch(${SEARCH_INDEX.indexOf(r)})">
+      <span class="search-item-icon">${r.icon}</span>
+      <div><div class="search-item-label">${r.label}</div><div class="search-item-sub">${r.sub}</div></div>
+    </div>`
+  ).join('') || `<div style="padding:16px 20px;color:#475569;font-size:.82rem">Nenhum resultado para "${q}"</div>`;
+}
+function selectSearch(idx) {
+  SEARCH_INDEX[idx].action();
+  closeSearch();
+}
+function handleSearchKey(e) {
+  if (e.key === 'Escape') closeSearch();
+  if (e.key === 'Enter') {
+    const first = document.querySelector('.search-item');
+    if (first) first.click();
+  }
+}
+
+// ── FRESCURA DE DADOS ──────────────────────────────────────
+function checkFreshness() {
+  const iso = REPORT.meta?.geradoEmISO;
+  if (!iso) return;
+  const dias = Math.floor((Date.now() - new Date(iso).getTime()) / 86400000);
+  if (dias > 7) {
+    const b = document.getElementById('freshnessBanner');
+    b.style.display = 'block';
+    b.innerHTML = `⚠️ Dados gerados há <b>${dias} dias</b> — execute <code>/argos-predict --update-dashboard</code> para atualizar`;
+  }
+  // Indicador de fontes indisponíveis
+  const fontes = REPORT.meta?.fontes_disponiveis || {};
+  if (fontes.sentry === false || fontes.github === false) {
+    const aviso = [];
+    if (fontes.sentry === false) aviso.push('Sentry');
+    if (fontes.github === false) aviso.push('GitHub');
+    const b = document.getElementById('freshnessBanner');
+    b.style.display = 'block';
+    b.innerHTML = (b.innerHTML || '') + ` · ⚠️ Fontes indisponíveis na geração: <b>${aviso.join(', ')}</b>`;
+  }
+}
+
+// ── INIT ──────────────────────────────────────────────────
+// Validação de schema mínima
+['meta','kpis','ranking','bombas','acoes','servicos_radar'].forEach(f => {
+  if (!REPORT[f]) console.warn(`[Argos] Campo ausente em REPORT: ${f}`);
+});
+buildSearchIndex();
+checkFreshness();
+buildSidebar();
+buildHealthBar();
+
+document.addEventListener('keydown', e => {
+  if ((e.ctrlKey || e.metaKey) && e.key === 'k') { e.preventDefault(); openSearch(); }
+  if (e.key === 'Escape' && document.getElementById('searchOverlay').classList.contains('open')) closeSearch();
+  if (e.key === 'o' || e.key === 'O') toggleOverview();
+  if (e.key === 'Escape' && document.getElementById('overviewOverlay').classList.contains('open')) toggleOverview();
+});
+
+/* Netlify Identity Auth */
+(function(){
+  var ao = document.getElementById('authOverlay');
+  function showDash() { ao.style.display='none'; render(0); updateNav(); }
+
+  // Bypass local (file://) para testar sem deploy
+  if (location.protocol === 'file:') { showDash(); return; }
+
+  function showLogin() { ao.style.display='flex'; ao.style.zIndex='99999'; }
+
+  window.openLogin = function() {
+    if (typeof netlifyIdentity === 'undefined') {
+      alert('Serviço de autenticação não carregou. Recarregue a página.');
+      return;
+    }
+    ao.style.display = 'none';
+    netlifyIdentity.open();
+    netlifyIdentity.on('close', function() {
+      if (!netlifyIdentity.currentUser()) ao.style.display = 'flex';
+    });
+  };
+
+  // Invite e recovery: esconde overlay para o widget abrir o modal de definição de senha
+  var isTokenFlow = location.hash.indexOf('invite_token') !== -1 || location.hash.indexOf('recovery_token') !== -1;
+  if (isTokenFlow) ao.style.display = 'none';
+
+  try {
+    netlifyIdentity.on('init',function(u){
+      if(u) { showDash(); return; }
+      if(isTokenFlow) netlifyIdentity.open();
+    });
+    netlifyIdentity.on('login',showDash);
+    netlifyIdentity.on('logout',function(){ showLogin(); });
+    netlifyIdentity.init({ APIUrl: 'https://argospredict.netlify.app/.netlify/identity' });
+    if (netlifyIdentity.currentUser()) showDash();
+  } catch(e) { console.warn('Netlify Identity:', e); showLogin(); }
 })();
 </script>
+
+<!-- COLOR LEGEND -->
+<div id="colorLegend">
+  <span style="font-weight:600;margin-right:4px;color:#94A3B8">Score:</span>
+  <span class="cl-item"><span class="cl-dot" style="background:#DC2626"></span> Emergência</span>
+  <span class="cl-item"><span class="cl-dot" style="background:#EF4444"></span> Crítico</span>
+  <span class="cl-item"><span class="cl-dot" style="background:#F59E0B"></span> Alto</span>
+  <span class="cl-item"><span class="cl-dot" style="background:#3B82F6"></span> Atenção</span>
+  <span class="cl-item"><span class="cl-dot" style="background:#22C55E"></span> Estável</span>
+</div>
+
 </body>
 </html>

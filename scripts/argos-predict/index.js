@@ -592,6 +592,15 @@ async function main() {
 
   if (flags.updateDashboard) {
     console.log('  🌐 Atualizando dashboard...\n');
+
+    processed.dashboardData.tickets = processed.classifiedTickets;
+    processed.dashboardData.ticketsRaw = processed.classifiedTickets;
+    processed.dashboardData.ticketsN2 = [];
+    processed.dashboardData.sentryByModule = processed.sentryByModule;
+    processed.dashboardData.clusters = processed.allClusters;
+    processed.dashboardData.resumoExecutivo = '';
+    processed.dashboardData.timeline = [];
+
     const dashboardJS = generateDashboardData(processed.dashboardData, dateStr);
     writeDashboardData(config.docsDir, dashboardJS, dateStr);
   }
