@@ -1,1 +1,22 @@
 node_modules/
+
+# Credenciais e segredos
+.env
+.env.*
+!.env.example
+
+# Dados de runtime do k6
+tests/k6/live.jsonl
+
+# Logs e snapshots do Playwright MCP
+.playwright-mcp/
+
+# Evidências de teste (screenshots)
+tests/evidence/
+
+# Claude Code
+.claude/
+
+# MCP config local
+.mcp.json
+
