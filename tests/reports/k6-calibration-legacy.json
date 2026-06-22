@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-06-18T14:35:30.036Z",
+  "legacy_api": "https://app.poli.digital",
+  "raw": {
+    "GET /api/reseller/settings (legacy)": {
+      "p50": 200,
+      "p95": 939,
+      "p99": 3281,
+      "avg": 408,
+      "min": 186,
+      "max": 3281,
+      "new_equiv": "GET /v3/settings"
+    },
+    "GET /auth/foundation/allowed (heimdall)": {
+      "p50": 220,
+      "p95": 797,
+      "p99": 1926,
+      "avg": 372,
+      "min": 189,
+      "max": 1926,
+      "new_equiv": "GET /v3/auth/get-me"
+    },
+    "POST /credits/balance (legacy)": {
+      "p50": 208,
+      "p95": 1396,
+      "p99": 1972,
+      "avg": 385,
+      "min": 184,
+      "max": 1972,
+      "new_equiv": "—"
+    },
+    "GET /shopping/products/search (legacy)": {
+      "p50": 205,
+      "p95": 900,
+      "p99": 3693,
+      "avg": 412,
+      "min": 186,
+      "max": 3693,
+      "new_equiv": "—"
+    },
+    "GET /shopping/gateway (legacy)": {
+      "p50": 205,
+      "p95": 1081,
+      "p99": 10202,
+      "avg": 657,
+      "min": 184,
+      "max": 10202,
+      "new_equiv": "—"
+    }
+  }
+}

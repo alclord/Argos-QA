@@ -1,0 +1,80 @@
+[    5441ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:101
+[    5441ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:101
+[    5686ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:76
+[    5841ms] [WARNING] TCRMEmbed não está disponível ainda @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:69
+[    6241ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:904:429
+    at $R (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:906:31)
+    at Od.ZR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:903:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:317:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:263:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at k.Vq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:274:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:729:315
+    at Mz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:632:1)
+    at Tz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:637:289)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:657:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:206:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:658:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:658:100)
+    at qB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:658:742)
+    at tB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:662:183)
+    at DD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:706:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:710:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e66g1h2:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:865:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e66g1h2:550:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:710:457
+    at r (https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:70:9827)
+[    6340ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:69
+[   12224ms] [LOG] identify @ :0
+[   13822ms] [LOG] window.CRMUser true @ :0
+[   13822ms] [LOG] start @ :0
+[   18678ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.crm.poli.digital/dashboard:0
+[   18701ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.crm.poli.digital/dashboard:0
+[   26042ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:69
+[   27139ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[   27144ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:69
+[   27146ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:69
+[   29464ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[   29467ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:69
+[   29469ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:69

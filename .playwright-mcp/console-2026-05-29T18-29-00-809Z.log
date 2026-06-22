@@ -1,0 +1,56 @@
+[    6049ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BkthNTet.js:101
+[    6050ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-BkthNTet.js:101
+[    6171ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-BkthNTet.js:76
+[    6466ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at dS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Gz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Lz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:100)
+    at iB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:742)
+    at lB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:648:183)
+    at vD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65r2:681:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:857:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65r2:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:495
+    at r (https://spa-canary.poli.digital/assets/index-BkthNTet.js:70:9812)
+[    6788ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-BkthNTet.js:69
+[    8111ms] [ERROR] `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog @ https://spa-canary.poli.digital/assets/index-BkthNTet.js:69
+[    8111ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-BkthNTet.js:69
+[    8328ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[    9215ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[    9229ms] Identifier 'TCRMEmbed' has already been declared
+[    9790ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/424778924_8215652561795964_3314007024435979409_n.jpg?ccb=11-4&oh=01_Q5Aa2gENDyCtBnxtDHO0X8Xap4ne3tkI6y-M2aLH3XL-d1_sWg&oe=68E27A25&_nc_sid=5e03e0&_nc_cat=102:0
+[   10206ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[   11526ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[   11584ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/logs/behavior:0
+[   15160ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[   17382ms] [ERROR] Access to fetch at 'https://sentry.poli.digital/api/20/envelope/?sentry_version=7&sentry_key=45d27e79e794b3e254ec8212c0ad0250&sentry_client=sentry.javascript.react%2F9.47.1' from origin 'https://spa-canary.poli.digital' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://spa-canary.poli.digital/chat/9bb49c4f-2c88-4a7f-84bb-38074c239b4b?panel=details:0
+[   17382ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://sentry.poli.digital/api/20/envelope/?sentry_version=7&sentry_key=45d27e79e794b3e254ec8212c0ad0250&sentry_client=sentry.javascript.react%2F9.47.1:0
+[   19374ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[   54192ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/4924ce67-2e3e-11f1-9d75-06799772b1cd/read:0
+[   54611ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/6070b92c-5b6a-11f1-9d75-06799772b1cd/unread:0
+[   56158ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/8b5184d3-6830-11f0-93ae-062ccf12487f?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[   60329ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/logs/behavior:0

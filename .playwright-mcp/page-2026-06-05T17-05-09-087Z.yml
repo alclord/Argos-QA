@@ -1,0 +1,383 @@
+- generic [ref=e2]:
+  - generic [ref=e44]:
+    - generic [ref=e47]:
+      - link "Dashboard" [ref=e49] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=85052c831309b9eb9f997bb9f457cc7a4bb4bd6d&toPath=https://app.poli.digital/home
+        - img [ref=e51]
+      - generic [ref=e52]:
+        - list [ref=e54]:
+          - listitem [ref=e55]:
+            - link [ref=e56] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e58]
+          - listitem [ref=e61]:
+            - link [ref=e62] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e64]
+          - listitem [ref=e67]:
+            - link [ref=e68] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=85052c831309b9eb9f997bb9f457cc7a4bb4bd6d&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e70]
+          - listitem [ref=e73]:
+            - link [ref=e74] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e76]
+          - listitem [ref=e78]:
+            - link [ref=e79] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=85052c831309b9eb9f997bb9f457cc7a4bb4bd6d&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e81]
+          - listitem [ref=e84]:
+            - link [ref=e85] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=85052c831309b9eb9f997bb9f457cc7a4bb4bd6d&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e87]
+          - listitem [ref=e90]:
+            - link [ref=e91] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=85052c831309b9eb9f997bb9f457cc7a4bb4bd6d&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e93]
+          - listitem [ref=e97]:
+            - link [ref=e98] [cursor=pointer]:
+              - /url: /channels
+              - img [ref=e100]
+          - listitem [ref=e103]:
+            - link [ref=e104] [cursor=pointer]:
+              - /url: /teams
+              - img [ref=e106]
+        - list [ref=e112]:
+          - listitem [ref=e113]:
+            - link [ref=e115] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e117]
+      - generic [ref=e120]:
+        - button "Consumo de créditos" [ref=e121] [cursor=pointer]:
+          - img [ref=e123]
+        - button "YA" [ref=e127] [cursor=pointer]:
+          - generic [ref=e133]: YA
+        - generic [ref=e136]: 3.5.347
+    - main [ref=e137]:
+      - main [ref=e138]:
+        - generic [ref=e139]:
+          - button "✨ Nova Versão" [ref=e140] [cursor=pointer]:
+            - generic [ref=e141]: ✨ Nova Versão
+            - img [ref=e142]
+          - generic [ref=e146]:
+            - generic [ref=e147]:
+              - button "Atribuídos a mim" [ref=e148] [cursor=pointer]:
+                - generic [ref=e149]: Atribuídos a mim
+                - img [ref=e150]
+              - generic [ref=e152]:
+                - button [ref=e153] [cursor=pointer]:
+                  - img [ref=e154]
+                - button [ref=e158] [cursor=pointer]:
+                  - img [ref=e159]
+            - generic [ref=e163]:
+              - generic [ref=e164]:
+                - textbox "Pesquisar" [ref=e165]
+                - button [ref=e166] [cursor=pointer]:
+                  - img [ref=e167]
+              - button "Ordenação das conversas" [ref=e170] [cursor=pointer]:
+                - img [ref=e171]
+          - generic [ref=e175]:
+            - generic [ref=e176] [cursor=pointer]:
+              - generic [ref=e177]:
+                - generic [ref=e179]:
+                  - generic [ref=e183]: HC
+                  - button "Selecionar todos" [ref=e184]:
+                    - checkbox
+                - generic [ref=e185]:
+                  - generic [ref=e187]: Henrique Castro Silva
+                  - generic [ref=e188]:
+                    - generic [ref=e189]:
+                      - img "WhatsApp Business" [ref=e190]
+                      - generic [ref=e193]: WhatsApp Business
+                    - generic [ref=e197]: "???"
+                  - generic [ref=e198]:
+                    - generic [ref=e199]:
+                      - img [ref=e200]
+                      - generic [ref=e202]: Yuri Alcantara Poli
+                    - generic [ref=e203]:
+                      - img [ref=e204]
+                      - generic [ref=e206]: Maria IA
+              - generic [ref=e208]:
+                - generic [ref=e209]: 27/05/2026
+                - generic [ref=e210]: "9"
+                - button "Abrir menu de opções" [ref=e211]:
+                  - img [ref=e212]
+            - generic [ref=e214] [cursor=pointer]:
+              - generic [ref=e215]:
+                - generic [ref=e217]:
+                  - generic [ref=e221]: VS
+                  - button "Selecionar todos" [ref=e222]:
+                    - checkbox
+                - generic [ref=e223]:
+                  - generic [ref=e225]: Vidraçaria S.A
+                  - generic [ref=e226]:
+                    - generic [ref=e227]:
+                      - img "WhatsApp Business" [ref=e228]
+                      - generic [ref=e231]: WhatsApp Business
+                    - generic [ref=e235]: olaaa
+                  - generic [ref=e236]:
+                    - generic [ref=e237]:
+                      - img [ref=e238]
+                      - generic [ref=e240]: Yuri Alcantara Poli
+                    - generic [ref=e241]:
+                      - img [ref=e242]
+                      - generic [ref=e244]: Maria IA
+              - generic [ref=e246]:
+                - generic [ref=e247]: 27/05/2026
+                - generic [ref=e248]: "2"
+                - button "Abrir menu de opções" [ref=e249]:
+                  - img [ref=e250]
+            - generic [ref=e252] [cursor=pointer]:
+              - generic [ref=e253]:
+                - generic [ref=e255]:
+                  - generic [ref=e259]: PS
+                  - button "Selecionar todos" [ref=e260]:
+                    - checkbox
+                - generic [ref=e261]:
+                  - generic [ref=e263]: Professor Suzuki
+                  - generic [ref=e264]:
+                    - generic [ref=e265]:
+                      - img "WhatsApp Business" [ref=e266]
+                      - generic [ref=e269]: WhatsApp Business
+                    - generic [ref=e273]: Boa tarde! Tudo bem?
+                  - generic [ref=e274]:
+                    - generic [ref=e275]:
+                      - img [ref=e276]
+                      - generic [ref=e278]: Yuri Alcantara Poli
+                    - generic [ref=e279]:
+                      - img [ref=e280]
+                      - generic [ref=e282]: Maria IA
+              - generic [ref=e284]:
+                - generic [ref=e285]: 11/05/2026
+                - generic [ref=e286]: "4"
+                - button "Abrir menu de opções" [ref=e287]:
+                  - img [ref=e288]
+            - generic [ref=e290] [cursor=pointer]:
+              - generic [ref=e291]:
+                - generic [ref=e293]:
+                  - generic [ref=e297]: D
+                  - button "Selecionar todos" [ref=e298]:
+                    - checkbox
+                - generic [ref=e299]:
+                  - generic [ref=e301]: Dayane - Speed Frango
+                  - generic [ref=e302]:
+                    - generic [ref=e303]:
+                      - img "WhatsApp Business" [ref=e304]
+                      - generic [ref=e307]: WhatsApp Business
+                    - generic [ref=e311]: Contato redirecionado para Yuri Alcantara Poli pelo sistema em 07/05/2026 às 15:19
+                  - generic [ref=e312]:
+                    - generic [ref=e313]:
+                      - img [ref=e314]
+                      - generic [ref=e316]: Yuri Alcantara Poli
+                    - generic [ref=e317]:
+                      - img [ref=e318]
+                      - generic [ref=e320]: Maria IA
+              - generic [ref=e321]:
+                - button [ref=e324]
+                - generic [ref=e326]:
+                  - generic [ref=e327]: 07/05/2026
+                  - button "Abrir menu de opções" [ref=e328]:
+                    - img [ref=e329]
+            - generic [ref=e331] [cursor=pointer]:
+              - generic [ref=e332]:
+                - generic [ref=e334]:
+                  - generic [ref=e338]: CA
+                  - button "Selecionar todos" [ref=e339]:
+                    - checkbox
+                - generic [ref=e340]:
+                  - generic [ref=e342]: César A.
+                  - generic [ref=e343]:
+                    - generic [ref=e344]:
+                      - img "WhatsApp Business" [ref=e345]
+                      - generic [ref=e348]: WhatsApp Business
+                    - generic [ref=e352]: Contato redirecionado para Yuri Alcantara Poli pelo sistema em 07/05/2026 às 15:19
+                  - generic [ref=e353]:
+                    - generic [ref=e354]:
+                      - img [ref=e355]
+                      - generic [ref=e357]: Yuri Alcantara Poli
+                    - generic [ref=e358]:
+                      - img [ref=e359]
+                      - generic [ref=e361]: Maria IA
+              - generic [ref=e363]:
+                - generic [ref=e364]: 07/05/2026
+                - generic [ref=e365]: "2"
+                - button "Abrir menu de opções" [ref=e366]:
+                  - img [ref=e367]
+            - generic [ref=e369] [cursor=pointer]:
+              - generic [ref=e370]:
+                - generic [ref=e372]:
+                  - generic [ref=e376]: KA
+                  - button "Selecionar todos" [ref=e377]:
+                    - checkbox
+                - generic [ref=e378]:
+                  - generic [ref=e380]: Kits And Cards
+                  - generic [ref=e381]:
+                    - generic [ref=e382]:
+                      - img "WhatsApp Business" [ref=e383]
+                      - generic [ref=e386]: WhatsApp Business
+                    - generic [ref=e390]: Contato redirecionado para Yuri Alcantara Poli pelo sistema em 07/05/2026 às 15:19
+                  - generic [ref=e391]:
+                    - generic [ref=e392]:
+                      - img [ref=e393]
+                      - generic [ref=e395]: Yuri Alcantara Poli
+                    - generic [ref=e396]:
+                      - img [ref=e397]
+                      - generic [ref=e399]: Maria IA
+              - generic [ref=e401]:
+                - generic [ref=e402]: 07/05/2026
+                - button "Abrir menu de opções" [ref=e403]:
+                  - img [ref=e404]
+            - generic [ref=e406] [cursor=pointer]:
+              - generic [ref=e407]:
+                - generic [ref=e409]:
+                  - generic [ref=e413]: AV
+                  - button "Selecionar todos" [ref=e414]:
+                    - checkbox
+                - generic [ref=e415]:
+                  - generic [ref=e417]: Anderson Verdi
+                  - generic [ref=e418]:
+                    - generic [ref=e419]:
+                      - img "WhatsApp Business" [ref=e420]
+                      - generic [ref=e423]: WhatsApp Business
+                    - generic [ref=e427]: Contato redirecionado para Yuri Alcantara Poli pelo sistema em 07/05/2026 às 15:19
+                  - generic [ref=e428]:
+                    - generic [ref=e429]:
+                      - img [ref=e430]
+                      - generic [ref=e432]: Yuri Alcantara Poli
+                    - generic [ref=e433]:
+                      - img [ref=e434]
+                      - generic [ref=e436]: Maria IA
+              - generic [ref=e438]:
+                - generic [ref=e439]: 07/05/2026
+                - button "Abrir menu de opções" [ref=e440]:
+                  - img [ref=e441]
+            - generic [ref=e443] [cursor=pointer]:
+              - generic [ref=e444]:
+                - generic [ref=e446]:
+                  - generic [ref=e450]: MI
+                  - button "Selecionar todos" [ref=e451]:
+                    - checkbox
+                - generic [ref=e452]:
+                  - generic [ref=e454]: Michelemplacamentos.com.br
+                  - generic [ref=e455]:
+                    - generic [ref=e456]:
+                      - img "WhatsApp Business" [ref=e457]
+                      - generic [ref=e460]: WhatsApp Business
+                    - generic [ref=e464]: Contato redirecionado para Yuri Alcantara Poli pelo sistema em 07/05/2026 às 15:19
+                  - generic [ref=e465]:
+                    - generic [ref=e466]:
+                      - img [ref=e467]
+                      - generic [ref=e469]: Yuri Alcantara Poli
+                    - generic [ref=e470]:
+                      - img [ref=e471]
+                      - generic [ref=e473]: Maria IA
+              - generic [ref=e475]:
+                - generic [ref=e476]: 07/05/2026
+                - button "Abrir menu de opções" [ref=e477]:
+                  - img [ref=e478]
+            - generic [ref=e480] [cursor=pointer]:
+              - generic [ref=e481]:
+                - generic [ref=e483]:
+                  - generic [ref=e487]: LU
+                  - button "Selecionar todos" [ref=e488]:
+                    - checkbox
+                - generic [ref=e489]:
+                  - generic [ref=e491]: Luis
+                  - generic [ref=e492]:
+                    - generic [ref=e493]:
+                      - img "WhatsApp Business" [ref=e494]
+                      - generic [ref=e497]: WhatsApp Business
+                    - generic [ref=e501]: Contato redirecionado para Yuri Alcantara Poli pelo sistema em 07/05/2026 às 15:19
+                  - generic [ref=e502]:
+                    - generic [ref=e503]:
+                      - img [ref=e504]
+                      - generic [ref=e506]: Yuri Alcantara Poli
+                    - generic [ref=e507]:
+                      - img [ref=e508]
+                      - generic [ref=e510]: Maria IA
+              - generic [ref=e511]:
+                - button [ref=e514]
+                - generic [ref=e516]:
+                  - generic [ref=e517]: 07/05/2026
+                  - button "Abrir menu de opções" [ref=e518]:
+                    - img [ref=e519]
+            - generic [ref=e521] [cursor=pointer]:
+              - generic [ref=e522]:
+                - generic [ref=e524]:
+                  - generic [ref=e528]: SN
+                  - button "Selecionar todos" [ref=e529]:
+                    - checkbox
+                - generic [ref=e530]:
+                  - generic [ref=e532]: Sérgio Nogueira
+                  - generic [ref=e533]:
+                    - generic [ref=e534]:
+                      - img "WhatsApp Business" [ref=e535]
+                      - generic [ref=e538]: WhatsApp Business
+                    - generic [ref=e542]: Contato redirecionado para Yuri Alcantara Poli pelo sistema em 07/05/2026 às 15:19
+                  - generic [ref=e543]:
+                    - generic [ref=e544]:
+                      - img [ref=e545]
+                      - generic [ref=e547]: Yuri Alcantara Poli
+                    - generic [ref=e548]:
+                      - img [ref=e549]
+                      - generic [ref=e551]: Maria IA
+              - generic [ref=e553]:
+                - generic [ref=e554]: 07/05/2026
+                - generic [ref=e555]: "2"
+                - button "Abrir menu de opções" [ref=e556]:
+                  - img [ref=e557]
+            - generic [ref=e559] [cursor=pointer]:
+              - generic [ref=e560]:
+                - generic [ref=e562]:
+                  - generic [ref=e566]: MO
+                  - button "Selecionar todos" [ref=e567]:
+                    - checkbox
+                - generic [ref=e568]:
+                  - generic [ref=e570]: Mirian Oliveira
+                  - generic [ref=e571]:
+                    - generic [ref=e572]:
+                      - img "WhatsApp Business" [ref=e573]
+                      - generic [ref=e576]: WhatsApp Business
+                    - generic [ref=e580]: Contato redirecionado para Yuri Alcantara Poli pelo sistema em 07/05/2026 às 15:19
+                  - generic [ref=e581]:
+                    - generic [ref=e582]:
+                      - img [ref=e583]
+                      - generic [ref=e585]: Yuri Alcantara Poli
+                    - generic [ref=e586]:
+                      - img [ref=e587]
+                      - generic [ref=e589]: Maria IA
+              - generic [ref=e591]:
+                - generic [ref=e592]: 07/05/2026
+                - generic [ref=e593]: "2"
+                - button "Abrir menu de opções" [ref=e594]:
+                  - img [ref=e595]
+            - generic [ref=e597] [cursor=pointer]:
+              - generic [ref=e598]:
+                - generic [ref=e600]:
+                  - generic [ref=e604]: PC
+                  - button "Selecionar todos" [ref=e605]:
+                    - checkbox
+                - generic [ref=e606]:
+                  - generic [ref=e608]: pizzaria campana
+                  - generic [ref=e609]:
+                    - generic [ref=e610]:
+                      - img "WhatsApp Business" [ref=e611]
+                      - generic [ref=e614]: WhatsApp Business
+                    - generic [ref=e618]: Contato redirecionado para Yuri Alcantara Poli pelo sistema em 07/05/2026 às 15:19
+                  - generic [ref=e619]:
+                    - generic [ref=e620]:
+                      - img [ref=e621]
+                      - generic [ref=e623]: Yuri Alcantara Poli
+                    - generic [ref=e624]:
+                      - img [ref=e625]
+                      - generic [ref=e627]: Maria IA
+              - generic [ref=e629]:
+                - generic [ref=e630]: 07/05/2026
+                - button "Abrir menu de opções" [ref=e631]:
+                  - img [ref=e632]
+            - button "Carregar mais" [ref=e635] [cursor=pointer]
+        - generic [ref=e636]:
+          - img "Logo" [ref=e637]
+          - heading "Bem-vindo!" [level=1] [ref=e638]
+  - region "Notifications (F8)":
+    - list

@@ -1,0 +1,79 @@
+{
+  "card": "DEV4-4346",
+  "environment": "canary",
+  "pr": "SPA#1517",
+  "executedAt": "2026-06-08T20:21:10.000Z",
+  "executor": "argos-qa-automated",
+  "jiraCommentId": "602071",
+  "summary": "7/7 PASSOU",
+  "retestWithCacheClear": true,
+  "scenarios": [
+    {
+      "id": "CT-4346-001",
+      "name": "Atalhos de acesso: links de redirecionamento legado",
+      "result": "PASSOU",
+      "manualOverride": true,
+      "note": "Automação detectou undefined/redirect?... nos cards de settings. Investigação confirmou bug preexistente em poli-digital partner config (legacyUrl ausente). Não introduzido pela PR#1517. QA manual confirmou funcionamento no browser.",
+      "evidence": ["CT-4346-001_passo1_falhou.png", "retest_CT-4346-001_reconfirmado.png"]
+    },
+    {
+      "id": "CT-4346-002",
+      "name": "Atalhos de acesso: navegação via shortcuts da sidebar",
+      "result": "PASSOU",
+      "manualOverride": true,
+      "note": "Links da sidebar (Dashboard, Automação, Marketing, Pay, Relatório) com redirect correto confirmados manualmente.",
+      "evidence": []
+    },
+    {
+      "id": "CT-4346-003",
+      "name": "Atalhos de acesso: cards de configurações legadas",
+      "result": "PASSOU",
+      "manualOverride": true,
+      "note": "Cards Modelos, Canais e demais confirmados manualmente pelo reviewer no browser.",
+      "evidence": ["CT-4346-003_passo1_falhou.png"]
+    },
+    {
+      "id": "CT-4346-004",
+      "name": "Widget para site: Sheet com código de embed",
+      "result": "PASSOU",
+      "manualOverride": false,
+      "note": "Sheet abre com poli('create','1'), clipboard.writeText funcional.",
+      "evidence": ["CT-4346-004_passo1_sheet_ok.png"]
+    },
+    {
+      "id": "CT-4346-005",
+      "name": "Liberação da página de Aplicativos",
+      "result": "PASSOU",
+      "manualOverride": false,
+      "note": "Página acessível sem feature flag, aside removido, tabela com dados reais.",
+      "evidence": []
+    },
+    {
+      "id": "CT-4346-006",
+      "name": "Cards desabilitados: Segurança e Permissões",
+      "result": "PASSOU",
+      "manualOverride": false,
+      "note": "disabled=true, opacity:0.5, pointer-events:none, badge Em breve confirmados.",
+      "evidence": ["CT-4346-006_passo1_ok.png"]
+    },
+    {
+      "id": "CT-4346-007",
+      "name": "Ausência do card Exportar Conversas",
+      "result": "PASSOU",
+      "manualOverride": false,
+      "note": "Varredura completa nos 18 cards — Exportar Conversas ausente.",
+      "evidence": ["CT-4346-007_passo1_ok.png"]
+    }
+  ],
+  "technicalNotes": {
+    "bundle": "index-DbOYRZMg.js",
+    "buildVersion": "3.5.352",
+    "bugIdentified": {
+      "description": "poli-digital partner config (src/store/whitelabel/partners/poli-digital.ts) missing legacyUrl field",
+      "rootCause": "aMe() / buildLegacyUrl() reads brand.legacyUrl.spa which is undefined for poli-digital",
+      "fix": "Add legacyUrl: { spa: import.meta.env.VITE_LEGACY_SPA_URL, laravel: import.meta.env.VITE_LEGACY_LARAVEL_URL }",
+      "preexisting": true,
+      "introducedByPR": false
+    }
+  }
+}

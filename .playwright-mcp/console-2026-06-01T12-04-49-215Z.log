@@ -1,0 +1,48 @@
+[   19971ms] [LOG] Defining triggerGuiding @ :0
+[   21723ms] [WARNING] [UserGuiding] 
+ You are loading UserGuiding SDK multiple times 
+
+*Submit a ticket using the link below if you think this is a bug
+https://desk.zoho.com/portal/userguiding/newticket @ https://static.userguiding.com/media/user-guiding-4CU101710BACID-embedded.js:1
+[   22118ms] [LOG] User Guiding identify running @ :1
+[   22744ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-zg6mF10N.js:101
+[   22744ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.poli.digital/assets/index-zg6mF10N.js:101
+[   22912ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.poli.digital/assets/index-zg6mF10N.js:76
+[   23361ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-zg6mF10N.js:69
+[   23631ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.poli.digital/auth/logout:0
+[   23635ms] [ERROR] error at logout, please try again @ https://spa.poli.digital/assets/index-zg6mF10N.js:69
+[   23635ms] [ERROR] AxiosError: Request failed with status code 401
+    at n3e (https://spa.poli.digital/assets/index-zg6mF10N.js:1021:10191)
+    at XMLHttpRequest.w (https://spa.poli.digital/assets/index-zg6mF10N.js:1021:15759)
+    at hx.request (https://spa.poli.digital/assets/index-zg6mF10N.js:1023:2234)
+    at async nm.logout (https://spa.poli.digital/assets/index-zg6mF10N.js:1031:6500)
+    at async Object.mutationFn (https://spa.poli.digital/assets/index-zg6mF10N.js:2161:64056) @ https://spa.poli.digital/assets/index-zg6mF10N.js:69
+[   23640ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.poli.digital/assets/index-zg6mF10N.js:69
+[   23972ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-zg6mF10N.js:69
+[   25307ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/:0
+[   25310ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/:0
+[   25976ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-zg6mF10N.js:69
+[   27972ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-zg6mF10N.js:69
+[   29982ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-zg6mF10N.js:69
+[   30851ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-zg6mF10N.js:69
+[   31973ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-zg6mF10N.js:69
+[   31974ms] [LOG] User Guiding identify cleared @ https://spa.poli.digital/assets/index-zg6mF10N.js:69
+[   36244ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/login?redirectTo=/:0
+[   36843ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/login?redirectTo=/:0
+[   38057ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-zg6mF10N.js:69
+[   39635ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://www.google.com') does not match the recipient window's origin ('https://spa.poli.digital'). @ https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:782
+[   39635ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://www.youtube.com') does not match the recipient window's origin ('https://spa.poli.digital'). @ https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:782
+[   39636ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://m.youtube.com') does not match the recipient window's origin ('https://spa.poli.digital'). @ https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:782
+[   40157ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://app.amplitude.com') does not match the recipient window's origin ('https://spa.poli.digital'). @ https://cdn.amplitude.com/libs/analytics-browser-gtm-2.33.4-min.js.gz:0
+[   45097ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://www.google.com') does not match the recipient window's origin ('https://spa.poli.digital'). @ https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:782
+[   45097ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://www.youtube.com') does not match the recipient window's origin ('https://spa.poli.digital'). @ https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:782
+[   45097ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://m.youtube.com') does not match the recipient window's origin ('https://spa.poli.digital'). @ https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:782
+[   45670ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://app.amplitude.com') does not match the recipient window's origin ('https://spa.poli.digital'). @ https://cdn.amplitude.com/libs/analytics-browser-gtm-2.33.4-min.js.gz:0
+[   66675ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa.poli.digital/assets/index-zg6mF10N.js:69
+[   67283ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa.poli.digital/users?search=yuri:0
+[   67284ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa.poli.digital/users?search=yuri:0
+[   74494ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-zg6mF10N.js:69
+[ 3717118ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.poli.digital/auth/inactivity:0
+[ 3717221ms] AxiosError: Request failed with status code 404
+    at n3e (https://spa.poli.digital/assets/index-zg6mF10N.js:1021:10191)
+    at XMLHttpRequest.w (https://spa.poli.digital/assets/index-zg6mF10N.js:1021:15759)

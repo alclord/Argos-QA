@@ -1,0 +1,219 @@
+[    2521ms] [LOG] Defining triggerGuiding @ :0
+[    5252ms] [LOG] User Guiding identify running @ :1
+[    5661ms] [WARNING] [UserGuiding] 
+ You are loading UserGuiding SDK multiple times 
+
+*Submit a ticket using the link below if you think this is a bug
+https://desk.zoho.com/portal/userguiding/newticket @ https://static.userguiding.com/media/user-guiding-IIX76033NNMID-embedded.js:1
+[    6536ms] [LOG] User Guiding identify running @ :1
+[    8526ms] [LOG] User Guiding identify running @ :1
+[    9590ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/chat:0
+[   10532ms] [LOG] User Guiding identify running @ :1
+[   12100ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/modules-CUPhx8-T.js:9
+[   12101ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.poli.digital/assets/modules-CUPhx8-T.js:9
+[   12588ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.poli.digital/assets/index-BubGZ6e2.js:27
+[   13325ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   13970ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   13976ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/chat:0
+[   14005ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   14020ms] [ERROR] error ao buscar chats TypeError: Cannot read properties of undefined (reading 'data')
+    at cwe (https://spa.poli.digital/assets/modules-CUPhx8-T.js:59:33886)
+    at async d (https://spa.poli.digital/assets/modules-CUPhx8-T.js:5:40019)
+    at async Object.l [as fn] (https://spa.poli.digital/assets/modules-CUPhx8-T.js:5:40444) @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   14586ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   14789ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.poli.digital/v3/users/settings/summary:0
+[   14792ms] [ERROR] [UserPreferencesService] Failed to get summary: TypeError: Cannot read properties of undefined (reading 'data')
+    at bat.getSummary (https://spa.poli.digital/assets/modules-CUPhx8-T.js:1110:61062)
+    at async https://spa.poli.digital/assets/modules-CUPhx8-T.js:1110:61634 @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   14795ms] [ERROR] [useUserPreferences] Error: TypeError: Cannot read properties of undefined (reading 'data')
+    at bat.getSummary (https://spa.poli.digital/assets/modules-CUPhx8-T.js:1110:61062)
+    at async https://spa.poli.digital/assets/modules-CUPhx8-T.js:1110:61634 @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   15482ms] [LOG] Defining triggerGuiding @ :0
+[   15750ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/modules-CUPhx8-T.js:9
+[   15750ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.poli.digital/assets/modules-CUPhx8-T.js:9
+[   15939ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.poli.digital/assets/index-BubGZ6e2.js:27
+[   16137ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   16405ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   17047ms] [WARNING] [UserGuiding] 
+ You are loading UserGuiding SDK multiple times 
+
+*Submit a ticket using the link below if you think this is a bug
+https://desk.zoho.com/portal/userguiding/newticket @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   17486ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   19484ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   20927ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/login?redirectTo=/chat:0
+[   20958ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/login?redirectTo=/chat:0
+[   21485ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   23490ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   25487ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   27484ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   29499ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   31498ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   33489ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   35497ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   37491ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   39489ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   41497ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   43492ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   45499ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   47493ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   49492ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   51492ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   53488ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   55488ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   57488ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   59489ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   61496ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   63497ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   65489ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   67488ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   69490ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   71494ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   73495ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   75488ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   77486ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   79493ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   81496ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   83496ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   85486ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   87484ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   89491ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   91493ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   93486ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   95485ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   97488ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[   99492ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  101487ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  103488ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  105491ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  107498ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  109486ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  111497ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  113490ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  115490ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  117489ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  119497ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  121491ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  123492ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  125489ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  127492ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  129492ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  131494ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  133491ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  135488ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  137486ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  139498ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  141489ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  143486ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  145490ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  147496ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  149496ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  151497ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  153488ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  155489ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  157490ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  159499ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  161498ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  163488ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  165487ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  167484ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  169498ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  171492ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  173498ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  175496ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  177497ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  179497ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  181492ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  183492ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  185498ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  187485ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  189487ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  191494ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  193494ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  195484ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  197497ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  199488ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  201489ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  203485ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  205496ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  207487ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  209485ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  211492ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  213484ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  215487ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  217496ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  219488ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  221489ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  223494ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  225490ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  227499ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  229486ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  231498ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  233496ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  235494ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  237496ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  239495ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  241498ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  243484ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  245498ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  247490ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  249494ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  251495ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  253489ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  255490ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  257488ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  259491ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  261487ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  263497ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  265485ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  267486ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  269914ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  271576ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  273496ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  275496ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  277499ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  279491ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  281492ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  283497ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  285502ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  287495ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  289485ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  291499ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  293490ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  295484ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  297496ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  299499ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  301495ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  303487ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  305493ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  307487ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  309488ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  311488ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  313500ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  315486ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  317488ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  319485ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  321512ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  323623ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  325644ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  327498ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  327498ms] [LOG] User Guiding identify cleared @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  327634ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  329289ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.poli.digital/v3/crm/index:0
+[  329316ms] [ERROR] getCrmUserToken - Error on get crm user token: AxiosError: Request failed with status code 404
+    at oM (https://spa.poli.digital/assets/modules-CUPhx8-T.js:29:9907)
+    at XMLHttpRequest.g (https://spa.poli.digital/assets/modules-CUPhx8-T.js:29:15204)
+    at AM.request (https://spa.poli.digital/assets/modules-CUPhx8-T.js:31:2139)
+    at async U7.getUserToken (https://spa.poli.digital/assets/modules-CUPhx8-T.js:1109:43588)
+    at async https://spa.poli.digital/assets/modules-CUPhx8-T.js:1109:43875 @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  330278ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/595272057_1667995137658708_7850599022326744246_n.jpg?ccb=11-4&oh=01_Q5Aa4gElBzxz2thb0XNU5h6P3FJ-TLUrB8f8-Vdg3-OhSUYyEA&oe=6A077C97&_nc_sid=5e03e0&_nc_cat=111:0
+[  332076ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/chat:0
+[  332206ms] Identifier 'TCRMEmbed' has already been declared
+[  332402ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.poli.digital/v3/crm/index:0
+[  332405ms] [ERROR] getCrmUserToken - Error on get crm user token: AxiosError: Request failed with status code 404
+    at oM (https://spa.poli.digital/assets/modules-CUPhx8-T.js:29:9907)
+    at XMLHttpRequest.g (https://spa.poli.digital/assets/modules-CUPhx8-T.js:29:15204)
+    at AM.request (https://spa.poli.digital/assets/modules-CUPhx8-T.js:31:2139)
+    at async U7.getUserToken (https://spa.poli.digital/assets/modules-CUPhx8-T.js:1109:43588)
+    at async https://spa.poli.digital/assets/modules-CUPhx8-T.js:1109:43875 @ https://spa.poli.digital/assets/index-BubGZ6e2.js:20
+[  332785ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/chat:0

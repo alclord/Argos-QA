@@ -1,0 +1,29 @@
+[     498ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[     500ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[     695ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:76
+[     732ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ https://www.clarity.ms/tag/u4k89qf9gw:0
+[     778ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[    1173ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[   30127ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[   59333ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[   59334ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[   59427ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:76
+[   60102ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[   63099ms] Identifier 'TCRMEmbed' has already been declared
+[   63146ms] Identifier 'TCRMEmbed' has already been declared
+[   73400ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/login:0
+[   73814ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/login:0
+[   73831ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/login:0
+[   74419ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app-spa.qa.poli.digital/login:0
+[   74523ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/users/settings/language:0
+[   74881ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.qa.poli.digital/auth/refresh-token:0
+[   74883ms] [ERROR] refreshRequestError:  rd @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[   74884ms] [ERROR] refreshError:  rd @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[   74884ms] [ERROR] [UserPreferencesService] Failed to get language: rd @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[   94586ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[   95295ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.qa.poli.digital/auth/foundation/allowed:0
+[   95297ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  212853ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[  212853ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[  213028ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:76
+[  213812ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69

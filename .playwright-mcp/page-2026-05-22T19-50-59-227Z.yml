@@ -1,0 +1,203 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - complementary:
+          - generic:
+            - img
+          - navigation:
+            - list:
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=6406811a5ce1c432596989e2a68091a279334cb0&toPath=https://app.poli.digital/home
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /chat
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=6406811a5ce1c432596989e2a68091a279334cb0&toPath=https://app.poli.digital/settings/1/chatbot
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /poli-flow
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=6406811a5ce1c432596989e2a68091a279334cb0&toPath=https://app-spa.poli.digital/marketing
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=6406811a5ce1c432596989e2a68091a279334cb0&toPath=https://app-spa.poli.digital/shopping
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=6406811a5ce1c432596989e2a68091a279334cb0&toPath=https://app-spa.poli.digital/relatorio
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=6406811a5ce1c432596989e2a68091a279334cb0&toPath=https://app.poli.digital/settings/1
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /contacts
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /templates
+                  - generic:
+                    - img
+            - list:
+              - listitem:
+                - button:
+                  - img
+              - listitem:
+                - button:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: YA
+              - listitem:
+                - button:
+                  - img
+              - listitem:
+                - generic:
+                  - generic: 3.5.332
+        - main:
+          - generic:
+            - generic:
+              - navigation:
+                - generic:
+                  - link:
+                    - /url: /
+                    - text: Página inicial
+                - generic:
+                  - img
+                  - link:
+                    - /url: /templates
+                    - text: Templates
+                - img
+                - generic: Criar template
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - heading [level=2]: Tipo
+                    - generic:
+                      - text: Como esse template será usado?
+                      - radiogroup:
+                        - generic:
+                          - radio [checked]:
+                            - generic:
+                              - img
+                          - radio [checked]
+                          - generic:
+                            - generic: Mensagem rápida
+                            - generic: Disponível para enviar em conversas abertas. Não passa por aprovação.
+                        - generic:
+                          - radio
+                          - radio
+                          - generic:
+                            - generic: Template de canal
+                            - generic: Necessário para iniciar conversas. Será submetido à aprovação do canal.
+                  - generic:
+                    - heading [level=2]: Informações básicas
+                    - generic:
+                      - text: Nome
+                      - textbox: template_cancelar_teste
+                      - paragraph: lowercase, números e underscore
+                    - generic:
+                      - text: Idioma
+                      - combobox:
+                        - generic: Português (Brasil)
+                        - img
+                      - combobox
+                    - generic:
+                      - text: Equipe
+                      - combobox:
+                        - generic: Sem equipe
+                        - img
+                      - combobox
+                  - generic:
+                    - heading [level=2]: Cabeçalho
+                    - generic:
+                      - text: Tipo de cabeçalho
+                      - radiogroup:
+                        - generic:
+                          - radio [checked]:
+                            - generic:
+                              - img
+                          - radio [checked]
+                          - text: Sem cabeçalho
+                        - generic:
+                          - radio
+                          - radio
+                          - text: Texto
+                        - generic:
+                          - radio
+                          - radio
+                          - text: Mídia
+                  - generic:
+                    - heading [level=2]: Corpo
+                    - generic:
+                      - generic:
+                        - generic: Conteúdo da mensagem
+                        - button: Inserir variável
+                      - textbox: Corpo de teste para cancelar
+                      - generic: 28/1024
+                  - generic:
+                    - heading [level=2]: Rodapé
+                    - generic:
+                      - text: Rodapé
+                      - textbox
+                      - generic: 0/60
+                  - generic:
+                    - heading [level=2]: Interatividade
+                    - generic:
+                      - text: Tipo de interação
+                      - radiogroup:
+                        - generic:
+                          - radio [checked]:
+                            - generic:
+                              - img
+                          - radio [checked]
+                          - text: Sem interação
+                        - generic:
+                          - radio
+                          - radio
+                          - text: Botões
+                        - generic:
+                          - radio
+                          - radio
+                          - text: Lista
+                        - generic:
+                          - radio
+                          - radio
+                          - text: Pedir localização
+                  - generic:
+                    - button: Cancelar
+                    - button: Criar template
+                - complementary:
+                  - generic:
+                    - heading [level=3]: Pré-visualização
+                    - generic:
+                      - paragraph: Corpo de teste para cancelar
+    - list
+  - alertdialog "Descartar alterações?" [ref=e188]:
+    - generic [ref=e189]:
+      - heading "Descartar alterações?" [level=2] [ref=e190]
+      - paragraph [ref=e191]: Você tem alterações não salvas. Se sair agora elas serão perdidas.
+    - generic [ref=e192]:
+      - button "Continuar editando" [active] [ref=e193] [cursor=pointer]
+      - button "Descartar" [ref=e194] [cursor=pointer]

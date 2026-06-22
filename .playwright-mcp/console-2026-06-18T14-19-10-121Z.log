@@ -1,0 +1,36 @@
+[     265ms] [LOG] Defining triggerGuiding @ :0
+[     652ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[    1343ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app-spa.poli.digital/login:0
+[    2125ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.poli.digital/login:0
+[    2129ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/login:0
+[    2489ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    4274ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    6280ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    7042ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/login:0
+[    7042ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/login:0
+[    8280ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   10279ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   12270ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   14266ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   15663ms] [LOG] openSocketRequest @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   16062ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.poli.digital/auth/foundation/allowed:0
+[   16063ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   16272ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   18193ms] [LOG] Defining triggerGuiding @ :0
+[   20198ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:904:429
+    at $R (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:906:31)
+    at Od.ZR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:903:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:317:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:263:473)
+[   20194ms] [LOG] User Guiding identify running @ :1
+[   20194ms] [LOG] User Guiding identify cleared @ :1
+[   23470ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/home:0
+[   24691ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/home:0
+[   25947ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/home:0
+[   25962ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/home:0

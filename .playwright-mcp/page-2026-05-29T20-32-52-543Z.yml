@@ -1,0 +1,419 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - img [ref=e7]
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link [ref=e11] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=88135c405d438f901e77a1d28e6c56ab1eed20b3&toPath=https://app.poli.digital/home
+              - img [ref=e13]
+          - listitem [ref=e16]:
+            - link [ref=e17] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e19]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=88135c405d438f901e77a1d28e6c56ab1eed20b3&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e30]
+          - listitem [ref=e32]:
+            - link [ref=e33] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=88135c405d438f901e77a1d28e6c56ab1eed20b3&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e35]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=88135c405d438f901e77a1d28e6c56ab1eed20b3&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e41]
+          - listitem [ref=e43]:
+            - link [ref=e44] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=88135c405d438f901e77a1d28e6c56ab1eed20b3&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e46]
+          - listitem [ref=e49]:
+            - link [ref=e50] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=88135c405d438f901e77a1d28e6c56ab1eed20b3&toPath=https://app.poli.digital/settings/1
+              - img [ref=e52]
+          - listitem [ref=e55]:
+            - link [ref=e56] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e58]
+          - listitem [ref=e62]:
+            - link [ref=e63] [cursor=pointer]:
+              - /url: /templates
+              - img [ref=e65]
+        - list [ref=e68]:
+          - listitem [ref=e69]:
+            - button "Consumo de créditos" [ref=e70] [cursor=pointer]:
+              - img [ref=e71]
+          - listitem [ref=e74]:
+            - button "YA" [ref=e75] [cursor=pointer]:
+              - generic [ref=e80]: YA
+          - listitem [ref=e82]:
+            - button [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+          - listitem [ref=e86]:
+            - generic [ref=e88]: 3.5.332
+    - main [ref=e89]:
+      - generic [ref=e91]:
+        - navigation "breadcrumb" [ref=e93]:
+          - link "Página inicial" [ref=e95] [cursor=pointer]:
+            - /url: /
+          - img [ref=e96]
+          - generic [ref=e98]: Mensagens agendadas
+        - generic [ref=e100]:
+          - generic [ref=e102]:
+            - generic [ref=e696]:
+              - img [ref=e698]
+              - generic [ref=e701]:
+                - paragraph [ref=e702]: Total
+                - paragraph [ref=e703]: "1478"
+            - generic [ref=e705]:
+              - img [ref=e707]
+              - generic [ref=e711]:
+                - paragraph [ref=e712]: Agendadas
+                - paragraph [ref=e713]: "11"
+            - generic [ref=e715]:
+              - img [ref=e717]
+              - generic [ref=e720]:
+                - paragraph [ref=e721]: Enviadas
+                - paragraph [ref=e722]: "1325"
+            - generic [ref=e724]:
+              - img [ref=e726]
+              - generic [ref=e730]:
+                - paragraph [ref=e731]: Canceladas
+                - paragraph [ref=e732]: "70"
+          - generic [ref=e130]:
+            - generic [ref=e132]:
+              - generic [ref=e133]:
+                - generic [ref=e134]: Status
+                - combobox "Status" [ref=e135] [cursor=pointer]:
+                  - generic: Todos os status
+                  - img [ref=e136]
+              - generic [ref=e138]:
+                - generic [ref=e139]: Canal
+                - combobox "Canal" [ref=e140] [cursor=pointer]:
+                  - generic: Todos os canais
+                  - img [ref=e141]
+              - generic [ref=e143]:
+                - generic [ref=e144]: Responsável
+                - combobox "Responsável" [ref=e145] [cursor=pointer]:
+                  - generic: Todos os responsáveis
+                  - img [ref=e146]
+              - generic [ref=e148]:
+                - generic [ref=e149]: Período
+                - button "Período" [ref=e150] [cursor=pointer]:
+                  - generic [ref=e151]: Todos os períodos
+                  - img [ref=e152]
+              - button "Agendar mensagem" [ref=e155] [cursor=pointer]:
+                - img [ref=e156]
+                - text: Agendar mensagem
+            - generic [ref=e158]:
+              - table [ref=e1039]:
+                - rowgroup [ref=e1040]:
+                  - row "Contato Canal Mensagem Agendado para Responsável Status Ações" [ref=e1041]:
+                    - columnheader [ref=e1042]
+                    - columnheader "Contato" [ref=e1043]
+                    - columnheader "Canal" [ref=e1044]
+                    - columnheader "Mensagem" [ref=e1045]
+                    - columnheader "Agendado para" [ref=e1046]:
+                      - button "Agendado para" [ref=e1047] [cursor=pointer]:
+                        - text: Agendado para
+                        - img [ref=e1048]
+                    - columnheader "Responsável" [ref=e1051]
+                    - columnheader "Status" [ref=e1052]
+                    - columnheader "Ações" [ref=e1053]
+                - rowgroup [ref=e1054]:
+                  - 'row "Ivo Pita WhatsApp Business WhatsApp Business Canal Principal 🚨 *ATENÇÃO!* 🚨 Faltam apenas 2 horas para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve! 29/05/2026 - 13:00 Laura Mathias Enviada Ações" [ref=e1055]':
+                    - cell [ref=e1056]
+                    - cell "Ivo Pita" [ref=e1057]
+                    - cell "WhatsApp Business WhatsApp Business Canal Principal" [ref=e1058]:
+                      - generic [ref=e1059]:
+                        - generic [ref=e1060]:
+                          - img "WhatsApp Business" [ref=e1061]
+                          - generic [ref=e1064]: WhatsApp Business
+                        - generic [ref=e1065]: Canal Principal
+                    - 'cell "🚨 *ATENÇÃO!* 🚨 Faltam apenas 2 horas para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!" [ref=e1066]':
+                      - generic [ref=e1067]: "🚨 *ATENÇÃO!* 🚨 Faltam apenas 2 horas para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!"
+                    - cell "29/05/2026 - 13:00" [ref=e1068]
+                    - cell "Laura Mathias" [ref=e1069]
+                    - cell "Enviada" [ref=e1070]:
+                      - generic [ref=e1071]: Enviada
+                    - cell "Ações" [ref=e1072]:
+                      - button "Ações" [ref=e1073] [cursor=pointer]:
+                        - img [ref=e1074]
+                  - row "Claudio Ruiz WhatsApp Business WhatsApp Business Latam - Mexico Hola Claudio, un gusto saludarte. Espero que la revisión de la propuesta de Poli con tu esposa haya avanzado bien. Quería recordarte que el beneficio del 100% de descuento en la implementación expira hoy. Es la vía más segura y económica para terminar con los bloqueos y ese gasto insostenible de 1.200.000 CLP mensuales. Cuéntame por favor, podemos iniciar tu proyecto para ayudarte con el descuento en la implementación? 29/05/2026 - 13:00 Jonathan Enviada Ações" [ref=e1078]:
+                    - cell [ref=e1079]
+                    - cell "Claudio Ruiz" [ref=e1080]
+                    - cell "WhatsApp Business WhatsApp Business Latam - Mexico" [ref=e1081]:
+                      - generic [ref=e1082]:
+                        - generic [ref=e1083]:
+                          - img "WhatsApp Business" [ref=e1084]
+                          - generic [ref=e1087]: WhatsApp Business
+                        - generic [ref=e1088]: Latam - Mexico
+                    - cell "Hola Claudio, un gusto saludarte. Espero que la revisión de la propuesta de Poli con tu esposa haya avanzado bien. Quería recordarte que el beneficio del 100% de descuento en la implementación expira hoy. Es la vía más segura y económica para terminar con los bloqueos y ese gasto insostenible de 1.200.000 CLP mensuales. Cuéntame por favor, podemos iniciar tu proyecto para ayudarte con el descuento en la implementación?" [ref=e1089]:
+                      - generic [ref=e1090]: Hola Claudio, un gusto saludarte. Espero que la revisión de la propuesta de Poli con tu esposa haya avanzado bien. Quería recordarte que el beneficio del 100% de descuento en la implementación expira hoy. Es la vía más segura y económica para terminar con los bloqueos y ese gasto insostenible de 1.200.000 CLP mensuales. Cuéntame por favor, podemos iniciar tu proyecto para ayudarte con el descuento en la implementación?
+                    - cell "29/05/2026 - 13:00" [ref=e1091]
+                    - cell "Jonathan" [ref=e1092]
+                    - cell "Enviada" [ref=e1093]:
+                      - generic [ref=e1094]: Enviada
+                    - cell "Ações" [ref=e1095]:
+                      - button "Ações" [ref=e1096] [cursor=pointer]:
+                        - img [ref=e1097]
+                  - 'row "Johnny Medeiros WhatsApp Business WhatsApp Business Canal Principal *🚀 Nossa reunião está mais perto do que nunca!* Prepare-se para conhecer a plataforma que vai transformar e elevar o nível do seu atendimento. Tenho certeza de que você vai enxergar novas possibilidades para ganhar mais organização, agilidade e resultados no dia a dia. 💻 Importante: para uma melhor experiência durante a apresentação, acesse a reunião pelo computador, ok? Nos vemos em breve! 29/05/2026 - 10:30 Laura Mathias Enviada Ações" [ref=e1101]':
+                    - cell [ref=e1102]
+                    - cell "Johnny Medeiros" [ref=e1103]
+                    - cell "WhatsApp Business WhatsApp Business Canal Principal" [ref=e1104]:
+                      - generic [ref=e1105]:
+                        - generic [ref=e1106]:
+                          - img "WhatsApp Business" [ref=e1107]
+                          - generic [ref=e1110]: WhatsApp Business
+                        - generic [ref=e1111]: Canal Principal
+                    - 'cell "*🚀 Nossa reunião está mais perto do que nunca!* Prepare-se para conhecer a plataforma que vai transformar e elevar o nível do seu atendimento. Tenho certeza de que você vai enxergar novas possibilidades para ganhar mais organização, agilidade e resultados no dia a dia. 💻 Importante: para uma melhor experiência durante a apresentação, acesse a reunião pelo computador, ok? Nos vemos em breve!" [ref=e1112]':
+                      - generic [ref=e1113]: "*🚀 Nossa reunião está mais perto do que nunca!* Prepare-se para conhecer a plataforma que vai transformar e elevar o nível do seu atendimento. Tenho certeza de que você vai enxergar novas possibilidades para ganhar mais organização, agilidade e resultados no dia a dia. 💻 Importante: para uma melhor experiência durante a apresentação, acesse a reunião pelo computador, ok? Nos vemos em breve!"
+                    - cell "29/05/2026 - 10:30" [ref=e1114]
+                    - cell "Laura Mathias" [ref=e1115]
+                    - cell "Enviada" [ref=e1116]:
+                      - generic [ref=e1117]: Enviada
+                    - cell "Ações" [ref=e1118]:
+                      - button "Ações" [ref=e1119] [cursor=pointer]:
+                        - img [ref=e1120]
+                  - 'row "Johnny Medeiros WhatsApp Business WhatsApp Business Canal Principal 🚨 *ATENÇÃO!* 🚨 Faltam apenas 1 hora para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve! 29/05/2026 - 10:00 Laura Mathias Enviada Ações" [ref=e1124]':
+                    - cell [ref=e1125]
+                    - cell "Johnny Medeiros" [ref=e1126]
+                    - cell "WhatsApp Business WhatsApp Business Canal Principal" [ref=e1127]:
+                      - generic [ref=e1128]:
+                        - generic [ref=e1129]:
+                          - img "WhatsApp Business" [ref=e1130]
+                          - generic [ref=e1133]: WhatsApp Business
+                        - generic [ref=e1134]: Canal Principal
+                    - 'cell "🚨 *ATENÇÃO!* 🚨 Faltam apenas 1 hora para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!" [ref=e1135]':
+                      - generic [ref=e1136]: "🚨 *ATENÇÃO!* 🚨 Faltam apenas 1 hora para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!"
+                    - cell "29/05/2026 - 10:00" [ref=e1137]
+                    - cell "Laura Mathias" [ref=e1138]
+                    - cell "Enviada" [ref=e1139]:
+                      - generic [ref=e1140]: Enviada
+                    - cell "Ações" [ref=e1141]:
+                      - button "Ações" [ref=e1142] [cursor=pointer]:
+                        - img [ref=e1143]
+                  - row "Joaquin WhatsApp Business WhatsApp Business Latam - Mexico ¡Hola, [contact_first_name]! Tal como lo acordamos en nuestra reunión, te escribo para dar seguimiento al proyecto de *Poli Digital*. ¿Pudiste revisar la propuesta o precisas que aclaremos cualquier duda? 29/05/2026 - 09:00 Jonathan Enviada Ações" [ref=e1147]:
+                    - cell [ref=e1148]
+                    - cell "Joaquin" [ref=e1149]
+                    - cell "WhatsApp Business WhatsApp Business Latam - Mexico" [ref=e1150]:
+                      - generic [ref=e1151]:
+                        - generic [ref=e1152]:
+                          - img "WhatsApp Business" [ref=e1153]
+                          - generic [ref=e1156]: WhatsApp Business
+                        - generic [ref=e1157]: Latam - Mexico
+                    - cell "¡Hola, [contact_first_name]! Tal como lo acordamos en nuestra reunión, te escribo para dar seguimiento al proyecto de *Poli Digital*. ¿Pudiste revisar la propuesta o precisas que aclaremos cualquier duda?" [ref=e1158]:
+                      - generic [ref=e1159]: ¡Hola, [contact_first_name]! Tal como lo acordamos en nuestra reunión, te escribo para dar seguimiento al proyecto de *Poli Digital*. ¿Pudiste revisar la propuesta o precisas que aclaremos cualquier duda?
+                    - cell "29/05/2026 - 09:00" [ref=e1160]
+                    - cell "Jonathan" [ref=e1161]
+                    - cell "Enviada" [ref=e1162]:
+                      - generic [ref=e1163]: Enviada
+                    - cell "Ações" [ref=e1164]:
+                      - button "Ações" [ref=e1165] [cursor=pointer]:
+                        - img [ref=e1166]
+                  - 'row "Johnny Medeiros WhatsApp Business WhatsApp Business Canal Principal 🚨 *ATENÇÃO!* 🚨 Faltam apenas 2 horas para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve! 29/05/2026 - 09:00 Laura Mathias Enviada Ações" [ref=e1170]':
+                    - cell [ref=e1171]
+                    - cell "Johnny Medeiros" [ref=e1172]
+                    - cell "WhatsApp Business WhatsApp Business Canal Principal" [ref=e1173]:
+                      - generic [ref=e1174]:
+                        - generic [ref=e1175]:
+                          - img "WhatsApp Business" [ref=e1176]
+                          - generic [ref=e1179]: WhatsApp Business
+                        - generic [ref=e1180]: Canal Principal
+                    - 'cell "🚨 *ATENÇÃO!* 🚨 Faltam apenas 2 horas para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!" [ref=e1181]':
+                      - generic [ref=e1182]: "🚨 *ATENÇÃO!* 🚨 Faltam apenas 2 horas para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!"
+                    - cell "29/05/2026 - 09:00" [ref=e1183]
+                    - cell "Laura Mathias" [ref=e1184]
+                    - cell "Enviada" [ref=e1185]:
+                      - generic [ref=e1186]: Enviada
+                    - cell "Ações" [ref=e1187]:
+                      - button "Ações" [ref=e1188] [cursor=pointer]:
+                        - img [ref=e1189]
+                  - row "Neiker - transporte y servicios hdz WhatsApp WhatsApp Soporte Activo - Latam Hola Neiker! Como estas? Estoy contactándote como acordamos para saber si pudiste analizar la propuesta y ver si podemos avanzar con tu proyecto. Tienes algun feedback o duda en la que pueda ayudarte? 29/05/2026 - 09:00 Jonathan Enviada Ações" [ref=e1193]:
+                    - cell [ref=e1194]
+                    - cell "Neiker - transporte y servicios hdz" [ref=e1195]
+                    - cell "WhatsApp WhatsApp Soporte Activo - Latam" [ref=e1196]:
+                      - generic [ref=e1197]:
+                        - generic [ref=e1198]:
+                          - img "WhatsApp" [ref=e1199]
+                          - generic [ref=e1202]: WhatsApp
+                        - generic [ref=e1203]: Soporte Activo - Latam
+                    - cell "Hola Neiker! Como estas? Estoy contactándote como acordamos para saber si pudiste analizar la propuesta y ver si podemos avanzar con tu proyecto. Tienes algun feedback o duda en la que pueda ayudarte?" [ref=e1204]:
+                      - generic [ref=e1205]: Hola Neiker! Como estas? Estoy contactándote como acordamos para saber si pudiste analizar la propuesta y ver si podemos avanzar con tu proyecto. Tienes algun feedback o duda en la que pueda ayudarte?
+                    - cell "29/05/2026 - 09:00" [ref=e1206]
+                    - cell "Jonathan" [ref=e1207]
+                    - cell "Enviada" [ref=e1208]:
+                      - generic [ref=e1209]: Enviada
+                    - cell "Ações" [ref=e1210]:
+                      - button "Ações" [ref=e1211] [cursor=pointer]:
+                        - img [ref=e1212]
+                  - 'row "Marcus Vinicius Moraes Pereira WhatsApp Business WhatsApp Business Canal Principal 🚨 *ATENÇÃO!* 🚨 Faltam apenas 30 minutos para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve! 29/05/2026 - 07:30 Laura Mathias Enviada Ações" [ref=e1216]':
+                    - cell [ref=e1217]
+                    - cell "Marcus Vinicius Moraes Pereira" [ref=e1218]
+                    - cell "WhatsApp Business WhatsApp Business Canal Principal" [ref=e1219]:
+                      - generic [ref=e1220]:
+                        - generic [ref=e1221]:
+                          - img "WhatsApp Business" [ref=e1222]
+                          - generic [ref=e1225]: WhatsApp Business
+                        - generic [ref=e1226]: Canal Principal
+                    - 'cell "🚨 *ATENÇÃO!* 🚨 Faltam apenas 30 minutos para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!" [ref=e1227]':
+                      - generic [ref=e1228]: "🚨 *ATENÇÃO!* 🚨 Faltam apenas 30 minutos para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!"
+                    - cell "29/05/2026 - 07:30" [ref=e1229]
+                    - cell "Laura Mathias" [ref=e1230]
+                    - cell "Enviada" [ref=e1231]:
+                      - generic [ref=e1232]: Enviada
+                    - cell "Ações" [ref=e1233]:
+                      - button "Ações" [ref=e1234] [cursor=pointer]:
+                        - img [ref=e1235]
+                  - 'row "Caroline - Marketing Sorria Sim WhatsApp Business WhatsApp Business Canal Principal 🚨 *ATENÇÃO!* 🚨 Faltam apenas 30 minutos para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve! 29/05/2026 - 06:30 Laura Mathias Enviada Ações" [ref=e1239]':
+                    - cell [ref=e1240]
+                    - cell "Caroline - Marketing Sorria Sim" [ref=e1241]
+                    - cell "WhatsApp Business WhatsApp Business Canal Principal" [ref=e1242]:
+                      - generic [ref=e1243]:
+                        - generic [ref=e1244]:
+                          - img "WhatsApp Business" [ref=e1245]
+                          - generic [ref=e1248]: WhatsApp Business
+                        - generic [ref=e1249]: Canal Principal
+                    - 'cell "🚨 *ATENÇÃO!* 🚨 Faltam apenas 30 minutos para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!" [ref=e1250]':
+                      - generic [ref=e1251]: "🚨 *ATENÇÃO!* 🚨 Faltam apenas 30 minutos para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!"
+                    - cell "29/05/2026 - 06:30" [ref=e1252]
+                    - cell "Laura Mathias" [ref=e1253]
+                    - cell "Enviada" [ref=e1254]:
+                      - generic [ref=e1255]: Enviada
+                    - cell "Ações" [ref=e1256]:
+                      - button "Ações" [ref=e1257] [cursor=pointer]:
+                        - img [ref=e1258]
+                  - 'row "Williane WhatsApp Business WhatsApp Business Canal Principal 🚨 *ATENÇÃO!* 🚨 Faltam apenas 30 minutos para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve! 29/05/2026 - 06:30 Laura Mathias Enviada Ações" [ref=e1262]':
+                    - cell [ref=e1263]
+                    - cell "Williane" [ref=e1264]
+                    - cell "WhatsApp Business WhatsApp Business Canal Principal" [ref=e1265]:
+                      - generic [ref=e1266]:
+                        - generic [ref=e1267]:
+                          - img "WhatsApp Business" [ref=e1268]
+                          - generic [ref=e1271]: WhatsApp Business
+                        - generic [ref=e1272]: Canal Principal
+                    - 'cell "🚨 *ATENÇÃO!* 🚨 Faltam apenas 30 minutos para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!" [ref=e1273]':
+                      - generic [ref=e1274]: "🚨 *ATENÇÃO!* 🚨 Faltam apenas 30 minutos para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!"
+                    - cell "29/05/2026 - 06:30" [ref=e1275]
+                    - cell "Laura Mathias" [ref=e1276]
+                    - cell "Enviada" [ref=e1277]:
+                      - generic [ref=e1278]: Enviada
+                    - cell "Ações" [ref=e1279]:
+                      - button "Ações" [ref=e1280] [cursor=pointer]:
+                        - img [ref=e1281]
+                  - 'row "Williane WhatsApp Business WhatsApp Business Canal Principal 🚨 *ATENÇÃO!* 🚨 Faltam apenas 1 hora para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve! 29/05/2026 - 06:00 Laura Mathias Enviada Ações" [ref=e1285]':
+                    - cell [ref=e1286]
+                    - cell "Williane" [ref=e1287]
+                    - cell "WhatsApp Business WhatsApp Business Canal Principal" [ref=e1288]:
+                      - generic [ref=e1289]:
+                        - generic [ref=e1290]:
+                          - img "WhatsApp Business" [ref=e1291]
+                          - generic [ref=e1294]: WhatsApp Business
+                        - generic [ref=e1295]: Canal Principal
+                    - 'cell "🚨 *ATENÇÃO!* 🚨 Faltam apenas 1 hora para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!" [ref=e1296]':
+                      - generic [ref=e1297]: "🚨 *ATENÇÃO!* 🚨 Faltam apenas 1 hora para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!"
+                    - cell "29/05/2026 - 06:00" [ref=e1298]
+                    - cell "Laura Mathias" [ref=e1299]
+                    - cell "Enviada" [ref=e1300]:
+                      - generic [ref=e1301]: Enviada
+                    - cell "Ações" [ref=e1302]:
+                      - button "Ações" [ref=e1303] [cursor=pointer]:
+                        - img [ref=e1304]
+                  - row "Johnny Medeiros WhatsApp Business WhatsApp Business Canal Principal 🚨 *ATENÇÃO!* 🚨 A nossa reunião é hoje! Chegou o momento de conhecer uma plataforma pensada para trazer mais agilidade, organização e eficiência para o seu atendimento. 🚀 Tenho certeza de que essa apresentação vai abrir novas possibilidades para a sua operação! 💻 Para aproveitar melhor a demonstração, recomendamos o acesso pelo computador. Nos vemos em breve! 29/05/2026 - 06:00 Laura Mathias Enviada Ações" [ref=e1308]:
+                    - cell [ref=e1309]
+                    - cell "Johnny Medeiros" [ref=e1310]
+                    - cell "WhatsApp Business WhatsApp Business Canal Principal" [ref=e1311]:
+                      - generic [ref=e1312]:
+                        - generic [ref=e1313]:
+                          - img "WhatsApp Business" [ref=e1314]
+                          - generic [ref=e1317]: WhatsApp Business
+                        - generic [ref=e1318]: Canal Principal
+                    - cell "🚨 *ATENÇÃO!* 🚨 A nossa reunião é hoje! Chegou o momento de conhecer uma plataforma pensada para trazer mais agilidade, organização e eficiência para o seu atendimento. 🚀 Tenho certeza de que essa apresentação vai abrir novas possibilidades para a sua operação! 💻 Para aproveitar melhor a demonstração, recomendamos o acesso pelo computador. Nos vemos em breve!" [ref=e1319]:
+                      - generic [ref=e1320]: 🚨 *ATENÇÃO!* 🚨 A nossa reunião é hoje! Chegou o momento de conhecer uma plataforma pensada para trazer mais agilidade, organização e eficiência para o seu atendimento. 🚀 Tenho certeza de que essa apresentação vai abrir novas possibilidades para a sua operação! 💻 Para aproveitar melhor a demonstração, recomendamos o acesso pelo computador. Nos vemos em breve!
+                    - cell "29/05/2026 - 06:00" [ref=e1321]
+                    - cell "Laura Mathias" [ref=e1322]
+                    - cell "Enviada" [ref=e1323]:
+                      - generic [ref=e1324]: Enviada
+                    - cell "Ações" [ref=e1325]:
+                      - button "Ações" [ref=e1326] [cursor=pointer]:
+                        - img [ref=e1327]
+                  - 'row "Caroline - Marketing Sorria Sim WhatsApp Business WhatsApp Business Canal Principal 🚨 *ATENÇÃO!* 🚨 Faltam apenas 1 hora para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve! 29/05/2026 - 06:00 Laura Mathias Enviada Ações" [ref=e1331]':
+                    - cell [ref=e1332]
+                    - cell "Caroline - Marketing Sorria Sim" [ref=e1333]
+                    - cell "WhatsApp Business WhatsApp Business Canal Principal" [ref=e1334]:
+                      - generic [ref=e1335]:
+                        - generic [ref=e1336]:
+                          - img "WhatsApp Business" [ref=e1337]
+                          - generic [ref=e1340]: WhatsApp Business
+                        - generic [ref=e1341]: Canal Principal
+                    - 'cell "🚨 *ATENÇÃO!* 🚨 Faltam apenas 1 hora para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!" [ref=e1342]':
+                      - generic [ref=e1343]: "🚨 *ATENÇÃO!* 🚨 Faltam apenas 1 hora para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!"
+                    - cell "29/05/2026 - 06:00" [ref=e1344]
+                    - cell "Laura Mathias" [ref=e1345]
+                    - cell "Enviada" [ref=e1346]:
+                      - generic [ref=e1347]: Enviada
+                    - cell "Ações" [ref=e1348]:
+                      - button "Ações" [ref=e1349] [cursor=pointer]:
+                        - img [ref=e1350]
+                  - 'row "Caroline - Marketing Sorria Sim WhatsApp Business WhatsApp Business Canal Principal 🚨 *ATENÇÃO!* 🚨 Faltam apenas 2 horas para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve! 29/05/2026 - 05:00 Laura Mathias Enviada Ações" [ref=e1354]':
+                    - cell [ref=e1355]
+                    - cell "Caroline - Marketing Sorria Sim" [ref=e1356]
+                    - cell "WhatsApp Business WhatsApp Business Canal Principal" [ref=e1357]:
+                      - generic [ref=e1358]:
+                        - generic [ref=e1359]:
+                          - img "WhatsApp Business" [ref=e1360]
+                          - generic [ref=e1363]: WhatsApp Business
+                        - generic [ref=e1364]: Canal Principal
+                    - 'cell "🚨 *ATENÇÃO!* 🚨 Faltam apenas 2 horas para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!" [ref=e1365]':
+                      - generic [ref=e1366]: "🚨 *ATENÇÃO!* 🚨 Faltam apenas 2 horas para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!"
+                    - cell "29/05/2026 - 05:00" [ref=e1367]
+                    - cell "Laura Mathias" [ref=e1368]
+                    - cell "Enviada" [ref=e1369]:
+                      - generic [ref=e1370]: Enviada
+                    - cell "Ações" [ref=e1371]:
+                      - button "Ações" [ref=e1372] [cursor=pointer]:
+                        - img [ref=e1373]
+                  - 'row "Williane WhatsApp Business WhatsApp Business Canal Principal 🚨 *ATENÇÃO!* 🚨 Faltam apenas 2 horas para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve! 29/05/2026 - 05:00 Laura Mathias Enviada Ações" [ref=e1377]':
+                    - cell [ref=e1378]
+                    - cell "Williane" [ref=e1379]
+                    - cell "WhatsApp Business WhatsApp Business Canal Principal" [ref=e1380]:
+                      - generic [ref=e1381]:
+                        - generic [ref=e1382]:
+                          - img "WhatsApp Business" [ref=e1383]
+                          - generic [ref=e1386]: WhatsApp Business
+                        - generic [ref=e1387]: Canal Principal
+                    - 'cell "🚨 *ATENÇÃO!* 🚨 Faltam apenas 2 horas para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!" [ref=e1388]':
+                      - generic [ref=e1389]: "🚨 *ATENÇÃO!* 🚨 Faltam apenas 2 horas para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!"
+                    - cell "29/05/2026 - 05:00" [ref=e1390]
+                    - cell "Laura Mathias" [ref=e1391]
+                    - cell "Enviada" [ref=e1392]:
+                      - generic [ref=e1393]: Enviada
+                    - cell "Ações" [ref=e1394]:
+                      - button "Ações" [ref=e1395] [cursor=pointer]:
+                        - img [ref=e1396]
+              - generic [ref=e1401]:
+                - generic [ref=e1402]:
+                  - generic [ref=e1403]: Página 1 de 99
+                  - generic [ref=e1404]: "Total: 1.478 registros"
+                - generic [ref=e1405]:
+                  - combobox [ref=e1406]:
+                    - option "10 por página"
+                    - option "15 por página" [selected]
+                    - option "25 por página"
+                    - option "50 por página"
+                  - generic [ref=e1407]:
+                    - button [disabled]:
+                      - img
+                    - button [disabled]:
+                      - img
+                    - button [ref=e1408] [cursor=pointer]:
+                      - img [ref=e1409]
+                    - button [ref=e1411] [cursor=pointer]:
+                      - img [ref=e1412]
+  - region "Notifications (F8)":
+    - list

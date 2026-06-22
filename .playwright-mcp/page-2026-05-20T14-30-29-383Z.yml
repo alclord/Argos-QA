@@ -1,0 +1,103 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - img [ref=e7]
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link [ref=e11] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app.poli.digital/home
+              - img [ref=e13]
+          - listitem [ref=e16]:
+            - link [ref=e17] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e19]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e30]
+          - listitem [ref=e32]:
+            - link [ref=e33] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e35]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e41]
+          - listitem [ref=e43]:
+            - link [ref=e44] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e46]
+          - listitem [ref=e49]:
+            - link [ref=e50] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app.poli.digital/settings/1
+              - img [ref=e52]
+          - listitem [ref=e55]:
+            - link [ref=e56] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e58]
+          - listitem [ref=e62]:
+            - link [ref=e63] [cursor=pointer]:
+              - /url: /templates
+              - img [ref=e65]
+        - list [ref=e68]:
+          - listitem [ref=e69]:
+            - button "Consumo de créditos" [ref=e70] [cursor=pointer]:
+              - img [ref=e71]
+          - listitem [ref=e74]:
+            - button "YA" [ref=e75] [cursor=pointer]:
+              - generic [ref=e80]: YA
+          - listitem [ref=e82]:
+            - button [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+          - listitem [ref=e86]:
+            - generic [ref=e88]: v3.5.327
+    - main [ref=e89]:
+      - generic [ref=e90]:
+        - navigation "breadcrumb" [ref=e92]:
+          - link "Página inicial" [ref=e94] [cursor=pointer]:
+            - /url: /
+          - img [ref=e95]
+          - generic [ref=e97]: Templates
+        - generic [ref=e101]:
+          - generic [ref=e102]:
+            - textbox "Buscar templates" [ref=e103]: retorno
+            - button [ref=e104] [cursor=pointer]:
+              - img [ref=e105]
+          - generic [ref=e108]:
+            - generic [ref=e109]: Status
+            - combobox "Status" [ref=e110] [cursor=pointer]:
+              - generic: Aprovado
+              - img [ref=e111]
+          - generic [ref=e113]:
+            - generic [ref=e114]: Categoria
+            - combobox "Categoria" [ref=e115] [cursor=pointer]:
+              - generic: Marketing
+              - img [ref=e116]
+          - generic [ref=e118]:
+            - generic [ref=e119]: Tipo
+            - combobox "Tipo" [ref=e120] [cursor=pointer]:
+              - generic: Todos
+              - img [ref=e121]
+          - generic [ref=e123]:
+            - generic [ref=e124]: Canal
+            - combobox "Canal" [disabled] [ref=e125]:
+              - generic: Todos
+              - img [ref=e126]
+          - generic [ref=e128]:
+            - generic [ref=e129]:
+              - generic [ref=e130]: "Status:"
+              - generic [ref=e131]: Aprovado
+              - button "Remove filter Status" [ref=e132] [cursor=pointer]:
+                - img [ref=e133]
+            - generic [ref=e136]:
+              - generic [ref=e137]: "Categoria:"
+              - generic [ref=e138]: Marketing
+              - button "Remove filter Categoria" [ref=e139] [cursor=pointer]:
+                - img [ref=e140]
+  - region "Notifications (F8)":
+    - list

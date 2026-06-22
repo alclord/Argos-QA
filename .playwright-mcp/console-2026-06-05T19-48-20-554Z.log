@@ -1,0 +1,45 @@
+[   16104ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:101
+[   16107ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:101
+[   16331ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:76
+[   16862ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[   17008ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/non-payment/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[   17013ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[   17015ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/users/settings/summary:0
+[   17017ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats/pinned:0
+[   17044ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[   17048ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/crm/index:0
+[   17049ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[   17051ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/settings:0
+[   17079ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/broadcasting/auth:0
+[   17117ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   17627ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   18529ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/487819011_1122001249681380_2285523550704014782_n.jpg?ccb=11-4&oh=01_Q5Aa3wFD5nULwxdj04TYsTsvFYrjZuTYlaY98Jkkr6fTO556jA&oe=69ADB528&_nc_sid=5e03e0&_nc_cat=102:0
+[   18830ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   20141ms] Identifier 'TCRMEmbed' has already been declared
+[   20243ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/crm/index:0
+[   20248ms] [ERROR] getCrmUserToken - Error on get crm user token: TypeError: Cannot read properties of undefined (reading 'data')
+    at RP.getUserToken (https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:2220:44320)
+    at async https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:2220:44583 @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[   20249ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/non-payment/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[   20253ms] [ERROR] TypeError: Cannot read properties of undefined (reading 'data')
+    at aGt.getOverdueAccounts (https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:2233:45060)
+    at async https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:2239:177942 @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[   20926ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:101
+[   20927ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:101
+[   21004ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:76
+[   21059ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[   21255ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/non-payment/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[   21258ms] [ERROR] TypeError: Cannot read properties of undefined (reading 'data')
+    at aGt.getOverdueAccounts (https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:2233:45060)
+    at async https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:2239:177942 @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[   21645ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:101
+[   21645ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:101
+[   21707ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:76
+[   21746ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[   22321ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[   89107ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[   90768ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   91872ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/487819011_1122001249681380_2285523550704014782_n.jpg?ccb=11-4&oh=01_Q5Aa3wFD5nULwxdj04TYsTsvFYrjZuTYlaY98Jkkr6fTO556jA&oe=69ADB528&_nc_sid=5e03e0&_nc_cat=102:0
+[   91981ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   94201ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   98400ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0

@@ -1,0 +1,110 @@
+[    1856ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:101
+[    1857ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:101
+[    1968ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:76
+[    2537ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[    2958ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:901:429
+    at cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:903:31)
+    at Md.bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:92)
+    at Md.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at fb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Md.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Iq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at sf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:726:315
+    at UA (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:651:1)
+    at ZA.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:655:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:673:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:131)
+    at oC (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:773)
+    at rC (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:679:29)
+    at vD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:707:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:862:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65j0:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65j0h1:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:708:6
+    at r (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:70:9812)
+[    5898ms] Identifier 'TCRMEmbed' has already been declared
+[    6047ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/non-payment/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[    6052ms] [ERROR] TypeError: Cannot read properties of undefined (reading 'data')
+    at dFt.getOverdueAccounts (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2120:54849)
+    at async https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2126:197468 @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[    6053ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/crm/index:0
+[    6055ms] [ERROR] getCrmUserToken - Error on get crm user token: TypeError: Cannot read properties of undefined (reading 'data')
+    at PP.getUserToken (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2104:56290)
+    at async https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2104:56553 @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[    6666ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:101
+[    6666ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:101
+[    6707ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:76
+[    6736ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[    6932ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/non-payment/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[    6934ms] [ERROR] TypeError: Cannot read properties of undefined (reading 'data')
+    at dFt.getOverdueAccounts (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2120:54849)
+    at async https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2126:197468 @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[    7099ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:101
+[    7099ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:101
+[    7125ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:76
+[    7154ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[    7573ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[   38352ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[   43144ms] Identifier 'TCRMEmbed' has already been declared
+[  104206ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://p.clarity.ms/collect:0
+[  148526ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/tags?status=ACTIVE&include=uuid,category,status&per_page=10:0
+[  148529ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/tags?category=SUCCESS&include=uuid,category,status:0
+[  228110ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/tags?category=INVALIDO:0
+[  228111ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/tags?status=XPTO:0
+[  264628ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/tags?per_page=0&include=uuid,category:0
+[  264634ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/tags?category[]=DEFAULT&category[]=SUCCESS&include=uuid,category&per_page=20:0
+[  337873ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/tags?category=DEFAULT,SUCCESS&include=uuid,category:0
+[  337876ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/tags?category[0]=DEFAULT&category[1]=SUCCESS&include=uuid,category:0
+[  337957ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/tags?order=invalid_field&include=uuid:0
+[  379333ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/tags?per_page=1:0
+[  379495ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/tags?per_page=-1:0
+[  379507ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/tags?page=-1:0
+[ 1153190ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/546551196_810687678111403_1972125146864179804_n.jpg?ccb=11-4&oh=01_Q5Aa2gHtS_p3EXNKTxy_u6QHwC1N-v-uBkKQALJGbCFElJBMIA&oe=68EBD2D0&_nc_sid=5e03e0&_nc_cat=106:0
+[ 1283169ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:101
+[ 1283169ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:101
+[ 1283319ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:76
+[ 1283774ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[ 1283878ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:901:429
+    at cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:903:31)
+    at Md.bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:92)
+    at Md.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at fb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Md.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Iq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at sf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:726:315
+    at UA (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:651:1)
+    at ZA.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:655:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:673:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:131)
+    at oC (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:773)
+    at rC (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:679:29)
+    at vD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:707:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65j0:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:862:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65j0:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:708:6
+    at r (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:70:9812)
+[ 1285294ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/594404168_1900892990505802_8370711389218786582_n.jpg?ccb=11-4&oh=01_Q5Aa3QFnRzL7BIw8CTt_YHvZjJtoFe7B53WU9bbS7b7Qkd7FmQ&oe=69563806&_nc_sid=5e03e0&_nc_cat=102:0
+[ 1286398ms] Identifier 'TCRMEmbed' has already been declared

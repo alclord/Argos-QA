@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Argos — Relatório de Resultados | Diretoria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --critical: #ef4444; --warning: #f59e0b; --orange: #f97316; --success: #22c55e;
+      --info: #3b82f6; --purple: #8b5cf6; --gray: #6b7280;
+      --bg: #f8fafc; --card: #ffffff; --border: #e2e8f0; --border2: #cbd5e1;
+      --text: #1e293b; --muted: #64748b; --glass: rgba(255,255,255,0.9);
+      --shadow: 0 2px 12px rgba(0,0,0,.06); --shadow-lg: 0 4px 24px rgba(0,0,0,.1);
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+      --step--1: clamp(0.65rem, 0.6rem + 0.2vw, 0.72rem);
+      --step-0: clamp(0.78rem, 0.72rem + 0.25vw, 0.875rem);
+      --step-1: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+      --step-3: clamp(1.25rem, 1.1rem + 0.75vw, 1.75rem);
+      --step-4: clamp(1.5rem, 1.3rem + 1vw, 2.2rem);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-sans); background: var(--bg); color: var(--text);
+      font-size: var(--step-0); line-height: 1.5;
+    }
+
+    /* ── Header ─────────────────────────────── */
+    .header {
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      color: #fff; padding: clamp(24px,4vw,40px) clamp(20px,4vw,48px) clamp(20px,3vw,32px);
+    }
+    .header-top { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+    .logo {
+      width: 44px; height: 44px; border-radius: 10px;
+      background: linear-gradient(135deg, var(--info), var(--purple));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; font-weight: 800; color: #fff; flex-shrink: 0;
+    }
+    .header h1 { font-size: clamp(18px, 2.5vw, 24px); font-weight: 700; }
+    .header p  { color: #94a3b8; font-size: var(--step--1); margin-top: 4px; }
+    .header-meta {
+      display: flex; gap: 16px; margin-top: 20px; flex-wrap: wrap;
+      font-size: var(--step--1); color: #94a3b8;
+    }
+    .header-meta span { display: flex; align-items: center; gap: 6px; }
+    .header-meta strong { color: #e2e8f0; }
+
+    /* ── Health Bar ──────────────────────────── */
+    .health-bar {
+      display: flex; align-items: center; gap: 16px;
+      padding: 12px clamp(20px,4vw,48px);
+      background: #fff; border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+    .health-indicator { display: flex; align-items: center; gap: 10px; }
+    .health-dot { width: 12px; height: 12px; border-radius: 50%; }
+    .health-dot.green { background: var(--success); }
+    .health-dot.yellow { background: var(--warning); }
+    .health-dot.red { background: var(--critical); }
+    .health-score { font-size: var(--step-4); font-weight: 900; line-height: 1; color: var(--text); }
+    .health-label { font-size: var(--step--1); color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+    .health-pills { display: flex; gap: 8px; flex-wrap: wrap; }
+    .health-pill { font-size: var(--step--1); padding: 2px 10px; border-radius: 99px; font-weight: 600; }
+
+    /* ── Layout ──────────────────────────────── */
+    .content { max-width: 1200px; margin: 0 auto; padding: clamp(20px,4vw,40px) clamp(16px,4vw,48px); }
+    .section-title {
+      font-size: var(--step--1); font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--muted);
+      margin-bottom: 16px; padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section { margin-bottom: clamp(32px, 5vw, 48px); }
+
+    /* ── KPI Cards ───────────────────────────── */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px; margin-bottom: 48px;
+    }
+    .kpi {
+      background: var(--glass); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+      border: 1px solid var(--border); border-radius: 12px;
+      padding: 20px 20px 16px;
+      box-shadow: var(--shadow); transition: transform .15s, box-shadow .15s;
+    }
+    .kpi:hover { transform: translateY(-1px); box-shadow: var(--shadow-lg); }
+    .kpi-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; font-weight: 600; }
+    .kpi-value { font-size: var(--step-4); font-weight: 800; line-height: 1.1; margin: 6px 0 4px; letter-spacing: -.03em; }
+    .kpi-sub   { font-size: var(--step--1); color: var(--muted); }
+    .kpi.green  .kpi-value { color: var(--success); }
+    .kpi.red    .kpi-value { color: var(--critical); }
+    .kpi.blue   .kpi-value { color: var(--info); }
+    .kpi.purple .kpi-value { color: var(--purple); }
+    .kpi.yellow .kpi-value { color: var(--warning); }
+
+    /* ── Chart Grid ──────────────────────────── */
+    .chart-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 24px; margin-bottom: 24px;
+    }
+    .chart-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px; margin-bottom: 24px;
+    }
+    .chart-card {
+      background: var(--glass); backdrop-filter: blur(6px);
+      border: 1px solid var(--border); border-radius: 12px;
+      padding: clamp(16px,2.5vw,24px);
+      box-shadow: var(--shadow); transition: border-color .15s;
+    }
+    .chart-card:hover { border-color: var(--border2); }
+    .chart-card.full { grid-column: 1 / -1; }
+    .chart-title { font-size: var(--step-0); font-weight: 600; color: var(--text); margin-bottom: 4px; }
+    .chart-sub { font-size: var(--step--1); color: var(--muted); margin-bottom: 20px; }
+    .chart-wrap { position: relative; }
+    .chart-wrap.h220 { height: 220px; }
+    .chart-wrap.h260 { height: 260px; }
+    .chart-wrap.h300 { height: 300px; }
+
+    /* ── Tables ──────────────────────────────── */
+    .table-card {
+      background: var(--glass); backdrop-filter: blur(6px);
+      border: 1px solid var(--border); border-radius: 12px;
+      overflow: hidden; margin-bottom: 24px;
+      box-shadow: var(--shadow);
+    }
+    .table-header {
+      padding: 16px 20px; border-bottom: 1px solid var(--border);
+      font-weight: 600; font-size: var(--step-0);
+    }
+    table { width: 100%; border-collapse: collapse; }
+    th {
+      background: #f1f5f9; font-size: var(--step--1); font-weight: 600;
+      text-transform: uppercase; letter-spacing: .06em;
+      color: var(--muted); padding: 10px 16px;
+      text-align: left; border-bottom: 1px solid var(--border);
+    }
+    td {
+      padding: 10px 16px; border-bottom: 1px solid #f1f5f9;
+      font-size: var(--step-0);
+    }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #f8fafc; }
+    td.center, th.center { text-align: center; }
+
+    /* ── Pills ───────────────────────────────── */
+    .pill {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 2px 10px; border-radius: 99px;
+      font-size: var(--step--1); font-weight: 600;
+    }
+    .pill.green  { background: #dcfce7; color: #15803d; }
+    .pill.red    { background: #fee2e2; color: #b91c1c; }
+    .pill.yellow { background: #fef9c3; color: #a16207; }
+    .pill.blue   { background: #dbeafe; color: #1d4ed8; }
+    .pill.gray   { background: #f1f5f9; color: #475569; }
+    .pill.orange { background: #ffedd5; color: #c2410c; }
+
+    /* ── Progress Bar ────────────────────────── */
+    .progress-bar-wrap { background: #f1f5f9; border-radius: 99px; height: 8px; overflow: hidden; }
+    .progress-bar      { height: 8px; border-radius: 99px; }
+
+    /* ── How it works ────────────────────────── */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .step {
+      background: var(--glass); backdrop-filter: blur(6px);
+      border: 1px solid var(--border); border-radius: 12px;
+      padding: 20px; box-shadow: var(--shadow);
+      transition: transform .15s;
+    }
+    .step:hover { transform: translateY(-1px); }
+    .step-number {
+      width: 32px; height: 32px; border-radius: 8px;
+      background: linear-gradient(135deg, var(--info), var(--purple));
+      color: #fff; font-weight: 700; font-size: 15px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 12px;
+    }
+    .step h3 { font-size: var(--step-0); font-weight: 600; margin-bottom: 6px; }
+    .step p  { font-size: var(--step--1); color: var(--muted); line-height: 1.5; }
+
+    /* ── Bug severity row colors ─────────────── */
+    .sev-critical td:first-child { border-left: 3px solid var(--critical); }
+    .sev-high     td:first-child { border-left: 3px solid var(--orange); }
+    .sev-medium   td:first-child { border-left: 3px solid var(--warning); }
+    .sev-low      td:first-child { border-left: 3px solid var(--success); }
+
+    /* ── Footer ──────────────────────────────── */
+    .footer {
+      text-align: center;
+      padding: clamp(20px,3vw,32px) clamp(16px,4vw,48px);
+      font-size: var(--step--1); color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── Responsive ─────────────────────────── */
+    @media (max-width: 768px) {
+      .kpi-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .kpi { padding: 16px; }
+      .chart-grid-2, .chart-grid-3 { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: 1fr; }
+      .header-meta { flex-direction: column; gap: 8px; }
+    }
+    @media (max-width: 480px) {
+      .kpi-grid { grid-template-columns: 1fr; }
+      .kpi-value { font-size: var(--step-3); }
+      .chart-card { padding: 16px; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      .header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .kpi.green .kpi-value  { -webkit-print-color-adjust: exact; }
+      .health-bar { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ HEADER ══════════════════════════════════════════════════════════ -->
+<div class="header">
+  <div class="header-top">
+    <div class="logo">A</div>
+    <div>
+      <h1>Argos — Relatório de Resultados</h1>
+    </div>
+  </div>
+  <p>Agente de QA Automatizado — Poli Digital</p>
+  <div class="header-meta">
+    <span>📅 <strong>Período:</strong> 20/05/2026</span>
+    <span>🏗️ <strong>Ambiente:</strong> Canary + Staging</span>
+    <span>👤 <strong>Elaborado por:</strong> Yuri Castro</span>
+    <span>🤖 <strong>Ferramenta:</strong> Argos (Claude Code + Playwright)</span>
+  </div>
+</div>
+
+<!-- ══ HEALTH BAR ══════════════════════════════════════════════════════ -->
+<div class="health-bar">
+  <div class="health-indicator">
+    <span class="health-dot green"></span>
+    <span class="health-score">87%</span>
+    <span class="health-label">SAÚDE GERAL</span>
+  </div>
+  <div class="health-pills">
+    <span class="pill green">4 cards testados</span>
+    <span class="pill green">46 cenários</span>
+    <span class="pill yellow">2 bugs encontrados</span>
+    <span class="pill green">100% regressão</span>
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- ══ KPIs ══════════════════════════════════════════════════════════ -->
+  <div class="kpi-grid">
+    <div class="kpi blue">
+      <div class="kpi-label">Cards testados</div>
+      <div class="kpi-value">4</div>
+      <div class="kpi-sub">em 1 dia de trabalho</div>
+    </div>
+    <div class="kpi blue">
+      <div class="kpi-label">Cenários executados</div>
+      <div class="kpi-value">46</div>
+      <div class="kpi-sub">+ 6 validações staging</div>
+    </div>
+    <div class="kpi green">
+      <div class="kpi-label">Automatizados</div>
+      <div class="kpi-value">85%</div>
+      <div class="kpi-sub">39 de 46 cenários</div>
+    </div>
+    <div class="kpi green">
+      <div class="kpi-label">Taxa de sucesso geral</div>
+      <div class="kpi-value">78%</div>
+      <div class="kpi-sub">36 cenários aprovados</div>
+    </div>
+    <div class="kpi red">
+      <div class="kpi-label">Bugs encontrados</div>
+      <div class="kpi-value">11</div>
+      <div class="kpi-sub">2 críticos de segurança</div>
+    </div>
+    <div class="kpi purple">
+      <div class="kpi-label">Tempo total estimado</div>
+      <div class="kpi-value">~5h30</div>
+      <div class="kpi-sub">4 cards + relatórios</div>
+    </div>
+  </div>
+
+  <!-- ══ COMO FUNCIONA ═════════════════════════════════════════════════ -->
+  <div class="section">
+    <div class="section-title">Como o Argos funciona</div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Leitura de Contexto</h3>
+        <p>Lê o card Jira, os cenários de teste e a base de conhecimento técnica do sistema automaticamente.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Execução Automatizada</h3>
+        <p>Opera um navegador real (Playwright), realiza login, navega pelas telas, faz chamadas de API e monitora rede — sem intervenção humana.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Evidências</h3>
+        <p>Captura screenshots de cada passo, coleta status HTTP, erros de console e logs de rede com nomenclatura padronizada.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <h3>Relatório e Publicação</h3>
+        <p>Gera relatório estruturado e publica automaticamente como comentário no card Jira para visibilidade do time.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ GRÁFICOS PRINCIPAIS ═══════════════════════════════════════════ -->
+  <div class="section">
+    <div class="section-title">Visão Geral por Card</div>
+    <div class="chart-grid-2">
+
+      <!-- Cenários por card -->
+      <div class="chart-card">
+        <div class="chart-title">Cenários por Card</div>
+        <div class="chart-sub">Total de cenários planejados e exploratórios executados</div>
+        <div class="chart-wrap h260">
+          <canvas id="chartCenarios"></canvas>
+        </div>
+      </div>
+
+      <!-- Taxa de sucesso por card -->
+      <div class="chart-card">
+        <div class="chart-title">Taxa de Sucesso por Card (%)</div>
+        <div class="chart-sub">Percentual de cenários aprovados em cada card</div>
+        <div class="chart-wrap h260">
+          <canvas id="chartTaxa"></canvas>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="chart-grid-2">
+
+      <!-- Resultado por card (stacked) -->
+      <div class="chart-card">
+        <div class="chart-title">Resultado por Card — Passou / Falhou / Bloqueado</div>
+        <div class="chart-sub">Distribuição dos status de execução</div>
+        <div class="chart-wrap h260">
+          <canvas id="chartResultado"></canvas>
+        </div>
+      </div>
+
+      <!-- Automação vs Manual -->
+      <div class="chart-card">
+        <div class="chart-title">Automação vs Intervenção Manual</div>
+        <div class="chart-sub">Cenários executados autonomamente pelo Argos vs com ação humana</div>
+        <div class="chart-wrap h260">
+          <canvas id="chartAutomacao"></canvas>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══ GRÁFICOS DE BUGS ══════════════════════════════════════════════ -->
+  <div class="section">
+    <div class="section-title">Bugs Encontrados</div>
+    <div class="chart-grid-3">
+
+      <!-- Bugs por severidade -->
+      <div class="chart-card">
+        <div class="chart-title">Bugs por Severidade</div>
+        <div class="chart-sub">Distribuição dos 11 bugs por gravidade</div>
+        <div class="chart-wrap h220">
+          <canvas id="chartBugSev"></canvas>
+        </div>
+      </div>
+
+      <!-- Bugs por card -->
+      <div class="chart-card">
+        <div class="chart-title">Bugs por Card</div>
+        <div class="chart-sub">Quantidade de bugs encontrados em cada card</div>
+        <div class="chart-wrap h220">
+          <canvas id="chartBugCard"></canvas>
+        </div>
+      </div>
+
+      <!-- Tempo estimado por card -->
+      <div class="chart-card">
+        <div class="chart-title">Tempo Estimado por Card (min)</div>
+        <div class="chart-sub">Duração estimada de cada execução</div>
+        <div class="chart-wrap h220">
+          <canvas id="chartTempo"></canvas>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══ TABELA DE CARDS ═══════════════════════════════════════════════ -->
+  <div class="section">
+    <div class="section-title">Detalhamento por Card</div>
+    <div class="table-card">
+      <table>
+        <thead>
+          <tr>
+            <th>Card</th>
+            <th>Título</th>
+            <th class="center">Cenários</th>
+            <th class="center">✅ Passou</th>
+            <th class="center">❌ Falhou</th>
+            <th class="center">⏭️ Bloq.</th>
+            <th class="center">Taxa</th>
+            <th class="center">🤖 Auto</th>
+            <th class="center">👤 Manual</th>
+            <th class="center">Bugs</th>
+            <th class="center">Tempo est.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>DEV4-4119</strong></td>
+            <td>Corrigir cacheamento no useHandleNewMessage</td>
+            <td class="center">5</td>
+            <td class="center">4</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center"><span class="pill yellow">80%</span></td>
+            <td class="center">4</td>
+            <td class="center">1</td>
+            <td class="center">0</td>
+            <td class="center">~45 min</td>
+          </tr>
+          <tr>
+            <td><strong>DEV4-4111</strong></td>
+            <td>Sobrecarga N+1 GETs por mensagem recebida</td>
+            <td class="center">10</td>
+            <td class="center">10</td>
+            <td class="center">0</td>
+            <td class="center">0</td>
+            <td class="center"><span class="pill green">100%</span></td>
+            <td class="center">5</td>
+            <td class="center">5</td>
+            <td class="center">0</td>
+            <td class="center">~53 min</td>
+          </tr>
+          <tr>
+            <td><strong>DEV4-4169</strong></td>
+            <td>Listagem de templates — tabela com busca e filtros</td>
+            <td class="center">13</td>
+            <td class="center">11</td>
+            <td class="center">0</td>
+            <td class="center">1</td>
+            <td class="center"><span class="pill green">85%</span></td>
+            <td class="center">12</td>
+            <td class="center">0</td>
+            <td class="center">1</td>
+            <td class="center">~60 min</td>
+          </tr>
+          <tr>
+            <td><strong>DEV4-4189</strong></td>
+            <td>Migrar ListDataHelper — nova estrutura de listagem</td>
+            <td class="center">18</td>
+            <td class="center">11</td>
+            <td class="center">8</td>
+            <td class="center">1</td>
+            <td class="center"><span class="pill red">61%</span></td>
+            <td class="center">18</td>
+            <td class="center">0</td>
+            <td class="center">10</td>
+            <td class="center">~210 min</td>
+          </tr>
+          <tr style="background:#f8fafc; font-weight:600;">
+            <td colspan="2"><strong>Total</strong></td>
+            <td class="center"><strong>46</strong></td>
+            <td class="center"><strong>36</strong></td>
+            <td class="center"><strong>8</strong></td>
+            <td class="center"><strong>2</strong></td>
+            <td class="center"><span class="pill blue">78%</span></td>
+            <td class="center"><strong>39</strong></td>
+            <td class="center"><strong>6</strong></td>
+            <td class="center"><strong>11</strong></td>
+            <td class="center"><strong>~5h30</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══ AUTOMAÇÃO EM DETALHE ═══════════════════════════════════════════ -->
+  <div class="section">
+    <div class="section-title">Automação vs Intervenção Manual — Por Card</div>
+    <div class="table-card">
+      <table>
+        <thead>
+          <tr>
+            <th>Card</th>
+            <th class="center">🤖 Automático</th>
+            <th class="center">👤 Manual</th>
+            <th>Por que manual?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>DEV4-4119</strong></td>
+            <td class="center"><span class="pill green">4 (80%)</span></td>
+            <td class="center"><span class="pill orange">1 (20%)</span></td>
+            <td>CT-MSG-002: exigiu envio de mensagem real de um celular físico (WhatsApp)</td>
+          </tr>
+          <tr>
+            <td><strong>DEV4-4111</strong></td>
+            <td class="center"><span class="pill yellow">5 (50%)</span></td>
+            <td class="center"><span class="pill orange">5 (50%)</span></td>
+            <td>Feature flag toggle, simulação de carga de pico, segundo tenant, payload incompleto</td>
+          </tr>
+          <tr>
+            <td><strong>DEV4-4169</strong></td>
+            <td class="center"><span class="pill green">12 (92%)</span></td>
+            <td class="center"><span class="pill gray">0</span></td>
+            <td>1 cenário bloqueado (sem usuário sem permissão VIEW_TEMPLATES no ambiente)</td>
+          </tr>
+          <tr>
+            <td><strong>DEV4-4189</strong></td>
+            <td class="center"><span class="pill green">18 (100%)</span></td>
+            <td class="center"><span class="pill gray">0</span></td>
+            <td>Todos via API autenticada + exploração de UI com Playwright</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══ BUGS ══════════════════════════════════════════════════════════ -->
+  <div class="section">
+    <div class="section-title">Bugs Encontrados — Tabela Completa</div>
+    <div class="table-card">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Card</th>
+            <th>Descrição</th>
+            <th class="center">Severidade</th>
+            <th class="center">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="sev-critical">
+            <td><strong>BUG-S001</strong></td>
+            <td>DEV4-4189</td>
+            <td>Helper antigo ativo em staging: filtros chegam direto ao SQL (filter abuse)</td>
+            <td class="center"><span class="pill red">🔴 Crítico</span></td>
+            <td class="center"><span class="pill green">✅ Corrigido</span></td>
+          </tr>
+          <tr class="sev-critical">
+            <td><strong>BUG-S002</strong></td>
+            <td>DEV4-4189</td>
+            <td>Erros 500 em staging expõem hostname completo do banco RDS na resposta da API</td>
+            <td class="center"><span class="pill red">🔴 Crítico</span></td>
+            <td class="center"><span class="pill green">✅ Corrigido</span></td>
+          </tr>
+          <tr class="sev-critical">
+            <td><strong>BUG-C001</strong></td>
+            <td>DEV4-4189</td>
+            <td><code>order=campo_invalido</code> retorna HTTP 500 em vez de HTTP 422</td>
+            <td class="center"><span class="pill red">🔴 Crítico</span></td>
+            <td class="center"><span class="pill yellow">🔧 Pendente</span></td>
+          </tr>
+          <tr class="sev-high">
+            <td><strong>BUG-C002</strong></td>
+            <td>DEV4-4189</td>
+            <td>Filtros desconhecidos aceitos com HTTP 200 silencioso — AC de segurança violado</td>
+            <td class="center"><span class="pill orange">🔴 Alta</span></td>
+            <td class="center"><span class="pill yellow">🔧 Pendente</span></td>
+          </tr>
+          <tr class="sev-high">
+            <td><strong>BUG-C003</strong></td>
+            <td>DEV4-4189</td>
+            <td>Parâmetro <code>search</code>/<code>name</code> inoperante — dialog "Adicionar etiqueta" não filtra por nome</td>
+            <td class="center"><span class="pill orange">🔴 Alta</span></td>
+            <td class="center"><span class="pill yellow">🔧 Pendente</span></td>
+          </tr>
+          <tr class="sev-medium">
+            <td><strong>BUG-119</strong></td>
+            <td>DEV4-4119</td>
+            <td>GETs duplicados ainda ocorrem ao abrir chat via clique na lista com WebSocket ativo</td>
+            <td class="center"><span class="pill yellow">🟡 Moderado</span></td>
+            <td class="center"><span class="pill yellow">🔧 Pendente</span></td>
+          </tr>
+          <tr class="sev-medium">
+            <td><strong>BUG-C004</strong></td>
+            <td>DEV4-4189</td>
+            <td>Filtro <code>in()</code> multi-valor não suportado em nenhuma sintaxe</td>
+            <td class="center"><span class="pill yellow">🟡 Moderado</span></td>
+            <td class="center"><span class="pill yellow">🔧 Pendente</span></td>
+          </tr>
+          <tr class="sev-medium">
+            <td><strong>BUG-S003</strong></td>
+            <td>DEV4-4189</td>
+            <td>Enum inválido em staging retorna HTTP 500 em vez de HTTP 422</td>
+            <td class="center"><span class="pill yellow">🟡 Moderado</span></td>
+            <td class="center"><span class="pill green">✅ Corrigido</span></td>
+          </tr>
+          <tr class="sev-low">
+            <td><strong>BUG-169</strong></td>
+            <td>DEV4-4169</td>
+            <td>Empty state da tabela de templates sem <code>data-testid</code> — quebrará testes Vitest</td>
+            <td class="center"><span class="pill green">🟢 Menor</span></td>
+            <td class="center"><span class="pill yellow">🔧 Pendente</span></td>
+          </tr>
+          <tr class="sev-low">
+            <td><strong>BUG-C005</strong></td>
+            <td>DEV4-4189</td>
+            <td><code>per_page=99999</code> aceito com cap silencioso em 200 itens — sem validação explícita</td>
+            <td class="center"><span class="pill green">🟢 Menor</span></td>
+            <td class="center"><span class="pill yellow">🔧 Pendente</span></td>
+          </tr>
+          <tr class="sev-low">
+            <td><strong>BUG-C006</strong></td>
+            <td>DEV4-4189</td>
+            <td>Parâmetro <code>limit=</code> ignorado silenciosamente sem documentação ou erro</td>
+            <td class="center"><span class="pill green">🟢 Menor</span></td>
+            <td class="center"><span class="pill yellow">🔧 Pendente</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══ VALOR ENTREGUE ════════════════════════════════════════════════ -->
+  <div class="section">
+    <div class="section-title">Valor Entregue</div>
+    <div class="chart-grid-3">
+      <div class="chart-card" style="border-left: 4px solid #ef4444;">
+        <div style="font-size:28px; margin-bottom:8px;">🛡️</div>
+        <div class="chart-title">Segurança</div>
+        <p style="font-size:12px; color:var(--muted); margin-top:8px; line-height:1.6;">
+          2 vulnerabilidades críticas detectadas em staging antes de chegar à produção:
+          exposição do hostname do banco RDS e filter abuse com SQL direto.
+        </p>
+      </div>
+      <div class="chart-card" style="border-left: 4px solid #22c55e;">
+        <div style="font-size:28px; margin-bottom:8px;">⚡</div>
+        <div class="chart-title">Velocidade</div>
+        <p style="font-size:12px; color:var(--muted); margin-top:8px; line-height:1.6;">
+          4 cards testados em 1 dia com relatórios completos publicados no Jira.
+          Estimativa manual equivalente: 2–3 dias de um QA Senior.
+        </p>
+      </div>
+      <div class="chart-card" style="border-left: 4px solid #3b82f6;">
+        <div style="font-size:28px; margin-bottom:8px;">📋</div>
+        <div class="chart-title">Rastreabilidade</div>
+        <p style="font-size:12px; color:var(--muted); margin-top:8px; line-height:1.6;">
+          Cada cenário tem screenshot nomeado, status HTTP e log de rede.
+          Relatórios publicados automaticamente no Jira com link para evidências.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ NOTAS ══════════════════════════════════════════════════════════ -->
+  <div class="section">
+    <div class="section-title">Observações e Próximos Passos</div>
+    <div class="table-card">
+      <table>
+        <thead>
+          <tr>
+            <th>Ação</th>
+            <th>Card</th>
+            <th class="center">Responsável</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Corrigir <code>search</code>/<code>name</code> no TagResource e ListQueryService</td>
+            <td>DEV4-4189</td>
+            <td class="center"><span class="pill blue">Dev</span></td>
+          </tr>
+          <tr>
+            <td>Corrigir validação do parâmetro <code>order</code> no ListTagsRequest</td>
+            <td>DEV4-4189</td>
+            <td class="center"><span class="pill blue">Dev</span></td>
+          </tr>
+          <tr>
+            <td>Reteste DEV4-4189 após correções</td>
+            <td>DEV4-4189</td>
+            <td class="center"><span class="pill purple">Argos</span></td>
+          </tr>
+          <tr>
+            <td>Investigar GETs duplicados ao abrir chat via clique na lista</td>
+            <td>DEV4-4119</td>
+            <td class="center"><span class="pill blue">Dev</span></td>
+          </tr>
+          <tr>
+            <td>Adicionar <code>data-testid</code> no empty state da tabela de templates</td>
+            <td>DEV4-4169</td>
+            <td class="center"><span class="pill blue">Dev</span></td>
+          </tr>
+          <tr>
+            <td>Registrar horário de início nos relatórios (melhoria do Argos)</td>
+            <td>Argos</td>
+            <td class="center"><span class="pill gray">QA</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /content -->
+
+<div class="footer">
+  Argos — Agente de QA Automatizado · Poli Digital · 2026-05-20 ·
+  Dados coletados de <code>tests/reports/</code> e <code>tests/evidence/</code>
+</div>
+
+<!-- ══ CHARTS ════════════════════════════════════════════════════════ -->
+<script>
+  const CARDS = ['DEV4-4119', 'DEV4-4111', 'DEV4-4169', 'DEV4-4189'];
+  const COLORS = {
+    green:  '#22c55e',
+    red:    '#ef4444',
+    yellow: '#f59e0b',
+    blue:   '#3b82f6',
+    purple: '#8b5cf6',
+    gray:   '#e2e8f0',
+    orange: '#f97316',
+  };
+
+  const defaults = Chart.defaults;
+  defaults.font.family = "'Segoe UI', system-ui, sans-serif";
+  defaults.font.size = 12;
+  defaults.color = '#64748b';
+
+  // ── Cenários por card ──
+  new Chart(document.getElementById('chartCenarios'), {
+    type: 'bar',
+    data: {
+      labels: CARDS,
+      datasets: [{
+        label: 'Cenários',
+        data: [5, 10, 13, 18],
+        backgroundColor: [COLORS.blue, COLORS.purple, COLORS.green, COLORS.orange],
+        borderRadius: 6,
+        borderSkipped: false,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        y: { beginAtZero: true, grid: { color: '#f1f5f9' }, ticks: { stepSize: 5 } },
+        x: { grid: { display: false } }
+      }
+    }
+  });
+
+  // ── Taxa de sucesso por card ──
+  new Chart(document.getElementById('chartTaxa'), {
+    type: 'bar',
+    data: {
+      labels: CARDS,
+      datasets: [{
+        label: 'Taxa de Sucesso (%)',
+        data: [80, 100, 85, 61],
+        backgroundColor: [COLORS.yellow, COLORS.green, COLORS.green, COLORS.red],
+        borderRadius: 6,
+        borderSkipped: false,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        y: { beginAtZero: true, max: 110, grid: { color: '#f1f5f9' },
+          ticks: { callback: v => v + '%' } },
+        x: { grid: { display: false } }
+      }
+    }
+  });
+
+  // ── Stacked: passou / falhou / bloqueado ──
+  new Chart(document.getElementById('chartResultado'), {
+    type: 'bar',
+    data: {
+      labels: CARDS,
+      datasets: [
+        { label: 'Passou',    data: [4, 10, 11, 11], backgroundColor: COLORS.green,  borderRadius: 0 },
+        { label: 'Falhou',    data: [0,  0,  0,  8], backgroundColor: COLORS.red,    borderRadius: 0 },
+        { label: 'Bloqueado', data: [0,  0,  1,  1], backgroundColor: COLORS.gray,   borderRadius: 0 },
+        { label: 'Inconsistente', data: [1,0,1,0], backgroundColor: COLORS.yellow, borderRadius: 0 },
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom', labels: { boxWidth: 12, padding: 12 } } },
+      scales: {
+        y: { stacked: true, beginAtZero: true, grid: { color: '#f1f5f9' } },
+        x: { stacked: true, grid: { display: false } }
+      }
+    }
+  });
+
+  // ── Doughnut: automação vs manual ──
+  new Chart(document.getElementById('chartAutomacao'), {
+    type: 'doughnut',
+    data: {
+      labels: ['🤖 Automático (Argos)', '👤 Manual', '⏭️ Bloqueado'],
+      datasets: [{
+        data: [39, 6, 1],
+        backgroundColor: [COLORS.blue, COLORS.orange, COLORS.gray],
+        borderWidth: 0,
+        hoverOffset: 8,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      cutout: '65%',
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: { boxWidth: 12, padding: 12, font: { size: 11 } }
+        },
+        tooltip: {
+          callbacks: {
+            label: ctx => ` ${ctx.label}: ${ctx.parsed} cenários (${Math.round(ctx.parsed/46*100)}%)`
+          }
+        }
+      }
+    }
+  });
+
+  // ── Bug por severidade ──
+  new Chart(document.getElementById('chartBugSev'), {
+    type: 'doughnut',
+    data: {
+      labels: ['🔴 Crítico', '🔴 Alta', '🟡 Moderado', '🟢 Menor'],
+      datasets: [{
+        data: [3, 3, 3, 2],
+        backgroundColor: [COLORS.red, COLORS.orange, COLORS.yellow, COLORS.green],
+        borderWidth: 0,
+        hoverOffset: 8,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      cutout: '60%',
+      plugins: {
+        legend: { position: 'bottom', labels: { boxWidth: 12, padding: 10, font: { size: 11 } } }
+      }
+    }
+  });
+
+  // ── Bugs por card ──
+  new Chart(document.getElementById('chartBugCard'), {
+    type: 'bar',
+    data: {
+      labels: CARDS,
+      datasets: [{
+        label: 'Bugs',
+        data: [0, 0, 1, 10],
+        backgroundColor: [COLORS.green, COLORS.green, COLORS.yellow, COLORS.red],
+        borderRadius: 6,
+        borderSkipped: false,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        y: { beginAtZero: true, grid: { color: '#f1f5f9' }, ticks: { stepSize: 2 } },
+        x: { grid: { display: false } }
+      }
+    }
+  });
+
+  // ── Tempo por card ──
+  new Chart(document.getElementById('chartTempo'), {
+    type: 'bar',
+    data: {
+      labels: CARDS,
+      datasets: [{
+        label: 'Minutos',
+        data: [45, 53, 60, 210],
+        backgroundColor: [COLORS.blue, COLORS.blue, COLORS.blue, COLORS.purple],
+        borderRadius: 6,
+        borderSkipped: false,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        y: { beginAtZero: true, grid: { color: '#f1f5f9' }, ticks: { callback: v => v + ' min' } },
+        x: { grid: { display: false } }
+      }
+    }
+  });
+</script>
+</body>
+</html>

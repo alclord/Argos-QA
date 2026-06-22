@@ -1,0 +1,37 @@
+[    1885ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:101
+[    1885ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:101
+[    2036ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:76
+[    2693ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:69
+[    2717ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:69
+[    2726ms] [ERROR] error ao buscar chats TypeError: Cannot read properties of undefined (reading 'data')
+    at Aft (https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:1037:26293)
+    at async C (https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:54:37544)
+    at async Object.d [as fn] (https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:54:37851) @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:69
+[    3035ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/users/settings/summary:0
+[    3037ms] [ERROR] [UserPreferencesService] Failed to get summary: TypeError: Cannot read properties of undefined (reading 'data')
+    at rte.getSummary (https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:2143:64704)
+    at async https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:2143:65364 @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:69
+[    3038ms] [ERROR] [useUserPreferences] Error: TypeError: Cannot read properties of undefined (reading 'data')
+    at rte.getSummary (https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:2143:64704)
+    at async https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:2143:65364 @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:69
+[    3793ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:101
+[    3794ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:101
+[    3854ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:76
+[    3879ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:69
+[    4360ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:69
+[   83467ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:69
+[  166186ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/logs/behavior:0
+[  166254ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api.qa.poli.digital/v3/contacts/5c12ea50-1bdd-11f1-a609-021f6d257969/call_history:0
+[  166257ms] [ERROR] error closeOrCalled AxiosError: Request failed with status code 500
+    at W2e (https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:1001:10177)
+    at XMLHttpRequest.w (https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:1001:15705) @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:69
+[  166269ms] AxiosError: Request failed with status code 500
+    at W2e (https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:1001:10177)
+    at XMLHttpRequest.w (https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:1001:15705)
+[  195583ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:101
+[  195583ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:101
+[  195668ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:76
+[  196306ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:69
+[  201260ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/logs/behavior:0
+[  202902ms] Identifier 'TCRMEmbed' has already been declared
+[  215025ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/logs/behavior:0

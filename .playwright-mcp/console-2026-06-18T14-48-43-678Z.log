@@ -1,0 +1,148 @@
+[   16618ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:9
+[   16618ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:9
+[   16918ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-Dct_DfaC.js:27
+[   17342ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:904:429
+    at $R (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:906:31)
+    at Od.ZR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:903:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:317:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:263:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at k.Vq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:274:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:729:315
+    at Mz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:632:1)
+    at Tz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:637:289)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:657:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:206:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:658:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:658:100)
+    at qB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:658:742)
+    at tB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:662:183)
+    at DD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:706:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:710:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e66g1:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:869:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e66h0h2:553:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:710:457
+    at r (https://spa-canary.poli.digital/assets/index-Dct_DfaC.js:21:10021)
+[   17440ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-Dct_DfaC.js:20
+[   18085ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[   18090ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/broadcasting/auth:0
+[   18097ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/chats/pinned:0
+[   18110ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[   18111ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/settings:0
+[   18113ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/users/settings/summary:0
+[   18119ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/non-payment/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[   18127ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/crm/index:0
+[   18229ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[   20481ms] Identifier 'TCRMEmbed' has already been declared
+[   57702ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/473401787_1776961919511233_1796431923958519858_n.jpg?ccb=11-4&oh=01_Q5Aa3gGfUimcsz5PJCl57DyIzZByr1rsN6CeYgYIYyjFXiIZOA&oe=698DB2E8&_nc_sid=5e03e0&_nc_cat=104:0
+[   69062ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:9
+[   69062ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:9
+[   69209ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-Dct_DfaC.js:27
+[   69755ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-Dct_DfaC.js:20
+[   70342ms] Identifier 'TCRMEmbed' has already been declared
+[   70362ms] Identifier 'TCRMEmbed' has already been declared
+[   70382ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:904:429
+    at $R (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:906:31)
+    at Od.ZR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:903:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:317:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:263:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at k.Vq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:274:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:729:315
+    at Mz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:632:1)
+    at Tz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:637:289)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:657:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:206:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:658:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:658:100)
+    at qB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:658:742)
+    at tB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:662:183)
+    at DD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:706:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:710:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e66g1:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:869:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e66h0h2:553:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:710:457
+    at r (https://spa-canary.poli.digital/assets/index-Dct_DfaC.js:21:10021)
+[   72894ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/473401787_1776961919511233_1796431923958519858_n.jpg?ccb=11-4&oh=01_Q5Aa3gGfUimcsz5PJCl57DyIzZByr1rsN6CeYgYIYyjFXiIZOA&oe=698DB2E8&_nc_sid=5e03e0&_nc_cat=104:0
+[   84048ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/582343687_883674010967360_7702721648056132525_n.jpg?ccb=11-4&oh=01_Q5Aa4QEjMmSkVJbyZvIh6_nY1jIbTaKGx15KmlqIRfD2ss6Dzw&oe=69EF49EE&_nc_sid=5e03e0&_nc_cat=100:0
+[   87366ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/473401787_1776961919511233_1796431923958519858_n.jpg?ccb=11-4&oh=01_Q5Aa3gGfUimcsz5PJCl57DyIzZByr1rsN6CeYgYIYyjFXiIZOA&oe=698DB2E8&_nc_sid=5e03e0&_nc_cat=104:0
+[  103757ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/582343687_883674010967360_7702721648056132525_n.jpg?ccb=11-4&oh=01_Q5Aa4QEjMmSkVJbyZvIh6_nY1jIbTaKGx15KmlqIRfD2ss6Dzw&oe=69EF49EE&_nc_sid=5e03e0&_nc_cat=100:0
+[  122284ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/473401787_1776961919511233_1796431923958519858_n.jpg?ccb=11-4&oh=01_Q5Aa3gGfUimcsz5PJCl57DyIzZByr1rsN6CeYgYIYyjFXiIZOA&oe=698DB2E8&_nc_sid=5e03e0&_nc_cat=104:0
+[  128867ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/473401787_1776961919511233_1796431923958519858_n.jpg?ccb=11-4&oh=01_Q5Aa3gGfUimcsz5PJCl57DyIzZByr1rsN6CeYgYIYyjFXiIZOA&oe=698DB2E8&_nc_sid=5e03e0&_nc_cat=104:0
+[  273213ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/contacts/5c12ea50-1bdd-11f1-a609-021f6d257969/transfer:0
+[  273777ms] [ERROR] Failed to load resource: the server responded with a status of 405 () @ https://foundation-api-canary.poli.digital/v3/contacts/5c12ea50-1bdd-11f1-a609-021f6d257969/forward:0
+[  275322ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/contacts/5c12ea50-1bdd-11f1-a609-021f6d257969:0
+[  299392ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/chats?status=RESOLVED&order=-date_last_message&page=1&per_page=5&include=type,chat_status,attendant:0
+[  312815ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/chats?include=type,chat_status&status=OPEN&assigned_status=UNASSIGNED&order=-date_last_message&per_page=3:0
+[  398583ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  398594ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-Dct_DfaC.js:20
+[  398598ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-Dct_DfaC.js:20
+[  418016ms] Uncaught (in promise) TypeError: Cannot read properties of null (reading 'sequence')
+    at <anonymous> (https://scripts.clarity.ms/0.8.65/clarity.js:1:48859)
+    at <anonymous> (https://scripts.clarity.ms/0.8.65/clarity.js:1:6498)
+    at <anonymous> (https://scripts.clarity.ms/0.8.65/clarity.js:1:6603)
+    at o (https://scripts.clarity.ms/0.8.65/clarity.js:1:5320)
+[  478815ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.l (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:29:16460)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-Dct_DfaC.js:21:10021)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:5:44830)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:5:38431)
+    at ite.cancel (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:5:41970)
+    at ite.fetch (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:5:43792)
+    at https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:5:64573
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:5:64557
+    at Object.batch (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:5:37302)
+    at Mc.refetchQueries (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:5:64486)
+    at https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:5:64345
+    at Object.batch (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:5:37302)
+    at Mc.invalidateQueries (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:5:64239)
+    at l (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:1091:3569)
+    at tt.emit (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:26:121023)
+    at tt.handleEvent (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:26:129716)
+    at https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:27:15428
+    at ct.emit (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:26:121023)
+    at message (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:26:138034)
+    at Ze.emit (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:26:121023)
+    at message (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:26:127428)
+    at Ne.emit (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:26:121023)
+    at Ne.onMessage (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:26:122561)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:26:122782)
+    at AM.request (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:31:2139)
+    at async cwe (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:59:33845)
+    at async d (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:5:40019)
+    at async Object.l [as fn] (https://spa-canary.poli.digital/assets/modules-C8GisJ8T.js:5:40444) @ https://spa-canary.poli.digital/assets/index-Dct_DfaC.js:20

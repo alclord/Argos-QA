@@ -1,0 +1,49 @@
+[     440ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:101
+[     440ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:101
+[     499ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:76
+[     677ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:429
+    at cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:902:31)
+    at Md.bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:899:92)
+    at Md.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at fb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Md.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Rq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at sf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:726:315
+    at UA (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:651:1)
+    at ZA.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:655:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:673:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:131)
+    at oC (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:773)
+    at rC (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:679:29)
+    at vD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:707:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65i2:687:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:862:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65i2:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:708:6
+    at r (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:70:9812)
+[     947ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[ 2357877ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[ 8598364ms] [WARNING] Erro ao enviar heartbeat: AxiosError: Network Error
+    at x.onerror (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:16087)
+    at XMLHttpRequest.r (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:70:9812) @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[ 8598365ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ https://heimdall.poli.digital/auth/activity:0
+[ 8598377ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error in connection establishment: net::ERR_NETWORK_IO_SUSPENDED @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:963
+[ 8600750ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[ 8600751ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://heimdall.poli.digital/auth/inactivity:0
+[ 8600800ms] AxiosError: Network Error
+    at x.onerror (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:16087)
+    at XMLHttpRequest.r (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:70:9812)
+[ 8601121ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[ 8602978ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,keyboard_shortcut,status,type,category,namespace,language,message,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 8603158ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-0407-49a2-bce9-3620f29c513a:0

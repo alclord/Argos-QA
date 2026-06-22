@@ -1,0 +1,19 @@
+﻿Módulo;Cluster (Problema);Serviço(s) Suspeito(s);Confiança;Evidência;Cards SM;Qtd Cards
+Chat / Mensagens;Delay e falha de entrega de mensagens;polichat-web-app > waba-webhook;Alta;KB: polichat-web-app pipeline central; Sentry: 8.508 occ mime encoder polichat-spa;SM-5430, SM-5245, SM-4820, SM-4996, SM-7544, SM-7518;6
+Chat / Mensagens;Mensagem presa em ícone de relógio (status não atualiza);foundation-spa > foundation-api;Alta;DEV4-4078 confirma causa via WebSocket store; testado em DEV4-4233;SM-5910, SM-7518, SM-7519;3
+Chat / Mensagens;Impossibilidade de enviar mensagem;polichat-web-app;Média;KB: responsabilidade de outbound documentada;SM-5033, SM-5334, SM-7574, SM-7539, SM-7544;5
+Chat / Mensagens;Filtro notificação e API com falha;foundation-spa > Soketi;Especulativa;Sintoma misto — SM-7582 aponta API 500 GET /messages;SM-5401, SM-7498, SM-7511, SM-7582;4
+Chat / Mensagens;Envio em grupos WhatsApp;waba-webhook;Média;Grupos são canais WABA separados — responsabilidade waba-webhook;SM-5245;1
+Chat / Mensagens;Encerramento e problema geral de chat;polichat-web-app;Especulativa;Sem Sentry corroborado específico;SM-2581;1
+Distribuição / Filas;Chats presos sem atendente;dispatch-service;Alta;Sentry: 206 erros dispatch assign on first login; KB: race condition Redis lock;SM-5918, SM-7569;2
+Distribuição / Filas;Bot não direciona / direcionamento inconsistente;dispatch-service > polichat-web-app;Alta;KB: race condition LID generation; 7 tickets com sintoma idêntico;SM-5716, SM-4668, SM-3958, SM-3840, SM-3927, SM-5016, SM-7592;7
+Distribuição / Filas;Encaminhamento entre filas com falha;dispatch-service;Alta;KB: dispatch-service responsável por routing entre filas;SM-5911;1
+Distribuição / Filas;Atribuição automática quebrada (crônico);dispatch-service;Alta;86-87 dias sem fix; Redis lock race condition documentado;SM-2099, SM-2035;2
+Canais;ACK 0 e falha de entrega WhatsApp;waba-webhook > channel-customer;Média;KB: WABA janela 24h + estrutura @lid sem número vinculado;SM-5831, SM-4820, SM-5181, SM-2678, SM-7539;5
+Canais;Canal Instagram / Badge Leads desconectado ou inativo;channel-customer;Média;KB: channel-customer orquestra todos os canais;SM-5383, SM-5412, SM-7588, SM-5423;4
+Canais;Templates WABA falham ou não aparecem;foundation-api > waba-webhook;Média;polichat-web-app PR304 (flow template API) recém mesclado;SM-5300, SM-3017, SM-7532;3
+Nova Interface;Lentidão tela em branco e loading infinito;omnispa;Alta;Sentry: OMNISPA-1ZWW (3.433 usuários) + Network Error crônico;SM-5326, SM-5311, SM-5308, SM-2151, SM-2209;5
+Nova Interface;Extensões de browser e atalhos quebrados após atualização;omnispa;Especulativa;Correlação com PR1493 (Iterup migration 2026-05-27);SM-7496, SM-7527;2
+Upload / Mídia;PDF não envia ou não aparece;polichat-web-app > poli-minio (S3);Média;KB: bug PDF >10MB documentado; S3Exception PutObject no Sentry (relatório anterior);SM-2091, SM-7503;2
+Upload / Mídia;Áudio backup e planilha com falha;polichat-web-app;Especulativa;Sem Sentry confirmado no período;SM-5880, SM-5438, SM-2229;3
+Permissões / Roles;Furo de privacidade e erros 403 de permissão;polichat-web-app > revendedor-api;Alta;Sentry: 15.438 occ 403 revendedor-api (416 usuários);SM-3211, SM-2037, SM-5905;3

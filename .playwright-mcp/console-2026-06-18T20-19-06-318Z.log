@@ -1,0 +1,39 @@
+[    1447ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-GCTyVkrb.js:101
+[    1447ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-GCTyVkrb.js:101
+[    1582ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-GCTyVkrb.js:76
+[    2127ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-GCTyVkrb.js:69
+[    2704ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:901:429
+    at ER (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:903:31)
+    at Md.DR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:92)
+    at Md.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:316:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:238:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:470)
+    at Md.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:262:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:238:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at k.Lq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:273:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:727:315
+    at Gz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:630:1)
+    at Nz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:635:289)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:655:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:206:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:656:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:656:100)
+    at kB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:656:742)
+    at nB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:660:183)
+    at xD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:704:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:708:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:869:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e66h1h2:689:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e66h0:553:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:708:457
+    at r (https://spa-canary.poli.digital/assets/index-GCTyVkrb.js:70:9830)
+[    3436ms] Identifier 'TCRMEmbed' has already been declared
+[    3491ms] Identifier 'TCRMEmbed' has already been declared
+[    4466ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/473411445_1614744749248177_1000568485655627010_n.jpg?ccb=11-4&oh=01_Q5Aa3QGOXN5sXC59RoCk4uL1cNT_976RAEZYeUYGey9S00Sk-w&oe=694D6540&_nc_sid=5e03e0&_nc_cat=111:0
+[   25959ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/473411445_1614744749248177_1000568485655627010_n.jpg?ccb=11-4&oh=01_Q5Aa3QGOXN5sXC59RoCk4uL1cNT_976RAEZYeUYGey9S00Sk-w&oe=694D6540&_nc_sid=5e03e0&_nc_cat=111:0

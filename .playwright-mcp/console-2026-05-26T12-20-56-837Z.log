@@ -1,0 +1,60 @@
+[     887ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:101
+[     887ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:101
+[    1023ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:76
+[    1446ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[    1566ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:892:429
+    at VR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:894:31)
+    at Nd.UR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:891:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:717:315
+    at Az (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:622:1)
+    at Fz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:626:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:646:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:647:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:647:131)
+    at cB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:647:773)
+    at fB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:652:29)
+    at pD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:694:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:698:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:853:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65k1:684:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65k1:547:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:699:6
+    at r (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:70:9812)
+[    1603ms] [ERROR] `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[    1604ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[    1941ms] [ERROR] `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[    1941ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[    2396ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[    3056ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[    4623ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[    5798ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[    8104ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[   12280ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[   47979ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/518550113_739148445546785_65357815861542829_n.jpg?ccb=11-4&oh=01_Q5Aa3gG0cgba-UGji03HYlok8HSIPkgyB25s0xfEE-uEjY25Xg&oe=6977D4B9&_nc_sid=5e03e0&_nc_cat=102:0
+[   57019ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516821226_1034137662043294_8412083315673682112_n.jpg?ccb=11-4&oh=01_Q5Aa3wGV0w2YmnQ6TBMH0x-0rxT9pjZgTvTyDdDyH-6A-5wg7w&oe=69B819C9&_nc_sid=5e03e0&_nc_cat=109:0
+[  135493ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/584222251_803407049174736_6075839926295552254_n.jpg?ccb=11-4&oh=01_Q5Aa3QFO8EYqX4LE02YUHwjgnXcNkXQV4oXQO5SXs8CbPJfwPg&oe=695FD5E1&_nc_sid=5e03e0&_nc_cat=105:0
+[  145997ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/518550113_739148445546785_65357815861542829_n.jpg?ccb=11-4&oh=01_Q5Aa3gG0cgba-UGji03HYlok8HSIPkgyB25s0xfEE-uEjY25Xg&oe=6977D4B9&_nc_sid=5e03e0&_nc_cat=102:0
+[  146914ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516299784_765127936149524_5928964262199968569_n.jpg?ccb=11-4&oh=01_Q5Aa3AF4no6RdRY23ypyTfYBHds24ZPIQipiE7s8OUUZapJnQQ&oe=69358870&_nc_sid=5e03e0&_nc_cat=103:0
+[  177042ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516299784_765127936149524_5928964262199968569_n.jpg?ccb=11-4&oh=01_Q5Aa3AF4no6RdRY23ypyTfYBHds24ZPIQipiE7s8OUUZapJnQQ&oe=69358870&_nc_sid=5e03e0&_nc_cat=103:0
+[  230800ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0

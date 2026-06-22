@@ -1,0 +1,453 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - img [ref=e7]
+      - navigation [ref=e8]:
+        - list [ref=e51]:
+          - listitem [ref=e52]:
+            - link [ref=e53] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=035254172aec463372df77cef0f4d141eb354d7c&toPath=https://app.poli.digital/home
+              - img [ref=e55]
+          - listitem [ref=e58]:
+            - link [ref=e59] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e61]
+          - listitem [ref=e63]:
+            - link [ref=e64] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=035254172aec463372df77cef0f4d141eb354d7c&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e66]
+          - listitem [ref=e69]:
+            - link [ref=e70] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e72]
+          - listitem [ref=e74]:
+            - link [ref=e75] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=035254172aec463372df77cef0f4d141eb354d7c&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e77]
+          - listitem [ref=e80]:
+            - link [ref=e81] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=035254172aec463372df77cef0f4d141eb354d7c&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e83]
+          - listitem [ref=e85]:
+            - link [ref=e86] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=035254172aec463372df77cef0f4d141eb354d7c&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e88]
+          - listitem [ref=e91]:
+            - link [ref=e92] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=035254172aec463372df77cef0f4d141eb354d7c&toPath=https://app.poli.digital/settings/1
+              - img [ref=e94]
+          - listitem [ref=e97]:
+            - link [ref=e98] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e100]
+          - listitem [ref=e104]:
+            - link [ref=e105] [cursor=pointer]:
+              - /url: /channels
+              - img [ref=e107]
+          - listitem [ref=e113]:
+            - link [ref=e114] [cursor=pointer]:
+              - /url: /teams
+              - img [ref=e116]
+          - listitem [ref=e121]:
+            - link [ref=e122] [cursor=pointer]:
+              - /url: /templates
+              - img [ref=e124]
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - button "Consumo de créditos" [ref=e11] [cursor=pointer]:
+              - img [ref=e12]
+          - listitem [ref=e15]:
+            - button "YA" [ref=e16] [cursor=pointer]:
+              - generic [ref=e21]: YA
+          - listitem [ref=e23]:
+            - button [ref=e24] [cursor=pointer]:
+              - img [ref=e25]
+          - listitem [ref=e27]:
+            - generic [ref=e29]: 3.5.340
+    - main [ref=e30]:
+      - generic [ref=e32]:
+        - navigation "breadcrumb" [ref=e34]:
+          - link "Página inicial" [ref=e36] [cursor=pointer]:
+            - /url: /
+          - img [ref=e37]
+          - generic [ref=e39]: Meu perfil
+        - generic [ref=e127]:
+          - generic [ref=e128]:
+            - heading "Editar perfil" [level=3] [ref=e130]
+            - generic [ref=e132]:
+              - generic [ref=e133]:
+                - generic [ref=e134]:
+                  - generic [ref=e135]:
+                    - paragraph [ref=e136]: Foto de Perfil
+                    - button "Imagem JPG, PNG ou WebP, máximo 5MB" [ref=e137] [cursor=pointer]:
+                      - img [ref=e138]
+                  - generic [ref=e142]:
+                    - generic [ref=e147]: PD
+                    - button "Editar avatar" [ref=e149] [cursor=pointer]:
+                      - img [ref=e150]
+                - generic [ref=e153]:
+                  - generic [ref=e154]:
+                    - generic [ref=e155]:
+                      - text: Nome
+                      - textbox "Nome" [ref=e156]:
+                        - /placeholder: Digite o nome completo
+                        - text: Yuri Alcantara Gestror
+                    - generic [ref=e157]:
+                      - text: E-mail
+                      - textbox "E-mail" [ref=e158]:
+                        - /placeholder: Digite o e-mail
+                        - text: yuri.castro@poli.digital
+                  - generic [ref=e159]:
+                    - generic [ref=e160]:
+                      - text: Nova senha
+                      - generic [ref=e161]:
+                        - textbox "Mínimo 8 caracteres com letra, número e caractere especial" [ref=e162]
+                        - button [ref=e163] [cursor=pointer]:
+                          - img [ref=e164]
+                    - generic [ref=e167]:
+                      - text: Confirmação de senha
+                      - generic [ref=e168]:
+                        - textbox "Repita a senha" [ref=e169]
+                        - button [ref=e170] [cursor=pointer]:
+                          - img [ref=e171]
+              - generic [ref=e174]:
+                - button "Salvar" [disabled]
+          - generic [ref=e175]:
+            - heading "Informações da conta" [level=3] [ref=e177]
+            - generic [ref=e179]:
+              - generic [ref=e180]:
+                - paragraph [ref=e181]: Perfis de acesso
+                - generic [ref=e183]: Gerente
+              - generic [ref=e184]:
+                - paragraph [ref=e185]: Canais
+                - generic [ref=e186]:
+                  - generic [ref=e187]: WEBCHAT
+                  - generic [ref=e188]: Fanpage Grupo Assurê
+                  - generic [ref=e189]: Canal Receptivo
+                  - generic [ref=e190]: Grupo Assurê (Instagram)
+                  - generic [ref=e191]: LIA ITERUP
+                  - generic [ref=e192]: vendas whatsapp
+                  - generic [ref=e193]: KT EPI (Instagram)
+                  - generic [ref=e194]: facebook
+                  - generic [ref=e195]: Whatsapp Principal
+                  - generic [ref=e196]: CTSUR
+                  - generic [ref=e197]: FB CTSUR
+                  - generic [ref=e198]: Ismart (Instagram)
+                  - generic [ref=e199]: Whatsapp Oficial
+                  - generic [ref=e200]: WebChat Site
+                  - generic [ref=e201]: Instituto Politécnico MESSENGER
+                  - generic [ref=e202]: Instituto Politécnico Polo Beberibe MESSENGER
+                  - generic [ref=e203]: Instituto Politécnico Polo Chorozinho MESSENGER
+                  - generic [ref=e204]: Instituto Politécnico Polo Horizonte MESSENGER
+                  - generic [ref=e205]: Instituto Politécnico Polo Horizonte (Instagram)
+                  - generic [ref=e206]: Solutti Serviços (Instagram)
+                  - generic [ref=e207]: Solutti
+                  - generic [ref=e208]: Declatrack Principal
+                  - generic [ref=e209]: Casa do Datador 4146 Oficial
+                  - generic [ref=e210]: Casa do Datador Instagram
+                  - generic [ref=e211]: Preta Zilli 2
+                  - generic [ref=e212]: Marica - Liso Laser
+                  - generic [ref=e213]: Suporte iBR
+                  - generic [ref=e214]: WhatsApp 1
+                  - generic [ref=e215]: WhatsApp 2
+                  - generic [ref=e216]: Canal 3
+                  - generic [ref=e217]: Canal 4
+                  - generic [ref=e218]: Canal 2
+                  - generic [ref=e219]: Canal 1
+                  - generic [ref=e220]: ARES-PCJ
+                  - generic [ref=e221]: Avere - ‎6489
+                  - generic [ref=e222]: Canal Oficial
+                  - generic [ref=e223]: L'essence 8 Imobiliária
+                  - generic [ref=e224]: Whatsapp Carry Helados
+                  - generic [ref=e225]: Carry Helados (Instagram)
+                  - generic [ref=e226]: Facebook
+                  - generic [ref=e227]: TestePoli
+                  - generic [ref=e228]: "*SÃO LUCAS(Instagram)"
+                  - generic [ref=e229]: Novo oficial
+                  - generic [ref=e230]: Canal Principal
+                  - generic [ref=e231]: Whatsapp Hello Simone
+                  - generic [ref=e232]: Hello Simone (Instagram)
+                  - generic [ref=e233]: Cedeclin Whatsapp
+                  - generic [ref=e234]: Cedeclin Consultas e Exames (Instagram)
+                  - generic [ref=e235]: Clinica Sonesb
+                  - generic [ref=e236]: Porto das Águas Oficial
+                  - generic [ref=e237]: Laboratório Citocenter
+                  - generic [ref=e238]: canal oficial
+                  - generic [ref=e239]: Farmácia Mais Vida (Instagram)
+                  - generic [ref=e240]: ChatBot Grupo NB
+                  - generic [ref=e241]: DEDICA SAUDE
+                  - generic [ref=e242]: PLASTICO BOLHA
+                  - generic [ref=e243]: IlhaService
+                  - generic [ref=e244]: Compulab Tecnologia
+                  - generic [ref=e245]: Lojas Bob (Instagram)
+                  - generic [ref=e246]: Facebook
+                  - generic [ref=e247]: Cinq Urbanismo
+                  - generic [ref=e248]: WhatsApp
+                  - generic [ref=e249]: Loja Barracão
+                  - generic [ref=e250]: api 2
+                  - generic [ref=e251]: api 4
+                  - generic [ref=e252]: api 62
+                  - generic [ref=e253]: api 7
+                  - generic [ref=e254]: api 63
+                  - generic [ref=e255]: api 65
+                  - generic [ref=e256]: api 66
+                  - generic [ref=e257]: api 67
+                  - generic [ref=e258]: api 71
+                  - generic [ref=e259]: api 72
+                  - generic [ref=e260]: api 73
+                  - generic [ref=e261]: api 75
+                  - generic [ref=e262]: api 76
+                  - generic [ref=e263]: api 77
+                  - generic [ref=e264]: api 20
+                  - generic [ref=e265]: api 78
+                  - generic [ref=e266]: api 21
+                  - generic [ref=e267]: api 79
+                  - generic [ref=e268]: api 22
+                  - generic [ref=e269]: api
+                  - generic [ref=e270]: api 23
+                  - generic [ref=e271]: api 81
+                  - generic [ref=e272]: api 82
+                  - generic [ref=e273]: api 156
+                  - generic [ref=e274]: whatsapp
+                  - generic [ref=e275]: 02 - Trabalhista
+                  - generic [ref=e276]: Santa Casa de Poços de Caldas
+                  - generic [ref=e277]: Tiago Silva Imóveis - Messenger
+                  - generic [ref=e278]: Tiago Silva imóveis (Instagram)
+                  - generic [ref=e279]: 2-Não Usar
+                  - generic [ref=e280]: Oficial Real 4-5131810322
+                  - generic [ref=e281]: A Igreja de Jesus Cristo
+                  - generic [ref=e282]: CEAB Site
+                  - generic [ref=e283]: CEAB WhatsApp
+                  - generic [ref=e284]: CEAB Facebook
+                  - generic [ref=e285]: CEAB blog
+                  - generic [ref=e286]: Ceab - Centro Educacional de Aviação do Brasil (In
+                  - generic [ref=e287]: RESERVA
+                  - generic [ref=e288]: whatsapp
+                  - generic [ref=e289]: Pavoni Autopeças
+                  - generic [ref=e290]: BM BrW Vida Vegas 16988359659
+                  - generic [ref=e291]: Canal WhatsApp BrW 16988391133
+                  - generic [ref=e292]: Suporte VidaVegas
+                  - generic [ref=e293]: Mauricio Souza - 6211
+                  - generic [ref=e294]: Raquel Cristina - 1016
+                  - generic [ref=e295]: Canal zap
+                  - generic [ref=e296]: HiGames Oficial
+                  - generic [ref=e297]: Higames (Instagram)
+                  - generic [ref=e298]: Crispim
+                  - generic [ref=e299]: Li acessoria
+                  - generic [ref=e300]: Digiserv
+                  - generic [ref=e301]: Danieli
+                  - generic [ref=e302]: Leandro
+                  - generic [ref=e303]: Reicred
+                  - generic [ref=e304]: GDN Ltda
+                  - generic [ref=e305]: Lexa
+                  - generic [ref=e306]: Anatole
+                  - generic [ref=e307]: RWB
+                  - generic [ref=e308]: Perfil 195- 5202
+                  - generic [ref=e309]: Reata Financeiras
+                  - generic [ref=e310]: Perfil 208- 0711
+                  - generic [ref=e311]: Facebook
+                  - generic [ref=e312]: Blah
+                  - generic [ref=e313]: Canal Whatsapp
+                  - generic [ref=e314]: Site Mundo Montessori
+                  - generic [ref=e315]: Escola Peteleco e CEMP (pág. Facebook)
+                  - generic [ref=e316]: Abdala e Moura Oficial
+                  - generic [ref=e317]: Vector serviços
+                  - generic [ref=e318]: Agostta
+                  - generic [ref=e319]: Trust
+                  - generic [ref=e320]: Bifone
+                  - generic [ref=e321]: S&M
+                  - generic [ref=e322]: Msave assessoria
+                  - generic [ref=e323]: Cris Melo
+                  - generic [ref=e324]: mm consultoria
+                  - generic [ref=e325]: Vectro Digitais
+                  - generic [ref=e326]: Moon
+                  - generic [ref=e327]: Sua Fintech
+                  - generic [ref=e328]: Tr9 Fintech
+                  - generic [ref=e329]: Isocord Fintech
+                  - generic [ref=e330]: Romeo
+                  - generic [ref=e331]: melo assessoria
+                  - generic [ref=e332]: sist ltda
+                  - generic [ref=e333]: emepnho LTDA
+                  - generic [ref=e334]: Lopes LTDA
+                  - generic [ref=e335]: Pereira soluções
+                  - generic [ref=e336]: Porto Contabilidade
+                  - generic [ref=e337]: Adocel Soluções
+                  - generic [ref=e338]: FGC Serviços
+                  - generic [ref=e339]: Magnitu Soluções
+                  - generic [ref=e340]: Sterly Finanças
+                  - generic [ref=e341]: Estácio Nordeste
+                  - generic [ref=e342]: Trinus LTDA
+                  - generic [ref=e343]: Btm
+                  - generic [ref=e344]: Gestão Assessoria LTDA
+                  - generic [ref=e345]: Aguiar Financeiro
+                  - generic [ref=e346]: Onyx Soluções
+                  - generic [ref=e347]: JMS Financeiro
+                  - generic [ref=e348]: Adm Ricca
+                  - generic [ref=e349]: Api 189
+                  - generic [ref=e350]: KBG
+                  - generic [ref=e351]: Hedge
+                  - generic [ref=e352]: Vista
+                  - generic [ref=e353]: CRC
+                  - generic [ref=e354]: Nichele Invest
+                  - generic [ref=e355]: Rf3 Investimentos
+                  - generic [ref=e356]: Monetarie Ltda
+                  - generic [ref=e357]: RPL Ltda
+                  - generic [ref=e358]: TMS
+                  - generic [ref=e359]: Rrvp Representacoes
+                  - generic [ref=e360]: Diamante Digital
+                  - generic [ref=e361]: Belvedere Solucoes Financeiras
+                  - generic [ref=e362]: Umpulo
+                  - generic [ref=e363]: Dinheiro na Conta Certa LTDA
+                  - generic [ref=e364]: Cv2 Administracao
+                  - generic [ref=e365]: Jme Servicos
+                  - generic [ref=e366]: Silvana Heinzen
+                  - generic [ref=e367]: Picinini Corretora
+                  - generic [ref=e368]: The Shop Consultoria
+                  - generic [ref=e369]: Segflex
+                  - generic [ref=e370]: api 2
+                  - generic [ref=e371]: api 4
+                  - generic [ref=e372]: api 62
+                  - generic [ref=e373]: api 7
+                  - generic [ref=e374]: api 63
+                  - generic [ref=e375]: api 65
+                  - generic [ref=e376]: api 66
+                  - generic [ref=e377]: api 67
+                  - generic [ref=e378]: api 71
+                  - generic [ref=e379]: api 72
+                  - generic [ref=e380]: api 73
+                  - generic [ref=e381]: api 75
+                  - generic [ref=e382]: api 76
+                  - generic [ref=e383]: api 77
+                  - generic [ref=e384]: api 20
+                  - generic [ref=e385]: api 78
+                  - generic [ref=e386]: api 21
+                  - generic [ref=e387]: api 79
+                  - generic [ref=e388]: api 22
+                  - generic [ref=e389]: api
+                  - generic [ref=e390]: api 23
+                  - generic [ref=e391]: api 81
+                  - generic [ref=e392]: api 82
+                  - generic [ref=e393]: api 156
+                  - generic [ref=e394]: Api 189
+                  - generic [ref=e395]: Crispim
+                  - generic [ref=e396]: Li acessoria
+                  - generic [ref=e397]: Digiserv
+                  - generic [ref=e398]: RPL Ltda
+                  - generic [ref=e399]: Danieli
+                  - generic [ref=e400]: Leandro
+                  - generic [ref=e401]: Monetarie Ltda
+                  - generic [ref=e402]: Reicred
+                  - generic [ref=e403]: KBG
+                  - generic [ref=e404]: GDN Ltda
+                  - generic [ref=e405]: Lexa
+                  - generic [ref=e406]: Rf3 Investimentos
+                  - generic [ref=e407]: Nichele Invest
+                  - generic [ref=e408]: Hedge
+                  - generic [ref=e409]: Anatole
+                  - generic [ref=e410]: RWB
+                  - generic [ref=e411]: Vista
+                  - generic [ref=e412]: CRC
+                  - generic [ref=e413]: Reata Financeiras
+                  - generic [ref=e414]: Btm
+                  - generic [ref=e415]: Vector serviços
+                  - generic [ref=e416]: Agostta
+                  - generic [ref=e417]: Trust
+                  - generic [ref=e418]: Bifone
+                  - generic [ref=e419]: S&M
+                  - generic [ref=e420]: Msave assessoria
+                  - generic [ref=e421]: Cris Melo
+                  - generic [ref=e422]: mm consultoria
+                  - generic [ref=e423]: Vectro Digitais
+                  - generic [ref=e424]: Moon
+                  - generic [ref=e425]: Sua Fintech
+                  - generic [ref=e426]: Tr9 Fintech
+                  - generic [ref=e427]: Isocord Fintech
+                  - generic [ref=e428]: Romeo
+                  - generic [ref=e429]: melo assessoria
+                  - generic [ref=e430]: sist ltda
+                  - generic [ref=e431]: emepnho LTDA
+                  - generic [ref=e432]: Lopes LTDA
+                  - generic [ref=e433]: Pereira soluções
+                  - generic [ref=e434]: Porto Contabilidade
+                  - generic [ref=e435]: Adocel Soluções
+                  - generic [ref=e436]: FGC Serviços
+                  - generic [ref=e437]: Magnitu Soluções
+                  - generic [ref=e438]: Sterly Finanças
+                  - generic [ref=e439]: Trinus LTDA
+                  - generic [ref=e440]: Gestão Assessoria LTDA
+                  - generic [ref=e441]: Aguiar Financeiro
+                  - generic [ref=e442]: Onyx Soluções
+                  - generic [ref=e443]: JMS Financeiro
+                  - generic [ref=e444]: Belvedere Solucoes Financeiras
+                  - generic [ref=e445]: TMS
+                  - generic [ref=e446]: Rrvp Representacoes
+                  - generic [ref=e447]: Diamante Digital
+                  - generic [ref=e448]: Umpulo
+                  - generic [ref=e449]: Dinheiro na Conta Certa LTDA
+                  - generic [ref=e450]: Cv2 Administracao
+                  - generic [ref=e451]: Jme Servicos
+                  - generic [ref=e452]: Silvana Heinzen
+                  - generic [ref=e453]: Picinini Corretora
+                  - generic [ref=e454]: The Shop Consultoria
+                  - generic [ref=e455]: Segflex
+                  - generic [ref=e456]: Mundo Feliz Oficial
+                  - generic [ref=e457]: R A - Corretora
+                  - generic [ref=e458]: Luiz Carlos de Andrade
+                  - generic [ref=e459]: Capital Strategy
+                  - generic [ref=e460]: Rio Investimentos
+                  - generic [ref=e461]: Omni
+                  - generic [ref=e462]: Sig Administracao
+                  - generic [ref=e463]: LUIZ Fernando
+                  - generic [ref=e464]: Persico
+                  - generic [ref=e465]: Kpslts Finance
+                  - generic [ref=e466]: Conde Assessoria
+                  - generic [ref=e467]: Administrare
+                  - generic [ref=e468]: zapi
+                  - generic [ref=e469]: Webchat Jmeter Nik
+                  - generic [ref=e470]: Webchat Kellen
+                  - generic [ref=e471]: Meu Teste Favorito (Instagram)
+                  - generic [ref=e472]: WABA 9284
+                  - generic [ref=e473]: teste
+                  - generic [ref=e474]: teste
+                  - generic [ref=e475]: prd zapi
+                  - generic [ref=e476]: ffhfghfgh
+                  - generic [ref=e477]: Canal zapi criado via api
+                  - generic [ref=e478]: Analise de Itens
+                  - generic [ref=e479]: Pv Teste
+                  - generic [ref=e480]: teste 1234
+                  - generic [ref=e481]: Webchat 0602
+                  - generic [ref=e482]: WABA 1102 New nome grande bla bla etc okok
+                  - generic [ref=e483]: Pv Teste 1
+                  - generic [ref=e484]: José canal
+                  - generic [ref=e485]: WABA QA
+                  - generic [ref=e486]: Deletar
+                  - generic [ref=e487]: AlertasInfra (não desativar)
+                  - generic [ref=e488]: WABA QA
+                  - generic [ref=e489]: Pv prd
+                  - generic [ref=e490]: Poli Comercial BSP
+              - generic [ref=e491]:
+                - paragraph [ref=e492]: Departamentos
+                - generic [ref=e493]:
+                  - generic [ref=e494]: suporte_n2
+                  - generic [ref=e495]: webchat Jmeter Nik
+                  - generic [ref=e496]: INATIVO ok
+                  - generic [ref=e497]: dep teste
+                  - generic [ref=e498]: Teste cria 1
+                  - generic [ref=e499]: Comercial
+                  - generic [ref=e500]: Kellen
+                  - generic [ref=e501]: Foundation
+                  - generic [ref=e502]: sexta 18h
+              - generic [ref=e503]:
+                - paragraph [ref=e504]: Empresas
+                - generic [ref=e505]:
+                  - generic [ref=e506]: Poli Soluções Digitais
+                  - generic [ref=e507]: Poli
+                  - generic [ref=e508]: DeployTi - Regressivo
+  - region "Notifications (F8)":
+    - list [ref=e511]:
+      - listitem [ref=e512]:
+        - generic [ref=e513]:
+          - img [ref=e514]
+          - generic [ref=e516]: Perfil atualizado com sucesso
+          - button [ref=e517] [cursor=pointer]:
+            - img [ref=e518]

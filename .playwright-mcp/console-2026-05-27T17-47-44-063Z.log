@@ -1,0 +1,107 @@
+[     783ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[     783ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[     833ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:76
+[    1077ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.aS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Ez (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Jz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:131)
+    at gB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:773)
+    at jB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:29)
+    at tD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:850:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65q0h1:681:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65q0:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:696:6
+    at r (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:70:9812)
+[    1391ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[   27522ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/jarvis/suggest-template:0
+[  177989ms] [ERROR] Error handled by React Router default ErrorBoundary: Error: Minified React error #31; visit https://reactjs.org/docs/error-decoder.html?invariant=31&args[]=object%20with%20keys%20%7Btext%7D for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at Fb (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:39:6322)
+    at Cs (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:39:12086)
+    at lo (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:1482)
+    at cj (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:46904)
+    at aj (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:40748)
+    at w$ (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:40676)
+    at yA (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:40529)
+    at ej (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:35484)
+    at j (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:26:1602)
+    at MessagePort.O (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:26:1969) @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[  178002ms] [ERROR] Error handled by React Router default ErrorBoundary: Error: Minified React error #31; visit https://reactjs.org/docs/error-decoder.html?invariant=31&args[]=object%20with%20keys%20%7Btext%7D for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at Fb (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:39:6322)
+    at Cs (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:39:12086)
+    at lo (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:1482)
+    at cj (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:46904)
+    at aj (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:40748)
+    at w$ (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:40676)
+    at yA (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:40529)
+    at J1 (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:36780)
+    at ej (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:35722)
+    at j (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:26:1602)
+    at MessagePort.O (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:26:1969) @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[  178007ms] [ERROR] Error: Minified React error #31; visit https://reactjs.org/docs/error-decoder.html?invariant=31&args[]=object%20with%20keys%20%7Btext%7D for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at Fb (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:39:6322)
+    at Cs (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:39:12086)
+    at lo (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:1482)
+    at cj (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:46904)
+    at aj (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:40748)
+    at w$ (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:40676)
+    at yA (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:40529)
+    at J1 (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:36780)
+    at ej (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:35722)
+    at j (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:26:1602)
+    at MessagePort.O (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:26:1969) @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[  178008ms] [ERROR] React Router caught the following error during render Error: Minified React error #31; visit https://reactjs.org/docs/error-decoder.html?invariant=31&args[]=object%20with%20keys%20%7Btext%7D for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at Fb (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:39:6322)
+    at Cs (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:39:12086)
+    at lo (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:1482)
+    at cj (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:46904)
+    at aj (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:40748)
+    at w$ (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:40676)
+    at yA (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:40529)
+    at J1 (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:36780)
+    at ej (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:35722)
+    at j (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:26:1602)
+    at MessagePort.O (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:26:1969) @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[  178008ms] [ERROR] Error: Minified React error #31; visit https://reactjs.org/docs/error-decoder.html?invariant=31&args[]=object%20with%20keys%20%7Btext%7D for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at Fb (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:39:6322)
+    at Cs (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:39:12086)
+    at lo (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:1482)
+    at cj (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:46904)
+    at aj (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:40748)
+    at w$ (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:40676)
+    at yA (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:40529)
+    at J1 (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:36780)
+    at ej (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:35722)
+    at j (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:26:1602)
+    at MessagePort.O (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:26:1969) @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[  178009ms] [ERROR] React Router caught the following error during render Error: Minified React error #31; visit https://reactjs.org/docs/error-decoder.html?invariant=31&args[]=object%20with%20keys%20%7Btext%7D for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at Fb (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:39:6322)
+    at Cs (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:39:12086)
+    at lo (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:1482)
+    at cj (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:46904)
+    at aj (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:40748)
+    at w$ (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:40676)
+    at yA (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:40529)
+    at J1 (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:36780)
+    at ej (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:41:35722)
+    at j (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:26:1602)
+    at MessagePort.O (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:26:1969) @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69

@@ -1,0 +1,13 @@
+[     508ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:101
+[     508ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:101
+[     560ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:76
+[    1316ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[  240524ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[  240527ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[  240527ms] [ERROR] [WebSocket: Erro na conexão: {type: WebSocketError, error: Object} @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[  241506ms] [ERROR] [WebSocket: Erro na conexão: {type: WebSocketError, error: Object} @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[  242123ms] [ERROR] [WebSocket: Erro na conexão: {type: WebSocketError, error: Object} @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[  242744ms] [ERROR] [WebSocket: Erro na conexão: {type: WebSocketError, error: Object} @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[  243287ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error during WebSocket handshake: Unexpected response code: 503 @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:1078
+[  243857ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error during WebSocket handshake: Unexpected response code: 503 @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:1078
+[  258956ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69

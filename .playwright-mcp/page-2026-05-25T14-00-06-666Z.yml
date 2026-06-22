@@ -1,0 +1,158 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - img [ref=e7]
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link [ref=e11] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=null&toPath=https://app.poli.digital/home
+              - img [ref=e13]
+          - listitem [ref=e16]:
+            - link [ref=e17] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e19]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=null&toPath=https://app.poli.digital/settings//chatbot
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e30]
+          - listitem [ref=e32]:
+            - link [ref=e33] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=null&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e35]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=null&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e41]
+          - listitem [ref=e43]:
+            - link [ref=e44] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=null&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e46]
+          - listitem [ref=e49]:
+            - link [ref=e50] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=null&toPath=https://app.poli.digital/settings/
+              - img [ref=e52]
+          - listitem [ref=e55]:
+            - link [ref=e56] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e58]
+        - list [ref=e62]:
+          - listitem
+          - listitem [ref=e63]:
+            - button [ref=e64] [cursor=pointer]:
+              - img [ref=e70]
+          - listitem [ref=e74]:
+            - button [ref=e75] [cursor=pointer]:
+              - img [ref=e76]
+          - listitem [ref=e78]:
+            - generic [ref=e80]: 3.5.332
+    - main [ref=e81]:
+      - generic [ref=e84]:
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - heading "Olá, undefined," [level=1] [ref=e87]
+            - heading "bem-vindo(a)!" [level=1] [ref=e88]
+          - paragraph [ref=e89]: "Monitore as principais informações dos seus atendimentos:"
+        - generic [ref=e90]:
+          - generic [ref=e91]:
+            - heading "Seu relatório diário" [level=2] [ref=e92]
+            - generic [ref=e93]:
+              - paragraph [ref=e94]: Última atualização em segunda-feira, 25 de maio de 2026
+              - button [ref=e95] [cursor=pointer]:
+                - img [ref=e96]
+          - generic [ref=e99]:
+            - generic [ref=e100]:
+              - img [ref=e101]
+              - generic [ref=e104]: "28"
+              - generic [ref=e105]: Conversas em atendimento
+            - generic [ref=e106]:
+              - img [ref=e107]
+              - generic [ref=e110]: "3"
+              - generic [ref=e111]: Conversas não lidas
+            - generic [ref=e112]:
+              - img [ref=e113]
+              - generic [ref=e115]: "10"
+              - generic [ref=e116]: Conversas finalizadas
+            - generic [ref=e117]:
+              - img [ref=e118]
+              - generic [ref=e120]: "31"
+              - generic [ref=e121]: Conversas totais
+        - generic [ref=e123]:
+          - link "Ads Gerencie seus anúncios" [ref=e124] [cursor=pointer]:
+            - /url: /ads
+            - img [ref=e125]
+            - generic [ref=e128]:
+              - generic [ref=e129]: Ads
+              - generic [ref=e130]: Gerencie seus anúncios
+          - link "Chat Conversas com os contatos" [ref=e131] [cursor=pointer]:
+            - /url: /chat
+            - img [ref=e132]
+            - generic [ref=e135]:
+              - generic [ref=e136]: Chat
+              - generic [ref=e137]: Conversas com os contatos
+          - link "Bot Automações inteligentes" [ref=e138] [cursor=pointer]:
+            - /url: /bot
+            - img [ref=e139]
+            - generic [ref=e142]:
+              - generic [ref=e143]: Bot
+              - generic [ref=e144]: Automações inteligentes
+          - link "CRM Gestão das suas vendas" [ref=e145] [cursor=pointer]:
+            - /url: /crm
+            - img [ref=e146]
+            - generic [ref=e148]:
+              - generic [ref=e149]: CRM
+              - generic [ref=e150]: Gestão das suas vendas
+          - link "Pay Pagamentos integrados" [ref=e151] [cursor=pointer]:
+            - /url: /pay
+            - img [ref=e152]
+            - generic [ref=e155]:
+              - generic [ref=e156]: Pay
+              - generic [ref=e157]: Pagamentos integrados
+          - link "Relatórios Métricas do seu negócio" [ref=e158] [cursor=pointer]:
+            - /url: /report
+            - img [ref=e159]
+            - generic [ref=e163]:
+              - generic [ref=e164]: Relatórios
+              - generic [ref=e165]: Métricas do seu negócio
+          - link "Configurações Configure sua plataforma" [ref=e166] [cursor=pointer]:
+            - /url: /config
+            - img [ref=e167]
+            - generic [ref=e171]:
+              - generic [ref=e172]: Configurações
+              - generic [ref=e173]: Configure sua plataforma
+          - link "Minha empresa Gerenciamento de conta" [ref=e174] [cursor=pointer]:
+            - /url: /company
+            - img [ref=e175]
+            - generic [ref=e178]:
+              - generic [ref=e179]: Minha empresa
+              - generic [ref=e180]: Gerenciamento de conta
+          - link "Canais Gestão dos seus canais" [ref=e181] [cursor=pointer]:
+            - /url: /channels
+            - img [ref=e182]
+            - generic [ref=e185]:
+              - generic [ref=e186]: Canais
+              - generic [ref=e187]: Gestão dos seus canais
+          - link "Contatos Gestão dos seus contatos" [ref=e188] [cursor=pointer]:
+            - /url: /contacts
+            - img [ref=e189]
+            - generic [ref=e192]:
+              - generic [ref=e193]: Contatos
+              - generic [ref=e194]: Gestão dos seus contatos
+          - link "Usuários Gestão dos seus usuários" [ref=e195] [cursor=pointer]:
+            - /url: /users
+            - img [ref=e196]
+            - generic [ref=e199]:
+              - generic [ref=e200]: Usuários
+              - generic [ref=e201]: Gestão dos seus usuários
+          - link "Suporte e Treinamento Ajuda para configuração" [ref=e202] [cursor=pointer]:
+            - /url: /support
+            - img [ref=e203]
+            - generic [ref=e207]:
+              - generic [ref=e208]: Suporte e Treinamento
+              - generic [ref=e209]: Ajuda para configuração
+  - region "Notifications (F8)":
+    - list

@@ -1,0 +1,82 @@
+﻿Urgencia;Sintoma;Servico;Quantidade;Modulo
+🟡;ErrorException;polichat-web-app;8605990;Chat / Mensagens
+🟡;Operator not connected;dispatch-websocket;3570151;WebSocket / Presença
+🟡;Error;channel-customer;1131563;Canais
+🟡;Exception;polichat-web-app;795454;Chat / Mensagens
+🟡;ErrorException;polichat-web-app;513705;Chat / Mensagens
+🟡;Error;api-gateway;339375;Autenticação
+🟡;Error;polichat-spa;269438;Autenticação
+🟡;Exception;polichat-web-app;213571;Chat / Mensagens
+🟡;GuzzleHttp\Exception\ClientException;polichat-web-app;213532;Chat / Mensagens
+🟡;<unknown>;polichat-spa;105724;Autenticação
+🟡;Chat created;dispatch;95545;Distribuição / Filas
+🟡;App\CRM\Domain\Exceptions\CRMException;polichat-web-app;84032;Chat / Mensagens
+🟡;GuzzleHttp\Exception\ClientException;polichat-web-app;82931;Chat / Mensagens
+🟡;AttributeError;jarvis;80400;Jarvis / IA
+🟡;Distribute from the queue;dispatch;72830;Distribuição / Filas
+🟡;AxiosError;polichat-spa;65271;Autenticação
+🟡;Exception;polichat-web-app;61139;Chat / Mensagens
+🟡;Illuminate\Database\QueryException;polichat-web-app;41346;Chat / Mensagens
+🟡;Consecutive HTTP;jarvis;39669;Jarvis / IA
+🟡;Distribute to department;dispatch;32319;Distribuição / Filas
+🟡;AttributeError;jarvis;31072;Jarvis / IA
+🟡;Error;polichat-spa;30552;Autenticação
+🟡;App\CRM\Domain\Exceptions\CRMException;polichat-web-app;28727;Chat / Mensagens
+🟡;GuzzleHttp\Exception\ClientException;polichat-web-app;28240;Chat / Mensagens
+🟡;Error;api-gateway;24531;Autenticação
+🟡;Error;api-gateway;21350;Autenticação
+🟡;Exception;polichat-web-app;17578;Chat / Mensagens
+🟡;Exception;polichat-web-app;16254;Chat / Mensagens
+🟡;Error;polichat-spa;15745;Autenticação
+🟡;Slow DB Query;jarvis;14981;Jarvis / IA
+🟡;WabaProviderCloudAPIError;channel-customer;10915;Canais
+🟡;Assign on first login;dispatch;10397;Distribuição / Filas
+🟡;AxiosError;dispatch;10190;Distribuição / Filas
+🟡;GuzzleHttp\Exception\ClientException;polichat-web-app;8465;Chat / Mensagens
+🟡;App\CRM\Domain\Exceptions\CRMException;polichat-web-app;8465;Chat / Mensagens
+🟡;Error;polichat-spa;7024;Autenticação
+🟡;IntegrityError;jarvis;6885;Jarvis / IA
+🟡;Error;api-gateway;5608;Autenticação
+🟡;Large Render Blocking Asset;polichat-spa;5223;Autenticação
+🟡;Error;dispatch;3432;Distribuição / Filas
+🟡;Error;dispatch;3171;Distribuição / Filas
+🟡;Exception;jarvis;2945;Jarvis / IA
+🟡;ReferenceError;channel-customer;2729;Canais
+🟡;Error;dispatch;2425;Distribuição / Filas
+🟡;Error;dispatch;2414;Distribuição / Filas
+🟡;ReferenceError;polichat-spa;2220;Autenticação
+🟡;AxiosError;polichat-spa;2067;Autenticação
+🟡;Erro inesperado no modelo 'llama-3.1-8b-instant';jarvis;1699;Jarvis / IA
+🟡;ReferenceError;channel-customer;1630;Canais
+🟡;Error;polichat-spa;1542;Autenticação
+🟡;Error;polichat-spa;1419;Autenticação
+🟡;TypeError;polichat-spa;1195;Autenticação
+🟡;BadRequest;jarvis;1110;Jarvis / IA
+🟡;URIError;api-gateway;1037;Autenticação
+🟡;Error;channel-customer;741;Canais
+🟡;Error;channel-customer;709;Canais
+🟡;AxiosError;heimdall;688;Autenticação
+🟡;AxiosError;polichat-spa;508;Autenticação
+🟡;WabaProviderCloudAPIError;channel-customer;435;Canais
+🟡;Failed to transcribe audio segment 0;jarvis;395;Jarvis / IA
+🟡;BadRequestError;jarvis;368;Jarvis / IA
+🟡;TypeError;polichat-spa;359;Autenticação
+🟡;AxiosError;polichat-spa;231;Autenticação
+🟡;WabaProviderError;channel-customer;148;Canais
+🟡;TimeoutError;jarvis;145;Jarvis / IA
+🟡;Error;channel-customer;122;Canais
+🟡;WabaProviderCloudAPIError;channel-customer;120;Canais
+🟡;TypeError;channel-customer;102;Canais
+🟡;Error;channel-customer;84;Canais
+🟡;Erro inesperado no modelo 'openai/gpt-oss-120b';jarvis;77;Jarvis / IA
+🟡;Error;channel-customer;62;Canais
+🟡;ValueError;jarvis;17;Jarvis / IA
+🟡;Error;dispatch;16;Distribuição / Filas
+🟡;AxiosError;dispatch;15;Distribuição / Filas
+🟡;Erro inesperado no modelo 'llama-3.1-8b-instant';jarvis;9;Jarvis / IA
+🟡;MongoError;channel-customer;7;Canais
+🟡;Error;heimdall;5;Autenticação
+🟡;Failed to transcribe audio segment 0;jarvis;5;Jarvis / IA
+🟡;TemplateError;channel-customer;4;Canais
+🟡;FastifyError;heimdall;3;Autenticação
+🟡;SSO callback failed;heimdall;1;Autenticação

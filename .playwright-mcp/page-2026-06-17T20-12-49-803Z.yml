@@ -1,0 +1,135 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=aa00034e87ff4c11e3ee1ad9b110f415fc752770&toPath=https://app.poli.digital/home
+        - img [ref=e11]
+      - generic [ref=e12]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link [ref=e16] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e18]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=aa00034e87ff4c11e3ee1ad9b110f415fc752770&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e30]
+          - listitem [ref=e33]:
+            - link [ref=e34] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e36]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=aa00034e87ff4c11e3ee1ad9b110f415fc752770&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e41]
+          - listitem [ref=e44]:
+            - link [ref=e45] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=aa00034e87ff4c11e3ee1ad9b110f415fc752770&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e47]
+          - listitem [ref=e50]:
+            - link [ref=e51] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=aa00034e87ff4c11e3ee1ad9b110f415fc752770&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e53]
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - link [ref=e61] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e63]
+      - generic [ref=e66]:
+        - button "Consumo de créditos" [ref=e67] [cursor=pointer]:
+          - img [ref=e69]
+        - button "YA" [ref=e73] [cursor=pointer]:
+          - generic [ref=e79]: YA
+        - generic [ref=e82]: 3.5.359-DEV4-4390
+    - main [ref=e83]:
+      - main [ref=e84]:
+        - generic [ref=e85]:
+          - button "✨ Nova Versão" [ref=e86] [cursor=pointer]:
+            - generic [ref=e87]: ✨ Nova Versão
+            - img [ref=e88]
+          - generic [ref=e92]:
+            - generic [ref=e93]:
+              - button "Em atendimento" [ref=e94] [cursor=pointer]:
+                - generic [ref=e95]: Em atendimento
+                - img [ref=e96]
+              - generic [ref=e98]:
+                - button "Contatos" [ref=e99] [cursor=pointer]:
+                  - img [ref=e100]
+                - button "Filtros" [ref=e104] [cursor=pointer]:
+                  - img [ref=e105]
+            - generic [ref=e109]:
+              - generic [ref=e110]:
+                - textbox "Pesquisar" [ref=e111]
+                - button "Pesquisar" [ref=e112] [cursor=pointer]:
+                  - img [ref=e113]
+              - button "Ordenação das conversas" [ref=e116] [cursor=pointer]:
+                - img [ref=e117]
+        - button "YU \"Yuri\" Yuri Alcantara Gestor Alertas de crédito Abrir seletor de templates Mais opções schedule-message" [ref=e243] [cursor=pointer]:
+          - generic [ref=e245]:
+            - generic [ref=e246]:
+              - generic [ref=e250]: YU
+              - generic [ref=e251]:
+                - generic [ref=e252]: "\"Yuri\""
+                - generic [ref=e254]:
+                  - img [ref=e256]
+                  - generic [ref=e260]: Yuri Alcantara Gestor
+            - generic [ref=e261]:
+              - button [ref=e262]:
+                - img [ref=e263]
+              - button [ref=e267]:
+                - img [ref=e268]
+              - button [ref=e273]:
+                - img [ref=e274]
+              - button [ref=e277]:
+                - img [ref=e278]
+              - button [ref=e280]:
+                - img [ref=e281]
+          - region "Alertas de crédito" [ref=e337]
+          - generic [ref=e340]:
+            - generic [ref=e341]:
+              - button [ref=e343]:
+                - img [ref=e344]
+              - button "Abrir seletor de templates" [ref=e346]: A conversa foi finalizada após 24h, conforme as políticas do WhatsApp. Envie um template e aguarde a resposta para retomar o contato.
+            - generic [ref=e347]:
+              - button "Mais opções" [ref=e348]:
+                - img [ref=e349]
+              - button "schedule-message" [ref=e354]:
+                - img [ref=e355]
+        - generic [ref=e358]:
+          - generic [ref=e359]:
+            - generic [ref=e361]:
+              - img [ref=e362]
+              - generic [ref=e366]: Oportunidades
+            - button [ref=e367] [cursor=pointer]:
+              - img [ref=e368]
+          - generic [ref=e375]:
+            - generic [ref=e379]:
+              - paragraph [ref=e381]: Teste!
+              - button "Mais ações" [ref=e382] [cursor=pointer]:
+                - img [ref=e383]
+            - generic [ref=e387]:
+              - paragraph [ref=e388]: R$ 21,00
+              - paragraph [ref=e389]: Funil de teste | Aberto
+              - paragraph [ref=e390]: 17/06/2026 - 19:54
+          - button "Nova oportunidade" [ref=e392] [cursor=pointer]
+        - complementary [ref=e393]:
+          - button [ref=e395] [cursor=pointer]:
+            - img [ref=e396]
+          - button [ref=e400] [cursor=pointer]:
+            - img [ref=e401]
+          - button [ref=e405] [cursor=pointer]:
+            - img [ref=e406]
+          - button [ref=e411] [cursor=pointer]:
+            - img [ref=e412]
+          - button [ref=e417] [cursor=pointer]:
+            - img [ref=e418]
+          - button [ref=e422] [cursor=pointer]:
+            - img [ref=e423]
+          - button [ref=e428] [cursor=pointer]:
+            - img [ref=e429]
+  - region "Notifications (F8)":
+    - list

@@ -1,0 +1,66 @@
+[     598ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:101
+[     598ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:101
+[     652ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:76
+[    1018ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:892:429
+    at VR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:894:31)
+    at Nd.UR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:891:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:717:315
+    at Az (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:622:1)
+    at Fz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:626:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:646:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:647:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:647:131)
+    at cB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:647:773)
+    at fB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:652:29)
+    at pD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:694:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:698:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65k1:684:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:853:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65k1:547:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:699:6
+    at r (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:70:9812)
+[    1302ms] [ERROR] `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[    1302ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[    1436ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[    1451ms] [ERROR] `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[    1451ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[    1575ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[    2009ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[    2149ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[    3214ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/logs/behavior:0
+[    3334ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[    6802ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[   10985ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[   93759ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/375594603_269404399401855_4577422115258882385_n.jpg?ccb=11-4&oh=01_Q5Aa4QEtP9RQABNjo4_IohQsRcp37J9aUnBRSBbUb0Hurt7maQ&oe=69E66C84&_nc_sid=5e03e0&_nc_cat=102:0
+[  108458ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/603061698_1760439718245499_6896861361406212614_n.jpg?ccb=11-4&oh=01_Q5Aa3QEAtzPDSKJhd5p8TMztbTBR4dsKI8vA-SCD-psLmb9QkQ&oe=69614EE3&_nc_sid=5e03e0&_nc_cat=103:0
+[  125910ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/375594603_269404399401855_4577422115258882385_n.jpg?ccb=11-4&oh=01_Q5Aa4QEtP9RQABNjo4_IohQsRcp37J9aUnBRSBbUb0Hurt7maQ&oe=69E66C84&_nc_sid=5e03e0&_nc_cat=102:0
+[  537353ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/logs/behavior:0
+[  552060ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[  734370ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[  838195ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[  839777ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[  841045ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[  843345ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[  848941ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[  871503ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://lpgs.poli.digital/parse/link:0

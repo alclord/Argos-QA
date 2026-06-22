@@ -1,0 +1,20 @@
+[     472ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/chat:0
+[     712ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[    1077ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/chat:0
+[    1081ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/chat:0
+[    1867ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.qa.poli.digital/auth/foundation/allowed:0
+[    1869ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  141704ms] [LOG] websocket on close - ws_unauthorized true @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  145402ms] [LOG] websocket on close - ws_unauthorized true @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  149083ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app-spa.qa.poli.digital/login:0
+[  149360ms] [ERROR] Amplitude Logger [Error]: Failed to fetch @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  149362ms] [WARNING] Amplitude Logger [Warn]: {code: 0, error: "Status 'failed' provided for 1 events"} @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  150000ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/logout:0
+[  150769ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/logout:0
+[  151207ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/login:0
+[  151305ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app-spa.qa.poli.digital/login:0
+[  238988ms] [ERROR] Failed to load resource: the server responded with a status of 405 () @ https://app-spa.qa.poli.digital/login:0
+[  277178ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  277667ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.qa.poli.digital/auth/foundation/allowed:0
+[  277677ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  280184ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/user/presence:0

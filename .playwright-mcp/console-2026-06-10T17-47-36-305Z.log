@@ -1,0 +1,30 @@
+[   15013ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:101
+[   15015ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:101
+[   15158ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:76
+[   15839ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:69
+[   15849ms] [ERROR] error ao buscar chats TypeError: Cannot read properties of undefined (reading 'data')
+    at yvt (https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:1122:26226)
+    at async k (https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:54:37954)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:54:38261) @ https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:69
+[   15968ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:69
+[   16547ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/users/settings/summary:0
+[   16555ms] [ERROR] [UserPreferencesService] Failed to get summary: TypeError: Cannot read properties of undefined (reading 'data')
+    at _ne.getSummary (https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:2226:64487)
+    at async https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:2226:65147 @ https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:69
+[   16556ms] [ERROR] [useUserPreferences] Error: TypeError: Cannot read properties of undefined (reading 'data')
+    at _ne.getSummary (https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:2226:64487)
+    at async https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:2226:65147 @ https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:69
+[   17336ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:101
+[   17336ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:101
+[   17391ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:76
+[   17431ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:69
+[   17911ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:69
+[   74260ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:69
+[   74890ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at zM (https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:1088:280)
+    at f2.fZ (https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:1088:317)
+    at async f2.request (https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:1088:2138)
+    at async yvt (https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:1122:26189)
+    at async k (https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:54:37954)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:54:38261) @ https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:69
+[  308309ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:69

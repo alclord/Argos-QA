@@ -1,0 +1,108 @@
+{
+  "card": "DEV4-4291",
+  "environment": "canary",
+  "pr": "FoundationAPI#1127",
+  "executedAt": "2026-06-09T13:20:00.000Z",
+  "executor": "argos-qa-automated",
+  "summary": "10/10 PASSOU",
+  "jiraCommentId": "606632",
+  "accountUuid": "9b8af98e-0407-49a2-bce9-3620f29c513a",
+  "userUuid": "9b923395-84e2-4063-81d7-359a828bc66d",
+  "testContacts": {
+    "contactA": { "uuid": "31ec2e8c-0674-11f1-b89b-06b3482cde9b", "name": "Tifany Duarte Borges", "scheduledCount": 20 },
+    "contactB": { "uuid": "d77c4a47-3a95-11f1-9d75-06799772b1cd", "name": "Talita oral clinc 51991", "scheduledCount": 3 },
+    "contactTest": { "uuid": "9bb49c4f-2c88-4a7f-84bb-38074c239b4b", "name": "Yuri", "scheduledCount": 11 }
+  },
+  "scenarios": [
+    {
+      "id": "CT-SCHED-001",
+      "name": "Filtro retorna somente agendamentos do contato",
+      "result": "PASSOU",
+      "method": "API",
+      "note": "contact_uuid=contactA → 200, total=20, allMatch=true, foreignUuids=[]",
+      "evidence": []
+    },
+    {
+      "id": "CT-SCHED-002",
+      "name": "Listagem global sem filtro retorna todos os agendamentos",
+      "result": "PASSOU",
+      "method": "API",
+      "note": "Sem contact_uuid → 200, total=1555, 12 contatos distintos na primeira página",
+      "evidence": []
+    },
+    {
+      "id": "CT-SCHED-003",
+      "name": "Dados de outro contato não aparecem no filtro (isolamento)",
+      "result": "PASSOU",
+      "method": "API",
+      "note": "ContactA filtrado: 20 msgs, 0 contaminação de B. ContactB filtrado: 3 msgs, 0 contaminação de A. isolationOk=true",
+      "evidence": []
+    },
+    {
+      "id": "CT-SCHED-004",
+      "name": "Contato sem agendamentos retorna lista vazia",
+      "result": "PASSOU",
+      "method": "API",
+      "note": "UUID sem agendamentos → 200, total=0, data=[], estrutura {data,links,meta} presente",
+      "evidence": []
+    },
+    {
+      "id": "CT-SCHED-005",
+      "name": "UI exibe somente agendamentos do contato selecionado",
+      "result": "PASSOU",
+      "method": "UI",
+      "note": "SPA chama GET /v3/.../scheduled-messages?per_page=15&page=1&include=user,contact,channel&contact_uuid=9bb49c4f... → 200, allMatch=true, 11/11 msgs do contato Yuri",
+      "evidence": [
+        "CT-SCHED-005_passo0_chat_yuri.png",
+        "CT-SCHED-005_passo1_panel_scheduled.png",
+        "CT-SCHED-005_passo2_panel_ok.png"
+      ]
+    },
+    {
+      "id": "CT-SCHED-006",
+      "name": "contact_uuid inválido retorna erro adequado",
+      "result": "PASSOU",
+      "method": "API",
+      "note": "4 inputs inválidos testados (not-a-uuid, 12345, formato-x, XSS) → todos 422 com errors.contact_uuid. Sem 500.",
+      "evidence": []
+    },
+    {
+      "id": "CT-SCHED-007",
+      "name": "contact_uuid de outra conta não expõe dados",
+      "result": "PASSOU",
+      "method": "API",
+      "note": "UUID de conta inexistente → 200, total=0, dataIsolated=true",
+      "evidence": []
+    },
+    {
+      "id": "CT-SCHED-008",
+      "name": "Volume de resposta proporcional ao contato",
+      "result": "PASSOU",
+      "method": "API",
+      "note": "Global=1555, ContactA=20, ContactB=3. proportional=true, distinct=true. Filtro aplicado — não retorna global para nenhum contato.",
+      "evidence": []
+    },
+    {
+      "id": "CT-SCHED-009",
+      "name": "contact_uuid como string vazia não expõe dados",
+      "result": "PASSOU",
+      "method": "API",
+      "note": "contact_uuid='' → 200, total=0. Não expõe os 1555 globais. filterNotIgnored=true.",
+      "evidence": []
+    },
+    {
+      "id": "CT-SCHED-010",
+      "name": "Requisição sem autenticação é rejeitada",
+      "result": "PASSOU",
+      "method": "API",
+      "note": "Sem Authorization header → 401 'Unauthenticated.' Proteção intacta.",
+      "evidence": []
+    }
+  ],
+  "technicalNotes": {
+    "bugFix": "ListScheduledMessagesFiltersData.fromRequest() agora mapeia contact_uuid → contactUuid; ListScheduledMessages Action aplica Equals filter via buildColumnFilters()",
+    "endpointTested": "GET /v3/accounts/{account_uuid}/users/{user_uuid}/scheduled-messages?contact_uuid={uuid}",
+    "spaCallPattern": "GET /v3/.../scheduled-messages?per_page=15&page=1&include=user,contact,channel&contact_uuid={uuid}",
+    "globalTotal": 1555
+  }
+}

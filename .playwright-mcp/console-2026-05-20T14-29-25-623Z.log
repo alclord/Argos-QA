@@ -1,0 +1,35 @@
+[     779ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:101
+[     780ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:101
+[     837ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:76
+[     973ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:429
+    at cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:902:31)
+    at Md.bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:899:92)
+    at Md.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at fb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Md.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Rq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at sf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:726:315
+    at UA (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:651:1)
+    at ZA.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:655:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:673:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:131)
+    at oC (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:773)
+    at rC (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:679:29)
+    at vD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:707:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65i2:687:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:862:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65j0h2:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:708:6
+    at r (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:70:9812)
+[    1345ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69

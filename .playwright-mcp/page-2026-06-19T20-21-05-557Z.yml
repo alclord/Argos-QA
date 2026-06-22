@@ -1,0 +1,75 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=6439f7e1a7290d1547cfacd4dfa58ae417dbcc36&toPath=https://app.poli.digital/home
+        - img [ref=e11]
+        - generic [ref=e12]: Dashboard
+      - generic [ref=e13]:
+        - list [ref=e15]:
+          - listitem [ref=e16]:
+            - link "Chats" [ref=e17] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e19]
+              - generic [ref=e22]: Chats
+          - listitem [ref=e23]:
+            - link "Contatos" [ref=e24] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e26]
+              - generic [ref=e29]: Contatos
+          - listitem [ref=e30]:
+            - link "Automação" [ref=e31] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=6439f7e1a7290d1547cfacd4dfa58ae417dbcc36&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e33]
+              - generic [ref=e36]: Automação
+          - listitem [ref=e37]:
+            - link "Flow" [ref=e38] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e40]
+              - generic [ref=e42]: Flow
+          - listitem [ref=e43]:
+            - link "Marketing" [ref=e44] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=6439f7e1a7290d1547cfacd4dfa58ae417dbcc36&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e46]
+              - generic [ref=e49]: Marketing
+          - listitem [ref=e50]:
+            - link "Pay" [ref=e51] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=6439f7e1a7290d1547cfacd4dfa58ae417dbcc36&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e53]
+              - generic [ref=e56]: Pay
+          - listitem [ref=e57]:
+            - link "Relatório" [ref=e58] [cursor=pointer]:
+              - /url: /reports
+              - img [ref=e60]
+              - generic [ref=e64]: Relatório
+        - list [ref=e66]:
+          - listitem [ref=e67]:
+            - generic [ref=e68]:
+              - link "Configurações" [ref=e69] [cursor=pointer]:
+                - /url: /settings
+                - img [ref=e71]
+                - generic: Configurações
+              - button "Configurações" [ref=e75] [cursor=pointer]:
+                - img [ref=e76]
+      - generic [ref=e78]:
+        - button "Consumo de créditos" [ref=e79] [cursor=pointer]:
+          - img [ref=e81]
+          - generic [ref=e84]:
+            - generic [ref=e85]: Créditos disponíveis
+            - generic [ref=e86]: "0"
+          - img [ref=e87]
+        - button "YA Yuri Alcantara Poli teste" [ref=e90] [cursor=pointer]:
+          - generic [ref=e96]: YA
+          - generic [ref=e98]: Yuri Alcantara Poli teste
+        - generic [ref=e100]: 3.5.359-DEV4-4403
+    - main [ref=e101]:
+      - main [ref=e102]:
+        - generic [ref=e104]:
+          - navigation "breadcrumb" [ref=e106]:
+            - link "Página inicial" [ref=e108] [cursor=pointer]:
+              - /url: /
+            - img [ref=e109]
+            - generic [ref=e111]: Flow
+          - img [ref=e114]
+  - region "Notifications (F8)":
+    - list

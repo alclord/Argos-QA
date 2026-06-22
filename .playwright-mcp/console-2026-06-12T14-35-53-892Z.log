@@ -1,0 +1,763 @@
+[     794ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:101
+[     794ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:101
+[     869ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:76
+[    1353ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  223533ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  224688ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users?search=Yuri:0
+[  224689ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users?search=Yuri:0
+[  225587ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  225599ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      2
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  225602ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  278435ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  278438ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      4
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  278439ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  328547ms] [ERROR] Failed to load resource: the server responded with a status of 422 (Unprocessable Entity) @ https://foundation-api-canary.poli.digital/v3/users/b59da428-26e6-11f1-9d75-06799772b1cd?include=attributes:0
+[  341497ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  341573ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users?search=Yuri:0
+[  341573ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users?search=Yuri:0
+[  342798ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  342800ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  342801ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  346900ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  346902ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      4
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  346903ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  401384ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  401468ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users?search=Yuri:0
+[  401468ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users?search=Yuri:0
+[  402705ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  402711ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  402711ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  421256ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  421324ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users?search=Yuri:0
+[  421324ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users?search=Yuri:0
+[  422560ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  422562ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  422563ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  479312ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  479314ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  479315ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  540930ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  541016ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users?search=Yuri:0
+[  541017ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users?search=Yuri:0
+[  542241ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  542244ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  542244ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  546660ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  546778ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users?search=Yuri:0
+[  546779ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users?search=Yuri:0
+[  547970ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  547971ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  547971ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  549208ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  549209ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      2
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  549209ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  550472ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  550474ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      6
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  550474ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  558996ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  559080ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users?search=Yuri:0
+[  559080ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users?search=Yuri:0
+[  560304ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  560306ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  560306ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  561565ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  561568ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      2
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  561568ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  564638ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  564639ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  564640ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  565649ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  565651ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      4
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  565651ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  569251ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  569340ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users?search=Yuri:0
+[  569341ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users?search=Yuri:0
+[  570579ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  570582ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  570582ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  575062ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  575065ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1,
+      3
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  575065ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  575065ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  576312ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  576313ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      3
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  576314ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  577585ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  577587ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      3,
+      5
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  577587ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  577587ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  578844ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  578847ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      5
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  578848ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  579906ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  579919ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      6,
+      8
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  579921ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  579922ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  579922ms] [ERROR] Amplitude Logger [Error]: Event rejected due to exceeded retry count @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  579922ms] [ERROR] Amplitude Logger [Error]: Event rejected due to exceeded retry count @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  581183ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  581186ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      6
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  581187ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  581188ms] [ERROR] Amplitude Logger [Error]: Event rejected due to exceeded retry count @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  582461ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  582465ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      5
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  582466ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  582466ms] [ERROR] Amplitude Logger [Error]: Event rejected due to exceeded retry count @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  586479ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  586480ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  586481ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  587734ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  587735ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      2
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  587735ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  588851ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  588852ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      2,
+      4
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  588853ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  588853ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  590116ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  590117ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      4
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  590117ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  591269ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  591271ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      5
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  591272ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  591272ms] [ERROR] Amplitude Logger [Error]: Event rejected due to exceeded retry count @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  592308ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  592309ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      4
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  592310ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  592310ms] [ERROR] Amplitude Logger [Error]: Event rejected due to exceeded retry count @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  593513ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  593522ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      4,
+      6
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  593523ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  593524ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  593524ms] [ERROR] Amplitude Logger [Error]: Event rejected due to exceeded retry count @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  594789ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  594790ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      5
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  594791ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  594791ms] [ERROR] Amplitude Logger [Error]: Event rejected due to exceeded retry count @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  595914ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  595915ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      5,
+      7
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  595916ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  595916ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  595916ms] [ERROR] Amplitude Logger [Error]: Event rejected due to exceeded retry count @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  597181ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  597186ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      6,
+      8
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  597186ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  597187ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  598487ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  598499ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      8
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  598500ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  598501ms] [ERROR] Amplitude Logger [Error]: Event rejected due to exceeded retry count @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  598501ms] [ERROR] Amplitude Logger [Error]: Event rejected due to exceeded retry count @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  599750ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  599751ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      7
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  599752ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  599752ms] [ERROR] Amplitude Logger [Error]: Event rejected due to exceeded retry count @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  601034ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  601036ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      9
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  601037ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  601037ms] [ERROR] Amplitude Logger [Error]: Event rejected due to exceeded retry count @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  601037ms] [ERROR] Amplitude Logger [Error]: Event rejected due to exceeded retry count @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  605897ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  605977ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users?search=Yuri:0
+[  605978ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users?search=Yuri:0
+[  607191ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  607194ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  607194ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69

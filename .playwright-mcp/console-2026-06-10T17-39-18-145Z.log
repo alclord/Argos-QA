@@ -1,0 +1,17 @@
+[     277ms] Identifier 'TCRMEmbed' has already been declared
+[    3762ms] [LOG] Defining triggerGuiding @ :0
+[    5676ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:898:429
+    at qS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:31)
+    at Od.pS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:897:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:309:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:255:473)
+[    5826ms] [LOG] User Guiding identify running @ :1
+[    5826ms] [LOG] User Guiding identify cleared @ :1
+[    9256ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/dashboard:0
+[    9256ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/dashboard:0

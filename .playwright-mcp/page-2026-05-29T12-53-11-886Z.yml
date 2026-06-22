@@ -1,0 +1,126 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - img [ref=e7]
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link [ref=e11] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app.poli.digital/home
+              - img [ref=e13]
+          - listitem [ref=e16]:
+            - link [ref=e17] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e19]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app.poli.digital/settings/46667/chatbot
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e30]
+          - listitem [ref=e32]:
+            - link [ref=e33] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e35]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e41]
+          - listitem [ref=e43]:
+            - link [ref=e44] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e46]
+          - listitem [ref=e49]:
+            - link [ref=e50] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app.poli.digital/settings/46667
+              - img [ref=e52]
+          - listitem [ref=e55]:
+            - link [ref=e56] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e58]
+          - listitem [ref=e62]:
+            - link [ref=e63] [cursor=pointer]:
+              - /url: /templates
+              - img [ref=e65]
+        - list [ref=e68]:
+          - listitem [ref=e69]:
+            - button "Consumo de créditos" [ref=e70] [cursor=pointer]:
+              - img [ref=e71]
+          - listitem [ref=e74]:
+            - button "YA" [ref=e75] [cursor=pointer]:
+              - generic [ref=e80]: YA
+          - listitem [ref=e82]:
+            - button [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+          - listitem [ref=e86]:
+            - generic [ref=e88]: 3.5.332
+    - main [ref=e89]:
+      - generic [ref=e91]:
+        - navigation "breadcrumb" [ref=e93]:
+          - link "Página inicial" [ref=e95] [cursor=pointer]:
+            - /url: /
+          - img [ref=e96]
+          - generic [ref=e98]: Mensagens agendadas
+        - generic [ref=e100]:
+          - generic [ref=e102]:
+            - generic [ref=e796]:
+              - img [ref=e798]
+              - generic [ref=e801]:
+                - paragraph [ref=e802]: Total
+                - paragraph [ref=e803]: "69"
+            - generic [ref=e805]:
+              - img [ref=e807]
+              - generic [ref=e811]:
+                - paragraph [ref=e812]: Agendadas
+                - paragraph [ref=e813]: "0"
+            - generic [ref=e815]:
+              - img [ref=e817]
+              - generic [ref=e820]:
+                - paragraph [ref=e821]: Enviadas
+                - paragraph [ref=e822]: "43"
+            - generic [ref=e824]:
+              - img [ref=e826]
+              - generic [ref=e830]:
+                - paragraph [ref=e831]: Canceladas
+                - paragraph [ref=e832]: "1"
+          - generic [ref=e144]:
+            - generic [ref=e146]:
+              - generic [ref=e147]:
+                - generic [ref=e148]: Status
+                - combobox "Status" [ref=e149] [cursor=pointer]:
+                  - generic: Agendada
+                  - img [ref=e150]
+              - generic [ref=e152]:
+                - generic [ref=e153]: Canal
+                - combobox "Canal" [ref=e154] [cursor=pointer]:
+                  - generic: Todos os canais
+                  - img [ref=e155]
+              - generic [ref=e157]:
+                - generic [ref=e158]: Responsável
+                - combobox "Responsável" [ref=e159] [cursor=pointer]:
+                  - generic: Todos os responsáveis
+                  - img [ref=e160]
+              - generic [ref=e162]:
+                - generic [ref=e163]: Período
+                - button "Período" [ref=e164] [cursor=pointer]:
+                  - generic [ref=e165]: Todos os períodos
+                  - img [ref=e166]
+              - button "Agendar mensagem" [ref=e169] [cursor=pointer]:
+                - img [ref=e170]
+                - text: Agendar mensagem
+              - generic [ref=e834]:
+                - generic [ref=e835]: "Status:"
+                - generic [ref=e836]: Agendada
+                - button "Remove filter Status" [ref=e837] [cursor=pointer]:
+                  - img [ref=e838]
+            - paragraph [ref=e922]: Nenhuma mensagem agendada encontrada
+  - region "Notifications (F8)":
+    - list [ref=e924]:
+      - listitem [ref=e925]:
+        - generic [ref=e926]:
+          - img [ref=e927]
+          - generic [ref=e929]: Agendamento cancelado com sucesso!
+          - button [ref=e930] [cursor=pointer]:
+            - img [ref=e931]

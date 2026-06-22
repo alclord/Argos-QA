@@ -1,0 +1,522 @@
+[   67867ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[   69605ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[   69605ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[   69716ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:76
+[   70463ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[   71216ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.aS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Ez (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Jz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:131)
+    at gB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:773)
+    at jB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:29)
+    at tD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:850:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65q0:681:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65q0:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:696:6
+    at r (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:70:9812)
+[  226824ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,type,category,goal,language,message,components,interactive,team,account_channel,metadata:0
+[  247586ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[  248876ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[  251171ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[  255668ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[  277813ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://www.google.com.br/pagead/1p-user-list/806600684/?random=1779907150294&cv=11&fst=1779904800000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be65q0v884247286za200zd884247286xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938466~115938468~116701382~119169247&u_w=1366&u_h=768&url=https%3A%2F%2Fspa-canary.poli.digital%2Ftemplates%2Fargos-test-uuid-4170%2Fedit&rcb=4&frm=0&tiba=App&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1787102591.1779901927&uaa=x86&uab=64&uafvl=Chromium%3B149.0.7827.3%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0.0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQS-QEABaugfWruKWX2V-pVWE9xm6IKegRFxHnAzZxL8zehfsqkftMSaj1l91P43RdrOfmH_MNOgDD8Y3e5ZICfGDolwy3GpAQUrnLIFJ9Jk_rtpXlSc8fjhJjg5kcp_11ecFAB4cpfyN79qeaOuDjjXktlaTlUUnC0c6DrBL53_llb3L2HOCfv5lQN-hr4itHj-7EZvbF4NVCKDz2diSvFl_4FS6Q2ebRzVM-4ByxIk1BWPuJt2XoaHBcrcgWr9x_xRh1zSrt2MazXe4zcu521T7nEghlLlKNcfbsOWy9BYIbZnd68pavUUlTPxPDQZLLe3Mob8lWs0y9AEe0&random=1039892697&rmt_tld=1&ipr=y:0
+[  278625ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  278625ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  278766ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:76
+[  278883ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.aS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Ez (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Jz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:131)
+    at gB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:773)
+    at jB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:29)
+    at tD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65q2h2:681:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:850:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65q0:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:696:6
+    at r (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:70:9812)
+[  279162ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/templates/argos-test-uuid-4170?include=key,version,status,type,category,goal,language,message,components,interactive,team,account_channel,metadata:0
+[  279427ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[  280443ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/templates/argos-test-uuid-4170?include=key,version,status,type,category,goal,language,message,components,interactive,team,account_channel,metadata:0
+[  282734ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/templates/argos-test-uuid-4170?include=key,version,status,type,category,goal,language,message,components,interactive,team,account_channel,metadata:0
+[  287275ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/templates/argos-test-uuid-4170?include=key,version,status,type,category,goal,language,message,components,interactive,team,account_channel,metadata:0
+[  344858ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  344859ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  344911ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:76
+[  345322ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[  345500ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[  345705ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.aS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Ez (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Jz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:131)
+    at gB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:773)
+    at jB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:29)
+    at tD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65q2h2:681:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:850:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65q0:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:696:6
+    at r (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:70:9812)
+[  346683ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[  348985ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[  353299ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[  440807ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  440807ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  440964ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:76
+[  441613ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[  442089ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.aS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Ez (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Jz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:131)
+    at gB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:773)
+    at jB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:29)
+    at tD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65q0:681:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:850:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65q0:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:696:6
+    at r (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:70:9812)
+[  460745ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  460746ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  460795ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:76
+[  460906ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.aS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Ez (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Jz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:131)
+    at gB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:773)
+    at jB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:29)
+    at tD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65q0h1:681:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:850:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65q0:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:696:6
+    at r (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:70:9812)
+[  461374ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[  485301ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  485301ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  485356ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:76
+[  485467ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.aS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Ez (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Jz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:131)
+    at gB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:773)
+    at jB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:29)
+    at tD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:850:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65q2h2:681:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65q0:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:696:6
+    at r (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:70:9812)
+[  485942ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[  489046ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/templates/argos-test-uuid-4170?include=key,version,status,type,category,goal,language,message,components,interactive,team,account_channel,metadata:0
+[  490342ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/templates/argos-test-uuid-4170?include=key,version,status,type,category,goal,language,message,components,interactive,team,account_channel,metadata:0
+[  492851ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/templates/argos-test-uuid-4170?include=key,version,status,type,category,goal,language,message,components,interactive,team,account_channel,metadata:0
+[  496140ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  496141ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  496191ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:76
+[  496305ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.aS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Ez (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Jz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:131)
+    at gB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:773)
+    at jB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:29)
+    at tD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65q0:681:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:850:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65q0:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:696:6
+    at r (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:70:9812)
+[  496776ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[  499517ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/templates/argos-test-uuid-4170?include=key,version,status,type,category,goal,language,message,components,interactive,team,account_channel,metadata:0
+[  500808ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/templates/argos-test-uuid-4170?include=key,version,status,type,category,goal,language,message,components,interactive,team,account_channel,metadata:0
+[  503303ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/templates/argos-test-uuid-4170?include=key,version,status,type,category,goal,language,message,components,interactive,team,account_channel,metadata:0
+[  504872ms] [ERROR] Amplitude Logger [Error]: Failed to fetch (api2.amplitude.com) @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[  504873ms] [WARNING] Amplitude Logger [Warn]: {code: 0, error: "Status 'failed' provided for 1 events"} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[  525889ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  525889ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  525969ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:76
+[  526090ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.aS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Ez (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Jz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:131)
+    at gB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:773)
+    at jB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:29)
+    at tD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65q0:681:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:850:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65q0:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:696:6
+    at r (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:70:9812)
+[  526581ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[  555945ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/templates/undefined?include=key,version,status,type,category,goal,language,message,components,interactive,team,account_channel,metadata:0
+[  606138ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/templates/undefined?include=key,version,status,type,category,goal,language,message,components,interactive,team,account_channel,metadata:0
+[  653352ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  653353ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  653420ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:76
+[  654060ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[  654356ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.aS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Ez (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Jz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:131)
+    at gB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:773)
+    at jB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:29)
+    at tD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:850:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65q0:681:69)
+    at Array.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65q0:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:696:6
+    at r (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:70:9812)
+[  655059ms] [ERROR] Failed to load resource: the server responded with a status of 409 (Conflict) @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,type,category,goal,language,message,components,interactive,team,account_channel,metadata:0
+[  669291ms] [ERROR] Failed to load resource: the server responded with a status of 409 (Conflict) @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,type,category,goal,language,message,components,interactive,team,account_channel,metadata:0
+[  741430ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  741430ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  741567ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:76
+[  741680ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.aS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Ez (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Jz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:131)
+    at gB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:773)
+    at jB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:29)
+    at tD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65q0:681:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:850:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65q2h2:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:696:6
+    at r (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:70:9812)
+[  742159ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/templates/argos-approved-uuid-4170?include=key,version,status,type,category,goal,language,message,components,interactive,team,account_channel,metadata:0
+[  742171ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[  743454ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/templates/argos-approved-uuid-4170?include=key,version,status,type,category,goal,language,message,components,interactive,team,account_channel,metadata:0
+[  745752ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/templates/argos-approved-uuid-4170?include=key,version,status,type,category,goal,language,message,components,interactive,team,account_channel,metadata:0
+[  750043ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/templates/argos-approved-uuid-4170?include=key,version,status,type,category,goal,language,message,components,interactive,team,account_channel,metadata:0
+[  811818ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  811818ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  811900ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:76
+[  813151ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[  813367ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.aS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Ez (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Jz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:131)
+    at gB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:773)
+    at jB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:29)
+    at tD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65q0:681:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:850:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65q2h2:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:696:6
+    at r (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:70:9812)
+[ 1138594ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1139892ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1142211ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1146524ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1157690ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[ 1162506ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1163794ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1166094ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1170417ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1187358ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[ 1187358ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[ 1187476ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:76
+[ 1188152ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[ 1189089ms] Identifier 'TCRMEmbed' has already been declared
+[ 1189105ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.aS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Ez (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Jz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:131)
+    at gB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:773)
+    at jB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:29)
+    at tD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65q0:681:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:850:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65q2h2:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:696:6
+    at r (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:70:9812)
+[ 1193133ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/487885562_2446949202306160_3425310160701669776_n.jpg?ccb=11-4&oh=01_Q5Aa3AEtbteT_zeyGZQ4o6lAKG_EDoDCDcHaOUZIxO0bOGI_3w&oe=6936BC7D&_nc_sid=5e03e0&_nc_cat=108:0
+[ 1195898ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1197235ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1199541ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1203836ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1207351ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[ 1211535ms] Identifier 'TCRMEmbed' has already been declared
+[ 1212136ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[ 1212136ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[ 1212188ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:76
+[ 1212540ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 1212555ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1212801ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[ 1213805ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 1213855ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1216052ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 1216161ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1220319ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 1220452ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1278697ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1280255ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1282575ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1286881ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1305832ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[ 1305832ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[ 1305887ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:76
+[ 1306281ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1306324ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 1306525ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[ 1307557ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 1307586ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1309798ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 1310065ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1314302ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 1314360ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1468883ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/teams?order=name&include=attributes,users:0
+[ 1468890ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[ 1485713ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[ 1485713ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[ 1485772ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:76
+[ 1486480ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[ 1486559ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 1487788ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 1490015ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 1494258ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 1892054ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1893388ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1895749ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1900061ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1922132ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[ 1922132ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[ 1922339ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:76
+[ 1923371ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1923399ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[ 1923874ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 1924766ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1925340ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 1927079ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1927595ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 1931383ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,keyboard_shortcut,status,type,category,goal,namespace,language,message,components,interactive,variables,team,user,account_channel,metadata&page=1&per_page=15&order=-created_at:0
+[ 1931843ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0

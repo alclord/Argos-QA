@@ -1,0 +1,31 @@
+﻿Título do Erro;Projeto Sentry;Ocorrências;Usuários Afetados;Primeiro Visto;Último Visto;Módulo;Sinal Oculto
+AxiosError 401 /scheduled-messages;omnispa;11878;3270;16/05/2026;30/05/2026;Chat / Mensagens;Não
+Error: encoder stored;polichat-spa;8444;1819;16/05/2026;30/05/2026;Chat / Mensagens;Sim
+AxiosError 401 geral;polichat-spa;4436;1316;16/05/2026;30/05/2026;Autenticação;Sim
+Request failed 500;spa-backend;4551;1261;16/05/2026;30/05/2026;Chat / Mensagens;Sim
+unknown error;polichat-spa;3373;963;16/05/2026;30/05/2026;Chat / Mensagens;Sim
+AbortError: user aborted request;polichat-spa;757;263;16/05/2026;30/05/2026;Chat / Mensagens;Sim
+MessageSenderException: Internal Server Error;foundationapi;7745;762;16/05/2026;30/05/2026;Chat / Mensagens;Não
+Graph returned error: session invalidated;polichat-web-app;15195;752;16/05/2026;30/05/2026;Autenticação;Sim
+GuzzleHttp: PATCH crm 401;polichat-web-app;5265;450;16/05/2026;30/05/2026;Integrações CRM;Sim
+CRMException: Não autenticado (polichat);polichat-web-app;5316;422;16/05/2026;30/05/2026;Integrações CRM;Sim
+Firebase JWT Expired;polichat-web-app;387;223;16/05/2026;30/05/2026;Autenticação;Sim
+AxiosError 401 /login;omnispa;130;96;30/05/2026;30/05/2026;Autenticação;Sim
+Uncompressed Asset;omnispa;327;296;29/05/2026;30/05/2026;Interface;Sim
+Domains\Chats MessageSenderException: Message not sent to queue;foundationapi;731;0;18/05/2026;30/05/2026;Chat / Mensagens;Sim
+TypeError: Cannot read properties of undefined (plugin);omnispa;161;37;28/05/2026;30/05/2026;Interface;Não
+Exception: Mensagem não encontrada (CloudApiWebHook);polichat-web-app;8918;125;16/05/2026;30/05/2026;Canais / WhatsApp;Não
+Não foi possível enviar Template;polichat-web-app;10991;9;16/05/2026;30/05/2026;Canais / WhatsApp;Não
+ErrorException: Undefined array key 0 (FacebookWebHook);polichat-web-app;12120;706;16/05/2026;30/05/2026;Canais / WhatsApp;Sim
+Duplicate entry credits_count;polichat-web-app;6443;140;16/05/2026;30/05/2026;Chat / Mensagens;Sim
+CRMException: Não autenticado (foundationapi);foundationapi;17739;0;16/05/2026;30/05/2026;Integrações CRM;Sim
+CRMException: Já existe contato com telefone;foundationapi;16473;0;16/05/2026;30/05/2026;Integrações CRM;Sim
+Illuminate RequestException 401 CrmHttpClient;foundationapi;10913;0;16/05/2026;30/05/2026;Integrações CRM;Sim
+Error: Missing ENABLE_ACK_LOG;meta-whatsapp-cloud-api;439809;0;16/05/2026;30/05/2026;Chat / Mensagens;Sim
+ErrorException: Attempt read property customer on null (ZAPI);polichat-web-app;1034081;1;16/05/2026;30/05/2026;Canais / WhatsApp;Sim
+Error: connect ECONNREFUSED (api-gateway);api-gateway;53571;0;17/05/2026;30/05/2026;Infra;Sim
+Distribute to department;dispatch;2600;0;16/05/2026;30/05/2026;Distribuição / Filas;Sim
+Distribute from the queue;dispatch;2160;0;18/05/2026;30/05/2026;Distribuição / Filas;Sim
+TypeError: Cannot read id (automatic-actions);automatic-actions;1489;0;17/05/2026;30/05/2026;Distribuição / Filas;Sim
+Consecutive HTTP;jarvis;2718;0;16/05/2026;30/05/2026;Jarvis / IA;Sim
+Customer dont have token (leads);leads;4150;0;16/05/2026;30/05/2026;Integrações CRM;Sim

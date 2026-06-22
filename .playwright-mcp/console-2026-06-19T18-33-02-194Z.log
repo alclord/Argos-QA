@@ -1,0 +1,34 @@
+[    1360ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[    1361ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[    1571ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:76
+[    2348ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  265268ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/orders:0
+[  265317ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/categories:0
+[  265407ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/categories:0
+[  265439ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/orders:0
+[  391918ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/categories:0
+[  392314ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/contacts/5c12ea50-1bdd-11f1-a609-021f6d257969/orders:0
+[ 3602814ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.qa.poli.digital/auth/inactivity:0
+[ 3602935ms] AxiosError: Request failed with status code 404
+    at nze (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:15855)
+[ 3821985ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/orders:0
+[ 3822114ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/categories:0
+[ 3822141ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/contacts/5c12ea50-1bdd-11f1-a609-021f6d257969/messages?per_page=50:0
+[ 3822316ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/orders:0
+[ 3822320ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/categories:0
+[ 3837231ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[ 3837232ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[ 3837403ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:76
+[ 3837468ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[ 3837916ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/non-payment/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[ 3837933ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[ 3842797ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[ 3874762ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/orders:0
+[ 3874771ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/categories:0
+[ 3874778ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/orders:0
+[ 3874843ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/categories:0
+[ 4774210ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[ 4776452ms] [ERROR] WebSocket connection to 'wss://soketi.qa.poli.digital/app/12039123darddd039345?protocol=7&client=js&version=8.5.0&flash=false' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1108
+[ 4776457ms] [ERROR] WebSocket connection to 'wss://soketi.qa.poli.digital/app/12039123darddd039345?protocol=7&client=js&version=8.5.0&flash=false' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1108
+[ 4782025ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69

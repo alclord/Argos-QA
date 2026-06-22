@@ -1,0 +1,87 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=c213de3726067b4b87659cd2ef5ebb834b70d7e9&toPath=https://app.poli.digital/home
+        - img [ref=e11]
+      - generic [ref=e12]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link [ref=e16] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e18]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=c213de3726067b4b87659cd2ef5ebb834b70d7e9&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e30]
+          - listitem [ref=e33]:
+            - link [ref=e34] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e36]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=c213de3726067b4b87659cd2ef5ebb834b70d7e9&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e41]
+          - listitem [ref=e44]:
+            - link [ref=e45] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=c213de3726067b4b87659cd2ef5ebb834b70d7e9&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e47]
+          - listitem [ref=e50]:
+            - link [ref=e51] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=c213de3726067b4b87659cd2ef5ebb834b70d7e9&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e53]
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - link [ref=e61] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e63]
+      - generic [ref=e66]:
+        - button "Consumo de créditos" [ref=e67] [cursor=pointer]:
+          - img [ref=e69]
+        - button "YA" [ref=e73] [cursor=pointer]:
+          - generic [ref=e79]: YA
+        - generic [ref=e82]: 3.5.359-DEV4-4395
+    - main [ref=e83]:
+      - main [ref=e84]:
+        - generic [ref=e86]:
+          - navigation "breadcrumb" [ref=e88]:
+            - link "Página inicial" [ref=e90] [cursor=pointer]:
+              - /url: /
+            - generic [ref=e91]:
+              - img [ref=e92]
+              - link "Configurações" [ref=e94] [cursor=pointer]:
+                - /url: /settings
+            - img [ref=e95]
+            - generic [ref=e97]: Construtor de Etiquetas
+          - generic [ref=e99]:
+            - generic [ref=e100]:
+              - button "Total de etiquetas Cadastradas na plataforma" [pressed] [ref=e101] [cursor=pointer]:
+                - generic [ref=e102]: Total de etiquetas
+                - generic [ref=e104]: Cadastradas na plataforma
+              - button "Etiquetas ativas Disponíveis para uso" [ref=e105] [cursor=pointer]:
+                - generic [ref=e106]: Etiquetas ativas
+                - generic [ref=e108]: Disponíveis para uso
+              - button "Etiquetas inativas Desativadas temporariamente" [ref=e109] [cursor=pointer]:
+                - generic [ref=e110]: Etiquetas inativas
+                - generic [ref=e112]: Desativadas temporariamente
+              - generic [ref=e113]:
+                - generic [ref=e114]: Contatos etiquetados
+                - generic [ref=e116]: Somando todas as etiquetas
+            - generic [ref=e119]:
+              - generic [ref=e121]:
+                - textbox "Buscar por nome da etiqueta..." [ref=e122]
+                - button "Pesquisar" [ref=e123] [cursor=pointer]:
+                  - img [ref=e124]
+              - generic [ref=e127]:
+                - combobox "Categoria" [ref=e128] [cursor=pointer]:
+                  - generic [ref=e129]: Todas as categorias
+                  - img [ref=e130]
+                - button "Criar nova etiqueta" [ref=e132] [cursor=pointer]:
+                  - img [ref=e133]
+                  - text: Criar nova etiqueta
+  - region "Notifications (F8)":
+    - list

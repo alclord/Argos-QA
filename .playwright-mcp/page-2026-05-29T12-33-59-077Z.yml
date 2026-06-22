@@ -1,0 +1,422 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - img [ref=e7]
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link [ref=e11] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app.poli.digital/home
+              - img [ref=e13]
+          - listitem [ref=e16]:
+            - link [ref=e17] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e19]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app.poli.digital/settings/46667/chatbot
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e30]
+          - listitem [ref=e32]:
+            - link [ref=e33] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e35]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e41]
+          - listitem [ref=e43]:
+            - link [ref=e44] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e46]
+          - listitem [ref=e49]:
+            - link [ref=e50] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app.poli.digital/settings/46667
+              - img [ref=e52]
+          - listitem [ref=e55]:
+            - link [ref=e56] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e58]
+          - listitem [ref=e62]:
+            - link [ref=e63] [cursor=pointer]:
+              - /url: /templates
+              - img [ref=e65]
+        - list [ref=e68]:
+          - listitem [ref=e69]:
+            - button "Consumo de créditos" [ref=e70] [cursor=pointer]:
+              - img [ref=e71]
+          - listitem [ref=e74]:
+            - button "YA" [ref=e75] [cursor=pointer]:
+              - generic [ref=e80]: YA
+          - listitem [ref=e82]:
+            - button [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+          - listitem [ref=e86]:
+            - generic [ref=e88]: 3.5.332
+    - main [ref=e89]:
+      - generic [ref=e91]:
+        - navigation "breadcrumb" [ref=e93]:
+          - link "Página inicial" [ref=e95] [cursor=pointer]:
+            - /url: /
+          - img [ref=e96]
+          - generic [ref=e98]: Mensagens agendadas
+        - generic [ref=e100]:
+          - generic [ref=e102]:
+            - generic [ref=e700]:
+              - img [ref=e702]
+              - generic [ref=e705]:
+                - paragraph [ref=e706]: Total
+                - paragraph [ref=e707]: "68"
+            - generic [ref=e709]:
+              - img [ref=e711]
+              - generic [ref=e715]:
+                - paragraph [ref=e716]: Agendadas
+                - paragraph [ref=e717]: "0"
+            - generic [ref=e719]:
+              - img [ref=e721]
+              - generic [ref=e724]:
+                - paragraph [ref=e725]: Enviadas
+                - paragraph [ref=e726]: "43"
+            - generic [ref=e728]:
+              - img [ref=e730]
+              - generic [ref=e734]:
+                - paragraph [ref=e735]: Canceladas
+                - paragraph [ref=e736]: "0"
+          - generic [ref=e130]:
+            - generic [ref=e132]:
+              - generic [ref=e133]:
+                - generic [ref=e134]: Status
+                - combobox "Status" [ref=e135] [cursor=pointer]:
+                  - generic: Todos os status
+                  - img [ref=e136]
+              - generic [ref=e138]:
+                - generic [ref=e139]: Canal
+                - combobox "Canal" [ref=e140] [cursor=pointer]:
+                  - generic: Todos os canais
+                  - img [ref=e141]
+              - generic [ref=e143]:
+                - generic [ref=e144]: Responsável
+                - combobox "Responsável" [ref=e145] [cursor=pointer]:
+                  - generic: Todos os responsáveis
+                  - img [ref=e146]
+              - generic [ref=e148]:
+                - generic [ref=e149]: Período
+                - button "Período" [ref=e150] [cursor=pointer]:
+                  - generic [ref=e151]: Todos os períodos
+                  - img [ref=e152]
+              - button "Agendar mensagem" [ref=e155] [cursor=pointer]:
+                - img [ref=e156]
+                - text: Agendar mensagem
+            - generic [ref=e158]:
+              - table [ref=e1133]:
+                - rowgroup [ref=e1134]:
+                  - row "Contato Canal Mensagem Agendado para Responsável Status Ações" [ref=e1135]:
+                    - columnheader [ref=e1136]
+                    - columnheader "Contato" [ref=e1137]:
+                      - button "Contato" [ref=e1138] [cursor=pointer]:
+                        - text: Contato
+                        - img [ref=e1139]
+                    - columnheader "Canal" [ref=e1142]
+                    - columnheader "Mensagem" [ref=e1143]
+                    - columnheader "Agendado para" [ref=e1144]:
+                      - button "Agendado para" [ref=e1145] [cursor=pointer]:
+                        - text: Agendado para
+                        - img [ref=e1146]
+                    - columnheader "Responsável" [ref=e1149]
+                    - columnheader "Status" [ref=e1150]
+                    - columnheader "Ações" [ref=e1151]
+                - rowgroup [ref=e1152]:
+                  - row "joão prd 01 WhatsApp Business WhatsApp Business WABA 9284 Olá! Tudo bem? bom dia atualize sua conta 24/02/2026 - 15:32 Vieira Pedro Enviada Ações" [ref=e1153]:
+                    - cell [ref=e1154]
+                    - cell "joão prd 01" [ref=e1155]
+                    - cell "WhatsApp Business WhatsApp Business WABA 9284" [ref=e1156]:
+                      - generic [ref=e1157]:
+                        - generic [ref=e1158]:
+                          - img "WhatsApp Business" [ref=e1159]
+                          - generic [ref=e1162]: WhatsApp Business
+                        - generic [ref=e1163]: WABA 9284
+                    - cell "Olá! Tudo bem? bom dia atualize sua conta" [ref=e1164]:
+                      - generic [ref=e1165]: Olá! Tudo bem? bom dia atualize sua conta
+                    - cell "24/02/2026 - 15:32" [ref=e1166]
+                    - cell "Vieira Pedro" [ref=e1167]
+                    - cell "Enviada" [ref=e1168]:
+                      - generic [ref=e1169]: Enviada
+                    - cell "Ações" [ref=e1170]:
+                      - button "Ações" [ref=e1171] [cursor=pointer]:
+                        - img [ref=e1172]
+                  - row "Alertas Infra Poli WhatsApp WhatsApp AlertasInfra (não desativar) Msg livre - zapi 06/02/2026 - 13:45 Nikole Enviada Ações" [ref=e1176]:
+                    - cell [ref=e1177]
+                    - cell "Alertas Infra Poli" [ref=e1178]
+                    - cell "WhatsApp WhatsApp AlertasInfra (não desativar)" [ref=e1179]:
+                      - generic [ref=e1180]:
+                        - generic [ref=e1181]:
+                          - img "WhatsApp" [ref=e1182]
+                          - generic [ref=e1185]: WhatsApp
+                        - generic [ref=e1186]: AlertasInfra (não desativar)
+                    - cell "Msg livre - zapi" [ref=e1187]:
+                      - generic [ref=e1188]: Msg livre - zapi
+                    - cell "06/02/2026 - 13:45" [ref=e1189]
+                    - cell "Nikole" [ref=e1190]
+                    - cell "Enviada" [ref=e1191]:
+                      - generic [ref=e1192]: Enviada
+                    - cell "Ações" [ref=e1193]:
+                      - button "Ações" [ref=e1194] [cursor=pointer]:
+                        - img [ref=e1195]
+                  - row "pedro vieira WhatsApp WhatsApp AlertasInfra (não desativar) teste 123 04/02/2026 - 15:49 Vieira Pedro Enviada Ações" [ref=e1199]:
+                    - cell [ref=e1200]
+                    - cell "pedro vieira" [ref=e1201]
+                    - cell "WhatsApp WhatsApp AlertasInfra (não desativar)" [ref=e1202]:
+                      - generic [ref=e1203]:
+                        - generic [ref=e1204]:
+                          - img "WhatsApp" [ref=e1205]
+                          - generic [ref=e1208]: WhatsApp
+                        - generic [ref=e1209]: AlertasInfra (não desativar)
+                    - cell "teste 123" [ref=e1210]:
+                      - generic [ref=e1211]: teste 123
+                    - cell "04/02/2026 - 15:49" [ref=e1212]
+                    - cell "Vieira Pedro" [ref=e1213]
+                    - cell "Enviada" [ref=e1214]:
+                      - generic [ref=e1215]: Enviada
+                    - cell "Ações" [ref=e1216]:
+                      - button "Ações" [ref=e1217] [cursor=pointer]:
+                        - img [ref=e1218]
+                  - row "Nikole palmeirense WhatsApp WhatsApp Pv Teste teste 22/01/2026 - 06:58 Nikole Enviada Ações" [ref=e1222]:
+                    - cell [ref=e1223]
+                    - cell "Nikole palmeirense" [ref=e1224]
+                    - cell "WhatsApp WhatsApp Pv Teste" [ref=e1225]:
+                      - generic [ref=e1226]:
+                        - generic [ref=e1227]:
+                          - img "WhatsApp" [ref=e1228]
+                          - generic [ref=e1231]: WhatsApp
+                        - generic [ref=e1232]: Pv Teste
+                    - cell "teste" [ref=e1233]:
+                      - generic [ref=e1234]: teste
+                    - cell "22/01/2026 - 06:58" [ref=e1235]
+                    - cell "Nikole" [ref=e1236]
+                    - cell "Enviada" [ref=e1237]:
+                      - generic [ref=e1238]: Enviada
+                    - cell "Ações" [ref=e1239]:
+                      - button "Ações" [ref=e1240] [cursor=pointer]:
+                        - img [ref=e1241]
+                  - row "pedro vieira WhatsApp WhatsApp Pv Teste agendamento 21/01/2026 - 12:58 Vieira Pedro Enviada Ações" [ref=e1245]:
+                    - cell [ref=e1246]
+                    - cell "pedro vieira" [ref=e1247]
+                    - cell "WhatsApp WhatsApp Pv Teste" [ref=e1248]:
+                      - generic [ref=e1249]:
+                        - generic [ref=e1250]:
+                          - img "WhatsApp" [ref=e1251]
+                          - generic [ref=e1254]: WhatsApp
+                        - generic [ref=e1255]: Pv Teste
+                    - cell "agendamento" [ref=e1256]:
+                      - generic [ref=e1257]: agendamento
+                    - cell "21/01/2026 - 12:58" [ref=e1258]
+                    - cell "Vieira Pedro" [ref=e1259]
+                    - cell "Enviada" [ref=e1260]:
+                      - generic [ref=e1261]: Enviada
+                    - cell "Ações" [ref=e1262]:
+                      - button "Ações" [ref=e1263] [cursor=pointer]:
+                        - img [ref=e1264]
+                  - row "pedro vieira WhatsApp WhatsApp Pv Teste teste 123 321 14/01/2026 - 06:59 Vieira Pedro Enviada Ações" [ref=e1268]:
+                    - cell [ref=e1269]
+                    - cell "pedro vieira" [ref=e1270]
+                    - cell "WhatsApp WhatsApp Pv Teste" [ref=e1271]:
+                      - generic [ref=e1272]:
+                        - generic [ref=e1273]:
+                          - img "WhatsApp" [ref=e1274]
+                          - generic [ref=e1277]: WhatsApp
+                        - generic [ref=e1278]: Pv Teste
+                    - cell "teste 123 321" [ref=e1279]:
+                      - generic [ref=e1280]: teste 123 321
+                    - cell "14/01/2026 - 06:59" [ref=e1281]
+                    - cell "Vieira Pedro" [ref=e1282]
+                    - cell "Enviada" [ref=e1283]:
+                      - generic [ref=e1284]: Enviada
+                    - cell "Ações" [ref=e1285]:
+                      - button "Ações" [ref=e1286] [cursor=pointer]:
+                        - img [ref=e1287]
+                  - 'row "Cliente A WhatsApp Business WhatsApp Business WABA 9284 Bom dia, [contact_name] Mensagem: 17/12/2025 - 05:58 Vieira Pedro Enviada Ações" [ref=e1291]':
+                    - cell [ref=e1292]
+                    - cell "Cliente A" [ref=e1293]
+                    - cell "WhatsApp Business WhatsApp Business WABA 9284" [ref=e1294]:
+                      - generic [ref=e1295]:
+                        - generic [ref=e1296]:
+                          - img "WhatsApp Business" [ref=e1297]
+                          - generic [ref=e1300]: WhatsApp Business
+                        - generic [ref=e1301]: WABA 9284
+                    - cell "Bom dia, [contact_name] Mensagem:" [ref=e1302]:
+                      - generic [ref=e1303]: "Bom dia, [contact_name] Mensagem:"
+                    - cell "17/12/2025 - 05:58" [ref=e1304]
+                    - cell "Vieira Pedro" [ref=e1305]
+                    - cell "Enviada" [ref=e1306]:
+                      - generic [ref=e1307]: Enviada
+                    - cell "Ações" [ref=e1308]:
+                      - button "Ações" [ref=e1309] [cursor=pointer]:
+                        - img [ref=e1310]
+                  - row "Wally WhatsApp WhatsApp prd zapi teste 113234 17/12/2025 - 05:58 Vieira Pedro Enviada Ações" [ref=e1314]:
+                    - cell [ref=e1315]
+                    - cell "Wally" [ref=e1316]
+                    - cell "WhatsApp WhatsApp prd zapi" [ref=e1317]:
+                      - generic [ref=e1318]:
+                        - generic [ref=e1319]:
+                          - img "WhatsApp" [ref=e1320]
+                          - generic [ref=e1323]: WhatsApp
+                        - generic [ref=e1324]: prd zapi
+                    - cell "teste 113234" [ref=e1325]:
+                      - generic [ref=e1326]: teste 113234
+                    - cell "17/12/2025 - 05:58" [ref=e1327]
+                    - cell "Vieira Pedro" [ref=e1328]
+                    - cell "Enviada" [ref=e1329]:
+                      - generic [ref=e1330]: Enviada
+                    - cell "Ações" [ref=e1331]:
+                      - button "Ações" [ref=e1332] [cursor=pointer]:
+                        - img [ref=e1333]
+                  - row "Nikole palmeirense WhatsApp Business WhatsApp Business WABA 9284 teste 1234 17/12/2025 - 05:57 Vieira Pedro Enviada Ações" [ref=e1337]:
+                    - cell [ref=e1338]
+                    - cell "Nikole palmeirense" [ref=e1339]
+                    - cell "WhatsApp Business WhatsApp Business WABA 9284" [ref=e1340]:
+                      - generic [ref=e1341]:
+                        - generic [ref=e1342]:
+                          - img "WhatsApp Business" [ref=e1343]
+                          - generic [ref=e1346]: WhatsApp Business
+                        - generic [ref=e1347]: WABA 9284
+                    - cell "teste 1234" [ref=e1348]:
+                      - generic [ref=e1349]: teste 1234
+                    - cell "17/12/2025 - 05:57" [ref=e1350]
+                    - cell "Vieira Pedro" [ref=e1351]
+                    - cell "Enviada" [ref=e1352]:
+                      - generic [ref=e1353]: Enviada
+                    - cell "Ações" [ref=e1354]:
+                      - button "Ações" [ref=e1355] [cursor=pointer]:
+                        - img [ref=e1356]
+                  - 'row "Nikole palmeirense WhatsApp Business WhatsApp Business WABA 9284 I kidnapped your daughter, and I want 5,000 reais to return her. Click the link to get her back: http://promo-premium-free-money.xyz If you don''t click the link and make the payment, it''ll look bad for her. 16/12/2025 - 08:50 Manager Wally Enviada Ações" [ref=e1360]':
+                    - cell [ref=e1361]
+                    - cell "Nikole palmeirense" [ref=e1362]
+                    - cell "WhatsApp Business WhatsApp Business WABA 9284" [ref=e1363]:
+                      - generic [ref=e1364]:
+                        - generic [ref=e1365]:
+                          - img "WhatsApp Business" [ref=e1366]
+                          - generic [ref=e1369]: WhatsApp Business
+                        - generic [ref=e1370]: WABA 9284
+                    - 'cell "I kidnapped your daughter, and I want 5,000 reais to return her. Click the link to get her back: http://promo-premium-free-money.xyz If you don''t click the link and make the payment, it''ll look bad for her." [ref=e1371]':
+                      - generic [ref=e1372]: "I kidnapped your daughter, and I want 5,000 reais to return her. Click the link to get her back: http://promo-premium-free-money.xyz If you don't click the link and make the payment, it'll look bad for her."
+                    - cell "16/12/2025 - 08:50" [ref=e1373]
+                    - cell "Manager Wally" [ref=e1374]
+                    - cell "Enviada" [ref=e1375]:
+                      - generic [ref=e1376]: Enviada
+                    - cell "Ações" [ref=e1377]:
+                      - button "Ações" [ref=e1378] [cursor=pointer]:
+                        - img [ref=e1379]
+                  - row "Wally WhatsApp Business WhatsApp Business WABA 9284 Ola, tudo bem? Me chamo Kellen do departamento [department_name] Preciso realizar a entrega de um documento importante, posso te mandar agora? Assim que possivel, me retorne, por gentileza. Fico no aguardo da sua mensagem 12/12/2025 - 19:12 Manager Wally Enviada Ações" [ref=e1383]:
+                    - cell [ref=e1384]
+                    - cell "Wally" [ref=e1385]
+                    - cell "WhatsApp Business WhatsApp Business WABA 9284" [ref=e1386]:
+                      - generic [ref=e1387]:
+                        - generic [ref=e1388]:
+                          - img "WhatsApp Business" [ref=e1389]
+                          - generic [ref=e1392]: WhatsApp Business
+                        - generic [ref=e1393]: WABA 9284
+                    - cell "Ola, tudo bem? Me chamo Kellen do departamento [department_name] Preciso realizar a entrega de um documento importante, posso te mandar agora? Assim que possivel, me retorne, por gentileza. Fico no aguardo da sua mensagem" [ref=e1394]:
+                      - generic [ref=e1395]: Ola, tudo bem? Me chamo Kellen do departamento [department_name] Preciso realizar a entrega de um documento importante, posso te mandar agora? Assim que possivel, me retorne, por gentileza. Fico no aguardo da sua mensagem
+                    - cell "12/12/2025 - 19:12" [ref=e1396]
+                    - cell "Manager Wally" [ref=e1397]
+                    - cell "Enviada" [ref=e1398]:
+                      - generic [ref=e1399]: Enviada
+                    - cell "Ações" [ref=e1400]:
+                      - button "Ações" [ref=e1401] [cursor=pointer]:
+                        - img [ref=e1402]
+                  - row "Cruz WhatsApp Business WhatsApp Business WABA 9284 Ola, tudo bem? Me chamo Kellen do departamento [department_name] Preciso realizar a entrega de um documento importante, posso te mandar agora? Assim que possivel, me retorne, por gentileza. Fico no aguardo da sua mensagem 10/12/2025 - 11:38 Vieira Pedro Enviada Ações" [ref=e1406]:
+                    - cell [ref=e1407]
+                    - cell "Cruz" [ref=e1408]
+                    - cell "WhatsApp Business WhatsApp Business WABA 9284" [ref=e1409]:
+                      - generic [ref=e1410]:
+                        - generic [ref=e1411]:
+                          - img "WhatsApp Business" [ref=e1412]
+                          - generic [ref=e1415]: WhatsApp Business
+                        - generic [ref=e1416]: WABA 9284
+                    - cell "Ola, tudo bem? Me chamo Kellen do departamento [department_name] Preciso realizar a entrega de um documento importante, posso te mandar agora? Assim que possivel, me retorne, por gentileza. Fico no aguardo da sua mensagem" [ref=e1417]:
+                      - generic [ref=e1418]: Ola, tudo bem? Me chamo Kellen do departamento [department_name] Preciso realizar a entrega de um documento importante, posso te mandar agora? Assim que possivel, me retorne, por gentileza. Fico no aguardo da sua mensagem
+                    - cell "10/12/2025 - 11:38" [ref=e1419]
+                    - cell "Vieira Pedro" [ref=e1420]
+                    - cell "Enviada" [ref=e1421]:
+                      - generic [ref=e1422]: Enviada
+                    - cell "Ações" [ref=e1423]:
+                      - button "Ações" [ref=e1424] [cursor=pointer]:
+                        - img [ref=e1425]
+                  - row "pedro vieira WhatsApp Business WhatsApp Business WABA 9284 Ola, tudo bem? Me chamo Kellen do departamento [department_name] Preciso realizar a entrega de um documento importante, posso te mandar agora? Assim que possivel, me retorne, por gentileza. Fico no aguardo da sua mensagem 10/12/2025 - 11:35 Vieira Pedro Enviada Ações" [ref=e1429]:
+                    - cell [ref=e1430]
+                    - cell "pedro vieira" [ref=e1431]
+                    - cell "WhatsApp Business WhatsApp Business WABA 9284" [ref=e1432]:
+                      - generic [ref=e1433]:
+                        - generic [ref=e1434]:
+                          - img "WhatsApp Business" [ref=e1435]
+                          - generic [ref=e1438]: WhatsApp Business
+                        - generic [ref=e1439]: WABA 9284
+                    - cell "Ola, tudo bem? Me chamo Kellen do departamento [department_name] Preciso realizar a entrega de um documento importante, posso te mandar agora? Assim que possivel, me retorne, por gentileza. Fico no aguardo da sua mensagem" [ref=e1440]:
+                      - generic [ref=e1441]: Ola, tudo bem? Me chamo Kellen do departamento [department_name] Preciso realizar a entrega de um documento importante, posso te mandar agora? Assim que possivel, me retorne, por gentileza. Fico no aguardo da sua mensagem
+                    - cell "10/12/2025 - 11:35" [ref=e1442]
+                    - cell "Vieira Pedro" [ref=e1443]
+                    - cell "Enviada" [ref=e1444]:
+                      - generic [ref=e1445]: Enviada
+                    - cell "Ações" [ref=e1446]:
+                      - button "Ações" [ref=e1447] [cursor=pointer]:
+                        - img [ref=e1448]
+                  - row "pedro vieira WhatsApp WhatsApp prd zapi — 03/12/2025 - 05:41 Vieira Pedro Enviada Ações" [ref=e1452]:
+                    - cell [ref=e1453]
+                    - cell "pedro vieira" [ref=e1454]
+                    - cell "WhatsApp WhatsApp prd zapi" [ref=e1455]:
+                      - generic [ref=e1456]:
+                        - generic [ref=e1457]:
+                          - img "WhatsApp" [ref=e1458]
+                          - generic [ref=e1461]: WhatsApp
+                        - generic [ref=e1462]: prd zapi
+                    - cell "—" [ref=e1463]:
+                      - generic [ref=e1464]: —
+                    - cell "03/12/2025 - 05:41" [ref=e1465]
+                    - cell "Vieira Pedro" [ref=e1466]
+                    - cell "Enviada" [ref=e1467]:
+                      - generic [ref=e1468]: Enviada
+                    - cell "Ações" [ref=e1469]:
+                      - button "Ações" [ref=e1470] [cursor=pointer]:
+                        - img [ref=e1471]
+                  - row "pedro vieira WhatsApp WhatsApp prd zapi — 03/12/2025 - 05:40 Vieira Pedro Enviada Ações" [ref=e1475]:
+                    - cell [ref=e1476]
+                    - cell "pedro vieira" [ref=e1477]
+                    - cell "WhatsApp WhatsApp prd zapi" [ref=e1478]:
+                      - generic [ref=e1479]:
+                        - generic [ref=e1480]:
+                          - img "WhatsApp" [ref=e1481]
+                          - generic [ref=e1484]: WhatsApp
+                        - generic [ref=e1485]: prd zapi
+                    - cell "—" [ref=e1486]:
+                      - generic [ref=e1487]: —
+                    - cell "03/12/2025 - 05:40" [ref=e1488]
+                    - cell "Vieira Pedro" [ref=e1489]
+                    - cell "Enviada" [ref=e1490]:
+                      - generic [ref=e1491]: Enviada
+                    - cell "Ações" [ref=e1492]:
+                      - button "Ações" [ref=e1493] [cursor=pointer]:
+                        - img [ref=e1494]
+              - generic [ref=e1499]:
+                - generic [ref=e1500]:
+                  - generic [ref=e1501]: Página 1 de 5
+                  - generic [ref=e1502]: "Total: 68 registros"
+                - generic [ref=e1503]:
+                  - combobox [ref=e1504]:
+                    - option "10 por página"
+                    - option "15 por página" [selected]
+                    - option "25 por página"
+                    - option "50 por página"
+                  - generic [ref=e1505]:
+                    - button [disabled]:
+                      - img
+                    - button [disabled]:
+                      - img
+                    - button [ref=e1506] [cursor=pointer]:
+                      - img [ref=e1507]
+                    - button [ref=e1509] [cursor=pointer]:
+                      - img [ref=e1510]
+  - region "Notifications (F8)":
+    - list

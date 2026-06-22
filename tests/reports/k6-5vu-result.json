@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-06-11T17:25:15.775Z",
+  "api_url": "https://foundation-api.poli.digital",
+  "suggestions": {
+    "**/v3/auth**": 517,
+    "**/v3/accounts/**/chats**": 448,
+    "**/v3/settings**": 498,
+    "**/v3/accounts**": 348,
+    "**/v3/contacts**": 383,
+    "**/v3/messages**": 342
+  },
+  "raw": {
+    "GET /v3/auth/get-me": {
+      "p50": 258,
+      "p95": 431,
+      "p99": 2928,
+      "avg": 317,
+      "min": 226,
+      "max": 2928
+    },
+    "GET /v3/accounts/:uuid/chats": {
+      "p50": 212,
+      "p95": 373,
+      "p99": 627,
+      "avg": 233,
+      "min": 186,
+      "max": 627
+    },
+    "GET /v3/settings": {
+      "p50": 230,
+      "p95": 415,
+      "p99": 966,
+      "avg": 256,
+      "min": 207,
+      "max": 966
+    },
+    "GET /v3/accounts": {
+      "p50": 209,
+      "p95": 290,
+      "p99": 792,
+      "avg": 227,
+      "min": 186,
+      "max": 792
+    },
+    "GET /v3/contacts (lista)": {
+      "p50": 210,
+      "p95": 319,
+      "p99": 565,
+      "avg": 232,
+      "min": 187,
+      "max": 565
+    },
+    "GET /v3/contacts/:uuid": {
+      "p50": 200,
+      "p95": 263,
+      "p99": 845,
+      "avg": 216,
+      "min": 180,
+      "max": 845
+    },
+    "GET /v3/contacts/:uuid/messages": {
+      "p50": 203,
+      "p95": 285,
+      "p99": 362,
+      "avg": 211,
+      "min": 182,
+      "max": 362
+    }
+  }
+}

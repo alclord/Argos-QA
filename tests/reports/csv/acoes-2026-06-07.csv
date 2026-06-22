@@ -1,0 +1,9 @@
+prioridade,modulo,acao,prazo,origem
+P0 - HOJE,Autenticação / Chat,Rollback ou hotfix SPA:1509 (Dev4-4278) — omnispa AxiosError 401 ESCALATING com 496 usuários afetados desde 06-03,2026-06-07,Sentry ESCALATING + Suspect Commit
+P0 - HOJE,WebSocket / Presença,Investigar Hermes SQS event-bus-sqs connection errors (DEV4-4262 merged 06-03 → SQS errors 06-05). Possível perda silenciosa de mensagens,2026-06-07,Sentry NEW + DORA CFR
+P0 - HOJE,Distribuição / Filas,Criar DEV4 corretivo para chats presos na fila (SM-8288 / SM-8292 / SM-8243). Módulo Negligenciado: HEAT=13 DEV=0,2026-06-07,3 bugs N1 + HEAT_GAP=13
+P1 - ESTA SEMANA,Chat / Mensagens,Investigar omnispa Uncompressed Asset (629u) e por que release 06-06 gerou 16 novos grupos de erro,2026-06-14,Release Health degradada
+P1 - ESTA SEMANA,Canais / WhatsApp,Resolver conta Meta restrita (SM-8228) e investigar WABA 24h rule violation (SM-8219),2026-06-14,2 bugs N1 ativos
+P1 - ESTA SEMANA,Integrações Externas,Investigar novos CRM errors (foundationapi 06-06 + polichat-web-app 06-07). Verificar mudança de config ou API terceira,2026-06-14,Sentry NEW HOJE
+P2 - PRÓX. SPRINT,Upload / Mídia,Investigar SM-8218 (áudios não carregam) e configurar ENABLE_ACK_LOG no meta-whatsapp-cloud-api,2026-06-21,1 bug N1 + Sentry crônico
+P2 - PRÓX. SPRINT,QA / Staleness,Atualizar cenários DEV4-4274 (2 dias stale) e DEV4-4249 (4 dias stale) antes de fechar handoff,2026-06-21,Staleness QA

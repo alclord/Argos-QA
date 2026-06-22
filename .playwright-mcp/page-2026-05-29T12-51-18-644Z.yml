@@ -1,0 +1,228 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - complementary:
+          - generic:
+            - img
+          - navigation:
+            - list:
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app.poli.digital/home
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /chat
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app.poli.digital/settings/46667/chatbot
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /poli-flow
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app-spa.poli.digital/marketing
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app-spa.poli.digital/shopping
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app-spa.poli.digital/relatorio
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app.poli.digital/settings/46667
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /contacts
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /templates
+                  - generic:
+                    - img
+            - list:
+              - listitem:
+                - button:
+                  - img
+              - listitem:
+                - button:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: YA
+              - listitem:
+                - button:
+                  - img
+              - listitem:
+                - generic:
+                  - generic: 3.5.332
+        - main:
+          - generic:
+            - generic:
+              - generic:
+                - navigation:
+                  - generic:
+                    - link:
+                      - /url: /
+                      - text: Página inicial
+                  - img
+                  - generic: Mensagens agendadas
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                          - generic:
+                            - paragraph: Total
+                            - paragraph: "69"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                          - generic:
+                            - paragraph: Agendadas
+                            - paragraph: "1"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                          - generic:
+                            - paragraph: Enviadas
+                            - paragraph: "43"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                          - generic:
+                            - paragraph: Canceladas
+                            - paragraph: "0"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Status
+                                - combobox:
+                                  - generic: Agendada
+                                  - img
+                              - generic:
+                                - generic: Canal
+                                - combobox:
+                                  - generic: Todos os canais
+                                  - img
+                              - generic:
+                                - generic: Responsável
+                                - combobox:
+                                  - generic: Todos os responsáveis
+                                  - img
+                              - generic:
+                                - generic: Período
+                                - button:
+                                  - generic: Todos os períodos
+                                  - img
+                              - generic:
+                                - button:
+                                  - img
+                                  - text: Agendar mensagem
+                              - generic:
+                                - generic:
+                                  - generic: "Status:"
+                                  - generic: Agendada
+                                  - button:
+                                    - img
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - table:
+                                    - rowgroup:
+                                      - row:
+                                        - columnheader:
+                                          - generic:
+                                            - checkbox
+                                        - columnheader:
+                                          - button:
+                                            - text: Contato
+                                            - img
+                                        - columnheader: Canal
+                                        - columnheader: Mensagem
+                                        - columnheader:
+                                          - button:
+                                            - text: Agendado para
+                                            - img
+                                        - columnheader: Responsável
+                                        - columnheader: Status
+                                        - columnheader: Ações
+                                    - rowgroup:
+                                      - row:
+                                        - cell:
+                                          - generic:
+                                            - checkbox
+                                        - cell: QA Pedro Vieira Testes
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp
+                                            - generic: zapi
+                                        - cell:
+                                          - generic: Argos QA — EDITADO DEV4-4229
+                                        - cell: 29/05/2026 - 09:53
+                                        - cell: Yuri Alcantara Gestror
+                                        - cell:
+                                          - generic: Agendada
+                                        - cell:
+                                          - button [expanded]:
+                                            - img
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic: Página 1 de 1
+                                  - generic: "Total: 1 registros"
+                                - generic:
+                                  - combobox
+                                  - generic:
+                                    - button [disabled]:
+                                      - img
+                                    - button [disabled]:
+                                      - img
+                                    - button [disabled]:
+                                      - img
+                                    - button [disabled]:
+                                      - img
+    - list
+  - menu "Ações" [active] [ref=e238]:
+    - menuitem "Ver mensagem" [ref=e239] [cursor=pointer]:
+      - img [ref=e240]
+      - text: Ver mensagem
+    - generic [ref=e243]:
+      - menuitem "Editar" [disabled]:
+        - img
+        - text: Editar
+    - generic [ref=e244]:
+      - menuitem "Cancelar envio" [disabled]:
+        - img
+        - text: Cancelar envio

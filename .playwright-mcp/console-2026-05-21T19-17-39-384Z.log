@@ -1,0 +1,56 @@
+[   78291ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1
+[   78370ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1
+[   78442ms] Uncaught (in promise) TypeError: Cannot read properties of null (reading 'sequence')
+    at <anonymous> (https://scripts.clarity.ms/0.8.64/clarity.js:1:48756)
+    at <anonymous> (https://scripts.clarity.ms/0.8.64/clarity.js:1:6498)
+    at <anonymous> (https://scripts.clarity.ms/0.8.64/clarity.js:1:6603)
+    at o (https://scripts.clarity.ms/0.8.64/clarity.js:1:5320)
+[   78815ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[   78819ms] [ERROR] InvalidStateError: Failed to execute 'send' on 'WebSocket': Still in CONNECTING state.
+    at e.value (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:3381825)
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:3379743
+    at f (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1825709)
+    at Generator.<anonymous> (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1827061)
+    at Generator.next (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1826138)
+    at d (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2814259)
+    at l (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2814593)
+    at UI.<computed> (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2811241)
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2813885
+    at p (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2814808)
+    at d (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2814321)
+    at l (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2814593)
+    at UI.<computed> (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2811241)
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2813885
+    at p (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2814808)
+    at d (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2814321)
+    at nL (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2814083)
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2810658
+    at EI (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2807223)
+    at UI.<computed> (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2810637)
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2813885
+    at p (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2814808)
+    at d (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2814321)
+    at l (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2814593)
+    at s (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2809071)
+    at e.put (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2808479)
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2808725
+    at bI (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2807132)
+    at kI (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2807338)
+    at xI (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2807186)
+    at OI.e.put (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2808710)
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2816118
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:6174549
+    at f (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1825709)
+    at Generator.<anonymous> (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1827061)
+    at Generator.throw (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1826138)
+    at r (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1819801)
+    at l (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1820048) @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1
+[   79454ms] [LOG] Conexão reestabelecida {user: Object, onCloseClientConnection: false, auth: Object} @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1
+[   79706ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/admin/customers/non_payment/1:0
+[   79717ms] [ERROR] Error getting overdue customers rd @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1
+[   79894ms] [LOG] websocket on close - ws_unauthorized true @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1
+[   89253ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/logout:0
+[   89328ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1
+[   90043ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/logout:0
+[   90051ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/logout:0
+[   90546ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app-spa.qa.poli.digital/login:0

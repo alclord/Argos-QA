@@ -1,0 +1,107 @@
+[     603ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:101
+[     603ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:101
+[     707ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:76
+[    1266ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:908:429
+    at PR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:910:31)
+    at Nd.OR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:907:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:317:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:263:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at k.Tq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:274:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:734:315
+    at Rz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:637:1)
+    at Yz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:642:289)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:662:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:206:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:663:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:663:100)
+    at vB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:663:742)
+    at yB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:667:183)
+    at ID (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:711:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:715:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:869:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e66h0:692:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e66h0:553:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:715:457
+    at r (https://spa-canary.poli.digital/assets/index-ClphRREw.js:70:9827)
+[    1278ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[    4417ms] Identifier 'TCRMEmbed' has already been declared
+[    5816ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[    5818ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      2
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[    5819ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[    7994ms] [ERROR] Applying inline style violates the following Content Security Policy directive 'style-src 'self' 'nonce-VMvlD1q5Hh'   https://accounts.google.com'. Either the 'unsafe-inline' keyword, a hash ('sha256-bgUp5tqDCSC1xokY+fdYcHMM/Fap5RX+TCFkA0sXuRk='), or a nonce ('nonce-...') is required to enable inline execution. The action has been blocked. @ https://metabase.prod.cloud.polichat.com.br/app/dist/vendor.21094c4e1f01c7c7.js:5
+[    9268ms] [WARNING] Error getting setting graph.tooltip_columns TypeError: Cannot read properties of undefined (reading 'column')
+    at https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:293:8879
+    at Array.forEach (<anonymous>)
+    at K (https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:293:8849)
+    at Object.F [as getValue] (https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:293:9102)
+    at e (https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:301:118035)
+    at K (https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:301:118283)
+    at f (https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:301:142345)
+    at https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:92:21621
+    at Object.useMemo (https://metabase.prod.cloud.polichat.com.br/app/dist/vendor.21094c4e1f01c7c7.js:6:2154693)
+    at t.useMemo (https://metabase.prod.cloud.polichat.com.br/app/dist/vendor.21094c4e1f01c7c7.js:6:2510369) @ https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:300
+[   10187ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://metabase.prod.cloud.polichat.com.br/api/embed/dashboard/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjl9LCJwYXJhbXMiOnsiY3VzdG9tZXJfaWQiOjEsInVzZXJfaWRzIjpudWxsLCJkZXBhcnRtZW50X2lkcyI6bnVsbH0sImV4cCI6MTc4MTkwMDk5OSwiZGFzaGJvYXJkIjp7IjkiOnsiZXhwb3J0aW5nIjp0cnVlLCJjc3YiOnRydWUsInBkZiI6dHJ1ZX19fQ.7dyCL6Fx1NdaEteAcTRp4J5L7vglaXv6iTAk5wWKhvM/dashcard/14/card/50?parameters=%7B%22data_-_per%25C3%25ADodo%22%3A%22thismonth%22%2C%22role_ids%22%3Anull%2C%22language%22%3Anull%2C%22operadores%22%3Anull%2C%22departamento%22%3Anull%2C%22canal%22%3Anull%7D:0
+[   49699ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:101
+[   49699ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:101
+[   49772ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:76
+[   49915ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:908:429
+    at PR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:910:31)
+    at Nd.OR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:907:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:317:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:263:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at k.Tq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:274:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:734:315
+    at Rz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:637:1)
+    at Yz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:642:289)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:662:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:206:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:663:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:663:100)
+    at vB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:663:742)
+    at yB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:667:183)
+    at ID (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:711:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:715:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e66h0:692:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:869:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e66h0h1:553:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:715:457
+    at r (https://spa-canary.poli.digital/assets/index-ClphRREw.js:70:9827)
+[   49920ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/reports/metabase-embed-url:0
+[   50247ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[   50931ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/reports/metabase-embed-url:0
+[   52939ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/reports/metabase-embed-url:0
+[   56954ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/reports/metabase-embed-url:0

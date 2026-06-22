@@ -1,0 +1,214 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link [ref=e6] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e8]:
+          - listitem [ref=e9] [cursor=pointer]:
+            - generic "Pesquisar" [ref=e10]:
+              - generic [ref=e11]:
+                - img [ref=e12]
+                - generic: Pesquisar
+          - listitem
+          - listitem [ref=e14]:
+            - link "ㅤ ㅤ ㅤ Página Inicial ㅤ" [ref=e15] [cursor=pointer]:
+              - /url: https://homolog.qa.poli.digital/home
+              - text: ㅤ
+              - generic [ref=e16]:
+                - img [ref=e17]
+                - generic: ㅤ ㅤ
+                - generic: Página Inicial
+              - text: ㅤ
+          - listitem [ref=e19]:
+            - link "Chat" [ref=e20] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/chat
+              - generic [ref=e21]:
+                - img [ref=e22]
+                - generic: Chat
+          - listitem [ref=e24]:
+            - link "Automações" [ref=e25] [cursor=pointer]:
+              - /url: https://homolog.qa.poli.digital/settings/46667/chatbot
+              - generic [ref=e26]:
+                - img [ref=e27]
+                - generic: Automações
+          - listitem [ref=e29]:
+            - link "Marketing" [ref=e30] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/marketing
+              - generic [ref=e31]:
+                - img [ref=e32]
+                - generic: Marketing
+          - listitem [ref=e34]:
+            - link "Relatórios" [ref=e35] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/relatorio
+              - generic [ref=e36]:
+                - img [ref=e37]
+                - generic: Relatórios
+          - listitem [ref=e39]:
+            - link "Configurações" [ref=e40] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/tools
+              - generic [ref=e41]:
+                - img [ref=e42]
+                - generic: Configurações
+          - listitem [ref=e44]:
+            - link "Administração" [ref=e45] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/admin
+              - generic [ref=e46]:
+                - img [ref=e47]
+                - generic: Administração
+        - generic [ref=e49]:
+          - listitem [ref=e50]:
+            - link "Notificação" [ref=e51] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e52]:
+                - img [ref=e53]
+                - generic: Notificação
+          - listitem [ref=e55]:
+            - link "Suporte" [ref=e56] [cursor=pointer]:
+              - /url: https://polichat.com.br/central-de-conhecimento/
+              - generic [ref=e57]:
+                - img [ref=e58]
+                - generic: Suporte
+          - listitem [ref=e61]:
+            - generic [ref=e64]:
+              - img "Yuri Alcantara" [ref=e66]
+              - generic: Yuri Alcantara
+          - listitem [ref=e68]:
+            - link " Recolher Menu" [ref=e69] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e70]:
+                - generic [ref=e71]: 
+                - generic: Recolher Menu
+          - listitem [ref=e72]:
+            - generic "versão" [ref=e73]:
+              - paragraph [ref=e75]: v2.18.466
+    - generic [ref=e76]:
+      - generic [ref=e78]:
+        - text: 
+        - generic [ref=e79]:
+          - heading "Olá, Yuri Alcantara, bem-vindo à Poli!" [level=1] [ref=e80]
+          - paragraph [ref=e81]: "Monitore as principais informações dos seus atendimentos:"
+        - generic [ref=e82]:
+          - generic [ref=e83]: Seu relatório diário
+          - button " Atualizado às 11:06:01 " [ref=e84]:
+            - generic [ref=e85]: 
+            - paragraph [ref=e86] [cursor=pointer]: Atualizado às 11:06:01
+            - generic [ref=e87]: 
+        - generic [ref=e88]: 
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - img "Conversas em andamento" [ref=e91]
+            - generic [ref=e92]: "0"
+            - paragraph [ref=e93]: Conversas em andamento
+          - generic [ref=e95]:
+            - img "Conversas não lidas" [ref=e96]
+            - generic [ref=e97]: "0"
+            - paragraph [ref=e98]: Conversas não lidas
+          - generic [ref=e100]:
+            - img "Conversas finalizadas" [ref=e101]
+            - generic [ref=e102]: "0"
+            - paragraph [ref=e103]: Conversas finalizadas
+          - generic [ref=e105]:
+            - generic [ref=e107]: "0"
+            - paragraph [ref=e108]: Conversas totais
+      - generic [ref=e109]:
+        - heading "Alguns atalhos para nossas ferramentas" [level=1] [ref=e110]
+        - generic [ref=e111]:
+          - link "Chat Conversas com os contatos" [ref=e113] [cursor=pointer]:
+            - /url: https://app-spa.qa.poli.digital/chat?current_customer_id=46667&api_auth_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzcGEiLCJhdWQiOiJzcGEtYWciLCJpYXQiOjE3ODExMDAzNjIsImV4cCI6MTc4MTE4Njc2MiwicG9saV9kYXRhIjp7InVzZXIiOnsiaWQiOjc5MzU2LCJjdXN0b21lcl9pZCI6NDY2Njd9fX0.xsbbYPYDOSZ3ExGGr5ILSEuj9XIDl9Jsw3WzgtGeEk0
+            - generic [ref=e114]:
+              - img [ref=e115]
+              - generic [ref=e119]:
+                - generic [ref=e120]: Chat
+                - generic [ref=e121]: Conversas com os contatos
+          - link "Bot Automações inteligentes" [ref=e123] [cursor=pointer]:
+            - /url: https://homolog.qa.poli.digital/settings/46667/chatbot
+            - generic [ref=e124]:
+              - img [ref=e125]
+              - generic [ref=e129]:
+                - generic [ref=e130]: Bot
+                - generic [ref=e131]: Automações inteligentes
+          - link "Poli Flow Gestão de relacionamento com o cliente" [ref=e133] [cursor=pointer]:
+            - /url: https://homolog.qa.poli.digital/crm/index
+            - generic [ref=e134]:
+              - img [ref=e135]
+              - generic [ref=e137]:
+                - generic [ref=e138]: Poli Flow
+                - generic [ref=e139]: Gestão de relacionamento com o cliente
+          - link "Novo! Marketing Envio de Campanhas" [ref=e141] [cursor=pointer]:
+            - /url: https://app-spa.qa.poli.digital/marketing
+            - generic [ref=e142]:
+              - generic [ref=e143]: Novo!
+              - img [ref=e144]
+              - generic [ref=e147]:
+                - generic [ref=e148]: Marketing
+                - generic [ref=e149]: Envio de Campanhas
+          - link "Pay Pagamentos integrados" [ref=e151] [cursor=pointer]:
+            - /url: https://app-spa.qa.poli.digital/shopping
+            - generic [ref=e152]:
+              - img [ref=e153]
+              - generic [ref=e156]:
+                - generic [ref=e157]: Pay
+                - generic [ref=e158]: Pagamentos integrados
+          - link "Relatórios Métricas do seu negócio" [ref=e160] [cursor=pointer]:
+            - /url: https://app-spa.qa.poli.digital/relatorio
+            - generic [ref=e161]:
+              - img [ref=e162]
+              - generic [ref=e167]:
+                - generic [ref=e168]: Relatórios
+                - generic [ref=e169]: Métricas do seu negócio
+          - link "Configurações Configure sua plataforma" [ref=e171] [cursor=pointer]:
+            - /url: https://app-spa.qa.poli.digital/tools/more
+            - generic [ref=e172]:
+              - img [ref=e173]
+              - generic [ref=e177]:
+                - generic [ref=e178]: Configurações
+                - generic [ref=e179]: Configure sua plataforma
+          - link "Minha empresa Gerenciamento de conta" [ref=e181] [cursor=pointer]:
+            - /url: https://homolog.qa.poli.digital/dados_empresa/46667
+            - generic [ref=e182]:
+              - img [ref=e183]
+              - generic [ref=e187]:
+                - generic [ref=e188]: Minha empresa
+                - generic [ref=e189]: Gerenciamento de conta
+          - link "Canais Gestão dos seus canais" [ref=e191] [cursor=pointer]:
+            - /url: https://app-spa.qa.poli.digital/tools/channels
+            - generic [ref=e192]:
+              - img [ref=e193]
+              - generic [ref=e197]:
+                - generic [ref=e198]: Canais
+                - generic [ref=e199]: Gestão dos seus canais
+          - link "Contatos Gestão dos seus contatos" [ref=e201] [cursor=pointer]:
+            - /url: https://homolog.qa.poli.digital/contacts/46667
+            - generic [ref=e202]:
+              - img [ref=e203]
+              - generic [ref=e207]:
+                - generic [ref=e208]: Contatos
+                - generic [ref=e209]: Gestão dos seus contatos
+          - link "Usuários Gestão dos seus usuários" [ref=e211] [cursor=pointer]:
+            - /url: https://homolog.qa.poli.digital/users/46667
+            - generic [ref=e212]:
+              - img [ref=e213]
+              - generic [ref=e216]:
+                - generic [ref=e217]: Usuários
+                - generic [ref=e218]: Gestão dos seus usuários
+          - button "Suporte e Treinamento Ajuda para configuração" [ref=e220] [cursor=pointer]:
+            - generic [ref=e221]:
+              - img [ref=e222]
+              - generic [ref=e226]:
+                - generic [ref=e227]: Suporte e Treinamento
+                - generic [ref=e228]: Ajuda para configuração
+          - link "Créditos Gerenciamento de créditos" [ref=e230] [cursor=pointer]:
+            - /url: https://homolog.qa.poli.digital/credits/46667
+            - generic [ref=e231]:
+              - img [ref=e232]
+              - generic [ref=e235]:
+                - generic [ref=e236]: Créditos
+                - generic [ref=e237]: Gerenciamento de créditos
+          - text:    
+      - text: 
+  - link "Suporte" [ref=e239] [cursor=pointer]:
+    - /url: https://api.whatsapp.com/send?phone=556282361759
+    - text: Suporte
+    - img [ref=e240]

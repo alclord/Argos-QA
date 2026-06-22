@@ -1,0 +1,28 @@
+[    1133ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:101
+[    1134ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:101
+[    1332ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:76
+[    1727ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[    1847ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[    3064ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[    5274ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[    9514ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[  156776ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[  174332ms] [INFO] WebSocket: Conexão finalizada @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[  174420ms] [WARNING] Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component. @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[  174421ms] [WARNING] Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component. @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[  174568ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[  174636ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[  174641ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/users/settings/language:0
+[  175902ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:101
+[  175902ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:101
+[  176060ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:76
+[  176161ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[  176466ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[  257175ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[  257942ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at OM (https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:1083:280)
+    at f2.nZ (https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:1083:317)
+    at async f2.request (https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:1083:2138)
+    at async Q0t (https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:1117:26108)
+    at async C (https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:54:37954)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:54:38261) @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69

@@ -1,0 +1,24 @@
+[     706ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/configuracoes:0
+[     751ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[    1098ms] Uncaught TypeError: Cannot read properties of undefined (reading 'unshift')
+    at <anonymous> (https://www.clarity.ms/tag/fqo9f8ulad?ref=gtm2:0:325)
+    at <anonymous> (https://www.clarity.ms/tag/fqo9f8ulad?ref=gtm2:0:370)
+[    1092ms] [WARNING] Error CL001: Multiple Clarity tags detected. @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[    1201ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/:0
+[    3042ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/user/presence:0
+[  247248ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  276618ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/auth/get-me:0
+[  294611ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/auth/get-me:0
+[  308176ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  368407ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  428641ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  488915ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  548073ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:101
+[  548074ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:101
+[  548351ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:76
+[  548458ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69
+[  549311ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69
+[  553643ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69
+[  627146ms] Identifier 'TCRMEmbed' has already been declared
+[  628627ms] Identifier 'TCRMEmbed' has already been declared
+[  691974ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/users/settings/summary:0

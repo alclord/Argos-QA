@@ -1,0 +1,173 @@
+[    1022ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:101
+[    1023ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:101
+[    1211ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:76
+[    1767ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    1779ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[    1866ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message:0
+[    1868ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/crm/index:0
+[    1873ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/settings:0
+[    1880ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[    1900ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/users/settings/summary:0
+[    1925ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/non-payment/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[    1941ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.qa.poli.digital/auth/activity:0
+[    1945ms] [WARNING] Erro ao enviar heartbeat: AxiosError: Request failed with status code 404
+    at dwe (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:966:10177)
+    at XMLHttpRequest.w (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:966:15705) @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    1950ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/broadcasting/auth:0
+[    1963ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/payment-due-alert:0
+[    2018ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats/pinned:0
+[    2151ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.qa.poli.digital/auth/refresh-token:0
+[    2157ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at dwe (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:966:10177)
+    at XMLHttpRequest.w (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:966:15705)
+    at Uy.request (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:968:2234)
+    at async Kct (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:972:6854)
+    at async https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:972:8196
+    at async Uy.request (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:968:2138)
+    at async g4.getPanelCredits (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:1793:551) @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    2158ms] [ERROR] AxiosError: Request failed with status code 401
+    at dwe (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:966:10177)
+    at XMLHttpRequest.w (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:966:15705)
+    at Uy.request (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:968:2234)
+    at async Kct (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:972:6854)
+    at async https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:972:8196
+    at async Uy.request (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:968:2138)
+    at async g4.getPanelCredits (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:1793:551) @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    2164ms] [ERROR] [UserPreferencesService] Failed to get summary: Error: AxiosError: Request failed with status code 401
+    at https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:972:8163
+    at async Uy.request (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:968:2138)
+    at async qee.getSummary (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:2108:64520)
+    at async https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:2108:65221 @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    2164ms] [ERROR] getCrmUserToken - Error on get crm user token: Error: AxiosError: Request failed with status code 401
+    at https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:972:8163
+    at async Uy.request (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:968:2138)
+    at async MP.getUserToken (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:2104:56262)
+    at async https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:2104:56553 @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    2165ms] [ERROR] [useUserPreferences] Error: Error: AxiosError: Request failed with status code 401
+    at https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:972:8163
+    at async Uy.request (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:968:2138)
+    at async qee.getSummary (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:2108:64520)
+    at async https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:2108:65221 @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    2165ms] [ERROR] Error: AxiosError: Request failed with status code 401
+    at https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:972:8163
+    at async Uy.request (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:968:2138)
+    at async vFt.getOverdueAccounts (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:2120:54805)
+    at async https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:2126:197468 @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    2165ms] [ERROR] error ao buscar chats Error: AxiosError: Request failed with status code 401
+    at https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:972:8163
+    at async Uy.request (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:968:2138)
+    at async Ndt (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:1002:26256)
+    at async C (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:54:37544)
+    at async Object.d [as fn] (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:54:37851) @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    2345ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[    2513ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.qa.poli.digital/auth/refresh-token:0
+[    2514ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at dwe (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:966:10177)
+    at XMLHttpRequest.w (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:966:15705)
+    at Uy.request (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:968:2234)
+    at async Kct (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:972:6854)
+    at async https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:972:8196
+    at async Uy.request (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:968:2138)
+    at async g4.getPanelCredits (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:1793:551) @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    2514ms] [ERROR] AxiosError: Request failed with status code 401
+    at dwe (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:966:10177)
+    at XMLHttpRequest.w (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:966:15705)
+    at Uy.request (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:968:2234)
+    at async Kct (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:972:6854)
+    at async https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:972:8196
+    at async Uy.request (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:968:2138)
+    at async g4.getPanelCredits (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:1793:551) @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    2586ms] [INFO] WebSocket: Conexão finalizada @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    3768ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:101
+[    3769ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:101
+[    3870ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:76
+[    3954ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[    4406ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[   39547ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[   94391ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/redirect?sessionId=4976580c70ead10a70c5478f8541e3802477ca27&toPath=https://homolog.qa.poli.digital/home:0
+[   94606ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1
+[   95742ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/redirect?sessionId=4976580c70ead10a70c5478f8541e3802477ca27&toPath=https://homolog.qa.poli.digital/home:0
+[   95793ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/redirect?sessionId=4976580c70ead10a70c5478f8541e3802477ca27&toPath=https://homolog.qa.poli.digital/home:0
+[   99831ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/user/presence:0
+[  102620ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:891:429
+    at UR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:893:31)
+    at Nd.TR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+[  141876ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/user/presence:0
+[  142560ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/redirect?sessionId=4976580c70ead10a70c5478f8541e3802477ca27&toPath=https://homolog.qa.poli.digital/settings/46667/chatbot:0
+[  143393ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1
+[  143904ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/redirect?sessionId=4976580c70ead10a70c5478f8541e3802477ca27&toPath=https://homolog.qa.poli.digital/settings/46667/chatbot:0
+[  143916ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/redirect?sessionId=4976580c70ead10a70c5478f8541e3802477ca27&toPath=https://homolog.qa.poli.digital/settings/46667/chatbot:0
+[  148322ms] [ERROR] Refused to execute script from 'https://homolog.qa.poli.digital/settings/46667/js/avatar.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled. @ https://homolog.qa.poli.digital/settings/46667/chatbot:0
+[  148608ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/user/presence:0
+[  148793ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:891:429
+    at UR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:893:31)
+    at Nd.TR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+[  153950ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/redirect?sessionId=4976580c70ead10a70c5478f8541e3802477ca27&toPath=https://app-spa.qa.poli.digital/tools:0
+[  154051ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1
+[  154301ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/redirect?sessionId=4976580c70ead10a70c5478f8541e3802477ca27&toPath=https://app-spa.qa.poli.digital/tools:0
+[  154334ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/redirect?sessionId=4976580c70ead10a70c5478f8541e3802477ca27&toPath=https://app-spa.qa.poli.digital/tools:0
+[  157327ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/tools:0
+[  157434ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1
+[  158526ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/tools:0
+[  158556ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/tools:0
+[  165094ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/redirect?sessionId=4976580c70ead10a70c5478f8541e3802477ca27&toPath=https://app-spa.qa.poli.digital/relatorio:0
+[  170174ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1
+[  170288ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/redirect?sessionId=4976580c70ead10a70c5478f8541e3802477ca27&toPath=https://app-spa.qa.poli.digital/relatorio:0
+[  170292ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/redirect?sessionId=4976580c70ead10a70c5478f8541e3802477ca27&toPath=https://app-spa.qa.poli.digital/relatorio:0
+[  173714ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/relatorio:0
+[  173768ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1
+[  175586ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/relatorio:0
+[  176054ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/relatorio:0
+[  182222ms] [ERROR] Applying inline style violates the following Content Security Policy directive 'style-src 'self' 'nonce-f310ASuKUF'   https://accounts.google.com'. Either the 'unsafe-inline' keyword, a hash ('sha256-bgUp5tqDCSC1xokY+fdYcHMM/Fap5RX+TCFkA0sXuRk='), or a nonce ('nonce-...') is required to enable inline execution. The action has been blocked. @ https://metabase.prod.cloud.polichat.com.br/app/dist/vendor.21094c4e1f01c7c7.js:5
+[  185173ms] [WARNING] Error getting setting graph.tooltip_columns TypeError: Cannot read properties of undefined (reading 'column')
+    at https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:293:8879
+    at Array.forEach (<anonymous>)
+    at K (https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:293:8849)
+    at Object.F [as getValue] (https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:293:9102)
+    at e (https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:301:118035)
+    at K (https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:301:118283)
+    at f (https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:301:142345)
+    at https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:92:21621
+    at Object.useMemo (https://metabase.prod.cloud.polichat.com.br/app/dist/vendor.21094c4e1f01c7c7.js:6:2154693)
+    at t.useMemo (https://metabase.prod.cloud.polichat.com.br/app/dist/vendor.21094c4e1f01c7c7.js:6:2510369) @ https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:300
+[  209594ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:101
+[  209594ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:101
+[  209807ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:76
+[  211559ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[  216892ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/redirect?sessionId=4976580c70ead10a70c5478f8541e3802477ca27&toPath=https://homolog.qa.poli.digital/home:0
+[  217356ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/redirect?sessionId=4976580c70ead10a70c5478f8541e3802477ca27&toPath=https://homolog.qa.poli.digital/home:0
+[  217388ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1
+[  217507ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/redirect?sessionId=4976580c70ead10a70c5478f8541e3802477ca27&toPath=https://homolog.qa.poli.digital/home:0
+[  231914ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/user/presence:0
+[  237441ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:891:429
+    at UR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:893:31)
+    at Nd.TR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+[  289667ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:101
+[  289667ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:101
+[  289766ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:76
+[  291414ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[  297002ms] [ERROR] Failed to load resource: the server responded with a status of 405 () @ https://spa.qa.poli.digital/api/auth/logout:0

@@ -1,0 +1,87 @@
+[    2587ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-iLAVF8WG.js:101
+[    2589ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-iLAVF8WG.js:101
+[    2860ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-iLAVF8WG.js:76
+[    3398ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-iLAVF8WG.js:69
+[    3932ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/non-payment/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[    3936ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/crm/index:0
+[    3938ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[    3940ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/users?order=name&include=status,status_of_service,email,attributes,roles,teams,account_channels,metadata&page=1&per_page=15&name=Yuri:0
+[    7918ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:907:429
+    at qS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:909:31)
+    at Od.pS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:906:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:317:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:263:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at k.Sq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:274:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:728:315
+    at Kz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:632:1)
+    at Pz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:636:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:656:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:206:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:657:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:657:100)
+    at mB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:657:742)
+    at pB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:661:183)
+    at zD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:705:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:709:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e66a1:687:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:864:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e66a1:550:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:709:457
+    at r (https://spa-canary.poli.digital/assets/index-iLAVF8WG.js:70:9827)
+[   23638ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-iLAVF8WG.js:69
+[   24454ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users?search=Yuri:0
+[   24454ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users?search=Yuri:0
+[   27033ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[   27508ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-iLAVF8WG.js:69
+[   27514ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-iLAVF8WG.js:69
+[   30894ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[   30900ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-iLAVF8WG.js:69
+[   30901ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-iLAVF8WG.js:69
+[   62770ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-iLAVF8WG.js:101
+[   62771ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-iLAVF8WG.js:101
+[   62857ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-iLAVF8WG.js:76
+[   62945ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-iLAVF8WG.js:69
+[   64613ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-iLAVF8WG.js:69
+[   74460ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-iLAVF8WG.js:69
+[   92934ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/524712586_1403981171217941_2854265328198267818_n.jpg?ccb=11-4&oh=01_Q5Aa3wE9o0cCNvH3FoiZ0BCycNT-NwVzH4A-T5uhhheA7YoW_w&oe=69B7F77E&_nc_sid=5e03e0&_nc_cat=108:0

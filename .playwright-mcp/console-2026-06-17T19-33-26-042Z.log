@@ -1,0 +1,72 @@
+[     679ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:101
+[     680ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:101
+[     833ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:76
+[    1566ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:69
+[    2302ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[    2314ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/flow/contacts/9bb49c4f-2c88-4a7f-84bb-38074c239b4b/tickets:0
+[    2324ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/flow/ticket-categories:0
+[    2326ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/flow/funnels?type=2:0
+[    2680ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:904:429
+    at $R (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:906:31)
+    at Od.ZR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:903:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:317:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:263:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at k.Vq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:274:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:729:315
+    at Mz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:632:1)
+    at Tz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:637:289)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:657:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:206:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:658:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:658:100)
+    at qB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:658:742)
+    at tB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:662:183)
+    at DD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:706:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:710:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:865:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e66g1h2:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e66g0h1:550:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:710:457
+    at r (https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:70:9827)
+[    3671ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/flow/ticket-categories:0
+[    3673ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/flow/funnels?type=2:0
+[    3674ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/flow/contacts/9bb49c4f-2c88-4a7f-84bb-38074c239b4b/tickets:0
+[    3814ms] Identifier 'TCRMEmbed' has already been declared
+[    4079ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[    6340ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/flow/ticket-categories:0
+[    6439ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/flow/contacts/9bb49c4f-2c88-4a7f-84bb-38074c239b4b/tickets:0
+[    7151ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/flow/funnels?type=2:0
+[   10560ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/flow/ticket-categories:0
+[   10700ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/flow/contacts/9bb49c4f-2c88-4a7f-84bb-38074c239b4b/tickets:0
+[   11347ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/flow/funnels?type=2:0
+[   14161ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/595305949_1269065788662797_8609307548434085416_n.jpg?ccb=11-4&oh=01_Q5Aa4QEIteV1pbOfXGcUK1_qT45ZeumzhQwQZ8FkRJsCWN0QZw&oe=6A075672&_nc_sid=5e03e0&_nc_cat=106:0
+[   47783ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[   47786ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:69
+[   47786ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:69
+[   62542ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/548171255_639902512280163_6409478027616752130_n.jpg?ccb=11-4&oh=01_Q5Aa3QGUKbDXQf2dUsVMg51EcNwvKOEtfv-ehqFF6Il0TSPiXw&oe=6952911A&_nc_sid=5e03e0&_nc_cat=109:0
+[   90412ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/548171255_639902512280163_6409478027616752130_n.jpg?ccb=11-4&oh=01_Q5Aa3QGUKbDXQf2dUsVMg51EcNwvKOEtfv-ehqFF6Il0TSPiXw&oe=6952911A&_nc_sid=5e03e0&_nc_cat=109:0

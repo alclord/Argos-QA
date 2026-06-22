@@ -1,0 +1,379 @@
+[    9629ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:101
+[    9632ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:101
+[    9780ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:76
+[   10166ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at dS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Gz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Lz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:100)
+    at iB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:742)
+    at lB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:648:183)
+    at vD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65r2:681:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:857:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65r2:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:495
+    at r (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:70:9812)
+[   10353ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:69
+[   10912ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[   11001ms] Identifier 'TCRMEmbed' has already been declared
+[   11503ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[   12155ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[   13386ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[   15567ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[   19739ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[   59388ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[   70625ms] [ERROR] Access to fetch at 'https://sentry.poli.digital/api/20/envelope/?sentry_version=7&sentry_key=45d27e79e794b3e254ec8212c0ad0250&sentry_client=sentry.javascript.react%2F9.47.1' from origin 'https://spa-canary.poli.digital' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://spa-canary.poli.digital/chat/9bb49c4f-2c88-4a7f-84bb-38074c239b4b:0
+[   70626ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://sentry.poli.digital/api/20/envelope/?sentry_version=7&sentry_key=45d27e79e794b3e254ec8212c0ad0250&sentry_client=sentry.javascript.react%2F9.47.1:0
+[   73741ms] [ERROR] Access to fetch at 'https://sentry.poli.digital/api/20/envelope/?sentry_version=7&sentry_key=45d27e79e794b3e254ec8212c0ad0250&sentry_client=sentry.javascript.react%2F9.47.1' from origin 'https://spa-canary.poli.digital' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://spa-canary.poli.digital/chat/9bb49c4f-2c88-4a7f-84bb-38074c239b4b:0
+[   73741ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://sentry.poli.digital/api/20/envelope/?sentry_version=7&sentry_key=45d27e79e794b3e254ec8212c0ad0250&sentry_client=sentry.javascript.react%2F9.47.1:0
+[  133891ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[  245053ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[  553872ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[  610364ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[  620222ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[  625569ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[  670332ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[  715401ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[  743775ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/533104101_1273496750896849_7121037392936692900_n.jpg?ccb=11-4&oh=01_Q5Aa4gHB_0LV-fCqetjZpJKJ3TmAJZ_EZL46yWdCfykkzCI0-g&oe=6A1307C1&_nc_sid=5e03e0&_nc_cat=106:0
+[  746110ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/533104101_1273496750896849_7121037392936692900_n.jpg?ccb=11-4&oh=01_Q5Aa4gHB_0LV-fCqetjZpJKJ3TmAJZ_EZL46yWdCfykkzCI0-g&oe=6A1307C1&_nc_sid=5e03e0&_nc_cat=106:0
+[  763404ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[  841788ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[  953645ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/564916186_527574163784138_201180157676256640_n.jpg?ccb=11-4&oh=01_Q5Aa4AHnDMlxshSOh3Pg4_ClNCVgyuaR-6YGo3z-qQbD2UtXsg&oe=69BFEBD9&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1012647ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/533104101_1273496750896849_7121037392936692900_n.jpg?ccb=11-4&oh=01_Q5Aa4gHB_0LV-fCqetjZpJKJ3TmAJZ_EZL46yWdCfykkzCI0-g&oe=6A1307C1&_nc_sid=5e03e0&_nc_cat=106:0
+[ 1087062ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/588862823_1397035361731443_5741298219543391191_n.jpg?ccb=11-4&oh=01_Q5Aa4AFLk8gRDri3aS0zT8PnI5fcE9N82f0aLqWSuBMl1fg1gA&oe=69CFA01D&_nc_sid=5e03e0&_nc_cat=102:0
+[ 1090628ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/533104101_1273496750896849_7121037392936692900_n.jpg?ccb=11-4&oh=01_Q5Aa4gHB_0LV-fCqetjZpJKJ3TmAJZ_EZL46yWdCfykkzCI0-g&oe=6A1307C1&_nc_sid=5e03e0&_nc_cat=106:0
+[ 1101806ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/588862823_1397035361731443_5741298219543391191_n.jpg?ccb=11-4&oh=01_Q5Aa4AFLk8gRDri3aS0zT8PnI5fcE9N82f0aLqWSuBMl1fg1gA&oe=69CFA01D&_nc_sid=5e03e0&_nc_cat=102:0
+[ 1148376ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/533104101_1273496750896849_7121037392936692900_n.jpg?ccb=11-4&oh=01_Q5Aa4gHB_0LV-fCqetjZpJKJ3TmAJZ_EZL46yWdCfykkzCI0-g&oe=6A1307C1&_nc_sid=5e03e0&_nc_cat=106:0
+[ 1155938ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/533104101_1273496750896849_7121037392936692900_n.jpg?ccb=11-4&oh=01_Q5Aa4gHB_0LV-fCqetjZpJKJ3TmAJZ_EZL46yWdCfykkzCI0-g&oe=6A1307C1&_nc_sid=5e03e0&_nc_cat=106:0
+[ 1165653ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1168810ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1239707ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/533104101_1273496750896849_7121037392936692900_n.jpg?ccb=11-4&oh=01_Q5Aa4gHB_0LV-fCqetjZpJKJ3TmAJZ_EZL46yWdCfykkzCI0-g&oe=6A1307C1&_nc_sid=5e03e0&_nc_cat=106:0
+[ 1261978ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516821226_1034137662043294_8412083315673682112_n.jpg?ccb=11-4&oh=01_Q5Aa3wGV0w2YmnQ6TBMH0x-0rxT9pjZgTvTyDdDyH-6A-5wg7w&oe=69B819C9&_nc_sid=5e03e0&_nc_cat=109:0
+[ 1274861ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/533104101_1273496750896849_7121037392936692900_n.jpg?ccb=11-4&oh=01_Q5Aa4gHB_0LV-fCqetjZpJKJ3TmAJZ_EZL46yWdCfykkzCI0-g&oe=6A1307C1&_nc_sid=5e03e0&_nc_cat=106:0
+[ 1275220ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/533104101_1273496750896849_7121037392936692900_n.jpg?ccb=11-4&oh=01_Q5Aa4gHB_0LV-fCqetjZpJKJ3TmAJZ_EZL46yWdCfykkzCI0-g&oe=6A1307C1&_nc_sid=5e03e0&_nc_cat=106:0
+[ 1403371ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/564916186_527574163784138_201180157676256640_n.jpg?ccb=11-4&oh=01_Q5Aa4AHnDMlxshSOh3Pg4_ClNCVgyuaR-6YGo3z-qQbD2UtXsg&oe=69BFEBD9&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1451779ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/564916186_527574163784138_201180157676256640_n.jpg?ccb=11-4&oh=01_Q5Aa4AHnDMlxshSOh3Pg4_ClNCVgyuaR-6YGo3z-qQbD2UtXsg&oe=69BFEBD9&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1508690ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/533104101_1273496750896849_7121037392936692900_n.jpg?ccb=11-4&oh=01_Q5Aa4gHB_0LV-fCqetjZpJKJ3TmAJZ_EZL46yWdCfykkzCI0-g&oe=6A1307C1&_nc_sid=5e03e0&_nc_cat=106:0
+[ 1580699ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/533104101_1273496750896849_7121037392936692900_n.jpg?ccb=11-4&oh=01_Q5Aa4gHB_0LV-fCqetjZpJKJ3TmAJZ_EZL46yWdCfykkzCI0-g&oe=6A1307C1&_nc_sid=5e03e0&_nc_cat=106:0
+[ 1659429ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/564916186_527574163784138_201180157676256640_n.jpg?ccb=11-4&oh=01_Q5Aa4AHnDMlxshSOh3Pg4_ClNCVgyuaR-6YGo3z-qQbD2UtXsg&oe=69BFEBD9&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1730395ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9bb850a2-ff03-4613-9186-4a6a6994ac51?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 1731212ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/d81e028f-5519-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 1732439ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9bb850a2-ff03-4613-9186-4a6a6994ac51?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 1732444ms] [ERROR] Erro ao enriquecer contato 9bb850a2-ff03-4613-9186-4a6a6994ac51: AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838) @ https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:69
+[ 1732449ms] [ERROR] Erro ao enriquecer contato 9bb850a2-ff03-4613-9186-4a6a6994ac51: AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838) @ https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:69
+[ 1732559ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732559ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732561ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732564ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732564ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732564ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732564ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732564ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732564ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732564ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732564ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732574ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732574ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732574ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732574ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732574ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732574ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732578ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732578ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732578ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732580ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732580ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732580ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732580ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732580ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732580ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732580ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732580ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732580ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732580ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732580ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732581ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732581ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732581ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732581ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732581ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732581ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732581ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732581ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732581ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732581ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732581ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1732581ms] AxiosError: Request failed with status code 401
+    at i_e (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1011:15759)
+    at lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2234)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1013:2138)
+    at async aSe (https://spa-canary.poli.digital/assets/index-BDbMp9mG.js:1094:13838)
+[ 1748648ms] [ERROR] Access to fetch at 'https://sentry.poli.digital/api/20/envelope/?sentry_version=7&sentry_key=45d27e79e794b3e254ec8212c0ad0250&sentry_client=sentry.javascript.react%2F9.47.1' from origin 'https://spa-canary.poli.digital' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://spa-canary.poli.digital/chat/9bb49c4f-2c88-4a7f-84bb-38074c239b4b:0
+[ 1748648ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://sentry.poli.digital/api/20/envelope/?sentry_version=7&sentry_key=45d27e79e794b3e254ec8212c0ad0250&sentry_client=sentry.javascript.react%2F9.47.1:0
+[ 1812584ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/588862823_1397035361731443_5741298219543391191_n.jpg?ccb=11-4&oh=01_Q5Aa4AFLk8gRDri3aS0zT8PnI5fcE9N82f0aLqWSuBMl1fg1gA&oe=69CFA01D&_nc_sid=5e03e0&_nc_cat=102:0
+[ 1829631ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1878516ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/533104101_1273496750896849_7121037392936692900_n.jpg?ccb=11-4&oh=01_Q5Aa4gHB_0LV-fCqetjZpJKJ3TmAJZ_EZL46yWdCfykkzCI0-g&oe=6A1307C1&_nc_sid=5e03e0&_nc_cat=106:0
+[ 2041678ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/588862823_1397035361731443_5741298219543391191_n.jpg?ccb=11-4&oh=01_Q5Aa4AFLk8gRDri3aS0zT8PnI5fcE9N82f0aLqWSuBMl1fg1gA&oe=69CFA01D&_nc_sid=5e03e0&_nc_cat=102:0
+[ 2050000ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/588862823_1397035361731443_5741298219543391191_n.jpg?ccb=11-4&oh=01_Q5Aa4AFLk8gRDri3aS0zT8PnI5fcE9N82f0aLqWSuBMl1fg1gA&oe=69CFA01D&_nc_sid=5e03e0&_nc_cat=102:0
+[ 2121387ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[ 2141171ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/588862823_1397035361731443_5741298219543391191_n.jpg?ccb=11-4&oh=01_Q5Aa4AFLk8gRDri3aS0zT8PnI5fcE9N82f0aLqWSuBMl1fg1gA&oe=69CFA01D&_nc_sid=5e03e0&_nc_cat=102:0
+[ 2632714ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/561573030_2528549837526343_7644961840405614024_n.jpg?ccb=11-4&oh=01_Q5Aa4QFrfrJ5WtaK0KhTrA37w5_MxASfX8540KKsR2moH-YgaA&oe=69F85D1E&_nc_sid=5e03e0&_nc_cat=105:0
+[ 2671078ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516299784_765127936149524_5928964262199968569_n.jpg?ccb=11-4&oh=01_Q5Aa3AF4no6RdRY23ypyTfYBHds24ZPIQipiE7s8OUUZapJnQQ&oe=69358870&_nc_sid=5e03e0&_nc_cat=103:0
+[ 2723117ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/470481111_608372948549946_6974928815549006466_n.jpg?ccb=11-4&oh=01_Q5Aa3AGWv4YEvdhJ2aGDxJsoTt8kjS9p288pbT0qjdrBKurnqg&oe=691AFB96&_nc_sid=5e03e0&_nc_cat=108:0
+[ 2763584ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[ 2801849ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516299784_765127936149524_5928964262199968569_n.jpg?ccb=11-4&oh=01_Q5Aa3AF4no6RdRY23ypyTfYBHds24ZPIQipiE7s8OUUZapJnQQ&oe=69358870&_nc_sid=5e03e0&_nc_cat=103:0
+[ 2809006ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[ 2819871ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516299784_765127936149524_5928964262199968569_n.jpg?ccb=11-4&oh=01_Q5Aa3AF4no6RdRY23ypyTfYBHds24ZPIQipiE7s8OUUZapJnQQ&oe=69358870&_nc_sid=5e03e0&_nc_cat=103:0
+[ 2862801ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/424778924_8215652561795964_3314007024435979409_n.jpg?ccb=11-4&oh=01_Q5Aa2gENDyCtBnxtDHO0X8Xap4ne3tkI6y-M2aLH3XL-d1_sWg&oe=68E27A25&_nc_sid=5e03e0&_nc_cat=102:0
+[ 2866451ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/424778924_8215652561795964_3314007024435979409_n.jpg?ccb=11-4&oh=01_Q5Aa2gENDyCtBnxtDHO0X8Xap4ne3tkI6y-M2aLH3XL-d1_sWg&oe=68E27A25&_nc_sid=5e03e0&_nc_cat=102:0
+[ 2870740ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516299784_765127936149524_5928964262199968569_n.jpg?ccb=11-4&oh=01_Q5Aa3AF4no6RdRY23ypyTfYBHds24ZPIQipiE7s8OUUZapJnQQ&oe=69358870&_nc_sid=5e03e0&_nc_cat=103:0
+[ 2877719ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/470481111_608372948549946_6974928815549006466_n.jpg?ccb=11-4&oh=01_Q5Aa3AGWv4YEvdhJ2aGDxJsoTt8kjS9p288pbT0qjdrBKurnqg&oe=691AFB96&_nc_sid=5e03e0&_nc_cat=108:0
+[ 2913737ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/470481111_608372948549946_6974928815549006466_n.jpg?ccb=11-4&oh=01_Q5Aa3AGWv4YEvdhJ2aGDxJsoTt8kjS9p288pbT0qjdrBKurnqg&oe=691AFB96&_nc_sid=5e03e0&_nc_cat=108:0
+[ 2987305ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/470481111_608372948549946_6974928815549006466_n.jpg?ccb=11-4&oh=01_Q5Aa3AGWv4YEvdhJ2aGDxJsoTt8kjS9p288pbT0qjdrBKurnqg&oe=691AFB96&_nc_sid=5e03e0&_nc_cat=108:0
+[ 3024299ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/470481111_608372948549946_6974928815549006466_n.jpg?ccb=11-4&oh=01_Q5Aa3AGWv4YEvdhJ2aGDxJsoTt8kjS9p288pbT0qjdrBKurnqg&oe=691AFB96&_nc_sid=5e03e0&_nc_cat=108:0
+[ 3039986ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/533104101_1273496750896849_7121037392936692900_n.jpg?ccb=11-4&oh=01_Q5Aa4gHB_0LV-fCqetjZpJKJ3TmAJZ_EZL46yWdCfykkzCI0-g&oe=6A1307C1&_nc_sid=5e03e0&_nc_cat=106:0
+[ 3082217ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/470481111_608372948549946_6974928815549006466_n.jpg?ccb=11-4&oh=01_Q5Aa3AGWv4YEvdhJ2aGDxJsoTt8kjS9p288pbT0qjdrBKurnqg&oe=691AFB96&_nc_sid=5e03e0&_nc_cat=108:0
+[ 3111702ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/470481111_608372948549946_6974928815549006466_n.jpg?ccb=11-4&oh=01_Q5Aa3AGWv4YEvdhJ2aGDxJsoTt8kjS9p288pbT0qjdrBKurnqg&oe=691AFB96&_nc_sid=5e03e0&_nc_cat=108:0
+[ 3368555ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/470481111_608372948549946_6974928815549006466_n.jpg?ccb=11-4&oh=01_Q5Aa3AGWv4YEvdhJ2aGDxJsoTt8kjS9p288pbT0qjdrBKurnqg&oe=691AFB96&_nc_sid=5e03e0&_nc_cat=108:0
+[ 3758774ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[ 3832618ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/46097b58-3a05-11f1-9d75-06799772b1cd/unread:0

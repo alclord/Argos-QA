@@ -1,0 +1,51 @@
+[    1049ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:101
+[    1050ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:101
+[    1201ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:76
+[    2111ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[    2914ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/559966980_1326502272399700_167251233029216118_n.jpg?ccb=11-4&oh=01_Q5Aa4gGsUMLpeY9ewPY-pHvuuDwE6Def07XJUBbSFvHnTIFZoQ&oe=6A22C3C6&_nc_sid=5e03e0&_nc_cat=104:0
+[    2915ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/487819011_1122001249681380_2285523550704014782_n.jpg?ccb=11-4&oh=01_Q5Aa3wFD5nULwxdj04TYsTsvFYrjZuTYlaY98Jkkr6fTO556jA&oe=69ADB528&_nc_sid=5e03e0&_nc_cat=102:0
+[    2948ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[    4247ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[  130517ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:101
+[  130517ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:101
+[  130693ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:76
+[  132346ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats/pinned:0
+[  132369ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[  132402ms] [ERROR] error ao buscar chats AxiosError: Request failed with status code 500
+    at yBe (https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:1101:15780)
+    at _2.request (https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:1103:2243)
+    at async rDt (https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:1137:26220)
+    at async C (https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:54:38287) @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  133016ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  133369ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats/pinned:0
+[  186755ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:101
+[  186756ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:101
+[  186824ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:76
+[  188022ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats/pinned:0
+[  188029ms] [ERROR] error ao buscar chats AxiosError: Network Error
+    at y.onerror (https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:1101:16162)
+    at XMLHttpRequest.r (https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:70:9827)
+    at _2.request (https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:1103:2243)
+    at async rDt (https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:1137:26220)
+    at async C (https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:54:38287) @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  188030ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[  188176ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  189034ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats/pinned:0
+[  190098ms] Identifier 'TCRMEmbed' has already been declared
+[  382531ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:101
+[  382532ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:101
+[  382724ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:76
+[  383568ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  384818ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/487819011_1122001249681380_2285523550704014782_n.jpg?ccb=11-4&oh=01_Q5Aa3wFD5nULwxdj04TYsTsvFYrjZuTYlaY98Jkkr6fTO556jA&oe=69ADB528&_nc_sid=5e03e0&_nc_cat=102:0
+[  384824ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/559966980_1326502272399700_167251233029216118_n.jpg?ccb=11-4&oh=01_Q5Aa4gGsUMLpeY9ewPY-pHvuuDwE6Def07XJUBbSFvHnTIFZoQ&oe=6A22C3C6&_nc_sid=5e03e0&_nc_cat=104:0
+[  385425ms] Identifier 'TCRMEmbed' has already been declared
+[  392332ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:101
+[  392332ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:101
+[  392410ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:76
+[  392539ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  392867ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  407272ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[  409883ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/603061698_1760439718245499_6896861361406212614_n.jpg?ccb=11-4&oh=01_Q5Aa3QEAtzPDSKJhd5p8TMztbTBR4dsKI8vA-SCD-psLmb9QkQ&oe=69614EE3&_nc_sid=5e03e0&_nc_cat=103:0

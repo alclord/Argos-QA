@@ -1,0 +1,17 @@
+﻿Título do Erro;Projeto Sentry;Ocorrências;Usuários Afetados;Primeiro Visto;Último Visto;Módulo;Sinal Oculto
+AxiosError: Request failed with status code 404;omnispa;13210;3433;05/05/2026;28/05/2026;Nova Interface;Sim
+Exception: The requested URL returned error: 403;revendedor-api;15438;416;14/05/2026;28/05/2026;Permissões / Roles;Não
+Error: There is already an encoder stored (mime type);polichat-spa;8508;1817;14/05/2026;28/05/2026;Chat / Mensagens;Sim
+AxiosError: Request failed with status code 401;polichat-spa;4393;1326;14/05/2026;28/05/2026;Autenticação;Sim
+AxiosError: Network Error (chat navigation);omnispa;1812;806;05/05/2026;28/05/2026;WebSocket / Presença;Sim
+Error: AbortError: The user aborted a request.;polichat-spa;796;266;14/05/2026;28/05/2026;Chat / Mensagens;Sim
+TypeError: Cannot read properties of undefined (reading 'plugin');omnispa;257;49;27/05/2026;28/05/2026;Nova Interface;Sim
+AxiosError: Request failed with status code 401 (refreshToken);omnispa;321;133;20/05/2026;28/05/2026;Autenticação;Sim
+AxiosError: Network Error (generic);omnispa;272;81;14/05/2026;28/05/2026;WebSocket / Presença;Sim
+Error: connect ECONNREFUSED 172.20.63.249:3000;api-gateway;16958;0;14/05/2026;28/05/2026;Automação;Sim
+Exception: The requested URL returned error: 404;revendedor-api;640;132;14/05/2026;28/05/2026;Permissões / Roles;Não
+Assign on first login;dispatch;206;0;14/05/2026;28/05/2026;Distribuição / Filas;Sim
+Error: No error message (flagsmith);polichat-spa;140;86;14/05/2026;28/05/2026;Autenticação;Sim
+AxiosError: Network Error (user-guiding);omnispa;75;33;14/05/2026;28/05/2026;Nova Interface;Sim
+TypeError: Cannot read properties of undefined (reading 'plugin') v2;omnispa;5;5;28/05/2026;28/05/2026;Nova Interface;Sim
+TypeError: Cannot read properties of undefined (reading 'plugin') v3;omnispa;5;2;28/05/2026;28/05/2026;Nova Interface;Sim

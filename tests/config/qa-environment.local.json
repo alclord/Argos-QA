@@ -1,0 +1,308 @@
+{
+  "defaultEnvironment": "staging",
+  "environments": {
+    "staging": {
+      "url": "https://spa.qa.poli.digital/chat",
+      "appSpaUrl": "https://app-spa.qa.poli.digital",
+      "legadoUrl": "https://homolog.qa.poli.digital",
+      "foundationApiUrl": "https://foundation-api.qa.poli.digital",
+      "heimdallUrl": "https://heimdall.qa.poli.digital",
+      "wabaWebhookUrl": "https://waba-webhook.qa.poli.digital/waba-webhook/webhook",
+      "timeouts": {
+        "step": 8000,
+        "navigation": 20000,
+        "observerSession": 600000
+      }
+    },
+    "canary": {
+      "url": "https://spa-canary.poli.digital/chat",
+      "appSpaUrl": "https://app-spa.qa.poli.digital",
+      "legadoUrl": "https://homolog.qa.poli.digital",
+      "foundationApiUrl": "https://foundation-api-canary.poli.digital",
+      "heimdallUrl": "https://heimdall.poli.digital",
+      "wabaWebhookUrl": "https://waba-webhook-canary.poli.digital/waba-webhook/webhook",
+      "timeouts": {
+        "step": 10000,
+        "navigation": 25000,
+        "observerSession": 600000
+      }
+    },
+    "production": {
+      "url": "https://app.poli.digital",
+      "appSpaUrl": "https://app-spa.poli.digital",
+      "legadoUrl": "https://app.poli.digital",
+      "foundationApiUrl": "https://foundation-api.poli.digital",
+      "heimdallUrl": "https://heimdall.poli.digital",
+      "wabaWebhookUrl": "https://waba-webhook.poli.digital/waba-webhook/webhook",
+      "timeouts": {
+        "step": 15000,
+        "navigation": 40000,
+        "observerSession": 600000
+      }
+    }
+  },
+  "mocks": {
+    "enabled": false,
+    "intercepts": [
+      {
+        "pattern": "**/api/sms/**",
+        "fixture": "sms-success.json",
+        "description": "Mock de envio de SMS — retorna sucesso sem disparar SMS real"
+      },
+      {
+        "pattern": "**/api/webhooks/external/**",
+        "fixture": "webhook-success.json",
+        "description": "Mock de webhook externo — evita dependência de sistema terceiro"
+      }
+    ]
+  },
+  "github": {
+    "owner": "poli-digital",
+    "primaryRepos": [
+      "SPA",
+      "FoundationAPI",
+      "heimdall",
+      "dispatch",
+      "dispatch-websocket",
+      "channel-customer",
+      "jarvis",
+      "contacts-service",
+      "waba-webhook",
+      "message-process",
+      "distribution-service",
+      "tag-service"
+    ],
+    "repos": [
+      "alertman-to-gchat",
+      "api-cliente-documentacao",
+      "api-gateway",
+      "Argos",
+      "artillery",
+      "atena",
+      "Atlas",
+      "automatic-actions",
+      "automatic-actions-front",
+      "beta-server-automation",
+      "Cerberus",
+      "channel-customer",
+      "chatbot",
+      "code-notify-hook",
+      "contacts-service",
+      "CRM-Bridge",
+      "CRM-Bridge-Webhook",
+      "cypress",
+      "data-plataform-api",
+      "department-service",
+      "development-poli",
+      "disparador-api-sqs",
+      "dispatch",
+      "dispatch-websocket",
+      "distribution-service",
+      "ecommerce",
+      "facebook-message",
+      "Felix",
+      "flamboyant",
+      "FoundationAPI",
+      "gamification",
+      "gamification_front",
+      "geravuln",
+      "github-runner",
+      "GLOTA",
+      "heimdall",
+      "Hermes",
+      "import-service",
+      "infra-polichat-domain",
+      "infra-polichat-openvpn",
+      "integration-service",
+      "invoice",
+      "jarvis",
+      "jiranek",
+      "Jupyter",
+      "keycloak-user-federation-bridge",
+      "knowledge-base",
+      "kubernetes-manifest",
+      "Lambdas",
+      "laravel-base-image",
+      "layout-2.0",
+      "Leads",
+      "link-preview-generator-server",
+      "localhost",
+      "message-process",
+      "Meta-Ads",
+      "metabase",
+      "meta-business-management",
+      "meta-whatsapp-cloud-api",
+      "middleware-automatic-actions",
+      "n8n",
+      "n8n-nodes-poli",
+      "n8n-workflows-backups",
+      "nanoaudio",
+      "nav-session-service",
+      "nodejs-base-image",
+      "open-metadata",
+      "Opportunities",
+      "Organization",
+      "php-graph-sdk",
+      "poli-airflow",
+      "PoliAPP",
+      "poli-brain",
+      "polichat-spa",
+      "polichat-web-app",
+      "polichat-web-app-laravel-11",
+      "policoins_app",
+      "policoins_front",
+      "policoins_go",
+      "policount",
+      "polics",
+      "polics-backend-mirror",
+      "polics-frontend-mirror",
+      "poli-ink",
+      "poli-kernel-nodejs",
+      "poli-mcp",
+      "PoliMetrics",
+      "poli-nifi",
+      "prometheus-exporter",
+      "pww",
+      "recorder-mp3",
+      "regressivo_v2",
+      "revendedor-api",
+      "sdk",
+      "SecureGate",
+      "site_institucional",
+      "SPA",
+      "spa-backend",
+      "tag-service",
+      "telemetria-ttv-onboarding",
+      "templates",
+      "users-service",
+      "Validate-User",
+      "Version-Cards-Checker",
+      "Versions",
+      "vox",
+      "vox-client",
+      "waba-webhook",
+      "webchat-service",
+      "zapi-consumer",
+      "zapi-producer"
+    ]
+  },
+  "knowledgeBase": {
+    "github": {
+      "owner": "poli-digital",
+      "repo": "knowledge-base",
+      "branch": "main"
+    }
+  },
+  "jira": {
+    "cloudId": "d1d9f267-e2bb-4eba-889f-94028c5b05c4",
+    "baseUrl": "https://poli-digital.atlassian.net/browse",
+    "supportProject": "SM",
+    "supportQueue": "Fila Nível 1",
+    "devProjects": ["DEV4"]
+  },
+  "testContacts": {
+    "default": {
+      "name": "\"Yuri\"",
+      "phone": "999210609",
+      "channelId": "556299210609@c.us",
+      "chatUuid": "9bb49c4f-2c88-4a7f-84bb-38074c239b4b",
+      "accountUuid": "9b8af98e-0407-49a2-bce9-3620f29c513a",
+      "contactUuid": "9bb49c4f-2c88-4a7f-84bb-38074c239b4b",
+      "note": "Contato oficial canary. NUNCA enviar mensagens para outros contatos da lista de atendimento."
+    },
+    "staging": {
+      "name": "\"Yuri Alcantara 3\"",
+      "phone": "556299210609",
+      "channelId": "556299210609@c.us",
+      "chatUuid": "5c12ea50-1bdd-11f1-a609-021f6d257969",
+      "accountUuid": "9b8af98e-73f4-4fe9-b33b-7aa47b0369bf",
+      "contactUuid": "5c12ea50-1bdd-11f1-a609-021f6d257969",
+      "accountChannelUuid": "9b8482c8-743f-4800-a3ef-5e26cf386ff3",
+      "accountChannelName": "WABA Staging",
+      "note": "Contato oficial staging (Yuri Alcantara 3). Canal WABA Staging ACTIVE. NUNCA enviar mensagens para contatos reais da fila."
+    }
+  },
+  "performanceThresholds": {
+    "defaultMs": 800,
+    "endpoints": {
+      "**/v3/auth**": 568,
+      "**/v3/accounts/**/chats**": 3612,
+      "**/v3/settings**": 284,
+      "**/v3/accounts**": 479,
+      "**/v3/contacts**": 317,
+      "**/v3/messages**": 268
+    },
+    "timeToFirstChat": {
+      "newMs": 3000,
+      "legacyMs": 8000,
+      "_calibrated": "2026-06-10 — Nova p95=2631ms, Legada p95=6479ms (5 rodadas Playwright, produção)"
+    },
+    "_calibrated": "2026-06-10 via K6 em producao — 22 iteracoes, 1 VU, p95+20% de margem. ATENCAO: chats p95=3010ms ja indica lentidao existente no endpoint"
+  },
+  "testMedia": {
+    "image": {
+      "path": "tests/fixtures/media/test-image.jpg",
+      "mimeType": "image/jpeg",
+      "caption": "Argos QA — teste de envio de imagem"
+    },
+    "document": {
+      "path": "tests/fixtures/media/test-document.pdf",
+      "mimeType": "application/pdf",
+      "filename": "argos-qa-test.pdf",
+      "caption": "Argos QA — teste de envio de documento"
+    },
+    "video": {
+      "path": "tests/fixtures/media/test-video.mp4",
+      "mimeType": "video/mp4",
+      "caption": "Argos QA — teste de envio de vídeo"
+    }
+  },
+  "argos": {
+    "scoring": {
+      "decayFactors": [1.0, 0.8, 0.6, 0.4],
+      "supportWeights": {
+        "Bug": 3,
+        "Solicitação": 2,
+        "Dúvida": 1,
+        "História": 1,
+        "Tarefa": 0
+      },
+      "crossServiceWeights": {
+        "heimdall": 2.0,
+        "api-gateway": 1.8,
+        "dispatch-service": 1.5,
+        "foundation-api": 1.3,
+        "polichat-web-app": 1.3
+      },
+      "churnThresholds": { "high": 500, "medium": 100 },
+      "entropyThresholds": { "high": 3.5, "medium": 2.0 },
+      "newcomerFactorThreshold": 0.50,
+      "doraThresholds": { "cfr_instavel": 0.30, "cfr_atencao": 0.15 },
+      "releaseHealthThresholds": { "critico": -2.0, "atencao": -0.5 }
+    },
+    "alerts": {
+      "webhook": {
+        "url": "",
+        "enabled": false,
+        "nota": "Compatível com Slack Incoming Webhooks, Discord, Teams, n8n"
+      },
+      "thresholds": {
+        "modulo_alto_para_alerta": 10,
+        "delta_critico_para_alerta": 5,
+        "novos_modulos_alto_para_alerta": 2
+      }
+    },
+    "history": {
+      "retentionDays": 90,
+      "historyPath": "tests/reports/history",
+      "nota": "Populado automaticamente pelo /argos-predict — não editar manualmente"
+    },
+    "autoEscalate": {
+      "enabled": false,
+      "scoreMinimo": 10,
+      "somentesNegligenciados": true,
+      "label": "argos-predict-auto",
+      "nota": "Usar node scripts/argos-predict/index.js --auto-escalate para ativar por execução"
+    }
+  }
+}

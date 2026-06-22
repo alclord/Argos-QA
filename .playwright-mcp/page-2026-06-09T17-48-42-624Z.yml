@@ -1,0 +1,149 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]: foundation-spa
+        - heading "Components" [level=2] [ref=e7]
+      - navigation [ref=e8]:
+        - link "Design tokens" [ref=e9] [cursor=pointer]:
+          - /url: /showcase/design-tokens
+          - generic [ref=e10]: Design tokens
+        - link "Button" [ref=e11] [cursor=pointer]:
+          - /url: /showcase/buttons
+          - generic [ref=e12]: Button
+        - link "Badge" [ref=e13] [cursor=pointer]:
+          - /url: /showcase/badges
+          - generic [ref=e14]: Badge
+        - link "Inputs & Textareas" [ref=e15] [cursor=pointer]:
+          - /url: /showcase/inputs
+          - generic [ref=e16]: Inputs & Textareas
+        - link "Form controls" [ref=e17] [cursor=pointer]:
+          - /url: /showcase/form-controls
+          - generic [ref=e18]: Form controls
+        - link "Form (RHF)" [ref=e19] [cursor=pointer]:
+          - /url: /showcase/form
+          - generic [ref=e20]: Form (RHF)
+        - link "MultipleSelector" [ref=e21] [cursor=pointer]:
+          - /url: /showcase/multiple-selector
+          - generic [ref=e22]: MultipleSelector
+        - link "Overlays" [ref=e23] [cursor=pointer]:
+          - /url: /showcase/overlays
+          - generic [ref=e24]: Overlays
+        - link "ContextMenu" [ref=e25] [cursor=pointer]:
+          - /url: /showcase/context-menu
+          - generic [ref=e26]: ContextMenu
+        - link "Command palette" [ref=e27] [cursor=pointer]:
+          - /url: /showcase/command
+          - generic [ref=e28]: Command palette
+        - link "Navigation" [ref=e29] [cursor=pointer]:
+          - /url: /showcase/navigation
+          - generic [ref=e30]: Navigation
+        - link "Data display" [ref=e31] [cursor=pointer]:
+          - /url: /showcase/data-display
+          - generic [ref=e32]: Data display
+        - link "DataTable" [ref=e33] [cursor=pointer]:
+          - /url: /showcase/data-table
+          - generic [ref=e34]: DataTable
+        - link "Chart" [ref=e35] [cursor=pointer]:
+          - /url: /showcase/chart
+          - generic [ref=e36]: Chart
+        - link "Carousel" [ref=e37] [cursor=pointer]:
+          - /url: /showcase/carousel
+          - generic [ref=e38]: Carousel
+        - link "Date & Time pickers" [ref=e39] [cursor=pointer]:
+          - /url: /showcase/pickers
+          - generic [ref=e40]: Date & Time pickers
+        - link "Toast" [ref=e41] [cursor=pointer]:
+          - /url: /showcase/feedback
+          - generic [ref=e42]: Toast
+        - link "Audio" [ref=e43] [cursor=pointer]:
+          - /url: /showcase/audio
+          - generic [ref=e44]: Audio
+        - link "Misc" [ref=e45] [cursor=pointer]:
+          - /url: /showcase/misc
+          - generic [ref=e46]: Misc
+        - link "App modals & banners" [ref=e47] [cursor=pointer]:
+          - /url: /showcase/app-modals
+          - generic [ref=e48]: App modals & banners
+    - generic [ref=e49]:
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - heading "Misc" [level=1] [ref=e52]
+          - paragraph [ref=e53]: LoadMore, ConfirmDeleteButton, Stepper, OfflineBanner.
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: Whitelabel
+            - combobox "Whitelabel" [ref=e57] [cursor=pointer]:
+              - generic: Poli (default)
+              - img [ref=e58]
+          - button "Alternar para tema escuro" [ref=e60] [cursor=pointer]:
+            - img [ref=e61]
+            - text: Dark
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - heading "LoadMore" [level=3] [ref=e67]
+          - generic [ref=e68]:
+            - generic [ref=e69]:
+              - generic [ref=e70]:
+                - generic [ref=e71]: hasNextPage = true
+                - button "Copiar JSX" [ref=e72] [cursor=pointer]:
+                  - img [ref=e73]
+              - button "Carregar mais" [ref=e77] [cursor=pointer]
+            - generic [ref=e78]:
+              - generic [ref=e79]:
+                - generic [ref=e80]: isFetchingNextPage
+                - button "Copiar JSX" [ref=e81] [cursor=pointer]:
+                  - img [ref=e82]
+              - generic [ref=e85]:
+                - button "Carregando" [disabled]
+            - generic [ref=e86]:
+              - generic [ref=e87]:
+                - generic [ref=e88]: hasNextPage = false
+                - button "Copiar JSX" [ref=e89] [cursor=pointer]:
+                  - img [ref=e90]
+              - generic [ref=e93]:
+                - button "Todos os dados carregados" [disabled]
+        - generic [ref=e94]:
+          - heading "ConfirmDeleteButton" [level=3] [ref=e96]
+          - generic [ref=e98]:
+            - generic [ref=e99]:
+              - generic [ref=e100]: default
+              - button "Copiar JSX" [ref=e101] [cursor=pointer]:
+                - img [ref=e102]
+            - generic [ref=e106]:
+              - button "Excluir item" [ref=e107] [cursor=pointer]:
+                - img [ref=e108]
+              - generic [ref=e111]: Confirmado 0x
+        - generic [ref=e112]:
+          - generic [ref=e113]:
+            - heading "Stepper" [level=3] [ref=e114]
+            - paragraph [ref=e115]: Navegação por passos (Stepper.Root / Stepper.Item).
+          - generic [ref=e117]:
+            - generic [ref=e118]:
+              - generic [ref=e119]: 3 passos
+              - button "Copiar JSX" [ref=e120] [cursor=pointer]:
+                - img [ref=e121]
+            - generic [ref=e125]:
+              - generic [ref=e127]: Conteúdo do passo 1
+              - generic [ref=e128]:
+                - button "Anterior" [disabled]
+                - generic [ref=e129]: Passo 1 de 3
+                - button "Próximo" [ref=e130] [cursor=pointer]
+        - generic [ref=e131]:
+          - generic [ref=e132]:
+            - heading "OfflineBanner" [level=3] [ref=e133]
+            - paragraph [ref=e134]: O componente real depende do useNetworkStore (online/offline). Render estático abaixo.
+          - generic [ref=e136]:
+            - generic [ref=e137]:
+              - generic [ref=e138]: visual estático
+              - button "Copiar JSX" [ref=e139] [cursor=pointer]:
+                - img [ref=e140]
+            - alert [ref=e144]:
+              - img [ref=e145]
+              - generic [ref=e152]:
+                - generic [ref=e153]: Sem conexão
+                - generic [ref=e154]: Verifique sua conexão com a internet.
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications (F8)":
+    - list

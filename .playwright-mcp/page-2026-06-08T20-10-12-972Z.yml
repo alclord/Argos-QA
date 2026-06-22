@@ -1,0 +1,369 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=50171584e2f3b6940309db4d81f8b7a664516ebe&toPath=https://app.poli.digital/home
+        - img [ref=e11]
+      - generic [ref=e12]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link [ref=e16] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e18]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=50171584e2f3b6940309db4d81f8b7a664516ebe&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e30]
+          - listitem [ref=e33]:
+            - link [ref=e34] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e36]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=50171584e2f3b6940309db4d81f8b7a664516ebe&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e41]
+          - listitem [ref=e44]:
+            - link [ref=e45] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=50171584e2f3b6940309db4d81f8b7a664516ebe&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e47]
+          - listitem [ref=e50]:
+            - link [ref=e51] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=50171584e2f3b6940309db4d81f8b7a664516ebe&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e53]
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - link [ref=e61] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e63]
+      - generic [ref=e66]:
+        - button "Consumo de créditos" [ref=e67] [cursor=pointer]:
+          - img [ref=e69]
+        - button "YA" [ref=e73] [cursor=pointer]:
+          - generic [ref=e79]: YA
+        - generic [ref=e82]: 3.5.352
+    - main [ref=e83]:
+      - main [ref=e84]:
+        - generic [ref=e85]:
+          - button "✨ Nova Versão" [ref=e86] [cursor=pointer]:
+            - generic [ref=e87]: ✨ Nova Versão
+            - img [ref=e88]
+          - generic [ref=e91]:
+            - generic [ref=e92]:
+              - generic [ref=e93]:
+                - button "Em atendimento" [ref=e94] [cursor=pointer]:
+                  - generic [ref=e95]: Em atendimento
+                  - img [ref=e96]
+                - generic [ref=e98]:
+                  - button "Contatos" [ref=e99] [cursor=pointer]:
+                    - img [ref=e100]
+                  - button "Filtros" [ref=e104] [cursor=pointer]:
+                    - img [ref=e105]
+              - generic [ref=e109]:
+                - generic [ref=e110]:
+                  - textbox "Pesquisar" [ref=e111]
+                  - button "Pesquisar" [ref=e112] [cursor=pointer]:
+                    - img [ref=e113]
+                - button "Ordenação das conversas" [ref=e116] [cursor=pointer]:
+                  - img [ref=e117]
+            - generic [ref=e120]: Você está indisponível e não receberá novas conversas
+          - generic [ref=e275]:
+            - generic [ref=e276] [cursor=pointer]:
+              - generic [ref=e277]:
+                - generic [ref=e279]:
+                  - img "Guilherme Andrade" [ref=e283]
+                  - button "Selecionar todos" [ref=e284]:
+                    - checkbox
+                - generic [ref=e285]:
+                  - generic [ref=e287]: Guilherme Andrade
+                  - generic [ref=e288]:
+                    - generic [ref=e289]:
+                      - img "Web Chat Sistema" [ref=e290]
+                      - generic [ref=e293]: Web Chat Sistema
+                    - generic [ref=e297]: Contato redirecionado para Gabriela Mota por Iago Leal
+                  - generic [ref=e298]:
+                    - generic [ref=e299]:
+                      - img [ref=e300]
+                      - generic [ref=e302]: Gabriela Mota
+                    - generic [ref=e303]:
+                      - img [ref=e304]
+                      - generic [ref=e306]: Pré Venda
+              - generic [ref=e308]:
+                - generic [ref=e309]: Há 1min
+                - generic [ref=e310]: "4"
+                - button "Abrir menu de opções" [ref=e311]:
+                  - img [ref=e312]
+            - generic [ref=e314] [cursor=pointer]:
+              - generic [ref=e315]:
+                - generic [ref=e317]:
+                  - generic [ref=e321]: DD
+                  - button "Selecionar todos" [ref=e322]:
+                    - checkbox
+                - generic [ref=e323]:
+                  - generic [ref=e325]: Delícia Do Dia Financeiro
+                  - generic [ref=e326]:
+                    - generic [ref=e327]:
+                      - img "WhatsApp" [ref=e328]
+                      - generic [ref=e331]: WhatsApp
+                    - generic [ref=e334]:
+                      - generic [ref=e335]: "Arthur Henrick diz::"
+                      - generic [ref=e336]: Boa tarde, consegue me explicar melhor o que está acontecendo ?
+                  - generic [ref=e337]:
+                    - generic [ref=e338]:
+                      - img [ref=e339]
+                      - generic [ref=e341]: Arthur Henrick Suporte
+                    - generic [ref=e342]:
+                      - img [ref=e343]
+                      - generic [ref=e345]: Financeiro
+              - generic [ref=e347]:
+                - generic [ref=e348]: Há 1min
+                - button "Abrir menu de opções" [ref=e349]:
+                  - img [ref=e350]
+            - generic [ref=e352] [cursor=pointer]:
+              - generic [ref=e353]:
+                - generic [ref=e355]:
+                  - generic [ref=e359]: PT
+                  - button "Selecionar todos" [ref=e360]:
+                    - checkbox
+                - generic [ref=e361]:
+                  - generic [ref=e363]: PWD Tattoo
+                  - generic [ref=e364]:
+                    - generic [ref=e365]:
+                      - img "WhatsApp Business" [ref=e366]
+                      - generic [ref=e369]: WhatsApp Business
+                    - generic [ref=e372]:
+                      - generic [ref=e373]: "Isadora Rocha diz::"
+                      - generic [ref=e374]: Wandley, Para estarmos iniciando, gostaria de entender o cenário atual da sua empresa. O que está em busca para melhorar seus atendimentos?
+                  - generic [ref=e375]:
+                    - generic [ref=e376]:
+                      - img [ref=e377]
+                      - generic [ref=e379]: Isadora Rocha
+                    - generic [ref=e380]:
+                      - img [ref=e381]
+                      - generic [ref=e383]: Pré Venda
+              - generic [ref=e385]:
+                - generic [ref=e386]: Há 1min
+                - button "Abrir menu de opções" [ref=e387]:
+                  - img [ref=e388]
+            - generic [ref=e390] [cursor=pointer]:
+              - generic [ref=e391]:
+                - generic [ref=e393]:
+                  - img "Gabriela Maria" [ref=e397]
+                  - button "Selecionar todos" [ref=e398]:
+                    - checkbox
+                - generic [ref=e399]:
+                  - generic [ref=e401]: Gabriela Maria
+                  - generic [ref=e402]:
+                    - generic [ref=e403]:
+                      - img "Web Chat Sistema" [ref=e404]
+                      - generic [ref=e407]: Web Chat Sistema
+                    - generic [ref=e411]: Contato redirecionado para Jessica Ferreira por Iago Leal
+                  - generic [ref=e412]:
+                    - generic [ref=e413]:
+                      - img [ref=e414]
+                      - generic [ref=e416]: Jessica Ferreira
+                    - generic [ref=e417]:
+                      - img [ref=e418]
+                      - generic [ref=e420]: Pré Venda
+              - generic [ref=e422]:
+                - generic [ref=e423]: Há 1min
+                - generic [ref=e424]: "1"
+                - button "Abrir menu de opções" [ref=e425]:
+                  - img [ref=e426]
+            - generic [ref=e428] [cursor=pointer]:
+              - generic [ref=e429]:
+                - generic [ref=e431]:
+                  - img "Vynex 51805" [ref=e435]
+                  - button "Selecionar todos" [ref=e436]:
+                    - checkbox
+                - generic [ref=e437]:
+                  - generic [ref=e439]: Vynex 51805
+                  - generic [ref=e440]:
+                    - generic [ref=e441]:
+                      - img "WhatsApp Business" [ref=e442]
+                      - generic [ref=e445]: WhatsApp Business
+                    - generic [ref=e448]:
+                      - generic [ref=e449]: "Arthur Henrick diz::"
+                      - generic [ref=e450]: O valor do nosso pacote de mil créditos é 479,90
+                    - img [ref=e451]
+                  - generic [ref=e454]:
+                    - generic [ref=e455]:
+                      - img [ref=e456]
+                      - generic [ref=e458]: Arthur Henrick Suporte
+                    - generic [ref=e459]:
+                      - img [ref=e460]
+                      - generic [ref=e462]: Financeiro
+              - generic [ref=e463]:
+                - generic [ref=e465]:
+                  - button [ref=e466]
+                  - button [ref=e468]
+                  - button [ref=e470]
+                  - button [ref=e472]
+                - generic [ref=e474]:
+                  - generic [ref=e475]: Há 1min
+                  - button "Abrir menu de opções" [ref=e476]:
+                    - img [ref=e477]
+            - generic [ref=e479] [cursor=pointer]:
+              - generic [ref=e480]:
+                - generic [ref=e482]:
+                  - generic [ref=e486]: JM
+                  - button "Selecionar todos" [ref=e487]:
+                    - checkbox
+                - generic [ref=e488]:
+                  - generic [ref=e490]: Juliana Moreira - FOSS Brasil.
+                  - generic [ref=e491]:
+                    - generic [ref=e492]:
+                      - img "WhatsApp Business" [ref=e493]
+                      - generic [ref=e496]: WhatsApp Business
+                    - generic [ref=e500]: obrigada
+                  - generic [ref=e501]:
+                    - generic [ref=e502]:
+                      - img [ref=e503]
+                      - generic [ref=e505]: Hugo Ferraz
+                    - generic [ref=e506]:
+                      - img [ref=e507]
+                      - generic [ref=e509]: Comercial
+              - generic [ref=e511]:
+                - generic [ref=e512]: Há 1min
+                - button "Abrir menu de opções" [ref=e513]:
+                  - img [ref=e514]
+            - generic [ref=e516] [cursor=pointer]:
+              - generic [ref=e517]:
+                - generic [ref=e519]:
+                  - generic [ref=e523]: S
+                  - button "Selecionar todos" [ref=e524]:
+                    - checkbox
+                - generic [ref=e525]:
+                  - generic [ref=e527]: Sheila - Unità Anestesia - 50942
+                  - generic [ref=e528]:
+                    - generic [ref=e529]:
+                      - img "WhatsApp" [ref=e530]
+                      - generic [ref=e533]: WhatsApp
+                    - generic [ref=e536]:
+                      - img [ref=e537]
+                      - text: Imagem
+                  - generic [ref=e541]:
+                    - generic [ref=e542]:
+                      - img [ref=e543]
+                      - generic [ref=e545]: Thalyta Cardoso
+                    - generic [ref=e546]:
+                      - img [ref=e547]
+                      - generic [ref=e549]: Comercial
+              - generic [ref=e551]:
+                - generic [ref=e552]: Há 1min
+                - generic [ref=e553]: "4"
+                - button "Abrir menu de opções" [ref=e554]:
+                  - img [ref=e555]
+            - generic [ref=e557] [cursor=pointer]:
+              - generic [ref=e558]:
+                - generic [ref=e560]:
+                  - img "Artur Barbosa" [ref=e564]
+                  - button "Selecionar todos" [ref=e565]:
+                    - checkbox
+                - generic [ref=e566]:
+                  - generic [ref=e568]: Artur Barbosa
+                  - generic [ref=e569]:
+                    - generic [ref=e570]:
+                      - img "Web Chat Sistema" [ref=e571]
+                      - generic [ref=e574]: Web Chat Sistema
+                    - generic [ref=e578]: Contato redirecionado para Jessica Ferreira por Iago Leal
+                  - generic [ref=e579]:
+                    - generic [ref=e580]:
+                      - img [ref=e581]
+                      - generic [ref=e583]: Jessica Ferreira
+                    - generic [ref=e584]:
+                      - img [ref=e585]
+                      - generic [ref=e587]: Pré Venda
+              - generic [ref=e589]:
+                - generic [ref=e590]: Há 1min
+                - generic [ref=e591]: "2"
+                - button "Abrir menu de opções" [ref=e592]:
+                  - img [ref=e593]
+            - generic [ref=e595] [cursor=pointer]:
+              - generic [ref=e596]:
+                - generic [ref=e598]:
+                  - img "Daniela l VNC Imóveis - 7881" [ref=e602]
+                  - button "Selecionar todos" [ref=e603]:
+                    - checkbox
+                - generic [ref=e604]:
+                  - generic [ref=e606]: Daniela l VNC Imóveis - 7881
+                  - generic [ref=e607]:
+                    - generic [ref=e608]:
+                      - img "WhatsApp Business" [ref=e609]
+                      - generic [ref=e612]: WhatsApp Business
+                    - generic [ref=e615]:
+                      - generic [ref=e616]: "Thalyta Cardoso diz::"
+                      - generic [ref=e617]: Obrigado pelas informações. Verifiquei sua solicitação e registramos como motivo do cancelamento a baixa utilização da plataforma em decorrência de mudanças e migrações internas da empresa. Conforme previsto em contrato, a solicitação de cancelamento deve respeitar o prazo de aviso prévio de 30 dias antes da geração do próximo boleto. Farei a conferência dos dados da sua conta e retornarei com as informações referentes à vigência e aos próximos passos para conclusão do processo. Agradecemos pela confiança durante o período em que utilizaram nossa plataforma e permanecemos à disposição caso necessitem de qualquer suporte adicional.
+                    - img [ref=e618]
+                  - generic [ref=e621]:
+                    - generic [ref=e622]:
+                      - img [ref=e623]
+                      - generic [ref=e625]: Thalyta Cardoso
+                    - generic [ref=e626]:
+                      - img [ref=e627]
+                      - generic [ref=e629]: Comercial
+              - generic [ref=e630]:
+                - generic [ref=e632]:
+                  - button [ref=e633]
+                  - button [ref=e635]
+                - generic [ref=e637]:
+                  - generic [ref=e638]: Há 1min
+                  - button "Abrir menu de opções" [ref=e639]:
+                    - img [ref=e640]
+            - generic [ref=e642] [cursor=pointer]:
+              - generic [ref=e643]:
+                - generic [ref=e645]:
+                  - generic [ref=e649]: AF
+                  - button "Selecionar todos" [ref=e650]:
+                    - checkbox
+                - generic [ref=e651]:
+                  - generic [ref=e653]: Amanda Farias - HIGAMES|Amanda Farias - 51690
+                  - generic [ref=e654]:
+                    - generic [ref=e655]:
+                      - img "WhatsApp Business" [ref=e656]
+                      - generic [ref=e659]: WhatsApp Business
+                    - generic [ref=e662]:
+                      - generic [ref=e663]: "Felipe Mendes diz::"
+                      - generic [ref=e664]: Olá, tudo bem? Como posso te ajudar?
+                  - generic [ref=e666]:
+                    - img [ref=e667]
+                    - generic [ref=e669]: Felipe Mendes
+              - generic [ref=e670]:
+                - button [ref=e673]
+                - generic [ref=e675]:
+                  - generic [ref=e676]: Há 1min
+                  - button "Abrir menu de opções" [ref=e677]:
+                    - img [ref=e678]
+            - generic [ref=e680] [cursor=pointer]:
+              - generic [ref=e681]:
+                - generic [ref=e683]:
+                  - img "Ismael Mota" [ref=e687]
+                  - button "Selecionar todos" [ref=e688]:
+                    - checkbox
+                - generic [ref=e689]:
+                  - generic [ref=e691]: Ismael Mota
+                  - generic [ref=e692]:
+                    - generic [ref=e693]:
+                      - img "Web Chat Sistema" [ref=e694]
+                      - generic [ref=e697]: Web Chat Sistema
+                    - generic [ref=e701]: Contato redirecionado para Samuel Santos por Iago Leal
+                  - generic [ref=e702]:
+                    - generic [ref=e703]:
+                      - img [ref=e704]
+                      - generic [ref=e706]: Samuel Santos
+                    - generic [ref=e707]:
+                      - img [ref=e708]
+                      - generic [ref=e710]: Pré Venda
+              - generic [ref=e712]:
+                - generic [ref=e713]: Há 1min
+                - button "Abrir menu de opções" [ref=e714]:
+                  - img [ref=e715]
+            - button "Carregar mais" [ref=e718] [cursor=pointer]
+        - heading "Contato não encontrado" [level=1] [ref=e252]:
+          - img [ref=e253]
+          - text: Contato não encontrado
+  - region "Notifications (F8)":
+    - list

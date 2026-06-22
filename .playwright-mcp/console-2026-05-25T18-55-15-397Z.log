@@ -1,0 +1,231 @@
+[    1187ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[    1675ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[    2612ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/users/settings/language:0
+[    2615ms] [ERROR] [UserPreferencesService] Failed to get language: Error: Dados de autenticação não encontrados. Faça login novamente.
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2278571
+    at f (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1825709)
+    at Generator.<anonymous> (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1827061)
+    at Generator.next (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1826138)
+    at r (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1819801)
+    at s (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1820012)
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1820071
+    at new Promise (<anonymous>)
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1819952
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2281621 @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1
+[    2618ms] [WARNING] Não foi possível carregar idioma salvo, usando padrão: Error: Dados de autenticação não encontrados. Faça login novamente.
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2278571
+    at f (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1825709)
+    at Generator.<anonymous> (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1827061)
+    at Generator.next (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1826138)
+    at r (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1819801)
+    at s (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1820012)
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1820071
+    at new Promise (<anonymous>)
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1819952
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2281621 @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1
+[    4188ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[    4193ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[   16072ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1
+[   16622ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.qa.poli.digital/auth/foundation/allowed:0
+[   16622ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1
+[   20399ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:892:429
+    at VR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:894:31)
+    at Nd.UR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:891:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+[   78350ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/46667/whatsapp/send_flow_template/channels/999999/contacts/56502163/users/79356:0
+[   78403ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/46667/whatsapp/send_flow_template/channels/57914/phone/5562999210609:0
+[   78407ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/46667/whatsapp/send_flow_template/channels/57914/phone/5562999210609:0
+[   78410ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/46667/whatsapp/send_flow_template/channels/57914/phone/5562999210609:0
+[   78457ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/46667/whatsapp/send_flow_template/channels/57914/phone/5562999210609:0
+[   78459ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/46667/whatsapp/send_flow_template/channels/57914/phone/5562999210609:0
+[   78460ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/46667/whatsapp/send_flow_template/channels/57914/phone/5562999210609:0
+[   78463ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/46667/whatsapp/send_flow_template/channels/57914/phone/5562999210609:0
+[   78466ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/46667/whatsapp/send_flow_template/channels/57914/phone/5562999210609:0
+[   78468ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/46667/whatsapp/send_flow_template/channels/57914/phone/5562999210609:0
+[   78470ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/46667/whatsapp/send_flow_template/channels/57914/phone/5562999210609:0
+[   78853ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://homolog.qa.poli.digital/api/v1/customers/46667/whatsapp/send_flow_template/channels/57914/contacts/56502163/users/79356:0
+[   78919ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://homolog.qa.poli.digital/api/v1/customers/46667/whatsapp/send_flow_template/channels/57914/phone/5562999210609:0
+[   79009ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://homolog.qa.poli.digital/api/v1/customers/46667/whatsapp/send_flow_template/channels/57914/phone/5562999210609:0
+[   82140ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  142596ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  202852ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  263286ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  323542ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  383810ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  444061ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  504354ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  564701ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  625101ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  686196ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  746456ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  806717ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  866964ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  927224ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  987473ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 1047715ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 1107957ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 1168214ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 1228458ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 1288710ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 1349021ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 1409276ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 1469557ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 1529859ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 1590109ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 1650360ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 1710599ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 1770842ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 1831105ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 1891344ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 1951597ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 2011839ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 2076941ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 2137220ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 2198626ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 2258878ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 2319117ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 2379377ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 2439634ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 2499907ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 2560210ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 2620531ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 2680866ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 2741730ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 2801957ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 2862216ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 2922471ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 2983571ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 3043916ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 3104170ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 3164474ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 3224737ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 3284996ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 3345297ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 3405617ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 3465896ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 3526162ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 3586436ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 3646700ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 3707462ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 3767712ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 3827944ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 3888164ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 4079809ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/alive:0
+[ 4140152ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/alive:0
+[ 4200445ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://homolog.qa.poli.digital/alive:0
+[ 4260630ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://homolog.qa.poli.digital/alive:0
+[ 4321263ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://homolog.qa.poli.digital/alive:0
+[ 4381451ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://homolog.qa.poli.digital/alive:0
+[ 4441632ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://homolog.qa.poli.digital/alive:0
+[ 4501902ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://homolog.qa.poli.digital/alive:0
+[ 4562114ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://homolog.qa.poli.digital/alive:0
+[ 4622330ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://homolog.qa.poli.digital/alive:0
+[ 4682571ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 4742806ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 4803060ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 4863376ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 4923616ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 4983848ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 5044068ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 5104318ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 5164529ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 5224740ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 5284961ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 5345173ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 5405426ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 5465636ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 5525855ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 5586358ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 5646571ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 5706800ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 5767030ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 5827422ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 5887650ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 5947882ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 6008091ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 6068628ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 6128869ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 6189092ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 6249323ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 6309542ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 6369770ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 6430008ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 6490234ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 6550457ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 6610689ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 6671166ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 6731432ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 6791657ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 6851882ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 6912314ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 6972746ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 7032969ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 7093200ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 7153435ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 7213668ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 7273951ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 7334192ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 7394416ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 7454687ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 7514898ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 7575136ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 7635347ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 7695585ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 7756255ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 7816476ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 7876714ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 7938431ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 7998650ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 8058944ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 8119161ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 8179387ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 8239639ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 8299882ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[ 8360118ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[58235222ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[58295683ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[58356468ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[58417107ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[58477389ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[58537751ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[58598028ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[58658300ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[58718566ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[58778834ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[58839070ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[58899298ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[58959519ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[59019768ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[59079997ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[59140270ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[59201932ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[59262234ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[59322455ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[59382719ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[59443668ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[59503887ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[59564114ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[59624305ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[59684548ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[59744812ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[59805057ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[59865293ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[59925541ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[59985767ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[60045996ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[60106217ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[60166411ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[60226626ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[60286859ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[60347067ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[60407265ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[60467478ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[60527682ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[60587884ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0

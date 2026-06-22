@@ -1,0 +1,20 @@
+[    3374ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-V-TTZ3xr.js:101
+[    3374ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-V-TTZ3xr.js:101
+[    3489ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-V-TTZ3xr.js:76
+[    3883ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-V-TTZ3xr.js:69
+[    3891ms] [ERROR] error ao buscar chats TypeError: Cannot read properties of undefined (reading 'data')
+    at Sct (https://spa-canary.poli.digital/assets/index-V-TTZ3xr.js:1002:26288)
+    at async C (https://spa-canary.poli.digital/assets/index-V-TTZ3xr.js:54:37549)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-V-TTZ3xr.js:54:37856) @ https://spa-canary.poli.digital/assets/index-V-TTZ3xr.js:69
+[    4309ms] [ERROR] Amplitude Logger [Error]: Failed to fetch (api2.amplitude.com) @ https://spa-canary.poli.digital/assets/index-V-TTZ3xr.js:69
+[    4310ms] [WARNING] Amplitude Logger [Warn]: {code: 0, error: "Status 'failed' provided for 3 events"} @ https://spa-canary.poli.digital/assets/index-V-TTZ3xr.js:69
+[    4595ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-V-TTZ3xr.js:101
+[    4596ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-V-TTZ3xr.js:101
+[    4639ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-V-TTZ3xr.js:76
+[    4656ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-V-TTZ3xr.js:69
+[    5186ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-V-TTZ3xr.js:69
+[   13326ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-V-TTZ3xr.js:69
+[   18716ms] Identifier 'TCRMEmbed' has already been declared
+[   54574ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516821226_1034137662043294_8412083315673682112_n.jpg?ccb=11-4&oh=01_Q5Aa3wGV0w2YmnQ6TBMH0x-0rxT9pjZgTvTyDdDyH-6A-5wg7w&oe=69B819C9&_nc_sid=5e03e0&_nc_cat=109:0
+[  282486ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/299515172_168693502342982_3946085247964697759_n.jpg?ccb=11-4&oh=01_Q5Aa3gGBgrifWav-kjmDcqLKb3YBQcUqDZJFOqntgw7yh7H5Aw&oe=69909D30&_nc_sid=5e03e0&_nc_cat=103:0
+[  304597ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/299515172_168693502342982_3946085247964697759_n.jpg?ccb=11-4&oh=01_Q5Aa3gGBgrifWav-kjmDcqLKb3YBQcUqDZJFOqntgw7yh7H5Aw&oe=69909D30&_nc_sid=5e03e0&_nc_cat=103:0

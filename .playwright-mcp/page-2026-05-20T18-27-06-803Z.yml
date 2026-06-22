@@ -1,0 +1,549 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - alert [ref=e223]:
+      - generic [ref=e224]:
+        - img [ref=e225]
+        - generic [ref=e227]:
+          - generic [ref=e228]: 25 dias de pagamento em atraso.
+          - generic [ref=e229]: Pagamento efetuado? Desconsidere. A compensação do boleto pode levar até 2 dias úteis.
+      - generic [ref=e230]:
+        - button "Acessar boleto" [ref=e231] [cursor=pointer]:
+          - img [ref=e232]
+          - text: Acessar boleto
+        - button "Fechar aviso" [ref=e236] [cursor=pointer]:
+          - img [ref=e237]
+    - generic [ref=e4]:
+      - complementary [ref=e5]:
+        - img [ref=e7]
+        - navigation [ref=e8]:
+          - list [ref=e9]:
+            - listitem [ref=e10]:
+              - link [ref=e11] [cursor=pointer]:
+                - /url: https://app-spa.qa.poli.digital/redirect?sessionId=9e85e6f629d81a4c00223cbf0f0c9bdf28aa03b4&toPath=https://homolog.qa.poli.digital/home
+                - img [ref=e13]
+            - listitem [ref=e16]:
+              - link [ref=e17] [cursor=pointer]:
+                - /url: /chat
+                - img [ref=e19]
+            - listitem [ref=e21]:
+              - link [ref=e22] [cursor=pointer]:
+                - /url: https://app-spa.qa.poli.digital/redirect?sessionId=9e85e6f629d81a4c00223cbf0f0c9bdf28aa03b4&toPath=https://homolog.qa.poli.digital/settings/46667/chatbot
+                - img [ref=e24]
+            - listitem [ref=e27]:
+              - link [ref=e28] [cursor=pointer]:
+                - /url: /poli-flow
+                - img [ref=e30]
+            - listitem [ref=e32]:
+              - link [ref=e33] [cursor=pointer]:
+                - /url: https://app-spa.qa.poli.digital/redirect?sessionId=9e85e6f629d81a4c00223cbf0f0c9bdf28aa03b4&toPath=https://app-spa.qa.poli.digital/marketing
+                - img [ref=e35]
+            - listitem [ref=e38]:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://app-spa.qa.poli.digital/redirect?sessionId=9e85e6f629d81a4c00223cbf0f0c9bdf28aa03b4&toPath=https://app-spa.qa.poli.digital/shopping
+                - img [ref=e41]
+            - listitem [ref=e43]:
+              - link [ref=e44] [cursor=pointer]:
+                - /url: https://app-spa.qa.poli.digital/redirect?sessionId=9e85e6f629d81a4c00223cbf0f0c9bdf28aa03b4&toPath=https://app-spa.qa.poli.digital/relatorio
+                - img [ref=e46]
+            - listitem [ref=e49]:
+              - link [ref=e50] [cursor=pointer]:
+                - /url: https://app-spa.qa.poli.digital/redirect?sessionId=9e85e6f629d81a4c00223cbf0f0c9bdf28aa03b4&toPath=https://app-spa.qa.poli.digital/tools
+                - img [ref=e52]
+            - listitem [ref=e55]:
+              - link [ref=e56] [cursor=pointer]:
+                - /url: /contacts
+                - img [ref=e58]
+          - list [ref=e62]:
+            - listitem [ref=e63]:
+              - button "Consumo de créditos" [ref=e64] [cursor=pointer]:
+                - img [ref=e65]
+            - listitem [ref=e68]:
+              - button "YA" [ref=e69] [cursor=pointer]:
+                - generic [ref=e74]: YA
+            - listitem [ref=e76]:
+              - button [ref=e77] [cursor=pointer]:
+                - img [ref=e78]
+            - listitem [ref=e80]:
+              - generic [ref=e82]: v3.5.327
+      - main [ref=e83]:
+        - generic [ref=e85]:
+          - navigation "breadcrumb" [ref=e87]:
+            - link "Página inicial" [ref=e89] [cursor=pointer]:
+              - /url: /
+            - img [ref=e90]
+            - generic [ref=e92]: Contatos
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - generic [ref=e97]:
+                - textbox "Buscar contatos..." [active] [ref=e98]
+                - button [ref=e99] [cursor=pointer]:
+                  - img [ref=e100]
+              - generic [ref=e103]:
+                - button "Ver excluídos" [ref=e104] [cursor=pointer]:
+                  - img [ref=e105]
+                  - text: Ver excluídos
+                - button "Adicionar Novo" [ref=e108] [cursor=pointer]:
+                  - img [ref=e109]
+                  - text: Adicionar Novo
+            - generic [ref=e111]:
+              - table [ref=e243]:
+                - rowgroup [ref=e244]:
+                  - row "Selecionar todos da página Nome Email Telefone Atendente Canais Etiquetas Data de criação" [ref=e245]:
+                    - columnheader "Selecionar todos da página" [ref=e246]:
+                      - checkbox "Selecionar todos da página" [ref=e956] [cursor=pointer]
+                    - columnheader "Nome" [ref=e249]:
+                      - button "Nome" [ref=e957] [cursor=pointer]:
+                        - text: Nome
+                        - img [ref=e958]
+                    - columnheader "Email" [ref=e254]:
+                      - button "Email" [ref=e961] [cursor=pointer]:
+                        - text: Email
+                        - img [ref=e962]
+                    - columnheader "Telefone" [ref=e259]
+                    - columnheader "Atendente" [ref=e260]
+                    - columnheader "Canais" [ref=e261]
+                    - columnheader "Etiquetas" [ref=e262]
+                    - columnheader "Data de criação" [ref=e263]:
+                      - button "Data de criação" [ref=e965] [cursor=pointer]:
+                        - text: Data de criação
+                        - img [ref=e966]
+                    - columnheader [ref=e268]
+                - rowgroup [ref=e269]:
+                  - row "Selecionar item cce052d0-546f-11f1-a1a1-02db6b8c5cd7 TP Teste Poli Group — — LC WhatsApp WhatsApp — 20 de mai. de 2026 Editar Excluir" [ref=e270]:
+                    - cell "Selecionar item cce052d0-546f-11f1-a1a1-02db6b8c5cd7" [ref=e271]:
+                      - generic [ref=e969]:
+                        - checkbox "Selecionar item cce052d0-546f-11f1-a1a1-02db6b8c5cd7"
+                    - cell "TP Teste Poli Group" [ref=e273]:
+                      - generic [ref=e970]:
+                        - generic [ref=e974]: TP
+                        - button [ref=e975] [cursor=pointer]:
+                          - img [ref=e976]
+                        - generic [ref=e981]: Teste Poli Group
+                        - button [ref=e982] [cursor=pointer]:
+                          - img [ref=e983]
+                    - cell "—" [ref=e291]
+                    - cell "—" [ref=e292]
+                    - cell "LC" [ref=e293]:
+                      - generic [ref=e991]: LC
+                    - cell "WhatsApp WhatsApp" [ref=e299]:
+                      - generic [ref=e994]:
+                        - img "WhatsApp" [ref=e995]
+                        - generic [ref=e998]: WhatsApp
+                    - cell "—" [ref=e307]
+                    - cell "20 de mai. de 2026" [ref=e308]
+                    - cell "Editar Excluir" [ref=e309]:
+                      - generic [ref=e999]:
+                        - button "Editar" [ref=e1000] [cursor=pointer]:
+                          - img [ref=e1001]
+                        - button "Excluir" [ref=e1004] [cursor=pointer]:
+                          - img [ref=e1005]
+                  - row "Selecionar item 248c7bf0-5099-11f1-a1a1-02db6b8c5cd7 LS Lorena santos — 5561998784568 — WhatsApp WhatsApp — 15 de mai. de 2026 Editar Excluir" [ref=e319]:
+                    - cell "Selecionar item 248c7bf0-5099-11f1-a1a1-02db6b8c5cd7" [ref=e320]:
+                      - generic [ref=e1008]:
+                        - checkbox "Selecionar item 248c7bf0-5099-11f1-a1a1-02db6b8c5cd7"
+                    - cell "LS Lorena santos" [ref=e322]:
+                      - generic [ref=e1009]:
+                        - generic [ref=e1013]: LS
+                        - button [ref=e1014] [cursor=pointer]:
+                          - img [ref=e1015]
+                        - generic [ref=e1018]: Lorena santos
+                        - button [ref=e1019] [cursor=pointer]:
+                          - img [ref=e1020]
+                    - cell "—" [ref=e338]
+                    - cell "5561998784568" [ref=e339]
+                    - cell "—" [ref=e340]
+                    - cell "WhatsApp WhatsApp" [ref=e341]:
+                      - generic [ref=e1026]:
+                        - img "WhatsApp" [ref=e1027]
+                        - generic [ref=e1030]: WhatsApp
+                    - cell "—" [ref=e349]
+                    - cell "15 de mai. de 2026" [ref=e350]
+                    - cell "Editar Excluir" [ref=e351]:
+                      - generic [ref=e1031]:
+                        - button "Editar" [ref=e1032] [cursor=pointer]:
+                          - img [ref=e1033]
+                        - button "Excluir" [ref=e1036] [cursor=pointer]:
+                          - img [ref=e1037]
+                  - row "Selecionar item c1ba9e00-508f-11f1-a1a1-02db6b8c5cd7 MP Mariana Pedrosa — 5561998745518 — WhatsApp WhatsApp — 15 de mai. de 2026 Editar Excluir" [ref=e361]:
+                    - cell "Selecionar item c1ba9e00-508f-11f1-a1a1-02db6b8c5cd7" [ref=e362]:
+                      - generic [ref=e1040]:
+                        - checkbox "Selecionar item c1ba9e00-508f-11f1-a1a1-02db6b8c5cd7"
+                    - cell "MP Mariana Pedrosa" [ref=e364]:
+                      - generic [ref=e1041]:
+                        - generic [ref=e1045]: MP
+                        - button [ref=e1046] [cursor=pointer]:
+                          - img [ref=e1047]
+                        - generic [ref=e1050]: Mariana Pedrosa
+                        - button [ref=e1051] [cursor=pointer]:
+                          - img [ref=e1052]
+                    - cell "—" [ref=e380]
+                    - cell "5561998745518" [ref=e381]
+                    - cell "—" [ref=e382]
+                    - cell "WhatsApp WhatsApp" [ref=e383]:
+                      - generic [ref=e1058]:
+                        - img "WhatsApp" [ref=e1059]
+                        - generic [ref=e1062]: WhatsApp
+                    - cell "—" [ref=e391]
+                    - cell "15 de mai. de 2026" [ref=e392]
+                    - cell "Editar Excluir" [ref=e393]:
+                      - generic [ref=e1063]:
+                        - button "Editar" [ref=e1064] [cursor=pointer]:
+                          - img [ref=e1065]
+                        - button "Excluir" [ref=e1068] [cursor=pointer]:
+                          - img [ref=e1069]
+                  - row "Selecionar item a1c98791-2818-453b-99a1-5790698a954f JM João Marcos — 5562998741658 PE WhatsApp WhatsApp — 15 de mai. de 2026 Editar Excluir" [ref=e403]:
+                    - cell "Selecionar item a1c98791-2818-453b-99a1-5790698a954f" [ref=e404]:
+                      - generic [ref=e1072]:
+                        - checkbox "Selecionar item a1c98791-2818-453b-99a1-5790698a954f"
+                    - cell "JM João Marcos" [ref=e406]:
+                      - generic [ref=e1073]:
+                        - generic [ref=e1077]: JM
+                        - button [ref=e1078] [cursor=pointer]:
+                          - img [ref=e1079]
+                        - generic [ref=e1082]: João Marcos
+                        - button [ref=e1083] [cursor=pointer]:
+                          - img [ref=e1084]
+                    - cell "—" [ref=e422]
+                    - cell "5562998741658" [ref=e423]
+                    - cell "PE" [ref=e424]:
+                      - generic [ref=e1092]: PE
+                    - cell "WhatsApp WhatsApp" [ref=e430]:
+                      - generic [ref=e1095]:
+                        - img "WhatsApp" [ref=e1096]
+                        - generic [ref=e1099]: WhatsApp
+                    - cell "—" [ref=e438]
+                    - cell "15 de mai. de 2026" [ref=e439]
+                    - cell "Editar Excluir" [ref=e440]:
+                      - generic [ref=e1100]:
+                        - button "Editar" [ref=e1101] [cursor=pointer]:
+                          - img [ref=e1102]
+                        - button "Excluir" [ref=e1105] [cursor=pointer]:
+                          - img [ref=e1106]
+                  - row "Selecionar item a1c981a9-2e14-414a-ba54-7be4c863d6bc MT Marina teste crm foundation 2 — 5562982421111 WA WhatsApp WhatsApp — 15 de mai. de 2026 Editar Excluir" [ref=e450]:
+                    - cell "Selecionar item a1c981a9-2e14-414a-ba54-7be4c863d6bc" [ref=e451]:
+                      - generic [ref=e1109]:
+                        - checkbox "Selecionar item a1c981a9-2e14-414a-ba54-7be4c863d6bc"
+                    - cell "MT Marina teste crm foundation 2" [ref=e454]:
+                      - generic [ref=e1110]:
+                        - generic [ref=e1114]: MT
+                        - button [ref=e1115] [cursor=pointer]:
+                          - img [ref=e1116]
+                        - generic [ref=e1119]: Marina teste crm foundation 2
+                        - button [ref=e1120] [cursor=pointer]:
+                          - img [ref=e1121]
+                    - cell "—" [ref=e470]
+                    - cell "5562982421111" [ref=e471]
+                    - cell "WA" [ref=e472]:
+                      - generic [ref=e1129]: WA
+                    - cell "WhatsApp WhatsApp" [ref=e478]:
+                      - generic [ref=e1132]:
+                        - img "WhatsApp" [ref=e1133]
+                        - generic [ref=e1136]: WhatsApp
+                    - cell "—" [ref=e486]
+                    - cell "15 de mai. de 2026" [ref=e487]
+                    - cell "Editar Excluir" [ref=e488]:
+                      - generic [ref=e1137]:
+                        - button "Editar" [ref=e1138] [cursor=pointer]:
+                          - img [ref=e1139]
+                        - button "Excluir" [ref=e1142] [cursor=pointer]:
+                          - img [ref=e1143]
+                  - row "Selecionar item a1c97cd1-1002-4e07-b8d5-23e91f115c4c MT Marina teste foundation crm — 5562982425555 WA WhatsApp WhatsApp — 15 de mai. de 2026 Editar Excluir" [ref=e498]:
+                    - cell "Selecionar item a1c97cd1-1002-4e07-b8d5-23e91f115c4c" [ref=e499]:
+                      - generic [ref=e1146]:
+                        - checkbox "Selecionar item a1c97cd1-1002-4e07-b8d5-23e91f115c4c"
+                    - cell "MT Marina teste foundation crm" [ref=e501]:
+                      - generic [ref=e1147]:
+                        - generic [ref=e1151]: MT
+                        - button [ref=e1152] [cursor=pointer]:
+                          - img [ref=e1153]
+                        - generic [ref=e1156]: Marina teste foundation crm
+                        - button [ref=e1157] [cursor=pointer]:
+                          - img [ref=e1158]
+                    - cell "—" [ref=e517]
+                    - cell "5562982425555" [ref=e518]
+                    - cell "WA" [ref=e519]:
+                      - generic [ref=e1166]: WA
+                    - cell "WhatsApp WhatsApp" [ref=e525]:
+                      - generic [ref=e1169]:
+                        - img "WhatsApp" [ref=e1170]
+                        - generic [ref=e1173]: WhatsApp
+                    - cell "—" [ref=e533]
+                    - cell "15 de mai. de 2026" [ref=e534]
+                    - cell "Editar Excluir" [ref=e535]:
+                      - generic [ref=e1174]:
+                        - button "Editar" [ref=e1175] [cursor=pointer]:
+                          - img [ref=e1176]
+                        - button "Excluir" [ref=e1179] [cursor=pointer]:
+                          - img [ref=e1180]
+                  - row "Selecionar item bc0e4633-5086-11f1-a1a1-02db6b8c5cd7 MT Marina teste legado crm — 5562982156666 — WhatsApp WhatsApp — 15 de mai. de 2026 Editar Excluir" [ref=e545]:
+                    - cell "Selecionar item bc0e4633-5086-11f1-a1a1-02db6b8c5cd7" [ref=e546]:
+                      - generic [ref=e1183]:
+                        - checkbox "Selecionar item bc0e4633-5086-11f1-a1a1-02db6b8c5cd7"
+                    - cell "MT Marina teste legado crm" [ref=e548]:
+                      - generic [ref=e1184]:
+                        - generic [ref=e1188]: MT
+                        - button [ref=e1189] [cursor=pointer]:
+                          - img [ref=e1190]
+                        - generic [ref=e1193]: Marina teste legado crm
+                        - button [ref=e1194] [cursor=pointer]:
+                          - img [ref=e1195]
+                    - cell "—" [ref=e564]
+                    - cell "5562982156666" [ref=e565]
+                    - cell "—" [ref=e566]
+                    - cell "WhatsApp WhatsApp" [ref=e567]:
+                      - generic [ref=e1201]:
+                        - img "WhatsApp" [ref=e1202]
+                        - generic [ref=e1205]: WhatsApp
+                    - cell "—" [ref=e575]
+                    - cell "15 de mai. de 2026" [ref=e576]
+                    - cell "Editar Excluir" [ref=e577]:
+                      - generic [ref=e1206]:
+                        - button "Editar" [ref=e1207] [cursor=pointer]:
+                          - img [ref=e1208]
+                        - button "Excluir" [ref=e1211] [cursor=pointer]:
+                          - img [ref=e1212]
+                  - row "Selecionar item 2ed4a1b9-507c-11f1-a1a1-02db6b8c5cd7 PS Pablo Santos — — — WhatsApp WhatsApp — 15 de mai. de 2026 Editar Excluir" [ref=e587]:
+                    - cell "Selecionar item 2ed4a1b9-507c-11f1-a1a1-02db6b8c5cd7" [ref=e588]:
+                      - generic [ref=e1215]:
+                        - checkbox "Selecionar item 2ed4a1b9-507c-11f1-a1a1-02db6b8c5cd7"
+                    - cell "PS Pablo Santos" [ref=e590]:
+                      - generic [ref=e1216]:
+                        - generic [ref=e1220]: PS
+                        - button [ref=e1221] [cursor=pointer]:
+                          - img [ref=e1222]
+                        - generic [ref=e1225]: Pablo Santos
+                        - button [ref=e1226] [cursor=pointer]:
+                          - img [ref=e1227]
+                    - cell "—" [ref=e606]
+                    - cell "—" [ref=e607]
+                    - cell "—" [ref=e608]
+                    - cell "WhatsApp WhatsApp" [ref=e609]:
+                      - generic [ref=e1233]:
+                        - img "WhatsApp" [ref=e1234]
+                        - generic [ref=e1237]: WhatsApp
+                    - cell "—" [ref=e617]
+                    - cell "15 de mai. de 2026" [ref=e618]
+                    - cell "Editar Excluir" [ref=e619]:
+                      - generic [ref=e1238]:
+                        - button "Editar" [ref=e1239] [cursor=pointer]:
+                          - img [ref=e1240]
+                        - button "Excluir" [ref=e1243] [cursor=pointer]:
+                          - img [ref=e1244]
+                  - row "Selecionar item 28f0239f-507c-11f1-a1a1-02db6b8c5cd7 DB Dra. Bruna Silva — 5577962897914 — WhatsApp WhatsApp WhatsApp WhatsApp — 15 de mai. de 2026 Editar Excluir" [ref=e629]:
+                    - cell "Selecionar item 28f0239f-507c-11f1-a1a1-02db6b8c5cd7" [ref=e630]:
+                      - generic [ref=e1247]:
+                        - checkbox "Selecionar item 28f0239f-507c-11f1-a1a1-02db6b8c5cd7"
+                    - cell "DB Dra. Bruna Silva" [ref=e632]:
+                      - generic [ref=e1248]:
+                        - generic [ref=e1252]: DB
+                        - button [ref=e1253] [cursor=pointer]:
+                          - img [ref=e1254]
+                        - generic [ref=e1257]: Dra. Bruna Silva
+                        - button [ref=e1258] [cursor=pointer]:
+                          - img [ref=e1259]
+                    - cell "—" [ref=e648]
+                    - cell "5577962897914" [ref=e649]
+                    - cell "—" [ref=e650]
+                    - cell "WhatsApp WhatsApp WhatsApp WhatsApp" [ref=e651]:
+                      - generic [ref=e1263]:
+                        - generic [ref=e1265]:
+                          - img "WhatsApp" [ref=e1266]
+                          - generic [ref=e1269]: WhatsApp
+                        - generic [ref=e1271]:
+                          - img "WhatsApp" [ref=e1272]
+                          - generic [ref=e1275]: WhatsApp
+                    - cell "—" [ref=e665]
+                    - cell "15 de mai. de 2026" [ref=e666]
+                    - cell "Editar Excluir" [ref=e667]:
+                      - generic [ref=e1276]:
+                        - button "Editar" [ref=e1277] [cursor=pointer]:
+                          - img [ref=e1278]
+                        - button "Excluir" [ref=e1281] [cursor=pointer]:
+                          - img [ref=e1282]
+                  - row "Selecionar item 28ebf2bf-507c-11f1-a1a1-02db6b8c5cd7 DS Deneval Saraiva — — — WhatsApp WhatsApp — 15 de mai. de 2026 Editar Excluir" [ref=e677]:
+                    - cell "Selecionar item 28ebf2bf-507c-11f1-a1a1-02db6b8c5cd7" [ref=e678]:
+                      - generic [ref=e1285]:
+                        - checkbox "Selecionar item 28ebf2bf-507c-11f1-a1a1-02db6b8c5cd7"
+                    - cell "DS Deneval Saraiva" [ref=e680]:
+                      - generic [ref=e1286]:
+                        - generic [ref=e1290]: DS
+                        - button [ref=e1291] [cursor=pointer]:
+                          - img [ref=e1292]
+                        - generic [ref=e1295]: Deneval Saraiva
+                        - button [ref=e1296] [cursor=pointer]:
+                          - img [ref=e1297]
+                    - cell "—" [ref=e696]
+                    - cell "—" [ref=e697]
+                    - cell "—" [ref=e698]
+                    - cell "WhatsApp WhatsApp" [ref=e699]:
+                      - generic [ref=e1303]:
+                        - img "WhatsApp" [ref=e1304]
+                        - generic [ref=e1307]: WhatsApp
+                    - cell "—" [ref=e707]
+                    - cell "15 de mai. de 2026" [ref=e708]
+                    - cell "Editar Excluir" [ref=e709]:
+                      - generic [ref=e1308]:
+                        - button "Editar" [ref=e1309] [cursor=pointer]:
+                          - img [ref=e1310]
+                        - button "Excluir" [ref=e1313] [cursor=pointer]:
+                          - img [ref=e1314]
+                  - row "Selecionar item 4f20970a-5063-11f1-a1a1-02db6b8c5cd7 TH Teste HML — — — WhatsApp WhatsApp — 15 de mai. de 2026 Editar Excluir" [ref=e719]:
+                    - cell "Selecionar item 4f20970a-5063-11f1-a1a1-02db6b8c5cd7" [ref=e720]:
+                      - generic [ref=e1317]:
+                        - checkbox "Selecionar item 4f20970a-5063-11f1-a1a1-02db6b8c5cd7"
+                    - cell "TH Teste HML" [ref=e722]:
+                      - generic [ref=e1318]:
+                        - generic [ref=e1322]: TH
+                        - button [ref=e1323] [cursor=pointer]:
+                          - img [ref=e1324]
+                        - generic [ref=e1327]: Teste HML
+                        - button [ref=e1328] [cursor=pointer]:
+                          - img [ref=e1329]
+                    - cell "—" [ref=e738]
+                    - cell "—" [ref=e739]
+                    - cell "—" [ref=e740]
+                    - cell "WhatsApp WhatsApp" [ref=e741]:
+                      - generic [ref=e1335]:
+                        - img "WhatsApp" [ref=e1336]
+                        - generic [ref=e1339]: WhatsApp
+                    - cell "—" [ref=e749]
+                    - cell "15 de mai. de 2026" [ref=e750]
+                    - cell "Editar Excluir" [ref=e751]:
+                      - generic [ref=e1340]:
+                        - button "Editar" [ref=e1341] [cursor=pointer]:
+                          - img [ref=e1342]
+                        - button "Excluir" [ref=e1345] [cursor=pointer]:
+                          - img [ref=e1346]
+                  - row "Selecionar item b35f9aea-5060-11f1-a1a1-02db6b8c5cd7 LF Liz Franco — 5519969489748 — WhatsApp WhatsApp WhatsApp WhatsApp — 15 de mai. de 2026 Editar Excluir" [ref=e761]:
+                    - cell "Selecionar item b35f9aea-5060-11f1-a1a1-02db6b8c5cd7" [ref=e762]:
+                      - generic [ref=e1349]:
+                        - checkbox "Selecionar item b35f9aea-5060-11f1-a1a1-02db6b8c5cd7"
+                    - cell "LF Liz Franco" [ref=e764]:
+                      - generic [ref=e1350]:
+                        - generic [ref=e1354]: LF
+                        - button [ref=e1355] [cursor=pointer]:
+                          - img [ref=e1356]
+                        - generic [ref=e1359]: Liz Franco
+                        - button [ref=e1360] [cursor=pointer]:
+                          - img [ref=e1361]
+                    - cell "—" [ref=e780]
+                    - cell "5519969489748" [ref=e781]
+                    - cell "—" [ref=e782]
+                    - cell "WhatsApp WhatsApp WhatsApp WhatsApp" [ref=e783]:
+                      - generic [ref=e1365]:
+                        - generic [ref=e1367]:
+                          - img "WhatsApp" [ref=e1368]
+                          - generic [ref=e1371]: WhatsApp
+                        - generic [ref=e1373]:
+                          - img "WhatsApp" [ref=e1374]
+                          - generic [ref=e1377]: WhatsApp
+                    - cell "—" [ref=e797]
+                    - cell "15 de mai. de 2026" [ref=e798]
+                    - cell "Editar Excluir" [ref=e799]:
+                      - generic [ref=e1378]:
+                        - button "Editar" [ref=e1379] [cursor=pointer]:
+                          - img [ref=e1380]
+                        - button "Excluir" [ref=e1383] [cursor=pointer]:
+                          - img [ref=e1384]
+                  - row "Selecionar item adcfeb10-5060-11f1-a1a1-02db6b8c5cd7 AS Aline Souza — — — WhatsApp WhatsApp — 15 de mai. de 2026 Editar Excluir" [ref=e809]:
+                    - cell "Selecionar item adcfeb10-5060-11f1-a1a1-02db6b8c5cd7" [ref=e810]:
+                      - generic [ref=e1387]:
+                        - checkbox "Selecionar item adcfeb10-5060-11f1-a1a1-02db6b8c5cd7"
+                    - cell "AS Aline Souza" [ref=e812]:
+                      - generic [ref=e1388]:
+                        - generic [ref=e1392]: AS
+                        - button [ref=e1393] [cursor=pointer]:
+                          - img [ref=e1394]
+                        - generic [ref=e1397]: Aline Souza
+                        - button [ref=e1398] [cursor=pointer]:
+                          - img [ref=e1399]
+                    - cell "—" [ref=e828]
+                    - cell "—" [ref=e829]
+                    - cell "—" [ref=e830]
+                    - cell "WhatsApp WhatsApp" [ref=e831]:
+                      - generic [ref=e1405]:
+                        - img "WhatsApp" [ref=e1406]
+                        - generic [ref=e1409]: WhatsApp
+                    - cell "—" [ref=e839]
+                    - cell "15 de mai. de 2026" [ref=e840]
+                    - cell "Editar Excluir" [ref=e841]:
+                      - generic [ref=e1410]:
+                        - button "Editar" [ref=e1411] [cursor=pointer]:
+                          - img [ref=e1412]
+                        - button "Excluir" [ref=e1415] [cursor=pointer]:
+                          - img [ref=e1416]
+                  - row "Selecionar item ace20244-5060-11f1-a1a1-02db6b8c5cd7 LP Luiza Pereira — — — WhatsApp WhatsApp — 15 de mai. de 2026 Editar Excluir" [ref=e851]:
+                    - cell "Selecionar item ace20244-5060-11f1-a1a1-02db6b8c5cd7" [ref=e852]:
+                      - generic [ref=e1419]:
+                        - checkbox "Selecionar item ace20244-5060-11f1-a1a1-02db6b8c5cd7"
+                    - cell "LP Luiza Pereira" [ref=e854]:
+                      - generic [ref=e1420]:
+                        - generic [ref=e1424]: LP
+                        - button [ref=e1425] [cursor=pointer]:
+                          - img [ref=e1426]
+                        - generic [ref=e1429]: Luiza Pereira
+                        - button [ref=e1430] [cursor=pointer]:
+                          - img [ref=e1431]
+                    - cell "—" [ref=e870]
+                    - cell "—" [ref=e871]
+                    - cell "—" [ref=e872]
+                    - cell "WhatsApp WhatsApp" [ref=e873]:
+                      - generic [ref=e1437]:
+                        - img "WhatsApp" [ref=e1438]
+                        - generic [ref=e1441]: WhatsApp
+                    - cell "—" [ref=e881]
+                    - cell "15 de mai. de 2026" [ref=e882]
+                    - cell "Editar Excluir" [ref=e883]:
+                      - generic [ref=e1442]:
+                        - button "Editar" [ref=e1443] [cursor=pointer]:
+                          - img [ref=e1444]
+                        - button "Excluir" [ref=e1447] [cursor=pointer]:
+                          - img [ref=e1448]
+                  - row "Selecionar item 3f667cfe-4fe0-11f1-a1a1-02db6b8c5cd7 TP Tudo preenchido pedro.vieira123@poli.digital 5561998745612 — WhatsApp WhatsApp — 14 de mai. de 2026 Editar Excluir" [ref=e893]:
+                    - cell "Selecionar item 3f667cfe-4fe0-11f1-a1a1-02db6b8c5cd7" [ref=e894]:
+                      - generic [ref=e1451]:
+                        - checkbox "Selecionar item 3f667cfe-4fe0-11f1-a1a1-02db6b8c5cd7"
+                    - cell "TP Tudo preenchido" [ref=e896]:
+                      - generic [ref=e1452]:
+                        - generic [ref=e1456]: TP
+                        - button [ref=e1457] [cursor=pointer]:
+                          - img [ref=e1458]
+                        - generic [ref=e1461]: Tudo preenchido
+                        - button [ref=e1462] [cursor=pointer]:
+                          - img [ref=e1463]
+                    - cell "pedro.vieira123@poli.digital" [ref=e912]
+                    - cell "5561998745612" [ref=e913]
+                    - cell "—" [ref=e914]
+                    - cell "WhatsApp WhatsApp" [ref=e915]:
+                      - generic [ref=e1469]:
+                        - img "WhatsApp" [ref=e1470]
+                        - generic [ref=e1473]: WhatsApp
+                    - cell "—" [ref=e923]
+                    - cell "14 de mai. de 2026" [ref=e924]
+                    - cell "Editar Excluir" [ref=e925]:
+                      - generic [ref=e1474]:
+                        - button "Editar" [ref=e1475] [cursor=pointer]:
+                          - img [ref=e1476]
+                        - button "Excluir" [ref=e1479] [cursor=pointer]:
+                          - img [ref=e1480]
+              - generic [ref=e941]:
+                - generic [ref=e942]:
+                  - generic [ref=e943]: Página 1 de 1832
+                  - generic [ref=e944]: "Total: 27.471 registros"
+                - generic [ref=e945]:
+                  - combobox [ref=e946]:
+                    - option "10 por página"
+                    - option "15 por página" [selected]
+                    - option "25 por página"
+                    - option "50 por página"
+                  - generic [ref=e947]:
+                    - button [disabled]:
+                      - img
+                    - button [disabled]:
+                      - img
+                    - button [ref=e948] [cursor=pointer]:
+                      - img [ref=e949]
+                    - button [ref=e951] [cursor=pointer]:
+                      - img [ref=e952]
+  - region "Notifications (F8)":
+    - list

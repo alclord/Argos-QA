@@ -1,0 +1,25 @@
+[    1629ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[    2076ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[    2417ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/users/settings/language:0
+[    2426ms] [ERROR] [UserPreferencesService] Failed to get language: Error: Dados de autenticação não encontrados. Faça login novamente.
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2278571
+    at f (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1825709)
+    at Generator.<anonymous> (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1827061)
+    at Generator.next (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1826138)
+    at r (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1819801)
+    at s (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1820012)
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1820071
+    at new Promise (<anonymous>)
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1819952
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2281621 @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1
+[    2436ms] [WARNING] Não foi possível carregar idioma salvo, usando padrão: Error: Dados de autenticação não encontrados. Faça login novamente.
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2278571
+    at f (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1825709)
+    at Generator.<anonymous> (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1827061)
+    at Generator.next (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1826138)
+    at r (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1819801)
+    at s (https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1820012)
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1820071
+    at new Promise (<anonymous>)
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:1819952
+    at https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:2:2281621 @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1

@@ -1,0 +1,775 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\yuria\\OneDrive\\Documentos\\GitHub\\Argos-QA\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config=playwright.perf.config.js"
+    ],
+    "configFile": "C:\\Users\\yuria\\OneDrive\\Documentos\\GitHub\\Argos-QA\\playwright.perf.config.js",
+    "rootDir": "C:/Users/yuria/OneDrive/Documentos/GitHub/Argos-QA/tests/e2e/performance",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/yuria/OneDrive/Documentos/GitHub/Argos-QA/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "perf-setup",
+        "name": "perf-setup",
+        "testDir": "C:/Users/yuria/OneDrive/Documentos/GitHub/Argos-QA/tests/e2e/performance",
+        "testIgnore": [],
+        "testMatch": [
+          "/auth\\.setup\\.perf\\.js$/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/yuria/OneDrive/Documentos/GitHub/Argos-QA/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "nova",
+        "name": "nova",
+        "testDir": "C:/Users/yuria/OneDrive/Documentos/GitHub/Argos-QA/tests/e2e/performance",
+        "testIgnore": [
+          "/auth\\.setup/"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/yuria/OneDrive/Documentos/GitHub/Argos-QA/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "legada",
+        "name": "legada",
+        "testDir": "C:/Users/yuria/OneDrive/Documentos/GitHub/Argos-QA/tests/e2e/performance",
+        "testIgnore": [
+          "/auth\\.setup/"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "tests/reports/perf/playwright-raw.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth.setup.perf.js",
+      "file": "auth.setup.perf.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "auth — nova interface (spa.poli.digital)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "perf-setup",
+              "projectName": "perf-setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 27524,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "✅ Nova interface: auth salvo (yuri.castro@poli.digital)\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-18T17:05:56.294Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a66828bf460047abf10a-97e91707c3a027bb54e7",
+          "file": "auth.setup.perf.js",
+          "line": 24,
+          "column": 1
+        },
+        {
+          "title": "auth — legada (app-spa.poli.digital)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "perf-setup",
+              "projectName": "perf-setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 43578,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "✅ Legada: auth salvo (yuri.castro@poli.digital)\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-18T17:06:24.378Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a66828bf460047abf10a-ebf13fb33184f7145f6e",
+          "file": "auth.setup.perf.js",
+          "line": 43,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "perf-cold-start.spec.js",
+      "file": "perf-cold-start.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Cenário A — Cold Start",
+          "file": "perf-cold-start.spec.js",
+          "line": 20,
+          "column": 6,
+          "specs": [
+            {
+              "title": "cold start — 10 rodadas",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "nova",
+                  "projectName": "nova",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 115385,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[Nova Interface] Run 1/10 | TTFC=8964ms FCP=5944ms LCP=6164ms TTFB=606ms reqs=68 bytes=5684KB\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 2/10 | TTFC=7211ms FCP=3128ms LCP=3332ms TTFB=190ms reqs=71 bytes=5684KB\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 3/10 | TTFC=6783ms FCP=2904ms LCP=3064ms TTFB=182ms reqs=67 bytes=5684KB\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 4/10 | TTFC=10091ms FCP=6200ms LCP=6412ms TTFB=182ms reqs=67 bytes=5684KB\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 5/10 | TTFC=18590ms FCP=14728ms LCP=14916ms TTFB=183ms reqs=70 bytes=5684KB\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 6/10 | TTFC=14196ms FCP=10124ms LCP=10348ms TTFB=171ms reqs=69 bytes=5684KB\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 7/10 | TTFC=5800ms FCP=3048ms LCP=3260ms TTFB=173ms reqs=62 bytes=5684KB\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 8/10 | TTFC=5402ms FCP=2356ms LCP=2580ms TTFB=180ms reqs=71 bytes=5684KB\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 9/10 | TTFC=5034ms FCP=2280ms LCP=2472ms TTFB=185ms reqs=66 bytes=5684KB\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 10/10 | TTFC=6840ms FCP=2736ms LCP=2924ms TTFB=208ms reqs=69 bytes=5684KB\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-18T17:07:09.484Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de1ba46830a377b9df76-612a1ea5cb5cb69c614d",
+              "file": "perf-cold-start.spec.js",
+              "line": 23,
+              "column": 3
+            },
+            {
+              "title": "cold start — 10 rodadas",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "legada",
+                  "projectName": "legada",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 132026,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[Interface Legada] Run 1/10 | TTFC=16985ms FCP=8016ms LCP=10916ms TTFB=602ms reqs=71 bytes=1911KB\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 2/10 | TTFC=7360ms FCP=3264ms LCP=5988ms TTFB=177ms reqs=68 bytes=1873KB\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 3/10 | TTFC=7278ms FCP=3184ms LCP=6852ms TTFB=187ms reqs=68 bytes=1873KB\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 4/10 | TTFC=11654ms FCP=4220ms LCP=6748ms TTFB=181ms reqs=69 bytes=1911KB\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 5/10 | TTFC=6824ms FCP=2716ms LCP=6396ms TTFB=189ms reqs=69 bytes=1873KB\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 6/10 | TTFC=11461ms FCP=2292ms LCP=7760ms TTFB=173ms reqs=73 bytes=1873KB\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 7/10 | TTFC=8364ms FCP=2476ms LCP=7708ms TTFB=196ms reqs=70 bytes=1910KB\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 8/10 | TTFC=10953ms FCP=2244ms LCP=5340ms TTFB=190ms reqs=71 bytes=1873KB\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 9/10 | TTFC=8164ms FCP=3036ms LCP=6628ms TTFB=204ms reqs=69 bytes=1873KB\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 10/10 | TTFC=16468ms FCP=4136ms LCP=7304ms TTFB=393ms reqs=69 bytes=1873KB\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-18T17:10:48.773Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de1ba46830a377b9df76-a26aa833c2cfe3ea96b3",
+              "file": "perf-cold-start.spec.js",
+              "line": 23,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "perf-open-chat.spec.js",
+      "file": "perf-open-chat.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Cenário B — Abrir Chat",
+          "file": "perf-open-chat.spec.js",
+          "line": 27,
+          "column": 6,
+          "specs": [
+            {
+              "title": "abrir chat — 10 rodadas",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "nova",
+                  "projectName": "nova",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 37313,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[Nova Interface] Run 1/10 | timeToMessages=233ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 2/10 | timeToMessages=345ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 3/10 | timeToMessages=784ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 4/10 | timeToMessages=558ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 5/10 | timeToMessages=1287ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 6/10 | timeToMessages=133ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 7/10 | timeToMessages=164ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 8/10 | timeToMessages=440ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 9/10 | timeToMessages=84ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 10/10 | timeToMessages=224ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-18T17:09:05.168Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "88af199c7c4269275415-242deb2d8ea67ce70da3",
+              "file": "perf-open-chat.spec.js",
+              "line": 30,
+              "column": 3
+            },
+            {
+              "title": "abrir chat — 10 rodadas",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "legada",
+                  "projectName": "legada",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 37392,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[Interface Legada] Run 1/10 | timeToMessages=1283ms\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 2/10 | timeToMessages=559ms\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 3/10 | timeToMessages=4684ms\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 4/10 | timeToMessages=908ms\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 5/10 | timeToMessages=326ms\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 6/10 | timeToMessages=244ms\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 7/10 | timeToMessages=631ms\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 8/10 | timeToMessages=327ms\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 9/10 | timeToMessages=309ms\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 10/10 | timeToMessages=430ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-18T17:13:01.066Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "88af199c7c4269275415-f94d4393a5c8b2549204",
+              "file": "perf-open-chat.spec.js",
+              "line": 30,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "perf-search.spec.js",
+      "file": "perf-search.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Cenário C — Busca de Contato",
+          "file": "perf-search.spec.js",
+          "line": 28,
+          "column": 6,
+          "specs": [
+            {
+              "title": "busca — 10 rodadas",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "nova",
+                  "projectName": "nova",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 21752,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[Nova Interface] Run 1/10 | timeToResults=106ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 2/10 | timeToResults=87ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 3/10 | timeToResults=75ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 4/10 | timeToResults=81ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 5/10 | timeToResults=82ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 6/10 | timeToResults=72ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 7/10 | timeToResults=88ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 8/10 | timeToResults=80ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 9/10 | timeToResults=96ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 10/10 | timeToResults=99ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-18T17:09:42.534Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "07508c2a17fe54b8f3cd-f8649570a24e2a46f69d",
+              "file": "perf-search.spec.js",
+              "line": 31,
+              "column": 3
+            },
+            {
+              "title": "busca — 10 rodadas",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "legada",
+                  "projectName": "legada",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 45597,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[Interface Legada] Run 1/10 | timeToResults=2519ms\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 2/10 | timeToResults=2440ms\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 3/10 | timeToResults=2476ms\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 4/10 | timeToResults=2496ms\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 5/10 | timeToResults=2491ms\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 6/10 | timeToResults=2502ms\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 7/10 | timeToResults=2434ms\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 8/10 | timeToResults=2529ms\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 9/10 | timeToResults=2494ms\n"
+                        },
+                        {
+                          "text": "[Interface Legada] Run 10/10 | timeToResults=2500ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-18T17:13:38.506Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "07508c2a17fe54b8f3cd-db5e881716f30bbdf35d",
+              "file": "perf-search.spec.js",
+              "line": 31,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "perf-send-message.spec.js",
+      "file": "perf-send-message.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Cenário D — Envio de Mensagem",
+          "file": "perf-send-message.spec.js",
+          "line": 22,
+          "column": 6,
+          "specs": [
+            {
+              "title": "envio de mensagem — 10 rodadas",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "nova",
+                  "projectName": "nova",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 42940,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[Nova Interface] Run 1/10 | timeToConfirm=108ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 2/10 | timeToConfirm=252ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 3/10 | timeToConfirm=1445ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 4/10 | timeToConfirm=791ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 5/10 | timeToConfirm=200ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 6/10 | timeToConfirm=138ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 7/10 | timeToConfirm=87ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 8/10 | timeToConfirm=139ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 9/10 | timeToConfirm=229ms\n"
+                        },
+                        {
+                          "text": "[Nova Interface] Run 10/10 | timeToConfirm=106ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-18T17:10:04.372Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f86d6474315eaa62ab7c-175bb228ca13bb0de4d5",
+              "file": "perf-send-message.spec.js",
+              "line": 25,
+              "column": 3
+            },
+            {
+              "title": "envio de mensagem — 10 rodadas",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 1200000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Cenário D legada: contato de teste não possui conversa ativa no backend legado (chatUuid Foundation API não mapeado no PHP). Evitando envio a clientes reais. Configure um chat de teste dedicado no backend legado.",
+                      "location": {
+                        "file": "C:\\Users\\yuria\\OneDrive\\Documentos\\GitHub\\Argos-QA\\tests\\e2e\\performance\\perf-send-message.spec.js",
+                        "line": 32,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "legada",
+                  "projectName": "legada",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 216,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-18T17:14:24.134Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Cenário D legada: contato de teste não possui conversa ativa no backend legado (chatUuid Foundation API não mapeado no PHP). Evitando envio a clientes reais. Configure um chat de teste dedicado no backend legado.",
+                          "location": {
+                            "file": "C:\\Users\\yuria\\OneDrive\\Documentos\\GitHub\\Argos-QA\\tests\\e2e\\performance\\perf-send-message.spec.js",
+                            "line": 32,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "f86d6474315eaa62ab7c-af68aaa17be01dfb74d2",
+              "file": "perf-send-message.spec.js",
+              "line": 25,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-06-18T17:05:54.843Z",
+    "duration": 509762.482,
+    "expected": 9,
+    "skipped": 1,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

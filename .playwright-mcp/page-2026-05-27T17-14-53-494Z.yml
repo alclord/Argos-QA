@@ -1,0 +1,97 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - img [ref=e7]
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link [ref=e11] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=3faf67c07e85c49f35c03a8e2e0310cad0e4ea14&toPath=https://app.poli.digital/home
+              - img [ref=e13]
+          - listitem [ref=e16]:
+            - link [ref=e17] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e19]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=3faf67c07e85c49f35c03a8e2e0310cad0e4ea14&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e30]
+          - listitem [ref=e32]:
+            - link [ref=e33] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=3faf67c07e85c49f35c03a8e2e0310cad0e4ea14&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e35]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=3faf67c07e85c49f35c03a8e2e0310cad0e4ea14&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e41]
+          - listitem [ref=e43]:
+            - link [ref=e44] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=3faf67c07e85c49f35c03a8e2e0310cad0e4ea14&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e46]
+          - listitem [ref=e49]:
+            - link [ref=e50] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=3faf67c07e85c49f35c03a8e2e0310cad0e4ea14&toPath=https://app.poli.digital/settings/1
+              - img [ref=e52]
+          - listitem [ref=e55]:
+            - link [ref=e56] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e58]
+          - listitem [ref=e62]:
+            - link [active] [ref=e63] [cursor=pointer]:
+              - /url: /templates
+              - img [ref=e65]
+        - list [ref=e68]:
+          - listitem [ref=e69]:
+            - button "Consumo de créditos" [ref=e70] [cursor=pointer]:
+              - img [ref=e71]
+          - listitem [ref=e74]:
+            - button "YA" [ref=e75] [cursor=pointer]:
+              - generic [ref=e80]: YA
+          - listitem [ref=e82]:
+            - button [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+          - listitem [ref=e86]:
+            - generic [ref=e88]: 3.5.332
+    - main [ref=e89]:
+      - generic [ref=e673]:
+        - navigation "breadcrumb" [ref=e675]:
+          - link "Página inicial" [ref=e677] [cursor=pointer]:
+            - /url: /
+          - img [ref=e678]
+          - generic [ref=e680]: Templates
+        - generic [ref=e683]:
+          - generic [ref=e684]:
+            - generic [ref=e685]:
+              - textbox "Buscar templates" [ref=e686]
+              - button [ref=e687] [cursor=pointer]:
+                - img [ref=e688]
+            - generic [ref=e691]:
+              - generic [ref=e692]: Status
+              - combobox "Status" [ref=e693] [cursor=pointer]:
+                - generic: Todos os Status
+                - img [ref=e694]
+            - generic [ref=e696]:
+              - generic [ref=e697]: Categoria
+              - combobox "Categoria" [ref=e698] [cursor=pointer]:
+                - generic: Todas as Categorias
+                - img [ref=e699]
+            - generic [ref=e701]:
+              - generic [ref=e702]: Tipo
+              - combobox "Tipo" [ref=e703] [cursor=pointer]:
+                - generic: Todos os Tipos
+                - img [ref=e704]
+            - generic [ref=e706]:
+              - generic [ref=e707]: Canal
+              - combobox "Canal" [ref=e708] [cursor=pointer]:
+                - generic: Todos os Canais
+                - img [ref=e709]
+          - link "Criar template" [ref=e711] [cursor=pointer]:
+            - /url: /templates/new
+            - img [ref=e712]
+            - text: Criar template
+  - region "Notifications (F8)":
+    - list

@@ -1,0 +1,240 @@
+[   22437ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:101
+[   22438ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:101
+[   22651ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:76
+[   22765ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[   23116ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[   30430ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.qa.poli.digital/auth/token:0
+[   30435ms] [ERROR] Error login AuthService:  AxiosError: Request failed with status code 401
+    at eze (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1113:2243)
+    at async Om.login (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1121:6187)
+    at async https://spa.qa.poli.digital/assets/index-CrthumGi.js:2251:63634
+    at async w (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2258:1483)
+    at async https://spa.qa.poli.digital/assets/index-CrthumGi.js:2186:56967 @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[   30440ms] [ERROR] Error during authentication: AxiosError: Request failed with status code 401
+    at eze (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1113:2243)
+    at async Om.login (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1121:6187)
+    at async https://spa.qa.poli.digital/assets/index-CrthumGi.js:2251:63634
+    at async w (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2258:1483)
+    at async https://spa.qa.poli.digital/assets/index-CrthumGi.js:2186:56967 @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[   30441ms] [ERROR] AxiosError: Request failed with status code 401
+    at eze (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1113:2243)
+    at async Om.login (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1121:6187)
+    at async https://spa.qa.poli.digital/assets/index-CrthumGi.js:2251:63634
+    at async w (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2258:1483)
+    at async https://spa.qa.poli.digital/assets/index-CrthumGi.js:2186:56967 @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[   30441ms] [ERROR] Login failed: AxiosError: Request failed with status code 401
+    at eze (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1113:2243)
+    at async Om.login (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1121:6187)
+    at async https://spa.qa.poli.digital/assets/index-CrthumGi.js:2251:63634
+    at async w (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2258:1483)
+    at async https://spa.qa.poli.digital/assets/index-CrthumGi.js:2186:56967 @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[   35728ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.qa.poli.digital/auth/token:0
+[   35729ms] [ERROR] Error login AuthService:  AxiosError: Request failed with status code 401
+    at eze (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1113:2243)
+    at async Om.login (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1121:6187)
+    at async https://spa.qa.poli.digital/assets/index-CrthumGi.js:2251:63634
+    at async w (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2258:1483)
+    at async https://spa.qa.poli.digital/assets/index-CrthumGi.js:2186:56967 @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[   35730ms] [ERROR] Error during authentication: AxiosError: Request failed with status code 401
+    at eze (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1113:2243)
+    at async Om.login (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1121:6187)
+    at async https://spa.qa.poli.digital/assets/index-CrthumGi.js:2251:63634
+    at async w (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2258:1483)
+    at async https://spa.qa.poli.digital/assets/index-CrthumGi.js:2186:56967 @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[   35730ms] [ERROR] AxiosError: Request failed with status code 401
+    at eze (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1113:2243)
+    at async Om.login (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1121:6187)
+    at async https://spa.qa.poli.digital/assets/index-CrthumGi.js:2251:63634
+    at async w (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2258:1483)
+    at async https://spa.qa.poli.digital/assets/index-CrthumGi.js:2186:56967 @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[   35730ms] [ERROR] Login failed: AxiosError: Request failed with status code 401
+    at eze (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1113:2243)
+    at async Om.login (https://spa.qa.poli.digital/assets/index-CrthumGi.js:1121:6187)
+    at async https://spa.qa.poli.digital/assets/index-CrthumGi.js:2251:63634
+    at async w (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2258:1483)
+    at async https://spa.qa.poli.digital/assets/index-CrthumGi.js:2186:56967 @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[   45615ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[   52630ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[   52635ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      2
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[   52635ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[   53244ms] [ERROR] Error handled by React Router default ErrorBoundary: TypeError: e.find is not a function
+    at TMn (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:229717)
+    at https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:230245
+    at Object.useMemo (https://spa.qa.poli.digital/assets/index-CrthumGi.js:39:24292)
+    at Aa.useMemo (https://spa.qa.poli.digital/assets/index-CrthumGi.js:10:6303)
+    at hse (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:230121)
+    at FMn (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:239365)
+    at Yk (https://spa.qa.poli.digital/assets/index-CrthumGi.js:39:17890)
+    at N7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:45192)
+    at k7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40748)
+    at YL (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40676)
+    at f3 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40529)
+    at A7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:35484)
+    at S (https://spa.qa.poli.digital/assets/index-CrthumGi.js:26:1597)
+    at MessagePort.$ (https://spa.qa.poli.digital/assets/index-CrthumGi.js:26:1962) @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[   53250ms] [ERROR] Error handled by React Router default ErrorBoundary: TypeError: e.find is not a function
+    at TMn (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:229717)
+    at https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:230245
+    at Object.useMemo (https://spa.qa.poli.digital/assets/index-CrthumGi.js:39:24292)
+    at Aa.useMemo (https://spa.qa.poli.digital/assets/index-CrthumGi.js:10:6303)
+    at hse (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:230121)
+    at FMn (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:239365)
+    at Yk (https://spa.qa.poli.digital/assets/index-CrthumGi.js:39:17890)
+    at N7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:45192)
+    at k7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40748)
+    at YL (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40676)
+    at f3 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40529)
+    at px (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:36780)
+    at A7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:35722)
+    at S (https://spa.qa.poli.digital/assets/index-CrthumGi.js:26:1597)
+    at MessagePort.$ (https://spa.qa.poli.digital/assets/index-CrthumGi.js:26:1962) @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[   53254ms] [ERROR] TypeError: e.find is not a function
+    at TMn (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:229717)
+    at https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:230245
+    at Object.useMemo (https://spa.qa.poli.digital/assets/index-CrthumGi.js:39:24292)
+    at Aa.useMemo (https://spa.qa.poli.digital/assets/index-CrthumGi.js:10:6303)
+    at hse (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:230121)
+    at FMn (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:239365)
+    at Yk (https://spa.qa.poli.digital/assets/index-CrthumGi.js:39:17890)
+    at N7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:45192)
+    at k7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40748)
+    at YL (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40676)
+    at f3 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40529)
+    at px (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:36780)
+    at A7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:35722)
+    at S (https://spa.qa.poli.digital/assets/index-CrthumGi.js:26:1597)
+    at MessagePort.$ (https://spa.qa.poli.digital/assets/index-CrthumGi.js:26:1962) @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[   53255ms] [ERROR] React Router caught the following error during render TypeError: e.find is not a function
+    at TMn (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:229717)
+    at https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:230245
+    at Object.useMemo (https://spa.qa.poli.digital/assets/index-CrthumGi.js:39:24292)
+    at Aa.useMemo (https://spa.qa.poli.digital/assets/index-CrthumGi.js:10:6303)
+    at hse (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:230121)
+    at FMn (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:239365)
+    at Yk (https://spa.qa.poli.digital/assets/index-CrthumGi.js:39:17890)
+    at N7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:45192)
+    at k7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40748)
+    at YL (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40676)
+    at f3 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40529)
+    at px (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:36780)
+    at A7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:35722)
+    at S (https://spa.qa.poli.digital/assets/index-CrthumGi.js:26:1597)
+    at MessagePort.$ (https://spa.qa.poli.digital/assets/index-CrthumGi.js:26:1962) @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[   53903ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[   53905ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      4
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[   53905ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[  143874ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:101
+[  143875ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:101
+[  143992ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:76
+[  144451ms] [ERROR] Error handled by React Router default ErrorBoundary: TypeError: e.find is not a function
+    at TMn (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:229717)
+    at https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:230245
+    at Object.useMemo (https://spa.qa.poli.digital/assets/index-CrthumGi.js:39:24292)
+    at Aa.useMemo (https://spa.qa.poli.digital/assets/index-CrthumGi.js:10:6303)
+    at hse (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:230121)
+    at FMn (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:239365)
+    at Yk (https://spa.qa.poli.digital/assets/index-CrthumGi.js:39:17890)
+    at N7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:45192)
+    at k7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40748)
+    at YL (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40676)
+    at f3 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40529)
+    at A7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:35484)
+    at S (https://spa.qa.poli.digital/assets/index-CrthumGi.js:26:1597)
+    at MessagePort.$ (https://spa.qa.poli.digital/assets/index-CrthumGi.js:26:1962) @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[  144468ms] [ERROR] Error handled by React Router default ErrorBoundary: TypeError: e.find is not a function
+    at TMn (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:229717)
+    at https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:230245
+    at Object.useMemo (https://spa.qa.poli.digital/assets/index-CrthumGi.js:39:24292)
+    at Aa.useMemo (https://spa.qa.poli.digital/assets/index-CrthumGi.js:10:6303)
+    at hse (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:230121)
+    at FMn (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:239365)
+    at Yk (https://spa.qa.poli.digital/assets/index-CrthumGi.js:39:17890)
+    at N7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:45192)
+    at k7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40748)
+    at YL (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40676)
+    at f3 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40529)
+    at px (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:36780)
+    at A7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:35722)
+    at S (https://spa.qa.poli.digital/assets/index-CrthumGi.js:26:1597)
+    at MessagePort.$ (https://spa.qa.poli.digital/assets/index-CrthumGi.js:26:1962) @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[  144470ms] [ERROR] TypeError: e.find is not a function
+    at TMn (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:229717)
+    at https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:230245
+    at Object.useMemo (https://spa.qa.poli.digital/assets/index-CrthumGi.js:39:24292)
+    at Aa.useMemo (https://spa.qa.poli.digital/assets/index-CrthumGi.js:10:6303)
+    at hse (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:230121)
+    at FMn (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:239365)
+    at Yk (https://spa.qa.poli.digital/assets/index-CrthumGi.js:39:17890)
+    at N7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:45192)
+    at k7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40748)
+    at YL (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40676)
+    at f3 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40529)
+    at px (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:36780)
+    at A7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:35722)
+    at S (https://spa.qa.poli.digital/assets/index-CrthumGi.js:26:1597)
+    at MessagePort.$ (https://spa.qa.poli.digital/assets/index-CrthumGi.js:26:1962) @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[  144470ms] [ERROR] React Router caught the following error during render TypeError: e.find is not a function
+    at TMn (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:229717)
+    at https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:230245
+    at Object.useMemo (https://spa.qa.poli.digital/assets/index-CrthumGi.js:39:24292)
+    at Aa.useMemo (https://spa.qa.poli.digital/assets/index-CrthumGi.js:10:6303)
+    at hse (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:230121)
+    at FMn (https://spa.qa.poli.digital/assets/index-CrthumGi.js:2579:239365)
+    at Yk (https://spa.qa.poli.digital/assets/index-CrthumGi.js:39:17890)
+    at N7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:45192)
+    at k7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40748)
+    at YL (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40676)
+    at f3 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:40529)
+    at px (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:36780)
+    at A7 (https://spa.qa.poli.digital/assets/index-CrthumGi.js:41:35722)
+    at S (https://spa.qa.poli.digital/assets/index-CrthumGi.js:26:1597)
+    at MessagePort.$ (https://spa.qa.poli.digital/assets/index-CrthumGi.js:26:1962) @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69
+[  144511ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-CrthumGi.js:69

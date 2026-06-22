@@ -1,0 +1,156 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - list [ref=e6]:
+      - img [ref=e9] [cursor=pointer]
+      - listitem [ref=e11]:
+        - link [ref=e12] [cursor=pointer]:
+          - /url: /
+          - img [ref=e14]
+      - listitem [ref=e16]:
+        - link [ref=e17] [cursor=pointer]:
+          - /url: /chat
+          - img [ref=e19]
+      - listitem [ref=e21]:
+        - link [ref=e22] [cursor=pointer]:
+          - /url: /automation
+          - img [ref=e24]
+      - listitem [ref=e26]:
+        - link [ref=e27] [cursor=pointer]:
+          - /url: /crm
+          - img [ref=e29]
+      - listitem [ref=e32]:
+        - link [ref=e33] [cursor=pointer]:
+          - /url: /marketing
+          - img [ref=e35]
+      - listitem [ref=e37]:
+        - link [ref=e38] [cursor=pointer]:
+          - /url: /shopping
+          - img [ref=e40]
+      - listitem [ref=e42]:
+        - link [ref=e43] [cursor=pointer]:
+          - /url: /relatorio
+          - img [ref=e45]
+      - listitem [ref=e47]:
+        - link [ref=e48] [cursor=pointer]:
+          - /url: /tools
+          - img [ref=e50]
+      - listitem [ref=e52]:
+        - link [ref=e53] [cursor=pointer]:
+          - /url: /admin
+          - img [ref=e55]
+    - generic [ref=e58]:
+      - button "" [ref=e60] [cursor=pointer]:
+        - generic [ref=e61]: 
+      - generic [ref=e63]:
+        - button "" [ref=e64] [cursor=pointer]:
+          - generic [ref=e65]: 
+        - text:        
+      - generic [ref=e68]:
+        - button "" [ref=e70] [cursor=pointer]:
+          - generic [ref=e71]: 
+        - text:  
+      - generic [ref=e73]:
+        - button "YA" [ref=e74] [cursor=pointer]:
+          - generic "Yuri Alcantara" [ref=e75]:
+            - generic [ref=e76]: YA
+        - text:  
+      - generic [ref=e79] [cursor=pointer]: 
+      - generic [ref=e81] [cursor=pointer]: v0.20.536
+  - generic [ref=e84]:
+    - navigation [ref=e86]:
+      - text: 
+      - generic [ref=e88]:
+        - generic [ref=e89] [cursor=pointer]:
+          - generic [ref=e90]:
+            - text: 
+            - generic [ref=e91]: Canais
+            - text: 
+          - generic [ref=e93]:
+            - link " Seus Canais" [ref=e94]:
+              - /url: /tools/channels/list
+              - button " Seus Canais" [ref=e95]:
+                - generic [ref=e96]: 
+                - text: Seus Canais
+            - link " Adicionar Canal" [ref=e97]:
+              - /url: /tools/channels/add
+              - button " Adicionar Canal" [ref=e99]:
+                - generic [ref=e100]: 
+                - text: Adicionar Canal
+            - link " Migrar Canal da 360" [ref=e101]:
+              - /url: /tools/channels/migrate
+              - button " Migrar Canal da 360" [ref=e102]:
+                - generic [ref=e103]: 
+                - text: Migrar Canal da 360
+        - generic [ref=e104] [cursor=pointer]:
+          - generic [ref=e105]:
+            - text: 
+            - generic [ref=e106]: Construtor de Template
+            - text: 
+          - text:   
+        - generic [ref=e107] [cursor=pointer]:
+          - generic [ref=e108]:
+            - text: 
+            - generic [ref=e109]: Integrações e Apps
+            - text: 
+          - text: 
+        - generic [ref=e110] [cursor=pointer]:
+          - generic [ref=e111]:
+            - text: 
+            - generic [ref=e112]: Créditos
+            - text: 
+          - text: 
+        - generic [ref=e113] [cursor=pointer]:
+          - generic [ref=e114]:
+            - text: 
+            - generic [ref=e115]: Configurações Gerais
+            - text: 
+          - text: 
+    - generic [ref=e116]:
+      - generic [ref=e118]:
+        - generic [ref=e119]: 
+        - generic [ref=e120]: Adicionar Canal
+      - generic [ref=e122]:
+        - generic [ref=e123]:
+          - generic [ref=e124]:
+            - generic [ref=e125]:
+              - generic [ref=e126]: 
+              - generic [ref=e127]: WhatsApp
+            - generic [ref=e128]: Centralize seus atendimentos em um único número de WhatsApp, com a possibilidade de colocar múltiplos atendentes, distribuir entre departamentos e criar sistema de carteiras.
+            - button " Adicionar Canal " [ref=e131] [cursor=pointer]:
+              - generic [ref=e132]: 
+              - generic [ref=e133]: Adicionar Canal
+              - generic [ref=e134]: 
+          - separator [ref=e135]
+        - generic [ref=e136]:
+          - generic [ref=e137]:
+            - generic [ref=e138]:
+              - generic [ref=e139]: 
+              - generic [ref=e140]: Instagram
+            - generic [ref=e141]: Integre a sua página do Instagram na plataforma do Polichat e atenda aos seus clientes com a possibilidade de colocar vários atendentes de forma simultânea.
+            - button " Adicionar Canal " [ref=e144] [cursor=pointer]:
+              - generic [ref=e145]: 
+              - generic [ref=e146]: Adicionar Canal
+              - generic [ref=e147]: 
+          - separator [ref=e148]
+        - generic [ref=e149]:
+          - generic [ref=e150]:
+            - generic [ref=e151]:
+              - generic [ref=e152]: 
+              - generic [ref=e153]: Messenger
+            - generic [ref=e154]: Integre a sua página do Facebook na plataforma do Polichat e atenda aos seus clientes com a possibilidade de colocar vários atendentes de forma simultânea.
+            - button " Adicionar Canal " [ref=e157] [cursor=pointer]:
+              - generic [ref=e158]: 
+              - generic [ref=e159]: Adicionar Canal
+              - generic [ref=e160]: 
+          - separator [ref=e161]
+        - generic [ref=e162]:
+          - generic [ref=e163]:
+            - generic [ref=e164]:
+              - generic [ref=e165]: 
+              - generic [ref=e166]: Webchat
+            - generic [ref=e167]: Com o Polichat você tem um chat para colocar no seu site e falar com os clientes que estão navegando pelas suas páginas ou plataforma.
+            - button " Adicionar Canal " [ref=e170] [cursor=pointer]:
+              - generic [ref=e171]: 
+              - generic [ref=e172]: Adicionar Canal
+              - generic [ref=e173]: 
+          - separator [ref=e174]

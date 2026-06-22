@@ -1,0 +1,175 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - img [ref=e7]
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link [ref=e11] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=6406811a5ce1c432596989e2a68091a279334cb0&toPath=https://app.poli.digital/home
+              - img [ref=e13]
+          - listitem [ref=e16]:
+            - link [ref=e17] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e19]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=6406811a5ce1c432596989e2a68091a279334cb0&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e30]
+          - listitem [ref=e32]:
+            - link [ref=e33] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=6406811a5ce1c432596989e2a68091a279334cb0&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e35]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=6406811a5ce1c432596989e2a68091a279334cb0&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e41]
+          - listitem [ref=e43]:
+            - link [ref=e44] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=6406811a5ce1c432596989e2a68091a279334cb0&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e46]
+          - listitem [ref=e49]:
+            - link [ref=e50] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=6406811a5ce1c432596989e2a68091a279334cb0&toPath=https://app.poli.digital/settings/1
+              - img [ref=e52]
+          - listitem [ref=e55]:
+            - link [ref=e56] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e58]
+          - listitem [ref=e62]:
+            - link [ref=e63] [cursor=pointer]:
+              - /url: /templates
+              - img [ref=e65]
+        - list [ref=e68]:
+          - listitem [ref=e69]:
+            - button "Consumo de créditos" [ref=e70] [cursor=pointer]:
+              - img [ref=e71]
+          - listitem [ref=e74]:
+            - button "YA" [ref=e75] [cursor=pointer]:
+              - generic [ref=e80]: YA
+          - listitem [ref=e82]:
+            - button [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+          - listitem [ref=e86]:
+            - generic [ref=e88]: 3.5.332
+    - main [ref=e89]:
+      - generic [ref=e90]:
+        - navigation "breadcrumb" [ref=e92]:
+          - link "Página inicial" [ref=e94] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e95]:
+            - img [ref=e96]
+            - link "Templates" [ref=e98] [cursor=pointer]:
+              - /url: /templates
+          - img [ref=e99]
+          - generic [ref=e101]: Editar template
+        - generic [ref=e103]:
+          - generic [ref=e104]:
+            - generic [ref=e105]:
+              - img [ref=e106]
+              - generic [ref=e108]:
+                - paragraph [ref=e109]: Template aprovado pela Meta
+                - paragraph [ref=e110]: Templates de canal aprovados não podem ser editados. Crie um novo se precisar alterar o conteúdo.
+            - generic [ref=e111]:
+              - heading "Tipo" [level=2] [ref=e112]
+              - generic [ref=e113]:
+                - text: Como esse template será usado?
+                - radiogroup [ref=e114]:
+                  - generic [ref=e115] [cursor=pointer]:
+                    - radio "Mensagem rápida Disponível para enviar em conversas abertas. Não passa por aprovação." [checked] [disabled] [ref=e116]:
+                      - img [ref=e118]
+                    - radio [checked] [disabled]
+                    - generic [ref=e120]:
+                      - generic [ref=e121]: Mensagem rápida
+                      - generic [ref=e122]: Disponível para enviar em conversas abertas. Não passa por aprovação.
+                  - generic [ref=e123] [cursor=pointer]:
+                    - radio "Template de canal Necessário para iniciar conversas. Será submetido à aprovação do canal." [disabled] [ref=e124]
+                    - radio [disabled]
+                    - generic [ref=e125]:
+                      - generic [ref=e126]: Template de canal
+                      - generic [ref=e127]: Necessário para iniciar conversas. Será submetido à aprovação do canal.
+            - generic [ref=e128]:
+              - heading "Informações básicas" [level=2] [ref=e129]
+              - generic [ref=e130]:
+                - text: Nome
+                - textbox "Nome" [disabled] [ref=e131]: qa-template-1779479494581
+                - paragraph [ref=e132]: lowercase, números e underscore
+              - generic [ref=e133]:
+                - text: Idioma
+                - combobox "Idioma" [disabled] [ref=e134]:
+                  - generic: Português (Brasil)
+                  - img [ref=e135]
+                - combobox [disabled] [ref=e137]
+              - generic [ref=e138]:
+                - text: Equipe
+                - combobox "Equipe" [disabled] [ref=e139]:
+                  - generic: Sem equipe
+                  - img [ref=e140]
+                - combobox [disabled] [ref=e142]
+            - generic [ref=e143]:
+              - heading "Cabeçalho" [level=2] [ref=e144]
+              - generic [ref=e145]:
+                - text: Tipo de cabeçalho
+                - radiogroup [ref=e146]:
+                  - generic [ref=e147]:
+                    - radio "Sem cabeçalho" [checked] [disabled] [ref=e148]:
+                      - img [ref=e150]
+                    - radio [checked] [disabled]
+                    - text: Sem cabeçalho
+                  - generic [ref=e152]:
+                    - radio "Texto" [disabled] [ref=e153]
+                    - radio [disabled]
+                    - text: Texto
+                  - generic [ref=e154]:
+                    - radio "Mídia" [disabled] [ref=e155]
+                    - radio [disabled]
+                    - text: Mídia
+            - generic [ref=e156]:
+              - heading "Corpo" [level=2] [ref=e157]
+              - generic [ref=e158]:
+                - generic [ref=e159]:
+                  - generic [ref=e160]: Conteúdo da mensagem
+                  - button "Inserir variável" [disabled]
+                - textbox "Conteúdo da mensagem" [disabled] [ref=e161]: Olá, este é um template criado pelo QA automatizado.
+                - generic [ref=e162]: 52/1024
+            - generic [ref=e163]:
+              - heading "Rodapé" [level=2] [ref=e164]
+              - generic [ref=e165]:
+                - text: Rodapé
+                - textbox "Rodapé" [disabled] [ref=e166]
+                - generic [ref=e167]: 0/60
+            - generic [ref=e168]:
+              - heading "Interatividade" [level=2] [ref=e169]
+              - generic [ref=e170]:
+                - text: Tipo de interação
+                - radiogroup [ref=e171]:
+                  - generic [ref=e172] [cursor=pointer]:
+                    - radio "Sem interação" [checked] [disabled] [ref=e173]:
+                      - img [ref=e175]
+                    - radio [checked] [disabled]
+                    - text: Sem interação
+                  - generic [ref=e177] [cursor=pointer]:
+                    - radio "Botões" [disabled] [ref=e178]
+                    - radio [disabled]
+                    - text: Botões
+                  - generic [ref=e179] [cursor=pointer]:
+                    - radio "Lista" [disabled] [ref=e180]
+                    - radio [disabled]
+                    - text: Lista
+                  - generic [ref=e181] [cursor=pointer]:
+                    - radio "Pedir localização" [disabled] [ref=e182]
+                    - radio [disabled]
+                    - text: Pedir localização
+            - generic [ref=e183]:
+              - button "Cancelar" [ref=e184] [cursor=pointer]
+              - button "Salvar alterações" [disabled]
+          - complementary [ref=e185]:
+            - generic [ref=e186]:
+              - heading "Pré-visualização" [level=3] [ref=e187]
+              - paragraph [ref=e189]: Olá, este é um template criado pelo QA automatizado.
+  - region "Notifications (F8)":
+    - list

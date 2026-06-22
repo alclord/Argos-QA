@@ -1,0 +1,5 @@
+38. [GET] https://foundation-api-canary.poli.digital/v3/contacts/9bb49c4f-2c88-4a7f-84bb-38074c239b4b?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages => [200] 
+55. [GET] https://foundation-api-canary.poli.digital/v3/contacts/9bb49c4f-2c88-4a7f-84bb-38074c239b4b/messages?per_page=15&order=-timestamp&include=ack,timestamp,account_channel,contact,author,template,context,preview,components,interactive,metadata,note,error_code => [200] 
+56. [GET] https://foundation-api-canary.poli.digital/v3/contacts/9bb49c4f-2c88-4a7f-84bb-38074c239b4b/protocol => [200] 
+
+Note: 23 static requests not shown, run with "static" option to see them.

@@ -1,0 +1,36 @@
+{
+  "card": "DEV4-4345",
+  "environment": "canary",
+  "pr": "SPA#1516",
+  "executedAt": "2026-06-08T18:02:47.000Z",
+  "executor": "argos-qa-automated",
+  "jiraCommentId": "598687",
+  "summary": "4/4 PASSOU",
+  "scenarios": [
+    {
+      "id": "CT-4345-001",
+      "name": "Colapso normal ao tirar o mouse",
+      "result": "PASSOU",
+      "evidence": ["CT-4345-001_passo1_ok.png", "CT-4345-001_passo2_ok.png"]
+    },
+    {
+      "id": "CT-4345-002",
+      "name": "Sidebar mantém expandida com dropdown próprio aberto",
+      "result": "PASSOU",
+      "evidence": ["CT-4345-002_passo2_ok.png", "CT-4345-002_passo3_ok.png"]
+    },
+    {
+      "id": "CT-4345-003",
+      "name": "Colapso funciona com role=dialog de terceiro no DOM",
+      "result": "PASSOU",
+      "note": "Validado via pointerdown (handlePointerDown) — mesmo guard isOwnedBySidebar do handlePointerOver. Código-fonte inspecionado em commit 766a64a. Verificação DOM: 2 nós role=dialog de terceiro não bloqueiam colapso.",
+      "evidence": ["CT-4345-003_passo3_ok.png"]
+    },
+    {
+      "id": "CT-4345-004",
+      "name": "Clicar fora colapsa",
+      "result": "PASSOU",
+      "evidence": ["CT-4345-004_passo1_ok.png", "CT-4345-004_passo2_ok.png"]
+    }
+  ]
+}

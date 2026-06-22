@@ -1,0 +1,92 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https://app.poli.digital/home
+        - img [ref=e11]
+        - generic [ref=e12]: Dashboard
+      - generic [ref=e13]:
+        - list [ref=e15]:
+          - listitem [ref=e16]:
+            - link "Chats" [ref=e17] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e19]
+              - generic [ref=e22]: Chats
+          - listitem [ref=e23]:
+            - link "Contatos" [ref=e24] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e26]
+              - generic [ref=e29]: Contatos
+          - listitem [ref=e30]:
+            - link "Automação" [ref=e31] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e33]
+              - generic [ref=e36]: Automação
+          - listitem [ref=e37]:
+            - link "Flow" [ref=e38] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e40]
+              - generic [ref=e42]: Flow
+          - listitem [ref=e43]:
+            - link "Marketing" [ref=e44] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e46]
+              - generic [ref=e49]: Marketing
+          - listitem [ref=e50]:
+            - link "Pay" [ref=e51] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e53]
+              - generic [ref=e56]: Pay
+          - listitem [ref=e57]:
+            - link "Relatório" [ref=e58] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e60]
+              - generic [ref=e64]: Relatório
+        - list [ref=e66]:
+          - listitem [ref=e67]:
+            - generic [ref=e68]:
+              - link "Configurações" [ref=e69] [cursor=pointer]:
+                - /url: /settings
+                - img [ref=e71]
+                - generic [ref=e74]: Configurações
+              - button "Configurações" [ref=e76] [cursor=pointer]:
+                - img [ref=e77]
+      - generic [ref=e79]:
+        - button "Consumo de créditos" [ref=e80] [cursor=pointer]:
+          - img [ref=e82]
+          - generic [ref=e85]:
+            - generic [ref=e86]: Créditos disponíveis
+            - generic [ref=e87]: 106.978,4
+          - img [ref=e88]
+        - button "YA Yuri Alcantara Poli teste" [ref=e91] [cursor=pointer]:
+          - generic [ref=e97]: YA
+          - generic [ref=e99]: Yuri Alcantara Poli teste
+        - generic [ref=e101]: 3.5.362-DEV4-4398
+    - main [ref=e102]:
+      - main [ref=e103]:
+        - generic [ref=e104]:
+          - button "✨ Nova Versão" [ref=e105] [cursor=pointer]:
+            - generic [ref=e106]: ✨ Nova Versão
+            - img [ref=e107]
+          - generic [ref=e111]:
+            - generic [ref=e112]:
+              - button "Em atendimento" [ref=e113] [cursor=pointer]:
+                - generic [ref=e114]: Em atendimento
+                - img [ref=e115]
+              - generic [ref=e117]:
+                - button "Contatos" [ref=e118] [cursor=pointer]:
+                  - img [ref=e119]
+                - button "Filtros" [ref=e123] [cursor=pointer]:
+                  - img [ref=e124]
+            - generic [ref=e128]:
+              - generic [ref=e129]:
+                - textbox "Pesquisar" [ref=e130]
+                - button "Pesquisar" [ref=e131] [cursor=pointer]:
+                  - img [ref=e132]
+              - button "Ordenação das conversas" [ref=e135] [cursor=pointer]:
+                - img [ref=e136]
+        - generic [ref=e262]:
+          - img "Logo" [ref=e263]
+          - heading "Bem-vindo!" [level=1] [ref=e264]
+  - region "Notifications (F8)":
+    - list

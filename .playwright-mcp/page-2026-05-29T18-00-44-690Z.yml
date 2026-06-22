@@ -1,0 +1,194 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - img [ref=e7]
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link [ref=e11] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=0a0ba61c92d3935790b047f949b0e9d1e92b90d7&toPath=https://app.poli.digital/home
+              - img [ref=e13]
+          - listitem [ref=e16]:
+            - link [ref=e17] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e19]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=0a0ba61c92d3935790b047f949b0e9d1e92b90d7&toPath=https://app.poli.digital/settings/46667/chatbot
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e30]
+          - listitem [ref=e32]:
+            - link [ref=e33] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=0a0ba61c92d3935790b047f949b0e9d1e92b90d7&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e35]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=0a0ba61c92d3935790b047f949b0e9d1e92b90d7&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e41]
+          - listitem [ref=e43]:
+            - link [ref=e44] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=0a0ba61c92d3935790b047f949b0e9d1e92b90d7&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e46]
+          - listitem [ref=e49]:
+            - link [ref=e50] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=0a0ba61c92d3935790b047f949b0e9d1e92b90d7&toPath=https://app.poli.digital/settings/46667
+              - img [ref=e52]
+          - listitem [ref=e55]:
+            - link [ref=e56] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e58]
+          - listitem [ref=e62]:
+            - link [ref=e63] [cursor=pointer]:
+              - /url: /templates
+              - img [ref=e65]
+        - list [ref=e68]:
+          - listitem [ref=e69]:
+            - button "Consumo de créditos" [ref=e70] [cursor=pointer]:
+              - img [ref=e71]
+          - listitem [ref=e74]:
+            - button "YA" [ref=e75] [cursor=pointer]:
+              - generic [ref=e80]: YA
+          - listitem [ref=e82]:
+            - button [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+          - listitem [ref=e86]:
+            - generic [ref=e88]: 3.5.334
+    - main [ref=e89]:
+      - generic [ref=e90]:
+        - navigation "breadcrumb" [ref=e92]:
+          - link "Página inicial" [ref=e94] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e95]:
+            - img [ref=e96]
+            - link "Templates" [ref=e98] [cursor=pointer]:
+              - /url: /templates
+          - img [ref=e99]
+          - generic [ref=e101]: Criar template
+        - generic [ref=e103]:
+          - generic [ref=e104]:
+            - generic [ref=e105]:
+              - img [ref=e106]
+              - generic [ref=e108]:
+                - paragraph [ref=e109]: Gerar template com IA
+                - paragraph [ref=e110]: Descreva o objetivo e a IA cria um rascunho para você ajustar.
+            - button "Gerar com IA" [ref=e111] [cursor=pointer]:
+              - img [ref=e112]
+              - text: Gerar com IA
+          - generic [ref=e114]:
+            - generic [ref=e115]:
+              - generic [ref=e116]:
+                - heading "Tipo" [level=2] [ref=e117]
+                - generic [ref=e118]:
+                  - text: Como esse template será usado?
+                  - radiogroup [ref=e119]:
+                    - generic [ref=e120] [cursor=pointer]:
+                      - radio "Mensagem rápida Disponível para enviar em conversas abertas. Não passa por aprovação." [checked] [ref=e121]:
+                        - img [ref=e123]
+                      - radio [checked]
+                      - generic [ref=e125]:
+                        - generic [ref=e126]: Mensagem rápida
+                        - generic [ref=e127]: Disponível para enviar em conversas abertas. Não passa por aprovação.
+                    - generic [ref=e128] [cursor=pointer]:
+                      - radio "Template de canal Necessário para iniciar conversas. Será submetido à aprovação do canal." [ref=e129]
+                      - radio [checked]
+                      - generic [ref=e130]:
+                        - generic [ref=e131]: Template de canal
+                        - generic [ref=e132]: Necessário para iniciar conversas. Será submetido à aprovação do canal.
+              - generic [ref=e133]:
+                - heading "Informações básicas" [level=2] [ref=e134]
+                - generic [ref=e135]:
+                  - generic [ref=e136]:
+                    - text: Nome
+                    - textbox "Nome" [ref=e137]: argos_qa_reteste_4170
+                    - paragraph [ref=e138]: lowercase, números e underscore
+                  - generic [ref=e139]:
+                    - text: Idioma
+                    - combobox "Idioma" [ref=e140] [cursor=pointer]:
+                      - generic: Português (Brasil)
+                      - img [ref=e141]
+                    - combobox [ref=e143]
+                  - generic [ref=e144]:
+                    - text: Objetivo
+                    - combobox "Objetivo" [ref=e145] [cursor=pointer]:
+                      - generic: Personalizado
+                      - img [ref=e146]
+                    - combobox [ref=e148]
+                    - paragraph [ref=e149]: O objetivo orienta a geração de variações e ajuda na curadoria de templates.
+                  - generic [ref=e150]:
+                    - text: Categoria
+                    - combobox "Categoria" [active] [ref=e151] [cursor=pointer]:
+                      - generic: Marketing
+                      - img [ref=e152]
+                    - combobox [ref=e154]
+                  - generic [ref=e155]:
+                    - text: Equipe
+                    - combobox "Equipe" [ref=e156] [cursor=pointer]:
+                      - generic: Sem equipe
+                      - img [ref=e157]
+                    - combobox [ref=e159]
+              - generic [ref=e160]:
+                - heading "Cabeçalho" [level=2] [ref=e161]
+                - generic [ref=e162]:
+                  - text: Tipo de cabeçalho
+                  - radiogroup [ref=e163]:
+                    - generic [ref=e164]:
+                      - radio "Sem cabeçalho" [checked] [ref=e165] [cursor=pointer]:
+                        - img [ref=e167]
+                      - radio [checked]
+                      - text: Sem cabeçalho
+                    - generic [ref=e169]:
+                      - radio "Texto" [ref=e170] [cursor=pointer]
+                      - radio
+                      - text: Texto
+                    - generic [ref=e171]:
+                      - radio "Mídia" [ref=e172] [cursor=pointer]
+                      - radio
+                      - text: Mídia
+              - generic [ref=e173]:
+                - heading "Corpo" [level=2] [ref=e174]
+                - generic [ref=e175]:
+                  - generic [ref=e176]:
+                    - generic [ref=e177]: Conteúdo da mensagem
+                    - button "Inserir variável" [ref=e178] [cursor=pointer]
+                  - textbox "Conteúdo da mensagem" [ref=e179]: "Olá {{1}}, este é um template de reteste criado pelo Argos QA. Ref: DEV4-4170."
+                  - generic [ref=e180]: 78/1024
+              - generic [ref=e181]:
+                - heading "Rodapé" [level=2] [ref=e182]
+                - generic [ref=e183]:
+                  - text: Rodapé
+                  - textbox "Rodapé" [ref=e184]
+                  - generic [ref=e185]: 0/60
+              - generic [ref=e186]:
+                - heading "Interatividade" [level=2] [ref=e187]
+                - generic [ref=e188]:
+                  - text: Tipo de interação
+                  - radiogroup [ref=e189]:
+                    - generic [ref=e190] [cursor=pointer]:
+                      - radio "Sem interação" [checked] [ref=e191]:
+                        - img [ref=e193]
+                      - radio [checked]
+                      - text: Sem interação
+                    - generic [ref=e195] [cursor=pointer]:
+                      - radio "Botões" [ref=e196]
+                      - radio
+                      - text: Botões
+                    - generic [ref=e197] [cursor=pointer]:
+                      - radio "Lista" [ref=e198]
+                      - radio
+                      - text: Lista
+                    - generic [ref=e199] [cursor=pointer]:
+                      - radio "Pedir localização" [ref=e200]
+                      - radio
+                      - text: Pedir localização
+              - generic [ref=e201]:
+                - button "Cancelar" [ref=e202] [cursor=pointer]
+                - button "Criar template" [ref=e207] [cursor=pointer]
+            - complementary [ref=e203]:
+              - generic [ref=e204]:
+                - heading "Pré-visualização" [level=3] [ref=e205]
+                - paragraph [ref=e209]: "Olá {{1}}, este é um template de reteste criado pelo Argos QA. Ref: DEV4-4170."
+  - region "Notifications (F8)":
+    - list

@@ -1,0 +1,74 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: 🔮 Argos Predict
+      - generic [ref=e5]: QA Risk Intelligence
+    - generic [ref=e16]:
+      - generic [ref=e17]: 1 / 9
+      - generic [ref=e18]:
+        - button "←" [ref=e19] [cursor=pointer]
+        - button "→" [ref=e20] [cursor=pointer]
+  - generic [ref=e21]:
+    - generic [ref=e23]:
+      - generic [ref=e24]: ⚠️ 3 módulos em risco crítico
+      - generic [ref=e25]: Qualidade · Risco · Produto
+      - heading "QA Risk Intelligence" [level=1] [ref=e26]:
+        - text: QA Risk
+        - text: Intelligence
+      - paragraph [ref=e28]:
+        - text: "Mapa de risco preditivo baseado em sinais reais:"
+        - text: suporte ao cliente, erros em produção e atividade de código.
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - text: Data
+          - generic [ref=e31]: 28 de Maio de 2026
+        - generic [ref=e32]:
+          - text: Janela
+          - generic [ref=e33]: 14 dias
+    - generic:
+      - generic: Visão Geral
+      - heading "Indicadores Executivos" [level=2]
+    - generic:
+      - generic: Mapa de Risco
+      - heading "Score de Risco por Módulo" [level=2]
+      - paragraph: Score = risco técnico (bugs conhecidos, erros Sentry, churn de código) + impacto ao usuário (tickets de suporte ativos)
+    - generic:
+      - generic: Cobertura
+      - heading "Pressão de Clientes vs Atenção do Dev" [level=2]
+      - generic:
+        - generic:
+          - generic: Módulo
+          - generic: Pressão Clientes
+          - generic: Atenção Dev
+          - generic: Zona
+      - paragraph: 🔴 Negligenciada — pressão alta, zero atenção do dev · 🟡 Subatendida — pressão > atenção · 🟢 Balanceada — proporção adequada
+    - generic:
+      - generic: Evolução
+      - heading "Tendência vs Semana Anterior" [level=2]
+      - paragraph: 🔴 Score subindo = risco aumentando · 🟢 Score caindo = situação melhorando
+    - generic:
+      - generic: Bugs Confirmados N2
+      - heading "O que acontece com os 47 bugs confirmados?" [level=2]
+    - generic:
+      - generic: Cenários Críticos
+      - heading "💣 Top 3 Riscos Imediatos" [level=2]
+    - generic:
+      - generic: Produção
+      - heading "Erros Afetando Usuários Reais" [level=2]
+      - generic:
+        - paragraph: 🔴 Sinal Oculto — erro afeta usuários em produção mas não tem ticket de suporte correspondente. O suporte ainda não escalou — mas é questão de tempo.
+    - generic:
+      - generic: Próximos Passos
+      - heading "Ações Recomendadas" [level=2]
+      - generic:
+        - table:
+          - rowgroup:
+            - row "Prioridade Módulo Ação Prazo":
+              - columnheader "Prioridade"
+              - columnheader "Módulo"
+              - columnheader "Ação"
+              - columnheader "Prazo"
+          - rowgroup
+  - generic [ref=e34]:
+    - generic [ref=e35]: "Fontes: Jira Suporte (52 N2 + 100 N1) · DEV4 (37 backlog + 4 em dev) · Sentry · GitHub Churn (33 PRs)"
+    - generic [ref=e36]: Use ← → para navegar · F para tela cheia · P para imprimir

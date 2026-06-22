@@ -1,0 +1,47 @@
+[    3969ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[    3971ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[    4178ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:76
+[    5097ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[    5108ms] [ERROR] error ao buscar chats TypeError: Cannot read properties of undefined (reading 'data')
+    at XRt (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1147:26257)
+    at async w (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:54:37980)
+    at async Object.u [as fn] (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:54:38287) @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[    5371ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[    5770ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/users/settings/summary:0
+[    5773ms] [ERROR] [UserPreferencesService] Failed to get summary: TypeError: Cannot read properties of undefined (reading 'data')
+    at kge.getSummary (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2251:64694)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2251:65354 @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[    5774ms] [ERROR] [useUserPreferences] Error: TypeError: Cannot read properties of undefined (reading 'data')
+    at kge.getSummary (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2251:64694)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2251:65354 @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[    6468ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[    6469ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[    6525ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:76
+[    6565ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[    7028ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[   67664ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[   95551ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[   95551ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[   95680ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:76
+[   96435ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[   99742ms] Identifier 'TCRMEmbed' has already been declared
+[  121241ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/login:0
+[  121536ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1
+[  121635ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/login:0
+[  121653ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/login:0
+[  122620ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[  122978ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[  123237ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[  123242ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[  123257ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/users/settings/language:0
+[  124029ms] [ERROR] refreshError:  TypeError: Cannot set properties of null (setting 'session_id')
+    at https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:2280465
+    at f (https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:1825709)
+    at Generator.<anonymous> (https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:1827061)
+    at Generator.next (https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:1826138)
+    at r (https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:1819801)
+    at s (https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:1820012) @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1
+[  124030ms] [ERROR] [UserPreferencesService] Failed to get language: rd @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1
+[  174713ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1
+[  175231ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.qa.poli.digital/auth/foundation/allowed:0
+[  175232ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1

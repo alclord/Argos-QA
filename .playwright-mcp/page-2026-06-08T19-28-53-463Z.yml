@@ -1,0 +1,34 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=6df0ff706ed26a1ec0b091ae5eeb9b7f8f8cef37&toPath=https://app.poli.digital/home
+        - img [ref=e11]
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - list
+        - generic [ref=e14]:
+          - list
+      - generic [ref=e15]:
+        - button "Consumo de créditos" [ref=e16] [cursor=pointer]:
+          - img [ref=e18]
+        - button "YA" [ref=e22] [cursor=pointer]:
+          - generic [ref=e28]: YA
+        - generic [ref=e31]: 3.5.352
+    - main [ref=e32]:
+      - main [ref=e33]:
+        - generic [ref=e36]:
+          - navigation "breadcrumb" [ref=e38]:
+            - link "Página inicial" [ref=e40] [cursor=pointer]:
+              - /url: /
+            - generic [ref=e41]:
+              - img [ref=e42]
+              - link "Configurações" [ref=e44] [cursor=pointer]:
+                - /url: /settings
+            - img [ref=e45]
+            - generic [ref=e47]: Aplicativos
+          - button "Novo aplicativo" [ref=e52] [cursor=pointer]:
+            - img [ref=e53]
+            - text: Novo aplicativo
+  - region "Notifications (F8)":
+    - list

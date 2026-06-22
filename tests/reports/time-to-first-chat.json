@@ -1,0 +1,50 @@
+{
+  "_description": "Medição de Time to First Chat — tempo desde navigationStart até o primeiro item de chat aparecer no DOM. Medido via Playwright MutationObserver + addInitScript. 5 rodadas por interface, produção, 2026-06-10.",
+  "methodology": {
+    "tool": "Playwright MutationObserver (addInitScript)",
+    "selector_legacy": ".chatListItem",
+    "selector_new": ".contact-component",
+    "environment": "Produção",
+    "runs": 5
+  },
+  "legacy": {
+    "url": "https://app-spa.poli.digital/chat",
+    "api": "WebSocket Pusher (app.poli.digital)",
+    "runs": [
+      { "run": 1, "firstChatMs": 6479, "wsDeliveryMs": 5644, "loadEvent": 835,  "fcp": 560 },
+      { "run": 2, "firstChatMs": 3287, "wsDeliveryMs": 1922, "loadEvent": 1365, "fcp": 776 },
+      { "run": 3, "firstChatMs": 2614, "wsDeliveryMs": 1838, "loadEvent": 776,  "fcp": 560 },
+      { "run": 4, "firstChatMs": 3667, "wsDeliveryMs": 2935, "loadEvent": 732,  "fcp": 536 },
+      { "run": 5, "firstChatMs": 5228, "wsDeliveryMs": 4299, "loadEvent": 929,  "fcp": 548 }
+    ],
+    "stats": {
+      "firstChatMs": { "min": 2614, "p50": 3667, "p95": 6479, "avg": 4255, "max": 6479 },
+      "wsDeliveryMs": { "min": 1838, "p50": 2935, "p95": 5644, "avg": 3328 },
+      "loadEvent":    { "min": 732,  "p50": 835,  "avg": 927  },
+      "fcp":          { "min": 536,  "p50": 560,  "avg": 596  }
+    }
+  },
+  "new": {
+    "url": "https://spa.poli.digital/chat",
+    "api": "REST GET /v3/accounts/:uuid/chats (foundation-api.poli.digital)",
+    "runs": [
+      { "run": 1, "firstChatMs": 2279, "restDeliveryMs": 991,  "loadEvent": 1288, "fcp": 756 },
+      { "run": 2, "firstChatMs": 1872, "restDeliveryMs": 936,  "loadEvent": 936,  "fcp": 428 },
+      { "run": 3, "firstChatMs": 2023, "restDeliveryMs": 837,  "loadEvent": 1186, "fcp": 440 },
+      { "run": 4, "firstChatMs": 2631, "restDeliveryMs": 1772, "loadEvent": 859,  "fcp": 456 },
+      { "run": 5, "firstChatMs": 2094, "restDeliveryMs": 1163, "loadEvent": 931,  "fcp": 436 }
+    ],
+    "stats": {
+      "firstChatMs":    { "min": 1872, "p50": 2094, "p95": 2631, "avg": 2180, "max": 2631 },
+      "restDeliveryMs": { "min": 837,  "p50": 1163, "p95": 1772, "avg": 1140 },
+      "loadEvent":      { "min": 859,  "p50": 931,  "avg": 1040 },
+      "fcp":            { "min": 428,  "p50": 456,  "avg": 503  }
+    }
+  },
+  "comparison": {
+    "firstChatMs_p50_delta":  -1573,
+    "firstChatMs_p95_delta":  -3848,
+    "winner": "nova interface",
+    "note": "A nova interface é ~2x mais rápida no p50 e ~2.5x mais rápida no p95 para mostrar os chats. O WebSocket do legado demora 2-5.6s para entregar a lista inicial, contra 0.8-1.8s do REST na nova interface (após o loadEvent). A interface legada também tem alta variância (min=2.6s, max=6.5s), o que causa percepção de lentidão intermitente."
+  }
+}

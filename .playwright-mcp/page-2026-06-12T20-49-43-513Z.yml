@@ -1,0 +1,405 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=0e51a530dee54274858b4a7348cc0eea1c6bfc9f&toPath=https://app.poli.digital/home
+        - img [ref=e11]
+      - generic [ref=e12]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link [ref=e16] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e18]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=0e51a530dee54274858b4a7348cc0eea1c6bfc9f&toPath=https://app.poli.digital/settings/46667/chatbot
+              - img [ref=e30]
+          - listitem [ref=e33]:
+            - link [ref=e34] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e36]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=0e51a530dee54274858b4a7348cc0eea1c6bfc9f&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e41]
+          - listitem [ref=e44]:
+            - link [ref=e45] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=0e51a530dee54274858b4a7348cc0eea1c6bfc9f&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e47]
+          - listitem [ref=e50]:
+            - link [ref=e51] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=0e51a530dee54274858b4a7348cc0eea1c6bfc9f&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e53]
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - link [ref=e61] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e63]
+      - generic [ref=e66]:
+        - button "Consumo de créditos" [ref=e67] [cursor=pointer]:
+          - img [ref=e69]
+        - button "YA" [ref=e73] [cursor=pointer]:
+          - generic [ref=e79]: YA
+        - generic [ref=e82]: 3.5.359-DEV4-4400
+    - main [ref=e83]:
+      - main [ref=e84]:
+        - generic [ref=e85]:
+          - button "✨ Nova Versão" [ref=e86] [cursor=pointer]:
+            - generic [ref=e87]: ✨ Nova Versão
+            - img [ref=e88]
+          - generic [ref=e91]:
+            - generic [ref=e92]:
+              - generic [ref=e93]:
+                - button "Em atendimento" [ref=e94] [cursor=pointer]:
+                  - generic [ref=e95]: Em atendimento
+                  - img [ref=e96]
+                - generic [ref=e98]:
+                  - button [ref=e99] [cursor=pointer]:
+                    - img [ref=e100]
+                  - button "Contatos" [ref=e105] [cursor=pointer]:
+                    - img [ref=e106]
+                  - button "Filtros" [ref=e110] [cursor=pointer]:
+                    - img [ref=e111]
+              - generic [ref=e115]:
+                - generic [ref=e116]:
+                  - textbox "Pesquisar" [ref=e117]
+                  - button "Pesquisar" [ref=e118] [cursor=pointer]:
+                    - img [ref=e119]
+                - button "Ordenação das conversas" [ref=e122] [cursor=pointer]:
+                  - img [ref=e123]
+            - generic [ref=e126]: Você está indisponível e não receberá novas conversas
+          - generic [ref=e253]:
+            - generic [ref=e254] [cursor=pointer]:
+              - generic [ref=e255]:
+                - generic [ref=e257]:
+                  - generic [ref=e261]: YU
+                  - button "Selecionar todos" [ref=e262]:
+                    - checkbox
+                - generic [ref=e263]:
+                  - generic [ref=e265]: Yuri
+                  - generic [ref=e266]:
+                    - generic [ref=e267]:
+                      - img "WhatsApp Business" [ref=e268]
+                      - generic [ref=e271]: WhatsApp Business
+                    - generic [ref=e274]:
+                      - generic [ref=e275]: "atendente Yuri Alcantara:"
+                      - generic [ref=e276]: Argos QA — CT-SPA-LIBS-003 — teste TipTap 3
+                  - generic [ref=e277]:
+                    - generic [ref=e278]:
+                      - img [ref=e279]
+                      - generic [ref=e281]: Gabi Hoffmann
+                    - generic [ref=e282]:
+                      - img [ref=e283]
+                      - generic [ref=e285]: suporte_n2
+              - generic [ref=e286]:
+                - generic [ref=e288]:
+                  - button "+9" [ref=e289]:
+                    - generic [ref=e290]: "+9"
+                  - button [ref=e759]
+                  - button [ref=e761]
+                  - button [ref=e763]
+                  - button [ref=e765]
+                  - button [ref=e767]
+                - generic [ref=e301]:
+                  - generic [ref=e302]: Há 1min
+                  - button "Abrir menu de opções" [ref=e303]:
+                    - img [ref=e304]
+            - generic [ref=e306] [cursor=pointer]:
+              - generic [ref=e307]:
+                - generic [ref=e309]:
+                  - generic [ref=e313]: AR
+                  - button "Selecionar todos" [ref=e314]:
+                    - checkbox
+                - generic [ref=e315]:
+                  - generic [ref=e317]: Arthur
+                  - generic [ref=e318]:
+                    - generic [ref=e319]:
+                      - img "WhatsApp Business" [ref=e320]
+                      - generic [ref=e323]: WhatsApp Business
+                    - generic [ref=e326]:
+                      - generic [ref=e327]: "atendente Arthur:"
+                      - generic [ref=e328]: teste
+                  - generic [ref=e329]:
+                    - generic [ref=e330]:
+                      - img [ref=e331]
+                      - generic [ref=e333]: Pedro Vieira
+                    - generic [ref=e334]:
+                      - img [ref=e335]
+                      - generic [ref=e337]: dep teste
+              - generic [ref=e338]:
+                - generic [ref=e340]:
+                  - button [ref=e769]
+                  - button [ref=e771]
+                - generic [ref=e345]:
+                  - generic [ref=e346]: Há 2 horas
+                  - button "Abrir menu de opções" [ref=e347]:
+                    - img [ref=e348]
+            - generic [ref=e350] [cursor=pointer]:
+              - generic [ref=e351]:
+                - generic [ref=e353]:
+                  - generic [ref=e357]: PV
+                  - button "Selecionar todos" [ref=e358]:
+                    - checkbox
+                - generic [ref=e359]:
+                  - generic [ref=e361]: pedro vieira
+                  - generic [ref=e362]:
+                    - generic [ref=e363]:
+                      - img "WhatsApp Business" [ref=e364]
+                      - generic [ref=e367]: WhatsApp Business
+                    - generic [ref=e371]: Olá! Tudo bem? bom dia atualize sua conta
+                  - generic [ref=e372]:
+                    - generic [ref=e373]:
+                      - img [ref=e374]
+                      - generic [ref=e376]: Gabi Hoffmann
+                    - generic [ref=e377]:
+                      - img [ref=e378]
+                      - generic [ref=e380]: suporte_n2
+              - generic [ref=e382]:
+                - generic [ref=e383]: Há 2 horas
+                - button "Abrir menu de opções" [ref=e384]:
+                  - img [ref=e385]
+            - generic [ref=e387] [cursor=pointer]:
+              - generic [ref=e388]:
+                - generic [ref=e390]:
+                  - img "Rodrigo Teste N2" [ref=e394]
+                  - button "Selecionar todos" [ref=e395]:
+                    - checkbox
+                - generic [ref=e396]:
+                  - generic [ref=e398]: Rodrigo Teste N2
+                  - generic [ref=e399]:
+                    - generic [ref=e400]:
+                      - img "WhatsApp Business" [ref=e401]
+                      - generic [ref=e404]: WhatsApp Business
+                    - generic [ref=e408]: 10:45 Olá, Rodrigo Teste N2 . Seu veículo possui débito de IPVA inscrito em Dívida Ativa (processo 20260611 ). Conforme o Art. 230, V do CTB, o veículo está sujeito a apreensão devido à circulação irregular por pendências fiscais, sob risco de negativação do CPF e protesto. Com o auxílio da PGE, o programa Quita GO surgiu como forma de resolver a Dívida do contribuinte e regularizar situações como a sua. Com descontos que podem chegar a até 99% da dívida.
+                  - generic [ref=e409]:
+                    - generic [ref=e410]:
+                      - img [ref=e411]
+                      - generic [ref=e413]: Rodrigo Thomás Poli Digital
+                    - generic [ref=e414]:
+                      - img [ref=e415]
+                      - generic [ref=e417]: suporte_n2
+              - generic [ref=e418]:
+                - generic [ref=e420]:
+                  - button [ref=e773]
+                  - button [ref=e775]
+                - generic [ref=e425]:
+                  - generic [ref=e426]: Há 7 horas
+                  - button "Abrir menu de opções" [ref=e427]:
+                    - img [ref=e428]
+            - generic [ref=e430] [cursor=pointer]:
+              - generic [ref=e431]:
+                - generic [ref=e433]:
+                  - generic [ref=e437]: GH
+                  - button "Selecionar todos" [ref=e438]:
+                    - checkbox
+                - generic [ref=e439]:
+                  - generic [ref=e441]: Gabi Hoffmann (DEV) - teste
+                  - generic [ref=e442]:
+                    - generic [ref=e443]:
+                      - img "Web Chat Sistema" [ref=e444]
+                      - generic [ref=e447]: Web Chat Sistema
+                    - generic [ref=e451]: Contato redirecionado para Gabi Hoffmann por Gabi Hoffmann
+                  - generic [ref=e452]:
+                    - generic [ref=e453]:
+                      - img [ref=e454]
+                      - generic [ref=e456]: Gabi Hoffmann
+                    - generic [ref=e457]:
+                      - img [ref=e458]
+                      - generic [ref=e460]: suporte_n2
+              - generic [ref=e461]:
+                - generic [ref=e463]:
+                  - button [ref=e777]
+                  - button [ref=e779]
+                  - button [ref=e781]
+                - generic [ref=e470]:
+                  - generic [ref=e471]: Há 22 horas
+                  - button "Abrir menu de opções" [ref=e472]:
+                    - img [ref=e473]
+            - generic [ref=e475] [cursor=pointer]:
+              - generic [ref=e476]:
+                - generic [ref=e478]:
+                  - generic [ref=e482]: "N"
+                  - button "Selecionar todos" [ref=e483]:
+                    - checkbox
+                - generic [ref=e484]:
+                  - generic [ref=e486]: N8N - alertas
+                  - generic [ref=e487]:
+                    - generic [ref=e488]:
+                      - img "WhatsApp" [ref=e489]
+                      - generic [ref=e492]: WhatsApp
+                    - generic [ref=e494]:
+                      - generic [ref=e495]: "Guilherme Pessoa:"
+                      - generic [ref=e497]: rs
+                  - generic [ref=e499]:
+                    - img [ref=e500]
+                    - generic [ref=e502]: Nikole
+              - generic [ref=e504]:
+                - generic [ref=e505]: Há 1 dia
+                - generic [ref=e506]: 9+
+                - button "Abrir menu de opções" [ref=e507]:
+                  - img [ref=e508]
+            - generic [ref=e510] [cursor=pointer]:
+              - generic [ref=e511]:
+                - generic [ref=e513]:
+                  - generic [ref=e517]: PE
+                  - button "Selecionar todos" [ref=e518]:
+                    - checkbox
+                - generic [ref=e519]:
+                  - generic [ref=e521]: Pedro
+                  - generic [ref=e522]:
+                    - generic [ref=e523]:
+                      - img "WhatsApp Business" [ref=e524]
+                      - generic [ref=e527]: WhatsApp Business
+                    - generic [ref=e531]: Olá! Tudo bem? bom dia atualize sua conta
+                    - img [ref=e532]
+                  - generic [ref=e536]:
+                    - img [ref=e537]
+                    - generic [ref=e539]: Gabi Hoffmann
+              - generic [ref=e540]:
+                - generic [ref=e542]:
+                  - button [ref=e783]
+                  - button [ref=e785]
+                - generic [ref=e547]:
+                  - generic [ref=e548]: Há 2 dias
+                  - button "Abrir menu de opções" [ref=e549]:
+                    - img [ref=e550]
+            - generic [ref=e552] [cursor=pointer]:
+              - generic [ref=e553]:
+                - generic [ref=e555]:
+                  - generic [ref=e559]: AM
+                  - button "Selecionar todos" [ref=e560]:
+                    - checkbox
+                - generic [ref=e561]:
+                  - generic [ref=e563]: ADENOR MEDEIROS JUNIOR
+                  - generic [ref=e564]:
+                    - generic [ref=e565]:
+                      - img "WhatsApp Business" [ref=e566]
+                      - generic [ref=e569]: WhatsApp Business
+                    - generic [ref=e573]: Né meu não só tá no meu nome .
+                  - generic [ref=e575]:
+                    - img [ref=e576]
+                    - generic [ref=e578]: Nikole
+              - generic [ref=e580]:
+                - generic [ref=e581]: 30/05/2026
+                - generic [ref=e582]: "1"
+                - button "Abrir menu de opções" [ref=e583]:
+                  - img [ref=e584]
+            - generic [ref=e586] [cursor=pointer]:
+              - generic [ref=e587]:
+                - generic [ref=e589]:
+                  - img "GH" [ref=e593]
+                  - button "Selecionar todos" [ref=e594]:
+                    - checkbox
+                - generic [ref=e595]:
+                  - generic [ref=e597]: GH
+                  - generic [ref=e598]:
+                    - generic [ref=e599]:
+                      - img "WhatsApp" [ref=e600]
+                      - generic [ref=e603]: WhatsApp
+                    - generic [ref=e606]:
+                      - generic [ref=e607]: "atendente financeiro polisd:"
+                      - generic [ref=e608]: Oi
+                  - generic [ref=e609]:
+                    - generic [ref=e610]:
+                      - img [ref=e611]
+                      - generic [ref=e613]: GH
+                    - generic [ref=e614]:
+                      - img [ref=e615]
+                      - generic [ref=e617]: suporte_n2
+              - generic [ref=e618]:
+                - generic [ref=e620]:
+                  - button "+1" [ref=e621]:
+                    - generic [ref=e622]: "+1"
+                  - button [ref=e787]
+                  - button [ref=e789]
+                  - button [ref=e791]
+                  - button [ref=e793]
+                  - button [ref=e795]
+                - generic [ref=e633]:
+                  - generic [ref=e634]: 29/05/2026
+                  - button "Abrir menu de opções" [ref=e635]:
+                    - img [ref=e636]
+            - generic [ref=e638] [cursor=pointer]:
+              - generic [ref=e639]:
+                - generic [ref=e641]:
+                  - generic [ref=e645]: GA
+                  - button "Selecionar todos" [ref=e646]:
+                    - checkbox
+                - generic [ref=e647]:
+                  - generic [ref=e649]: GIVANILDO ALMEIDA DA SILVA
+                  - generic [ref=e650]:
+                    - generic [ref=e651]:
+                      - img "WhatsApp Business" [ref=e652]
+                      - generic [ref=e655]: WhatsApp Business
+                    - generic [ref=e659]: Boa tarde
+                  - generic [ref=e661]:
+                    - img [ref=e662]
+                    - generic [ref=e664]: Nikole
+              - generic [ref=e666]:
+                - generic [ref=e667]: 29/05/2026
+                - generic [ref=e668]: "1"
+                - button "Abrir menu de opções" [ref=e669]:
+                  - img [ref=e670]
+            - generic [ref=e672] [cursor=pointer]:
+              - generic [ref=e673]:
+                - generic [ref=e675]:
+                  - generic [ref=e679]: PI
+                  - button "Selecionar todos" [ref=e680]:
+                    - checkbox
+                - generic [ref=e681]:
+                  - generic [ref=e683]: Piperun
+                  - generic [ref=e684]:
+                    - generic [ref=e685]:
+                      - img "WhatsApp" [ref=e686]
+                      - generic [ref=e689]: WhatsApp
+                    - generic [ref=e692]:
+                      - img [ref=e693]
+                      - text: Imagem
+                    - img [ref=e697]
+                  - generic [ref=e701]:
+                    - img [ref=e702]
+                    - generic [ref=e704]: Pedro Rocha
+              - generic [ref=e706]:
+                - generic [ref=e707]: 26/05/2026
+                - button "Abrir menu de opções" [ref=e708]:
+                  - img [ref=e709]
+            - generic [ref=e711] [cursor=pointer]:
+              - generic [ref=e712]:
+                - generic [ref=e714]:
+                  - generic [ref=e718]: KE
+                  - button "Selecionar todos" [ref=e719]:
+                    - checkbox
+                - generic [ref=e720]:
+                  - generic [ref=e722]: kellen
+                  - generic [ref=e723]:
+                    - generic [ref=e724]:
+                      - img "WhatsApp Business" [ref=e725]
+                      - generic [ref=e728]: WhatsApp Business
+                    - paragraph [ref=e731]: Hello, esse é um template do tipo flow para teste
+                  - generic [ref=e732]:
+                    - generic [ref=e733]:
+                      - img [ref=e734]
+                      - generic [ref=e736]: Kellen Prado
+                    - generic [ref=e737]:
+                      - img [ref=e738]
+                      - generic [ref=e740]: suporte_n2
+              - generic [ref=e741]:
+                - generic [ref=e743]:
+                  - button [ref=e797]
+                  - button [ref=e799]
+                  - button [ref=e801]
+                  - button [ref=e803]
+                - generic [ref=e752]:
+                  - generic [ref=e753]: 21/05/2026
+                  - button "Abrir menu de opções" [ref=e754]:
+                    - img [ref=e755]
+            - button "Carregar mais" [ref=e758] [cursor=pointer]
+        - generic [ref=e250]:
+          - img "Logo" [ref=e251]
+          - heading "Bem-vindo!" [level=1] [ref=e252]
+  - region "Notifications (F8)":
+    - list

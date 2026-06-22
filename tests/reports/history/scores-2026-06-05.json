@@ -1,0 +1,20 @@
+{
+  "data": "2026-06-05",
+  "modulos": {
+    "Chat / Mensagens":     { "total": 62, "tec": 29, "usr": 33, "entropy": 2.8, "cfr": 0.50, "crash_free_delta": -1.2 },
+    "Distribuição / Filas": { "total": 38, "tec": 16, "usr": 22, "entropy": 1.5, "cfr": 0.50, "crash_free_delta": 0 },
+    "Canais / WhatsApp":    { "total": 37, "tec": 22, "usr": 15, "entropy": 1.8, "cfr": 1.00, "crash_free_delta": 0 },
+    "Autenticação":         { "total": 20, "tec": 15, "usr": 5,  "entropy": 0.0, "cfr": 0.0,  "crash_free_delta": -1.5 },
+    "Contatos / Busca":     { "total": 19, "tec": 8,  "usr": 11, "entropy": 1.2, "cfr": 0.40, "crash_free_delta": 0 },
+    "Upload / Mídia":       { "total": 12, "tec": 7,  "usr": 5,  "entropy": 0.8, "cfr": 0.0,  "crash_free_delta": 0 },
+    "WebSocket / Presença": { "total": 11, "tec": 9,  "usr": 2,  "entropy": 0.5, "cfr": 0.0,  "crash_free_delta": 0 },
+    "Jarvis / IA":          { "total": 9,  "tec": 8,  "usr": 1,  "entropy": 1.5, "cfr": 0.0,  "crash_free_delta": 0 },
+    "Integrações Externas": { "total": 8,  "tec": 7,  "usr": 1,  "entropy": 0.0, "cfr": 0.0,  "crash_free_delta": 0 },
+    "Relatórios / SLA":     { "total": 5,  "tec": 1,  "usr": 4,  "entropy": 0.0, "cfr": 0.0,  "crash_free_delta": 0 },
+    "Permissões / Roles":   { "total": 5,  "tec": 3,  "usr": 2,  "entropy": 0.8, "cfr": 0.0,  "crash_free_delta": 0 },
+    "Configurações":        { "total": 5,  "tec": 1,  "usr": 4,  "entropy": 0.0, "cfr": 0.0,  "crash_free_delta": 0 }
+  },
+  "sentry_disponivel": true,
+  "github_disponivel": true,
+  "note": "AxiosError 404 resolvido! AxiosError 401 novo (534u escalating). Hermes SQS errors novos (06-05). ZERO cards em dev ativo."
+}

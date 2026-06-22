@@ -1,0 +1,36 @@
+{
+  "data": "2026-06-07",
+  "janela_dias": 14,
+  "modulos": {
+    "Chat / Mensagens":     { "total": 64, "tec": 33, "usr": 31, "entropy": 3.0, "cfr": 0.07, "crash_free_delta": -2.8 },
+    "Canais / WhatsApp":    { "total": 30, "tec": 20, "usr": 10, "entropy": 1.8, "cfr": 0.20, "crash_free_delta": 0 },
+    "Distribuição / Filas": { "total": 27, "tec": 14, "usr": 13, "entropy": 0.5, "cfr": 0.0,  "crash_free_delta": 0 },
+    "Autenticação":         { "total": 25, "tec": 22, "usr": 3,  "entropy": 0.5, "cfr": 0.20, "crash_free_delta": -1.8 },
+    "WebSocket / Presença": { "total": 13, "tec": 11, "usr": 2,  "entropy": 0.8, "cfr": 0.0,  "crash_free_delta": 0 },
+    "Contatos / Busca":     { "total": 9,  "tec": 6,  "usr": 3,  "entropy": 0.8, "cfr": 0.20, "crash_free_delta": 0 },
+    "Upload / Mídia":       { "total": 9,  "tec": 6,  "usr": 3,  "entropy": 0.8, "cfr": 0.0,  "crash_free_delta": 0 },
+    "Integrações Externas": { "total": 9,  "tec": 6,  "usr": 3,  "entropy": 0.5, "cfr": 0.0,  "crash_free_delta": 0 },
+    "Jarvis / IA":          { "total": 8,  "tec": 7,  "usr": 1,  "entropy": 1.5, "cfr": 0.0,  "crash_free_delta": 0 },
+    "Permissões / Roles":   { "total": 4,  "tec": 3,  "usr": 1,  "entropy": 0.0, "cfr": 0.0,  "crash_free_delta": 0 },
+    "Configurações":        { "total": 3,  "tec": 2,  "usr": 1,  "entropy": 0.0, "cfr": 0.0,  "crash_free_delta": 0 }
+  },
+  "sinais": {
+    "sm_n1_total": 100,
+    "sm_bugs": 17,
+    "sm_solicitacoes": 25,
+    "dev4_backlog": 22,
+    "dev4_em_dev": 0,
+    "sentry_issues_7d": 100,
+    "sentry_escalating_new": 4,
+    "github_prs_spa": 15,
+    "github_prs_foundationapi": 13,
+    "github_prs_polichat_web_app": 4,
+    "github_prs_waba_webhook": 2,
+    "suspect_commits": ["SPA:1509 → omnispa AxiosError 401 ESCALATING (Dev4-4278)", "FoundationAPI:1102 → SQS queue errors (DEV4-4262)"],
+    "modulos_alto": 5,
+    "modulos_negligenciados": 2,
+    "dora_cfr_hits": 2,
+    "staleness_cenarios": 2,
+    "omnispa_release_06_06_new_issues": 16
+  }
+}

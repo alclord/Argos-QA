@@ -1,0 +1,495 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]: foundation-spa
+        - heading "Components" [level=2] [ref=e7]
+      - navigation [ref=e8]:
+        - link "Design tokens" [ref=e9] [cursor=pointer]:
+          - /url: /showcase/design-tokens
+          - generic [ref=e10]: Design tokens
+        - link "Button" [ref=e11] [cursor=pointer]:
+          - /url: /showcase/buttons
+          - generic [ref=e12]: Button
+        - link "Badge" [ref=e13] [cursor=pointer]:
+          - /url: /showcase/badges
+          - generic [ref=e14]: Badge
+        - link "Inputs & Textareas" [ref=e15] [cursor=pointer]:
+          - /url: /showcase/inputs
+          - generic [ref=e16]: Inputs & Textareas
+        - link "Form controls" [ref=e17] [cursor=pointer]:
+          - /url: /showcase/form-controls
+          - generic [ref=e18]: Form controls
+        - link "Form (RHF)" [ref=e19] [cursor=pointer]:
+          - /url: /showcase/form
+          - generic [ref=e20]: Form (RHF)
+        - link "MultipleSelector" [ref=e21] [cursor=pointer]:
+          - /url: /showcase/multiple-selector
+          - generic [ref=e22]: MultipleSelector
+        - link "Overlays" [ref=e23] [cursor=pointer]:
+          - /url: /showcase/overlays
+          - generic [ref=e24]: Overlays
+        - link "ContextMenu" [ref=e25] [cursor=pointer]:
+          - /url: /showcase/context-menu
+          - generic [ref=e26]: ContextMenu
+        - link "Command palette" [ref=e27] [cursor=pointer]:
+          - /url: /showcase/command
+          - generic [ref=e28]: Command palette
+        - link "Navigation" [ref=e29] [cursor=pointer]:
+          - /url: /showcase/navigation
+          - generic [ref=e30]: Navigation
+        - link "Data display" [ref=e31] [cursor=pointer]:
+          - /url: /showcase/data-display
+          - generic [ref=e32]: Data display
+        - link "DataTable" [ref=e33] [cursor=pointer]:
+          - /url: /showcase/data-table
+          - generic [ref=e34]: DataTable
+        - link "Chart" [ref=e35] [cursor=pointer]:
+          - /url: /showcase/chart
+          - generic [ref=e36]: Chart
+        - link "Carousel" [ref=e37] [cursor=pointer]:
+          - /url: /showcase/carousel
+          - generic [ref=e38]: Carousel
+        - link "Date & Time pickers" [ref=e39] [cursor=pointer]:
+          - /url: /showcase/pickers
+          - generic [ref=e40]: Date & Time pickers
+        - link "Toast" [ref=e41] [cursor=pointer]:
+          - /url: /showcase/feedback
+          - generic [ref=e42]: Toast
+        - link "Audio" [ref=e43] [cursor=pointer]:
+          - /url: /showcase/audio
+          - generic [ref=e44]: Audio
+        - link "Misc" [ref=e45] [cursor=pointer]:
+          - /url: /showcase/misc
+          - generic [ref=e46]: Misc
+        - link "App modals & banners" [ref=e47] [cursor=pointer]:
+          - /url: /showcase/app-modals
+          - generic [ref=e48]: App modals & banners
+    - generic [ref=e49]:
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - heading "Button" [level=1] [ref=e52]
+          - paragraph [ref=e53]: Botão padrão com todas as combinações de variant e size.
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: Whitelabel
+            - combobox "Whitelabel" [ref=e57] [cursor=pointer]:
+              - generic: Poli (default)
+              - img [ref=e58]
+          - button "Alternar para tema escuro" [ref=e60] [cursor=pointer]:
+            - img [ref=e61]
+            - text: Dark
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - heading "Variants" [level=3] [ref=e67]
+            - paragraph [ref=e68]: Todas as variantes de cor.
+          - generic [ref=e69]:
+            - generic [ref=e70]:
+              - generic [ref=e71]:
+                - generic [ref=e72]: variant="default"
+                - button "Copiar JSX" [ref=e73] [cursor=pointer]:
+                  - img [ref=e74]
+              - button "default button" [ref=e78] [cursor=pointer]
+            - generic [ref=e79]:
+              - generic [ref=e80]:
+                - generic [ref=e81]: variant="destructive"
+                - button "Copiar JSX" [ref=e82] [cursor=pointer]:
+                  - img [ref=e83]
+              - button "destructive button" [ref=e87] [cursor=pointer]
+            - generic [ref=e88]:
+              - generic [ref=e89]:
+                - generic [ref=e90]: variant="outline"
+                - button "Copiar JSX" [ref=e91] [cursor=pointer]:
+                  - img [ref=e92]
+              - button "outline button" [ref=e96] [cursor=pointer]
+            - generic [ref=e97]:
+              - generic [ref=e98]:
+                - generic [ref=e99]: variant="secondary"
+                - button "Copiar JSX" [ref=e100] [cursor=pointer]:
+                  - img [ref=e101]
+              - button "secondary button" [ref=e105] [cursor=pointer]
+            - generic [ref=e106]:
+              - generic [ref=e107]:
+                - generic [ref=e108]: variant="ghost"
+                - button "Copiar JSX" [ref=e109] [cursor=pointer]:
+                  - img [ref=e110]
+              - button "ghost button" [ref=e114] [cursor=pointer]
+            - generic [ref=e115]:
+              - generic [ref=e116]:
+                - generic [ref=e117]: variant="link"
+                - button "Copiar JSX" [ref=e118] [cursor=pointer]:
+                  - img [ref=e119]
+              - button "link button" [ref=e123] [cursor=pointer]
+            - generic [ref=e124]:
+              - generic [ref=e125]:
+                - generic [ref=e126]: variant="icon"
+                - button "Copiar JSX" [ref=e127] [cursor=pointer]:
+                  - img [ref=e128]
+              - button "icon button" [ref=e132] [cursor=pointer]
+            - generic [ref=e133]:
+              - generic [ref=e134]:
+                - generic [ref=e135]: variant="select"
+                - button "Copiar JSX" [ref=e136] [cursor=pointer]:
+                  - img [ref=e137]
+              - button "select button" [ref=e141] [cursor=pointer]
+            - generic [ref=e142]:
+              - generic [ref=e143]:
+                - generic [ref=e144]: variant="gradient"
+                - button "Copiar JSX" [ref=e145] [cursor=pointer]:
+                  - img [ref=e146]
+              - button "gradient button" [ref=e150] [cursor=pointer]
+        - generic [ref=e151]:
+          - generic [ref=e152]:
+            - heading "Sizes" [level=3] [ref=e153]
+            - paragraph [ref=e154]: Tamanhos disponíveis.
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - generic [ref=e157]:
+                - generic [ref=e158]: size="default"
+                - button "Copiar JSX" [ref=e159] [cursor=pointer]:
+                  - img [ref=e160]
+              - button "default button" [ref=e164] [cursor=pointer]
+            - generic [ref=e165]:
+              - generic [ref=e166]:
+                - generic [ref=e167]: size="xs"
+                - button "Copiar JSX" [ref=e168] [cursor=pointer]:
+                  - img [ref=e169]
+              - button "xs button" [ref=e173] [cursor=pointer]
+            - generic [ref=e174]:
+              - generic [ref=e175]:
+                - generic [ref=e176]: size="sm"
+                - button "Copiar JSX" [ref=e177] [cursor=pointer]:
+                  - img [ref=e178]
+              - button "sm button" [ref=e182] [cursor=pointer]
+            - generic [ref=e183]:
+              - generic [ref=e184]:
+                - generic [ref=e185]: size="lg"
+                - button "Copiar JSX" [ref=e186] [cursor=pointer]:
+                  - img [ref=e187]
+              - button "lg button" [ref=e191] [cursor=pointer]
+            - generic [ref=e192]:
+              - generic [ref=e193]:
+                - generic [ref=e194]: size="icon"
+                - button "Copiar JSX" [ref=e195] [cursor=pointer]:
+                  - img [ref=e196]
+              - button [ref=e200] [cursor=pointer]:
+                - img [ref=e201]
+        - generic [ref=e204]:
+          - generic [ref=e205]:
+            - heading "Variant × Size" [level=3] [ref=e206]
+            - paragraph [ref=e207]: Cruzamento de cada variante com cada tamanho.
+          - generic [ref=e208]:
+            - generic [ref=e209]:
+              - generic [ref=e210]:
+                - generic [ref=e211]: variant="default" size="default"
+                - button "Copiar JSX" [ref=e212] [cursor=pointer]:
+                  - img [ref=e213]
+              - button "default default" [ref=e217] [cursor=pointer]
+            - generic [ref=e218]:
+              - generic [ref=e219]:
+                - generic [ref=e220]: variant="default" size="xs"
+                - button "Copiar JSX" [ref=e221] [cursor=pointer]:
+                  - img [ref=e222]
+              - button "default xs" [ref=e226] [cursor=pointer]
+            - generic [ref=e227]:
+              - generic [ref=e228]:
+                - generic [ref=e229]: variant="default" size="sm"
+                - button "Copiar JSX" [ref=e230] [cursor=pointer]:
+                  - img [ref=e231]
+              - button "default sm" [ref=e235] [cursor=pointer]
+            - generic [ref=e236]:
+              - generic [ref=e237]:
+                - generic [ref=e238]: variant="default" size="lg"
+                - button "Copiar JSX" [ref=e239] [cursor=pointer]:
+                  - img [ref=e240]
+              - button "default lg" [ref=e244] [cursor=pointer]
+            - generic [ref=e245]:
+              - generic [ref=e246]:
+                - generic [ref=e247]: variant="destructive" size="default"
+                - button "Copiar JSX" [ref=e248] [cursor=pointer]:
+                  - img [ref=e249]
+              - button "destructive default" [ref=e253] [cursor=pointer]
+            - generic [ref=e254]:
+              - generic [ref=e255]:
+                - generic [ref=e256]: variant="destructive" size="xs"
+                - button "Copiar JSX" [ref=e257] [cursor=pointer]:
+                  - img [ref=e258]
+              - button "destructive xs" [ref=e262] [cursor=pointer]
+            - generic [ref=e263]:
+              - generic [ref=e264]:
+                - generic [ref=e265]: variant="destructive" size="sm"
+                - button "Copiar JSX" [ref=e266] [cursor=pointer]:
+                  - img [ref=e267]
+              - button "destructive sm" [ref=e271] [cursor=pointer]
+            - generic [ref=e272]:
+              - generic [ref=e273]:
+                - generic [ref=e274]: variant="destructive" size="lg"
+                - button "Copiar JSX" [ref=e275] [cursor=pointer]:
+                  - img [ref=e276]
+              - button "destructive lg" [ref=e280] [cursor=pointer]
+            - generic [ref=e281]:
+              - generic [ref=e282]:
+                - generic [ref=e283]: variant="outline" size="default"
+                - button "Copiar JSX" [ref=e284] [cursor=pointer]:
+                  - img [ref=e285]
+              - button "outline default" [ref=e289] [cursor=pointer]
+            - generic [ref=e290]:
+              - generic [ref=e291]:
+                - generic [ref=e292]: variant="outline" size="xs"
+                - button "Copiar JSX" [ref=e293] [cursor=pointer]:
+                  - img [ref=e294]
+              - button "outline xs" [ref=e298] [cursor=pointer]
+            - generic [ref=e299]:
+              - generic [ref=e300]:
+                - generic [ref=e301]: variant="outline" size="sm"
+                - button "Copiar JSX" [ref=e302] [cursor=pointer]:
+                  - img [ref=e303]
+              - button "outline sm" [ref=e307] [cursor=pointer]
+            - generic [ref=e308]:
+              - generic [ref=e309]:
+                - generic [ref=e310]: variant="outline" size="lg"
+                - button "Copiar JSX" [ref=e311] [cursor=pointer]:
+                  - img [ref=e312]
+              - button "outline lg" [ref=e316] [cursor=pointer]
+            - generic [ref=e317]:
+              - generic [ref=e318]:
+                - generic [ref=e319]: variant="secondary" size="default"
+                - button "Copiar JSX" [ref=e320] [cursor=pointer]:
+                  - img [ref=e321]
+              - button "secondary default" [ref=e325] [cursor=pointer]
+            - generic [ref=e326]:
+              - generic [ref=e327]:
+                - generic [ref=e328]: variant="secondary" size="xs"
+                - button "Copiar JSX" [ref=e329] [cursor=pointer]:
+                  - img [ref=e330]
+              - button "secondary xs" [ref=e334] [cursor=pointer]
+            - generic [ref=e335]:
+              - generic [ref=e336]:
+                - generic [ref=e337]: variant="secondary" size="sm"
+                - button "Copiar JSX" [ref=e338] [cursor=pointer]:
+                  - img [ref=e339]
+              - button "secondary sm" [ref=e343] [cursor=pointer]
+            - generic [ref=e344]:
+              - generic [ref=e345]:
+                - generic [ref=e346]: variant="secondary" size="lg"
+                - button "Copiar JSX" [ref=e347] [cursor=pointer]:
+                  - img [ref=e348]
+              - button "secondary lg" [ref=e352] [cursor=pointer]
+            - generic [ref=e353]:
+              - generic [ref=e354]:
+                - generic [ref=e355]: variant="ghost" size="default"
+                - button "Copiar JSX" [ref=e356] [cursor=pointer]:
+                  - img [ref=e357]
+              - button "ghost default" [ref=e361] [cursor=pointer]
+            - generic [ref=e362]:
+              - generic [ref=e363]:
+                - generic [ref=e364]: variant="ghost" size="xs"
+                - button "Copiar JSX" [ref=e365] [cursor=pointer]:
+                  - img [ref=e366]
+              - button "ghost xs" [ref=e370] [cursor=pointer]
+            - generic [ref=e371]:
+              - generic [ref=e372]:
+                - generic [ref=e373]: variant="ghost" size="sm"
+                - button "Copiar JSX" [ref=e374] [cursor=pointer]:
+                  - img [ref=e375]
+              - button "ghost sm" [ref=e379] [cursor=pointer]
+            - generic [ref=e380]:
+              - generic [ref=e381]:
+                - generic [ref=e382]: variant="ghost" size="lg"
+                - button "Copiar JSX" [ref=e383] [cursor=pointer]:
+                  - img [ref=e384]
+              - button "ghost lg" [ref=e388] [cursor=pointer]
+            - generic [ref=e389]:
+              - generic [ref=e390]:
+                - generic [ref=e391]: variant="link" size="default"
+                - button "Copiar JSX" [ref=e392] [cursor=pointer]:
+                  - img [ref=e393]
+              - button "link default" [ref=e397] [cursor=pointer]
+            - generic [ref=e398]:
+              - generic [ref=e399]:
+                - generic [ref=e400]: variant="link" size="xs"
+                - button "Copiar JSX" [ref=e401] [cursor=pointer]:
+                  - img [ref=e402]
+              - button "link xs" [ref=e406] [cursor=pointer]
+            - generic [ref=e407]:
+              - generic [ref=e408]:
+                - generic [ref=e409]: variant="link" size="sm"
+                - button "Copiar JSX" [ref=e410] [cursor=pointer]:
+                  - img [ref=e411]
+              - button "link sm" [ref=e415] [cursor=pointer]
+            - generic [ref=e416]:
+              - generic [ref=e417]:
+                - generic [ref=e418]: variant="link" size="lg"
+                - button "Copiar JSX" [ref=e419] [cursor=pointer]:
+                  - img [ref=e420]
+              - button "link lg" [ref=e424] [cursor=pointer]
+            - generic [ref=e425]:
+              - generic [ref=e426]:
+                - generic [ref=e427]: variant="icon" size="default"
+                - button "Copiar JSX" [ref=e428] [cursor=pointer]:
+                  - img [ref=e429]
+              - button "icon default" [ref=e433] [cursor=pointer]
+            - generic [ref=e434]:
+              - generic [ref=e435]:
+                - generic [ref=e436]: variant="icon" size="xs"
+                - button "Copiar JSX" [ref=e437] [cursor=pointer]:
+                  - img [ref=e438]
+              - button "icon xs" [ref=e442] [cursor=pointer]
+            - generic [ref=e443]:
+              - generic [ref=e444]:
+                - generic [ref=e445]: variant="icon" size="sm"
+                - button "Copiar JSX" [ref=e446] [cursor=pointer]:
+                  - img [ref=e447]
+              - button "icon sm" [ref=e451] [cursor=pointer]
+            - generic [ref=e452]:
+              - generic [ref=e453]:
+                - generic [ref=e454]: variant="icon" size="lg"
+                - button "Copiar JSX" [ref=e455] [cursor=pointer]:
+                  - img [ref=e456]
+              - button "icon lg" [ref=e460] [cursor=pointer]
+            - generic [ref=e461]:
+              - generic [ref=e462]:
+                - generic [ref=e463]: variant="select" size="default"
+                - button "Copiar JSX" [ref=e464] [cursor=pointer]:
+                  - img [ref=e465]
+              - button "select default" [ref=e469] [cursor=pointer]
+            - generic [ref=e470]:
+              - generic [ref=e471]:
+                - generic [ref=e472]: variant="select" size="xs"
+                - button "Copiar JSX" [ref=e473] [cursor=pointer]:
+                  - img [ref=e474]
+              - button "select xs" [ref=e478] [cursor=pointer]
+            - generic [ref=e479]:
+              - generic [ref=e480]:
+                - generic [ref=e481]: variant="select" size="sm"
+                - button "Copiar JSX" [ref=e482] [cursor=pointer]:
+                  - img [ref=e483]
+              - button "select sm" [ref=e487] [cursor=pointer]
+            - generic [ref=e488]:
+              - generic [ref=e489]:
+                - generic [ref=e490]: variant="select" size="lg"
+                - button "Copiar JSX" [ref=e491] [cursor=pointer]:
+                  - img [ref=e492]
+              - button "select lg" [ref=e496] [cursor=pointer]
+            - generic [ref=e497]:
+              - generic [ref=e498]:
+                - generic [ref=e499]: variant="gradient" size="default"
+                - button "Copiar JSX" [ref=e500] [cursor=pointer]:
+                  - img [ref=e501]
+              - button "gradient default" [ref=e505] [cursor=pointer]
+            - generic [ref=e506]:
+              - generic [ref=e507]:
+                - generic [ref=e508]: variant="gradient" size="xs"
+                - button "Copiar JSX" [ref=e509] [cursor=pointer]:
+                  - img [ref=e510]
+              - button "gradient xs" [ref=e514] [cursor=pointer]
+            - generic [ref=e515]:
+              - generic [ref=e516]:
+                - generic [ref=e517]: variant="gradient" size="sm"
+                - button "Copiar JSX" [ref=e518] [cursor=pointer]:
+                  - img [ref=e519]
+              - button "gradient sm" [ref=e523] [cursor=pointer]
+            - generic [ref=e524]:
+              - generic [ref=e525]:
+                - generic [ref=e526]: variant="gradient" size="lg"
+                - button "Copiar JSX" [ref=e527] [cursor=pointer]:
+                  - img [ref=e528]
+              - button "gradient lg" [ref=e532] [cursor=pointer]
+        - generic [ref=e533]:
+          - generic [ref=e534]:
+            - heading "Icon buttons" [level=3] [ref=e535]
+            - paragraph [ref=e536]: size=icon para cada variante.
+          - generic [ref=e537]:
+            - generic [ref=e538]:
+              - generic [ref=e539]:
+                - generic [ref=e540]: variant="default" size="icon"
+                - button "Copiar JSX" [ref=e541] [cursor=pointer]:
+                  - img [ref=e542]
+              - button [ref=e546] [cursor=pointer]:
+                - img [ref=e547]
+            - generic [ref=e549]:
+              - generic [ref=e550]:
+                - generic [ref=e551]: variant="destructive" size="icon"
+                - button "Copiar JSX" [ref=e552] [cursor=pointer]:
+                  - img [ref=e553]
+              - button [ref=e557] [cursor=pointer]:
+                - img [ref=e558]
+            - generic [ref=e560]:
+              - generic [ref=e561]:
+                - generic [ref=e562]: variant="outline" size="icon"
+                - button "Copiar JSX" [ref=e563] [cursor=pointer]:
+                  - img [ref=e564]
+              - button [ref=e568] [cursor=pointer]:
+                - img [ref=e569]
+            - generic [ref=e571]:
+              - generic [ref=e572]:
+                - generic [ref=e573]: variant="secondary" size="icon"
+                - button "Copiar JSX" [ref=e574] [cursor=pointer]:
+                  - img [ref=e575]
+              - button [ref=e579] [cursor=pointer]:
+                - img [ref=e580]
+            - generic [ref=e582]:
+              - generic [ref=e583]:
+                - generic [ref=e584]: variant="ghost" size="icon"
+                - button "Copiar JSX" [ref=e585] [cursor=pointer]:
+                  - img [ref=e586]
+              - button [ref=e590] [cursor=pointer]:
+                - img [ref=e591]
+            - generic [ref=e593]:
+              - generic [ref=e594]:
+                - generic [ref=e595]: variant="link" size="icon"
+                - button "Copiar JSX" [ref=e596] [cursor=pointer]:
+                  - img [ref=e597]
+              - button [ref=e601] [cursor=pointer]:
+                - img [ref=e602]
+            - generic [ref=e604]:
+              - generic [ref=e605]:
+                - generic [ref=e606]: variant="icon" size="icon"
+                - button "Copiar JSX" [ref=e607] [cursor=pointer]:
+                  - img [ref=e608]
+              - button [ref=e612] [cursor=pointer]:
+                - img [ref=e613]
+            - generic [ref=e615]:
+              - generic [ref=e616]:
+                - generic [ref=e617]: variant="select" size="icon"
+                - button "Copiar JSX" [ref=e618] [cursor=pointer]:
+                  - img [ref=e619]
+              - button [ref=e623] [cursor=pointer]:
+                - img [ref=e624]
+            - generic [ref=e626]:
+              - generic [ref=e627]:
+                - generic [ref=e628]: variant="gradient" size="icon"
+                - button "Copiar JSX" [ref=e629] [cursor=pointer]:
+                  - img [ref=e630]
+              - button [ref=e634] [cursor=pointer]:
+                - img [ref=e635]
+        - generic [ref=e637]:
+          - heading "Estados" [level=3] [ref=e639]
+          - generic [ref=e640]:
+            - generic [ref=e641]:
+              - generic [ref=e642]:
+                - generic [ref=e643]: disabled
+                - button "Copiar JSX" [ref=e644] [cursor=pointer]:
+                  - img [ref=e645]
+              - generic [ref=e648]:
+                - button "Disabled" [disabled]
+            - generic [ref=e649]:
+              - generic [ref=e650]:
+                - generic [ref=e651]: with leading icon
+                - button "Copiar JSX" [ref=e652] [cursor=pointer]:
+                  - img [ref=e653]
+              - button "Com ícone" [ref=e657] [cursor=pointer]:
+                - img [ref=e658]
+                - text: Com ícone
+            - generic [ref=e660]:
+              - generic [ref=e661]:
+                - generic [ref=e662]: asChild (link estilizado como botão)
+                - button "Copiar JSX" [ref=e663] [cursor=pointer]:
+                  - img [ref=e664]
+              - link "Link como botão" [ref=e668] [cursor=pointer]:
+                - /url: "#"
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications (F8)":
+    - list

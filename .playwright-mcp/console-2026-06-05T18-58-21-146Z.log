@@ -1,0 +1,30 @@
+[   12023ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-Dw968phl.js:101
+[   12025ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-Dw968phl.js:101
+[   12252ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-Dw968phl.js:76
+[   12799ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-Dw968phl.js:69
+[   12974ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/undefined/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[   12981ms] [ERROR] error ao buscar chats TypeError: Cannot read properties of undefined (reading 'data')
+    at U0t (https://spa-canary.poli.digital/assets/index-Dw968phl.js:1092:26145)
+    at async C (https://spa-canary.poli.digital/assets/index-Dw968phl.js:54:37954)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-Dw968phl.js:54:38261) @ https://spa-canary.poli.digital/assets/index-Dw968phl.js:69
+[   12984ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/users/settings/summary:0
+[   12986ms] [ERROR] [UserPreferencesService] Failed to get summary: TypeError: Cannot read properties of undefined (reading 'data')
+    at pne.getSummary (https://spa-canary.poli.digital/assets/index-Dw968phl.js:2196:64686)
+    at async https://spa-canary.poli.digital/assets/index-Dw968phl.js:2196:65346 @ https://spa-canary.poli.digital/assets/index-Dw968phl.js:69
+[   12986ms] [ERROR] [useUserPreferences] Error: TypeError: Cannot read properties of undefined (reading 'data')
+    at pne.getSummary (https://spa-canary.poli.digital/assets/index-Dw968phl.js:2196:64686)
+    at async https://spa-canary.poli.digital/assets/index-Dw968phl.js:2196:65346 @ https://spa-canary.poli.digital/assets/index-Dw968phl.js:69
+[   12987ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/undefined/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[   13006ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-Dw968phl.js:69
+[   13928ms] [ERROR] Amplitude Logger [Error]: Failed to fetch (api2.amplitude.com) @ https://spa-canary.poli.digital/assets/index-Dw968phl.js:69
+[   13929ms] [WARNING] Amplitude Logger [Warn]: {code: 0, error: "Status 'failed' provided for 1 events"} @ https://spa-canary.poli.digital/assets/index-Dw968phl.js:69
+[   14266ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-Dw968phl.js:101
+[   14266ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-Dw968phl.js:101
+[   14321ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-Dw968phl.js:76
+[   14354ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-Dw968phl.js:69
+[   14813ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-Dw968phl.js:69
+[   81973ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-Dw968phl.js:69
+[   83346ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   84550ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   86764ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   90969ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0

@@ -1,0 +1,145 @@
+[     791ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:101
+[     792ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:101
+[     946ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:76
+[    1446ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:69
+[    1670ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:896:429
+    at qS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:898:31)
+    at Od.pS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:895:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:309:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:255:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Kq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:266:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:720:315
+    at Kz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:1)
+    at Pz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:627:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:647:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:648:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:648:100)
+    at mB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:648:742)
+    at pB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:652:183)
+    at BD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:697:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:701:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e6621h2:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:866:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e6620:554:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:701:495
+    at r (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:70:9812)
+[    4443ms] Identifier 'TCRMEmbed' has already been declared
+[   86341ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/548134781_1781502265816811_2954724867400925786_n.jpg?ccb=11-4&oh=01_Q5Aa2wEwe2TkXmp4OI_CymB2ioQmFVHYSDW-YPpaHjNvb2U51g&oe=690DB3C8&_nc_sid=5e03e0&_nc_cat=108:0
+[  173149ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/548134781_1781502265816811_2954724867400925786_n.jpg?ccb=11-4&oh=01_Q5Aa2wEwe2TkXmp4OI_CymB2ioQmFVHYSDW-YPpaHjNvb2U51g&oe=690DB3C8&_nc_sid=5e03e0&_nc_cat=108:0
+[  176355ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/548134781_1781502265816811_2954724867400925786_n.jpg?ccb=11-4&oh=01_Q5Aa2wEwe2TkXmp4OI_CymB2ioQmFVHYSDW-YPpaHjNvb2U51g&oe=690DB3C8&_nc_sid=5e03e0&_nc_cat=108:0
+[  183024ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/548134781_1781502265816811_2954724867400925786_n.jpg?ccb=11-4&oh=01_Q5Aa2wEwe2TkXmp4OI_CymB2ioQmFVHYSDW-YPpaHjNvb2U51g&oe=690DB3C8&_nc_sid=5e03e0&_nc_cat=108:0
+[  379991ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/548134781_1781502265816811_2954724867400925786_n.jpg?ccb=11-4&oh=01_Q5Aa2wEwe2TkXmp4OI_CymB2ioQmFVHYSDW-YPpaHjNvb2U51g&oe=690DB3C8&_nc_sid=5e03e0&_nc_cat=108:0
+[  512087ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/548134781_1781502265816811_2954724867400925786_n.jpg?ccb=11-4&oh=01_Q5Aa2wEwe2TkXmp4OI_CymB2ioQmFVHYSDW-YPpaHjNvb2U51g&oe=690DB3C8&_nc_sid=5e03e0&_nc_cat=108:0
+[  528359ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/588862823_1397035361731443_5741298219543391191_n.jpg?ccb=11-4&oh=01_Q5Aa4AFLk8gRDri3aS0zT8PnI5fcE9N82f0aLqWSuBMl1fg1gA&oe=69CFA01D&_nc_sid=5e03e0&_nc_cat=102:0
+[  592678ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/548134781_1781502265816811_2954724867400925786_n.jpg?ccb=11-4&oh=01_Q5Aa2wEwe2TkXmp4OI_CymB2ioQmFVHYSDW-YPpaHjNvb2U51g&oe=690DB3C8&_nc_sid=5e03e0&_nc_cat=108:0
+[  601787ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:69
+[  611249ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:69
+[  754449ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1051:16904)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:43307)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:35923)
+    at Fre.cancel (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:40187)
+    at Fre.fetch (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:42135)
+    at https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:67148
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:67132
+    at Object.batch (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:34536)
+    at qre.refetchQueries (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:67057)
+    at https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:66882
+    at Object.batch (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:34536)
+    at qre.invalidateQueries (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:66756)
+    at d (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:2151:4825)
+    at xt.emit (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:17239)
+    at xt.handleEvent (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:26126)
+    at https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1049:16006
+    at en.emit (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:17239)
+    at message (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:34605)
+    at Er.emit (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:17239)
+    at message (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:23780)
+    at la.emit (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:17239)
+    at la.onMessage (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:18790)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:19011)
+    at y2.request (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1053:2234)
+    at async U0t (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1087:26108)
+    at async C (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:37954)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:38261) @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:69
+[  965876ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1051:16904)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:43307)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:35923)
+    at Fre.cancel (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:40187)
+    at Fre.fetch (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:42135)
+    at https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:67148
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:67132
+    at Object.batch (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:34536)
+    at qre.refetchQueries (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:67057)
+    at https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:66882
+    at Object.batch (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:34536)
+    at qre.invalidateQueries (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:66756)
+    at d (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:2151:4825)
+    at xt.emit (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:17239)
+    at xt.handleEvent (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:26126)
+    at https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1049:16006
+    at en.emit (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:17239)
+    at message (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:34605)
+    at Er.emit (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:17239)
+    at message (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:23780)
+    at la.emit (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:17239)
+    at la.onMessage (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:18790)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:19011)
+    at y2.request (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1053:2234)
+    at async U0t (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1087:26108)
+    at async C (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:37954)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:38261) @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:69
+[ 1162379ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1051:16904)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:43307)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:35923)
+    at Fre.cancel (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:40187)
+    at Fre.fetch (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:42135)
+    at https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:67148
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:67132
+    at Object.batch (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:34536)
+    at qre.refetchQueries (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:67057)
+    at https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:66882
+    at Object.batch (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:34536)
+    at qre.invalidateQueries (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:66756)
+    at d (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:2151:4825)
+    at xt.emit (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:17239)
+    at xt.handleEvent (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:26126)
+    at https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1049:16006
+    at en.emit (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:17239)
+    at message (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:34605)
+    at Er.emit (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:17239)
+    at message (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:23780)
+    at la.emit (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:17239)
+    at la.onMessage (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:18790)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1048:19011)
+    at y2.request (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1053:2234)
+    at async U0t (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1087:26108)
+    at async C (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:37954)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:38261) @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:69
+[ 1249798ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/554971020_1165313841608331_1481333387081206114_n.jpg?ccb=11-4&oh=01_Q5Aa3gHU7giAnKLUb2oQy9uuC5SQUUe0tJU4Fw6ZzT_IoceUEg&oe=6985C84A&_nc_sid=5e03e0&_nc_cat=102:0
+[ 1377715ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/f136ec8b-5edf-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 1387908ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/554971020_1165313841608331_1481333387081206114_n.jpg?ccb=11-4&oh=01_Q5Aa3gHU7giAnKLUb2oQy9uuC5SQUUe0tJU4Fw6ZzT_IoceUEg&oe=6985C84A&_nc_sid=5e03e0&_nc_cat=102:0
+[ 1671454ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/533104101_1273496750896849_7121037392936692900_n.jpg?ccb=11-4&oh=01_Q5Aa4gHB_0LV-fCqetjZpJKJ3TmAJZ_EZL46yWdCfykkzCI0-g&oe=6A1307C1&_nc_sid=5e03e0&_nc_cat=106:0
+[ 1676778ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/533104101_1273496750896849_7121037392936692900_n.jpg?ccb=11-4&oh=01_Q5Aa4gHB_0LV-fCqetjZpJKJ3TmAJZ_EZL46yWdCfykkzCI0-g&oe=6A1307C1&_nc_sid=5e03e0&_nc_cat=106:0
+[ 1727438ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/533104101_1273496750896849_7121037392936692900_n.jpg?ccb=11-4&oh=01_Q5Aa4gHB_0LV-fCqetjZpJKJ3TmAJZ_EZL46yWdCfykkzCI0-g&oe=6A1307C1&_nc_sid=5e03e0&_nc_cat=106:0
+[ 1814161ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/595305949_1269065788662797_8609307548434085416_n.jpg?ccb=11-4&oh=01_Q5Aa4QEIteV1pbOfXGcUK1_qT45ZeumzhQwQZ8FkRJsCWN0QZw&oe=6A075672&_nc_sid=5e03e0&_nc_cat=106:0
+[ 2020641ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/534414740_1540334427174272_5443251420667992905_n.jpg?ccb=11-4&oh=01_Q5Aa4QGAnWPCtadm22kBC8yQmw65qe4TW7ilchX4J0a-a3ChaQ&oe=69F78C23&_nc_sid=5e03e0&_nc_cat=110:0
+[ 2027734ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/534414740_1540334427174272_5443251420667992905_n.jpg?ccb=11-4&oh=01_Q5Aa4QGAnWPCtadm22kBC8yQmw65qe4TW7ilchX4J0a-a3ChaQ&oe=69F78C23&_nc_sid=5e03e0&_nc_cat=110:0

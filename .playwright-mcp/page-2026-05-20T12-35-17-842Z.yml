@@ -1,0 +1,43 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - img [ref=e7]
+      - navigation [ref=e8]:
+        - list
+        - list [ref=e9]:
+          - listitem
+          - listitem [ref=e10]:
+            - button [ref=e11] [cursor=pointer]:
+              - img [ref=e17]
+          - listitem [ref=e21]:
+            - button [ref=e22] [cursor=pointer]:
+              - img [ref=e23]
+          - listitem [ref=e25]:
+            - generic [ref=e27]: v3.5.327
+    - main [ref=e28]:
+      - generic [ref=e29]:
+        - button "✨ Nova Versão" [ref=e30] [cursor=pointer]:
+          - generic [ref=e31]: ✨ Nova Versão
+          - img [ref=e32]
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - button "Em atendimento" [ref=e38] [cursor=pointer]:
+              - generic [ref=e39]: Em atendimento
+              - img [ref=e40]
+            - generic [ref=e42]:
+              - button [ref=e43] [cursor=pointer]:
+                - img [ref=e44]
+              - button [ref=e48] [cursor=pointer]:
+                - img [ref=e49]
+          - generic [ref=e51]:
+            - generic [ref=e52]:
+              - textbox "Pesquisar" [ref=e53]
+              - button [ref=e54] [cursor=pointer]:
+                - img [ref=e55]
+            - button "Ordenação das conversas" [ref=e58] [cursor=pointer]:
+              - img [ref=e59]
+      - generic [ref=e184]:
+        - img "Logo" [ref=e185]
+        - heading "Bem-vindo!" [level=1] [ref=e186]
+  - region "Notifications (F8)":
+    - list

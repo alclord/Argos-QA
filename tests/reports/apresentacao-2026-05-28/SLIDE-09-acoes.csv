@@ -1,0 +1,11 @@
+﻿Prioridade;Ação;Módulo;Prazo;Consequência se ignorar
+P0 — HOJE;Executar testes de DEV4-4078 (fix de status de mensagem) antes do merge;Chat / Mensagens;Hoje;Deploy cria falsa sensação de resolução — bug persiste em produção
+P0 — HOJE;Investigar erro OMNISPA-2QCV (TypeError plugin) — correlacionar com PR1493 de ontem;Nova Interface;Hoje;Erro escalando — pode impactar todos os usuários do omnispa
+P0 — HOJE;Criar card corretivo Highest para SM-3211 (operador vê chats alheios — 57 dias);Permissões / Roles;Hoje;Risco legal e de compliance crescente
+P1 — ESTA SEMANA;Bloquear merge de DEV4-4229 (agendamentos) até DEV4-4078 estável 48h;Chat / Mensagens;Esta semana;Regressão silenciosa na camada de mensagens
+P1 — ESTA SEMANA;Bloquear DEV4-4166 (Nova Estrutura de Páginas) até spike 404 omnispa;Nova Interface;Esta semana;Reorganizar rotas com 404 crônico amplifica o problema
+P1 — ESTA SEMANA;Sprint de bugs de Distribuição: SM-5918 + SM-5911 + SM-5716;Distribuição / Filas;Esta semana;86 dias sem fix — crescimento diário de novos N1
+P1 — ESTA SEMANA;Smoke test de canais após PR1123 (fix DistributeChatAction mesclado ontem);Distribuição / Canais;Esta semana;Correção pode ter introduzido regressão sem detecção
+P1 — ESTA SEMANA;Criar card corretivo para SM-5831 (ACK 0 @lid) antes dos cards BSUID entrarem;Canais;Esta semana;Mudança de identidade BSUID pode amplificar o bug de @lid
+P2 — PRÓX. SPRINT;Criar corretivo para SM-2091 (PDF não envia — 85 dias) + SM-7503 (PDF hoje);Upload / Mídia;Próx. sprint;Bug crônico crescendo com novos N1 diários
+P2 — PRÓX. SPRINT;Bloquear DEV4-4003 (Tela de Gestão) até 3 bugs N2 de Distribuição com fix ativo;Distribuição / Filas;Próx. sprint;Feature construída sobre motor de distribuição quebrado

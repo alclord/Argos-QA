@@ -1,0 +1,9 @@
+﻿Módulo;Nível de Risco;Score Total;Score Técnico;Score Usuários;Tendência;Bugs N1 Abertos;Cards em Dev Ativo;Churn (linhas);Autores Únicos (churn);Coeficiente Cross-Serviço;Deploy Freq (merges);PRs Precipitados;Bugs Reabertos;Tempo Médio Resolução (dias);Falha Env-Específica;Sentry Δ Semana (%);Delta vs Ontem;Pressão Clientes;Atenção Dev;Zona Calor
+Chat / Mensagens;ALTO;41;15;26;↗️ crescendo;7;1;alto (SPA+polichat);múltiplos;1.3;17;0;0;;Sim;+211500%;-28;26;0;Negligenciada
+Distribuição / Filas;ALTO;28;9;19;→ estável;6;0;0;;1.5;0;0;0;;Não;+549%;-24;19;0;Negligenciada
+Canais / WhatsApp;MÉDIO;18;9;9;→ estável;2;2;estimado;múltiplos;1.3;12;0;0;;Não;+17%;-15;9;2;Negligenciada
+Contatos / Busca;MÉDIO;10;4;6;→ estável;2;0;;;1.3;12;0;0;;Não;→;-3;6;0;Negligenciada
+WebSocket / Presença;MÉDIO;8;6;2;→ estável;0;0;;;1.0;0;0;0;;Não;+100% (new);-4;2;0;Balanceada
+Integrações Externas;MÉDIO;6;4;2;↘️ melhorando;0;0;;;1.0;0;0;0;;Não;-18%;-3;2;0;Balanceada
+Jarvis / IA;ATENÇÃO;4;4;0;→ estável;0;0;;;1.0;0;0;0;;Não;→;-4;0;0;Balanceada
+Upload / Mídia;ATENÇÃO;5;3;2;→ estável;0;1;;;1.0;0;0;0;;Não;+100% (new);-5;2;1;Balanceada

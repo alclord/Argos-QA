@@ -1,0 +1,68 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link [ref=e6] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Página Inicial" [ref=e10] [cursor=pointer]:
+              - /url: https://homolog.qa.poli.digital/home
+              - generic [ref=e11]:
+                - img [ref=e12]
+                - generic: Página Inicial
+          - listitem [ref=e14]:
+            - link "Chat" [ref=e15] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/chat
+              - generic [ref=e16]:
+                - img [ref=e17]
+                - generic: Chat
+          - listitem [ref=e19]:
+            - link "Marketing" [ref=e20] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/marketing
+              - generic [ref=e21]:
+                - img [ref=e22]
+                - generic: Marketing
+          - listitem [ref=e24]:
+            - link "Relatórios" [ref=e25] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/relatorio
+              - generic [ref=e26]:
+                - img [ref=e27]
+                - generic: Relatórios
+        - generic [ref=e29]:
+          - listitem [ref=e30]:
+            - link "Notificação" [ref=e31] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e32]:
+                - img [ref=e33]
+                - generic: Notificação
+          - listitem [ref=e35]:
+            - link "Suporte" [ref=e36] [cursor=pointer]:
+              - /url: https://polichat.com.br/central-de-conhecimento/
+              - generic [ref=e37]:
+                - img [ref=e38]
+                - generic: Suporte
+          - listitem [ref=e41]:
+            - generic [ref=e44]:
+              - img "Yuri Alcantara Supervisor" [ref=e46]
+              - generic: Yuri Alcantara
+          - listitem [ref=e48]:
+            - link " Recolher Menu" [ref=e49] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e50]:
+                - generic [ref=e51]: 
+                - generic: Recolher Menu
+          - listitem [ref=e52]:
+            - generic "versão" [ref=e53]:
+              - paragraph [ref=e55]: v2.18.470
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - heading "403" [level=2] [ref=e58]
+        - heading "Access Forbidden" [level=3] [ref=e60]: Access Forbidden
+      - text:   
+  - text: 
+  - link "Suporte" [ref=e62] [cursor=pointer]:
+    - /url: https://api.whatsapp.com/send?phone=556282361759
+    - text: Suporte
+    - img [ref=e63]

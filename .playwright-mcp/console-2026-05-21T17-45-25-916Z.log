@@ -1,0 +1,21 @@
+[     186ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/user/presence:0
+[    2167ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/user/presence:0
+[    3384ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:891:429
+    at UR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:893:31)
+    at Nd.TR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+[   25380ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/user/presence:0
+[   25739ms] [ERROR] Amplitude Logger [Error]: Failed to fetch @ https://cdn.amplitude.com/libs/analytics-browser-gtm-2.33.4-min.js.gz:0
+[   25741ms] [WARNING] Amplitude Logger [Warn]: {code: 0, error: "Status 'failed' provided for 2 events"} @ https://cdn.amplitude.com/libs/analytics-browser-gtm-2.33.4-min.js.gz:0
+[   26037ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/logout:0
+[   26173ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1
+[   26325ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/logout:0
+[   26327ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/logout:0
+[   27451ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app-spa.qa.poli.digital/login:0

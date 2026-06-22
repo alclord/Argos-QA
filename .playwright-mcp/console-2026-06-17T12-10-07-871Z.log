@@ -1,0 +1,81 @@
+[     935ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:101
+[     935ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:101
+[     998ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:76
+[    1270ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:903:429
+    at aS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:905:31)
+    at Od.$R (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:902:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:317:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:263:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at k.Uq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:274:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:728:315
+    at Mz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:631:1)
+    at Tz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:636:289)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:656:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:206:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:657:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:657:100)
+    at qB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:657:742)
+    at tB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:661:183)
+    at DD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:705:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:709:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e66f1:687:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:864:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e66f1:549:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:709:457
+    at r (https://spa-canary.poli.digital/assets/index-DjxF6uES.js:70:9827)
+[    1442ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1580ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/tags/metrics:0
+[    1746ms] [LOG] i18next::translator: missingKey pt tags delete.title delete.title @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1747ms] [LOG] i18next::translator: missingKey pt tags delete.confirm delete.confirm @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1748ms] [LOG] i18next::translator: missingKey pt tags delete.cancel delete.cancel @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1752ms] [LOG] i18next::translator: missingKey pt tags delete.title delete.title @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1753ms] [LOG] i18next::translator: missingKey pt tags delete.confirm delete.confirm @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1753ms] [LOG] i18next::translator: missingKey pt tags delete.cancel delete.cancel @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1787ms] [LOG] i18next::translator: missingKey pt tags delete.title delete.title @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1788ms] [LOG] i18next::translator: missingKey pt tags delete.confirm delete.confirm @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1789ms] [LOG] i18next::translator: missingKey pt tags delete.cancel delete.cancel @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1794ms] [LOG] i18next::translator: missingKey pt tags delete.title delete.title @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1795ms] [LOG] i18next::translator: missingKey pt tags delete.confirm delete.confirm @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1795ms] [LOG] i18next::translator: missingKey pt tags delete.cancel delete.cancel @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1799ms] [LOG] i18next::translator: missingKey pt tags delete.title delete.title @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1800ms] [LOG] i18next::translator: missingKey pt tags delete.confirm delete.confirm @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1800ms] [LOG] i18next::translator: missingKey pt tags delete.cancel delete.cancel @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1804ms] [LOG] i18next::translator: missingKey pt tags delete.title delete.title @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1804ms] [LOG] i18next::translator: missingKey pt tags delete.confirm delete.confirm @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1804ms] [LOG] i18next::translator: missingKey pt tags delete.cancel delete.cancel @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1807ms] [LOG] i18next::translator: missingKey pt tags delete.title delete.title @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1807ms] [LOG] i18next::translator: missingKey pt tags delete.confirm delete.confirm @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1808ms] [LOG] i18next::translator: missingKey pt tags delete.cancel delete.cancel @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1813ms] [LOG] i18next::translator: missingKey pt tags delete.title delete.title @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1813ms] [LOG] i18next::translator: missingKey pt tags delete.confirm delete.confirm @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1813ms] [LOG] i18next::translator: missingKey pt tags delete.cancel delete.cancel @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1817ms] [LOG] i18next::translator: missingKey pt tags delete.title delete.title @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1817ms] [LOG] i18next::translator: missingKey pt tags delete.confirm delete.confirm @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1817ms] [LOG] i18next::translator: missingKey pt tags delete.cancel delete.cancel @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1821ms] [LOG] i18next::translator: missingKey pt tags delete.title delete.title @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1821ms] [LOG] i18next::translator: missingKey pt tags delete.confirm delete.confirm @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1821ms] [LOG] i18next::translator: missingKey pt tags delete.cancel delete.cancel @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1826ms] [LOG] i18next::translator: missingKey pt tags delete.title delete.title @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1827ms] [LOG] i18next::translator: missingKey pt tags delete.confirm delete.confirm @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1827ms] [LOG] i18next::translator: missingKey pt tags delete.cancel delete.cancel @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1831ms] [LOG] i18next::translator: missingKey pt tags delete.title delete.title @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1831ms] [LOG] i18next::translator: missingKey pt tags delete.confirm delete.confirm @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1831ms] [LOG] i18next::translator: missingKey pt tags delete.cancel delete.cancel @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1834ms] [LOG] i18next::translator: missingKey pt tags delete.title delete.title @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1835ms] [LOG] i18next::translator: missingKey pt tags delete.confirm delete.confirm @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1835ms] [LOG] i18next::translator: missingKey pt tags delete.cancel delete.cancel @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1838ms] [LOG] i18next::translator: missingKey pt tags delete.title delete.title @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1839ms] [LOG] i18next::translator: missingKey pt tags delete.confirm delete.confirm @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1839ms] [LOG] i18next::translator: missingKey pt tags delete.cancel delete.cancel @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1844ms] [LOG] i18next::translator: missingKey pt tags delete.title delete.title @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1845ms] [LOG] i18next::translator: missingKey pt tags delete.confirm delete.confirm @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1845ms] [LOG] i18next::translator: missingKey pt tags delete.cancel delete.cancel @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69

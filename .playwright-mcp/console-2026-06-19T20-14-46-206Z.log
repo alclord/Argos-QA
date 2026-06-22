@@ -1,0 +1,148 @@
+[    6209ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:101
+[    6212ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:101
+[    6445ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:76
+[    6983ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:908:429
+    at PR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:910:31)
+    at Nd.OR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:907:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:317:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:263:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at k.Tq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:274:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:734:315
+    at Rz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:637:1)
+    at Yz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:642:289)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:662:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:206:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:663:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:663:100)
+    at vB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:663:742)
+    at yB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:667:183)
+    at ID (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:711:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:715:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e66h0:692:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:869:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e66h0:553:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:715:457
+    at r (https://spa-canary.poli.digital/assets/index-ClphRREw.js:70:9827)
+[    7062ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[    7680ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[    7818ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/chats/pinned:0
+[    7829ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[    7830ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/non-payment/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[    7842ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/broadcasting/auth:0
+[    7845ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/users/settings/summary:0
+[    7846ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/settings:0
+[    7853ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/crm/index:0
+[    7854ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[    8079ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall-canary.poli.digital/auth/refresh-token:0
+[    8081ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at kBe (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1101:15780)
+    at w2.request (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1103:2243)
+    at async IMt (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1107:6861)
+    at async https://spa-canary.poli.digital/assets/index-ClphRREw.js:1107:8208
+    at async w2.request (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1103:2147)
+    at async FE.getPanelCredits (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1928:552) @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[    8082ms] [ERROR] AxiosError: Request failed with status code 401
+    at kBe (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1101:15780)
+    at w2.request (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1103:2243)
+    at async IMt (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1107:6861)
+    at async https://spa-canary.poli.digital/assets/index-ClphRREw.js:1107:8208
+    at async w2.request (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1103:2147)
+    at async FE.getPanelCredits (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1928:552) @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[    8086ms] [ERROR] [UserPreferencesService] Failed to get summary: Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-ClphRREw.js:1107:8175
+    at async w2.request (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1103:2147)
+    at async Vme.getSummary (https://spa-canary.poli.digital/assets/index-ClphRREw.js:2241:64448)
+    at async https://spa-canary.poli.digital/assets/index-ClphRREw.js:2241:65149 @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[    8086ms] [ERROR] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-ClphRREw.js:1107:8175
+    at async w2.request (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1103:2147)
+    at async f0n.getOverdueAccounts (https://spa-canary.poli.digital/assets/index-ClphRREw.js:2253:44732)
+    at async https://spa-canary.poli.digital/assets/index-ClphRREw.js:2579:5314 @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[    8087ms] [ERROR] [useUserPreferences] Error: Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-ClphRREw.js:1107:8175
+    at async w2.request (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1103:2147)
+    at async Vme.getSummary (https://spa-canary.poli.digital/assets/index-ClphRREw.js:2241:64448)
+    at async https://spa-canary.poli.digital/assets/index-ClphRREw.js:2241:65149 @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[    8087ms] [ERROR] getCrmUserToken - Error on get crm user token: Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-ClphRREw.js:1107:8175
+    at async w2.request (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1103:2147)
+    at async fz.getUserToken (https://spa-canary.poli.digital/assets/index-ClphRREw.js:2240:44294)
+    at async https://spa-canary.poli.digital/assets/index-ClphRREw.js:2240:44585 @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[    8088ms] [ERROR] error ao buscar chats Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-ClphRREw.js:1107:8175
+    at async w2.request (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1103:2147)
+    at async yDt (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1137:26220)
+    at async C (https://spa-canary.poli.digital/assets/index-ClphRREw.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-ClphRREw.js:54:38287) @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[    8307ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[    8508ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall-canary.poli.digital/auth/refresh-token:0
+[    8511ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at kBe (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1101:15780)
+    at w2.request (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1103:2243)
+    at async IMt (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1107:6861)
+    at async https://spa-canary.poli.digital/assets/index-ClphRREw.js:1107:8208
+    at async w2.request (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1103:2147)
+    at async FE.getPanelCredits (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1928:552) @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[    8512ms] [ERROR] AxiosError: Request failed with status code 401
+    at kBe (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1101:15780)
+    at w2.request (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1103:2243)
+    at async IMt (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1107:6861)
+    at async https://spa-canary.poli.digital/assets/index-ClphRREw.js:1107:8208
+    at async w2.request (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1103:2147)
+    at async FE.getPanelCredits (https://spa-canary.poli.digital/assets/index-ClphRREw.js:1928:552) @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[    8581ms] [INFO] WebSocket: Conexão finalizada @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[    9558ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:101
+[    9558ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:101
+[    9627ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:76
+[    9672ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[   10229ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[   31965ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[   56256ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:101
+[   56256ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:101
+[   56324ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:76
+[   56560ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:908:429
+    at PR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:910:31)
+    at Nd.OR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:907:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:317:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:263:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at k.Tq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:274:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:734:315
+    at Rz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:637:1)
+    at Yz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:642:289)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:662:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:206:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:663:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:663:100)
+    at vB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:663:742)
+    at yB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:667:183)
+    at ID (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:711:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:715:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e66h0:692:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:869:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e66h0:553:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:715:457
+    at r (https://spa-canary.poli.digital/assets/index-ClphRREw.js:70:9827)
+[   56801ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[   59184ms] Identifier 'TCRMEmbed' has already been declared

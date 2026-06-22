@@ -1,0 +1,14 @@
+issue_id,projeto,titulo,usuarios,delta_pct,status,data_inicio,modulo_mapeado
+100474,omnispa,AxiosError 401 Unauthorized,496,+100,ESCALATING,2026-06-05,Autenticação / Chat
+100483,omnispa,Uncompressed Asset detected,629,+100,NEW,2026-06-05,Chat / Mensagens
+100502,omnispa,Network Error (axios),24,+100,NEW,2026-06-06,Chat / Mensagens
+100501,omnispa,Network Error (fetch),23,+100,NEW,2026-06-06,Chat / Mensagens
+100470,omnispa,AxiosError 404 Not Found,19,+100,NEW,2026-06-05,Chat / Mensagens
+100397,foundationapi,InvalidArgumentException SQS event-bus-sqs,0,+100,NEW,2026-06-05,WebSocket / Presença
+100543,foundationapi,CRMException Triction error,0,+100,NEW,2026-06-06,Integrações Externas
+100542,foundationapi,CRMException client data error,0,+100,NEW,2026-06-06,Integrações Externas
+92509,polichat-web-app,CRM error type A,0,+100,NEW,2026-06-07,Integrações Externas
+92508,polichat-web-app,CRM error type B,0,+100,NEW,2026-06-07,Integrações Externas
+67507,polichat-spa,AxiosError 401 Unauthorized,863,-31,CRÔNICO,2026-05-01,Autenticação
+67500,polichat-spa,Encoder plugin conflict,1312,+15,CRÔNICO,2026-05-01,Chat / Mensagens
+11,dispatch,Chat created without ID,0,-14,CRÔNICO,2025-11-01,Distribuição / Filas

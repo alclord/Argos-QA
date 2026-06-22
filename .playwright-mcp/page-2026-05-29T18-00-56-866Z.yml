@@ -1,0 +1,474 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - img [ref=e7]
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link [ref=e11] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=0a0ba61c92d3935790b047f949b0e9d1e92b90d7&toPath=https://app.poli.digital/home
+              - img [ref=e13]
+          - listitem [ref=e16]:
+            - link [ref=e17] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e19]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=0a0ba61c92d3935790b047f949b0e9d1e92b90d7&toPath=https://app.poli.digital/settings/46667/chatbot
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e30]
+          - listitem [ref=e32]:
+            - link [ref=e33] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=0a0ba61c92d3935790b047f949b0e9d1e92b90d7&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e35]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=0a0ba61c92d3935790b047f949b0e9d1e92b90d7&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e41]
+          - listitem [ref=e43]:
+            - link [ref=e44] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=0a0ba61c92d3935790b047f949b0e9d1e92b90d7&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e46]
+          - listitem [ref=e49]:
+            - link [ref=e50] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=0a0ba61c92d3935790b047f949b0e9d1e92b90d7&toPath=https://app.poli.digital/settings/46667
+              - img [ref=e52]
+          - listitem [ref=e55]:
+            - link [ref=e56] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e58]
+          - listitem [ref=e62]:
+            - link [ref=e63] [cursor=pointer]:
+              - /url: /templates
+              - img [ref=e65]
+        - list [ref=e68]:
+          - listitem [ref=e69]:
+            - button "Consumo de créditos" [ref=e70] [cursor=pointer]:
+              - img [ref=e71]
+          - listitem [ref=e74]:
+            - button "YA" [ref=e75] [cursor=pointer]:
+              - generic [ref=e80]: YA
+          - listitem [ref=e82]:
+            - button [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+          - listitem [ref=e86]:
+            - generic [ref=e88]: 3.5.334
+    - main [ref=e89]:
+      - generic [ref=e220]:
+        - navigation "breadcrumb" [ref=e222]:
+          - link "Página inicial" [ref=e224] [cursor=pointer]:
+            - /url: /
+          - img [ref=e225]
+          - generic [ref=e227]: Templates
+        - generic [ref=e229]:
+          - generic [ref=e230]:
+            - generic [ref=e231]:
+              - generic [ref=e232]:
+                - textbox "Buscar templates" [ref=e233]
+                - button [ref=e234] [cursor=pointer]:
+                  - img [ref=e235]
+              - combobox "Status" [ref=e239] [cursor=pointer]:
+                - generic: Todos os Status
+                - img [ref=e240]
+              - combobox "Categoria" [ref=e243] [cursor=pointer]:
+                - generic: Todas as Categorias
+                - img [ref=e244]
+              - combobox "Tipo" [ref=e247] [cursor=pointer]:
+                - generic: Todos os Tipos
+                - img [ref=e248]
+              - combobox "Canal" [disabled] [ref=e251]:
+                - generic: Todos os Canais
+                - img [ref=e252]
+            - link "Criar template" [ref=e254] [cursor=pointer]:
+              - /url: /templates/new
+              - img [ref=e255]
+              - text: Criar template
+          - generic [ref=e256]:
+            - table [ref=e260]:
+              - rowgroup [ref=e261]:
+                - row "Selecionar todos da página Nome Conteúdo Categoria Idioma Canal Status Criado em Ações" [ref=e262]:
+                  - columnheader "Selecionar todos da página" [ref=e263]:
+                    - checkbox "Selecionar todos da página" [ref=e265] [cursor=pointer]
+                  - columnheader "Nome" [ref=e266]:
+                    - button "Nome" [ref=e267] [cursor=pointer]:
+                      - text: Nome
+                      - img [ref=e268]
+                  - columnheader "Conteúdo" [ref=e271]
+                  - columnheader "Categoria" [ref=e272]
+                  - columnheader "Idioma" [ref=e273]
+                  - columnheader "Canal" [ref=e274]
+                  - columnheader "Status" [ref=e275]
+                  - columnheader "Criado em" [ref=e276]:
+                    - button "Criado em" [ref=e277] [cursor=pointer]:
+                      - text: Criado em
+                      - img [ref=e278]
+                  - columnheader "Ações" [ref=e281]
+              - rowgroup [ref=e282]:
+                - 'row "Selecionar item a1e5a999-499a-4411-bb62-eb78307fc499 argos_qa_reteste_4170 Olá {{1}}, este é um template de reteste criado pelo Argos QA. Ref: DEV4-4170. — pt_BR — Em análise 29 de mai. de 2026 Editar Excluir" [ref=e283]':
+                  - cell "Selecionar item a1e5a999-499a-4411-bb62-eb78307fc499" [ref=e284]:
+                    - generic [ref=e285]:
+                      - checkbox "Selecionar item a1e5a999-499a-4411-bb62-eb78307fc499"
+                  - cell "argos_qa_reteste_4170" [ref=e286]:
+                    - link "argos_qa_reteste_4170" [ref=e287] [cursor=pointer]:
+                      - /url: /templates/a1e5a999-499a-4411-bb62-eb78307fc499/edit
+                  - 'cell "Olá {{1}}, este é um template de reteste criado pelo Argos QA. Ref: DEV4-4170." [ref=e288]':
+                    - generic [ref=e289]: "Olá {{1}}, este é um template de reteste criado pelo Argos QA. Ref: DEV4-4170."
+                  - cell "—" [ref=e290]
+                  - cell "pt_BR" [ref=e291]
+                  - cell "—" [ref=e292]
+                  - cell "Em análise" [ref=e293]:
+                    - generic [ref=e294]: Em análise
+                  - cell "29 de mai. de 2026" [ref=e295]
+                  - cell "Editar Excluir" [ref=e296]:
+                    - generic [ref=e297]:
+                      - link "Editar" [ref=e298] [cursor=pointer]:
+                        - /url: /templates/a1e5a999-499a-4411-bb62-eb78307fc499/edit
+                        - img [ref=e299]
+                      - button "Excluir" [ref=e302] [cursor=pointer]:
+                        - img [ref=e303]
+                - row "Selecionar item a1dd8dfd-15d0-4165-af1d-2684580d9f47 teste_flow_kellen Hello, esse é um template do tipo flow para teste Marketing pt_BR WABA 9284 Aprovado 21 de mai. de 2026 Editar Excluir" [ref=e306]:
+                  - cell "Selecionar item a1dd8dfd-15d0-4165-af1d-2684580d9f47" [ref=e307]:
+                    - generic [ref=e308]:
+                      - checkbox "Selecionar item a1dd8dfd-15d0-4165-af1d-2684580d9f47"
+                  - cell "teste_flow_kellen" [ref=e309]:
+                    - link "teste_flow_kellen" [ref=e310] [cursor=pointer]:
+                      - /url: /templates/a1dd8dfd-15d0-4165-af1d-2684580d9f47/edit
+                  - cell "Hello, esse é um template do tipo flow para teste" [ref=e311]:
+                    - generic [ref=e312]: Hello, esse é um template do tipo flow para teste
+                  - cell "Marketing" [ref=e313]:
+                    - generic [ref=e314]: Marketing
+                  - cell "pt_BR" [ref=e315]
+                  - cell "WABA 9284" [ref=e316]
+                  - cell "Aprovado" [ref=e317]:
+                    - generic [ref=e318]: Aprovado
+                  - cell "21 de mai. de 2026" [ref=e319]
+                  - cell "Editar Excluir" [ref=e320]:
+                    - generic [ref=e321]:
+                      - link "Editar" [ref=e322] [cursor=pointer]:
+                        - /url: /templates/a1dd8dfd-15d0-4165-af1d-2684580d9f47/edit
+                        - img [ref=e323]
+                      - button "Excluir" [ref=e326] [cursor=pointer]:
+                        - img [ref=e327]
+                - 'row "Selecionar item a1c31425-7217-4cea-80f3-863e0f3d38b7 #novotestatemplate Olá, [contact_name]. Foi identificado um débito de IPVA vinculado ao veículo [contact_email] , inscrito em Dívida Ativa. Para facilitar a regularização, o programa Quita Goiás oferece condições especiais de negociação, com descontos que podem chegar a até 99% sobre encargos da dívida. A consulta e regularização podem ser feitas de forma online pelo portal oficial abaixo. 👇 Acesse e consulte suas condições: Marketing pt_BR WABA 1102 New nome grande bla bla etc okok Aprovado 3 de mai. de 2026 Editar Excluir" [ref=e330]':
+                  - cell "Selecionar item a1c31425-7217-4cea-80f3-863e0f3d38b7" [ref=e331]:
+                    - generic [ref=e332]:
+                      - checkbox "Selecionar item a1c31425-7217-4cea-80f3-863e0f3d38b7"
+                  - cell "#novotestatemplate" [ref=e333]:
+                    - link "#novotestatemplate" [ref=e334] [cursor=pointer]:
+                      - /url: /templates/a1c31425-7217-4cea-80f3-863e0f3d38b7/edit
+                  - cell "Olá, [contact_name]. Foi identificado um débito de IPVA vinculado ao veículo [contact_email] , inscrito em Dívida Ativa. Para facilitar a regularização, o programa Quita Goiás oferece condições especiais de negociação, com descontos que podem chegar a até 99% sobre encargos da dívida. A consulta e regularização podem ser feitas de forma online pelo portal oficial abaixo. 👇 Acesse e consulte suas condições:" [ref=e335]:
+                    - generic [ref=e336]: "Olá, [contact_name]. Foi identificado um débito de IPVA vinculado ao veículo [contact_email] , inscrito em Dívida Ativa. Para facilitar a regularização, o programa Quita Goiás oferece condições especiais de negociação, com descontos que podem chegar a até 99% sobre encargos da dívida. A consulta e regularização podem ser feitas de forma online pelo portal oficial abaixo. 👇 Acesse e consulte suas condições:"
+                  - cell "Marketing" [ref=e337]:
+                    - generic [ref=e338]: Marketing
+                  - cell "pt_BR" [ref=e339]
+                  - cell "WABA 1102 New nome grande bla bla etc okok" [ref=e340]
+                  - cell "Aprovado" [ref=e341]:
+                    - generic [ref=e342]: Aprovado
+                  - cell "3 de mai. de 2026" [ref=e343]
+                  - cell "Editar Excluir" [ref=e344]:
+                    - generic [ref=e345]:
+                      - link "Editar" [ref=e346] [cursor=pointer]:
+                        - /url: /templates/a1c31425-7217-4cea-80f3-863e0f3d38b7/edit
+                        - img [ref=e347]
+                      - button "Excluir" [ref=e350] [cursor=pointer]:
+                        - img [ref=e351]
+                - 'row "Selecionar item a1b7ac9b-00ab-4a4c-9e3b-c4e4959b47d0 #testarcorrigido Olá, [contact_name]. Foi identificado um débito de IPVA vinculado ao veículo [contact_email] , inscrito em Dívida Ativa. Para facilitar a regularização, o programa Quita Goiás oferece condições especiais de negociação, com descontos que podem chegar a até 99% sobre encargos da dívida. A consulta e regularização podem ser feitas de forma online pelo portal oficial abaixo. 👇 Acesse e consulte suas condições: Marketing pt_BR WABA 9284 Aprovado 3 de mai. de 2026 Editar Excluir" [ref=e354]':
+                  - cell "Selecionar item a1b7ac9b-00ab-4a4c-9e3b-c4e4959b47d0" [ref=e355]:
+                    - generic [ref=e356]:
+                      - checkbox "Selecionar item a1b7ac9b-00ab-4a4c-9e3b-c4e4959b47d0"
+                  - cell "#testarcorrigido" [ref=e357]:
+                    - link "#testarcorrigido" [ref=e358] [cursor=pointer]:
+                      - /url: /templates/a1b7ac9b-00ab-4a4c-9e3b-c4e4959b47d0/edit
+                  - cell "Olá, [contact_name]. Foi identificado um débito de IPVA vinculado ao veículo [contact_email] , inscrito em Dívida Ativa. Para facilitar a regularização, o programa Quita Goiás oferece condições especiais de negociação, com descontos que podem chegar a até 99% sobre encargos da dívida. A consulta e regularização podem ser feitas de forma online pelo portal oficial abaixo. 👇 Acesse e consulte suas condições:" [ref=e359]:
+                    - generic [ref=e360]: "Olá, [contact_name]. Foi identificado um débito de IPVA vinculado ao veículo [contact_email] , inscrito em Dívida Ativa. Para facilitar a regularização, o programa Quita Goiás oferece condições especiais de negociação, com descontos que podem chegar a até 99% sobre encargos da dívida. A consulta e regularização podem ser feitas de forma online pelo portal oficial abaixo. 👇 Acesse e consulte suas condições:"
+                  - cell "Marketing" [ref=e361]:
+                    - generic [ref=e362]: Marketing
+                  - cell "pt_BR" [ref=e363]
+                  - cell "WABA 9284" [ref=e364]
+                  - cell "Aprovado" [ref=e365]:
+                    - generic [ref=e366]: Aprovado
+                  - cell "3 de mai. de 2026" [ref=e367]
+                  - cell "Editar Excluir" [ref=e368]:
+                    - generic [ref=e369]:
+                      - link "Editar" [ref=e370] [cursor=pointer]:
+                        - /url: /templates/a1b7ac9b-00ab-4a4c-9e3b-c4e4959b47d0/edit
+                        - img [ref=e371]
+                      - button "Excluir" [ref=e374] [cursor=pointer]:
+                        - img [ref=e375]
+                - 'row "Selecionar item a1b7ac9a-ff78-486c-84d8-3bae33283094 #novotestar Olá, [contact_name]. Foi identificado um débito de IPVA vinculado ao veículo [contact_email] , inscrito em Dívida Ativa (processo nº [cpf]). Para facilitar a regularização, o programa Quita Goiás oferece condições especiais de negociação, com descontos que podem chegar a até 99% sobre encargos da dívida. A consulta e regularização podem ser feitas de forma online pelo portal oficial abaixo. 👇 Acesse e consulte suas condições: Marketing pt_BR WABA 9284 Aprovado 3 de mai. de 2026 Editar Excluir" [ref=e378]':
+                  - cell "Selecionar item a1b7ac9a-ff78-486c-84d8-3bae33283094" [ref=e379]:
+                    - generic [ref=e380]:
+                      - checkbox "Selecionar item a1b7ac9a-ff78-486c-84d8-3bae33283094"
+                  - cell "#novotestar" [ref=e381]:
+                    - link "#novotestar" [ref=e382] [cursor=pointer]:
+                      - /url: /templates/a1b7ac9a-ff78-486c-84d8-3bae33283094/edit
+                  - cell "Olá, [contact_name]. Foi identificado um débito de IPVA vinculado ao veículo [contact_email] , inscrito em Dívida Ativa (processo nº [cpf]). Para facilitar a regularização, o programa Quita Goiás oferece condições especiais de negociação, com descontos que podem chegar a até 99% sobre encargos da dívida. A consulta e regularização podem ser feitas de forma online pelo portal oficial abaixo. 👇 Acesse e consulte suas condições:" [ref=e383]:
+                    - generic [ref=e384]: "Olá, [contact_name]. Foi identificado um débito de IPVA vinculado ao veículo [contact_email] , inscrito em Dívida Ativa (processo nº [cpf]). Para facilitar a regularização, o programa Quita Goiás oferece condições especiais de negociação, com descontos que podem chegar a até 99% sobre encargos da dívida. A consulta e regularização podem ser feitas de forma online pelo portal oficial abaixo. 👇 Acesse e consulte suas condições:"
+                  - cell "Marketing" [ref=e385]:
+                    - generic [ref=e386]: Marketing
+                  - cell "pt_BR" [ref=e387]
+                  - cell "WABA 9284" [ref=e388]
+                  - cell "Aprovado" [ref=e389]:
+                    - generic [ref=e390]: Aprovado
+                  - cell "3 de mai. de 2026" [ref=e391]
+                  - cell "Editar Excluir" [ref=e392]:
+                    - generic [ref=e393]:
+                      - link "Editar" [ref=e394] [cursor=pointer]:
+                        - /url: /templates/a1b7ac9a-ff78-486c-84d8-3bae33283094/edit
+                        - img [ref=e395]
+                      - button "Excluir" [ref=e398] [cursor=pointer]:
+                        - img [ref=e399]
+                - row "Selecionar item a1c39ea1-1383-461b-9fa7-1a16e6833a76 polichat_quick_message_186 Bom dia! Como posso ajudar? Marketing pt_BR WABA 1102 New nome grande bla bla etc okok Aprovado 3 de mai. de 2026 Editar Excluir" [ref=e402]:
+                  - cell "Selecionar item a1c39ea1-1383-461b-9fa7-1a16e6833a76" [ref=e403]:
+                    - generic [ref=e404]:
+                      - checkbox "Selecionar item a1c39ea1-1383-461b-9fa7-1a16e6833a76"
+                  - cell "polichat_quick_message_186" [ref=e405]:
+                    - link "polichat_quick_message_186" [ref=e406] [cursor=pointer]:
+                      - /url: /templates/a1c39ea1-1383-461b-9fa7-1a16e6833a76/edit
+                  - cell "Bom dia! Como posso ajudar?" [ref=e407]:
+                    - generic [ref=e408]: Bom dia! Como posso ajudar?
+                  - cell "Marketing" [ref=e409]:
+                    - generic [ref=e410]: Marketing
+                  - cell "pt_BR" [ref=e411]
+                  - cell "WABA 1102 New nome grande bla bla etc okok" [ref=e412]
+                  - cell "Aprovado" [ref=e413]:
+                    - generic [ref=e414]: Aprovado
+                  - cell "3 de mai. de 2026" [ref=e415]
+                  - cell "Editar Excluir" [ref=e416]:
+                    - generic [ref=e417]:
+                      - link "Editar" [ref=e418] [cursor=pointer]:
+                        - /url: /templates/a1c39ea1-1383-461b-9fa7-1a16e6833a76/edit
+                        - img [ref=e419]
+                      - button "Excluir" [ref=e422] [cursor=pointer]:
+                        - img [ref=e423]
+                - 'row "Selecionar item a1c39ea1-1fa9-4210-bfb1-9ee7e1004cdb utility Olá {{1}}, seu pedido foi entregue com sucesso em {{2}}. Obrigada pela compra. Utility pt_BR WABA 1102 New nome grande bla bla etc okok Aprovado 3 de mai. de 2026 Editar Excluir" [ref=e426]':
+                  - cell "Selecionar item a1c39ea1-1fa9-4210-bfb1-9ee7e1004cdb" [ref=e427]:
+                    - generic [ref=e428]:
+                      - checkbox "Selecionar item a1c39ea1-1fa9-4210-bfb1-9ee7e1004cdb"
+                  - cell "utility" [ref=e429]:
+                    - link "utility" [ref=e430] [cursor=pointer]:
+                      - /url: /templates/a1c39ea1-1fa9-4210-bfb1-9ee7e1004cdb/edit
+                  - 'cell "Olá {{1}}, seu pedido foi entregue com sucesso em {{2}}. Obrigada pela compra." [ref=e431]':
+                    - generic [ref=e432]: "Olá {{1}}, seu pedido foi entregue com sucesso em {{2}}. Obrigada pela compra."
+                  - cell "Utility" [ref=e433]:
+                    - generic [ref=e434]: Utility
+                  - cell "pt_BR" [ref=e435]
+                  - cell "WABA 1102 New nome grande bla bla etc okok" [ref=e436]
+                  - cell "Aprovado" [ref=e437]:
+                    - generic [ref=e438]: Aprovado
+                  - cell "3 de mai. de 2026" [ref=e439]
+                  - cell "Editar Excluir" [ref=e440]:
+                    - generic [ref=e441]:
+                      - link "Editar" [ref=e442] [cursor=pointer]:
+                        - /url: /templates/a1c39ea1-1fa9-4210-bfb1-9ee7e1004cdb/edit
+                        - img [ref=e443]
+                      - button "Excluir" [ref=e446] [cursor=pointer]:
+                        - img [ref=e447]
+                - 'row "Selecionar item a1c39ea1-14e8-4f72-a551-9dd245d0f08e polichat_quick_message_187 Olá {{1}}, seu pedido foi entregue com sucesso em {{2}} Obrigada pela compra. Utility pt_BR WABA 1102 New nome grande bla bla etc okok Aprovado 3 de mai. de 2026 Editar Excluir" [ref=e450]':
+                  - cell "Selecionar item a1c39ea1-14e8-4f72-a551-9dd245d0f08e" [ref=e451]:
+                    - generic [ref=e452]:
+                      - checkbox "Selecionar item a1c39ea1-14e8-4f72-a551-9dd245d0f08e"
+                  - cell "polichat_quick_message_187" [ref=e453]:
+                    - link "polichat_quick_message_187" [ref=e454] [cursor=pointer]:
+                      - /url: /templates/a1c39ea1-14e8-4f72-a551-9dd245d0f08e/edit
+                  - 'cell "Olá {{1}}, seu pedido foi entregue com sucesso em {{2}} Obrigada pela compra." [ref=e455]':
+                    - generic [ref=e456]: "Olá {{1}}, seu pedido foi entregue com sucesso em {{2}} Obrigada pela compra."
+                  - cell "Utility" [ref=e457]:
+                    - generic [ref=e458]: Utility
+                  - cell "pt_BR" [ref=e459]
+                  - cell "WABA 1102 New nome grande bla bla etc okok" [ref=e460]
+                  - cell "Aprovado" [ref=e461]:
+                    - generic [ref=e462]: Aprovado
+                  - cell "3 de mai. de 2026" [ref=e463]
+                  - cell "Editar Excluir" [ref=e464]:
+                    - generic [ref=e465]:
+                      - link "Editar" [ref=e466] [cursor=pointer]:
+                        - /url: /templates/a1c39ea1-14e8-4f72-a551-9dd245d0f08e/edit
+                        - img [ref=e467]
+                      - button "Excluir" [ref=e470] [cursor=pointer]:
+                        - img [ref=e471]
+                - row "Selecionar item a1c39ea1-1662-48f1-a7a3-10af8283979a polichat_quick_message_188 Bom dia Marketing pt_BR WABA 1102 New nome grande bla bla etc okok Aprovado 3 de mai. de 2026 Editar Excluir" [ref=e474]:
+                  - cell "Selecionar item a1c39ea1-1662-48f1-a7a3-10af8283979a" [ref=e475]:
+                    - generic [ref=e476]:
+                      - checkbox "Selecionar item a1c39ea1-1662-48f1-a7a3-10af8283979a"
+                  - cell "polichat_quick_message_188" [ref=e477]:
+                    - link "polichat_quick_message_188" [ref=e478] [cursor=pointer]:
+                      - /url: /templates/a1c39ea1-1662-48f1-a7a3-10af8283979a/edit
+                  - cell "Bom dia" [ref=e479]:
+                    - generic [ref=e480]: Bom dia
+                  - cell "Marketing" [ref=e481]:
+                    - generic [ref=e482]: Marketing
+                  - cell "pt_BR" [ref=e483]
+                  - cell "WABA 1102 New nome grande bla bla etc okok" [ref=e484]
+                  - cell "Aprovado" [ref=e485]:
+                    - generic [ref=e486]: Aprovado
+                  - cell "3 de mai. de 2026" [ref=e487]
+                  - cell "Editar Excluir" [ref=e488]:
+                    - generic [ref=e489]:
+                      - link "Editar" [ref=e490] [cursor=pointer]:
+                        - /url: /templates/a1c39ea1-1662-48f1-a7a3-10af8283979a/edit
+                        - img [ref=e491]
+                      - button "Excluir" [ref=e494] [cursor=pointer]:
+                        - img [ref=e495]
+                - row "Selecionar item a1c39ea1-1878-48bc-8944-4c4f4c322054 polichat_quick_message_193 Boa tarde Marketing pt_BR WABA 1102 New nome grande bla bla etc okok Aprovado 3 de mai. de 2026 Editar Excluir" [ref=e498]:
+                  - cell "Selecionar item a1c39ea1-1878-48bc-8944-4c4f4c322054" [ref=e499]:
+                    - generic [ref=e500]:
+                      - checkbox "Selecionar item a1c39ea1-1878-48bc-8944-4c4f4c322054"
+                  - cell "polichat_quick_message_193" [ref=e501]:
+                    - link "polichat_quick_message_193" [ref=e502] [cursor=pointer]:
+                      - /url: /templates/a1c39ea1-1878-48bc-8944-4c4f4c322054/edit
+                  - cell "Boa tarde" [ref=e503]:
+                    - generic [ref=e504]: Boa tarde
+                  - cell "Marketing" [ref=e505]:
+                    - generic [ref=e506]: Marketing
+                  - cell "pt_BR" [ref=e507]
+                  - cell "WABA 1102 New nome grande bla bla etc okok" [ref=e508]
+                  - cell "Aprovado" [ref=e509]:
+                    - generic [ref=e510]: Aprovado
+                  - cell "3 de mai. de 2026" [ref=e511]
+                  - cell "Editar Excluir" [ref=e512]:
+                    - generic [ref=e513]:
+                      - link "Editar" [ref=e514] [cursor=pointer]:
+                        - /url: /templates/a1c39ea1-1878-48bc-8944-4c4f4c322054/edit
+                        - img [ref=e515]
+                      - button "Excluir" [ref=e518] [cursor=pointer]:
+                        - img [ref=e519]
+                - 'row "Selecionar item a1c39ea1-1a0a-4fc3-af6b-203f7bf03633 polichat_quick_message_194 Olá {{1}} , com o primeiro nome {{2}} Tudo bem? Gostaria de confirmar sua reserva para o dia 25. Aguardo seu retorno! 👍 Marketing pt_BR WABA 1102 New nome grande bla bla etc okok Aprovado 3 de mai. de 2026 Editar Excluir" [ref=e522]':
+                  - cell "Selecionar item a1c39ea1-1a0a-4fc3-af6b-203f7bf03633" [ref=e523]:
+                    - generic [ref=e524]:
+                      - checkbox "Selecionar item a1c39ea1-1a0a-4fc3-af6b-203f7bf03633"
+                  - cell "polichat_quick_message_194" [ref=e525]:
+                    - link "polichat_quick_message_194" [ref=e526] [cursor=pointer]:
+                      - /url: /templates/a1c39ea1-1a0a-4fc3-af6b-203f7bf03633/edit
+                  - 'cell "Olá {{1}} , com o primeiro nome {{2}} Tudo bem? Gostaria de confirmar sua reserva para o dia 25. Aguardo seu retorno! 👍" [ref=e527]':
+                    - generic [ref=e528]: "Olá {{1}} , com o primeiro nome {{2}} Tudo bem? Gostaria de confirmar sua reserva para o dia 25. Aguardo seu retorno! 👍"
+                  - cell "Marketing" [ref=e529]:
+                    - generic [ref=e530]: Marketing
+                  - cell "pt_BR" [ref=e531]
+                  - cell "WABA 1102 New nome grande bla bla etc okok" [ref=e532]
+                  - cell "Aprovado" [ref=e533]:
+                    - generic [ref=e534]: Aprovado
+                  - cell "3 de mai. de 2026" [ref=e535]
+                  - cell "Editar Excluir" [ref=e536]:
+                    - generic [ref=e537]:
+                      - link "Editar" [ref=e538] [cursor=pointer]:
+                        - /url: /templates/a1c39ea1-1a0a-4fc3-af6b-203f7bf03633/edit
+                        - img [ref=e539]
+                      - button "Excluir" [ref=e542] [cursor=pointer]:
+                        - img [ref=e543]
+                - 'row "Selecionar item a1c39ea1-1b67-47db-8e8f-b4cd127db90b polichat_quick_message_197 Ola {{1}}, ja confiriu essas ofertas. Marketing pt_BR WABA 1102 New nome grande bla bla etc okok Aprovado 3 de mai. de 2026 Editar Excluir" [ref=e546]':
+                  - cell "Selecionar item a1c39ea1-1b67-47db-8e8f-b4cd127db90b" [ref=e547]:
+                    - generic [ref=e548]:
+                      - checkbox "Selecionar item a1c39ea1-1b67-47db-8e8f-b4cd127db90b"
+                  - cell "polichat_quick_message_197" [ref=e549]:
+                    - link "polichat_quick_message_197" [ref=e550] [cursor=pointer]:
+                      - /url: /templates/a1c39ea1-1b67-47db-8e8f-b4cd127db90b/edit
+                  - 'cell "Ola {{1}}, ja confiriu essas ofertas." [ref=e551]':
+                    - generic [ref=e552]: "Ola {{1}}, ja confiriu essas ofertas."
+                  - cell "Marketing" [ref=e553]:
+                    - generic [ref=e554]: Marketing
+                  - cell "pt_BR" [ref=e555]
+                  - cell "WABA 1102 New nome grande bla bla etc okok" [ref=e556]
+                  - cell "Aprovado" [ref=e557]:
+                    - generic [ref=e558]: Aprovado
+                  - cell "3 de mai. de 2026" [ref=e559]
+                  - cell "Editar Excluir" [ref=e560]:
+                    - generic [ref=e561]:
+                      - link "Editar" [ref=e562] [cursor=pointer]:
+                        - /url: /templates/a1c39ea1-1b67-47db-8e8f-b4cd127db90b/edit
+                        - img [ref=e563]
+                      - button "Excluir" [ref=e566] [cursor=pointer]:
+                        - img [ref=e567]
+                - row "Selecionar item a1c39ea1-1d6b-4f6f-9274-a350f995ac10 polichat_quick_message_198 Já viu as ofertas do dia. Marketing pt_BR WABA 1102 New nome grande bla bla etc okok Aprovado 3 de mai. de 2026 Editar Excluir" [ref=e570]:
+                  - cell "Selecionar item a1c39ea1-1d6b-4f6f-9274-a350f995ac10" [ref=e571]:
+                    - generic [ref=e572]:
+                      - checkbox "Selecionar item a1c39ea1-1d6b-4f6f-9274-a350f995ac10"
+                  - cell "polichat_quick_message_198" [ref=e573]:
+                    - link "polichat_quick_message_198" [ref=e574] [cursor=pointer]:
+                      - /url: /templates/a1c39ea1-1d6b-4f6f-9274-a350f995ac10/edit
+                  - cell "Já viu as ofertas do dia." [ref=e575]:
+                    - generic [ref=e576]: Já viu as ofertas do dia.
+                  - cell "Marketing" [ref=e577]:
+                    - generic [ref=e578]: Marketing
+                  - cell "pt_BR" [ref=e579]
+                  - cell "WABA 1102 New nome grande bla bla etc okok" [ref=e580]
+                  - cell "Aprovado" [ref=e581]:
+                    - generic [ref=e582]: Aprovado
+                  - cell "3 de mai. de 2026" [ref=e583]
+                  - cell "Editar Excluir" [ref=e584]:
+                    - generic [ref=e585]:
+                      - link "Editar" [ref=e586] [cursor=pointer]:
+                        - /url: /templates/a1c39ea1-1d6b-4f6f-9274-a350f995ac10/edit
+                        - img [ref=e587]
+                      - button "Excluir" [ref=e590] [cursor=pointer]:
+                        - img [ref=e591]
+                - row "Selecionar item a1b7ac9b-0357-49f8-9fe5-775aab59b619 modelo_exemplo Boa tarde! Gostaria de falar sobre nossos novos produtos, está disponível? Marketing pt_BR WABA 9284 Aprovado 3 de mai. de 2026 Editar Excluir" [ref=e594]:
+                  - cell "Selecionar item a1b7ac9b-0357-49f8-9fe5-775aab59b619" [ref=e595]:
+                    - generic [ref=e596]:
+                      - checkbox "Selecionar item a1b7ac9b-0357-49f8-9fe5-775aab59b619"
+                  - cell "modelo_exemplo" [ref=e597]:
+                    - link "modelo_exemplo" [ref=e598] [cursor=pointer]:
+                      - /url: /templates/a1b7ac9b-0357-49f8-9fe5-775aab59b619/edit
+                  - cell "Boa tarde! Gostaria de falar sobre nossos novos produtos, está disponível?" [ref=e599]:
+                    - generic [ref=e600]: Boa tarde! Gostaria de falar sobre nossos novos produtos, está disponível?
+                  - cell "Marketing" [ref=e601]:
+                    - generic [ref=e602]: Marketing
+                  - cell "pt_BR" [ref=e603]
+                  - cell "WABA 9284" [ref=e604]
+                  - cell "Aprovado" [ref=e605]:
+                    - generic [ref=e606]: Aprovado
+                  - cell "3 de mai. de 2026" [ref=e607]
+                  - cell "Editar Excluir" [ref=e608]:
+                    - generic [ref=e609]:
+                      - link "Editar" [ref=e610] [cursor=pointer]:
+                        - /url: /templates/a1b7ac9b-0357-49f8-9fe5-775aab59b619/edit
+                        - img [ref=e611]
+                      - button "Excluir" [ref=e614] [cursor=pointer]:
+                        - img [ref=e615]
+                - row "Selecionar item a1b7ac9b-0450-418d-b0ca-019b0e5e3484 polichat_quick_message_474726 Ola, tudo bem? Estou entrando em contato para realizarmos alguns alinhamentos, podemos conversar agora? Marketing pt_BR WABA 9284 Aprovado 3 de mai. de 2026 Editar Excluir" [ref=e618]:
+                  - cell "Selecionar item a1b7ac9b-0450-418d-b0ca-019b0e5e3484" [ref=e619]:
+                    - generic [ref=e620]:
+                      - checkbox "Selecionar item a1b7ac9b-0450-418d-b0ca-019b0e5e3484"
+                  - cell "polichat_quick_message_474726" [ref=e621]:
+                    - link "polichat_quick_message_474726" [ref=e622] [cursor=pointer]:
+                      - /url: /templates/a1b7ac9b-0450-418d-b0ca-019b0e5e3484/edit
+                  - cell "Ola, tudo bem? Estou entrando em contato para realizarmos alguns alinhamentos, podemos conversar agora?" [ref=e623]:
+                    - generic [ref=e624]: Ola, tudo bem? Estou entrando em contato para realizarmos alguns alinhamentos, podemos conversar agora?
+                  - cell "Marketing" [ref=e625]:
+                    - generic [ref=e626]: Marketing
+                  - cell "pt_BR" [ref=e627]
+                  - cell "WABA 9284" [ref=e628]
+                  - cell "Aprovado" [ref=e629]:
+                    - generic [ref=e630]: Aprovado
+                  - cell "3 de mai. de 2026" [ref=e631]
+                  - cell "Editar Excluir" [ref=e632]:
+                    - generic [ref=e633]:
+                      - link "Editar" [ref=e634] [cursor=pointer]:
+                        - /url: /templates/a1b7ac9b-0450-418d-b0ca-019b0e5e3484/edit
+                        - img [ref=e635]
+                      - button "Excluir" [ref=e638] [cursor=pointer]:
+                        - img [ref=e639]
+            - generic [ref=e643]:
+              - generic [ref=e644]:
+                - generic [ref=e645]: Página 1 de 15
+                - generic [ref=e646]: "Total: 212 registros"
+              - generic [ref=e647]:
+                - combobox [ref=e648]:
+                  - option "10 por página"
+                  - option "15 por página" [selected]
+                  - option "25 por página"
+                  - option "50 por página"
+                - generic [ref=e649]:
+                  - button [disabled]:
+                    - img
+                  - button [disabled]:
+                    - img
+                  - button [ref=e650] [cursor=pointer]:
+                    - img [ref=e651]
+                  - button [ref=e653] [cursor=pointer]:
+                    - img [ref=e654]
+  - region "Notifications (F8)":
+    - list

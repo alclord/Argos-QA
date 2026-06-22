@@ -1,0 +1,130 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - complementary:
+          - generic:
+            - img
+          - navigation:
+            - list:
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=9328de5e48292860351a2b928e3eefebae94e14a&toPath=https://app.poli.digital/home
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /chat
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=9328de5e48292860351a2b928e3eefebae94e14a&toPath=https://app.poli.digital/settings/1/chatbot
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /poli-flow
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=9328de5e48292860351a2b928e3eefebae94e14a&toPath=https://app-spa.poli.digital/marketing
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=9328de5e48292860351a2b928e3eefebae94e14a&toPath=https://app-spa.poli.digital/shopping
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=9328de5e48292860351a2b928e3eefebae94e14a&toPath=https://app-spa.poli.digital/relatorio
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=9328de5e48292860351a2b928e3eefebae94e14a&toPath=https://app.poli.digital/settings/1
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /contacts
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /templates
+                  - generic:
+                    - img
+            - list:
+              - listitem:
+                - button:
+                  - img
+              - listitem:
+                - button:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: YA
+              - listitem:
+                - button:
+                  - img
+              - listitem:
+                - generic:
+                  - generic: 3.5.332
+        - main:
+          - generic:
+            - button:
+              - generic: ✨ Nova Versão
+              - img
+            - generic:
+              - generic:
+                - generic:
+                  - button:
+                    - generic: Em atendimento
+                    - img
+                  - generic:
+                    - button:
+                      - img
+                    - button:
+                      - img
+                - generic:
+                  - generic:
+                    - textbox:
+                      - /placeholder: Pesquisar
+                    - button:
+                      - img
+                  - button:
+                    - img
+              - generic: Você está indisponível e não receberá novas conversas
+    - list
+  - dialog [ref=e1]:
+    - generic [ref=e2]: Aviso de Débito
+    - generic [ref=e3]: Notamos que há pendência no seu pagamento, regularize para evitar suspensão da plataforma.
+    - table [ref=e5]:
+      - rowgroup [ref=e6]:
+        - row "Vencimento Valor Valor corrigido Acessar boleto" [ref=e7]:
+          - columnheader "Vencimento" [ref=e8]
+          - columnheader "Valor" [ref=e9]
+          - columnheader "Valor corrigido" [ref=e10]
+          - columnheader "Acessar boleto" [ref=e11]
+      - rowgroup [ref=e12]:
+        - row "24/05/2026 R$ 6.718,60 R$ 6.855,19" [ref=e13]:
+          - cell "24/05/2026" [ref=e14]
+          - cell "R$ 6.718,60" [ref=e15]
+          - cell "R$ 6.855,19" [ref=e16]
+          - cell [ref=e17]:
+            - button [active] [ref=e18] [cursor=pointer]:
+              - img [ref=e19]
+    - generic [ref=e23]: "Entre em contato com nosso setor financeiro:"
+    - button "Mande um e-mail ao Financeiro" [ref=e24] [cursor=pointer]:
+      - img [ref=e25]
+      - generic [ref=e28]: Mande um e-mail ao Financeiro
+    - button "Falar com o Suporte" [ref=e29] [cursor=pointer]:
+      - img [ref=e30]
+      - generic [ref=e32]: Falar com o Suporte
+    - button "Close" [ref=e33] [cursor=pointer]:
+      - img [ref=e34]
+      - generic [ref=e37]: Close

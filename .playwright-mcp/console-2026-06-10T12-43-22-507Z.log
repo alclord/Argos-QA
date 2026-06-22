@@ -1,0 +1,15 @@
+[    2855ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:101
+[    2856ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:101
+[    3051ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:76
+[    3607ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69
+[    3619ms] [ERROR] error ao buscar chats TypeError: Cannot read properties of undefined (reading 'data')
+    at H0t (https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:1087:26145)
+    at async C (https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:54:37954)
+    at async Object.d [as fn] (https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:54:38261) @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69
+[    3712ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69
+[    4153ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:101
+[    4153ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:101
+[    4216ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:76
+[    4245ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69
+[    4862ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69
+[   31574ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69

@@ -1,0 +1,235 @@
+[     197ms] [LOG] Defining triggerGuiding @ :0
+[    2209ms] [LOG] User Guiding identify running @ :1
+[    3007ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.poli.digital/redirect?sessionId=035254172aec463372df77cef0f4d141eb354d7c&toPath=https://app.poli.digital/home&_gl=1*1gm9y9v*_gcl_au*MzE3MDk2MzMzLjE3Nzk5MTAzODguODU4MzEzODEyLjE3ODAzMTQwMDEuMTc4MDMxNDI2NQ..*_ga*MTM0NTcyMzE1Mi4xNzc5OTEwMzg4*_ga_GDG103ZG81*czE3ODAzMTM5ODQkbzkkZzEkdDE3ODAzMTU0MTIkajE4JGwwJGg0NDYwMDk4NTQ.:0
+[    3226ms] [LOG] openSocketRequest @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    3805ms] [ERROR] WebSocket connection to 'wss://dispatch-wss.poli.digital/?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6NDY2NjcsImN1c3RvbWVycyI6WzEsNDY2NjcsNTA2MjFdLCJyb2xlcyI6WzNdLCJwZXJtaXNzaW9ucyI6W119LCJwZXJtaXNzaW9ucyI6W10sImlhdCI6MTc4MDA1Nzc3OCwiZXhwIjoxNzgwMTQ0MTc4fQ.FvH6rEJwaLXdhkhiot-I6REPF0_BEjFxKGwNi6-cDc8&customer_id=1' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    3807ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    3814ms] [ERROR] WebSocket connection to 'wss://ms.poli.digital/spa-websocket-ativo?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6NDY2NjcsImN1c3RvbWVycyI6WzEsNDY2NjcsNTA2MjFdLCJyb2xlcyI6WzNdLCJwZXJtaXNzaW9ucyI6W119LCJwZXJtaXNzaW9ucyI6W10sImlhdCI6MTc4MDA1Nzc3OCwiZXhwIjoxNzgwMTQ0MTc4fQ.FvH6rEJwaLXdhkhiot-I6REPF0_BEjFxKGwNi6-cDc8&customer_id=1' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    3815ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    4213ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    4841ms] [ERROR] WebSocket connection to 'wss://ms.poli.digital/spa-websocket-ativo?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6NDY2NjcsImN1c3RvbWVycyI6WzEsNDY2NjcsNTA2MjFdLCJyb2xlcyI6WzNdLCJwZXJtaXNzaW9ucyI6W119LCJwZXJtaXNzaW9ucyI6W10sImlhdCI6MTc4MDA1Nzc3OCwiZXhwIjoxNzgwMTQ0MTc4fQ.FvH6rEJwaLXdhkhiot-I6REPF0_BEjFxKGwNi6-cDc8&customer_id=1' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    4841ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    4845ms] [ERROR] WebSocket connection to 'wss://dispatch-wss.poli.digital/?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6NDY2NjcsImN1c3RvbWVycyI6WzEsNDY2NjcsNTA2MjFdLCJyb2xlcyI6WzNdLCJwZXJtaXNzaW9ucyI6W119LCJwZXJtaXNzaW9ucyI6W10sImlhdCI6MTc4MDA1Nzc3OCwiZXhwIjoxNzgwMTQ0MTc4fQ.FvH6rEJwaLXdhkhiot-I6REPF0_BEjFxKGwNi6-cDc8&customer_id=1' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    4846ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    6200ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    6357ms] [ERROR] WebSocket connection to 'wss://ms.poli.digital/spa-websocket-ativo?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6NDY2NjcsImN1c3RvbWVycyI6WzEsNDY2NjcsNTA2MjFdLCJyb2xlcyI6WzNdLCJwZXJtaXNzaW9ucyI6W119LCJwZXJtaXNzaW9ucyI6W10sImlhdCI6MTc4MDA1Nzc3OCwiZXhwIjoxNzgwMTQ0MTc4fQ.FvH6rEJwaLXdhkhiot-I6REPF0_BEjFxKGwNi6-cDc8&customer_id=1' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    6357ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    6364ms] [ERROR] WebSocket connection to 'wss://dispatch-wss.poli.digital/?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6NDY2NjcsImN1c3RvbWVycyI6WzEsNDY2NjcsNTA2MjFdLCJyb2xlcyI6WzNdLCJwZXJtaXNzaW9ucyI6W119LCJwZXJtaXNzaW9ucyI6W10sImlhdCI6MTc4MDA1Nzc3OCwiZXhwIjoxNzgwMTQ0MTc4fQ.FvH6rEJwaLXdhkhiot-I6REPF0_BEjFxKGwNi6-cDc8&customer_id=1' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    6367ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    6679ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/redirect?sessionId=035254172aec463372df77cef0f4d141eb354d7c&toPath=https://app.poli.digital/home&_gl=1*1gm9y9v*_gcl_au*MzE3MDk2MzMzLjE3Nzk5MTAzODguODU4MzEzODEyLjE3ODAzMTQwMDEuMTc4MDMxNDI2NQ..*_ga*MTM0NTcyMzE1Mi4xNzc5OTEwMzg4*_ga_GDG103ZG81*czE3ODAzMTM5ODQkbzkkZzEkdDE3ODAzMTU0MTIkajE4JGwwJGg0NDYwMDk4NTQ.:0
+[    6680ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/redirect?sessionId=035254172aec463372df77cef0f4d141eb354d7c&toPath=https://app.poli.digital/home&_gl=1*1gm9y9v*_gcl_au*MzE3MDk2MzMzLjE3Nzk5MTAzODguODU4MzEzODEyLjE3ODAzMTQwMDEuMTc4MDMxNDI2NQ..*_ga*MTM0NTcyMzE1Mi4xNzc5OTEwMzg4*_ga_GDG103ZG81*czE3ODAzMTM5ODQkbzkkZzEkdDE3ODAzMTU0MTIkajE4JGwwJGg0NDYwMDk4NTQ.:0
+[    7726ms] [LOG] Defining triggerGuiding @ :0
+[    9505ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at dS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+[    9741ms] [LOG] User Guiding identify running @ :1
+[    9741ms] [LOG] User Guiding identify cleared @ :1
+[   13717ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/home:0
+[   13717ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/home:0
+[   17354ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/home:0
+[   17354ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/home:0
+[   22127ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/home:0
+[   25007ms] [LOG] Defining triggerGuiding @ :0
+[   25233ms] [ERROR] Refused to execute script from 'https://app.poli.digital/users/js/avatar.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled. @ https://app.poli.digital/users/1:0
+[   25986ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at dS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+[   27011ms] [LOG] User Guiding identify running @ :1
+[   27011ms] [LOG] User Guiding identify cleared @ :1
+[   29585ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1:0
+[   29585ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1:0
+[   30816ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1:0
+[   30817ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1:0
+[   31741ms] [LOG] Defining triggerGuiding @ :0
+[   32569ms] [ERROR] Refused to execute script from 'https://app.poli.digital/users/js/avatar.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled. @ https://app.poli.digital/users/1?search=yuri:0
+[   33130ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at dS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+[   33756ms] [LOG] User Guiding identify running @ :1
+[   33757ms] [LOG] User Guiding identify cleared @ :1
+[   36060ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1?search=yuri:0
+[   36074ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1?search=yuri:0
+[   36861ms] [ERROR] Amplitude Logger [Error]: Failed to fetch @ https://cdn.amplitude.com/libs/analytics-browser-gtm-2.33.4-min.js.gz:0
+[   36865ms] [WARNING] Amplitude Logger [Warn]: {code: 0, error: "Status 'failed' provided for 1 events"} @ https://cdn.amplitude.com/libs/analytics-browser-gtm-2.33.4-min.js.gz:0
+[   36954ms] [LOG] Defining triggerGuiding @ :0
+[   37137ms] [ERROR] Refused to execute script from 'https://app.poli.digital/users/1/79356/js/avatar.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled. @ https://app.poli.digital/users/1/79356/edit:0
+[   37233ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app.poli.digital/users/1/79356/edit:0
+[   37712ms] TypeError: Cannot read properties of null (reading 'tomselect')
+    at new J (https://app.poli.digital/js/tom-select_v2.0.0-rc.5/tom-select.complete.min.js:127:14)
+    at https://app.poli.digital/users/1/79356/edit:2005:13
+[   37718ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at dS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+[   38956ms] [LOG] User Guiding identify running @ :1
+[   38956ms] [LOG] User Guiding identify cleared @ :1
+[   41454ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1/79356/edit:0
+[   41470ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1/79356/edit:0
+[   42701ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1/79356/edit:0
+[   42701ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1/79356/edit:0
+[   45441ms] [ERROR] Refused to execute script from 'https://app.poli.digital/users/js/avatar.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled. @ https://app.poli.digital/users/1?search=yuri:0
+[   45569ms] [LOG] Defining triggerGuiding @ :0
+[   46228ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at dS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+[   47585ms] [LOG] User Guiding identify running @ :1
+[   47585ms] [LOG] User Guiding identify cleared @ :1
+[   49995ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1?search=yuri:0
+[   50140ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1?search=yuri:0
+[   51388ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1?search=yuri:0
+[   51388ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1?search=yuri:0
+[  169256ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  230008ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  290347ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  350588ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  410874ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  471322ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  531551ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  591783ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  652023ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  712455ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  772710ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  832952ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  893175ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  953388ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1013629ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1073851ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1137140ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1197360ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1257586ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1317828ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1378123ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1438343ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1498573ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1558799ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1619011ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1679215ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1739501ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1799720ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1859952ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1920176ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1980394ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2040621ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2100847ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2161058ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2221518ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2281760ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2341989ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2402214ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2462438ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2522664ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2582904ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2643118ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2703530ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2763761ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2823988ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2884233ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2944451ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3004677ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3064896ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3125103ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3185315ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3245534ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3305766ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3367241ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3427462ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3487687ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3547886ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3608447ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3668675ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3729100ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3789597ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3849810ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3910033ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3970733ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4031061ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4091331ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4151543ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4211786ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4272015ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4332251ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4392520ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4452745ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4519958ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4580210ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4640418ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4701050ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4761279ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4821552ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4881792ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4942093ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5002426ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5062685ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5123017ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5183256ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5243469ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5303789ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5368656ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5429006ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5489240ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5549961ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5610374ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5671021ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5732215ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5792438ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5852692ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5913120ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5973379ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6034342ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6094925ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6156822ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6217140ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6277364ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6337587ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6397916ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6458255ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6518874ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6579116ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6639461ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6702882ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6763548ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6827352ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6891753ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6953058ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 7013261ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 7073464ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 7133673ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0

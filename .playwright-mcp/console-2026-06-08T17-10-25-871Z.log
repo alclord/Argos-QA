@@ -1,0 +1,21 @@
+[     990ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-hnKoqB83.js:101
+[     992ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-hnKoqB83.js:101
+[    1235ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-hnKoqB83.js:76
+[    3447ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at pB (https://spa-canary.poli.digital/assets/index-hnKoqB83.js:1073:282)
+    at j2.Cue (https://spa-canary.poli.digital/assets/index-hnKoqB83.js:1073:320)
+    at async j2.request (https://spa-canary.poli.digital/assets/index-hnKoqB83.js:1073:2147)
+    at async QMt (https://spa-canary.poli.digital/assets/index-hnKoqB83.js:1107:26139)
+    at async C (https://spa-canary.poli.digital/assets/index-hnKoqB83.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-hnKoqB83.js:54:38287) @ https://spa-canary.poli.digital/assets/index-hnKoqB83.js:69
+[    4935ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[    4966ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats/pinned:0
+[    5000ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/non-payment/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[    5002ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/crm/index:0
+[    5010ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[    5032ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/users/settings/summary:0
+[    5035ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned=myself&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[    5041ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/settings:0
+[    5166ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-hnKoqB83.js:69
+[    5362ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/broadcasting/auth:0
+[  185051ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-hnKoqB83.js:69

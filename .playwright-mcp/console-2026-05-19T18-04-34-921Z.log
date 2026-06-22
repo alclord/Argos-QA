@@ -1,0 +1,49 @@
+[     445ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:101
+[     445ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:101
+[     538ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:76
+[    1331ms] [ERROR] `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog @ https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:69
+[    1332ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:69
+[    1466ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:69
+[    1564ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:429
+    at cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:902:31)
+    at Md.bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:899:92)
+    at Md.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at fb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Md.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Rq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at sf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:726:315
+    at UA (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:651:1)
+    at ZA.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:655:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:673:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:131)
+    at oC (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:773)
+    at rC (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:679:29)
+    at vD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:707:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:862:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65i0:687:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65i0:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:708:6
+    at r (https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:70:9812)
+[    3001ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/logs/behavior:0
+[    4725ms] Identifier 'TCRMEmbed' has already been declared
+[   30142ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/389521425_964939741837092_2242383312396983181_n.jpg?ccb=11-4&oh=01_Q5Aa3gH0Ns4woclJg0wnkzSD4D0FXGxfux73VFrdwcent-oVOA&oe=698740FB&_nc_sid=5e03e0&_nc_cat=108:0
+[  143694ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/299515172_168693502342982_3946085247964697759_n.jpg?ccb=11-4&oh=01_Q5Aa3gGBgrifWav-kjmDcqLKb3YBQcUqDZJFOqntgw7yh7H5Aw&oe=69909D30&_nc_sid=5e03e0&_nc_cat=103:0
+[  238633ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/513069239_634897472825783_3996963730102399322_n.jpg?ccb=11-4&oh=01_Q5Aa3QFuX0CH0JNED5dX3rn7F5AQ0MGVgrRpCFrN9tX0nZ-djQ&oe=69613FF5&_nc_sid=5e03e0&_nc_cat=108:0
+[  275796ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/513069239_634897472825783_3996963730102399322_n.jpg?ccb=11-4&oh=01_Q5Aa3QFuX0CH0JNED5dX3rn7F5AQ0MGVgrRpCFrN9tX0nZ-djQ&oe=69613FF5&_nc_sid=5e03e0&_nc_cat=108:0
+[  284331ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/513069239_634897472825783_3996963730102399322_n.jpg?ccb=11-4&oh=01_Q5Aa3QFuX0CH0JNED5dX3rn7F5AQ0MGVgrRpCFrN9tX0nZ-djQ&oe=69613FF5&_nc_sid=5e03e0&_nc_cat=108:0
+[  303139ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/513069239_634897472825783_3996963730102399322_n.jpg?ccb=11-4&oh=01_Q5Aa3QFuX0CH0JNED5dX3rn7F5AQ0MGVgrRpCFrN9tX0nZ-djQ&oe=69613FF5&_nc_sid=5e03e0&_nc_cat=108:0

@@ -1,0 +1,100 @@
+- generic [ref=e2]:
+  - generic [ref=e43]:
+    - alert [ref=e44]:
+      - generic [ref=e45]:
+        - img [ref=e46]
+        - generic [ref=e48]:
+          - generic [ref=e49]: 37 dias de pagamento em atraso.
+          - generic [ref=e50]: Pagamento efetuado? Desconsidere. A compensação do boleto pode levar até 2 dias úteis.
+      - generic [ref=e51]:
+        - button "Acessar boleto" [ref=e52] [cursor=pointer]:
+          - img [ref=e53]
+          - text: Acessar boleto
+        - button "Fechar aviso" [ref=e57] [cursor=pointer]:
+          - img [ref=e58]
+    - generic [ref=e61]:
+      - complementary [ref=e62]:
+        - img [ref=e64]
+        - navigation [ref=e65]:
+          - list [ref=e66]:
+            - listitem [ref=e67]:
+              - link [ref=e68] [cursor=pointer]:
+                - /url: https://app-spa.qa.poli.digital/redirect?sessionId=5221ee634226b0f4cfdf2aa2e049eeae8a4bec65&toPath=https://homolog.qa.poli.digital/home
+                - img [ref=e70]
+            - listitem [ref=e73]:
+              - link [ref=e74] [cursor=pointer]:
+                - /url: /chat
+                - img [ref=e76]
+            - listitem [ref=e78]:
+              - link [ref=e79] [cursor=pointer]:
+                - /url: https://app-spa.qa.poli.digital/redirect?sessionId=5221ee634226b0f4cfdf2aa2e049eeae8a4bec65&toPath=https://homolog.qa.poli.digital/settings/46667/chatbot
+                - img [ref=e81]
+            - listitem [ref=e84]:
+              - link [ref=e85] [cursor=pointer]:
+                - /url: /poli-flow
+                - img [ref=e87]
+            - listitem [ref=e89]:
+              - link [ref=e90] [cursor=pointer]:
+                - /url: https://app-spa.qa.poli.digital/redirect?sessionId=5221ee634226b0f4cfdf2aa2e049eeae8a4bec65&toPath=https://app-spa.qa.poli.digital/marketing
+                - img [ref=e92]
+            - listitem [ref=e95]:
+              - link [ref=e96] [cursor=pointer]:
+                - /url: https://app-spa.qa.poli.digital/redirect?sessionId=5221ee634226b0f4cfdf2aa2e049eeae8a4bec65&toPath=https://app-spa.qa.poli.digital/shopping
+                - img [ref=e98]
+            - listitem [ref=e100]:
+              - link [ref=e101] [cursor=pointer]:
+                - /url: https://app-spa.qa.poli.digital/redirect?sessionId=5221ee634226b0f4cfdf2aa2e049eeae8a4bec65&toPath=https://app-spa.qa.poli.digital/relatorio
+                - img [ref=e103]
+            - listitem [ref=e106]:
+              - link [ref=e107] [cursor=pointer]:
+                - /url: https://app-spa.qa.poli.digital/redirect?sessionId=5221ee634226b0f4cfdf2aa2e049eeae8a4bec65&toPath=https://app-spa.qa.poli.digital/tools
+                - img [ref=e109]
+            - listitem [ref=e112]:
+              - link [ref=e113] [cursor=pointer]:
+                - /url: /contacts
+                - img [ref=e115]
+            - listitem [ref=e119]:
+              - link [ref=e120] [cursor=pointer]:
+                - /url: /templates
+                - img [ref=e122]
+          - list [ref=e125]:
+            - listitem [ref=e126]:
+              - button "Consumo de créditos" [ref=e127] [cursor=pointer]:
+                - img [ref=e128]
+            - listitem [ref=e131]:
+              - button "YA" [ref=e132] [cursor=pointer]:
+                - generic [ref=e137]: YA
+            - listitem [ref=e139]:
+              - button [ref=e140] [cursor=pointer]:
+                - img [ref=e141]
+            - listitem [ref=e143]:
+              - generic [ref=e145]: 3.5.336
+      - main [ref=e146]:
+        - generic [ref=e147]:
+          - button "✨ Nova Versão" [ref=e148] [cursor=pointer]:
+            - generic [ref=e149]: ✨ Nova Versão
+            - img [ref=e150]
+          - generic [ref=e154]:
+            - generic [ref=e155]:
+              - button "Em atendimento" [ref=e156] [cursor=pointer]:
+                - generic [ref=e157]: Em atendimento
+                - img [ref=e158]
+              - generic [ref=e160]:
+                - button [ref=e161] [cursor=pointer]:
+                  - img [ref=e162]
+                - button [ref=e167] [cursor=pointer]:
+                  - img [ref=e168]
+                - button [ref=e172] [cursor=pointer]:
+                  - img [ref=e173]
+            - generic [ref=e175]:
+              - generic [ref=e176]:
+                - textbox "Pesquisar" [ref=e177]
+                - button [ref=e178] [cursor=pointer]:
+                  - img [ref=e179]
+              - button "Ordenação das conversas" [ref=e182] [cursor=pointer]:
+                - img [ref=e183]
+        - generic [ref=e308]:
+          - img "Logo" [ref=e309]
+          - heading "Bem-vindo!" [level=1] [ref=e310]
+  - region "Notifications (F8)":
+    - list

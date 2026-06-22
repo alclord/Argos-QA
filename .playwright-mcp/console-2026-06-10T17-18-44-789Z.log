@@ -1,0 +1,98 @@
+[     670ms] [LOG] Defining triggerGuiding @ :0
+[    4691ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    4804ms] [LOG] openSocketRequest @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    5059ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.poli.digital/chat:0
+[    5929ms] [ERROR] Amplitude Logger [Error]: Failed to fetch @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    5933ms] [WARNING] Amplitude Logger [Warn]: {code: 0, error: "Status 'failed' provided for 1 events"} @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    6024ms] [LOG] Defining triggerGuiding @ :0
+[    7816ms] [WARNING] [UserGuiding] 
+ You are loading UserGuiding SDK multiple times 
+
+*Submit a ticket using the link below if you think this is a bug
+https://desk.zoho.com/portal/userguiding/newticket @ https://static.userguiding.com/media/user-guiding-4CU101710BACID-embedded.js:1
+[    8025ms] [LOG] User Guiding identify running @ :1
+[    8344ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[    8344ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[    8521ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.poli.digital/assets/index-K91NXeHH.js:76
+[    8990ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[    9654ms] [LOG] Defining triggerGuiding @ :0
+[    9889ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[    9890ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[    9961ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.poli.digital/assets/index-K91NXeHH.js:76
+[   10584ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[   10885ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:898:429
+    at qS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:31)
+    at Od.pS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:897:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:309:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:255:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Qq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:266:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:722:315
+    at Lz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:625:1)
+    at Qz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:629:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:100)
+    at nB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:742)
+    at qB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:654:183)
+    at CD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:699:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:864:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e6641:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e6690h2:550:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:457
+    at r (https://spa.poli.digital/assets/index-K91NXeHH.js:70:9827)
+[   11109ms] [WARNING] [UserGuiding] 
+ You are loading UserGuiding SDK multiple times 
+
+*Submit a ticket using the link below if you think this is a bug
+https://desk.zoho.com/portal/userguiding/newticket @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[   11659ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[   11660ms] [LOG] User Guiding identify cleared @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[   12429ms] Identifier 'TCRMEmbed' has already been declared
+[   14820ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/chat:0
+[   14820ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/chat:0
+[   16487ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/chat:0
+[   16519ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/chat:0
+[  531102ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.d (https://spa.poli.digital/assets/index-K91NXeHH.js:1101:16926)
+    at AbortSignal.r (https://spa.poli.digital/assets/index-K91NXeHH.js:70:9827)
+    at Object.onCancel (https://spa.poli.digital/assets/index-K91NXeHH.js:54:43336)
+    at Object.o [as cancel] (https://spa.poli.digital/assets/index-K91NXeHH.js:54:35949)
+    at nAe.cancel (https://spa.poli.digital/assets/index-K91NXeHH.js:54:40216)
+    at nAe.fetch (https://spa.poli.digital/assets/index-K91NXeHH.js:54:42164)
+    at https://spa.poli.digital/assets/index-K91NXeHH.js:54:67190
+    at Array.map (<anonymous>)
+    at https://spa.poli.digital/assets/index-K91NXeHH.js:54:67174
+    at Object.batch (https://spa.poli.digital/assets/index-K91NXeHH.js:54:34562)
+    at lAe.refetchQueries (https://spa.poli.digital/assets/index-K91NXeHH.js:54:67099)
+    at https://spa.poli.digital/assets/index-K91NXeHH.js:54:66924
+    at Object.batch (https://spa.poli.digital/assets/index-K91NXeHH.js:54:34562)
+    at lAe.invalidateQueries (https://spa.poli.digital/assets/index-K91NXeHH.js:54:66798)
+    at u (https://spa.poli.digital/assets/index-K91NXeHH.js:2201:4079)
+    at bt.emit (https://spa.poli.digital/assets/index-K91NXeHH.js:1098:17395)
+    at bt.handleEvent (https://spa.poli.digital/assets/index-K91NXeHH.js:1098:26338)
+    at https://spa.poli.digital/assets/index-K91NXeHH.js:1099:16138
+    at rn.emit (https://spa.poli.digital/assets/index-K91NXeHH.js:1098:17395)
+    at message (https://spa.poli.digital/assets/index-K91NXeHH.js:1098:34869)
+    at Or.emit (https://spa.poli.digital/assets/index-K91NXeHH.js:1098:17395)
+    at message (https://spa.poli.digital/assets/index-K91NXeHH.js:1098:23959)
+    at ba.emit (https://spa.poli.digital/assets/index-K91NXeHH.js:1098:17395)
+    at ba.onMessage (https://spa.poli.digital/assets/index-K91NXeHH.js:1098:18951)
+    at socket.onmessage (https://spa.poli.digital/assets/index-K91NXeHH.js:1098:19172)
+    at _2.request (https://spa.poli.digital/assets/index-K91NXeHH.js:1103:2243)
+    at async rDt (https://spa.poli.digital/assets/index-K91NXeHH.js:1137:26220)
+    at async C (https://spa.poli.digital/assets/index-K91NXeHH.js:54:37980)
+    at async Object.u [as fn] (https://spa.poli.digital/assets/index-K91NXeHH.js:54:38287) @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  668178ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  670036ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  671827ms] Identifier 'TCRMEmbed' has already been declared

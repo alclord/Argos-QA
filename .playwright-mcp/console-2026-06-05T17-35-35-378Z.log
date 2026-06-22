@@ -1,0 +1,94 @@
+[      84ms] [LOG] Defining triggerGuiding @ :0
+[     879ms] [LOG] openSocketRequest @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    1880ms] [ERROR] WebSocket connection to 'wss://ms.poli.digital/spa-websocket-ativo?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6MSwiY3VzdG9tZXJzIjpbMSw0NjY2Nyw1MDYyMV0sInJvbGVzIjpbM10sInBlcm1pc3Npb25zIjpbXX0sInBlcm1pc3Npb25zIjpbXSwiaWF0IjoxNzgwMzE1NTE4LCJleHAiOjE3ODA0MDE5MTh9.UCCw8Lfed31vmIJ6EKpWHmhCG6tH2u_Eu8Mf8XqB2UE&customer_id=1' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    1881ms] [ERROR] WebSocket connection to 'wss://dispatch-wss.poli.digital/?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6MSwiY3VzdG9tZXJzIjpbMSw0NjY2Nyw1MDYyMV0sInJvbGVzIjpbM10sInBlcm1pc3Npb25zIjpbXX0sInBlcm1pc3Npb25zIjpbXSwiaWF0IjoxNzgwMzE1NTE4LCJleHAiOjE3ODA0MDE5MTh9.UCCw8Lfed31vmIJ6EKpWHmhCG6tH2u_Eu8Mf8XqB2UE&customer_id=1' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    1882ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    1882ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    1892ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.poli.digital/redirect?sessionId=86acad1a7c352c6fa93bfbae6b72d6a6f43b9c73&toPath=https://app.poli.digital/home&_gl=1*3q4qjq*_gcl_au*MzE3MDk2MzMzLjE3Nzk5MTAzODguMTI1MzgwNTk1My4xNzgwNjc4NzMzLjE3ODA2Nzk0ODc.*_ga*MTM0NTcyMzE1Mi4xNzc5OTEwMzg4*_ga_GDG103ZG81*czE3ODA2Nzg2NjgkbzI2JGcxJHQxNzgwNjgwOTIyJGo1NyRsMCRoOTY1NzAyMTUy:0
+[    2093ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    3217ms] [ERROR] WebSocket connection to 'wss://ms.poli.digital/spa-websocket-ativo?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6MSwiY3VzdG9tZXJzIjpbMSw0NjY2Nyw1MDYyMV0sInJvbGVzIjpbM10sInBlcm1pc3Npb25zIjpbXX0sInBlcm1pc3Npb25zIjpbXSwiaWF0IjoxNzgwMzE1NTE4LCJleHAiOjE3ODA0MDE5MTh9.UCCw8Lfed31vmIJ6EKpWHmhCG6tH2u_Eu8Mf8XqB2UE&customer_id=1' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    3218ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    3219ms] [ERROR] WebSocket connection to 'wss://dispatch-wss.poli.digital/?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6MSwiY3VzdG9tZXJzIjpbMSw0NjY2Nyw1MDYyMV0sInJvbGVzIjpbM10sInBlcm1pc3Npb25zIjpbXX0sInBlcm1pc3Npb25zIjpbXSwiaWF0IjoxNzgwMzE1NTE4LCJleHAiOjE3ODA0MDE5MTh9.UCCw8Lfed31vmIJ6EKpWHmhCG6tH2u_Eu8Mf8XqB2UE&customer_id=1' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    3219ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    4097ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    4781ms] [ERROR] WebSocket connection to 'wss://dispatch-wss.poli.digital/?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6MSwiY3VzdG9tZXJzIjpbMSw0NjY2Nyw1MDYyMV0sInJvbGVzIjpbM10sInBlcm1pc3Npb25zIjpbXX0sInBlcm1pc3Npb25zIjpbXSwiaWF0IjoxNzgwMzE1NTE4LCJleHAiOjE3ODA0MDE5MTh9.UCCw8Lfed31vmIJ6EKpWHmhCG6tH2u_Eu8Mf8XqB2UE&customer_id=1' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    4783ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    4792ms] [ERROR] WebSocket connection to 'wss://ms.poli.digital/spa-websocket-ativo?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6MSwiY3VzdG9tZXJzIjpbMSw0NjY2Nyw1MDYyMV0sInJvbGVzIjpbM10sInBlcm1pc3Npb25zIjpbXX0sInBlcm1pc3Npb25zIjpbXSwiaWF0IjoxNzgwMzE1NTE4LCJleHAiOjE3ODA0MDE5MTh9.UCCw8Lfed31vmIJ6EKpWHmhCG6tH2u_Eu8Mf8XqB2UE&customer_id=1' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    4792ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    5986ms] [LOG] Defining triggerGuiding @ :0
+[    7879ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:895:429
+    at qS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:897:31)
+    at Od.pS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:894:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:309:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:255:473)
+[    8002ms] [LOG] User Guiding identify running @ :1
+[    8003ms] [LOG] User Guiding identify cleared @ :1
+[   10880ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/home:0
+[   10895ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/home:0
+[   12332ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/home:0
+[   12332ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/home:0
+[   66476ms] [LOG] Defining triggerGuiding @ :0
+[   66652ms] [ERROR] Refused to execute script from 'https://app.poli.digital/users/js/avatar.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled. @ https://app.poli.digital/users/1:0
+[   67691ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:895:429
+    at qS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:897:31)
+    at Od.pS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:894:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:309:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:255:473)
+[   68479ms] [LOG] User Guiding identify running @ :1
+[   68479ms] [LOG] User Guiding identify cleared @ :1
+[   71621ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1:0
+[   71621ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1:0
+[   72937ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1:0
+[   72937ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1:0
+[   86723ms] [LOG] Defining triggerGuiding @ :0
+[   88725ms] [LOG] User Guiding identify running @ :1
+[   88725ms] [LOG] User Guiding identify cleared @ :1
+[   91633ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/home:0
+[   91649ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/home:0
+[   93094ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/home:0
+[   93095ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/home:0
+[   96525ms] [LOG] Defining triggerGuiding @ :0
+[   96713ms] [ERROR] Refused to execute script from 'https://app.poli.digital/users/js/avatar.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled. @ https://app.poli.digital/users/46667:0
+[   98540ms] [LOG] User Guiding identify running @ :1
+[   98541ms] [LOG] User Guiding identify cleared @ :1
+[  101321ms] [LOG] Defining triggerGuiding @ :0
+[  101609ms] [ERROR] Refused to execute script from 'https://app.poli.digital/users/create/js/avatar.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled. @ https://app.poli.digital/users/create/46667:0
+[  101815ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app.poli.digital/users/create/46667:0
+[  101816ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app.poli.digital/users/create/46667:0
+[  103331ms] [LOG] User Guiding identify running @ :1
+[  103331ms] [LOG] User Guiding identify cleared @ :1
+[  106011ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/create/46667:0
+[  106014ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/create/46667:0
+[  107598ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/create/46667:0
+[  107600ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/create/46667:0
+[  128335ms] [LOG] Defining triggerGuiding @ :0
+[  128430ms] [ERROR] Refused to execute script from 'https://app.poli.digital/users/create/js/avatar.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled. @ https://app.poli.digital/users/create/46667:0
+[  128492ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app.poli.digital/users/create/46667:0
+[  128492ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app.poli.digital/users/create/46667:0
+[  130336ms] [LOG] User Guiding identify running @ :1
+[  130337ms] [LOG] User Guiding identify cleared @ :1
+[  133208ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/create/46667:0
+[  133224ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/create/46667:0
+[  134713ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/create/46667:0
+[  134713ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/create/46667:0
+[  145347ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:101
+[  145347ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:101
+[  145503ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:76
+[  146069ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:69
+[  146402ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[  147687ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[  149890ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[  152292ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:69
+[  154093ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0

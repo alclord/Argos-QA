@@ -1,0 +1,47 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=4c41d95fa291fe9a3084f50ded1023c289591a2c&toPath=https://app.poli.digital/home
+        - img [ref=e11]
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - list
+        - generic [ref=e14]:
+          - list
+      - generic [ref=e15]:
+        - button "Consumo de créditos" [ref=e16] [cursor=pointer]:
+          - img [ref=e18]
+        - button "YA" [ref=e22] [cursor=pointer]:
+          - generic [ref=e28]: YA
+        - generic [ref=e31]: 3.5.358-DEV4-4370
+    - main [ref=e32]:
+      - main [ref=e33]:
+        - generic [ref=e34]:
+          - button "✨ Nova Versão" [ref=e35] [cursor=pointer]:
+            - generic [ref=e36]: ✨ Nova Versão
+            - img [ref=e37]
+          - generic [ref=e40]:
+            - generic [ref=e41]:
+              - generic [ref=e42]:
+                - button "Em atendimento" [ref=e43] [cursor=pointer]:
+                  - generic [ref=e44]: Em atendimento
+                  - img [ref=e45]
+                - generic [ref=e47]:
+                  - button "Contatos" [ref=e48] [cursor=pointer]:
+                    - img [ref=e49]
+                  - button "Filtros" [ref=e53] [cursor=pointer]:
+                    - img [ref=e54]
+              - generic [ref=e58]:
+                - generic [ref=e59]:
+                  - textbox "Pesquisar" [ref=e60]
+                  - button "Pesquisar" [ref=e61] [cursor=pointer]:
+                    - img [ref=e62]
+                - button "Ordenação das conversas" [ref=e65] [cursor=pointer]:
+                  - img [ref=e66]
+            - generic [ref=e69]: Você está indisponível e não receberá novas conversas
+        - generic [ref=e193]:
+          - img "Logo" [ref=e194]
+          - heading "Bem-vindo!" [level=1] [ref=e195]
+  - region "Notifications (F8)":
+    - list

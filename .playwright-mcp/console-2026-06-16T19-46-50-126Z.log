@@ -1,0 +1,151 @@
+[     663ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[     664ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[     755ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[    1374ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[    2256ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:903:429
+    at aS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:905:31)
+    at Od.$R (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:902:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:317:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:263:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at k.Uq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:274:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:728:315
+    at Mz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:631:1)
+    at Tz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:636:289)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:656:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:206:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:657:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:657:100)
+    at qB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:657:742)
+    at tB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:661:183)
+    at DD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:705:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:709:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e66f0:687:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:864:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e66f0:549:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:709:457
+    at r (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:70:9827)
+[    2757ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/468855983_1272522174019015_182033633258191093_n.jpg?ccb=11-4&oh=01_Q5Aa3AG13ijzntjVN59eEHYbNNttCEe2zpYUT-AFXaTR-k73GQ&oe=69402BED&_nc_sid=5e03e0&_nc_cat=101:0
+[    3284ms] Identifier 'TCRMEmbed' has already been declared
+[   15180ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[   15180ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[   15218ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[   15486ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   15495ms] [ERROR] error ao buscar chats TypeError: Cannot read properties of undefined (reading 'data')
+    at gDt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1137:36193)
+    at async C (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:38287) @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   15731ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[   15731ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[   15778ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[   15811ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   16315ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   17918ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   18531ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at yB (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:282)
+    at _2.Rue (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:320)
+    at async _2.request (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:2147)
+    at async gDt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1137:36156)
+    at async C (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:38287) @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   66322ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[   66322ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[   66403ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[   66537ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at yB (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:282)
+    at _2.Rue (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:320)
+    at async _2.request (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:2147)
+    at async gDt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1137:36156)
+    at async C (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:38287) @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   66944ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  147093ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  147093ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  147173ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  147283ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at yB (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:282)
+    at _2.Rue (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:320)
+    at async _2.request (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:2147)
+    at async gDt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1137:36156)
+    at async C (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:38287) @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  147675ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  170737ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  170738ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  170781ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  170866ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at yB (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:282)
+    at _2.Rue (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:320)
+    at async _2.request (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:2147)
+    at async gDt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1137:36156)
+    at async C (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:38287) @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  171312ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  197728ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  197728ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  197778ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  198029ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  198032ms] [ERROR] error ao buscar chats TypeError: Cannot read properties of undefined (reading 'data')
+    at gDt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1137:36193)
+    at async C (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:38287) @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  198280ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  198280ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  198318ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  198348ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  198817ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  200721ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  203841ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/518854337_1437478637396931_8179574196279388450_n.jpg?ccb=11-4&oh=01_Q5Aa3wEOTox-rIrFKWSngKImFOnXSs7TN-LEXDUS_yZMQDNQ0g&oe=69B6A137&_nc_sid=5e03e0&_nc_cat=105:0
+[  205563ms] Identifier 'TCRMEmbed' has already been declared
+[  213927ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/468855983_1272522174019015_182033633258191093_n.jpg?ccb=11-4&oh=01_Q5Aa3AG13ijzntjVN59eEHYbNNttCEe2zpYUT-AFXaTR-k73GQ&oe=69402BED&_nc_sid=5e03e0&_nc_cat=101:0
+[  227049ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/518854337_1437478637396931_8179574196279388450_n.jpg?ccb=11-4&oh=01_Q5Aa3wEOTox-rIrFKWSngKImFOnXSs7TN-LEXDUS_yZMQDNQ0g&oe=69B6A137&_nc_sid=5e03e0&_nc_cat=105:0
+[  287731ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/modules-lTZG65dg.js:9
+[  287731ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/modules-lTZG65dg.js:9
+[  287961ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-B5ItYYNn.js:27
+[  288248ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:903:429
+    at aS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:905:31)
+    at Od.$R (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:902:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:317:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:263:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at k.Uq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:274:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:728:315
+    at Mz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:631:1)
+    at Tz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:636:289)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:656:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:206:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:657:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:657:100)
+    at qB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:657:742)
+    at tB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:661:183)
+    at DD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:705:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:709:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:864:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e66f0:687:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e66f0:549:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:709:457
+    at r (https://spa-canary.poli.digital/assets/index-B5ItYYNn.js:21:10022)
+[  288328ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-B5ItYYNn.js:20
+[  288931ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[  289658ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/518854337_1437478637396931_8179574196279388450_n.jpg?ccb=11-4&oh=01_Q5Aa3wEOTox-rIrFKWSngKImFOnXSs7TN-LEXDUS_yZMQDNQ0g&oe=69B6A137&_nc_sid=5e03e0&_nc_cat=105:0
+[  289809ms] Identifier 'TCRMEmbed' has already been declared
+[  290254ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[  326714ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/contacts/9bb49c4f-2c88-4a7f-84bb-38074c239b4b/messages:0
+[  339782ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/518854337_1437478637396931_8179574196279388450_n.jpg?ccb=11-4&oh=01_Q5Aa3wEOTox-rIrFKWSngKImFOnXSs7TN-LEXDUS_yZMQDNQ0g&oe=69B6A137&_nc_sid=5e03e0&_nc_cat=105:0
+[  365913ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0

@@ -1,0 +1,9 @@
+[     696ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:101
+[     696ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:101
+[     823ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:76
+[    1335ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69
+[    4085ms] Identifier 'TCRMEmbed' has already been declared
+[    4267ms] Identifier 'TCRMEmbed' has already been declared
+[  101104ms] [ERROR] Failed to load resource: the server responded with a status of 405 () @ https://foundation-api.qa.poli.digital/v3/chats/5c12ea50-1bdd-11f1-a609-021f6d257969/channels/9b8482c8-743f-4800-a3ef-5e26cf386ff3/open:0
+[  118077ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/contacts/5c12ea50-1bdd-11f1-a609-021f6d257969/chats/close:0
+[  119385ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/chats/5c12ea50-1bdd-11f1-a609-021f6d257969/resolve:0

@@ -1,0 +1,96 @@
+[   27085ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:101
+[   27085ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:101
+[   27245ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:76
+[   27359ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:69
+[   27495ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:896:429
+    at qS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:898:31)
+    at Od.pS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:895:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:309:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:255:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Kq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:266:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:720:315
+    at Kz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:1)
+    at Pz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:627:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:647:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:648:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:648:100)
+    at mB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:648:742)
+    at pB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:652:183)
+    at BD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:697:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:701:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e6621h2:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:866:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e6620:554:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:701:495
+    at r (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:70:9812)
+[   27817ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:69
+[   28310ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/non-payment/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[   28742ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.poli.digital/auth/refresh-token:0
+[   28744ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at b3e (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1021:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1021:15759)
+    at px.request (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1023:2234)
+    at async Gmt (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1027:6854)
+    at async https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1027:8196
+    at async px.request (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1023:2138)
+    at async kHt.getOverdueAccounts (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:2173:54485)
+    at async https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:2179:199328 @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:69
+[   28744ms] [ERROR] AxiosError: Request failed with status code 401
+    at b3e (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1021:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1021:15759)
+    at px.request (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1023:2234)
+    at async Gmt (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1027:6854)
+    at async https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1027:8196
+    at async px.request (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1023:2138)
+    at async kHt.getOverdueAccounts (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:2173:54485)
+    at async https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:2179:199328 @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:69
+[   28746ms] [ERROR] AxiosError: Request failed with status code 401
+    at b3e (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1021:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1021:15759)
+    at px.request (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1023:2234)
+    at async Gmt (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1027:6854)
+    at async https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1027:8196
+    at async px.request (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1023:2138)
+    at async kHt.getOverdueAccounts (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:2173:54485)
+    at async https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:2179:199328 @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:69
+[   29297ms] [INFO] WebSocket: Conexão finalizada @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:69
+[   29830ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:101
+[   29830ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:101
+[   29877ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:76
+[   29898ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:69
+[   30425ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:69
+[   47470ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:69
+[   49233ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   49638ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/487819011_1122001249681380_2285523550704014782_n.jpg?ccb=11-4&oh=01_Q5Aa3wFD5nULwxdj04TYsTsvFYrjZuTYlaY98Jkkr6fTO556jA&oe=69ADB528&_nc_sid=5e03e0&_nc_cat=102:0
+[   50476ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   52696ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   56904ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[  116383ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:69
+[  509837ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at RP (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1023:280)
+    at px.OY (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1023:317)
+    at async px.request (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1023:2138)
+    at async Npt (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1057:26108)
+    at async _ (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:54:37954)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:54:38261) @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:69
+[  510451ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/487819011_1122001249681380_2285523550704014782_n.jpg?ccb=11-4&oh=01_Q5Aa3wFD5nULwxdj04TYsTsvFYrjZuTYlaY98Jkkr6fTO556jA&oe=69ADB528&_nc_sid=5e03e0&_nc_cat=102:0
+[  510792ms] [ERROR] `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:69
+[  510792ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:69
+[  511503ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/contacts/a1efeea6-b214-41c4-9fc3-a057baa9a388/protocol:0
+[  513330ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/contacts/a1efeea6-b214-41c4-9fc3-a057baa9a388/protocol:0
+[  515567ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/contacts/a1efeea6-b214-41c4-9fc3-a057baa9a388/protocol:0
+[  519794ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/contacts/a1efeea6-b214-41c4-9fc3-a057baa9a388/protocol:0

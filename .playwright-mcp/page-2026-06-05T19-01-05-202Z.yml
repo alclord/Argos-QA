@@ -1,0 +1,32 @@
+- generic [ref=e2]:
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - button "Expandir menu" [ref=e7] [cursor=pointer]:
+        - img [ref=e8]
+      - img [ref=e10]
+    - main [ref=e11]:
+      - generic [ref=e12]:
+        - button "✨ Nova Versão" [ref=e13] [cursor=pointer]:
+          - generic [ref=e14]: ✨ Nova Versão
+          - img [ref=e15]
+        - generic [ref=e19]:
+          - generic [ref=e20]:
+            - button "Em atendimento" [ref=e21] [cursor=pointer]:
+              - generic [ref=e22]: Em atendimento
+              - img [ref=e23]
+            - generic [ref=e25]:
+              - button [ref=e26] [cursor=pointer]:
+                - img [ref=e27]
+              - button [ref=e32] [cursor=pointer]:
+                - img [ref=e33]
+              - button [ref=e37] [cursor=pointer]:
+                - img [ref=e38]
+          - generic [ref=e42]:
+            - generic [ref=e43]:
+              - textbox "Pesquisar" [ref=e44]
+              - button [ref=e45] [cursor=pointer]:
+                - img [ref=e46]
+            - button "Ordenação das conversas" [ref=e49] [cursor=pointer]:
+              - img [ref=e50]
+  - region "Notifications (F8)":
+    - list

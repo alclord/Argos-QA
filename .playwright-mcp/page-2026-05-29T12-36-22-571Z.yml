@@ -1,0 +1,136 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - img [ref=e7]
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link [ref=e11] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app.poli.digital/home
+              - img [ref=e13]
+          - listitem [ref=e16]:
+            - link [ref=e17] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e19]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app.poli.digital/settings/46667/chatbot
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e30]
+          - listitem [ref=e32]:
+            - link [ref=e33] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e35]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e41]
+          - listitem [ref=e43]:
+            - link [ref=e44] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e46]
+          - listitem [ref=e49]:
+            - link [ref=e50] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app.poli.digital/settings/46667
+              - img [ref=e52]
+          - listitem [ref=e55]:
+            - link [ref=e56] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e58]
+          - listitem [ref=e62]:
+            - link [ref=e63] [cursor=pointer]:
+              - /url: /templates
+              - img [ref=e65]
+        - list [ref=e68]:
+          - listitem [ref=e69]:
+            - button "Consumo de créditos" [ref=e70] [cursor=pointer]:
+              - img [ref=e71]
+          - listitem [ref=e74]:
+            - button "YA" [ref=e75] [cursor=pointer]:
+              - generic [ref=e80]: YA
+          - listitem [ref=e82]:
+            - button [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+          - listitem [ref=e86]:
+            - generic [ref=e88]: 3.5.332
+    - main [ref=e89]:
+      - generic [ref=e91]:
+        - navigation "breadcrumb" [ref=e93]:
+          - link "Página inicial" [ref=e95] [cursor=pointer]:
+            - /url: /
+          - img [ref=e96]
+          - generic [ref=e98]: Mensagens agendadas
+        - generic [ref=e100]:
+          - generic [ref=e102]:
+            - generic [ref=e2577]:
+              - img [ref=e2579]
+              - generic [ref=e2582]:
+                - paragraph [ref=e2583]: Total
+                - paragraph [ref=e2584]: "68"
+            - generic [ref=e2586]:
+              - img [ref=e2588]
+              - generic [ref=e2592]:
+                - paragraph [ref=e2593]: Agendadas
+                - paragraph [ref=e2594]: "0"
+            - generic [ref=e2596]:
+              - img [ref=e2598]
+              - generic [ref=e2601]:
+                - paragraph [ref=e2602]: Enviadas
+                - paragraph [ref=e2603]: "43"
+            - generic [ref=e2605]:
+              - img [ref=e2607]
+              - generic [ref=e2611]:
+                - paragraph [ref=e2612]: Canceladas
+                - paragraph [ref=e2613]: "0"
+          - generic [ref=e130]:
+            - generic [ref=e132]:
+              - generic [ref=e133]:
+                - generic [ref=e134]: Status
+                - combobox "Status" [active] [ref=e135] [cursor=pointer]:
+                  - generic: Enviada
+                  - img [ref=e136]
+              - generic [ref=e138]:
+                - generic [ref=e139]: Canal
+                - combobox "Canal" [ref=e140] [cursor=pointer]:
+                  - generic: Todos os canais
+                  - img [ref=e141]
+              - generic [ref=e143]:
+                - generic [ref=e144]: Responsável
+                - combobox "Responsável" [ref=e145] [cursor=pointer]:
+                  - generic: Pedro Vieira
+                  - img [ref=e146]
+              - generic [ref=e148]:
+                - generic [ref=e149]: Período
+                - button "Período" [ref=e150] [cursor=pointer]:
+                  - generic [ref=e151]: 2025-01-01 – 2025-12-31
+                  - img [ref=e152]
+              - button "Agendar mensagem" [ref=e155] [cursor=pointer]:
+                - img [ref=e156]
+                - text: Agendar mensagem
+              - generic [ref=e2360]:
+                - generic [ref=e2614]:
+                  - generic [ref=e2615]: "Status:"
+                  - generic [ref=e2616]: Enviada
+                  - button "Remove filter Status" [ref=e2617] [cursor=pointer]:
+                    - img [ref=e2618]
+                - generic [ref=e2361]:
+                  - generic [ref=e2362]: "Responsável:"
+                  - generic [ref=e2363]: Pedro Vieira
+                  - button "Remove filter Responsável" [ref=e2364] [cursor=pointer]:
+                    - img [ref=e2365]
+                - generic [ref=e2403]:
+                  - generic [ref=e2404]: "De:"
+                  - generic [ref=e2405]: 2025-01-01
+                  - button "Remove filter De" [ref=e2406] [cursor=pointer]:
+                    - img [ref=e2407]
+                - generic [ref=e2548]:
+                  - generic [ref=e2549]: "Até:"
+                  - generic [ref=e2550]: 2025-12-31
+                  - button "Remove filter Até" [ref=e2551] [cursor=pointer]:
+                    - img [ref=e2552]
+            - paragraph [ref=e2622]: Nenhuma mensagem agendada encontrada
+  - region "Notifications (F8)":
+    - list

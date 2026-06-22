@@ -1,0 +1,1566 @@
+[    1870ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:101
+[    1871ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:101
+[    2021ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:76
+[    2261ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[    2511ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[    2883ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/non-payment/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[    3083ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at dS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Gz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Lz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:100)
+    at iB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:742)
+    at lB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:648:183)
+    at vD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65r2:681:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:857:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65r2:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:495
+    at r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+[    3509ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.poli.digital/auth/refresh-token:0
+[    3516ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at y_e (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:15705)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async Pht (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:6854)
+    at async https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8196
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async pVt.getOverdueAccounts (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2165:54504)
+    at async https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2171:197544 @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[    3517ms] [ERROR] AxiosError: Request failed with status code 401
+    at y_e (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:15705)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async Pht (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:6854)
+    at async https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8196
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async pVt.getOverdueAccounts (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2165:54504)
+    at async https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2171:197544 @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[    3524ms] [ERROR] AxiosError: Request failed with status code 401
+    at y_e (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:15705)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async Pht (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:6854)
+    at async https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8196
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async pVt.getOverdueAccounts (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2165:54504)
+    at async https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2171:197544 @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[    4083ms] [INFO] WebSocket: Conexão finalizada @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[    4168ms] [ERROR] Amplitude Logger [Error]: Failed to fetch (api2.amplitude.com) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[    4170ms] [WARNING] Amplitude Logger [Warn]: {code: 0, error: "Status 'failed' provided for 2 events"} @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[    4387ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:101
+[    4387ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:101
+[    4444ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:76
+[    4496ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[    5002ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[   18268ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[   22648ms] Identifier 'TCRMEmbed' has already been declared
+[   23351ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/505190026_692668543610445_5543274583875892703_n.jpg?ccb=11-4&oh=01_Q5Aa3AHy1Ztl6uvKHJte6T7b9z3kwvUGsOIflfzwbVv8ZiMYAw&oe=692D9C6A&_nc_sid=5e03e0&_nc_cat=110:0
+[   23671ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/505190026_692668543610445_5543274583875892703_n.jpg?ccb=11-4&oh=01_Q5Aa3AHy1Ztl6uvKHJte6T7b9z3kwvUGsOIflfzwbVv8ZiMYAw&oe=692D9C6A&_nc_sid=5e03e0&_nc_cat=110:0
+[   74153ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[  110508ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[  163744ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[  176951ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[  181886ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[  188189ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[  215891ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[  221009ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[  222195ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[  222667ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[  222796ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[  245782ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/561573030_2528549837526343_7644961840405614024_n.jpg?ccb=11-4&oh=01_Q5Aa4QFrfrJ5WtaK0KhTrA37w5_MxASfX8540KKsR2moH-YgaA&oe=69F85D1E&_nc_sid=5e03e0&_nc_cat=105:0
+[  265618ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[  292721ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[  345172ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[  350276ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[  354762ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[  395727ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/564916186_527574163784138_201180157676256640_n.jpg?ccb=11-4&oh=01_Q5Aa4AHnDMlxshSOh3Pg4_ClNCVgyuaR-6YGo3z-qQbD2UtXsg&oe=69BFEBD9&_nc_sid=5e03e0&_nc_cat=100:0
+[  429645ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/505190026_692668543610445_5543274583875892703_n.jpg?ccb=11-4&oh=01_Q5Aa3AHy1Ztl6uvKHJte6T7b9z3kwvUGsOIflfzwbVv8ZiMYAw&oe=692D9C6A&_nc_sid=5e03e0&_nc_cat=110:0
+[  445945ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/564916186_527574163784138_201180157676256640_n.jpg?ccb=11-4&oh=01_Q5Aa4AHnDMlxshSOh3Pg4_ClNCVgyuaR-6YGo3z-qQbD2UtXsg&oe=69BFEBD9&_nc_sid=5e03e0&_nc_cat=100:0
+[  454649ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/505190026_692668543610445_5543274583875892703_n.jpg?ccb=11-4&oh=01_Q5Aa3AHy1Ztl6uvKHJte6T7b9z3kwvUGsOIflfzwbVv8ZiMYAw&oe=692D9C6A&_nc_sid=5e03e0&_nc_cat=110:0
+[  480810ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[  539837ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[  539845ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[  625031ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[  625160ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[  638841ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[  713751ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[  738460ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[  754057ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[  765970ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/564916186_527574163784138_201180157676256640_n.jpg?ccb=11-4&oh=01_Q5Aa4AHnDMlxshSOh3Pg4_ClNCVgyuaR-6YGo3z-qQbD2UtXsg&oe=69BFEBD9&_nc_sid=5e03e0&_nc_cat=100:0
+[  786040ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/564916186_527574163784138_201180157676256640_n.jpg?ccb=11-4&oh=01_Q5Aa4AHnDMlxshSOh3Pg4_ClNCVgyuaR-6YGo3z-qQbD2UtXsg&oe=69BFEBD9&_nc_sid=5e03e0&_nc_cat=100:0
+[  804470ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[  806521ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[  874334ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/470481111_608372948549946_6974928815549006466_n.jpg?ccb=11-4&oh=01_Q5Aa3AGWv4YEvdhJ2aGDxJsoTt8kjS9p288pbT0qjdrBKurnqg&oe=691AFB96&_nc_sid=5e03e0&_nc_cat=108:0
+[  917600ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[  996557ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/468855983_1272522174019015_182033633258191093_n.jpg?ccb=11-4&oh=01_Q5Aa3AG13ijzntjVN59eEHYbNNttCEe2zpYUT-AFXaTR-k73GQ&oe=69402BED&_nc_sid=5e03e0&_nc_cat=101:0
+[ 1007717ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1022674ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1026365ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1030097ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1031995ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[ 1035792ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1039679ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1097687ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1098501ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/468855983_1272522174019015_182033633258191093_n.jpg?ccb=11-4&oh=01_Q5Aa3AG13ijzntjVN59eEHYbNNttCEe2zpYUT-AFXaTR-k73GQ&oe=69402BED&_nc_sid=5e03e0&_nc_cat=101:0
+[ 1099661ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1102463ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1160663ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1216483ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1220630ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1227001ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1301066ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1310592ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1313242ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516821226_1034137662043294_8412083315673682112_n.jpg?ccb=11-4&oh=01_Q5Aa3wGV0w2YmnQ6TBMH0x-0rxT9pjZgTvTyDdDyH-6A-5wg7w&oe=69B819C9&_nc_sid=5e03e0&_nc_cat=109:0
+[ 1319098ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1325902ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1326955ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1342956ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1348656ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1349177ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1350421ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1351612ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1357064ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1361069ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1361221ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1363168ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1366315ms] Identifier 'TCRMEmbed' has already been declared
+[ 1505680ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1573220ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[ 1573450ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[ 1579718ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[ 1582752ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[ 1654001ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1695582ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1714769ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1718480ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1733332ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1735817ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1795519ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1807376ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1807926ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1811770ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1822243ms] Identifier 'TCRMEmbed' has already been declared
+[ 1851631ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1869509ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[ 1920673ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/470481111_608372948549946_6974928815549006466_n.jpg?ccb=11-4&oh=01_Q5Aa3AGWv4YEvdhJ2aGDxJsoTt8kjS9p288pbT0qjdrBKurnqg&oe=691AFB96&_nc_sid=5e03e0&_nc_cat=108:0
+[ 1946927ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/470481111_608372948549946_6974928815549006466_n.jpg?ccb=11-4&oh=01_Q5Aa3AGWv4YEvdhJ2aGDxJsoTt8kjS9p288pbT0qjdrBKurnqg&oe=691AFB96&_nc_sid=5e03e0&_nc_cat=108:0
+[ 1951430ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/470481111_608372948549946_6974928815549006466_n.jpg?ccb=11-4&oh=01_Q5Aa3AGWv4YEvdhJ2aGDxJsoTt8kjS9p288pbT0qjdrBKurnqg&oe=691AFB96&_nc_sid=5e03e0&_nc_cat=108:0
+[ 2023028ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/468855983_1272522174019015_182033633258191093_n.jpg?ccb=11-4&oh=01_Q5Aa3AG13ijzntjVN59eEHYbNNttCEe2zpYUT-AFXaTR-k73GQ&oe=69402BED&_nc_sid=5e03e0&_nc_cat=101:0
+[ 2058502ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[ 2083195ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/468855983_1272522174019015_182033633258191093_n.jpg?ccb=11-4&oh=01_Q5Aa3AG13ijzntjVN59eEHYbNNttCEe2zpYUT-AFXaTR-k73GQ&oe=69402BED&_nc_sid=5e03e0&_nc_cat=101:0
+[ 2088095ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[ 2088823ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/468855983_1272522174019015_182033633258191093_n.jpg?ccb=11-4&oh=01_Q5Aa3AG13ijzntjVN59eEHYbNNttCEe2zpYUT-AFXaTR-k73GQ&oe=69402BED&_nc_sid=5e03e0&_nc_cat=101:0
+[ 2118275ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[ 2143364ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/f952a6af-5bf4-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2144046ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/00fdc406-5dbc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2144117ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/a1eb5990-ed6b-45ee-a5ca-2584cb4d1f77?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2145033ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0523edef-5bf9-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2145475ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/3f4f4533-5dbb-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2145480ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/993b5318-5bba-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2145696ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/a6114d97-fc7f-11f0-860b-06c1973a4013/unread:0
+[ 2145708ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/00fdc406-5dbc-11f1-9d75-06799772b1cd/read:0
+[ 2145713ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/54a5bf07-5d0c-11f1-9d75-06799772b1cd/unread:0
+[ 2145725ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/d7058b41-f1c6-11f0-8c78-06b3482cde9b/unread:0
+[ 2145737ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/d7058b41-f1c6-11f0-8c78-06b3482cde9b/unread:0
+[ 2145740ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/bb3c1cf7-4a20-11f1-9d75-06799772b1cd/unread:0
+[ 2145741ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/3d6f2822-55e2-11f1-9d75-06799772b1cd/unread:0
+[ 2154541ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[ 2166286ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/406af2d7-5a95-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2166340ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/a1eb59b5-454a-4211-9494-517338416415?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2166350ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/a1eb59c1-0f04-4453-bb7a-a7842a4885ad?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2167051ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/a1a798db-4ca8-4d3b-a60e-96a8a3378e7f/unread:0
+[ 2167063ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/50a29ef8-5da7-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2167110ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/99f24ae6-59b1-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2184484ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/a1eb578a-9b97-457a-8c49-500794e21603/unread:0
+[ 2184492ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/b273f8d9-cf81-11f0-85da-062ccf12487f/unread:0
+[ 2184494ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/1b378980-5a01-11f1-9d75-06799772b1cd/read:0
+[ 2184499ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/d7058b41-f1c6-11f0-8c78-06b3482cde9b/unread:0
+[ 2203253ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9ce154e9-f152-11f0-8c78-06b3482cde9b?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2204788ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/4066da49-5cec-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2208211ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/64b0ec7f-e516-11f0-8c78-06b3482cde9b?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2208777ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/dbc0fbdd-b8e4-11f0-93ae-062ccf12487f?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2208844ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/640281793_1504691674655851_6703211660562319369_n.jpg?ccb=11-4&oh=01_Q5Aa4QESc8JPo1765OiVqIdvmL141o0LVY3_zcQ0TKmkvLnCDg&oe=69FF67AD&_nc_sid=5e03e0&_nc_cat=100:0
+[ 2208852ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/a1eb578a-9b97-457a-8c49-500794e21603/unread:0
+[ 2208856ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/3f4f4533-5dbb-11f1-9d75-06799772b1cd/unread:0
+[ 2208858ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/b273f8d9-cf81-11f0-85da-062ccf12487f/read:0
+[ 2208860ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/10cbf917-a8fd-11f0-93ae-062ccf12487f/unread:0
+[ 2208861ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/64b0ec7f-e516-11f0-8c78-06b3482cde9b/read:0
+[ 2208862ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/3d6f2822-55e2-11f1-9d75-06799772b1cd/read:0
+[ 2226827ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/d688e3a1-5bc8-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2226858ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/bbaf61d7-475c-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2281068ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/f952a6af-5bf4-11f1-9d75-06799772b1cd/read:0
+[ 2281218ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/f952a6af-5bf4-11f1-9d75-06799772b1cd/read:0
+[ 2281231ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/f952a6af-5bf4-11f1-9d75-06799772b1cd/read:0
+[ 2281246ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/a1eb5990-ed6b-45ee-a5ca-2584cb4d1f77/read:0
+[ 2281254ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/a1eb59b5-454a-4211-9494-517338416415/read:0
+[ 2281288ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0523edef-5bf9-11f1-9d75-06799772b1cd/read:0
+[ 2285119ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/d7058b41-f1c6-11f0-8c78-06b3482cde9b/unread:0
+[ 2285242ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/dbc0fbdd-b8e4-11f0-93ae-062ccf12487f/read:0
+[ 2285270ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/d7058b41-f1c6-11f0-8c78-06b3482cde9b/unread:0
+[ 2285499ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/b273f8d9-cf81-11f0-85da-062ccf12487f/unread:0
+[ 2290862ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/4518b05b-5bc3-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2330270ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/406af2d7-5a95-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2388810ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/4518b05b-5bc3-11f1-9d75-06799772b1cd/read:0
+[ 2388839ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/54a5bf07-5d0c-11f1-9d75-06799772b1cd/read:0
+[ 2388849ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/99f24ae6-59b1-11f1-9d75-06799772b1cd/read:0
+[ 2388859ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/99f24ae6-59b1-11f1-9d75-06799772b1cd/read:0
+[ 2388864ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/99f24ae6-59b1-11f1-9d75-06799772b1cd/read:0
+[ 2388867ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/99f24ae6-59b1-11f1-9d75-06799772b1cd/read:0
+[ 2388872ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/3f4f4533-5dbb-11f1-9d75-06799772b1cd/read:0
+[ 2388878ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/54a5bf07-5d0c-11f1-9d75-06799772b1cd/read:0
+[ 2388894ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e020a705-55de-11f1-9d75-06799772b1cd/unread:0
+[ 2388898ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/a1e5aa9c-3982-47cf-acef-dee10ec215ee/unread:0
+[ 2388900ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/54a5bf07-5d0c-11f1-9d75-06799772b1cd/unread:0
+[ 2388904ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/a1a798db-4ca8-4d3b-a60e-96a8a3378e7f/read:0
+[ 2389615ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/4066da49-5cec-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2389635ms] [ERROR] Erro ao enriquecer contato 4066da49-5cec-11f1-9d75-06799772b1cd: Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 2389661ms] [ERROR] Erro ao enriquecer contato 4066da49-5cec-11f1-9d75-06799772b1cd: Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 2390184ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/64b0ec7f-e516-11f0-8c78-06b3482cde9b?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2390197ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/dbc0fbdd-b8e4-11f0-93ae-062ccf12487f?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2390203ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/d688e3a1-5bc8-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2390230ms] [ERROR] Erro ao enriquecer contato d688e3a1-5bc8-11f1-9d75-06799772b1cd: Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 2390802ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/bbaf61d7-475c-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2390820ms] [ERROR] Erro ao enriquecer contato bbaf61d7-475c-11f1-9d75-06799772b1cd: Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 2402056ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/73e19c9e-5c50-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2406078ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[ 2407472ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c869be4-b6a3-4cfc-aaf1-4d2b89dff75c?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2422173ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/a1eb578a-9b97-457a-8c49-500794e21603/unread:0
+[ 2422184ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/4518b05b-5bc3-11f1-9d75-06799772b1cd/unread:0
+[ 2422199ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/2fd10658-93da-11f0-93ae-062ccf12487f/read:0
+[ 2422214ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/c542f0e7-5773-11f1-9d75-06799772b1cd/unread:0
+[ 2422226ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/26370fed-544a-11f1-9d75-06799772b1cd/read:0
+[ 2422230ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/8f0d4ca4-5b6f-11f1-9d75-06799772b1cd/unread:0
+[ 2422243ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/c542f0e7-5773-11f1-9d75-06799772b1cd/unread:0
+[ 2423847ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2423856ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2423864ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2423867ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2423868ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2423868ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2423871ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2423881ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2423921ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2423922ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2423922ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2423939ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2423956ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424091ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424096ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424096ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424105ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424105ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424105ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424106ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424114ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424324ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424330ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424330ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424330ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424435ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424440ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424842ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424852ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424854ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424854ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424856ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424858ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424859ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424865ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424865ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424865ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424865ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424865ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424910ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424912ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424916ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424916ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424916ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424916ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424918ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424918ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424919ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424919ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424919ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424919ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424959ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424959ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424973ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424973ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424973ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424973ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424974ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424974ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424975ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424988ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424989ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424989ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424991ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424992ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424993ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2424998ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425003ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425003ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425004ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425006ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425006ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425007ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425010ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425010ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425010ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425014ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425015ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425022ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425023ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425023ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425023ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425026ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425027ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425032ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425032ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425091ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425091ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425091ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425091ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425091ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425125ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425127ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425127ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425135ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425135ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425135ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425136ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425141ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425142ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425142ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425142ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425144ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425150ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425155ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425157ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425161ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425174ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425174ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425174ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425175ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425176ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425176ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425176ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425176ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425177ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425177ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425177ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425177ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425210ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425214ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425220ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425220ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425221ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425223ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425223ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2425223ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1017:8163
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async gCe (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1094:13838)
+[ 2459037ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[ 2463603ms] Uncaught (in promise) TypeError: Cannot read properties of null (reading 'sequence')
+    at <anonymous> (https://scripts.clarity.ms/0.8.64/clarity.js:1:48756)
+    at <anonymous> (https://scripts.clarity.ms/0.8.64/clarity.js:1:6498)
+    at <anonymous> (https://scripts.clarity.ms/0.8.64/clarity.js:1:6603)
+    at o (https://scripts.clarity.ms/0.8.64/clarity.js:1:5320)
+[ 2470301ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/4066da49-5cec-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2475101ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/a1e5aa9c-3982-47cf-acef-dee10ec215ee/unread:0
+[ 2475128ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c869be4-b6a3-4cfc-aaf1-4d2b89dff75c/unread:0
+[ 2475130ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/4518b05b-5bc3-11f1-9d75-06799772b1cd/unread:0
+[ 2475132ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/c542f0e7-5773-11f1-9d75-06799772b1cd/unread:0
+[ 2475134ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/50a29ef8-5da7-11f1-9d75-06799772b1cd/read:0
+[ 2475135ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c869be4-b6a3-4cfc-aaf1-4d2b89dff75c/unread:0
+[ 2539845ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 2539908ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/54a5bf07-5d0c-11f1-9d75-06799772b1cd/read:0
+[ 2539940ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/c542f0e7-5773-11f1-9d75-06799772b1cd/unread:0
+[ 2539945ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/54a5bf07-5d0c-11f1-9d75-06799772b1cd/read:0
+[ 2539951ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/acfac717-82b1-11f0-93ae-062ccf12487f/read:0
+[ 2539957ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/0316eda6-5dc1-11f1-9d75-06799772b1cd/read:0
+[ 2539963ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/3f4f4533-5dbb-11f1-9d75-06799772b1cd/read:0
+[ 2539970ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/54a5bf07-5d0c-11f1-9d75-06799772b1cd/read:0
+[ 2539978ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/8aca268d-5b46-11f1-9d75-06799772b1cd/read:0
+[ 2539980ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/acfac717-82b1-11f0-93ae-062ccf12487f/read:0
+[ 2539991ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/54a5bf07-5d0c-11f1-9d75-06799772b1cd/unread:0
+[ 2539994ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/50a29ef8-5da7-11f1-9d75-06799772b1cd/read:0
+[ 2541916ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/a1eb578a-9b97-457a-8c49-500794e21603/read:0
+[ 2541928ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c87df7a-81ff-4d12-9ceb-51063dd4df9f/read:0
+[ 2541935ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/a19ee0bf-a4e6-4409-adb7-0757b3dcc126/read:0
+[ 2541937ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/54a5bf07-5d0c-11f1-9d75-06799772b1cd/unread:0
+[ 2541942ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/a1eb578a-9b97-457a-8c49-500794e21603/read:0
+[ 2541943ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/54a5bf07-5d0c-11f1-9d75-06799772b1cd/unread:0
+[ 2541945ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/54a5bf07-5d0c-11f1-9d75-06799772b1cd/read:0
+[ 2542002ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/73e19c9e-5c50-11f1-9d75-06799772b1cd/read:0
+[ 2542010ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/73e19c9e-5c50-11f1-9d75-06799772b1cd/read:0
+[ 2542614ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 2544491ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[ 2545883ms] Identifier 'TCRMEmbed' has already been declared
+[ 2568371ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1011:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:35513)
+    at Bne.cancel (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:39777)
+    at Bne.fetch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:41725)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66738
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66722
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.refetchQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66647)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66472
+    at Object.batch (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:34126)
+    at Wne.invalidateQueries (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:66346)
+    at d (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:2110:4829)
+    at We.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at We.handleEvent (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:26124)
+    at https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1009:16006
+    at Gn.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:34603)
+    at ua.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at message (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:23778)
+    at sa.emit (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:17237)
+    at sa.onMessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:18788)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1008:19009)
+    at lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2234)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 2568638ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/517987672_1261902542060544_5873782256999028015_n.jpg?ccb=11-4&oh=01_Q5Aa3gEY4FETfXFr7cjQOzabjATmyyIM7dxFB1_DAsI_eKuyew&oe=69777959&_nc_sid=5e03e0&_nc_cat=105:0
+[ 2767339ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516821226_1034137662043294_8412083315673682112_n.jpg?ccb=11-4&oh=01_Q5Aa3wGV0w2YmnQ6TBMH0x-0rxT9pjZgTvTyDdDyH-6A-5wg7w&oe=69B819C9&_nc_sid=5e03e0&_nc_cat=109:0

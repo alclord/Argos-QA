@@ -1,0 +1,779 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - generic:
+        - iframe [ref=e114]:
+          - generic [ref=f3e7]:
+            - button "Close Preview" [ref=f3e8] [cursor=pointer]:
+              - img [ref=f3e9]
+            - generic [ref=f3e12]:
+              - img "Modal Media" [ref=f3e16]
+              - generic [ref=f3e19]:
+                - paragraph [ref=f3e20]: "Desenvolvemos uma nova experiência pensada para tornar sua operação ainda mais ágil e eficiente. E o melhor: a migração é instantânea e sem perda de nenhum dado ou histórico."
+                - paragraph [ref=f3e21]
+                - listitem [ref=f3e22]:
+                  - strong [ref=f3e23]: Performance superior
+                  - text: — Interface mais leve com tempo de carregamento significativamente reduzido.
+                - listitem [ref=f3e24]:
+                  - strong [ref=f3e25]: Design renovado
+                  - text: — Navegação mais intuitiva e visual modernizado para facilitar sua rotina.
+                - listitem [ref=f3e26]:
+                  - strong [ref=f3e27]: Histórico preservado
+                  - text: — Todo o seu histórico de conversas e dados são mantidos integralmente na migração.
+                - paragraph [ref=f3e28]
+                - paragraph [ref=f3e29]: Quer experimentar agora? Clique no botão abaixo para falar com nosso suporte e solicitar sua migração de teste — é gratuita e leva apenas alguns instantes.
+              - generic [ref=f3e30]:
+                - button "Agora não, continuar no legado" [ref=f3e34] [cursor=pointer]
+                - button "Falar com o suporte" [ref=f3e38] [cursor=pointer]
+            - button "Não exibir novamente" [ref=f3e40]
+        - iframe [ref=e115]:
+          - button "open resource center" [ref=f8e4] [cursor=pointer]:
+            - generic [ref=f8e6]:
+              - img [ref=f8e9]
+              - generic [ref=f8e11]: Ajuda
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - list [ref=e6]:
+        - listitem [ref=e7]:
+          - link [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=e10]
+        - listitem [ref=e12]:
+          - link [ref=e13] [cursor=pointer]:
+            - /url: /chat
+            - img [ref=e15]
+        - listitem [ref=e17]:
+          - link [ref=e18] [cursor=pointer]:
+            - /url: /automation
+            - img [ref=e20]
+        - listitem [ref=e22]:
+          - link [ref=e23] [cursor=pointer]:
+            - /url: /crm
+            - img [ref=e25]
+        - listitem [ref=e28]:
+          - link [ref=e29] [cursor=pointer]:
+            - /url: /marketing
+            - img [ref=e31]
+        - listitem [ref=e33]:
+          - link [ref=e34] [cursor=pointer]:
+            - /url: /shopping
+            - img [ref=e36]
+        - listitem [ref=e38]:
+          - link [ref=e39] [cursor=pointer]:
+            - /url: /relatorio
+            - img [ref=e41]
+        - listitem [ref=e43]:
+          - link [ref=e44] [cursor=pointer]:
+            - /url: /tools
+            - img [ref=e46]
+      - generic [ref=e49]:
+        - button "" [ref=e51] [cursor=pointer]:
+          - generic [ref=e52]: 
+        - generic [ref=e54]:
+          - button "" [ref=e55] [cursor=pointer]:
+            - generic [ref=e56]: 
+          - text:        
+        - generic [ref=e59]:
+          - button "" [ref=e61] [cursor=pointer]:
+            - generic [ref=e62]: 
+          - text:  
+        - generic [ref=e64]:
+          - button "YA" [ref=e65] [cursor=pointer]:
+            - generic "Yuri Alcantara Gestor" [ref=e66]:
+              - generic [ref=e67]: YA
+          - text:   
+        - generic [ref=e70] [cursor=pointer]: 
+        - generic [ref=e72] [cursor=pointer]: v0.20.536
+    - generic [ref=e76]:
+      - generic [ref=e78]:
+        - button "Em atendimento" [ref=e80] [cursor=pointer]:
+          - generic [ref=e81]:
+            - generic [ref=e82]: Em atendimento
+            - img [ref=e83]
+        - generic [ref=e85]:
+          - button [ref=e89] [cursor=pointer]:
+            - img [ref=e90]
+          - generic [ref=e95]:
+            - button [ref=e96] [cursor=pointer]:
+              - img [ref=e97]
+            - text:            
+      - generic [ref=e101]:
+        - textbox "Pesquisar chat..." [ref=e102]
+        - img [ref=e105]
+      - generic [ref=e108]:
+        - generic [ref=e117] [cursor=pointer]:
+          - generic "NEIVA LOBO DA COSTA ALVES" [ref=e119]:
+            - generic [ref=e120]: NL
+          - generic [ref=e121]:
+            - generic [ref=e123]:
+              - generic "NEIVA LOBO DA COSTA ALVES" [ref=e125]
+              - generic [ref=e127]: Há 1 minuto
+            - generic [ref=e128]:
+              - generic [ref=e129]: 
+              - 'generic "Poliana diz: Olá, tudo bem? Como posso te ajudar?" [ref=e131]'
+            - generic [ref=e132]:
+              - generic [ref=e133]:
+                - img [ref=e134]
+                - generic "Poliana" [ref=e136]
+              - generic "reunião marcada" [ref=e138]
+        - generic [ref=e140] [cursor=pointer]:
+          - generic "Adriele Ville Du Vin 51885" [ref=e142]:
+            - generic [ref=e143]: AV
+          - generic [ref=e144]:
+            - generic [ref=e146]:
+              - generic "Adriele Ville Du Vin 51885" [ref=e148]
+              - generic [ref=e150]: Há 1 minuto
+            - generic [ref=e151]:
+              - generic [ref=e152]: 
+              - generic "falar com tifany" [ref=e154]
+              - generic "Não lido" [ref=e155]:
+                - generic [ref=e157]: "2"
+            - generic [ref=e159]:
+              - img [ref=e160]
+              - generic "Poliana" [ref=e162]
+        - generic [ref=e165] [cursor=pointer]:
+          - generic "Santiago Scappatura" [ref=e167]:
+            - generic [ref=e168]: SS
+          - generic [ref=e169]:
+            - generic [ref=e171]:
+              - generic "Santiago Scappatura" [ref=e173]
+              - generic [ref=e175]: Há 1 minuto
+            - generic [ref=e176]:
+              - generic [ref=e177]: 
+              - generic "Hola Santiago sigo por aquí. Mi intención no es saturar tu bandeja, sino ayudarte con la DEMO que solicitaste. ¿Hay alguna duda específica que te impida avanzar o prefieres que busquemos un horario cómodo para ti? Para no recibir más mensajes escribe SALIR" [ref=e179]
+            - generic [ref=e181]:
+              - img [ref=e182]
+              - generic "Ligimar" [ref=e184]
+        - generic [ref=e187] [cursor=pointer]:
+          - generic "Valter Silveira | Grande Loja Maçônica 51545" [ref=e189]:
+            - generic [ref=e190]: VS
+          - generic [ref=e191]:
+            - generic [ref=e193]:
+              - generic "Valter Silveira | Grande Loja Maçônica 51545" [ref=e195]
+              - generic [ref=e197]: Há 1 minuto
+            - generic [ref=e198]:
+              - generic [ref=e199]: 
+              - generic "Arquivo de áudio" [ref=e200]:
+                - generic [ref=e201]: 
+                - generic [ref=e203]: Áudio
+            - generic [ref=e205]:
+              - img [ref=e206]
+              - generic "Tifany" [ref=e208]
+        - generic [ref=e211] [cursor=pointer]:
+          - generic "FABRINA WILSMANN SEVERO" [ref=e213]:
+            - generic [ref=e214]: FW
+          - generic [ref=e215]:
+            - generic [ref=e217]:
+              - generic "FABRINA WILSMANN SEVERO" [ref=e219]
+              - generic [ref=e221]: Há 1 minuto
+            - generic [ref=e222]:
+              - generic [ref=e223]: 
+              - generic "Reagiu com ❤️" [ref=e225]
+              - generic "Não lido" [ref=e226]:
+                - generic [ref=e228]: "1"
+            - generic [ref=e230]:
+              - img [ref=e231]
+              - generic "Isadora Rocha" [ref=e233]
+        - generic [ref=e236] [cursor=pointer]:
+          - generic "Juan Consi" [ref=e238]:
+            - generic [ref=e239]: JC
+          - generic [ref=e240]:
+            - generic [ref=e242]:
+              - generic "Juan Consi" [ref=e244]
+              - generic [ref=e246]: Há 1 minuto
+            - generic [ref=e247]:
+              - generic [ref=e248]: 
+              - generic "Hola Juan imagino que tuviste un día ocupado. Solo quería mencionarte que empresas como la tuya están usando esta POLI para reducir sus tiempos de gestión en un 30%. y alcanzar más clientes con envíos masivos estratégicos sin riesgo de bloqueos aumentando en hasta 40% la tasa de respuesta. ¿Te gustaría que te veamos como lo hemos conseguido? Para no recibir más mensajes escribe SALIR" [ref=e250]
+            - generic [ref=e252]:
+              - img [ref=e253]
+              - generic "Ligimar" [ref=e255]
+        - generic [ref=e258] [cursor=pointer]:
+          - generic "Laryssa - Maxdents" [ref=e260]:
+            - generic [ref=e261]: L-
+          - generic [ref=e262]:
+            - generic [ref=e264]:
+              - generic "Laryssa - Maxdents" [ref=e266]
+              - generic [ref=e268]: Há 1 minuto
+            - generic [ref=e269]:
+              - generic [ref=e270]: 
+              - generic "Sim" [ref=e272]
+            - generic [ref=e273]:
+              - generic [ref=e274]:
+                - img [ref=e275]
+                - generic "Gabriela Mota" [ref=e277]
+              - generic "reunião marcada" [ref=e279]
+        - generic [ref=e281] [cursor=pointer]:
+          - generic "Rolando Silvera" [ref=e283]:
+            - generic [ref=e284]: RS
+          - generic [ref=e285]:
+            - generic [ref=e287]:
+              - generic "Rolando Silvera" [ref=e289]
+              - generic [ref=e291]: Há 1 minuto
+            - generic [ref=e292]:
+              - generic [ref=e293]: 
+              - generic "Hola Rolando imagino que tuviste un día ocupado. Solo quería mencionarte que empresas como la tuya están usando esta POLI para reducir sus tiempos de gestión en un 30%. y alcanzar más clientes con envíos masivos estratégicos sin riesgo de bloqueos aumentando en hasta 40% la tasa de respuesta. ¿Te gustaría que te veamos como lo hemos conseguido? Para no recibir más mensajes escribe SALIR" [ref=e295]
+            - generic [ref=e297]:
+              - img [ref=e298]
+              - generic "Ligimar" [ref=e300]
+        - generic [ref=e303] [cursor=pointer]:
+          - generic "Gabriela Almeida - Supermercado Migrantes 52225" [ref=e305]:
+            - generic [ref=e306]: GA
+          - generic [ref=e307]:
+            - generic [ref=e309]:
+              - generic "Gabriela Almeida - Supermercado Migrantes 52225" [ref=e311]
+              - generic [ref=e313]: Há 1 minuto
+            - generic [ref=e314]:
+              - generic [ref=e315]: 
+              - 'generic "Felipe Mendes diz: Certinho, se pudermos ajudar estamos a disposição" [ref=e317]'
+            - generic [ref=e319]:
+              - img [ref=e320]
+              - generic "Aimê" [ref=e322]
+        - generic [ref=e325] [cursor=pointer]:
+          - generic "Consuelo Nunes Costa" [ref=e327]:
+            - generic [ref=e328]: CN
+          - generic [ref=e329]:
+            - generic [ref=e331]:
+              - generic "Consuelo Nunes Costa" [ref=e333]
+              - generic [ref=e335]: Há 1 minuto
+            - generic [ref=e336]:
+              - generic [ref=e337]: 
+              - generic "Arquivo de áudio" [ref=e338]:
+                - generic [ref=e339]: 
+                - generic [ref=e341]: Áudio
+            - generic [ref=e342]:
+              - generic [ref=e343]:
+                - img [ref=e344]
+                - generic "Bruno Subires" [ref=e346]
+              - generic "sdr100626" [ref=e348]
+        - generic [ref=e350] [cursor=pointer]:
+          - generic "Jose" [ref=e352]:
+            - generic [ref=e353]: J
+          - generic [ref=e354]:
+            - generic [ref=e356]:
+              - generic "Jose" [ref=e358]
+              - generic [ref=e360]: Há 1 minuto
+            - generic [ref=e361]:
+              - generic [ref=e362]: 
+              - 'generic "Leticia Bezerra diz: Boa tarde Jose, tudo bem ? Deseja seguir com o atendimento ?" [ref=e364]'
+            - generic [ref=e366]:
+              - img [ref=e367]
+              - generic "Leticia Bezerra" [ref=e369]
+        - generic [ref=e372] [cursor=pointer]:
+          - generic "Alef Haganá Serviços 51955" [ref=e374]:
+            - generic [ref=e375]: AH
+          - generic [ref=e376]:
+            - generic [ref=e378]:
+              - generic "Alef Haganá Serviços 51955" [ref=e380]
+              - generic [ref=e382]: Há 1 minuto
+            - generic [ref=e383]:
+              - generic [ref=e384]: 
+              - generic "Oi Alef, Tácia Marinia aqui, da Poli Digital. Tudo bem com você? Alef, estou escrevendo para confirmar nossa reunião sobre o sistema de gerenciamento do whatsapp. Tudo certo?" [ref=e386]
+            - generic [ref=e388]:
+              - img [ref=e389]
+              - generic "Tácia Marinia" [ref=e391]
+        - generic [ref=e394] [cursor=pointer]:
+          - generic "Alexandre | Alsev Comércio de Aluminios Ltda - 11861" [ref=e396]:
+            - generic [ref=e397]: A|
+          - generic [ref=e398]:
+            - generic [ref=e400]:
+              - generic "Alexandre | Alsev Comércio de Aluminios Ltda - 11861" [ref=e402]
+              - generic [ref=e404]: Há 1 minuto
+            - generic [ref=e405]:
+              - generic [ref=e406]: 
+              - generic "Veja para mim" [ref=e408]
+              - generic "Não lido" [ref=e409]:
+                - generic [ref=e411]: "5"
+            - generic [ref=e412]:
+              - generic [ref=e413]:
+                - img [ref=e414]
+                - generic "Thalyta Cardoso" [ref=e416]
+              - generic [ref=e417]:
+                - generic "lancamento-live-ia" [ref=e418]
+                - generic "livesimplesconexao" [ref=e419]
+                - generic "inscritos-live-agente-ia" [ref=e420]
+                - generic "live-agente-ia-outros-inscritos" [ref=e421]
+                - generic "live-agente-de-ia-inscritos" [ref=e422]
+                - generic [ref=e423]: + Ver mais
+        - generic [ref=e425] [cursor=pointer]:
+          - generic "Paulo Juarez de Souza Lemos" [ref=e427]:
+            - generic [ref=e428]: PJ
+          - generic [ref=e429]:
+            - generic [ref=e431]:
+              - generic "Paulo Juarez de Souza Lemos" [ref=e433]
+              - generic [ref=e435]: Há 1 minuto
+            - generic [ref=e436]:
+              - generic [ref=e437]: 
+              - generic "Arquivo de áudio" [ref=e438]:
+                - generic [ref=e439]: 
+                - generic [ref=e441]: Áudio
+            - generic [ref=e443]:
+              - img [ref=e444]
+              - generic "Gabriela Mota" [ref=e446]
+        - generic [ref=e449] [cursor=pointer]:
+          - generic "Sabrina - ParceirArte Artesanatos" [ref=e451]:
+            - generic [ref=e452]: S-
+          - generic [ref=e453]:
+            - generic [ref=e455]:
+              - generic "Sabrina - ParceirArte Artesanatos" [ref=e457]
+              - generic [ref=e459]: Há 2 minutos
+            - generic [ref=e460]:
+              - generic [ref=e461]: 
+              - 'generic "Matheus Sanches diz: Podemos iniciar dentro de 20 minutinhos Sabrina?" [ref=e463]'
+            - generic [ref=e464]:
+              - generic [ref=e465]:
+                - img [ref=e466]
+                - generic "Matheus Sanches Dias" [ref=e468]
+              - generic "agendamento0227" [ref=e470]
+        - generic [ref=e472] [cursor=pointer]:
+          - generic "Lucas Rodrigues - Inttegrar House|Lucas Rodrigues" [ref=e474]:
+            - generic [ref=e475]: LR
+          - generic [ref=e476]:
+            - generic [ref=e478]:
+              - generic "Lucas Rodrigues - Inttegrar House|Lucas Rodrigues" [ref=e480]
+              - generic [ref=e482]: Há 2 minutos
+            - generic [ref=e483]:
+              - generic [ref=e484]: 
+              - generic "Tipo uma revenda" [ref=e486]
+            - generic [ref=e487]:
+              - generic [ref=e488]:
+                - img [ref=e489]
+                - generic "Erika Lustosa" [ref=e491]
+              - generic "agendamento0227" [ref=e493]
+        - generic [ref=e495] [cursor=pointer]:
+          - generic "Pedro - Manchine Educação e Marketing -52212" [ref=e497]:
+            - generic [ref=e498]: P-
+          - generic [ref=e499]:
+            - generic [ref=e501]:
+              - generic "Pedro - Manchine Educação e Marketing -52212" [ref=e503]
+              - generic [ref=e505]: Há 2 minutos
+            - generic [ref=e506]:
+              - generic [ref=e507]: 
+              - 'generic "Thalyta Cardoso diz: 💻 Caso ainda não tenha o AnyDesk instalado, clique aqui para baixar: https://anydesk.com/pt/downloads/windows" [ref=e509]':
+                - text: "Thalyta Cardoso diz:"
+                - generic "💻" [ref=e510]
+                - text: "Caso ainda não tenha o AnyDesk instalado, clique aqui para baixar:"
+                - link "https://anydesk.com/pt/downloads/windows" [ref=e511]:
+                  - /url: https://anydesk.com/pt/downloads/windows
+            - generic [ref=e512]:
+              - generic [ref=e513]:
+                - img [ref=e514]
+                - generic "Thalyta Cardoso" [ref=e516]
+              - generic "reunião marcada" [ref=e518]
+        - generic [ref=e520] [cursor=pointer]:
+          - generic "Rogerio pereira pereira - Primetec" [ref=e522]:
+            - generic [ref=e523]: RP
+          - generic [ref=e524]:
+            - generic [ref=e526]:
+              - generic "Rogerio pereira pereira - Primetec" [ref=e528]
+              - generic [ref=e530]: Há 2 minutos
+            - generic [ref=e531]:
+              - generic [ref=e532]: 
+              - 'generic "Matheus Sanches diz: Dentro de 20 minutinhos iniciamos nossa chamada Rogério. 🚀" [ref=e534]':
+                - text: "Matheus Sanches diz: Dentro de 20 minutinhos iniciamos nossa chamada Rogério."
+                - generic "🚀" [ref=e535]
+            - generic [ref=e536]:
+              - generic [ref=e537]:
+                - img [ref=e538]
+                - generic "Matheus Sanches Dias" [ref=e540]
+              - generic "sdr100626" [ref=e542]
+        - generic [ref=e544] [cursor=pointer]:
+          - generic "Odair Pereira da Silva" [ref=e546]:
+            - generic [ref=e547]: OP
+          - generic [ref=e548]:
+            - generic [ref=e550]:
+              - generic "Odair Pereira da Silva" [ref=e552]
+              - generic [ref=e554]: Há 2 minutos
+            - generic [ref=e555]:
+              - generic [ref=e556]: 
+              - generic "Arquivo de áudio" [ref=e557]:
+                - generic [ref=e558]: 
+                - generic [ref=e560]: Áudio
+              - generic "Não lido" [ref=e561]:
+                - generic [ref=e563]: "1"
+            - generic [ref=e565]:
+              - img [ref=e566]
+              - generic "Julliana Reis" [ref=e568]
+        - generic [ref=e571] [cursor=pointer]:
+          - generic "ALEXANDRE CURY- Spa Posse Do Corpo-51972" [ref=e573]:
+            - generic [ref=e574]: AC
+          - generic [ref=e575]:
+            - generic [ref=e577]:
+              - generic "ALEXANDRE CURY- Spa Posse Do Corpo-51972" [ref=e579]
+              - generic [ref=e581]: Há 2 minutos
+            - generic [ref=e582]:
+              - generic [ref=e583]: 
+              - generic "Falando com.voces" [ref=e585]
+              - generic "Não lido" [ref=e586]:
+                - generic [ref=e588]: "3"
+            - generic [ref=e589]:
+              - generic [ref=e590]:
+                - img [ref=e591]
+                - generic "Felipe Mendes" [ref=e593]
+              - generic [ref=e594]:
+                - generic "Disparo-Calendly" [ref=e595]
+                - generic "LT - Reporta Error" [ref=e596]
+        - generic [ref=e598] [cursor=pointer]:
+          - generic "Leandro Nascimento Domingos" [ref=e600]:
+            - generic [ref=e601]: LN
+          - generic [ref=e602]:
+            - generic [ref=e604]:
+              - generic "Leandro Nascimento Domingos" [ref=e606]
+              - generic [ref=e608]: Há 2 minutos
+            - generic [ref=e609]:
+              - generic [ref=e610]: 
+              - generic "Olá Leandro! Vi que você demonstrou interesse em nossa plataforma de gestão de atendimento. ✅ Como o seu tempo é curto, quero te mostrar na prática como podemos centralizar seus canais e organizar a sua equipe de atendimento. 🚀 Faz sentido continuarmos com o atendimento?" [ref=e612]:
+                - text: Olá Leandro! Vi que você demonstrou interesse em nossa plataforma de gestão de atendimento.
+                - generic "✅" [ref=e613]
+                - text: Como o seu tempo é curto, quero te mostrar na prática como podemos centralizar seus canais e organizar a sua equipe de atendimento.
+                - generic "🚀" [ref=e614]
+                - text: Faz sentido continuarmos com o atendimento?
+            - generic [ref=e616]:
+              - img [ref=e617]
+              - generic "Guilherme Ramos" [ref=e619]
+        - generic [ref=e622] [cursor=pointer]:
+          - generic "Thiago - StarHof - 52033" [ref=e624]:
+            - generic [ref=e625]: T-
+          - generic [ref=e626]:
+            - generic [ref=e628]:
+              - generic "Thiago - StarHof - 52033" [ref=e630]
+              - generic [ref=e632]: Há 2 minutos
+            - generic [ref=e633]:
+              - generic [ref=e634]: 
+              - 'generic "Felipe Mendes diz: Só um momentinho" [ref=e636]'
+            - generic [ref=e637]:
+              - generic [ref=e638]:
+                - img [ref=e639]
+                - generic "Felipe Mendes" [ref=e641]
+              - generic "Venda realizada" [ref=e643]
+        - generic [ref=e645] [cursor=pointer]:
+          - generic "\"Yuri\"" [ref=e647]:
+            - generic [ref=e648]: "\""
+          - generic [ref=e649]:
+            - generic [ref=e651]:
+              - generic "\"Yuri\"" [ref=e653]
+              - generic [ref=e655]: Há 2 minutos
+            - generic [ref=e656]:
+              - generic [ref=e657]: 
+              - generic "Arquivo de áudio" [ref=e658]:
+                - generic [ref=e659]: 
+                - generic [ref=e661]: Áudio
+            - generic [ref=e662]:
+              - generic [ref=e663]:
+                - img [ref=e664]
+                - generic "Yuri Alcantara Gestor" [ref=e666]
+              - generic [ref=e667]:
+                - generic "14\\01" [ref=e668]
+                - generic "disparo_11000_2024-03-27 09:49:56.796706-03:00" [ref=e669]
+                - generic "disparo_11000_2024-04-24 10:03:12.271478-03:00" [ref=e670]
+                - generic "disparo_2024-10-23 09:52:26_11000" [ref=e671]
+                - generic "disparo_2025-05-06 11:26:00_57780" [ref=e672]
+                - generic [ref=e673]: + Ver mais
+        - generic [ref=e675] [cursor=pointer]:
+          - generic "Dario Castagno" [ref=e677]:
+            - generic [ref=e678]: DC
+          - generic [ref=e679]:
+            - generic [ref=e681]:
+              - generic "Dario Castagno" [ref=e683]
+              - generic [ref=e685]: Há 2 minutos
+            - generic [ref=e686]:
+              - generic [ref=e687]: 
+              - generic "Hola Dario imagino que tuviste un día ocupado. Solo quería mencionarte que empresas como la tuya están usando esta POLI para reducir sus tiempos de gestión en un 30%. y alcanzar más clientes con envíos masivos estratégicos sin riesgo de bloqueos aumentando en hasta 40% la tasa de respuesta. ¿Te gustaría que te veamos como lo hemos conseguido? Para no recibir más mensajes escribe SALIR" [ref=e689]
+            - generic [ref=e691]:
+              - img [ref=e692]
+              - generic "Ligimar" [ref=e694]
+        - generic [ref=e697] [cursor=pointer]:
+          - generic "Itanna" [ref=e699]:
+            - generic [ref=e700]: I
+          - generic [ref=e701]:
+            - generic [ref=e703]:
+              - generic "Itanna" [ref=e705]
+              - generic [ref=e707]: Há 2 minutos
+            - generic [ref=e708]:
+              - generic [ref=e709]: 
+              - generic "Olá Itanna! Vi que você demonstrou interesse em nossa plataforma de gestão de atendimento. ✅ Como o seu tempo é curto, quero te mostrar na prática como podemos centralizar seus canais e organizar a sua equipe de atendimento. 🚀 Faz sentido continuarmos com o atendimento?" [ref=e711]:
+                - text: Olá Itanna! Vi que você demonstrou interesse em nossa plataforma de gestão de atendimento.
+                - generic "✅" [ref=e712]
+                - text: Como o seu tempo é curto, quero te mostrar na prática como podemos centralizar seus canais e organizar a sua equipe de atendimento.
+                - generic "🚀" [ref=e713]
+                - text: Faz sentido continuarmos com o atendimento?
+            - generic [ref=e715]:
+              - img [ref=e716]
+              - generic "Guilherme Ramos" [ref=e718]
+        - generic [ref=e721] [cursor=pointer]:
+          - generic "Lucas Sampaio + Nova Era Hospitalar" [ref=e723]:
+            - generic [ref=e724]: LS
+          - generic [ref=e725]:
+            - generic [ref=e727]:
+              - generic "Lucas Sampaio + Nova Era Hospitalar" [ref=e729]
+              - generic [ref=e731]: Há 3 minutos
+            - generic "[object Object]" [ref=e734]
+            - generic [ref=e736]:
+              - img [ref=e737]
+              - generic "Jessica Ferreira" [ref=e739]
+        - generic [ref=e742] [cursor=pointer]:
+          - generic "Kayky" [ref=e744]:
+            - generic [ref=e745]: K
+          - generic [ref=e746]:
+            - generic [ref=e748]:
+              - generic "Kayky" [ref=e750]
+              - generic [ref=e752]: Há 3 minutos
+            - generic [ref=e753]:
+              - generic [ref=e754]: 
+              - generic "Olá Kayky! Vi que você demonstrou interesse em nossa plataforma de gestão de atendimento. ✅ Como o seu tempo é curto, quero te mostrar na prática como podemos centralizar seus canais e organizar a sua equipe de atendimento. 🚀 Faz sentido continuarmos com o atendimento?" [ref=e756]:
+                - text: Olá Kayky! Vi que você demonstrou interesse em nossa plataforma de gestão de atendimento.
+                - generic "✅" [ref=e757]
+                - text: Como o seu tempo é curto, quero te mostrar na prática como podemos centralizar seus canais e organizar a sua equipe de atendimento.
+                - generic "🚀" [ref=e758]
+                - text: Faz sentido continuarmos com o atendimento?
+            - generic [ref=e760]:
+              - img [ref=e761]
+              - generic "Guilherme Ramos" [ref=e763]
+        - generic [ref=e766] [cursor=pointer]:
+          - generic "Francisco Cláudio" [ref=e768]:
+            - generic [ref=e769]: FC
+          - generic [ref=e770]:
+            - generic [ref=e772]:
+              - generic "Francisco Cláudio" [ref=e774]
+              - generic [ref=e776]: Há 3 minutos
+            - generic [ref=e777]:
+              - generic [ref=e778]: 
+              - generic "Olá Francisco! Vi que você demonstrou interesse em nossa plataforma de gestão de atendimento. ✅ Como o seu tempo é curto, quero te mostrar na prática como podemos centralizar seus canais e organizar a sua equipe de atendimento. 🚀 Faz sentido continuarmos com o atendimento?" [ref=e780]:
+                - text: Olá Francisco! Vi que você demonstrou interesse em nossa plataforma de gestão de atendimento.
+                - generic "✅" [ref=e781]
+                - text: Como o seu tempo é curto, quero te mostrar na prática como podemos centralizar seus canais e organizar a sua equipe de atendimento.
+                - generic "🚀" [ref=e782]
+                - text: Faz sentido continuarmos com o atendimento?
+            - generic [ref=e784]:
+              - img [ref=e785]
+              - generic "Guilherme Ramos" [ref=e787]
+        - generic [ref=e790] [cursor=pointer]:
+          - generic "Eder Sumikawa" [ref=e792]:
+            - generic [ref=e793]: ES
+          - generic [ref=e794]:
+            - generic [ref=e796]:
+              - generic "Eder Sumikawa" [ref=e798]
+              - generic [ref=e800]: Há 3 minutos
+            - generic [ref=e801]:
+              - generic [ref=e802]: 
+              - generic "Olá Eder! Vi que você demonstrou interesse em nossa plataforma de gestão de atendimento. ✅ Como o seu tempo é curto, quero te mostrar na prática como podemos centralizar seus canais e organizar a sua equipe de atendimento. 🚀 Faz sentido continuarmos com o atendimento?" [ref=e804]:
+                - text: Olá Eder! Vi que você demonstrou interesse em nossa plataforma de gestão de atendimento.
+                - generic "✅" [ref=e805]
+                - text: Como o seu tempo é curto, quero te mostrar na prática como podemos centralizar seus canais e organizar a sua equipe de atendimento.
+                - generic "🚀" [ref=e806]
+                - text: Faz sentido continuarmos com o atendimento?
+            - generic [ref=e808]:
+              - img [ref=e809]
+              - generic "Guilherme Ramos" [ref=e811]
+        - generic [ref=e814] [cursor=pointer]:
+          - generic "Elisson Bento - Êxodo Benefícios" [ref=e816]:
+            - generic [ref=e817]: EB
+          - generic [ref=e818]:
+            - generic [ref=e820]:
+              - generic "Elisson Bento - Êxodo Benefícios" [ref=e822]
+              - generic [ref=e824]: Há 3 minutos
+            - generic [ref=e825]:
+              - generic [ref=e826]: 
+              - 'generic "Matheus Sanches diz: Dentro de 20 minutinhos iniciamos nossa chamada Elisson. 🚀" [ref=e828]':
+                - text: "Matheus Sanches diz: Dentro de 20 minutinhos iniciamos nossa chamada Elisson."
+                - generic "🚀" [ref=e829]
+            - generic [ref=e830]:
+              - generic [ref=e831]:
+                - img [ref=e832]
+                - generic "Matheus Sanches Dias" [ref=e834]
+              - generic [ref=e835]:
+                - generic "reunião marcada" [ref=e836]
+                - generic "sdr100626" [ref=e837]
+        - generic [ref=e839] [cursor=pointer]:
+          - img "Hélio LABOISSIER grades" [ref=e841]
+          - generic [ref=e842]:
+            - generic [ref=e844]:
+              - generic "Hélio LABOISSIER grades" [ref=e846]
+              - generic [ref=e848]: Há 3 minutos
+            - generic [ref=e849]:
+              - generic [ref=e850]: 
+              - generic "Olá Hélio! Vi que você demonstrou interesse em nossa plataforma de gestão de atendimento. ✅ Como o seu tempo é curto, quero te mostrar na prática como podemos centralizar seus canais e organizar a sua equipe de atendimento. 🚀 Faz sentido continuarmos com o atendimento?" [ref=e852]:
+                - text: Olá Hélio! Vi que você demonstrou interesse em nossa plataforma de gestão de atendimento.
+                - generic "✅" [ref=e853]
+                - text: Como o seu tempo é curto, quero te mostrar na prática como podemos centralizar seus canais e organizar a sua equipe de atendimento.
+                - generic "🚀" [ref=e854]
+                - text: Faz sentido continuarmos com o atendimento?
+            - generic [ref=e856]:
+              - img [ref=e857]
+              - generic "Guilherme Ramos" [ref=e859]
+        - generic [ref=e862] [cursor=pointer]:
+          - generic "Chico - Velocity STUDIO BIKE VILA MADALENA LTDA - 51963" [ref=e864]:
+            - generic [ref=e865]: C-
+          - generic [ref=e866]:
+            - generic [ref=e868]:
+              - generic "Chico - Velocity STUDIO BIKE VILA MADALENA LTDA - 51963" [ref=e870]
+              - generic [ref=e872]: Há 3 minutos
+            - generic [ref=e873]:
+              - generic [ref=e874]: 
+              - generic "Arquivo de imagem" [ref=e875]:
+                - generic [ref=e876]: 
+                - generic [ref=e878]: Foto
+            - generic [ref=e879]:
+              - generic [ref=e880]:
+                - img [ref=e881]
+                - generic "Andressa" [ref=e883]
+              - generic [ref=e884]:
+                - generic "Live" [ref=e885]
+                - generic "venda-realizada" [ref=e886]
+                - generic "em-negociação" [ref=e887]
+                - generic "reuniao-realizada" [ref=e888]
+                - generic [ref=e889]: + Ver mais
+        - generic [ref=e891] [cursor=pointer]:
+          - 'generic "Ana Paula | Vnc Consultoria De Imoveis Ltda # 7881" [ref=e893]':
+            - generic [ref=e894]: AP
+          - generic [ref=e895]:
+            - generic [ref=e897]:
+              - 'generic "Ana Paula | Vnc Consultoria De Imoveis Ltda # 7881" [ref=e899]'
+              - generic [ref=e901]: Há 4 minutos
+            - generic [ref=e902]:
+              - generic [ref=e903]: 
+              - 'generic "Thalyta Cardoso diz: Pode ficar super tranquilo, você não precisa fazer mais nada! O seu cancelamento já está programado por aqui. Assim que o pagamento desse último boleto for compensado, o sistema fará a baixa e a desativação automática da conta após os 30 dias de uso. O seu processo já está 100% garantido e em andamento, não se preocupe" [ref=e905]'
+            - generic [ref=e906]:
+              - generic [ref=e907]:
+                - img [ref=e908]
+                - generic "Thalyta Cardoso" [ref=e910]
+              - generic "Ação_Gamificação" [ref=e912]
+        - generic [ref=e914] [cursor=pointer]:
+          - generic "Maria e Tomé - Altura & clima|Tomé machado 52194" [ref=e916]:
+            - generic [ref=e917]: ME
+          - generic [ref=e918]:
+            - generic [ref=e920]:
+              - generic "Maria e Tomé - Altura & clima|Tomé machado 52194" [ref=e922]
+              - generic [ref=e924]: Há 4 minutos
+            - generic [ref=e925]:
+              - generic [ref=e926]: 
+              - 'generic "Felipe Mendes diz: Poderia confirmar pra nós por favor se não for incomodo, se o motivo teria sido técnico (problemas com a plataforma) ou se poderia ser uma migração para outro sistema" [ref=e928]'
+            - generic [ref=e929]:
+              - generic [ref=e930]:
+                - img [ref=e931]
+                - generic "Felipe Mendes" [ref=e933]
+              - generic [ref=e934]:
+                - generic "agendamento0227" [ref=e935]
+                - generic "Quente" [ref=e936]
+                - generic "Em negociação" [ref=e937]
+                - generic "Venda realizada" [ref=e938]
+        - generic [ref=e940] [cursor=pointer]:
+          - generic "Ewerton" [ref=e942]:
+            - generic [ref=e943]: E
+          - generic [ref=e944]:
+            - generic [ref=e946]:
+              - generic "Ewerton" [ref=e948]
+              - generic [ref=e950]: Há 4 minutos
+            - generic [ref=e951]:
+              - generic [ref=e952]: 
+              - generic "Arquivo de imagem" [ref=e953]:
+                - generic [ref=e954]: 
+                - generic [ref=e956]: Foto
+            - generic [ref=e957]:
+              - generic [ref=e958]:
+                - img [ref=e959]
+                - generic "Laura Mathias" [ref=e961]
+              - generic [ref=e962]:
+                - generic "reunião marcada" [ref=e963]
+                - generic "sdr100626" [ref=e964]
+        - generic [ref=e966] [cursor=pointer]:
+          - generic "Wellington Nascimento" [ref=e968]:
+            - generic [ref=e969]: WN
+          - generic [ref=e970]:
+            - generic [ref=e972]:
+              - generic "Wellington Nascimento" [ref=e974]
+              - generic [ref=e976]: Há 4 minutos
+            - generic [ref=e977]:
+              - generic [ref=e978]: 
+              - generic "Vender mais" [ref=e980]
+              - generic "Não lido" [ref=e981]:
+                - generic [ref=e983]: "1"
+            - generic [ref=e985]:
+              - img [ref=e986]
+              - generic "Laura Mathias" [ref=e988]
+        - generic [ref=e991] [cursor=pointer]:
+          - generic "Nicolas" [ref=e993]:
+            - generic [ref=e994]: "N"
+          - generic [ref=e995]:
+            - generic [ref=e997]:
+              - generic "Nicolas" [ref=e999]
+              - generic [ref=e1001]: Há 4 minutos
+            - generic [ref=e1002]:
+              - generic [ref=e1003]: 
+              - 'generic "👋 Hola,Nicolas soy Ligimar de Poli Digital. 🤔 Una pregunta rápida: si hoy recibieras el mismo mensaje promocional que envías a tus clientes, ¿lo responderías o lo ignorarías? 📲 Eso es exactamente lo que sucede cuando no existe una estrategia detrás de cada envío. 🚀 No se trata solo de enviar mensajes masivos, sino de captar atención, generar respuestas y convertir conversaciones en ventas. ¿Te gustaría descubrir cómo mejorar tus resultados en WhatsApp?" [ref=e1005]':
+                - generic "👋" [ref=e1006]
+                - text: Hola,Nicolas soy Ligimar de Poli Digital.
+                - generic "🤔" [ref=e1007]
+                - text: "Una pregunta rápida: si hoy recibieras el mismo mensaje promocional que envías a tus clientes, ¿lo responderías o lo ignorarías?"
+                - generic "📲" [ref=e1008]
+                - text: Eso es exactamente lo que sucede cuando no existe una estrategia detrás de cada envío.
+                - generic "🚀" [ref=e1009]
+                - text: No se trata solo de enviar mensajes masivos, sino de captar atención, generar respuestas y convertir conversaciones en ventas. ¿Te gustaría descubrir cómo mejorar tus resultados en WhatsApp?
+            - generic [ref=e1011]:
+              - img [ref=e1012]
+              - generic "Ligimar" [ref=e1014]
+        - generic [ref=e1017] [cursor=pointer]:
+          - 'generic "Michael Carajeleascov - KM Comunicação - #49301" [ref=e1019]':
+            - generic [ref=e1020]: MC
+          - generic [ref=e1021]:
+            - generic [ref=e1023]:
+              - 'generic "Michael Carajeleascov - KM Comunicação - #49301" [ref=e1025]'
+              - generic [ref=e1027]: Há 4 minutos
+            - generic [ref=e1028]:
+              - generic [ref=e1029]: 
+              - 'generic "Felipe Mendes diz: A opção que você diz, seria essa do guia de viagem?" [ref=e1031]'
+            - generic [ref=e1032]:
+              - generic [ref=e1033]:
+                - img [ref=e1034]
+                - generic "Felipe Mendes" [ref=e1036]
+              - generic [ref=e1037]:
+                - generic "embaixadores buzzlead engajamento" [ref=e1038]
+                - generic "embaixadores buzzlead engajamento" [ref=e1039]
+                - generic "embaixadores buzzlead engajamento" [ref=e1040]
+        - generic [ref=e1042] [cursor=pointer]:
+          - generic "JEFERSON RIBEIRO" [ref=e1044]:
+            - generic [ref=e1045]: JR
+          - generic [ref=e1046]:
+            - generic [ref=e1048]:
+              - generic "JEFERSON RIBEIRO" [ref=e1050]
+              - generic [ref=e1052]: Há 5 minutos
+            - generic [ref=e1053]:
+              - generic [ref=e1054]: 
+              - generic "Só eu mesmo" [ref=e1056]
+              - generic "Não lido" [ref=e1057]:
+                - generic [ref=e1059]: "1"
+            - generic [ref=e1061]:
+              - img [ref=e1062]
+              - generic "Iago Leal" [ref=e1064]
+        - generic [ref=e1067] [cursor=pointer]:
+          - generic "Elô Carvalho MARTINS CAVALCANTE CONSULTORIA 50048" [ref=e1069]:
+            - generic [ref=e1070]: EC
+          - generic [ref=e1071]:
+            - generic [ref=e1073]:
+              - generic "Elô Carvalho MARTINS CAVALCANTE CONSULTORIA 50048" [ref=e1075]
+              - generic [ref=e1077]: Há 5 minutos
+            - generic [ref=e1078]:
+              - generic [ref=e1079]: 
+              - 'generic "Nicolli diz: isso e também para evitar o mesmo user em dois computadores diferentes" [ref=e1081]'
+            - generic [ref=e1082]:
+              - generic [ref=e1083]:
+                - img [ref=e1084]
+                - generic "Nicolli" [ref=e1086]
+              - generic [ref=e1087]:
+                - generic "CTWA" [ref=e1088]
+                - generic "ligação_sugestão" [ref=e1089]
+                - generic "teste nic" [ref=e1090]
+        - generic [ref=e1092] [cursor=pointer]:
+          - generic "Jonatan Flach - ZANELLA ODONTOLOGIA" [ref=e1094]:
+            - generic [ref=e1095]: JF
+          - generic [ref=e1096]:
+            - generic [ref=e1098]:
+              - generic "Jonatan Flach - ZANELLA ODONTOLOGIA" [ref=e1100]
+              - generic [ref=e1102]: Há 5 minutos
+            - generic [ref=e1103]:
+              - generic [ref=e1104]: 
+              - 'generic "Tácia Marinia diz: 👀" [ref=e1106]':
+                - text: "Tácia Marinia diz:"
+                - generic "👀" [ref=e1107]
+            - generic [ref=e1109]:
+              - img [ref=e1110]
+              - generic "Tácia Marinia" [ref=e1112]

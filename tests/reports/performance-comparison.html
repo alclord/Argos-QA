@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Poli Digital — Comparativo de Performance: Interface Nova vs Legada</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: #f8f9fb;
+    color: #1a1d23;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    background: white;
+    padding: 12mm 14mm;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 3px solid #6C3BEA;
+    padding-bottom: 14px;
+    margin-bottom: 22px;
+  }
+  .header-title { }
+  .header-title h1 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #6C3BEA;
+    letter-spacing: -0.5px;
+  }
+  .header-title p {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 3px;
+  }
+  .header-meta {
+    text-align: right;
+    font-size: 11px;
+    color: #9ca3af;
+    line-height: 1.7;
+  }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 99px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+  .badge-prod { background: #dcfce7; color: #15803d; }
+  .badge-new  { background: #ede9fe; color: #6C3BEA; }
+  .badge-legacy { background: #fef3c7; color: #b45309; }
+  .badge-warn { background: #fef2f2; color: #dc2626; }
+  .badge-ok   { background: #f0fdf4; color: #16a34a; }
+
+  /* Section */
+  section { margin-bottom: 22px; }
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #374151;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  /* Summary cards */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+  .card {
+    background: #f8f9fb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 12px;
+    position: relative;
+  }
+  .card.highlight { border-color: #6C3BEA; background: #faf5ff; }
+  .card-label { font-size: 10px; font-weight: 600; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+  .card-value { font-size: 22px; font-weight: 800; color: #1a1d23; line-height: 1; }
+  .card-value.green { color: #16a34a; }
+  .card-value.red   { color: #dc2626; }
+  .card-value.purple { color: #6C3BEA; }
+  .card-sub  { font-size: 10px; color: #6b7280; margin-top: 4px; }
+  .card-delta {
+    position: absolute;
+    top: 10px; right: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 5px;
+    border-radius: 4px;
+  }
+  .card-delta.better { background: #dcfce7; color: #15803d; }
+  .card-delta.worse  { background: #fef2f2; color: #dc2626; }
+
+  /* Comparison table */
+  .cmp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  .cmp-table th {
+    background: #6C3BEA;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding: 7px 10px;
+    font-size: 11px;
+  }
+  .cmp-table th:first-child { text-align: left; border-radius: 6px 0 0 0; }
+  .cmp-table th:last-child  { border-radius: 0 6px 0 0; }
+  .cmp-table td {
+    padding: 7px 10px;
+    border-bottom: 1px solid #f3f4f6;
+    text-align: center;
+  }
+  .cmp-table td:first-child { text-align: left; font-weight: 500; color: #374151; }
+  .cmp-table tr:last-child td { border-bottom: none; }
+  .cmp-table tr:nth-child(even) td { background: #fafafa; }
+  .cmp-table .val-new    { color: #6C3BEA; font-weight: 700; }
+  .cmp-table .val-legacy { color: #b45309; font-weight: 700; }
+  .cmp-table .val-good   { color: #16a34a; font-weight: 600; }
+  .cmp-table .val-bad    { color: #dc2626; font-weight: 600; }
+  .cmp-table .section-row td {
+    background: #f3f4f6;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6b7280;
+    padding: 5px 10px;
+  }
+
+  /* Bar chart */
+  .bar-group { margin-bottom: 14px; }
+  .bar-label { font-size: 11px; font-weight: 600; color: #374151; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-label span { font-weight: 400; color: #9ca3af; }
+  .bar-track {
+    height: 18px;
+    background: #f3f4f6;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    gap: 2px;
+  }
+  .bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+    white-space: nowrap;
+    transition: width 0.3s;
+  }
+  .bar-new    { background: #6C3BEA; }
+  .bar-legacy { background: #f59e0b; }
+  .bar-legend {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 10px;
+    font-size: 11px;
+  }
+  .bar-legend-item { display: flex; align-items: center; gap: 5px; }
+  .bar-legend-dot { width: 10px; height: 10px; border-radius: 2px; }
+
+  /* Run table */
+  .run-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+  }
+  .run-table th {
+    background: #f3f4f6;
+    color: #6b7280;
+    font-weight: 600;
+    padding: 5px 8px;
+    text-align: center;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+  .run-table th:first-child { text-align: left; }
+  .run-table td {
+    padding: 5px 8px;
+    border-bottom: 1px solid #f3f4f6;
+    text-align: center;
+    color: #374151;
+  }
+  .run-table td:first-child { text-align: left; font-weight: 500; }
+  .run-table .stat-row td { background: #faf5ff; font-weight: 700; color: #6C3BEA; }
+  .run-table .stat-row-legacy td { background: #fffbeb; font-weight: 700; color: #b45309; }
+
+  /* Architecture box */
+  .arch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .arch-box {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 12px 14px;
+  }
+  .arch-box.legacy { border-color: #fde68a; background: #fffbeb; }
+  .arch-box.new    { border-color: #c4b5fd; background: #faf5ff; }
+  .arch-box h3 { font-size: 12px; font-weight: 700; margin-bottom: 8px; }
+  .arch-box.legacy h3 { color: #b45309; }
+  .arch-box.new h3    { color: #6C3BEA; }
+  .arch-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 6px;
+    font-size: 11px;
+  }
+  .arch-step-num {
+    background: #6C3BEA;
+    color: white;
+    border-radius: 50%;
+    width: 16px; height: 16px;
+    min-width: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    font-weight: 700;
+    margin-top: 1px;
+  }
+  .arch-box.legacy .arch-step-num { background: #f59e0b; }
+  .arch-step-text { color: #374151; }
+  .arch-step-time { color: #9ca3af; font-size: 10px; }
+
+  /* Findings */
+  .findings { display: flex; flex-direction: column; gap: 8px; }
+  .finding {
+    display: flex;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    font-size: 12px;
+  }
+  .finding.positive { border-color: #bbf7d0; background: #f0fdf4; }
+  .finding.negative { border-color: #fecaca; background: #fef2f2; }
+  .finding.neutral  { border-color: #ddd6fe; background: #faf5ff; }
+  .finding-icon { font-size: 15px; line-height: 1; }
+  .finding-text strong { font-weight: 700; }
+
+  /* Footer */
+  .footer {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 10px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: #9ca3af;
+  }
+
+  @media print {
+    body { background: white; }
+    .page { padding: 10mm 12mm; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-title">
+      <h1>Comparativo de Performance — Interface Nova vs Legada</h1>
+      <p>Argos QA &bull; Time to First Chat &bull; REST API Latency &bull; Análise Arquitetural</p>
+    </div>
+    <div class="header-meta">
+      <span class="badge badge-prod">Produção</span><br>
+      18 de junho de 2026<br>
+      TTC: 5 rodadas (10/06) · K6: re-executado hoje<br>
+      Metodologia: Playwright + K6
+    </div>
+  </div>
+
+  <!-- Summary Cards -->
+  <div class="cards">
+    <div class="card highlight">
+      <div class="card-delta better">Nova -43%</div>
+      <div class="card-label">Time to First Chat p50</div>
+      <div class="card-value purple">2.1s</div>
+      <div class="card-sub">Legado: 3.7s</div>
+    </div>
+    <div class="card highlight">
+      <div class="card-delta better">Nova -59%</div>
+      <div class="card-label">Time to First Chat p95</div>
+      <div class="card-value purple">2.6s</div>
+      <div class="card-sub">Legado: 6.5s</div>
+    </div>
+    <div class="card">
+      <div class="card-label">First Contentful Paint p50</div>
+      <div class="card-value green">456ms</div>
+      <div class="card-sub">Legado: 560ms &bull; Similar</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Chat List REST p95 (K6)</div>
+      <div class="card-value red">5427ms</div>
+      <div class="card-sub">/v3/accounts/:uuid/chats · +80% vs jun/10</div>
+    </div>
+  </div>
+
+  <!-- Time to First Chat: Bar Chart -->
+  <section>
+    <div class="section-title">Time to First Chat — Distribuição por Rodada</div>
+    <div class="bar-legend">
+      <div class="bar-legend-item"><div class="bar-legend-dot" style="background:#6C3BEA"></div> Nova Interface (spa.poli.digital)</div>
+      <div class="bar-legend-item"><div class="bar-legend-dot" style="background:#f59e0b"></div> Interface Legada (app-spa.poli.digital)</div>
+    </div>
+
+    <div class="bar-group">
+      <div class="bar-label">Rodada 1 <span>Nova: 2279ms &nbsp;|&nbsp; Legado: 6479ms</span></div>
+      <div class="bar-track">
+        <div class="bar-fill bar-new"    style="width:35%">2279ms</div>
+        <div class="bar-fill bar-legacy" style="width:65%">6479ms</div>
+      </div>
+    </div>
+    <div class="bar-group">
+      <div class="bar-label">Rodada 2 <span>Nova: 1872ms &nbsp;|&nbsp; Legado: 3287ms</span></div>
+      <div class="bar-track">
+        <div class="bar-fill bar-new"    style="width:36%">1872ms</div>
+        <div class="bar-fill bar-legacy" style="width:64%">3287ms</div>
+      </div>
+    </div>
+    <div class="bar-group">
+      <div class="bar-label">Rodada 3 <span>Nova: 2023ms &nbsp;|&nbsp; Legado: 2614ms</span></div>
+      <div class="bar-track">
+        <div class="bar-fill bar-new"    style="width:43%">2023ms</div>
+        <div class="bar-fill bar-legacy" style="width:57%">2614ms</div>
+      </div>
+    </div>
+    <div class="bar-group">
+      <div class="bar-label">Rodada 4 <span>Nova: 2631ms &nbsp;|&nbsp; Legado: 3667ms</span></div>
+      <div class="bar-track">
+        <div class="bar-fill bar-new"    style="width:41%">2631ms</div>
+        <div class="bar-fill bar-legacy" style="width:59%">3667ms</div>
+      </div>
+    </div>
+    <div class="bar-group">
+      <div class="bar-label">Rodada 5 <span>Nova: 2094ms &nbsp;|&nbsp; Legado: 5228ms</span></div>
+      <div class="bar-track">
+        <div class="bar-fill bar-new"    style="width:28%">2094ms</div>
+        <div class="bar-fill bar-legacy" style="width:72%">5228ms</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed stats table -->
+  <section>
+    <div class="section-title">Estatísticas Detalhadas — Time to First Chat</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+
+      <div>
+        <div style="font-size:11px;font-weight:700;color:#b45309;margin-bottom:6px;">
+          Interface Legada &nbsp;<span class="badge badge-legacy">app-spa.poli.digital</span>
+        </div>
+        <table class="run-table">
+          <thead><tr>
+            <th>Rodada</th><th>1º Chat</th><th>WebSocket+</th><th>Load Event</th><th>FCP</th>
+          </tr></thead>
+          <tbody>
+            <tr><td>Run 1</td><td>6479ms</td><td>5644ms</td><td>835ms</td><td>560ms</td></tr>
+            <tr><td>Run 2</td><td>3287ms</td><td>1922ms</td><td>1365ms</td><td>776ms</td></tr>
+            <tr><td>Run 3</td><td>2614ms</td><td>1838ms</td><td>776ms</td><td>560ms</td></tr>
+            <tr><td>Run 4</td><td>3667ms</td><td>2935ms</td><td>732ms</td><td>536ms</td></tr>
+            <tr><td>Run 5</td><td>5228ms</td><td>4299ms</td><td>929ms</td><td>548ms</td></tr>
+            <tr class="stat-row-legacy"><td>p50</td><td>3667ms</td><td>2935ms</td><td>835ms</td><td>560ms</td></tr>
+            <tr class="stat-row-legacy"><td>p95</td><td>6479ms</td><td>5644ms</td><td>1365ms</td><td>776ms</td></tr>
+          </tbody>
+        </table>
+        <div style="font-size:10px;color:#9ca3af;margin-top:5px;">WebSocket+ = tempo do load event ao 1º chat aparecer</div>
+      </div>
+
+      <div>
+        <div style="font-size:11px;font-weight:700;color:#6C3BEA;margin-bottom:6px;">
+          Interface Nova &nbsp;<span class="badge badge-new">spa.poli.digital</span>
+        </div>
+        <table class="run-table">
+          <thead><tr>
+            <th>Rodada</th><th>1º Chat</th><th>REST+</th><th>Load Event</th><th>FCP</th>
+          </tr></thead>
+          <tbody>
+            <tr><td>Run 1</td><td>2279ms</td><td>991ms</td><td>1288ms</td><td>756ms</td></tr>
+            <tr><td>Run 2</td><td>1872ms</td><td>936ms</td><td>936ms</td><td>428ms</td></tr>
+            <tr><td>Run 3</td><td>2023ms</td><td>837ms</td><td>1186ms</td><td>440ms</td></tr>
+            <tr><td>Run 4</td><td>2631ms</td><td>1772ms</td><td>859ms</td><td>456ms</td></tr>
+            <tr><td>Run 5</td><td>2094ms</td><td>1163ms</td><td>931ms</td><td>436ms</td></tr>
+            <tr class="stat-row"><td>p50</td><td>2094ms</td><td>1163ms</td><td>931ms</td><td>456ms</td></tr>
+            <tr class="stat-row"><td>p95</td><td>2631ms</td><td>1772ms</td><td>1288ms</td><td>756ms</td></tr>
+          </tbody>
+        </table>
+        <div style="font-size:10px;color:#9ca3af;margin-top:5px;">REST+ = tempo do load event ao 1º chat aparecer via REST</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- REST API Comparison -->
+  <section>
+    <div class="section-title">Latência de API — K6 Produção (1 VU · 3 min · p95+20% = threshold)</div>
+    <table class="cmp-table">
+      <thead>
+        <tr>
+          <th style="width:38%">Funcionalidade</th>
+          <th>Endpoint Legado</th>
+          <th>p50</th><th>p95</th>
+          <th>Endpoint Novo</th>
+          <th>p50</th><th>p95</th>
+          <th>Veredicto</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="section-row"><td colspan="8">Endpoints equivalentes</td></tr>
+        <tr>
+          <td>Configurações da conta</td>
+          <td><span class="badge badge-legacy">GET /api/reseller/settings</span></td>
+          <td class="val-legacy">200ms</td><td class="val-legacy">939ms</td>
+          <td><span class="badge badge-new">GET /v3/settings</span></td>
+          <td class="val-new">269ms</td><td class="val-new">392ms</td>
+          <td><span class="badge badge-ok">Nova mais rápida</span></td>
+        </tr>
+        <tr>
+          <td>Autenticação / validação</td>
+          <td><span class="badge badge-legacy">GET /auth/foundation/allowed</span></td>
+          <td class="val-legacy">220ms</td><td class="val-legacy">797ms</td>
+          <td><span class="badge badge-new">GET /v3/auth/get-me</span></td>
+          <td class="val-new">338ms</td><td class="val-new">436ms</td>
+          <td><span class="badge badge-ok">Nova mais rápida</span></td>
+        </tr>
+        <tr class="section-row"><td colspan="8">Endpoints exclusivos da nova interface</td></tr>
+        <tr>
+          <td>Lista de chats (principal)</td>
+          <td colspan="3" style="text-align:center;color:#9ca3af;font-style:italic;font-size:11px">WebSocket Pusher — sem REST equivalente</td>
+          <td><span class="badge badge-new">GET /v3/accounts/:uuid/chats</span></td>
+          <td class="val-new">3078ms</td><td class="val-bad">5427ms</td>
+          <td><span class="badge badge-warn">Crítico p95 ▲80%</span></td>
+        </tr>
+        <tr>
+          <td>Lista de contatos</td>
+          <td colspan="3" style="text-align:center;color:#9ca3af;font-style:italic;font-size:11px">—</td>
+          <td><span class="badge badge-new">GET /v3/contacts</span></td>
+          <td class="val-new">309ms</td><td class="val-new">407ms</td>
+          <td><span class="badge badge-ok">Rápido</span></td>
+        </tr>
+        <tr>
+          <td>Histórico de mensagens</td>
+          <td colspan="3" style="text-align:center;color:#9ca3af;font-style:italic;font-size:11px">—</td>
+          <td><span class="badge badge-new">GET /v3/contacts/:uuid/messages</span></td>
+          <td class="val-new">311ms</td><td class="val-new">408ms</td>
+          <td><span class="badge badge-ok">Rápido</span></td>
+        </tr>
+        <tr class="section-row"><td colspan="8">Endpoints exclusivos da interface legada</td></tr>
+        <tr>
+          <td>Saldo de créditos</td>
+          <td><span class="badge badge-legacy">POST /credits/balance</span></td>
+          <td class="val-legacy">208ms</td><td class="val-legacy">1396ms</td>
+          <td colspan="3" style="text-align:center;color:#9ca3af;font-size:11px;font-style:italic">sem equivalente direto</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>Gateway de pagamento</td>
+          <td><span class="badge badge-legacy">GET /shopping/gateway</span></td>
+          <td class="val-legacy">205ms</td><td class="val-legacy">1081ms</td>
+          <td colspan="3" style="text-align:center;color:#9ca3af;font-size:11px;font-style:italic">sem equivalente direto</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Architecture -->
+  <section>
+    <div class="section-title">Arquitetura — Fluxo de Carregamento da Lista de Chats</div>
+    <div class="arch-grid">
+      <div class="arch-box legacy">
+        <h3>Interface Legada — WebSocket (Pusher)</h3>
+        <div class="arch-step">
+          <div class="arch-step-num">1</div>
+          <div><div class="arch-step-text">Navegação + Download de assets</div><div class="arch-step-time">~0 – 835ms (load event)</div></div>
+        </div>
+        <div class="arch-step">
+          <div class="arch-step-num">2</div>
+          <div><div class="arch-step-text">JavaScript inicializa cliente Pusher</div><div class="arch-step-time">~835ms</div></div>
+        </div>
+        <div class="arch-step">
+          <div class="arch-step-num">3</div>
+          <div><div class="arch-step-text">TCP + TLS handshake com servidor Pusher</div><div class="arch-step-time">+200 – 800ms</div></div>
+        </div>
+        <div class="arch-step">
+          <div class="arch-step-num">4</div>
+          <div><div class="arch-step-text">Autenticação no canal privado</div><div class="arch-step-time">+300 – 600ms</div></div>
+        </div>
+        <div class="arch-step">
+          <div class="arch-step-num">5</div>
+          <div><div class="arch-step-text">Servidor pusha lista inicial de chats</div><div class="arch-step-time">+500 – 3000ms</div></div>
+        </div>
+        <div style="margin-top:8px;padding:7px 10px;background:#fde68a;border-radius:6px;font-size:11px;font-weight:600;color:#92400e;">
+          Total p50: ~3.7s &nbsp;|&nbsp; p95: ~6.5s &nbsp;|&nbsp; Alta variância
+        </div>
+      </div>
+      <div class="arch-box new">
+        <h3>Interface Nova — REST (Foundation API)</h3>
+        <div class="arch-step">
+          <div class="arch-step-num">1</div>
+          <div><div class="arch-step-text">Navegação + Download de assets</div><div class="arch-step-time">~0 – 931ms (load event)</div></div>
+        </div>
+        <div class="arch-step">
+          <div class="arch-step-num">2</div>
+          <div><div class="arch-step-text">JavaScript dispara GET /v3/accounts/:uuid/chats</div><div class="arch-step-time">~500ms (durante carregamento)</div></div>
+        </div>
+        <div class="arch-step">
+          <div class="arch-step-num">3</div>
+          <div><div class="arch-step-text">Foundation API processa e responde</div><div class="arch-step-time">+800 – 1800ms (p50–p95 Playwright)</div></div>
+        </div>
+        <div class="arch-step">
+          <div class="arch-step-num">4</div>
+          <div><div class="arch-step-text">React renderiza lista de chats no DOM</div><div class="arch-step-time">+50ms</div></div>
+        </div>
+        <div style="margin-top:8px;padding:7px 10px;background:#ddd6fe;border-radius:6px;font-size:11px;font-weight:600;color:#4c1d95;">
+          Total p50: ~2.1s &nbsp;|&nbsp; p95: ~2.6s &nbsp;|&nbsp; Baixa variância
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:10px;padding:8px 12px;background:#fef2f2;border:1px solid #fecaca;border-radius:8px;font-size:11px;color:#991b1b;">
+      <strong>Atenção (18/06):</strong> O endpoint <code>GET /v3/accounts/:uuid/chats</code> atingiu p95=<strong>5427ms</strong> — alta degradação vs 3010ms medido em 10/06 (+80%).
+      O threshold de alerta configurado era 3612ms e já foi ultrapassado. Recomenda-se investigação.
+    </div>
+  </section>
+
+  <!-- Key Findings -->
+  <section>
+    <div class="section-title">Conclusões</div>
+    <div class="findings">
+      <div class="finding positive">
+        <div class="finding-icon">✅</div>
+        <div class="finding-text">
+          <strong>A nova interface é ~2x mais rápida para mostrar os chats</strong> — p50 de 2.1s vs 3.7s no legado, e p95 de 2.6s vs 6.5s.
+          A transição para REST eliminou a variância alta do WebSocket Pusher.
+        </div>
+      </div>
+      <div class="finding negative">
+        <div class="finding-icon">⚠️</div>
+        <div class="finding-text">
+          <strong>Regressão detectada: /v3/accounts/:uuid/chats p95=5427ms</strong> (era 3010ms em 10/06, +80%).
+          O p50 também piorou: 3078ms vs 1515ms. Isso ultrapassa o threshold de 3612ms configurado no monitor.
+          Recomenda-se investigação imediata — qualquer slowdown adicional impacta diretamente o carregamento da lista de chats.
+        </div>
+      </div>
+      <div class="finding negative">
+        <div class="finding-icon">⚠️</div>
+        <div class="finding-text">
+          <strong>Reclamações de lentidão no legado são válidas</strong> — o WebSocket não é instantâneo para a lista inicial.
+          O handshake + entrega inicial leva 1.8s–5.6s após o load event. O p95 de 6.5s é perceptível pelo usuário.
+        </div>
+      </div>
+      <div class="finding positive">
+        <div class="finding-icon">✅</div>
+        <div class="finding-text">
+          <strong>Nova interface mais rápida nos endpoints equivalentes</strong> — settings nova p95=392ms vs legado p95=939ms.
+          O legado apresentou alta variância em 18/06 (p50 rápido mas p95 alto), sugerindo instabilidade na infra legada.
+        </div>
+      </div>
+      <div class="finding neutral">
+        <div class="finding-icon">ℹ️</div>
+        <div class="finding-text">
+          <strong>Auth agora mais rápido na nova interface</strong> — Foundation API p95=436ms vs Heimdall p95=797ms (18/06).
+          Legado apresentou alta variância de p95. Ambos são imperceptíveis para o usuário mas o legado mostra tendência de degradação.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer">
+    <span>Argos QA &bull; Relatório gerado automaticamente via Playwright + K6 &bull; Produção poli.digital</span>
+    <span>K6 re-executado 18 jun 2026 &bull; TTC medido 10 jun 2026 &bull; yuri.castro@poli.digital</span>
+  </div>
+
+</div>
+</body>
+</html>

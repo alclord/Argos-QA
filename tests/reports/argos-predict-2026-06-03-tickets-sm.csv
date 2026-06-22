@@ -1,0 +1,29 @@
+ID;Título;Status;Tipo;Prioridade;Módulo(s);Dias Aberto;Card DEV Vinculado;Decay Aplicado;Peso SM
+SM-8158;Mensagens não chegando no Poli para alguns contatos;Aberto;Bug;Medium;Chat / Mensagens;0;—;×1.0;3
+SM-8149;Contato não aparece na aba da nova interface;Aberto;Bug;Medium;Contatos / Busca;0;—;×1.0;3
+SM-8145;Erro ao enviar template com documento/planilha anexa;Aberto;Bug;Medium;Chat / Mensagens · Upload / Mídia;0;—;×1.0;3
+SM-8125;Relatório não exibe quantidade de conversas receptivas a partir de 26/05;Aberto;Bug;Medium;Relatórios / SLA;1;—;×1.0;3
+SM-8123;Número do cliente banido/bloqueado pela Meta;Aberto;Bug;Medium;Canais / WhatsApp;1;—;×1.0;3
+SM-8119;Supervisor não consegue encontrar contato na busca;Aberto;Bug;Medium;Contatos / Busca;1;—;×1.0;3
+SM-8109;Tela branca na plataforma para usuário específico;Aberto;Bug;Medium;Chat / Mensagens;1;—;×1.0;3
+SM-8105;Múltiplas instabilidades — mensagens atrasadas texto corrompido busca falha;Aberto;Bug;Medium;Chat / Mensagens · Contatos / Busca;1;—;×1.0;3
+SM-8104;Erro ao criar etiqueta com espaço e números;Aberto;Bug;Medium;Configurações;1;—;×1.0;3
+SM-8098;Bot não funciona — telefone não encontrado dentro da Meta;Aberto;Bug;Medium;Distribuição / Filas · Canais / WhatsApp;1;—;×1.0;3
+SM-8096;Sistema não notifica novas mensagens e não marca como não lida;Aberto;Bug;Medium;WebSocket / Presença · Chat / Mensagens;1;—;×1.0;3
+SM-8095;Erro ao enviar template de mensagem com variável;Aberto;Bug;Medium;Chat / Mensagens;1;—;×1.0;3
+SM-8092;Problema técnico escalado — ticket SM-8046;Aberto;Bug;Medium;Chat / Mensagens;1;—;×1.0;3
+SM-8080;Mensagens da Poli não chegam para equipe do cliente;Aberto;Bug;Medium;Chat / Mensagens;1;—;×1.0;3
+SM-8078;Cliente não está recebendo mensagens no WhatsApp;Aberto;Bug;Medium;Chat / Mensagens · Canais / WhatsApp;1;—;×1.0;3
+SM-8071;Perda recorrente de contato do cliente no sistema;Aberto;Bug;Medium;Contatos / Busca;1;—;×1.0;3
+SM-8155;Problema pendente de análise — cliente aguardando normalização;Aberto;Bug;Medium;Chat / Mensagens;0;—;×1.0;3
+SM-8162;Cliente solicita configuração de canal Instagram Direct;Aberto;Solicitação;Medium;Canais / WhatsApp;0;—;×1.0;2
+SM-8144;Cliente reporta problema em um dos canais;Aberto;Solicitação;Medium;Canais / WhatsApp;0;—;×1.0;2
+SM-8139;Atendimento via áudio — conteúdo não transcrito;Aberto;Solicitação;Medium;Jarvis / IA;0;—;×1.0;2
+SM-8132;Configuração de fluxo automatizado de triagem para candidatos CLT;Aberto;Solicitação;Medium;Distribuição / Filas;1;—;×1.0;2
+SM-8100;Migração de número da API Oficial para não-oficial;Aberto;Solicitação;Medium;Canais / WhatsApp;1;—;×1.0;2
+SM-8165;Dúvida sobre necessidade de avisar alguém ao excluir usuário adicional;Aberto;Dúvida;Medium;Permissões / Roles;0;—;×1.0;1
+SM-8157;Usuário aparece para equipe mas não existe na empresa;Aberto;Dúvida;Medium;Permissões / Roles;0;—;×1.0;1
+SM-8143;Operadores não conseguem buscar todos os contatos como o administrador;Aberto;Dúvida;Medium;Permissões / Roles · Contatos / Busca;0;—;×1.0;1
+SM-8137;Como editar a mensagem de boas-vindas do chatbot;Aberto;Dúvida;Medium;Distribuição / Filas;0;—;×1.0;1
+SM-8136;Por que o chat foi direcionado automaticamente;Aberto;Dúvida;Medium;Distribuição / Filas;0;—;×1.0;1
+SM-8082;URA/Bot não estava acionando automaticamente;Aberto;Dúvida;Medium;Distribuição / Filas;1;—;×1.0;1

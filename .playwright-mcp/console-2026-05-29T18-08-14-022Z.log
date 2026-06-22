@@ -1,0 +1,54 @@
+[    1069ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[    1069ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[    1185ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:76
+[    1651ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[    1669ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[    2859ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[    5057ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[    9243ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   63550ms] [ERROR] Access to fetch at 'https://sentry.poli.digital/api/20/envelope/?sentry_version=7&sentry_key=45d27e79e794b3e254ec8212c0ad0250&sentry_client=sentry.javascript.react%2F9.47.1' from origin 'https://spa-canary.poli.digital' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://spa-canary.poli.digital/templates/new:0
+[   63551ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://sentry.poli.digital/api/20/envelope/?sentry_version=7&sentry_key=45d27e79e794b3e254ec8212c0ad0250&sentry_client=sentry.javascript.react%2F9.47.1:0
+[   83068ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,status,type,category,goal,language,message,components,interactive,team,account_channel,metadata:0
+[  920185ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[  923937ms] Identifier 'TCRMEmbed' has already been declared
+[  924619ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  924620ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[  924729ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:76
+[  925246ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[  927431ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at dS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Gz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Lz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:100)
+    at iB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:742)
+    at lB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:648:183)
+    at vD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65r2:681:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:857:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65r2:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:495
+    at r (https://spa-canary.poli.digital/assets/index-CXHWts-2.js:70:9812)
+[  928583ms] [ERROR] Access to fetch at 'https://sentry.poli.digital/api/20/envelope/?sentry_version=7&sentry_key=45d27e79e794b3e254ec8212c0ad0250&sentry_client=sentry.javascript.react%2F9.47.1' from origin 'https://spa-canary.poli.digital' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://spa-canary.poli.digital/templates:0
+[  928584ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://sentry.poli.digital/api/20/envelope/?sentry_version=7&sentry_key=45d27e79e794b3e254ec8212c0ad0250&sentry_client=sentry.javascript.react%2F9.47.1:0
+[  932456ms] [LOG] Defining triggerGuiding @ :0
+[  934468ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.dac75676.js:1
+[  934667ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.poli.digital/redirect?sessionId=0a0ba61c92d3935790b047f949b0e9d1e92b90d7&toPath=https://app.poli.digital/home&_gl=1*526sx1*_gcl_au*MzE3MDk2MzMzLjE3Nzk5MTAzODguMTMxNDg5MjUyNi4xNzgwMDU3Nzc2LjE3ODAwNTc4MDY.*_ga*MTM0NTcyMzE1Mi4xNzc5OTEwMzg4*_ga_GDG103ZG81*czE3ODAwNzcyOTAkbzUkZzEkdDE3ODAwNzkwMjAkajU3JGwwJGg2ODkzODUyNTA.:0
+[  936458ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.dac75676.js:1

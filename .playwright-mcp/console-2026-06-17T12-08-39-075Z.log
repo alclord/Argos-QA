@@ -1,0 +1,16 @@
+[    2687ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:101
+[    2689ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:101
+[    2871ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:76
+[    3424ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    3461ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    3468ms] [ERROR] error ao buscar chats TypeError: Cannot read properties of undefined (reading 'data')
+    at imn (https://spa-canary.poli.digital/assets/index-DjxF6uES.js:2237:80260)
+    at async C (https://spa-canary.poli.digital/assets/index-DjxF6uES.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-DjxF6uES.js:54:38287) @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    4140ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:101
+[    4140ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:101
+[    4199ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:76
+[    4235ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    4683ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[   31603ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[   36059ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/245899590_1708603986010563_644774593773351353_n.jpg?ccb=11-4&oh=01_Q5Aa3QFM3oMeYVJsw-jFg7DnLulCwUe-KYFALNbhpElDZ6rrSw&oe=695956BA&_nc_sid=5e03e0&_nc_cat=108:0

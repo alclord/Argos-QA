@@ -1,0 +1,679 @@
+[     814ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[     881ms] [LOG] openSocketRequest @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[     942ms] [LOG] Defining triggerGuiding @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    1583ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.poli.digital/auth/foundation/allowed:0
+[    1584ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    2959ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    2960ms] [LOG] User Guiding identify cleared @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    3289ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:898:429
+    at qS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:31)
+    at Od.pS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:897:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:309:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:255:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Qq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:266:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:722:315
+    at Lz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:625:1)
+    at Qz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:629:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:100)
+    at nB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:742)
+    at qB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:654:183)
+    at CD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:699:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e6641:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:864:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e6690h2:550:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:457
+    at r (https://app-spa.poli.digital/static/js/main.b10d375c.js:2:1916016)
+[    3302ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.poli.digital/chat:0
+[    3581ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[    3587ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://sentry.poli.digital/api/9/envelope/?sentry_version=7&sentry_key=a49e1da2fd478414151f1b91b373119a&sentry_client=sentry.javascript.browser%2F8.55.0:0
+[    7924ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdrive.google.com%2Fdrivesharing%2Fclientmodel%3Fid%3D1d2EezTZTGec3nPV8-dUVEJI2t1TcbR93%26foreignService%3Dtexmex%26authuser%3D0%26origin%3Dhttps%3A%2F%2Fdrive.google.com&dsh=S892901341%3A1781118180003707&followup=https%3A%2F%2Fdrive.google.com%2Fdrivesharing%2Fclientmodel%3Fid%3D1d2EezTZTGec3nPV8-dUVEJI2t1TcbR93%26foreignService%3Dtexmex%26authuser%3D0%26origin%3Dhttps%3A%2F%2Fdrive.google.com&osid=1&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvw5D5rT9XMFyRwimsV6wi-NvhTSluK0Q4qemGboYFaa5yi0mnaFceRothWh9yWMCkfWirqH:0
+[    8044ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516299784_765127936149524_5928964262199968569_n.jpg?ccb=11-4&oh=01_Q5Aa3AF4no6RdRY23ypyTfYBHds24ZPIQipiE7s8OUUZapJnQQ&oe=69358870&_nc_sid=5e03e0&_nc_cat=103:0
+[    8045ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516821226_1034137662043294_8412083315673682112_n.jpg?ccb=11-4&oh=01_Q5Aa3wGV0w2YmnQ6TBMH0x-0rxT9pjZgTvTyDdDyH-6A-5wg7w&oe=69B819C9&_nc_sid=5e03e0&_nc_cat=109:0
+[    8058ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[    8058ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[    8072ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[    8082ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[    8797ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://clients6.google.com/drive/v2beta/files/1d2EezTZTGec3nPV8-dUVEJI2t1TcbR93?fields=id%2Ckind,lastViewedByMeDate&modifiedDateBehavior=NO_CHANGE&supportsTeamDrives=true&enforceSingleParent=true&key=AIzaSyC1eQ1xj69IdTMeii5r7brs3R90eck-m7k:0
+[    8862ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://clients6.google.com/drive/v2beta/files/1d2EezTZTGec3nPV8-dUVEJI2t1TcbR93?fields=id%2Ckind,lastViewedByMeDate&modifiedDateBehavior=NO_CHANGE&supportsTeamDrives=true&enforceSingleParent=true&key=AIzaSyC1eQ1xj69IdTMeii5r7brs3R90eck-m7k:0
+[   14941ms] [WARNING] The resource https://drive.google.com/drive-viewer/AKGpihb3nHFeosLOpKCimP86x-clDk5_JPPb6Aos_09vgTvjaVjcMEODOGVUpl8EW3EN4568AjsQMkqGgo30q5MZlgBH5zbX61JTF60=s1600-rw-v1 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://drive.google.com/file/d/1d2EezTZTGec3nPV8-dUVEJI2t1TcbR93/preview:0
+[   21770ms] [WARNING] The resource https://drive.google.com/drive-viewer/AKGpihb3nHFeosLOpKCimP86x-clDk5_JPPb6Aos_09vgTvjaVjcMEODOGVUpl8EW3EN4568AjsQMkqGgo30q5MZlgBH5zbX61JTF60=s1600-rw-v1 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://drive.google.com/file/d/1d2EezTZTGec3nPV8-dUVEJI2t1TcbR93/preview:0
+[   39617ms] [WARNING] The resource https://drive.google.com/drive-viewer/AKGpihb3nHFeosLOpKCimP86x-clDk5_JPPb6Aos_09vgTvjaVjcMEODOGVUpl8EW3EN4568AjsQMkqGgo30q5MZlgBH5zbX61JTF60=s1600-rw-v1 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://drive.google.com/file/d/1d2EezTZTGec3nPV8-dUVEJI2t1TcbR93/preview:0
+[   72275ms] [WARNING] The resource https://drive.google.com/drive-viewer/AKGpihb3nHFeosLOpKCimP86x-clDk5_JPPb6Aos_09vgTvjaVjcMEODOGVUpl8EW3EN4568AjsQMkqGgo30q5MZlgBH5zbX61JTF60=s1600-rw-v1 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://drive.google.com/file/d/1d2EezTZTGec3nPV8-dUVEJI2t1TcbR93/preview:0
+[   94834ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[   94875ms] [LOG] Defining triggerGuiding @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   95451ms] [LOG] openSocketRequest @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   95639ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.poli.digital/chat:0
+[   95639ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[   96264ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.poli.digital/auth/foundation/allowed:0
+[   96265ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   96891ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   96892ms] [LOG] User Guiding identify cleared @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  100442ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  100442ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  101412ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  101918ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516299784_765127936149524_5928964262199968569_n.jpg?ccb=11-4&oh=01_Q5Aa3AF4no6RdRY23ypyTfYBHds24ZPIQipiE7s8OUUZapJnQQ&oe=69358870&_nc_sid=5e03e0&_nc_cat=103:0
+[  101921ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  147357ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[  165958ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[  165986ms] [LOG] openSocketRequest @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  166041ms] [LOG] Defining triggerGuiding @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  166744ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.poli.digital/auth/foundation/allowed:0
+[  166745ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  167125ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:898:429
+    at qS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:31)
+    at Od.pS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:897:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:309:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:255:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Qq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:266:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:722:315
+    at Lz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:625:1)
+    at Qz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:629:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:100)
+    at nB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:742)
+    at qB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:654:183)
+    at CD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:699:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:864:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e6641:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e6690h2:550:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:457
+    at r (https://app-spa.poli.digital/static/js/main.b10d375c.js:2:1916016)
+[  167128ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.poli.digital/chat:0
+[  167369ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[  167377ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://sentry.poli.digital/api/9/envelope/?sentry_version=7&sentry_key=a49e1da2fd478414151f1b91b373119a&sentry_client=sentry.javascript.browser%2F8.55.0:0
+[  168044ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  168045ms] [LOG] User Guiding identify cleared @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  171537ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[  171537ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516299784_765127936149524_5928964262199968569_n.jpg?ccb=11-4&oh=01_Q5Aa3AF4no6RdRY23ypyTfYBHds24ZPIQipiE7s8OUUZapJnQQ&oe=69358870&_nc_sid=5e03e0&_nc_cat=103:0
+[  171657ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  171660ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  172719ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  172752ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  187674ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[  187710ms] [LOG] openSocketRequest @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  187751ms] [LOG] Defining triggerGuiding @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  188342ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.poli.digital/auth/foundation/allowed:0
+[  188344ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  188458ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.poli.digital/chat:0
+[  188465ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[  189760ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  189761ms] [LOG] User Guiding identify cleared @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  192540ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  192556ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  193713ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[  193713ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516299784_765127936149524_5928964262199968569_n.jpg?ccb=11-4&oh=01_Q5Aa3AF4no6RdRY23ypyTfYBHds24ZPIQipiE7s8OUUZapJnQQ&oe=69358870&_nc_sid=5e03e0&_nc_cat=103:0
+[  194293ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  194324ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  197130ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[  197157ms] [LOG] openSocketRequest @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  197197ms] [LOG] Defining triggerGuiding @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  197803ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.poli.digital/chat:0
+[  197805ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[  198013ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.poli.digital/auth/foundation/allowed:0
+[  198014ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  199198ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  199199ms] [LOG] User Guiding identify cleared @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  201904ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  201920ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  202303ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[  202304ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516299784_765127936149524_5928964262199968569_n.jpg?ccb=11-4&oh=01_Q5Aa3AF4no6RdRY23ypyTfYBHds24ZPIQipiE7s8OUUZapJnQQ&oe=69358870&_nc_sid=5e03e0&_nc_cat=103:0
+[  203547ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  203579ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  205570ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[  205599ms] [LOG] openSocketRequest @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  205648ms] [LOG] Defining triggerGuiding @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  205735ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.poli.digital/chat:0
+[  205754ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[  207215ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.poli.digital/auth/foundation/allowed:0
+[  207217ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  207651ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  207652ms] [LOG] User Guiding identify cleared @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  210446ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  210446ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  212415ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516299784_765127936149524_5928964262199968569_n.jpg?ccb=11-4&oh=01_Q5Aa3AF4no6RdRY23ypyTfYBHds24ZPIQipiE7s8OUUZapJnQQ&oe=69358870&_nc_sid=5e03e0&_nc_cat=103:0
+[  212416ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[  213052ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  213082ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  215612ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[  215647ms] [LOG] openSocketRequest @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  215703ms] [LOG] Defining triggerGuiding @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  216285ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.poli.digital/chat:0
+[  216287ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[  216507ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.poli.digital/auth/foundation/allowed:0
+[  216508ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  217716ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  217716ms] [LOG] User Guiding identify cleared @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  220387ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  220387ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  221981ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[  222127ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  222155ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  301719ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[  301758ms] [LOG] openSocketRequest @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  301813ms] [LOG] Defining triggerGuiding @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  302448ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.poli.digital/auth/foundation/allowed:0
+[  302449ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  302650ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:898:429
+    at qS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:31)
+    at Od.pS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:897:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:309:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:255:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Qq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:266:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:722:315
+    at Lz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:625:1)
+    at Qz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:629:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:100)
+    at nB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:742)
+    at qB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:654:183)
+    at CD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:699:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:864:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e6641:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e6690h2:550:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:457
+    at r (https://app-spa.poli.digital/static/js/main.b10d375c.js:2:1916016)
+[  302652ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.poli.digital/chat:0
+[  302665ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[  302878ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://sentry.poli.digital/api/9/envelope/?sentry_version=7&sentry_key=a49e1da2fd478414151f1b91b373119a&sentry_client=sentry.javascript.browser%2F8.55.0:0
+[  303816ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  303816ms] [LOG] User Guiding identify cleared @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  304649ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[  306558ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  306939ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[  306966ms] [LOG] openSocketRequest @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  307006ms] [LOG] Defining triggerGuiding @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  307498ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.poli.digital/chat:0
+[  307500ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[  307718ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.poli.digital/auth/foundation/allowed:0
+[  307719ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  309013ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  309013ms] [LOG] User Guiding identify cleared @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  309393ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[  311307ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  311323ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  311800ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[  311828ms] [LOG] openSocketRequest @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  311871ms] [LOG] Defining triggerGuiding @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  312311ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.poli.digital/auth/foundation/allowed:0
+[  312312ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  312365ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.poli.digital/chat:0
+[  312423ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[  313880ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  313881ms] [LOG] User Guiding identify cleared @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  315382ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[  316266ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  316311ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  317759ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[  317800ms] [LOG] openSocketRequest @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  317842ms] [LOG] Defining triggerGuiding @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  318468ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.poli.digital/auth/foundation/allowed:0
+[  318469ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  318522ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:898:429
+    at qS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:31)
+    at Od.pS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:897:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:309:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:255:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Qq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:266:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:722:315
+    at Lz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:625:1)
+    at Qz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:629:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:100)
+    at nB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:742)
+    at qB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:654:183)
+    at CD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:699:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:864:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e6641:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e6690h2:550:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:457
+    at r (https://app-spa.poli.digital/static/js/main.b10d375c.js:2:1916016)
+[  318511ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.poli.digital/chat:0
+[  318522ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/chat:0
+[  319855ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  319855ms] [LOG] User Guiding identify cleared @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[  322311ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  322370ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  322853ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516273162_1845383653051775_4740062992718730640_n.jpg?ccb=11-4&oh=01_Q5Aa4QGj8078Rk0vPWIYUeo6c_2JV6iLeCCLFrgW9KY0QMA45g&oe=69E7670B&_nc_sid=5e03e0&_nc_cat=100:0
+[  323617ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  323663ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[  362717ms] [LOG] Defining triggerGuiding @ :0
+[  363446ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[  363446ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[  363600ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.poli.digital/assets/index-K91NXeHH.js:76
+[  364532ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.poli.digital/v3/accounts/balance/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[  364536ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.poli.digital/v3/settings:0
+[  364537ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[  364538ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/chats/pinned:0
+[  364549ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  364550ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.poli.digital/v3/accounts/non-payment/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[  364552ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[  364553ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.poli.digital/v3/users/settings/summary:0
+[  364555ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.poli.digital/v3/crm/index:0
+[  364760ms] [WARNING] [UserGuiding] 
+ You are loading UserGuiding SDK multiple times 
+
+*Submit a ticket using the link below if you think this is a bug
+https://desk.zoho.com/portal/userguiding/newticket @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  364785ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  364785ms] [LOG] User Guiding identify cleared @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  364916ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.poli.digital/v3/broadcasting/auth:0
+[  364930ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.poli.digital/auth/refresh-token:0
+[  364933ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at yBe (https://spa.poli.digital/assets/index-K91NXeHH.js:1101:10207)
+    at XMLHttpRequest.x (https://spa.poli.digital/assets/index-K91NXeHH.js:1101:15780)
+    at _2.request (https://spa.poli.digital/assets/index-K91NXeHH.js:1103:2243)
+    at async AMt (https://spa.poli.digital/assets/index-K91NXeHH.js:1107:6861)
+    at async https://spa.poli.digital/assets/index-K91NXeHH.js:1107:8208
+    at async _2.request (https://spa.poli.digital/assets/index-K91NXeHH.js:1103:2147)
+    at async LE.getPanelCredits (https://spa.poli.digital/assets/index-K91NXeHH.js:1928:552) @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  364933ms] [ERROR] AxiosError: Request failed with status code 401
+    at yBe (https://spa.poli.digital/assets/index-K91NXeHH.js:1101:10207)
+    at XMLHttpRequest.x (https://spa.poli.digital/assets/index-K91NXeHH.js:1101:15780)
+    at _2.request (https://spa.poli.digital/assets/index-K91NXeHH.js:1103:2243)
+    at async AMt (https://spa.poli.digital/assets/index-K91NXeHH.js:1107:6861)
+    at async https://spa.poli.digital/assets/index-K91NXeHH.js:1107:8208
+    at async _2.request (https://spa.poli.digital/assets/index-K91NXeHH.js:1103:2147)
+    at async LE.getPanelCredits (https://spa.poli.digital/assets/index-K91NXeHH.js:1928:552) @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  364937ms] [ERROR] [UserPreferencesService] Failed to get summary: Error: AxiosError: Request failed with status code 401
+    at https://spa.poli.digital/assets/index-K91NXeHH.js:1107:8175
+    at async _2.request (https://spa.poli.digital/assets/index-K91NXeHH.js:1103:2147)
+    at async Bme.getSummary (https://spa.poli.digital/assets/index-K91NXeHH.js:2241:64457)
+    at async https://spa.poli.digital/assets/index-K91NXeHH.js:2241:65158 @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  364937ms] [ERROR] Error: AxiosError: Request failed with status code 401
+    at https://spa.poli.digital/assets/index-K91NXeHH.js:1107:8175
+    at async _2.request (https://spa.poli.digital/assets/index-K91NXeHH.js:1103:2147)
+    at async Q1n.getOverdueAccounts (https://spa.poli.digital/assets/index-K91NXeHH.js:2253:45474)
+    at async https://spa.poli.digital/assets/index-K91NXeHH.js:2579:5310 @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  364938ms] [ERROR] [useUserPreferences] Error: Error: AxiosError: Request failed with status code 401
+    at https://spa.poli.digital/assets/index-K91NXeHH.js:1107:8175
+    at async _2.request (https://spa.poli.digital/assets/index-K91NXeHH.js:1103:2147)
+    at async Bme.getSummary (https://spa.poli.digital/assets/index-K91NXeHH.js:2241:64457)
+    at async https://spa.poli.digital/assets/index-K91NXeHH.js:2241:65158 @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  364938ms] [ERROR] getCrmUserToken - Error on get crm user token: Error: AxiosError: Request failed with status code 401
+    at https://spa.poli.digital/assets/index-K91NXeHH.js:1107:8175
+    at async _2.request (https://spa.poli.digital/assets/index-K91NXeHH.js:1103:2147)
+    at async uz.getUserToken (https://spa.poli.digital/assets/index-K91NXeHH.js:2240:44294)
+    at async https://spa.poli.digital/assets/index-K91NXeHH.js:2240:44585 @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  364939ms] [ERROR] error ao buscar chats Error: AxiosError: Request failed with status code 401
+    at https://spa.poli.digital/assets/index-K91NXeHH.js:1107:8175
+    at async _2.request (https://spa.poli.digital/assets/index-K91NXeHH.js:1103:2147)
+    at async rDt (https://spa.poli.digital/assets/index-K91NXeHH.js:1137:26220)
+    at async C (https://spa.poli.digital/assets/index-K91NXeHH.js:54:37980)
+    at async Object.u [as fn] (https://spa.poli.digital/assets/index-K91NXeHH.js:54:38287) @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  365120ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.poli.digital/v3/accounts/balance/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[  365191ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:898:429
+    at qS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:31)
+    at Od.pS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:897:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:309:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:255:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Qq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:266:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:722:315
+    at Lz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:625:1)
+    at Qz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:629:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:100)
+    at nB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:742)
+    at qB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:654:183)
+    at CD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:699:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:864:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e6641:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e6690h2:550:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:457
+    at r (https://spa.poli.digital/assets/index-K91NXeHH.js:70:9827)
+[  365314ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.poli.digital/auth/refresh-token:0
+[  365314ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at yBe (https://spa.poli.digital/assets/index-K91NXeHH.js:1101:10207)
+    at XMLHttpRequest.x (https://spa.poli.digital/assets/index-K91NXeHH.js:1101:15780)
+    at _2.request (https://spa.poli.digital/assets/index-K91NXeHH.js:1103:2243)
+    at async AMt (https://spa.poli.digital/assets/index-K91NXeHH.js:1107:6861)
+    at async https://spa.poli.digital/assets/index-K91NXeHH.js:1107:8208
+    at async _2.request (https://spa.poli.digital/assets/index-K91NXeHH.js:1103:2147)
+    at async LE.getPanelCredits (https://spa.poli.digital/assets/index-K91NXeHH.js:1928:552) @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  365315ms] [ERROR] AxiosError: Request failed with status code 401
+    at yBe (https://spa.poli.digital/assets/index-K91NXeHH.js:1101:10207)
+    at XMLHttpRequest.x (https://spa.poli.digital/assets/index-K91NXeHH.js:1101:15780)
+    at _2.request (https://spa.poli.digital/assets/index-K91NXeHH.js:1103:2243)
+    at async AMt (https://spa.poli.digital/assets/index-K91NXeHH.js:1107:6861)
+    at async https://spa.poli.digital/assets/index-K91NXeHH.js:1107:8208
+    at async _2.request (https://spa.poli.digital/assets/index-K91NXeHH.js:1103:2147)
+    at async LE.getPanelCredits (https://spa.poli.digital/assets/index-K91NXeHH.js:1928:552) @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  365582ms] [INFO] WebSocket: Conexão finalizada @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  365984ms] [LOG] Defining triggerGuiding @ :0
+[  366100ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[  366101ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[  366180ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.poli.digital/assets/index-K91NXeHH.js:76
+[  366233ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  366656ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  366903ms] [WARNING] [UserGuiding] 
+ You are loading UserGuiding SDK multiple times 
+
+*Submit a ticket using the link below if you think this is a bug
+https://desk.zoho.com/portal/userguiding/newticket @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  367985ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  369988ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  370403ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/login:0
+[  370464ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/login:0
+[  371998ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  373998ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  375988ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  377990ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  379988ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  381996ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  383987ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  385989ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  387994ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  389986ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  391997ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  392521ms] [LOG] Defining triggerGuiding @ :0
+[  392693ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[  392694ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[  392742ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.poli.digital/assets/index-K91NXeHH.js:76
+[  392770ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  393419ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  393699ms] [WARNING] [UserGuiding] 
+ You are loading UserGuiding SDK multiple times 
+
+*Submit a ticket using the link below if you think this is a bug
+https://desk.zoho.com/portal/userguiding/newticket @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  394522ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  396188ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  396523ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  396523ms] [LOG] User Guiding identify cleared @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  397208ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/login:0
+[  397219ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/login:0
+[  400352ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/login:0
+[  400378ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/login:0
+[  401268ms] Identifier 'TCRMEmbed' has already been declared
+[  460682ms] [LOG] Defining triggerGuiding @ :0
+[  460856ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[  460856ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[  461018ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.poli.digital/assets/index-K91NXeHH.js:76
+[  461507ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  461924ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:898:429
+    at qS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:31)
+    at Od.pS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:897:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:309:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:255:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Qq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:266:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:722:315
+    at Lz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:625:1)
+    at Qz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:629:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:100)
+    at nB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:742)
+    at qB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:654:183)
+    at CD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:699:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:864:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e6641:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e6690h2:550:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:457
+    at r (https://spa.poli.digital/assets/index-K91NXeHH.js:70:9827)
+[  462181ms] [WARNING] [UserGuiding] 
+ You are loading UserGuiding SDK multiple times 
+
+*Submit a ticket using the link below if you think this is a bug
+https://desk.zoho.com/portal/userguiding/newticket @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  462687ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  462687ms] [LOG] User Guiding identify cleared @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  463211ms] Identifier 'TCRMEmbed' has already been declared
+[  463214ms] Identifier 'TCRMEmbed' has already been declared
+[  465496ms] [LOG] Defining triggerGuiding @ :0
+[  465587ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[  465587ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[  465629ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.poli.digital/assets/index-K91NXeHH.js:76
+[  466192ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  466346ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:898:429
+    at qS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:31)
+    at Od.pS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:897:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:309:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:255:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Qq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:266:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:722:315
+    at Lz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:625:1)
+    at Qz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:629:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:100)
+    at nB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:742)
+    at qB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:654:183)
+    at CD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:699:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:864:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e6641:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e6690h2:550:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:457
+    at r (https://spa.poli.digital/assets/index-K91NXeHH.js:70:9827)
+[  466570ms] [WARNING] [UserGuiding] 
+ You are loading UserGuiding SDK multiple times 
+
+*Submit a ticket using the link below if you think this is a bug
+https://desk.zoho.com/portal/userguiding/newticket @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  467570ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  467570ms] [LOG] User Guiding identify cleared @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  469359ms] Identifier 'TCRMEmbed' has already been declared
+[  469659ms] [LOG] Defining triggerGuiding @ :0
+[  469792ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[  469792ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[  469841ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.poli.digital/assets/index-K91NXeHH.js:76
+[  470442ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  470767ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:898:429
+    at qS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:31)
+    at Od.pS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:897:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:309:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:255:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Qq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:266:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:722:315
+    at Lz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:625:1)
+    at Qz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:629:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:100)
+    at nB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:742)
+    at qB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:654:183)
+    at CD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:699:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:864:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e6641:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e6690h2:550:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:457
+    at r (https://spa.poli.digital/assets/index-K91NXeHH.js:70:9827)
+[  471010ms] [WARNING] [UserGuiding] 
+ You are loading UserGuiding SDK multiple times 
+
+*Submit a ticket using the link below if you think this is a bug
+https://desk.zoho.com/portal/userguiding/newticket @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  471667ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  471667ms] [LOG] User Guiding identify cleared @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  472481ms] Identifier 'TCRMEmbed' has already been declared
+[  472509ms] Identifier 'TCRMEmbed' has already been declared
+[  474023ms] [LOG] Defining triggerGuiding @ :0
+[  474140ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[  474141ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[  474207ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.poli.digital/assets/index-K91NXeHH.js:76
+[  474756ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  474804ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:898:429
+    at qS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:31)
+    at Od.pS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:897:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:309:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:255:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Qq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:266:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:722:315
+    at Lz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:625:1)
+    at Qz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:629:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:100)
+    at nB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:742)
+    at qB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:654:183)
+    at CD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:699:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:864:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e6641:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e6690h2:550:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:457
+    at r (https://spa.poli.digital/assets/index-K91NXeHH.js:70:9827)
+[  475139ms] [WARNING] [UserGuiding] 
+ You are loading UserGuiding SDK multiple times 
+
+*Submit a ticket using the link below if you think this is a bug
+https://desk.zoho.com/portal/userguiding/newticket @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  475544ms] Identifier 'TCRMEmbed' has already been declared
+[  475575ms] Identifier 'TCRMEmbed' has already been declared
+[  476034ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  476035ms] [LOG] User Guiding identify cleared @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  478511ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/chat:0
+[  478515ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/chat:0
+[  479162ms] [LOG] Defining triggerGuiding @ :0
+[  479277ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[  479277ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[  479318ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.poli.digital/assets/index-K91NXeHH.js:76
+[  479851ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  480069ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:898:429
+    at qS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:31)
+    at Od.pS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:897:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:309:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:255:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Qq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:266:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:722:315
+    at Lz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:625:1)
+    at Qz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:629:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:100)
+    at nB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:742)
+    at qB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:654:183)
+    at CD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:699:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:864:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e6641:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e6690h2:550:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:457
+    at r (https://spa.poli.digital/assets/index-K91NXeHH.js:70:9827)
+[  480351ms] [WARNING] [UserGuiding] 
+ You are loading UserGuiding SDK multiple times 
+
+*Submit a ticket using the link below if you think this is a bug
+https://desk.zoho.com/portal/userguiding/newticket @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  481179ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  481179ms] [LOG] User Guiding identify cleared @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[  481842ms] Identifier 'TCRMEmbed' has already been declared
+[  481848ms] Identifier 'TCRMEmbed' has already been declared
+[  483861ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/chat:0
+[  483863ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/chat:0
+[  484931ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/chat:0
+[  484971ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/chat:0
+[  780711ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/534423175_1799447770670529_4376520691174631462_n.jpg?ccb=11-4&oh=01_Q5Aa4gHg3W52uJ3aD8TugoXVEH96_vn486Chx9MU1ri8fdkIGQ&oe=6A21B371&_nc_sid=5e03e0&_nc_cat=104:0
+[  799012ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/534423175_1799447770670529_4376520691174631462_n.jpg?ccb=11-4&oh=01_Q5Aa4gHg3W52uJ3aD8TugoXVEH96_vn486Chx9MU1ri8fdkIGQ&oe=6A21B371&_nc_sid=5e03e0&_nc_cat=104:0

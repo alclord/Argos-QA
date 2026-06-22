@@ -1,0 +1,46 @@
+[    1052ms] [LOG] openSocketRequest @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    1268ms] [LOG] Defining triggerGuiding @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    2172ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.poli.digital/auth/foundation/allowed:0
+[    2173ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    2711ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:898:429
+    at qS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:31)
+    at Od.pS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:897:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:309:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:255:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Qq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:266:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:722:315
+    at Lz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:625:1)
+    at Qz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:629:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:100)
+    at nB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:742)
+    at qB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:654:183)
+    at CD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:699:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:866:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e6641:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e6641:552:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:457
+    at r (https://app-spa.poli.digital/static/js/main.b10d375c.js:2:1916016)
+[    2724ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.poli.digital/chat:0
+[    4242ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://sentry.poli.digital/api/9/envelope/?sentry_version=7&sentry_key=a49e1da2fd478414151f1b91b373119a&sentry_client=sentry.javascript.browser%2F8.55.0:0
+[    4244ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    4244ms] [LOG] User Guiding identify cleared @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    8363ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/119250336_623200455061122_4970038818099675501_n.jpg?ccb=11-4&oh=01_Q5Aa3gFt7DRjOicAp1Ij7cYxIq2MZcuvGr8_ORe6XMqqI3bshw&oe=6980AF12&_nc_sid=5e03e0&_nc_cat=102:0
+[    8364ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516821226_1034137662043294_8412083315673682112_n.jpg?ccb=11-4&oh=01_Q5Aa3wGV0w2YmnQ6TBMH0x-0rxT9pjZgTvTyDdDyH-6A-5wg7w&oe=69B819C9&_nc_sid=5e03e0&_nc_cat=109:0
+[    8365ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[    8555ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[    8555ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[    9403ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0
+[   10952ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/chat:0

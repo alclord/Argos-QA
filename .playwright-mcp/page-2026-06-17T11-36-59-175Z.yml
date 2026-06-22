@@ -1,0 +1,474 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - list [ref=e6]:
+      - listitem [ref=e7]:
+        - link [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img [ref=e10]
+      - listitem [ref=e12]:
+        - link [ref=e13] [cursor=pointer]:
+          - /url: /chat
+          - img [ref=e15]
+      - listitem
+      - listitem [ref=e17]:
+        - link [ref=e18] [cursor=pointer]:
+          - /url: /crm
+          - img [ref=e20]
+      - listitem [ref=e23]:
+        - link [ref=e24] [cursor=pointer]:
+          - /url: /marketing
+          - img [ref=e26]
+      - listitem
+      - listitem [ref=e28]:
+        - link [ref=e29] [cursor=pointer]:
+          - /url: /relatorio
+          - img [ref=e31]
+      - listitem
+    - generic [ref=e34]:
+      - button "" [ref=e36] [cursor=pointer]:
+        - generic [ref=e37]: 
+      - generic [ref=e39]:
+        - button "" [ref=e40] [cursor=pointer]:
+          - generic [ref=e41]: 
+        - text:        
+      - generic [ref=e44]:
+        - button "" [ref=e46] [cursor=pointer]:
+          - generic [ref=e47]: 
+        - text:  
+      - generic [ref=e49]:
+        - button "YA" [ref=e61] [cursor=pointer]:
+          - generic "Yuri Alcantara Supervisor" [ref=e62]:
+            - generic [ref=e52]: YA
+        - text:  
+      - generic [ref=e55] [cursor=pointer]: 
+      - generic [ref=e57] [cursor=pointer]: v0.20.536
+  - generic [ref=e63]:
+    - navigation [ref=e65]:
+      - text: 
+      - generic [ref=e67]:
+        - generic [ref=e68] [cursor=pointer]:
+          - generic [ref=e69]:
+            - text: 
+            - generic [ref=e70]: Canais
+            - text: 
+          - generic [ref=e72]:
+            - link " Seus Canais" [ref=e73]:
+              - /url: /tools/channels/list
+              - button " Seus Canais" [ref=e74]:
+                - generic [ref=e75]: 
+                - text: Seus Canais
+            - link " Migrar Canal da 360" [ref=e76]:
+              - /url: /tools/channels/migrate
+              - button " Migrar Canal da 360" [ref=e77]:
+                - generic [ref=e78]: 
+                - text: Migrar Canal da 360
+        - generic [ref=e79] [cursor=pointer]:
+          - generic [ref=e80]:
+            - text: 
+            - generic [ref=e81]: Construtor de Template
+            - text: 
+          - text:   
+        - generic [ref=e82] [cursor=pointer]:
+          - generic [ref=e83]:
+            - text: 
+            - generic [ref=e84]: Créditos
+            - text: 
+          - text: 
+        - generic [ref=e85] [cursor=pointer]:
+          - generic [ref=e86]:
+            - text: 
+            - generic [ref=e87]: Configurações Gerais
+            - text: 
+          - text: 
+    - generic [ref=e88]:
+      - generic [ref=e100]:
+        - generic [ref=e101]:
+          - generic [ref=e102]: 
+          - generic [ref=e103]: Seus Canais
+        - link " Adicionar Canal" [ref=e105] [cursor=pointer]:
+          - /url: /tools/channels/add
+          - button " Adicionar Canal" [ref=e106]:
+            - generic [ref=e107]: 
+            - generic [ref=e108]: Adicionar Canal
+      - generic [ref=e110]:
+        - generic [ref=e111]:
+          - combobox [ref=e113]:
+            - option "Todos os status de canais" [selected]
+            - option "Ativos"
+            - option "Inativos"
+          - combobox [ref=e115]:
+            - option "Todos os tipos de canais" [selected]
+            - option "WhatsApp"
+            - option "Facebook"
+            - option "Webchat"
+            - option "Instagram"
+          - textbox "Buscar..." [ref=e117]
+        - generic [ref=e118]:
+          - generic [ref=e119]:
+            - generic [ref=e120]:
+              - generic [ref=e121]: 
+              - strong [ref=e122]: BSP Poli
+            - generic [ref=e123]:
+              - generic [ref=e124]:
+                - generic [ref=e125]: 
+                - generic [ref=e126]: Desconectado
+              - generic [ref=e127]:
+                - generic [ref=e128]:
+                  - generic [ref=e129]: 
+                  - generic [ref=e130]: WABA
+                - generic [ref=e131]: fghfghfghfg
+                - generic [ref=e132]: +55 (62) 5 9899-9999
+                - generic [ref=e133]:
+                  - generic [ref=e134]: 
+                  - generic [ref=e135]: 304 usuários
+              - generic [ref=e136]:
+                - button "Ativar" [ref=e137] [cursor=pointer]
+                - button "Editar" [ref=e138] [cursor=pointer]
+          - generic [ref=e139]:
+            - generic [ref=e141]: 
+            - generic [ref=e142]:
+              - generic [ref=e143]:
+                - generic [ref=e144]: 
+                - generic [ref=e145]: Desconectado
+              - generic [ref=e146]:
+                - generic [ref=e147]:
+                  - generic [ref=e148]: 
+                  - generic [ref=e149]: Messenger
+                - generic [ref=e150]: Meu Teste Favorito
+                - generic [ref=e151]:
+                  - generic [ref=e152]: 
+                  - generic [ref=e153]: 188 usuários
+              - generic [ref=e154]:
+                - button "Ativar" [ref=e155] [cursor=pointer]
+                - button "Editar" [ref=e156] [cursor=pointer]
+          - generic [ref=e157]:
+            - generic [ref=e158]:
+              - generic [ref=e160]:
+                - generic [ref=e161]: 
+                - generic [ref=e162]: ✕
+              - generic [ref=e163]: 
+              - strong [ref=e164]: BSP Poli
+            - generic [ref=e165]:
+              - generic [ref=e166]:
+                - generic [ref=e167]: 
+                - generic [ref=e168]: Desconectado
+              - generic [ref=e169]:
+                - generic [ref=e170]:
+                  - generic [ref=e171]: 
+                  - generic [ref=e172]: WABA
+                - generic [ref=e173]: Teste_Yuri_MMlite
+                - generic [ref=e174]: +55 (62) 9 9987-9554
+                - generic [ref=e175]:
+                  - generic [ref=e176]: 
+                  - generic [ref=e177]: 0 usuários
+              - generic [ref=e178]:
+                - button "Ativar" [ref=e179] [cursor=pointer]
+                - button "Editar" [ref=e180] [cursor=pointer]
+          - generic [ref=e181]:
+            - generic [ref=e182]:
+              - generic [ref=e183]: 
+              - strong [ref=e184]: BSP Poli
+            - generic [ref=e185]:
+              - generic [ref=e186]:
+                - generic [ref=e187]: 
+                - generic [ref=e188]: Desconectado
+              - generic [ref=e189]:
+                - generic [ref=e190]:
+                  - generic [ref=e191]: 
+                  - generic [ref=e192]: WABA
+                - generic [ref=e193]: WABA 20/01
+                - generic [ref=e194]: +55 (62) 9358-4470
+                - generic [ref=e195]:
+                  - generic [ref=e196]: 
+                  - generic [ref=e197]: 68 usuários
+              - generic [ref=e198]:
+                - button "Ativar" [ref=e199] [cursor=pointer]
+                - button "Editar" [ref=e200] [cursor=pointer]
+          - generic [ref=e201]:
+            - generic [ref=e202]:
+              - generic [ref=e203]: 
+              - strong [ref=e204]: BSP Poli
+            - generic [ref=e205]:
+              - generic [ref=e206]:
+                - generic [ref=e207]: 
+                - generic [ref=e208]: Desconectado
+              - generic [ref=e209]:
+                - generic [ref=e210]:
+                  - generic [ref=e211]: 
+                  - generic [ref=e212]: WABA
+                - generic [ref=e213]: WABA EXEMPLO
+                - generic [ref=e214]: +55 (64) 9857-2144
+                - generic [ref=e215]:
+                  - generic [ref=e216]: 
+                  - generic [ref=e217]: 55 usuários
+              - generic [ref=e218]:
+                - button "Ativar" [ref=e219] [cursor=pointer]
+                - button "Editar" [ref=e220] [cursor=pointer]
+          - generic [ref=e221]:
+            - generic [ref=e223]: 
+            - generic [ref=e224]:
+              - generic [ref=e225]:
+                - generic [ref=e226]: 
+                - generic [ref=e227]: Desconectado
+              - generic [ref=e228]:
+                - generic [ref=e229]:
+                  - generic [ref=e230]: 
+                  - generic [ref=e231]: WhatsApp
+                - generic [ref=e232]: "[TESTE] TesteCypress62992548428"
+                - generic [ref=e233]: +55 (62) 9 9254-8428
+                - generic [ref=e234]:
+                  - generic [ref=e235]: 
+                  - generic [ref=e236]: 230 usuários
+              - generic [ref=e237]:
+                - button "Desativar" [ref=e238] [cursor=pointer]
+                - button "Editar" [ref=e239] [cursor=pointer]
+          - generic [ref=e240]:
+            - generic [ref=e242]: 
+            - generic [ref=e243]:
+              - generic [ref=e244]:
+                - generic [ref=e245]: 
+                - generic [ref=e246]: Desconectado
+              - generic [ref=e247]:
+                - generic [ref=e248]:
+                  - generic [ref=e249]: 
+                  - generic [ref=e250]: WhatsApp
+                - generic [ref=e251]: "[TESTE] TesteCypress62997603244"
+                - generic [ref=e252]: +55 (62) 9 9760-3244
+                - generic [ref=e253]:
+                  - generic [ref=e254]: 
+                  - generic [ref=e255]: 231 usuários
+              - generic [ref=e256]:
+                - button "Desativar" [ref=e257] [cursor=pointer]
+                - button "Editar" [ref=e258] [cursor=pointer]
+          - generic [ref=e259]:
+            - generic [ref=e261]: 
+            - generic [ref=e262]:
+              - generic [ref=e263]:
+                - generic [ref=e264]: 
+                - generic [ref=e265]: Conectado
+              - generic [ref=e266]:
+                - generic [ref=e267]:
+                  - generic [ref=e268]: 
+                  - generic [ref=e269]: WebChat
+                - generic [ref=e270]: "[TESTE] TesteCypress62999483927"
+                - generic [ref=e271]:
+                  - generic [ref=e272]: 
+                  - generic [ref=e273]: 230 usuários
+              - generic [ref=e274]:
+                - button "Desativar" [ref=e275] [cursor=pointer]
+                - button "Editar" [ref=e276] [cursor=pointer]
+          - generic [ref=e277]:
+            - generic [ref=e279]: 
+            - generic [ref=e280]:
+              - generic [ref=e281]:
+                - generic [ref=e282]: 
+                - generic [ref=e283]: Conectado
+              - generic [ref=e284]:
+                - generic [ref=e285]:
+                  - generic [ref=e286]: 
+                  - generic [ref=e287]: WebChat
+                - generic [ref=e288]: alow teste
+                - generic [ref=e289]:
+                  - generic [ref=e290]: 
+                  - generic [ref=e291]: 228 usuários
+              - generic [ref=e292]:
+                - button "Desativar" [ref=e293] [cursor=pointer]
+                - button "Editar" [ref=e294] [cursor=pointer]
+          - generic [ref=e295]:
+            - generic [ref=e297]: 
+            - generic [ref=e298]:
+              - generic [ref=e299]:
+                - generic [ref=e300]: 
+                - generic [ref=e301]: Conectado
+              - generic [ref=e302]:
+                - generic [ref=e303]:
+                  - generic [ref=e304]: 
+                  - generic [ref=e305]: WhatsApp
+                - generic [ref=e306]: Apenas QA
+                - generic [ref=e307]: +55 (11) 9 3019-6929
+                - generic [ref=e308]:
+                  - generic [ref=e309]: 
+                  - generic [ref=e310]: 244 usuários
+              - generic [ref=e311]:
+                - button "Desativar" [ref=e312] [cursor=pointer]
+                - button "Editar" [ref=e313] [cursor=pointer]
+          - generic [ref=e314]:
+            - generic [ref=e316]: 
+            - generic [ref=e317]:
+              - generic [ref=e318]:
+                - generic [ref=e319]: 
+                - generic [ref=e320]: Desconectado
+              - generic [ref=e321]:
+                - generic [ref=e322]:
+                  - generic [ref=e323]: 
+                  - generic [ref=e324]: WhatsApp
+                - generic [ref=e325]: Automação QA
+                - generic [ref=e326]: +55 (11) 9 6525-9492
+                - generic [ref=e327]:
+                  - generic [ref=e328]: 
+                  - generic [ref=e329]: 488 usuários
+              - generic [ref=e330]:
+                - button "Desativar" [ref=e331] [cursor=pointer]
+                - button "Editar" [ref=e332] [cursor=pointer]
+          - generic [ref=e333]:
+            - generic [ref=e335]: 
+            - generic [ref=e336]:
+              - generic [ref=e337]:
+                - generic [ref=e338]: 
+                - generic [ref=e339]: Conectado
+              - generic [ref=e340]:
+                - generic [ref=e341]:
+                  - generic [ref=e342]: 
+                  - generic [ref=e343]: WebChat
+                - generic [ref=e344]: Automação QA Webchat
+                - generic [ref=e345]:
+                  - generic [ref=e346]: 
+                  - generic [ref=e347]: 809 usuários
+              - generic [ref=e348]:
+                - button "Desativar" [ref=e349] [cursor=pointer]
+                - button "Editar" [ref=e350] [cursor=pointer]
+          - generic [ref=e351]:
+            - generic [ref=e353]: 
+            - generic [ref=e354]:
+              - generic [ref=e355]:
+                - generic [ref=e356]: 
+                - generic [ref=e357]: Desconectado
+              - generic [ref=e358]:
+                - generic [ref=e359]:
+                  - generic [ref=e360]: 
+                  - generic [ref=e361]: WhatsApp
+                - generic [ref=e362]: Canal de atendimento de Teste
+                - generic [ref=e363]: +55 (62) 9 9984-8548
+                - generic [ref=e364]:
+                  - generic [ref=e365]: 
+                  - generic [ref=e366]: 16 usuários
+              - generic [ref=e367]:
+                - button "Desativar" [ref=e368] [cursor=pointer]
+                - button "Editar" [ref=e369] [cursor=pointer]
+          - generic [ref=e370]:
+            - generic [ref=e372]: 
+            - generic [ref=e373]:
+              - generic [ref=e374]:
+                - generic [ref=e375]: 
+                - generic [ref=e376]: Conectado
+              - generic [ref=e377]:
+                - generic [ref=e378]:
+                  - generic [ref=e379]: 
+                  - generic [ref=e380]: WebChat
+                - generic [ref=e381]: Canal Teste Quantidade de Usuario
+                - generic [ref=e382]:
+                  - generic [ref=e383]: 
+                  - generic [ref=e384]: 12 usuários
+              - generic [ref=e385]:
+                - button "Desativar" [ref=e386] [cursor=pointer]
+                - button "Editar" [ref=e387] [cursor=pointer]
+          - generic [ref=e388]:
+            - generic [ref=e390]: 
+            - generic [ref=e391]:
+              - generic [ref=e392]:
+                - generic [ref=e393]: 
+                - generic [ref=e394]: Conectado
+              - generic [ref=e395]:
+                - generic [ref=e396]:
+                  - generic [ref=e397]: 
+                  - generic [ref=e398]: WhatsApp
+                - generic [ref=e399]: Cypress
+                - generic [ref=e400]: +55 (11) 9 5174-1233
+                - generic [ref=e401]:
+                  - generic [ref=e402]: 
+                  - generic [ref=e403]: 494 usuários
+              - generic [ref=e404]:
+                - button "Desativar" [ref=e405] [cursor=pointer]
+                - button "Editar" [ref=e406] [cursor=pointer]
+          - generic [ref=e407]:
+            - generic [ref=e409]: 
+            - generic [ref=e410]:
+              - generic [ref=e411]:
+                - generic [ref=e412]: 
+                - generic [ref=e413]: Conectado
+              - generic [ref=e414]:
+                - generic [ref=e415]:
+                  - generic [ref=e416]: 
+                  - generic [ref=e417]: WebChat
+                - generic [ref=e418]: Fake messenger
+                - generic [ref=e419]:
+                  - generic [ref=e420]: 
+                  - generic [ref=e421]: 357 usuários
+              - generic [ref=e422]:
+                - button "Desativar" [ref=e423] [cursor=pointer]
+                - button "Editar" [ref=e424] [cursor=pointer]
+          - generic [ref=e425]:
+            - generic [ref=e427]: 
+            - generic [ref=e428]:
+              - generic [ref=e429]:
+                - generic [ref=e430]: 
+                - generic [ref=e431]: Desconectado
+              - generic [ref=e432]:
+                - generic [ref=e433]:
+                  - generic [ref=e434]: 
+                  - generic [ref=e435]: WhatsApp
+                - generic [ref=e436]: grelha-zapi
+                - generic [ref=e437]: +55 (19) 9 8429-6556
+                - generic [ref=e438]:
+                  - generic [ref=e439]: 
+                  - generic [ref=e440]: 223 usuários
+              - generic [ref=e441]:
+                - button "Desativar" [ref=e442] [cursor=pointer]
+                - button "Editar" [ref=e443] [cursor=pointer]
+          - generic [ref=e444]:
+            - generic [ref=e446]: 
+            - generic [ref=e447]:
+              - generic [ref=e448]:
+                - generic [ref=e449]: 
+                - generic [ref=e450]: Conectado
+              - generic [ref=e451]:
+                - generic [ref=e452]:
+                  - generic [ref=e453]: 
+                  - generic [ref=e454]: WebChat
+                - generic [ref=e455]: hml web-chat
+                - generic [ref=e456]:
+                  - generic [ref=e457]: 
+                  - generic [ref=e458]: 214 usuários
+              - generic [ref=e459]:
+                - button "Desativar" [ref=e460] [cursor=pointer]
+                - button "Editar" [ref=e461] [cursor=pointer]
+          - generic [ref=e462]:
+            - generic [ref=e464]: 
+            - generic [ref=e465]:
+              - generic [ref=e466]:
+                - generic [ref=e467]: 
+                - generic [ref=e468]: Conectado
+              - generic [ref=e469]:
+                - generic [ref=e470]:
+                  - generic [ref=e471]: 
+                  - generic [ref=e472]: WebChat
+                - generic [ref=e473]: lineu
+                - generic [ref=e474]:
+                  - generic [ref=e475]: 
+                  - generic [ref=e476]: 214 usuários
+              - generic [ref=e477]:
+                - button "Desativar" [ref=e478] [cursor=pointer]
+                - button "Editar" [ref=e479] [cursor=pointer]
+          - generic [ref=e480]:
+            - generic [ref=e482]: 
+            - generic [ref=e483]:
+              - generic [ref=e484]:
+                - generic [ref=e485]: 
+                - generic [ref=e486]: Conectado
+              - generic [ref=e487]:
+                - generic [ref=e488]:
+                  - generic [ref=e489]: 
+                  - generic [ref=e490]: Instagram
+                - generic [ref=e491]: MAPI2Tier - Lucas Bento (Instagram)
+                - generic [ref=e492]:
+                  - generic [ref=e493]: 
+                  - generic [ref=e494]: 24 usuários
+              - generic [ref=e495]:
+                - button "Desativar" [ref=e496] [cursor=pointer]
+                - button "Editar" [ref=e497] [cursor=pointer]
+        - navigation "Page navigation" [ref=e499]:
+          - list [ref=e500]:
+            - listitem [ref=e501]:
+              - button "1" [ref=e502] [cursor=pointer]
+            - listitem [ref=e503]:
+              - button "2" [ref=e504] [cursor=pointer]

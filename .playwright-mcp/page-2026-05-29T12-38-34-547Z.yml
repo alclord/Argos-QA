@@ -1,0 +1,533 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - complementary:
+          - generic:
+            - img
+          - navigation:
+            - list:
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app.poli.digital/home
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /chat
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app.poli.digital/settings/46667/chatbot
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /poli-flow
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app-spa.poli.digital/marketing
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app-spa.poli.digital/shopping
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app-spa.poli.digital/relatorio
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=4081611002f4eec133c439eb688d68c4963a0c26&toPath=https://app.poli.digital/settings/46667
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /contacts
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /templates
+                  - generic:
+                    - img
+            - list:
+              - listitem:
+                - button:
+                  - img
+              - listitem:
+                - button:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: YA
+              - listitem:
+                - button:
+                  - img
+              - listitem:
+                - generic:
+                  - generic: 3.5.332
+        - main:
+          - generic:
+            - generic:
+              - generic:
+                - navigation:
+                  - generic:
+                    - link:
+                      - /url: /
+                      - text: Página inicial
+                  - img
+                  - generic: Mensagens agendadas
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                          - generic:
+                            - paragraph: Total
+                            - paragraph: "68"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                          - generic:
+                            - paragraph: Agendadas
+                            - paragraph: "0"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                          - generic:
+                            - paragraph: Enviadas
+                            - paragraph: "43"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                          - generic:
+                            - paragraph: Canceladas
+                            - paragraph: "0"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Status
+                                - combobox:
+                                  - generic: Todos os status
+                                  - img
+                              - generic:
+                                - generic: Canal
+                                - combobox:
+                                  - generic: Todos os canais
+                                  - img
+                              - generic:
+                                - generic: Responsável
+                                - combobox:
+                                  - generic: Todos os responsáveis
+                                  - img
+                              - generic:
+                                - generic: Período
+                                - button:
+                                  - generic: Todos os períodos
+                                  - img
+                              - generic:
+                                - button:
+                                  - img
+                                  - text: Agendar mensagem
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - table:
+                                    - rowgroup:
+                                      - row:
+                                        - columnheader
+                                        - columnheader:
+                                          - button:
+                                            - text: Contato
+                                            - img
+                                        - columnheader: Canal
+                                        - columnheader: Mensagem
+                                        - columnheader:
+                                          - button:
+                                            - text: Agendado para
+                                            - img
+                                        - columnheader: Responsável
+                                        - columnheader: Status
+                                        - columnheader: Ações
+                                    - rowgroup:
+                                      - row:
+                                        - cell
+                                        - cell: joão prd 01
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: WABA 9284
+                                        - cell:
+                                          - generic: Olá! Tudo bem? bom dia atualize sua conta
+                                        - cell: 24/02/2026 - 15:32
+                                        - cell: Vieira Pedro
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Alertas Infra Poli
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp
+                                            - generic: AlertasInfra (não desativar)
+                                        - cell:
+                                          - generic: Msg livre - zapi
+                                        - cell: 06/02/2026 - 13:45
+                                        - cell: Nikole
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: pedro vieira
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp
+                                            - generic: AlertasInfra (não desativar)
+                                        - cell:
+                                          - generic: teste 123
+                                        - cell: 04/02/2026 - 15:49
+                                        - cell: Vieira Pedro
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Nikole palmeirense
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp
+                                            - generic: Pv Teste
+                                        - cell:
+                                          - generic: teste
+                                        - cell: 22/01/2026 - 06:58
+                                        - cell: Nikole
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: pedro vieira
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp
+                                            - generic: Pv Teste
+                                        - cell:
+                                          - generic: agendamento
+                                        - cell: 21/01/2026 - 12:58
+                                        - cell: Vieira Pedro
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: pedro vieira
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp
+                                            - generic: Pv Teste
+                                        - cell:
+                                          - generic: teste 123 321
+                                        - cell: 14/01/2026 - 06:59
+                                        - cell: Vieira Pedro
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Cliente A
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: WABA 9284
+                                        - cell:
+                                          - generic: "Bom dia, [contact_name] Mensagem:"
+                                        - cell: 17/12/2025 - 05:58
+                                        - cell: Vieira Pedro
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Wally
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp
+                                            - generic: prd zapi
+                                        - cell:
+                                          - generic: teste 113234
+                                        - cell: 17/12/2025 - 05:58
+                                        - cell: Vieira Pedro
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Nikole palmeirense
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: WABA 9284
+                                        - cell:
+                                          - generic: teste 1234
+                                        - cell: 17/12/2025 - 05:57
+                                        - cell: Vieira Pedro
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Nikole palmeirense
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: WABA 9284
+                                        - cell:
+                                          - generic: "I kidnapped your daughter, and I want 5,000 reais to return her. Click the link to get her back: http://promo-premium-free-money.xyz If you don't click the link and make the payment, it'll look bad for her."
+                                        - cell: 16/12/2025 - 08:50
+                                        - cell: Manager Wally
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Wally
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: WABA 9284
+                                        - cell:
+                                          - generic: Ola, tudo bem? Me chamo Kellen do departamento [department_name] Preciso realizar a entrega de um documento importante, posso te mandar agora? Assim que possivel, me retorne, por gentileza. Fico no aguardo da sua mensagem
+                                        - cell: 12/12/2025 - 19:12
+                                        - cell: Manager Wally
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Cruz
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: WABA 9284
+                                        - cell:
+                                          - generic: Ola, tudo bem? Me chamo Kellen do departamento [department_name] Preciso realizar a entrega de um documento importante, posso te mandar agora? Assim que possivel, me retorne, por gentileza. Fico no aguardo da sua mensagem
+                                        - cell: 10/12/2025 - 11:38
+                                        - cell: Vieira Pedro
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: pedro vieira
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: WABA 9284
+                                        - cell:
+                                          - generic: Ola, tudo bem? Me chamo Kellen do departamento [department_name] Preciso realizar a entrega de um documento importante, posso te mandar agora? Assim que possivel, me retorne, por gentileza. Fico no aguardo da sua mensagem
+                                        - cell: 10/12/2025 - 11:35
+                                        - cell: Vieira Pedro
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: pedro vieira
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp
+                                            - generic: prd zapi
+                                        - cell:
+                                          - generic: —
+                                        - cell: 03/12/2025 - 05:41
+                                        - cell: Vieira Pedro
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: pedro vieira
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp
+                                            - generic: prd zapi
+                                        - cell:
+                                          - generic: —
+                                        - cell: 03/12/2025 - 05:40
+                                        - cell: Vieira Pedro
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic: Página 1 de 5
+                                  - generic: "Total: 68 registros"
+                                - generic:
+                                  - combobox
+                                  - generic:
+                                    - button [disabled]:
+                                      - img
+                                    - button [disabled]:
+                                      - img
+                                    - button:
+                                      - img
+                                    - button:
+                                      - img
+    - list
+  - dialog "Contato" [ref=e558]:
+    - heading "Contato" [level=2] [ref=e559]
+    - generic [ref=e560]:
+      - generic [ref=e562]:
+        - img [ref=e654] [cursor=pointer]
+        - combobox [expanded] [active] [ref=e566]: Yuri
+      - listbox "Suggestions" [ref=e567]:
+        - group [ref=e569]:
+          - option "YURI RILDER MARTINS 5562999992773" [ref=e657]:
+            - generic [ref=e658]:
+              - generic [ref=e659]: YURI RILDER MARTINS
+              - generic [ref=e660]: "5562999992773"
+          - option "Yuri - 198.771.157-27 5521970671038" [ref=e661]:
+            - generic [ref=e662]:
+              - generic [ref=e663]: Yuri - 198.771.157-27
+              - generic [ref=e664]: "5521970671038"
+          - option "Yuri - 447.010.098-65 5511949802884" [ref=e665]:
+            - generic [ref=e666]:
+              - generic [ref=e667]: Yuri - 447.010.098-65
+              - generic [ref=e668]: "5511949802884"
+          - option "Yuri - 711.542.221-44 5561981335986" [ref=e669]:
+            - generic [ref=e670]:
+              - generic [ref=e671]: Yuri - 711.542.221-44
+              - generic [ref=e672]: "5561981335986"
+          - option "Yuri - 059.372.531-08 5565993256401" [ref=e673]:
+            - generic [ref=e674]:
+              - generic [ref=e675]: Yuri - 059.372.531-08
+              - generic [ref=e676]: "5565993256401"
+          - option "Yuri - 594.688.048-95 5513996667837" [ref=e677]:
+            - generic [ref=e678]:
+              - generic [ref=e679]: Yuri - 594.688.048-95
+              - generic [ref=e680]: "5513996667837"
+          - option "Yuri - 866.177.205-20 5571988990563" [ref=e681]:
+            - generic [ref=e682]:
+              - generic [ref=e683]: Yuri - 866.177.205-20
+              - generic [ref=e684]: "5571988990563"
+          - option "Yuri - 719.938.204-93 5581987600091" [ref=e685]:
+            - generic [ref=e686]:
+              - generic [ref=e687]: Yuri - 719.938.204-93
+              - generic [ref=e688]: "5581987600091"
+          - option "Yuri - 210.309.697-52 5521965012513" [ref=e689]:
+            - generic [ref=e690]:
+              - generic [ref=e691]: Yuri - 210.309.697-52
+              - generic [ref=e692]: "5521965012513"
+          - option "Yuri - 031.683.835-70 5547997182014" [ref=e693]:
+            - generic [ref=e694]:
+              - generic [ref=e695]: Yuri - 031.683.835-70
+              - generic [ref=e696]: "5547997182014"
+          - option "Yuri - 173.266.967-80 5521966678385" [ref=e697]:
+            - generic [ref=e698]:
+              - generic [ref=e699]: Yuri - 173.266.967-80
+              - generic [ref=e700]: "5521966678385"
+          - option "Yuri - 174.430.107-70 5521995309347" [ref=e701]:
+            - generic [ref=e702]:
+              - generic [ref=e703]: Yuri - 174.430.107-70
+              - generic [ref=e704]: "5521995309347"
+          - option "Yuri Alves Faria 5554996832542" [ref=e705]:
+            - generic [ref=e706]:
+              - generic [ref=e707]: Yuri Alves Faria
+              - generic [ref=e708]: "5554996832542"
+          - option "YURI 5561995943518" [ref=e709]:
+            - generic [ref=e710]:
+              - generic [ref=e711]: YURI
+              - generic [ref=e712]: "5561995943518"
+          - option "Yuri Xavier 5561982127601" [ref=e713]:
+            - generic [ref=e714]:
+              - generic [ref=e715]: Yuri Xavier
+              - generic [ref=e716]: "5561982127601"
+          - option "Yuri 556299210609" [ref=e717]:
+            - generic [ref=e718]:
+              - generic [ref=e719]: Yuri
+              - generic [ref=e720]: "556299210609"
+    - button "Close" [ref=e649] [cursor=pointer]:
+      - img [ref=e650]
+      - generic [ref=e653]: Close

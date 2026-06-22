@@ -1,0 +1,40 @@
+[    1421ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:101
+[    1422ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:101
+[    1642ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:76
+[    6054ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at eS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.dS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Dq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Hz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Mz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:100)
+    at jB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:742)
+    at mB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:648:183)
+    at wD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65s0:681:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:857:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65s0:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:495
+    at r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+[    6804ms] [WARNING] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: WebSocket is closed before the connection is established. @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1007
+[   10054ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/537113859_795949420003454_872250223868236541_n.jpg?ccb=11-4&oh=01_Q5Aa3AFshUaSO8zGEbZbnSsWc1q6GNa_otdk_h4NeF5fZH80Kw&oe=6936D6BB&_nc_sid=5e03e0&_nc_cat=107:0
+[   10065ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/409395395_7020232648092600_5517613234521208211_n.jpg?ccb=11-4&oh=01_Q5Aa3QFsSQ1tMPzXBXdVmUhgFqZOhYBEIfOjtfwGfv6r0lU5SQ&oe=6943C5E3&_nc_sid=5e03e0&_nc_cat=105:0
+[   10120ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[   18019ms] Identifier 'TCRMEmbed' has already been declared
+[   18803ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/645407781_1255924119200175_4177122012380827586_n.jpg?ccb=11-4&oh=01_Q5Aa4AHmUDW4KbujaWprXyRE3mVYfD_y1rSIdlqt2MYn2Zu_GA&oe=69BD3BAB&_nc_sid=5e03e0&_nc_cat=103:0

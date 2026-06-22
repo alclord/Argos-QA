@@ -1,0 +1,25 @@
+[    1830ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:101
+[    1830ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:101
+[    2033ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:76
+[    2918ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69
+[    2919ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/undefined/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[    2925ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/undefined/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[    2931ms] [ERROR] error ao buscar chats TypeError: Cannot read properties of undefined (reading 'data')
+    at H0t (https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:1087:26145)
+    at async C (https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:54:37954)
+    at async Object.d [as fn] (https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:54:38261) @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69
+[    2934ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/users/settings/summary:0
+[    2936ms] [ERROR] [UserPreferencesService] Failed to get summary: TypeError: Cannot read properties of undefined (reading 'data')
+    at vne.getSummary (https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:2191:64686)
+    at async https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:2191:65346 @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69
+[    2939ms] [ERROR] [useUserPreferences] Error: TypeError: Cannot read properties of undefined (reading 'data')
+    at vne.getSummary (https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:2191:64686)
+    at async https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:2191:65346 @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69
+[    3012ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69
+[    3392ms] [ERROR] Amplitude Logger [Error]: Failed to fetch (api2.amplitude.com) @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69
+[    3396ms] [WARNING] Amplitude Logger [Warn]: {code: 0, error: "Status 'failed' provided for 2 events"} @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69
+[    3717ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:101
+[    3718ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:101
+[    3772ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:76
+[    3809ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69
+[    4323ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69

@@ -1,0 +1,79 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - list [ref=e6]:
+      - listitem [ref=e7]:
+        - link [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img [ref=e10]
+      - listitem [ref=e12]:
+        - link [ref=e13] [cursor=pointer]:
+          - /url: /chat
+          - img [ref=e15]
+      - listitem
+      - listitem [ref=e17]:
+        - link [ref=e18] [cursor=pointer]:
+          - /url: /crm
+          - img [ref=e20]
+      - listitem [ref=e23]:
+        - link [ref=e24] [cursor=pointer]:
+          - /url: /marketing
+          - img [ref=e26]
+      - listitem
+      - listitem [ref=e28]:
+        - link [ref=e29] [cursor=pointer]:
+          - /url: /relatorio
+          - img [ref=e31]
+      - listitem
+    - generic [ref=e34]:
+      - button "" [ref=e36] [cursor=pointer]:
+        - generic [ref=e37]: 
+      - generic [ref=e39]:
+        - button "" [ref=e40] [cursor=pointer]:
+          - generic [ref=e41]: 
+        - text:        
+      - generic [ref=e44]:
+        - button "" [ref=e46] [cursor=pointer]:
+          - generic [ref=e47]: 
+        - text:  
+      - generic [ref=e49]:
+        - button "YA" [ref=e50] [cursor=pointer]:
+          - generic "Yuri Alcantara Supervisor" [ref=e51]:
+            - generic [ref=e52]: YA
+        - text:  
+      - generic [ref=e55] [cursor=pointer]: 
+      - generic [ref=e57] [cursor=pointer]: v0.20.533
+  - generic [ref=e60]:
+    - navigation [ref=e62]:
+      - text: 
+      - generic [ref=e64]:
+        - generic [ref=e65] [cursor=pointer]:
+          - generic [ref=e66]:
+            - text: 
+            - generic [ref=e67]: Canais
+            - text: 
+          - text:   
+        - generic [ref=e68] [cursor=pointer]:
+          - generic [ref=e69]:
+            - text: 
+            - generic [ref=e70]: Construtor de Template
+            - text: 
+          - text:   
+        - generic [ref=e71] [cursor=pointer]:
+          - generic [ref=e72]:
+            - text: 
+            - generic [ref=e73]: Integrações e Apps
+            - text: 
+          - text: 
+        - generic [ref=e74] [cursor=pointer]:
+          - generic [ref=e75]:
+            - text: 
+            - generic [ref=e76]: Créditos
+            - text: 
+          - text: 
+        - generic [ref=e77] [cursor=pointer]:
+          - generic [ref=e78]:
+            - text: 
+            - generic [ref=e79]: Configurações Gerais
+            - text: 
+          - text: 
+    - heading "Bem vindo ao Menu de Ferramentas" [level=2] [ref=e84]

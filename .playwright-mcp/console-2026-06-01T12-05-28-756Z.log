@@ -1,0 +1,148 @@
+[      87ms] [LOG] Defining triggerGuiding @ :0
+[    1592ms] [LOG] openSocketRequest @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    1614ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.poli.digital/redirect?sessionId=aaf1b7076d039af44273e79bcf6332c653ad97f6&toPath=https://app.poli.digital/users/1/79356/edit:0
+[    2092ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    4089ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    4089ms] [LOG] User Guiding identify cleared @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[    5200ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/redirect?sessionId=aaf1b7076d039af44273e79bcf6332c653ad97f6&toPath=https://app.poli.digital/users/1/79356/edit:0
+[    5549ms] [LOG] Defining triggerGuiding @ :0
+[    5803ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://ad.doubleclick.net/ccm/s/collect?auid=317096333.1779910388&gtm=45He65r2v846319599za200zd846319599xea:0
+[    5863ms] [ERROR] Refused to execute script from 'https://app.poli.digital/users/1/79356/js/avatar.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled. @ https://app.poli.digital/users/1/79356/edit:0
+[    6044ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app.poli.digital/users/1/79356/edit:0
+[    6434ms] TypeError: Cannot read properties of null (reading 'tomselect')
+    at new J (https://app.poli.digital/js/tom-select_v2.0.0-rc.5/tom-select.complete.min.js:127:14)
+    at https://app.poli.digital/users/1/79356/edit:2005:13
+[    6441ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at dS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+[    7558ms] [LOG] User Guiding identify running @ :1
+[    7558ms] [LOG] User Guiding identify cleared @ :1
+[    9939ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1/79356/edit:0
+[    9965ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1/79356/edit:0
+[   11361ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1/79356/edit:0
+[   11361ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/users/1/79356/edit:0
+[   69471ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  129677ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  189941ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  250168ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  310400ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  370643ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  430892ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  491141ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  551352ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  611597ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  671894ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  732116ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  792368ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  852605ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  912817ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[  973090ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1033295ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1093503ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1153739ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1213953ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1274204ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1334445ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1394680ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1454934ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1515199ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1575409ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1635617ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1695831ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1756055ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1816257ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1876452ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1936737ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 1996937ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2057227ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2117445ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2177646ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2238434ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2298661ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2358881ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2419096ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2479302ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2539556ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2599761ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2659958ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2720181ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2780385ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2840596ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2900806ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 2961026ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3021498ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3081725ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3141937ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3202150ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3262406ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3322672ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3382913ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3443128ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3503339ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3563598ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3623858ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3684074ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3744280ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3804503ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3864773ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3924996ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 3985250ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4045469ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4105693ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4165913ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4226139ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4286344ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4346566ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4406779ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4467034ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4527274ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4587882ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4648139ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4709184ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4769409ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4829628ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4889860ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 4950103ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5010335ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5070555ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5130779ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5191008ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5251223ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5311427ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5371752ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5432049ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5492313ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5552573ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5612803ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5673010ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5733219ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5793420ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5853640ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5913872ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 5974155ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6034392ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6094586ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6154786ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6215145ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6275344ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6335566ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6395759ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6456054ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6516253ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6576479ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6636703ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6696920ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6757130ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6817386ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6877586ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6937790ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 6998015ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0
+[ 7058245ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://app.poli.digital/alive:0

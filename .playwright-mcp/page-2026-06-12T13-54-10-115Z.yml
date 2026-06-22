@@ -1,0 +1,141 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=f0b6ccb952535417a4a0c3d214d4cd56a7020811&toPath=https://app.poli.digital/home
+        - img [ref=e11]
+      - generic [ref=e12]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link [ref=e16] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e18]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=f0b6ccb952535417a4a0c3d214d4cd56a7020811&toPath=https://app.poli.digital/settings//chatbot
+              - img [ref=e30]
+          - listitem [ref=e33]:
+            - link [ref=e34] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e36]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=f0b6ccb952535417a4a0c3d214d4cd56a7020811&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e41]
+          - listitem [ref=e44]:
+            - link [ref=e45] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=f0b6ccb952535417a4a0c3d214d4cd56a7020811&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e47]
+          - listitem [ref=e50]:
+            - link [ref=e51] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=f0b6ccb952535417a4a0c3d214d4cd56a7020811&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e53]
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - link [ref=e61] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e63]
+      - generic [ref=e66]:
+        - button "Consumo de créditos" [ref=e67] [cursor=pointer]:
+          - img [ref=e69]
+        - button "YA" [ref=e73] [cursor=pointer]:
+          - generic [ref=e79]: YA
+        - generic [ref=e82]: 3.5.358-DEV4-4370
+    - main [ref=e83]:
+      - main [ref=e84]:
+        - generic [ref=e86]:
+          - navigation "breadcrumb" [ref=e88]:
+            - link "Página inicial" [ref=e90] [cursor=pointer]:
+              - /url: /
+            - img [ref=e91]
+            - generic [ref=e93]: Configurações gerais
+          - generic [ref=e95]:
+            - generic [ref=e96]:
+              - textbox "Buscar configuração..." [ref=e97]
+              - button "Pesquisar" [ref=e98] [cursor=pointer]:
+                - img [ref=e99]
+            - region "Atendimento" [ref=e102]:
+              - heading "Atendimento" [level=2] [ref=e103]
+              - generic [ref=e104]:
+                - link "Modelos Crie e gerencie modelos de mensagem para agilizar o atendimento." [ref=e106] [cursor=pointer]:
+                  - /url: undefined/redirect?sessionId=f0b6ccb952535417a4a0c3d214d4cd56a7020811&toPath=%2Ftools%2Fmessages-builder
+                  - img [ref=e108]
+                  - generic [ref=e113]:
+                    - generic [ref=e114]: Modelos
+                    - generic [ref=e115]: Crie e gerencie modelos de mensagem para agilizar o atendimento.
+                - link "Etiquetas Organize contatos e conversas com etiquetas personalizadas." [ref=e117] [cursor=pointer]:
+                  - /url: /tags
+                  - img [ref=e119]
+                  - generic [ref=e123]:
+                    - generic [ref=e124]: Etiquetas
+                    - generic [ref=e125]: Organize contatos e conversas com etiquetas personalizadas.
+                - link "Departamentos Estruture suas equipes e direcione os atendimentos." [ref=e127] [cursor=pointer]:
+                  - /url: /teams
+                  - img [ref=e129]
+                  - generic [ref=e131]:
+                    - generic [ref=e132]: Departamentos
+                    - generic [ref=e133]: Estruture suas equipes e direcione os atendimentos.
+                - link "Canais Conecte e configure os canais de atendimento da conta." [ref=e135] [cursor=pointer]:
+                  - /url: undefined/redirect?sessionId=f0b6ccb952535417a4a0c3d214d4cd56a7020811&toPath=%2Ftools%2Fchannels%2Flist
+                  - img [ref=e137]
+                  - generic [ref=e142]:
+                    - generic [ref=e143]: Canais
+                    - generic [ref=e144]: Conecte e configure os canais de atendimento da conta.
+            - region "Empresa" [ref=e145]:
+              - heading "Empresa" [level=2] [ref=e146]
+              - generic [ref=e147]:
+                - link "Empresa Atualize os dados e as informações da sua empresa." [ref=e149] [cursor=pointer]:
+                  - /url: undefined/redirect?sessionId=f0b6ccb952535417a4a0c3d214d4cd56a7020811&toPath=%2Fdados_empresa%2F
+                  - img [ref=e151]
+                  - generic [ref=e154]:
+                    - generic [ref=e155]: Empresa
+                    - generic [ref=e156]: Atualize os dados e as informações da sua empresa.
+                - link "Usuários Gerencie os usuários e seus acessos à plataforma." [ref=e158] [cursor=pointer]:
+                  - /url: /users
+                  - img [ref=e160]
+                  - generic [ref=e163]:
+                    - generic [ref=e164]: Usuários
+                    - generic [ref=e165]: Gerencie os usuários e seus acessos à plataforma.
+                - link "Integrações Conecte aplicativos e serviços externos à sua conta." [ref=e167] [cursor=pointer]:
+                  - /url: /applications
+                  - img [ref=e169]
+                  - generic [ref=e176]:
+                    - generic [ref=e177]: Integrações
+                    - generic [ref=e178]: Conecte aplicativos e serviços externos à sua conta.
+                - link "Assinatura Acompanhe seu plano, faturas e forma de pagamento." [ref=e180] [cursor=pointer]:
+                  - /url: undefined/redirect?sessionId=f0b6ccb952535417a4a0c3d214d4cd56a7020811&toPath=%2Fdados_plano%2F
+                  - img [ref=e182]
+                  - generic [ref=e184]:
+                    - generic [ref=e185]: Assinatura
+                    - generic [ref=e186]: Acompanhe seu plano, faturas e forma de pagamento.
+                - link "Carteiras Gerencie as carteiras de atendimento da conta." [ref=e188] [cursor=pointer]:
+                  - /url: undefined/redirect?sessionId=f0b6ccb952535417a4a0c3d214d4cd56a7020811&toPath=%2Fwallets%2F
+                  - img [ref=e190]
+                  - generic [ref=e193]:
+                    - generic [ref=e194]: Carteiras
+                    - generic [ref=e195]: Gerencie as carteiras de atendimento da conta.
+                - button "Widget para site Instale o widget de atendimento no seu site." [ref=e197] [cursor=pointer]:
+                  - img [ref=e199]
+                  - generic [ref=e202]:
+                    - generic [ref=e203]: Widget para site
+                    - generic [ref=e204]: Instale o widget de atendimento no seu site.
+                - generic [ref=e205]:
+                  - button "Permissões Controle o que cada perfil de usuário pode acessar." [disabled]:
+                    - generic:
+                      - img
+                    - generic:
+                      - generic: Permissões
+                      - generic: Controle o que cada perfil de usuário pode acessar.
+                  - generic: Em breve
+                - link "Ações críticas Audite e gerencie ações sensíveis realizadas na conta." [ref=e207] [cursor=pointer]:
+                  - /url: undefined/redirect?sessionId=f0b6ccb952535417a4a0c3d214d4cd56a7020811&toPath=%2Factions%2F
+                  - img [ref=e209]
+                  - generic [ref=e212]:
+                    - generic [ref=e213]: Ações críticas
+                    - generic [ref=e214]: Audite e gerencie ações sensíveis realizadas na conta.
+  - region "Notifications (F8)":
+    - list

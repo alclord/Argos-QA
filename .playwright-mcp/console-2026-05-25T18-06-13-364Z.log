@@ -1,0 +1,12 @@
+[    1487ms] [ERROR] CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token @ https://homolog.qa.poli.digital/js/app.js:1555
+[    2216ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:892:429
+    at VR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:894:31)
+    at Nd.UR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:891:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)

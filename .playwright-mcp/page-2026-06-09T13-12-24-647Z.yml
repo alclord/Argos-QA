@@ -1,0 +1,974 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=9a529ca4977f24eb5dfb7ad3d55d0d3e07efc9fe&toPath=https://app.poli.digital/home
+        - img [ref=e11]
+      - generic [ref=e12]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link [ref=e16] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e18]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9a529ca4977f24eb5dfb7ad3d55d0d3e07efc9fe&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e30]
+          - listitem [ref=e33]:
+            - link [ref=e34] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e36]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9a529ca4977f24eb5dfb7ad3d55d0d3e07efc9fe&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e41]
+          - listitem [ref=e44]:
+            - link [ref=e45] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9a529ca4977f24eb5dfb7ad3d55d0d3e07efc9fe&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e47]
+          - listitem [ref=e50]:
+            - link [ref=e51] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9a529ca4977f24eb5dfb7ad3d55d0d3e07efc9fe&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e53]
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - link [ref=e61] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e63]
+      - generic [ref=e66]:
+        - button "Consumo de créditos" [ref=e67] [cursor=pointer]:
+          - img [ref=e69]
+        - button "YA" [ref=e73] [cursor=pointer]:
+          - generic [ref=e79]: YA
+        - generic [ref=e82]: 3.5.352
+    - main [ref=e83]:
+      - main [ref=e84]:
+        - generic [ref=e85]:
+          - button "✨ Nova Versão" [ref=e86] [cursor=pointer]:
+            - generic [ref=e87]: ✨ Nova Versão
+            - img [ref=e88]
+          - generic [ref=e91]:
+            - generic [ref=e92]:
+              - generic [ref=e93]:
+                - button "Em atendimento" [ref=e94] [cursor=pointer]:
+                  - generic [ref=e95]: Em atendimento
+                  - img [ref=e96]
+                - generic [ref=e98]:
+                  - button "Contatos" [ref=e99] [cursor=pointer]:
+                    - img [ref=e100]
+                  - button "Filtros" [ref=e104] [cursor=pointer]:
+                    - img [ref=e105]
+              - generic [ref=e109]:
+                - generic [ref=e110]:
+                  - textbox "Pesquisar" [ref=e111]
+                  - button "Pesquisar" [ref=e112] [cursor=pointer]:
+                    - img [ref=e113]
+                - button "Ordenação das conversas" [ref=e116] [cursor=pointer]:
+                  - img [ref=e117]
+            - generic [ref=e120]: Você está indisponível e não receberá novas conversas
+          - generic [ref=e310]:
+            - generic [ref=e568] [cursor=pointer]:
+              - generic [ref=e569]:
+                - generic [ref=e571]:
+                  - generic [ref=e575]: D
+                  - button "Selecionar todos" [ref=e576]:
+                    - checkbox
+                - generic [ref=e577]:
+                  - generic [ref=e579]: David - Carmax freios
+                  - generic [ref=e580]:
+                    - generic [ref=e581]:
+                      - img "WhatsApp Business" [ref=e582]
+                      - generic [ref=e585]: WhatsApp Business
+                    - generic [ref=e1728]: pode ser
+                  - generic [ref=e595]:
+                    - generic [ref=e596]:
+                      - img [ref=e597]
+                      - generic [ref=e599]: Mara Reis
+                    - generic [ref=e600]:
+                      - img [ref=e601]
+                      - generic [ref=e603]: Comercial
+              - generic [ref=e604]:
+                - button [ref=e1729]
+                - generic [ref=e609]:
+                  - generic [ref=e610]: Há 1min
+                  - generic [ref=e1731]: "1"
+                  - button "Abrir menu de opções" [ref=e611]:
+                    - img [ref=e612]
+            - generic [ref=e396] [cursor=pointer]:
+              - generic [ref=e397]:
+                - generic [ref=e399]:
+                  - generic [ref=e403]: AV
+                  - button "Selecionar todos" [ref=e404]:
+                    - checkbox
+                - generic [ref=e405]:
+                  - generic [ref=e407]: Ana Vitória
+                  - generic [ref=e408]:
+                    - generic [ref=e409]:
+                      - img "WhatsApp Business" [ref=e410]
+                      - generic [ref=e413]: WhatsApp Business
+                    - generic [ref=e417]: Só eu participaria para filtrar as informações
+                  - generic [ref=e418]:
+                    - generic [ref=e419]:
+                      - img [ref=e420]
+                      - generic [ref=e422]: Isadora Rocha
+                    - generic [ref=e423]:
+                      - img [ref=e424]
+                      - generic [ref=e426]: Pré Venda
+              - generic [ref=e427]:
+                - button [ref=e1732]
+                - generic [ref=e432]:
+                  - generic [ref=e433]: Há 1min
+                  - generic [ref=e1734]: "1"
+                  - button "Abrir menu de opções" [ref=e435]:
+                    - img [ref=e436]
+            - generic [ref=e732] [cursor=pointer]:
+              - generic [ref=e733]:
+                - generic [ref=e735]:
+                  - generic [ref=e739]: F
+                  - button "Selecionar todos" [ref=e740]:
+                    - checkbox
+                - generic [ref=e741]:
+                  - generic [ref=e743]: Francele - Luar Semijóias - id 52085
+                  - generic [ref=e744]:
+                    - generic [ref=e745]:
+                      - img "WhatsApp Business" [ref=e746]
+                      - generic [ref=e749]: WhatsApp Business
+                    - generic [ref=e752]:
+                      - img [ref=e1735]
+                      - text: Áudio
+                  - generic [ref=e757]:
+                    - generic [ref=e758]:
+                      - img [ref=e759]
+                      - generic [ref=e761]: Thalyta Cardoso
+                    - generic [ref=e762]:
+                      - img [ref=e763]
+                      - generic [ref=e765]: Financeiro
+              - generic [ref=e767]:
+                - generic [ref=e768]: Há 1min
+                - generic [ref=e769]: "2"
+                - button "Abrir menu de opções" [ref=e770]:
+                  - img [ref=e771]
+            - generic [ref=e526] [cursor=pointer]:
+              - generic [ref=e527]:
+                - generic [ref=e529]:
+                  - generic [ref=e533]: MM
+                  - button "Selecionar todos" [ref=e534]:
+                    - checkbox
+                - generic [ref=e535]:
+                  - generic [ref=e537]: Michel Monção
+                  - generic [ref=e538]:
+                    - generic [ref=e539]:
+                      - img "WhatsApp Business" [ref=e540]
+                      - generic [ref=e543]: WhatsApp Business
+                    - generic [ref=e547]: precisamos unificar isso dentro de uma plataforma de forma a gerencia e o grao mestrado terem acesso
+                  - generic [ref=e548]:
+                    - generic [ref=e549]:
+                      - img [ref=e550]
+                      - generic [ref=e552]: Gabriela Mota
+                    - generic [ref=e553]:
+                      - img [ref=e554]
+                      - generic [ref=e556]: Pré Venda
+              - generic [ref=e557]:
+                - button [ref=e1738]
+                - generic [ref=e562]:
+                  - generic [ref=e563]: Há 1min
+                  - generic [ref=e564]: "1"
+                  - button "Abrir menu de opções" [ref=e565]:
+                    - img [ref=e566]
+            - generic [ref=e311] [cursor=pointer]:
+              - generic [ref=e312]:
+                - generic [ref=e314]:
+                  - generic [ref=e318]: JT
+                  - button "Selecionar todos" [ref=e319]:
+                    - checkbox
+                - generic [ref=e320]:
+                  - generic [ref=e322]: Josué TI CFCSN Clube dos funcionários-52129
+                  - generic [ref=e323]:
+                    - generic [ref=e324]:
+                      - img "WhatsApp Business" [ref=e325]
+                      - generic [ref=e328]: WhatsApp Business
+                    - generic [ref=e332]: beleza!
+                  - generic [ref=e333]:
+                    - generic [ref=e334]:
+                      - img [ref=e335]
+                      - generic [ref=e337]: Felipe Mendes
+                    - generic [ref=e338]:
+                      - img [ref=e339]
+                      - generic [ref=e341]: Financeiro
+              - generic [ref=e343]:
+                - generic [ref=e344]: Há 1min
+                - generic [ref=e345]: "1"
+                - button "Abrir menu de opções" [ref=e346]:
+                  - img [ref=e347]
+            - generic [ref=e349] [cursor=pointer]:
+              - generic [ref=e350]:
+                - generic [ref=e352]:
+                  - generic [ref=e356]: RO
+                  - button "Selecionar todos" [ref=e357]:
+                    - checkbox
+                - generic [ref=e358]:
+                  - generic [ref=e360]: Ricardo Oliveira - Voe Alto Rio
+                  - generic [ref=e361]:
+                    - generic [ref=e362]:
+                      - img "WhatsApp Business" [ref=e363]
+                      - generic [ref=e366]: WhatsApp Business
+                    - generic [ref=e369]:
+                      - generic [ref=e370]: "Matheus Sanches diz::"
+                      - generic [ref=e371]: Como é essencial a visualização pelo computador Ricardo, quando estará com ele para remanejarmos nossa apresentação?
+                    - img [ref=e372]
+                  - generic [ref=e375]:
+                    - generic [ref=e376]:
+                      - img [ref=e377]
+                      - generic [ref=e379]: Matheus Sanches Dias
+                    - generic [ref=e380]:
+                      - img [ref=e381]
+                      - generic [ref=e383]: Pré Venda
+              - generic [ref=e384]:
+                - generic [ref=e386]:
+                  - button [ref=e1740]
+                  - button [ref=e1742]
+                - generic [ref=e391]:
+                  - generic [ref=e392]: Há 1min
+                  - button "Abrir menu de opções" [ref=e393]:
+                    - img [ref=e394]
+            - generic [ref=e438] [cursor=pointer]:
+              - generic [ref=e439]:
+                - generic [ref=e441]:
+                  - generic [ref=e445]: KE
+                  - button "Selecionar todos" [ref=e446]:
+                    - checkbox
+                - generic [ref=e447]:
+                  - generic [ref=e449]: Kecia
+                  - generic [ref=e450]:
+                    - generic [ref=e451]:
+                      - img "WhatsApp Business" [ref=e452]
+                      - generic [ref=e455]: WhatsApp Business
+                    - generic [ref=e459]: nosso suporte de implantação é de qual tempo?
+                  - generic [ref=e460]:
+                    - generic [ref=e461]:
+                      - img [ref=e462]
+                      - generic [ref=e464]: Ingrid Ribeiro
+                    - generic [ref=e465]:
+                      - img [ref=e466]
+                      - generic [ref=e468]: Comercial
+              - generic [ref=e469]:
+                - generic [ref=e471]:
+                  - button [ref=e1744]
+                  - button [ref=e1746]
+                  - button [ref=e1748]
+                  - button [ref=e1750]
+                  - button [ref=e1752]
+                - generic [ref=e482]:
+                  - generic [ref=e483]: Há 1min
+                  - generic [ref=e484]: "3"
+                  - button "Abrir menu de opções" [ref=e485]:
+                    - img [ref=e486]
+            - generic [ref=e488] [cursor=pointer]:
+              - generic [ref=e489]:
+                - generic [ref=e491]:
+                  - generic [ref=e495]: AD
+                  - button "Selecionar todos" [ref=e496]:
+                    - checkbox
+                - generic [ref=e497]:
+                  - generic [ref=e499]: Adriel
+                  - generic [ref=e500]:
+                    - generic [ref=e501]:
+                      - img "WhatsApp Business" [ref=e502]
+                      - generic [ref=e505]: WhatsApp Business
+                    - generic [ref=e508]:
+                      - generic [ref=e509]: "Guilherme Ramos diz::"
+                      - generic [ref=e510]: Pode me passar o seu CNPJ pra eu fazer uma análise do segmento?
+                  - generic [ref=e511]:
+                    - generic [ref=e512]:
+                      - img [ref=e513]
+                      - generic [ref=e515]: Guilherme Ramos
+                    - generic [ref=e516]:
+                      - img [ref=e517]
+                      - generic [ref=e519]: Pré Venda
+              - generic [ref=e521]:
+                - generic [ref=e522]: Há 1min
+                - button "Abrir menu de opções" [ref=e523]:
+                  - img [ref=e524]
+            - generic [ref=e614] [cursor=pointer]:
+              - generic [ref=e615]:
+                - generic [ref=e617]:
+                  - generic [ref=e621]: AG
+                  - button "Selecionar todos" [ref=e622]:
+                    - checkbox
+                - generic [ref=e623]:
+                  - generic [ref=e625]: André Garcia Pereira - Grupo DSF
+                  - generic [ref=e626]:
+                    - generic [ref=e627]:
+                      - img "WhatsApp Business" [ref=e628]
+                      - generic [ref=e631]: WhatsApp Business
+                    - generic [ref=e635]: Avisei aqui
+                  - generic [ref=e636]:
+                    - generic [ref=e637]:
+                      - img [ref=e638]
+                      - generic [ref=e640]: Giulianna Almeida
+                    - generic [ref=e641]:
+                      - img [ref=e642]
+                      - generic [ref=e644]: Comercial
+              - generic [ref=e645]:
+                - button [ref=e1754]
+                - generic [ref=e650]:
+                  - generic [ref=e651]: Há 1min
+                  - button "Abrir menu de opções" [ref=e653]:
+                    - img [ref=e654]
+            - generic [ref=e656] [cursor=pointer]:
+              - generic [ref=e657]:
+                - generic [ref=e659]:
+                  - generic [ref=e663]: AH
+                  - button "Selecionar todos" [ref=e664]:
+                    - checkbox
+                - generic [ref=e665]:
+                  - generic [ref=e667]: Alef Haganá Serviços 51955
+                  - generic [ref=e668]:
+                    - generic [ref=e669]:
+                      - img "WhatsApp Business" [ref=e670]
+                      - generic [ref=e673]: WhatsApp Business
+                    - generic [ref=e676]:
+                      - generic [ref=e677]: "Tácia Marinia diz::"
+                      - generic [ref=e678]: Hoje tenho agenda 13h30 e 16h30
+                  - generic [ref=e679]:
+                    - generic [ref=e680]:
+                      - img [ref=e681]
+                      - generic [ref=e683]: Tácia Marinia
+                    - generic [ref=e684]:
+                      - img [ref=e685]
+                      - generic [ref=e687]: Comercial
+              - generic [ref=e689]:
+                - generic [ref=e690]: Há 1min
+                - button "Abrir menu de opções" [ref=e691]:
+                  - img [ref=e692]
+            - generic [ref=e694] [cursor=pointer]:
+              - generic [ref=e695]:
+                - generic [ref=e697]:
+                  - generic [ref=e701]: AD
+                  - button "Selecionar todos" [ref=e702]:
+                    - checkbox
+                - generic [ref=e703]:
+                  - generic [ref=e705]: Anderson da Silva Paiva | Municipio de Parobe
+                  - generic [ref=e706]:
+                    - generic [ref=e707]:
+                      - img "WhatsApp Business" [ref=e708]
+                      - generic [ref=e711]: WhatsApp Business
+                    - generic [ref=e715]: de outras empresas
+                  - generic [ref=e716]:
+                    - generic [ref=e717]:
+                      - img [ref=e718]
+                      - generic [ref=e720]: Tácia Marinia
+                    - generic [ref=e721]:
+                      - img [ref=e722]
+                      - generic [ref=e724]: Comercial
+              - generic [ref=e726]:
+                - generic [ref=e727]: Há 1min
+                - generic [ref=e728]: "1"
+                - button "Abrir menu de opções" [ref=e729]:
+                  - img [ref=e730]
+            - button "Carregar mais" [ref=e774] [cursor=pointer]
+        - button [ref=e775] [cursor=pointer]:
+          - generic [ref=e777]:
+            - generic [ref=e778]:
+              - generic [ref=e782]: YU
+              - generic [ref=e783]:
+                - generic [ref=e784]: "\"Yuri\""
+                - generic [ref=e786]:
+                  - img [ref=e788]
+                  - generic [ref=e792]: Yuri Alcantara Gestor
+            - generic [ref=e793]:
+              - button [ref=e794]:
+                - img [ref=e795]
+              - button [ref=e799]:
+                - img [ref=e800]
+              - button [ref=e805]:
+                - img [ref=e806]
+              - button [ref=e809]:
+                - img [ref=e810]
+              - button [ref=e812]:
+                - img [ref=e813]
+          - generic [ref=e817]:
+            - generic [ref=e818]:
+              - button "Carregar mais" [ref=e819]
+              - generic [ref=e821]: 29/05/2026
+              - article [ref=e822]:
+                - generic [ref=e823]:
+                  - button "YA" [ref=e824]:
+                    - generic [ref=e828]: YA
+                  - generic [ref=e829]:
+                    - generic [ref=e833]:
+                      - generic [ref=e834]: "Yuri Alcantara diz:"
+                      - separator [ref=e835]
+                      - paragraph [ref=e837]:
+                        - text: fasf
+                        - text: fsafafs
+                    - generic [ref=e838]:
+                      - generic [ref=e840]: 17:13
+                      - generic [ref=e841]:
+                        - img [ref=e842]
+                        - generic [ref=e845]: Entregue
+                  - button "WhatsApp Business WhatsApp Business" [ref=e847]:
+                    - generic [ref=e848]:
+                      - img "WhatsApp Business" [ref=e849]
+                      - generic [ref=e852]: WhatsApp Business
+              - article [ref=e853]:
+                - generic [ref=e854]:
+                  - button "YA" [ref=e855]:
+                    - generic [ref=e859]: YA
+                  - generic [ref=e860]:
+                    - generic [ref=e864]:
+                      - generic [ref=e865]: "Yuri Alcantara diz:"
+                      - separator [ref=e866]
+                      - paragraph [ref=e868]: testando envio de cursor
+                    - generic [ref=e869]:
+                      - generic [ref=e871]: 17:13
+                      - generic [ref=e872]:
+                        - img [ref=e873]
+                        - generic [ref=e876]: Entregue
+                  - button "WhatsApp Business WhatsApp Business" [ref=e878]:
+                    - generic [ref=e879]:
+                      - img "WhatsApp Business" [ref=e880]
+                      - generic [ref=e883]: WhatsApp Business
+              - article [ref=e884]:
+                - generic [ref=e885]:
+                  - button "YA" [ref=e886]:
+                    - generic [ref=e890]: YA
+                  - generic [ref=e891]:
+                    - paragraph [ref=e897]: Teste de agendamento 123 - editado por QA v2
+                    - generic [ref=e898]:
+                      - generic [ref=e900]: 22:00
+                      - generic [ref=e901]:
+                        - img [ref=e902]
+                        - generic [ref=e905]: Enviando
+                  - button "WhatsApp WhatsApp" [ref=e907]:
+                    - generic [ref=e908]:
+                      - img "WhatsApp" [ref=e909]
+                      - generic [ref=e912]: WhatsApp
+              - generic [ref=e914]: 01/06/2026
+              - generic [ref=e916]: Chat finalizado por Yuri Alcantara Gestror em 01/06/2026 às 10:21
+              - article [ref=e917]:
+                - generic [ref=e918]:
+                  - button [ref=e919]:
+                    - img [ref=e924]
+                  - generic [ref=e927]:
+                    - link "Avaliação de Atendimento app.poli.digital" [ref=e930]:
+                      - /url: https://app.poli.digital/rate/J1/M34177001/Q261471466
+                      - generic [ref=e932]:
+                        - paragraph [ref=e933]: Avaliação de Atendimento
+                        - paragraph
+                        - paragraph [ref=e934]: app.poli.digital
+                    - generic [ref=e938]:
+                      - generic [ref=e939]: Obrigado por entrar em contato conosco!
+                      - separator [ref=e940]
+                      - generic [ref=e941]:
+                        - paragraph [ref=e942]:
+                          - text: "Adoramos ouvir você e sua opinião é muito importante para nós — que tal avaliar nosso atendimento rapidinho aqui:"
+                          - link "https://app.poli.digital/rate/J1/M34177001/Q261471466?" [ref=e943]:
+                            - /url: https://app.poli.digital/rate/J1/M34177001/Q261471466?
+                        - paragraph [ref=e944]:
+                          - strong [ref=e945]: "Para ficar por dentro de todas as novidades da Poli, se cadastre aqui:"
+                          - link "https://new.poli.digital/*" [ref=e946]:
+                            - /url: https://new.poli.digital/*
+                          - text: . Esperamos te ver novamente em breve e tenha um dia incrível!
+                    - generic [ref=e949]: 10:21
+                    - heading "Envio bloqueado pelo Whatsapp. (131047)" [level=3] [ref=e952]:
+                      - button "Envio bloqueado pelo Whatsapp. (131047)" [ref=e953]:
+                        - generic [ref=e954]:
+                          - img [ref=e955]
+                          - generic [ref=e957]: Envio bloqueado pelo Whatsapp. (131047)
+                        - img [ref=e958]
+                  - button "WhatsApp Business WhatsApp Business" [ref=e961]:
+                    - generic [ref=e962]:
+                      - img "WhatsApp Business" [ref=e963]
+                      - generic [ref=e966]: WhatsApp Business
+              - generic [ref=e968]: Contato redirecionado por GH App
+              - generic [ref=e970]: Contato redirecionado por Yuri Alcantara Gestror
+              - generic [ref=e973]:
+                - generic [ref=e974]: Resumido com IA - 01/06/2026
+                - separator [ref=e975]
+                - list [ref=e977]:
+                  - listitem [ref=e978]:
+                    - strong [ref=e979]: 26/05/2026 – 11:45–12:44
+                    - text: – O operador Yuri Alcantara iniciou o contato saudando o cliente e apresentando a solução da Poli, destacando benefícios como atendimento, venda e fidelização. O cliente respondeu “ola” duas vezes sem avançar a conversa. Em seguida, Yuri listou uma sequência de casos de teste de regressão da suite Argos QA (CT‑ACK‑001, CT‑ACK‑002, CT‑ACK‑006, CT‑ACK‑007, CT‑ACK‑009, captura de payload, CT‑ACK‑010, CT‑ACK‑005). O cliente finalizou o período com um “ok”.
+                  - listitem [ref=e980]:
+                    - strong [ref=e981]: 29/05/2026 – 15:49–20:13
+                    - text: – O cliente voltou a dizer “Ola”. Yuri enviou uma mensagem de prospecção, informando que empresas similares migraram para a Poli, centralizando WhatsApp e Instagram, e relataram aumento de 30 % na conversão, perguntando se ainda há perdas por demora no atendimento. Após essa mensagem, o operador fez diversos testes internos de cursor e seleção de texto (“teste de cursor via teclado home”, “cursor inicio do texto aqui”, “mensagem com seleção ativa teste”, “testando envio de cursor”).
+                  - listitem [ref=e982]:
+                    - strong [ref=e983]: 30/05/2026 – 01:00
+                    - text: "– Foi enviado um payload JSON de teste: `{\"body\":{\"text\":\"Teste de agendamento 123 - editado por QA v2\"}}`."
+                  - listitem [ref=e984]:
+                    - strong [ref=e985]: 01/06/2026 – 13:21
+                    - text: – O operador agradeceu o contato, convidou o cliente a avaliar o atendimento por meio de um link de rating e sugeriu a inscrição para receber novidades da Poli.
+              - generic [ref=e987]: 02/06/2026
+              - article [ref=e988]:
+                - generic [ref=e989]:
+                  - button "YA" [ref=e990]:
+                    - generic [ref=e994]: YA
+                  - generic [ref=e995]:
+                    - generic [ref=e997]:
+                      - generic [ref=e1000]:
+                        - paragraph [ref=e1001]:
+                          - text: Oi, "Yuri"! 👋
+                          - text: Vi que você acabou de se cadastrar na Poli.
+                        - paragraph [ref=e1002]: Nosso time já recebeu seu contato e vai falar com você no próximo horário comercial 😊
+                        - paragraph [ref=e1003]: "Enquanto isso, me conta rapidinho: hoje o maior foco de vocês é vender mais ou organizar o atendimento?"
+                      - generic [ref=e1004]:
+                        - generic [ref=e1007]: Vender mais
+                        - generic [ref=e1010]: Organizar
+                        - generic [ref=e1013]: Conhecer plataforma
+                    - generic [ref=e1016]: 10:19
+                    - heading "Envio bloqueado pelo Whatsapp. (131049)" [level=3] [ref=e1019]:
+                      - button "Envio bloqueado pelo Whatsapp. (131049)" [ref=e1020]:
+                        - generic [ref=e1021]:
+                          - img [ref=e1022]
+                          - generic [ref=e1024]: Envio bloqueado pelo Whatsapp. (131049)
+                        - img [ref=e1025]
+                  - button "WhatsApp Business WhatsApp Business" [ref=e1028]:
+                    - generic [ref=e1029]:
+                      - img "WhatsApp Business" [ref=e1030]
+                      - generic [ref=e1033]: WhatsApp Business
+              - generic [ref=e1035]: 05/06/2026
+              - article [ref=e1036]:
+                - generic [ref=e1037]:
+                  - button "YA" [ref=e1038]:
+                    - generic [ref=e1042]: YA
+                  - generic [ref=e1043]:
+                    - paragraph [ref=e1049]:
+                      - text: "\"Yuri\""
+                      - text: como vai?
+                      - text: Muitos negócios perdem clientes porque não
+                      - text: conseguem responder rápido no WhatsApp, Instagram e Facebook.
+                      - text: E se você tivesse tudo isso centralizado em um só lugar?
+                      - text: Posso te mostrar como resolver de forma simples.
+                    - generic [ref=e1050]:
+                      - generic [ref=e1052]: 15:10
+                      - generic [ref=e1053]:
+                        - img [ref=e1054]
+                        - generic [ref=e1057]: Entregue
+                  - button "WhatsApp Business WhatsApp Business" [ref=e1059]:
+                    - generic [ref=e1060]:
+                      - img "WhatsApp Business" [ref=e1061]
+                      - generic [ref=e1064]: WhatsApp Business
+              - article [ref=e1065]:
+                - generic [ref=e1066]:
+                  - button "YU" [ref=e1067]:
+                    - generic [ref=e1071]: YU
+                  - generic [ref=e1072]:
+                    - paragraph [ref=e1078]: testes
+                    - generic [ref=e1081]: 15:10
+                  - button "WhatsApp Business WhatsApp Business" [ref=e1083]:
+                    - generic [ref=e1084]:
+                      - img "WhatsApp Business" [ref=e1085]
+                      - generic [ref=e1088]: WhatsApp Business
+              - article [ref=e1089]:
+                - generic [ref=e1090]:
+                  - button "YU" [ref=e1091]:
+                    - generic [ref=e1095]: YU
+                  - generic [ref=e1096]:
+                    - paragraph [ref=e1102]: ola
+                    - generic [ref=e1105]: 15:10
+                  - button "WhatsApp Business WhatsApp Business" [ref=e1107]:
+                    - generic [ref=e1108]:
+                      - img "WhatsApp Business" [ref=e1109]
+                      - generic [ref=e1112]: WhatsApp Business
+              - article [ref=e1113]:
+                - generic [ref=e1114]:
+                  - button "YA" [ref=e1115]:
+                    - generic [ref=e1119]: YA
+                  - generic [ref=e1120]:
+                    - button "0:06 1x" [ref=e1123]:
+                      - generic [ref=e1126]:
+                        - button [ref=e1128]:
+                          - img [ref=e1129]
+                        - generic [ref=e1135]:
+                          - generic [ref=e1137]: 0:06
+                          - button "1x" [ref=e1138]
+                    - generic [ref=e1139]:
+                      - generic [ref=e1140]:
+                        - button "Transcrever" [ref=e1142]
+                        - generic [ref=e1143]: 15:11
+                      - generic [ref=e1144]:
+                        - img [ref=e1145]
+                        - generic [ref=e1148]: Entregue
+                  - button "WhatsApp Business WhatsApp Business" [ref=e1150]:
+                    - generic [ref=e1151]:
+                      - img "WhatsApp Business" [ref=e1152]
+                      - generic [ref=e1155]: WhatsApp Business
+              - generic [ref=e1157]: 09/06/2026
+              - generic [ref=e1159]: Chat finalizado em 09/06/2026 às 08:05
+              - generic [ref=e1161]: Chat finalizado em 09/06/2026 às 08:05
+            - region "Alertas de crédito" [ref=e1162]
+          - generic [ref=e1164]:
+            - generic [ref=e1165]:
+              - heading "Mensagens rápidas e Templates" [level=1] [ref=e1166]
+              - button [ref=e1167]:
+                - img [ref=e1168]
+            - generic [ref=e1173]:
+              - combobox [ref=e1174]:
+                - generic: Template
+                - img [ref=e1175]
+              - generic [ref=e1180]:
+                - combobox [expanded] [ref=e1181]
+                - img [ref=e1182]
+            - listbox "Suggestions" [ref=e1187]:
+              - group [ref=e1189]:
+                - 'option "# aberturademilhao_foradoexpedi... - Atalho: Oi, \"Yuri\"! 👋 Vi que você acabou de se cadastrar na Poli. Nosso time já recebeu seu contato e vai falar com você no próximo horário comercial 😊 Enquanto isso, me conta rapidinho: hoje o maior foco de vocês é vender mais ou organizar o atendimento?" [selected] [ref=e1191]':
+                  - generic [ref=e1192]:
+                    - generic [ref=e1193]:
+                      - generic "# aberturademilhao_foradoexpediente" [ref=e1194]: "# aberturademilhao_foradoexpedi..."
+                      - generic [ref=e1195]: "- Atalho:"
+                    - paragraph [ref=e1196]: "Oi, \"Yuri\"! 👋 Vi que você acabou de se cadastrar na Poli. Nosso time já recebeu seu contato e vai falar com você no próximo horário comercial 😊 Enquanto isso, me conta rapidinho: hoje o maior foco de vocês é vender mais ou organizar o atendimento?"
+                - 'option "#* - Atalho: \"Yuri\" como vai? Muitos negócios perdem clientes porque não conseguem responder rápido no WhatsApp, Instagram e Facebook. E se você tivesse tudo isso centralizado em um só lugar? Posso te mostrar como resolver de forma simples." [ref=e1198]':
+                  - generic [ref=e1199]:
+                    - generic [ref=e1200]:
+                      - generic "#*" [ref=e1201]
+                      - generic [ref=e1202]: "- Atalho:"
+                    - paragraph [ref=e1203]: "\"Yuri\" como vai? Muitos negócios perdem clientes porque não conseguem responder rápido no WhatsApp, Instagram e Facebook. E se você tivesse tudo isso centralizado em um só lugar? Posso te mostrar como resolver de forma simples."
+                - 'option "#** - Atalho: Como vai? Muitos negócios perdem clientes porque não conseguem responder rápido no WhatsApp, Instagram e Facebook. 👉 E se você tivesse tudo centralizado em um só lugar? Assim, nenhum cliente ficaria sem resposta. Posso te mostrar como funciona de forma simples?" [ref=e1205]':
+                  - generic [ref=e1206]:
+                    - generic [ref=e1207]:
+                      - generic "#**" [ref=e1208]
+                      - generic [ref=e1209]: "- Atalho:"
+                    - paragraph [ref=e1210]: Como vai? Muitos negócios perdem clientes porque não conseguem responder rápido no WhatsApp, Instagram e Facebook. 👉 E se você tivesse tudo centralizado em um só lugar? Assim, nenhum cliente ficaria sem resposta. Posso te mostrar como funciona de forma simples?
+                - 'option "#*** - Atalho: \"Yuri\" Como vai? Muitos negócios perdem clientes porque não conseguem responder rápido no WhatsApp, Instagram e Facebook. E se você tivesse tudo centralizado em um só lugar? Assim, nenhum cliente ficaria sem resposta. Posso te mostrar como funciona de forma simples?" [ref=e1212]':
+                  - generic [ref=e1213]:
+                    - generic [ref=e1214]:
+                      - generic "#***" [ref=e1215]
+                      - generic [ref=e1216]: "- Atalho:"
+                    - paragraph [ref=e1217]: "\"Yuri\" Como vai? Muitos negócios perdem clientes porque não conseguem responder rápido no WhatsApp, Instagram e Facebook. E se você tivesse tudo centralizado em um só lugar? Assim, nenhum cliente ficaria sem resposta. Posso te mostrar como funciona de forma simples?"
+                - 'option "#**AAA123IGORTESTE - Atalho: Fiquei de retornar com você, tudo bem?" [ref=e1219]':
+                  - generic [ref=e1220]:
+                    - generic [ref=e1221]:
+                      - generic "#**AAA123IGORTESTE" [ref=e1222]
+                      - generic [ref=e1223]: "- Atalho:"
+                    - paragraph [ref=e1224]: Fiquei de retornar com você, tudo bem?
+                - 'option "#// - Atalho: \"Yuri\" 📲 Você está conseguindo responder todo mundo no WhatsApp, Instagram, Facebook? Se a resposta for “não”, você pode estar deixando dinheiro na mesa. Tenho uma solução simples que centraliza todas as mensagens em um só lugar e ainda te ajuda a vender mais rápido." [ref=e1226]':
+                  - generic [ref=e1227]:
+                    - generic [ref=e1228]:
+                      - generic "#//" [ref=e1229]
+                      - generic [ref=e1230]: "- Atalho:"
+                    - paragraph [ref=e1231]: "\"Yuri\" 📲 Você está conseguindo responder todo mundo no WhatsApp, Instagram, Facebook? Se a resposta for “não”, você pode estar deixando dinheiro na mesa. Tenho uma solução simples que centraliza todas as mensagens em um só lugar e ainda te ajuda a vender mais rápido."
+                - 'option "#// - Atalho: // \"Yuri\" Como essa condição que montei pra vocês ficou bem diferenciada, vou conseguir segurar ela por um período curto pra conseguirmos alinhar tudo com calma 👍 A ideia é justamente manter nossa agenda organizada por aqui e garantir que, quando iniciarmos, seja da melhor forma possível e sem correria 😄" [ref=e1233]':
+                  - generic [ref=e1234]:
+                    - generic [ref=e1235]:
+                      - generic "#//" [ref=e1236]
+                      - generic [ref=e1237]: "- Atalho: //"
+                    - paragraph [ref=e1238]: "\"Yuri\" Como essa condição que montei pra vocês ficou bem diferenciada, vou conseguir segurar ela por um período curto pra conseguirmos alinhar tudo com calma 👍 A ideia é justamente manter nossa agenda organizada por aqui e garantir que, quando iniciarmos, seja da melhor forma possível e sem correria 😄"
+                - 'option "#// - Atalho: Pablo \"Yuri\" Bom dia, Mestre! Tudo bem por aí? 😄 Fiquei pensando no teu cenário e sinceramente acho que essa nova campanha acabou mostrando exatamente o momento que vocês estão vivendo hoje. Disparar pra mais de 400 contatos sem uma API oficial acaba virando um risco muito grande pro número principal da operação, principalmente agora que vocês querem ganhar escala 🤝 A boa notícia é que conseguimos deixar essa implantação bem rápida e organizada pra vocês não perderem timing da campanha. Me dá um retorno hoje pra entendermos se conseguimos avançar e já deixar isso encaminhado 😄" [ref=e1240]':
+                  - generic [ref=e1241]:
+                    - generic [ref=e1242]:
+                      - generic "#//" [ref=e1243]
+                      - generic [ref=e1244]: "- Atalho: Pablo"
+                    - paragraph [ref=e1245]: "\"Yuri\" Bom dia, Mestre! Tudo bem por aí? 😄 Fiquei pensando no teu cenário e sinceramente acho que essa nova campanha acabou mostrando exatamente o momento que vocês estão vivendo hoje. Disparar pra mais de 400 contatos sem uma API oficial acaba virando um risco muito grande pro número principal da operação, principalmente agora que vocês querem ganhar escala 🤝 A boa notícia é que conseguimos deixar essa implantação bem rápida e organizada pra vocês não perderem timing da campanha. Me dá um retorno hoje pra entendermos se conseguimos avançar e já deixar isso encaminhado 😄"
+                - 'option "## - Atalho: _Thulhão Oi, \"Yuri\", tudo bem? Aqui é o Thulio, hoje nós temos um retorno para pegar seu feedback sobre nossa ferramenta, eu ire te ligar mais tarde para esclarecimento de dúvidas e negociar." [ref=e1247]':
+                  - generic [ref=e1248]:
+                    - generic [ref=e1249]:
+                      - generic "##" [ref=e1250]
+                      - generic [ref=e1251]: "- Atalho: _Thulhão"
+                    - paragraph [ref=e1252]: Oi, "Yuri", tudo bem? Aqui é o Thulio, hoje nós temos um retorno para pegar seu feedback sobre nossa ferramenta, eu ire te ligar mais tarde para esclarecimento de dúvidas e negociar.
+                - 'option "## Valores de planos - Atalho: #valores Olá \"Yuri\", tudo bem? Nossos planos são personalizados conforme a quantidade de usuários e as necessidades da sua empresa, utilizando a API Oficial do WhatsApp. Para garantir que você tenha a melhor solução e um custo adequado ao seu perfil, que tal conversarmos rapidinho por telefone? Assim posso explicar tudo direitinho e tirar suas dúvidas. Quando seria um bom horário para te ligar?" [ref=e1254]':
+                  - generic [ref=e1255]:
+                    - generic [ref=e1256]:
+                      - generic "## Valores de planos" [ref=e1257]
+                      - generic [ref=e1258]: "- Atalho: #valores"
+                    - paragraph [ref=e1259]: Olá "Yuri", tudo bem? Nossos planos são personalizados conforme a quantidade de usuários e as necessidades da sua empresa, utilizando a API Oficial do WhatsApp. Para garantir que você tenha a melhor solução e um custo adequado ao seu perfil, que tal conversarmos rapidinho por telefone? Assim posso explicar tudo direitinho e tirar suas dúvidas. Quando seria um bom horário para te ligar?
+                - 'option "## VOCÊ ESTÁ PERDENDO VENDAS E... - Atalho: Você está perdendo vendas e o pior: em silêncio. Seu WhatsApp trava? Demora pra responder? Depende de uma única pessoa para dar conta de tudo? ❌ Isso não é atendimento. Isso é deixar dinheiro na mesa. A Poli Digital, plataforma número 1 do Brasil com selo oficial da Meta, resolve esse problema com estrutura profissional: Atendimento via API oficial, sem risco de banimento Respostas rápidas, organizadas e simultâneas Relatórios diários, controle total da equipe Estabilidade mesmo com alto volume 🎯 Resultado: você multiplica em até 3x sua capacidade de atendimento, com mais segurança, agilidade e conversão. Hoje: 20% de desconto para novos contratos. Quer continuar perdendo cliente por causa de um WhatsApp limitado? Ou prefere virar o jogo agora? Quero mudar o jogo!" [ref=e1261]':
+                  - generic [ref=e1262]:
+                    - generic [ref=e1263]:
+                      - generic "## VOCÊ ESTÁ PERDENDO VENDAS E NEM PERCEBE!" [ref=e1264]: "## VOCÊ ESTÁ PERDENDO VENDAS E..."
+                      - generic [ref=e1265]: "- Atalho:"
+                    - paragraph [ref=e1266]: "Você está perdendo vendas e o pior: em silêncio. Seu WhatsApp trava? Demora pra responder? Depende de uma única pessoa para dar conta de tudo? ❌ Isso não é atendimento. Isso é deixar dinheiro na mesa. A Poli Digital, plataforma número 1 do Brasil com selo oficial da Meta, resolve esse problema com estrutura profissional: Atendimento via API oficial, sem risco de banimento Respostas rápidas, organizadas e simultâneas Relatórios diários, controle total da equipe Estabilidade mesmo com alto volume 🎯 Resultado: você multiplica em até 3x sua capacidade de atendimento, com mais segurança, agilidade e conversão. Hoje: 20% de desconto para novos contratos. Quer continuar perdendo cliente por causa de um WhatsApp limitado? Ou prefere virar o jogo agora? Quero mudar o jogo!"
+                - 'option "###Enceramento Amanda - Atalho: Olá \"Yuri\", Agradeço pela atenção e pelo tempo dedicado à nossa conversa. Entendo que, por agora, decidiram seguir por outro caminho, e respeito totalmente essa escolha. De qualquer forma, fico à disposição caso queira retomar o contato no futuro. Será um prazer conversar novamente quando for o momento certo. Um grande abraço e sucesso nos seus projetos!" [ref=e1268]':
+                  - generic [ref=e1269]:
+                    - generic [ref=e1270]:
+                      - generic "###Enceramento Amanda" [ref=e1271]
+                      - generic [ref=e1272]: "- Atalho:"
+                    - paragraph [ref=e1273]: Olá "Yuri", Agradeço pela atenção e pelo tempo dedicado à nossa conversa. Entendo que, por agora, decidiram seguir por outro caminho, e respeito totalmente essa escolha. De qualquer forma, fico à disposição caso queira retomar o contato no futuro. Será um prazer conversar novamente quando for o momento certo. Um grande abraço e sucesso nos seus projetos!
+                - 'option "###Retornogiu - Atalho: Olá \"Yuri\", tudo bem? Aqui é a Giulianna, fui responsável pela apresentação da Poli. Tenho tentado entrar em contato com você nos últimos dias, mas ainda não obtive retorno. Se por acaso a decisão de não seguir com a plataforma de gestão dos seus atendimentos tiver a ver com questões de valores ou funcionalidades, Se preferir, basta me avisar, assim posso evitar de te incomodar com novas mensagens. Aguardo seu retorno e fico à disposição para o que precisar" [ref=e1275]':
+                  - generic [ref=e1276]:
+                    - generic [ref=e1277]:
+                      - generic "###Retornogiu" [ref=e1278]
+                      - generic [ref=e1279]: "- Atalho:"
+                    - paragraph [ref=e1280]: Olá "Yuri", tudo bem? Aqui é a Giulianna, fui responsável pela apresentação da Poli. Tenho tentado entrar em contato com você nos últimos dias, mas ainda não obtive retorno. Se por acaso a decisão de não seguir com a plataforma de gestão dos seus atendimentos tiver a ver com questões de valores ou funcionalidades, Se preferir, basta me avisar, assim posso evitar de te incomodar com novas mensagens. Aguardo seu retorno e fico à disposição para o que precisar
+                - 'option "##30offpedro - Atalho: #30offpedro Olá \"Yuri\", tudo bem? Com a aproximação do fechamento do mês, consegui liberar uma condição especial pra você: *30% de desconto no plano + isenção da taxa de implantação.* Achei válido te avisar porque isso resolve exatamente aqueles pontos que vimos na reunião principalmente a organização e agilidade no atendimento. Faz sentido aproveitarmos essa condição agora e já avançarmos com a implementação?" [ref=e1282]':
+                  - generic [ref=e1283]:
+                    - generic [ref=e1284]:
+                      - generic "##30offpedro" [ref=e1285]
+                      - generic [ref=e1286]: "- Atalho: #30offpedro"
+                    - paragraph [ref=e1287]: "Olá \"Yuri\", tudo bem? Com a aproximação do fechamento do mês, consegui liberar uma condição especial pra você: *30% de desconto no plano + isenção da taxa de implantação.* Achei válido te avisar porque isso resolve exatamente aqueles pontos que vimos na reunião principalmente a organização e agilidade no atendimento. Faz sentido aproveitarmos essa condição agora e já avançarmos com a implementação?"
+                - 'option "##50%desconto - Atalho: Olá \"Yuri\", tudo bem? Como forma de ajudar quem está perto de bater a meta em e também para te ajudar pois a gente vinha de uma negociação em andamento, minha gestão estendeu apenas para até *HOJE* a campanha de *50% de desconto na 1° mensalidade e a Taxa de instalação grátis*! Vamos dar continuidade hoje na nossa parceria?" [ref=e1289]':
+                  - generic [ref=e1290]:
+                    - generic [ref=e1291]:
+                      - generic "##50%desconto" [ref=e1292]
+                      - generic [ref=e1293]: "- Atalho:"
+                    - paragraph [ref=e1294]: Olá "Yuri", tudo bem? Como forma de ajudar quem está perto de bater a meta em e também para te ajudar pois a gente vinha de uma negociação em andamento, minha gestão estendeu apenas para até *HOJE* a campanha de *50% de desconto na 1° mensalidade e a Taxa de instalação grátis*! Vamos dar continuidade hoje na nossa parceria?
+                - 'option "##aberturawidgetepopup - Atalho: Você está a poucos passos de falar com um dos nossos analistas comerciais! 🤩 *Preciso apenas do seu ok* para confirmar e te direcionar para um deles" [ref=e1296]':
+                  - generic [ref=e1297]:
+                    - generic [ref=e1298]:
+                      - generic "##aberturawidgetepopup" [ref=e1299]
+                      - generic [ref=e1300]: "- Atalho:"
+                    - paragraph [ref=e1301]: Você está a poucos passos de falar com um dos nossos analistas comerciais! 🤩 *Preciso apenas do seu ok* para confirmar e te direcionar para um deles
+                - 'option "##Abordagem - Atalho: Yuri Alcantara Gestor Prazer, eu me chamo Yuri Alcantara Gestor, sou analista comercial aqui na Poli e vou cuidar do seu atendimento a partir de agora! Para a gente dar inicio, eu gostaria de entender melhor sobre quais as dificuldades que você está enfrentando na sua operação e o que está levando a buscar pela nossa solução de atendimento. Você prefere falar por mensagens, áudio ou ligação?" [ref=e1303]':
+                  - generic [ref=e1304]:
+                    - generic [ref=e1305]:
+                      - generic "##Abordagem" [ref=e1306]
+                      - generic [ref=e1307]: "- Atalho:"
+                    - paragraph [ref=e1308]: Yuri Alcantara Gestor Prazer, eu me chamo Yuri Alcantara Gestor, sou analista comercial aqui na Poli e vou cuidar do seu atendimento a partir de agora! Para a gente dar inicio, eu gostaria de entender melhor sobre quais as dificuldades que você está enfrentando na sua operação e o que está levando a buscar pela nossa solução de atendimento. Você prefere falar por mensagens, áudio ou ligação?
+                - 'option "##abordagem Amanda - Atalho: Olá \"Yuri\", tudo bem? Sou a Amanda consultor comercial da Poli Digital! Eu vi que você esteve em contato com um dos nossos consultores há algum tempo, mas o processo não foi continuado. Queria saber se ainda faz sentido retomarmos as conversas e, se for o caso, se a parceria ainda está nos seus planos. Caso tenha decidido seguir por outro caminho, fique à vontade para me contar! Fico à disposição para qualquer dúvida. Aguardo sua resposta." [ref=e1310]':
+                  - generic [ref=e1311]:
+                    - generic [ref=e1312]:
+                      - generic "##abordagem Amanda" [ref=e1313]
+                      - generic [ref=e1314]: "- Atalho:"
+                    - paragraph [ref=e1315]: Olá "Yuri", tudo bem? Sou a Amanda consultor comercial da Poli Digital! Eu vi que você esteve em contato com um dos nossos consultores há algum tempo, mas o processo não foi continuado. Queria saber se ainda faz sentido retomarmos as conversas e, se for o caso, se a parceria ainda está nos seus planos. Caso tenha decidido seguir por outro caminho, fique à vontade para me contar! Fico à disposição para qualquer dúvida. Aguardo sua resposta.
+                - 'option "##abordagem_2025 - Atalho: Olá \"Yuri\", bom dia! Sou a Yuri Alcantara Gestor, nova consultora da Poli Digital. A partir de agora, estarei responsável pelo seu atendimento, pois o consultor Kennedy não faz mais parte da nossa equipe. Fico à disposição para qualquer dúvida ou necessidade. Estou aqui para ajudar no que for preciso! Fique à vontade para me chamar a qualquer momento!" [ref=e1317]':
+                  - generic [ref=e1318]:
+                    - generic [ref=e1319]:
+                      - generic "##abordagem_2025" [ref=e1320]
+                      - generic [ref=e1321]: "- Atalho:"
+                    - paragraph [ref=e1322]: Olá "Yuri", bom dia! Sou a Yuri Alcantara Gestor, nova consultora da Poli Digital. A partir de agora, estarei responsável pelo seu atendimento, pois o consultor Kennedy não faz mais parte da nossa equipe. Fico à disposição para qualquer dúvida ou necessidade. Estou aqui para ajudar no que for preciso! Fique à vontade para me chamar a qualquer momento!
+                - 'option "##Abordagem_Institucional - Atalho: Olá, \"Yuri\", tudo bem? Aqui quem fala é Yuri Alcantara Gestor, sou Gerente de Contas da Poli. O objetivo do meu primeiro contato é entender um pouquinho da sua operação, seus desafios e encontrar uma forma de ajudar o seu negócio a faturar mais com a nossa plataforma. Como funciona hoje o seu atendimento?" [ref=e1324]':
+                  - generic [ref=e1325]:
+                    - generic [ref=e1326]:
+                      - generic "##Abordagem_Institucional" [ref=e1327]
+                      - generic [ref=e1328]: "- Atalho:"
+                    - paragraph [ref=e1329]: Olá, "Yuri", tudo bem? Aqui quem fala é Yuri Alcantara Gestor, sou Gerente de Contas da Poli. O objetivo do meu primeiro contato é entender um pouquinho da sua operação, seus desafios e encontrar uma forma de ajudar o seu negócio a faturar mais com a nossa plataforma. Como funciona hoje o seu atendimento?
+                - 'option "##AbordagemErika - Atalho: #AbordagemErika Olá \"Yuri\"!! Aqui é a Yuri Alcantara Gestor, estou enviando essa mensagem para facilitar nosso contato via Whatsapp." [ref=e1331]':
+                  - generic [ref=e1332]:
+                    - generic [ref=e1333]:
+                      - generic "##AbordagemErika" [ref=e1334]
+                      - generic [ref=e1335]: "- Atalho: #AbordagemErika"
+                    - paragraph [ref=e1336]: Olá "Yuri"!! Aqui é a Yuri Alcantara Gestor, estou enviando essa mensagem para facilitar nosso contato via Whatsapp.
+                - 'option "##abril_ultimachance - Atalho: Bom dia \"Yuri\", tudo bem? Como forma de ajudar quem ficou bem perto de bater a meta em Abril e também para te ajudar pois a gente vinha de uma negociação em andamento, minha gestão *estendeu* apenas para até *hoje* a campanha de *50% de* *desconto na 1° mensalidade e a taxa de instalação grátis*! Vamos dar continuidade hoje na nossa parceria?" [ref=e1338]':
+                  - generic [ref=e1339]:
+                    - generic [ref=e1340]:
+                      - generic "##abril_ultimachance" [ref=e1341]
+                      - generic [ref=e1342]: "- Atalho:"
+                    - paragraph [ref=e1343]: Bom dia "Yuri", tudo bem? Como forma de ajudar quem ficou bem perto de bater a meta em Abril e também para te ajudar pois a gente vinha de uma negociação em andamento, minha gestão *estendeu* apenas para até *hoje* a campanha de *50% de* *desconto na 1° mensalidade e a taxa de instalação grátis*! Vamos dar continuidade hoje na nossa parceria?
+                - 'option "##abril50 - Atalho: Olá \"Yuri\", tudo bem? *Campanha de Aniversário Poli - Imperdível!* Temos uma oferta exclusiva para você aproveitar e impulsionar o seu negócio! Confira: ► Taxa de implantação GRÁTIS; ► 50% de desconto na primeira mensalidade; ► Acompanhamento de especialista para treinamento e configurações do sistema. Não perca tempo! Garanta já o seu desconto e dê o próximo passo para o sucesso! Valido até 25/04/2025" [ref=e1345]':
+                  - generic [ref=e1346]:
+                    - generic [ref=e1347]:
+                      - generic "##abril50" [ref=e1348]
+                      - generic [ref=e1349]: "- Atalho:"
+                    - paragraph [ref=e1350]: "Olá \"Yuri\", tudo bem? *Campanha de Aniversário Poli - Imperdível!* Temos uma oferta exclusiva para você aproveitar e impulsionar o seu negócio! Confira: ► Taxa de implantação GRÁTIS; ► 50% de desconto na primeira mensalidade; ► Acompanhamento de especialista para treinamento e configurações do sistema. Não perca tempo! Garanta já o seu desconto e dê o próximo passo para o sucesso! Valido até 25/04/2025"
+                - 'option "##abrirconversa - Atalho: #abrirconversa Olá \"Yuri\" tudo bem ?" [ref=e1352]':
+                  - generic [ref=e1353]:
+                    - generic [ref=e1354]:
+                      - generic "##abrirconversa" [ref=e1355]
+                      - generic [ref=e1356]: "- Atalho: #abrirconversa"
+                    - paragraph [ref=e1357]: Olá "Yuri" tudo bem ?
+                - 'option "##academia - Atalho: #academia Olá \"Yuri\",, percebi que você demonstrou interesse na nossa plataforma, mas ainda não avançou. Hoje, *muitas academias como Velocity, Panobianco e Corpo e Saúde* já utilizam a Poli para evitar problemas recorrentes de banimento, que impactam diretamente o atendimento e o faturamento. A proposta é simples: dar previsibilidade e segurança para sua operação, sem interrupções. *Para facilitar sua decisão, estou liberando uma condição especial válida apenas hoje: isenção total da taxa de implantação. * Se faz sentido pra você evoluir nesse ponto agora, me chama que alinhamos e já deixamos tudo encaminhado.🤩" [ref=e1359]':
+                  - generic [ref=e1360]:
+                    - generic [ref=e1361]:
+                      - generic "##academia" [ref=e1362]
+                      - generic [ref=e1363]: "- Atalho: #academia"
+                    - paragraph [ref=e1364]: "Olá \"Yuri\",, percebi que você demonstrou interesse na nossa plataforma, mas ainda não avançou. Hoje, *muitas academias como Velocity, Panobianco e Corpo e Saúde* já utilizam a Poli para evitar problemas recorrentes de banimento, que impactam diretamente o atendimento e o faturamento. A proposta é simples: dar previsibilidade e segurança para sua operação, sem interrupções. *Para facilitar sua decisão, estou liberando uma condição especial válida apenas hoje: isenção total da taxa de implantação. * Se faz sentido pra você evoluir nesse ponto agora, me chama que alinhamos e já deixamos tudo encaminhado.🤩"
+                - 'option "##academia2 - Atalho: #academia2 Olá \"Yuri\" tudo bem? Percebi que você demonstrou interesse na nossa plataforma, mas ainda não avançou. Hoje, *muitas academias como Velocity, Panobianco e Corpo e Saúde* já utilizam a Poli para evitar problemas recorrentes de banimento, que impactam diretamente o atendimento e o faturamento. A proposta é simples: dar previsibilidade e segurança para sua operação, sem interrupções. *Para facilitar sua decisão, estou liberando uma condição especial válida apenas hoje: isenção total da taxa de implantação.* Se faz sentido pra você evoluir nesse ponto agora, me chama que alinhamos e já deixamos tudo encaminhado." [ref=e1366]':
+                  - generic [ref=e1367]:
+                    - generic [ref=e1368]:
+                      - generic "##academia2" [ref=e1369]
+                      - generic [ref=e1370]: "- Atalho: #academia2"
+                    - paragraph [ref=e1371]: "Olá \"Yuri\" tudo bem? Percebi que você demonstrou interesse na nossa plataforma, mas ainda não avançou. Hoje, *muitas academias como Velocity, Panobianco e Corpo e Saúde* já utilizam a Poli para evitar problemas recorrentes de banimento, que impactam diretamente o atendimento e o faturamento. A proposta é simples: dar previsibilidade e segurança para sua operação, sem interrupções. *Para facilitar sua decisão, estou liberando uma condição especial válida apenas hoje: isenção total da taxa de implantação.* Se faz sentido pra você evoluir nesse ponto agora, me chama que alinhamos e já deixamos tudo encaminhado."
+                - 'option "##AÇÃO VOIP - Atalho: #AÇÃO VOIP 🚀 Sua equipe perde tempo copiando e colando números entre sistemas? Cada segundo conta! A alternância entre telas atrasa o atendimento e reduz a produtividade. Com Ligações Integradas, suas chamadas estão a um clique, acelerando o suporte e otimizando o tempo da equipe. Ative agora por R$ 190/mês para 1.000 minutos e torne seu atendimento mais eficiente!" [ref=e1373]':
+                  - generic [ref=e1374]:
+                    - generic [ref=e1375]:
+                      - generic "##AÇÃO VOIP" [ref=e1376]
+                      - generic [ref=e1377]: "- Atalho: #AÇÃO VOIP"
+                    - paragraph [ref=e1378]: 🚀 Sua equipe perde tempo copiando e colando números entre sistemas? Cada segundo conta! A alternância entre telas atrasa o atendimento e reduz a produtividade. Com Ligações Integradas, suas chamadas estão a um clique, acelerando o suporte e otimizando o tempo da equipe. Ative agora por R$ 190/mês para 1.000 minutos e torne seu atendimento mais eficiente!
+                - 'option "##açãocredito - Atalho: Olá, \"Yuri\", tudo bem? Notei que o uso de créditos este mês ultrapassou a quantidade contratada na recorrência. A partir desse ponto, os créditos estão sendo contabilizados como avulsos, com o valor de R$ 0,89 por unidade, o que acaba saindo mais caro para vocês. Pensando nisso, temos a possibilidade de ajustar esse volume na recorrência, com um valor mais atrativo por crédito, garantindo mais economia e previsibilidade nos custos. Se fizer sentido, posso te apresentar essa opção para alinharmos da melhor forma. Fico à disposição para conversarmos!" [ref=e1380]':
+                  - generic [ref=e1381]:
+                    - generic [ref=e1382]:
+                      - generic "##açãocredito" [ref=e1383]
+                      - generic [ref=e1384]: "- Atalho:"
+                    - paragraph [ref=e1385]: Olá, "Yuri", tudo bem? Notei que o uso de créditos este mês ultrapassou a quantidade contratada na recorrência. A partir desse ponto, os créditos estão sendo contabilizados como avulsos, com o valor de R$ 0,89 por unidade, o que acaba saindo mais caro para vocês. Pensando nisso, temos a possibilidade de ajustar esse volume na recorrência, com um valor mais atrativo por crédito, garantindo mais economia e previsibilidade nos custos. Se fizer sentido, posso te apresentar essa opção para alinharmos da melhor forma. Fico à disposição para conversarmos!
+                - 'option "##açãocreditonovembro - Atalho: Olá, \"Yuri\", tudo bem? Aqui é a Alessandra, do time de expansão da Poli. Tudo bem? Dei uma olhada no uso da conta de vocês e percebi que o consumo de créditos deste mês passou do que está contratado na recorrência. A partir desse ponto, cada crédito extra entra como avulso a R$ 0,89, o que acaba deixando o valor bem menos vantajoso para vocês. Por isso resolvi te chamar pessoalmente: tem uma oportunidade aqui que pode te gerar uma economia MUITO maior do que imagina. Se ajustarmos esse volume direto na recorrência, com um valor mais atrativo por crédito, garantimos mais economia e previsibilidade nos custos. Se fizer sentido, posso te apresentar essa opção para alinharmos da melhor forma. Fico à disposição para conversarmos!" [ref=e1387]':
+                  - generic [ref=e1388]:
+                    - generic [ref=e1389]:
+                      - generic "##açãocreditonovembro" [ref=e1390]
+                      - generic [ref=e1391]: "- Atalho:"
+                    - paragraph [ref=e1392]: "Olá, \"Yuri\", tudo bem? Aqui é a Alessandra, do time de expansão da Poli. Tudo bem? Dei uma olhada no uso da conta de vocês e percebi que o consumo de créditos deste mês passou do que está contratado na recorrência. A partir desse ponto, cada crédito extra entra como avulso a R$ 0,89, o que acaba deixando o valor bem menos vantajoso para vocês. Por isso resolvi te chamar pessoalmente: tem uma oportunidade aqui que pode te gerar uma economia MUITO maior do que imagina. Se ajustarmos esse volume direto na recorrência, com um valor mais atrativo por crédito, garantimos mais economia e previsibilidade nos custos. Se fizer sentido, posso te apresentar essa opção para alinharmos da melhor forma. Fico à disposição para conversarmos!"
+                - 'option "##açãodecaptaçãodecliente2025 - Atalho: Olá, \"Yuri\"! Tudo bem? Aqui Yuri Alcantara Gestor da empresa Poli Digital! Estamos com uma oferta interessante, tem interesse em saber mais?" [ref=e1394]':
+                  - generic [ref=e1395]:
+                    - generic [ref=e1396]:
+                      - generic "##açãodecaptaçãodecliente2025" [ref=e1397]
+                      - generic [ref=e1398]: "- Atalho:"
+                    - paragraph [ref=e1399]: Olá, "Yuri"! Tudo bem? Aqui Yuri Alcantara Gestor da empresa Poli Digital! Estamos com uma oferta interessante, tem interesse em saber mais?
+                - button "Carregar mais" [ref=e1401]
+          - generic [ref=e1404]:
+            - generic [ref=e1405]:
+              - button "WhatsApp Business WhatsApp Business" [ref=e1407]:
+                - generic [ref=e1409]:
+                  - img "WhatsApp Business" [ref=e1410]
+                  - generic [ref=e1413]: WhatsApp Business
+              - button "Abrir seletor de templates" [ref=e1414]: A conversa foi finalizada após 24h, conforme as políticas do WhatsApp. Envie um template e aguarde a resposta para retomar o contato.
+            - generic [ref=e1415]:
+              - button "Mais opções" [ref=e1416]:
+                - img [ref=e1417]
+              - button "schedule-message" [ref=e1422]:
+                - img [ref=e1423]
+        - generic [ref=e1426]:
+          - generic [ref=e1429]:
+            - generic [ref=e1433] [cursor=pointer]: YU
+            - button [ref=e1434] [cursor=pointer]:
+              - img [ref=e1435]
+          - list [ref=e1441]:
+            - generic [ref=e1442]:
+              - generic [ref=e1443]:
+                - img [ref=e1445]
+                - generic [ref=e1448]: Detalhes do contato
+              - generic [ref=e1449]:
+                - generic [ref=e1452]:
+                  - generic "Nome" [ref=e1454]
+                  - generic [ref=e1455]: "\"Yuri\""
+                - generic [ref=e1459]:
+                  - generic "Telefone" [ref=e1461]
+                  - generic [ref=e1462]: +55 (62) 9921-0609
+                - generic "E-mail" [ref=e1467]
+                - generic "CPF" [ref=e1472]
+            - generic [ref=e1473]:
+              - generic [ref=e1474]:
+                - img [ref=e1476]
+                - generic [ref=e1478]: Categoria
+              - generic [ref=e1479]:
+                - generic [ref=e1482]:
+                  - generic "Origem" [ref=e1484]
+                  - generic [ref=e1485]: orgânico
+                - generic "Fonte" [ref=e1490]
+            - generic [ref=e1491]:
+              - generic [ref=e1492]:
+                - generic [ref=e1493]:
+                  - img [ref=e1494]
+                  - generic [ref=e1496]: Etiquetas
+                - button "Adicionar etiqueta" [ref=e1497] [cursor=pointer]:
+                  - img [ref=e1498]
+                  - text: Adicionar etiqueta
+              - generic [ref=e1502]:
+                - generic [ref=e1504]:
+                  - generic [ref=e1505]: 14\01
+                  - button "remove tag" [ref=e1506] [cursor=pointer]:
+                    - img [ref=e1507]
+                - generic [ref=e1511]:
+                  - generic [ref=e1512]: disparo_11000_2024-03-27 09:49:56.796706-03:00
+                  - button "remove tag" [ref=e1513] [cursor=pointer]:
+                    - img [ref=e1514]
+                - generic [ref=e1518]:
+                  - generic [ref=e1519]: disparo_11000_2024-04-24 10:03:12.271478-03:00
+                  - button "remove tag" [ref=e1520] [cursor=pointer]:
+                    - img [ref=e1521]
+                - generic [ref=e1525]:
+                  - generic [ref=e1526]: disparo_2024-10-23 09:52:26_11000
+                  - button "remove tag" [ref=e1527] [cursor=pointer]:
+                    - img [ref=e1528]
+                - generic [ref=e1532]:
+                  - generic [ref=e1533]: disparo_2025-05-06 11:26:00_57780
+                  - button "remove tag" [ref=e1534] [cursor=pointer]:
+                    - img [ref=e1535]
+                - generic [ref=e1539]:
+                  - generic [ref=e1540]: disparo_2025-05-06 11:30:59_57780
+                  - button "remove tag" [ref=e1541] [cursor=pointer]:
+                    - img [ref=e1542]
+                - generic [ref=e1546]:
+                  - generic [ref=e1547]: disparo_2025-05-06 11:35:17_57780
+                  - button "remove tag" [ref=e1548] [cursor=pointer]:
+                    - img [ref=e1549]
+                - generic [ref=e1553]:
+                  - generic [ref=e1554]: disparo_2025-05-06 11:36:13_57780
+                  - button "remove tag" [ref=e1555] [cursor=pointer]:
+                    - img [ref=e1556]
+                - generic [ref=e1560]:
+                  - generic [ref=e1561]: disparo_2025-05-07 11:30:55_57780
+                  - button "remove tag" [ref=e1562] [cursor=pointer]:
+                    - img [ref=e1563]
+                - generic [ref=e1567]:
+                  - generic [ref=e1568]: disparo_2025-06-12 15:05:00_11000
+                  - button "remove tag" [ref=e1569] [cursor=pointer]:
+                    - img [ref=e1570]
+                - generic [ref=e1574]:
+                  - generic [ref=e1575]: disparo_2025-08-20 15:20:24_11000
+                  - button "remove tag" [ref=e1576] [cursor=pointer]:
+                    - img [ref=e1577]
+                - generic [ref=e1581]:
+                  - generic [ref=e1582]: disparo_2025-08-20 15:24:20_11000
+                  - button "remove tag" [ref=e1583] [cursor=pointer]:
+                    - img [ref=e1584]
+                - generic [ref=e1588]:
+                  - generic [ref=e1589]: disparo_2025-08-20 15:37:06_11000
+                  - button "remove tag" [ref=e1590] [cursor=pointer]:
+                    - img [ref=e1591]
+                - generic [ref=e1595]:
+                  - generic [ref=e1596]: disparo_2025-08-20 15:43:43_11000
+                  - button "remove tag" [ref=e1597] [cursor=pointer]:
+                    - img [ref=e1598]
+                - generic [ref=e1602]:
+                  - generic [ref=e1603]: disparo_2025-09-22 15:40:12_11000
+                  - button "remove tag" [ref=e1604] [cursor=pointer]:
+                    - img [ref=e1605]
+                - generic [ref=e1609]:
+                  - generic [ref=e1610]: disparo_2025-09-22 15:44:15_11000
+                  - button "remove tag" [ref=e1611] [cursor=pointer]:
+                    - img [ref=e1612]
+                - generic [ref=e1616]:
+                  - generic [ref=e1617]: disparo_2025-09-22 15:45:16_11000
+                  - button "remove tag" [ref=e1618] [cursor=pointer]:
+                    - img [ref=e1619]
+                - generic [ref=e1623]:
+                  - generic [ref=e1624]: disparo_2025-09-22 16:10:01_11000
+                  - button "remove tag" [ref=e1625] [cursor=pointer]:
+                    - img [ref=e1626]
+                - generic [ref=e1630]:
+                  - generic [ref=e1631]: disparo_2025-09-22 16:12:28_11000
+                  - button "remove tag" [ref=e1632] [cursor=pointer]:
+                    - img [ref=e1633]
+                - generic [ref=e1637]:
+                  - generic [ref=e1638]: disparo_2025-09-24 18:36:34_11000
+                  - button "remove tag" [ref=e1639] [cursor=pointer]:
+                    - img [ref=e1640]
+                - generic [ref=e1644]:
+                  - generic [ref=e1645]: disparo_2025-09-25 14:32:33_57780
+                  - button "remove tag" [ref=e1646] [cursor=pointer]:
+                    - img [ref=e1647]
+                - generic [ref=e1651]:
+                  - generic [ref=e1652]: disparo_2025-09-25 14:35:20_57780
+                  - button "remove tag" [ref=e1653] [cursor=pointer]:
+                    - img [ref=e1654]
+                - generic [ref=e1658]:
+                  - generic [ref=e1659]: CTWA
+                  - button "remove tag" [ref=e1660] [cursor=pointer]:
+                    - img [ref=e1661]
+            - generic [ref=e1664]:
+              - generic [ref=e1665]:
+                - img [ref=e1666]
+                - text: Canais
+              - generic [ref=e1671]:
+                - generic [ref=e1673] [cursor=pointer]:
+                  - img "WhatsApp Business" [ref=e1674]
+                  - generic [ref=e1677]: WhatsApp Business
+                - generic "556299210609@c.us" [ref=e1678]
+              - generic [ref=e1681]:
+                - generic [ref=e1683] [cursor=pointer]:
+                  - img "WhatsApp" [ref=e1684]
+                  - generic [ref=e1686]: WhatsApp
+                - generic "30301044633685@lid" [ref=e1687]
+            - generic [ref=e1688]:
+              - generic [ref=e1689]:
+                - img [ref=e1690]
+                - text: Endereço
+              - generic [ref=e1694]: Endereço não registrado
+        - complementary [ref=e1695]:
+          - button [ref=e1697] [cursor=pointer]:
+            - img [ref=e1698]
+          - button [ref=e1702] [cursor=pointer]:
+            - img [ref=e1703]
+          - button [ref=e1707] [cursor=pointer]:
+            - img [ref=e1708]
+          - button [ref=e1711] [cursor=pointer]:
+            - img [ref=e1712]
+          - button [ref=e1716] [cursor=pointer]:
+            - img [ref=e1717]
+          - button [ref=e1722] [cursor=pointer]:
+            - img [ref=e1723]
+  - region "Notifications (F8)":
+    - list

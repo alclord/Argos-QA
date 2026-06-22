@@ -1,0 +1,30 @@
+[    1990ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[    2142ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[    2338ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/users/settings/language:0
+[    2340ms] [ERROR] [UserPreferencesService] Failed to get language: Error: Dados de autenticação não encontrados. Faça login novamente.
+    at https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:2278575
+    at f (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1825709)
+    at Generator.<anonymous> (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1827061)
+    at Generator.next (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1826138)
+    at r (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1819801)
+    at s (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1820012)
+    at https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1820071
+    at new Promise (<anonymous>)
+    at https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1819952
+    at https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:2281625 @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[    2341ms] [WARNING] Não foi possível carregar idioma salvo, usando padrão: Error: Dados de autenticação não encontrados. Faça login novamente.
+    at https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:2278575
+    at f (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1825709)
+    at Generator.<anonymous> (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1827061)
+    at Generator.next (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1826138)
+    at r (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1819801)
+    at s (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1820012)
+    at https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1820071
+    at new Promise (<anonymous>)
+    at https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1819952
+    at https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:2281625 @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[   23645ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[   24059ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.qa.poli.digital/auth/foundation/allowed:0
+[   24061ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[   25959ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/user/presence:0
+[  492715ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/auth/get-me:0

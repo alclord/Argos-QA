@@ -1,0 +1,18 @@
+card_id,tipo,modulo,resumo,data_abertura,peso,prioridade
+SM-8315,Bug,Chat / Mensagens,Mensagens de clientes não aparecem até atendente enviar algo,2026-06-06,3,Alta
+SM-8313,Bug,Chat / Mensagens,Mensagens não estão sendo recebidas nem enviadas,2026-06-06,3,Alta
+SM-8305,Bug,Chat / Mensagens,Bug ao finalizar atendimento,2026-06-06,3,Alta
+SM-8304,Bug,Chat / Mensagens,Erro ao tentar acessar chats da conta,2026-06-06,3,Alta
+SM-8291,Bug,Chat / Mensagens,Conversa muda de cliente automaticamente durante digitação,2026-06-05,3,Alta
+SM-8283,Bug,Chat / Mensagens,Sistema de atendimento não funciona via iPhone,2026-06-05,3,Média
+SM-8277,Bug,Chat / Mensagens,Plataforma travou — usuários não conseguiam acessar,2026-06-05,3,Alta
+SM-8271,Bug,Chat / Mensagens,Cliente não consegue responder mensagens para contato específico,2026-06-05,3,Média
+SM-8230,Bug,Chat / Mensagens,Chat travado — não mostra mensagens antigas,2026-06-05,3,Média
+SM-8292,Bug,Distribuição / Filas,Mensagens de clientes ficam presas após disparo,2026-06-05,3,Alta
+SM-8288,Bug,Distribuição / Filas,Chat ficou preso na fila e não distribuído,2026-06-05,3,Alta
+SM-8243,Bug,Distribuição / Filas,Chat distribuído para atendente fora da operação,2026-06-05,3,Alta
+SM-8228,Bug,Canais / WhatsApp,Conta restrita pela Meta — erro ao enviar mensagens,2026-06-05,3,Alta
+SM-8219,Bug,Canais / WhatsApp,Chat não libera mesmo com resposta do cliente dentro de 24h,2026-06-04,3,Alta
+SM-8285,Bug,Contatos / Busca,Contatos só são localizados na aba antiga de Contatos,2026-06-05,3,Média
+SM-8218,Bug,Upload / Mídia,Áudios e mensagens não carregam na plataforma,2026-06-04,3,Alta
+SM-8267,Bug,Integrações Externas,Boleto gerado está inválido para o cliente,2026-06-03,3,Média

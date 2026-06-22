@@ -1,0 +1,30 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - img [ref=e7]
+      - navigation [ref=e8]:
+        - list
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - button "Consumo de créditos" [ref=e11] [cursor=pointer]:
+              - img [ref=e12]
+          - listitem [ref=e15]:
+            - button "YA" [ref=e16] [cursor=pointer]:
+              - generic [ref=e21]: YA
+          - listitem [ref=e23]:
+            - button [ref=e24] [cursor=pointer]:
+              - img [ref=e25]
+          - listitem [ref=e27]:
+            - generic [ref=e29]: 3.5.334
+    - main [ref=e30]:
+      - navigation "breadcrumb" [ref=e33]:
+        - link "Página inicial" [ref=e35] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e36]:
+          - img [ref=e37]
+          - link "Templates" [ref=e39] [cursor=pointer]:
+            - /url: /templates
+        - img [ref=e40]
+        - generic [ref=e42]: Editar template
+  - region "Notifications (F8)":
+    - list

@@ -1,0 +1,456 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=80fa2b616fd7d809a0f80990ddf3f46676174739&toPath=https://app.poli.digital/home
+        - img [ref=e11]
+      - generic [ref=e12]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link [ref=e16] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e18]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=80fa2b616fd7d809a0f80990ddf3f46676174739&toPath=https://app.poli.digital/settings/50621/chatbot
+              - img [ref=e30]
+          - listitem [ref=e33]:
+            - link [ref=e34] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e36]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=80fa2b616fd7d809a0f80990ddf3f46676174739&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e41]
+          - listitem [ref=e44]:
+            - link [ref=e45] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=80fa2b616fd7d809a0f80990ddf3f46676174739&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e47]
+          - listitem [ref=e50]:
+            - link [ref=e51] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=80fa2b616fd7d809a0f80990ddf3f46676174739&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e53]
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - link [ref=e61] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e63]
+      - generic [ref=e66]:
+        - button "Consumo de créditos" [ref=e67] [cursor=pointer]:
+          - img [ref=e69]
+        - button "YA" [ref=e73] [cursor=pointer]:
+          - generic [ref=e79]: YA
+        - generic [ref=e82]: 3.5.359-DEV4-4395
+    - main [ref=e83]:
+      - main [ref=e84]:
+        - generic [ref=e86]:
+          - navigation "breadcrumb" [ref=e88]:
+            - link "Página inicial" [ref=e90] [cursor=pointer]:
+              - /url: /
+            - generic [ref=e91]:
+              - img [ref=e92]
+              - link "Configurações" [ref=e94] [cursor=pointer]:
+                - /url: /settings
+            - img [ref=e95]
+            - generic [ref=e97]: Templates
+          - generic [ref=e99]:
+            - generic [ref=e100]:
+              - generic [ref=e101]:
+                - generic [ref=e102]:
+                  - textbox "Buscar templates" [ref=e103]
+                  - button "Pesquisar" [ref=e104] [cursor=pointer]:
+                    - img [ref=e105]
+                - combobox "Status" [ref=e109] [cursor=pointer]:
+                  - generic: Todos os Status
+                  - img [ref=e110]
+                - combobox "Categoria" [ref=e113] [cursor=pointer]:
+                  - generic: Todas as Categorias
+                  - img [ref=e114]
+                - combobox "Tipo" [ref=e117] [cursor=pointer]:
+                  - generic: Todos os Tipos
+                  - img [ref=e118]
+                - combobox "Canal" [disabled] [ref=e121]:
+                  - generic: Todos os Canais
+                  - img [ref=e122]
+              - link "Criar template" [ref=e124] [cursor=pointer]:
+                - /url: /templates/new
+                - img [ref=e125]
+                - text: Criar template
+            - generic [ref=e126]:
+              - table [ref=e130]:
+                - rowgroup [ref=e131]:
+                  - row "Selecionar todos da página Nome Conteúdo Categoria Idioma Canal Status Criado em Ações" [ref=e132]:
+                    - columnheader "Selecionar todos da página" [ref=e133]:
+                      - checkbox "Selecionar todos da página" [ref=e135] [cursor=pointer]
+                    - columnheader "Nome" [ref=e136]:
+                      - button "Nome" [ref=e137] [cursor=pointer]:
+                        - text: Nome
+                        - img [ref=e138]
+                    - columnheader "Conteúdo" [ref=e141]
+                    - columnheader "Categoria" [ref=e142]
+                    - columnheader "Idioma" [ref=e143]
+                    - columnheader "Canal" [ref=e144]
+                    - columnheader "Status" [ref=e145]
+                    - columnheader "Criado em" [ref=e146]:
+                      - button "Criado em" [ref=e147] [cursor=pointer]:
+                        - text: Criado em
+                        - img [ref=e148]
+                    - columnheader "Ações" [ref=e151]
+                - rowgroup [ref=e152]:
+                  - row "Selecionar item a1f97713-b6a1-4aa4-893b-29f092c52d0b testegabi [contact_name][custom][contact_firts_name] [protocol_number] teste variaveis — pt_BR — Em análise 8 de jun. de 2026 Editar Excluir" [ref=e153]:
+                    - cell "Selecionar item a1f97713-b6a1-4aa4-893b-29f092c52d0b" [ref=e154]:
+                      - checkbox "Selecionar item a1f97713-b6a1-4aa4-893b-29f092c52d0b" [ref=e516] [cursor=pointer]
+                    - cell "testegabi" [ref=e156]:
+                      - link "testegabi" [ref=e157] [cursor=pointer]:
+                        - /url: /templates/a1f97713-b6a1-4aa4-893b-29f092c52d0b/edit
+                    - cell "[contact_name][custom][contact_firts_name] [protocol_number] teste variaveis" [ref=e158]:
+                      - generic [ref=e159]: "[contact_name][custom][contact_firts_name] [protocol_number] teste variaveis"
+                    - cell "—" [ref=e160]
+                    - cell "pt_BR" [ref=e161]
+                    - cell "—" [ref=e162]
+                    - cell "Em análise" [ref=e163]:
+                      - generic [ref=e164]: Em análise
+                    - cell "8 de jun. de 2026" [ref=e165]
+                    - cell "Editar Excluir" [ref=e166]:
+                      - generic [ref=e167]:
+                        - link "Editar" [ref=e168] [cursor=pointer]:
+                          - /url: /templates/a1f97713-b6a1-4aa4-893b-29f092c52d0b/edit
+                          - img [ref=e169]
+                        - button "Excluir" [ref=e172] [cursor=pointer]:
+                          - img [ref=e173]
+                  - row "Selecionar item a1cfd415-1175-4fab-acf9-68d663327346 TESTEE2Edynamic Persistent PCI76690 scalable — pt_BR — Em análise 7 de abr. de 2026 Editar Excluir" [ref=e176]:
+                    - cell "Selecionar item a1cfd415-1175-4fab-acf9-68d663327346" [ref=e177]:
+                      - generic [ref=e178]:
+                        - checkbox "Selecionar item a1cfd415-1175-4fab-acf9-68d663327346"
+                    - cell "TESTEE2Edynamic Persistent PCI76690" [ref=e179]:
+                      - link "TESTEE2Edynamic Persistent PCI76690" [ref=e180] [cursor=pointer]:
+                        - /url: /templates/a1cfd415-1175-4fab-acf9-68d663327346/edit
+                    - cell "scalable" [ref=e181]:
+                      - generic [ref=e182]: scalable
+                    - cell "—" [ref=e183]
+                    - cell "pt_BR" [ref=e184]
+                    - cell "—" [ref=e185]
+                    - cell "Em análise" [ref=e186]:
+                      - generic [ref=e187]: Em análise
+                    - cell "7 de abr. de 2026" [ref=e188]
+                    - cell "Editar Excluir" [ref=e189]:
+                      - generic [ref=e190]:
+                        - link "Editar" [ref=e191] [cursor=pointer]:
+                          - /url: /templates/a1cfd415-1175-4fab-acf9-68d663327346/edit
+                          - img [ref=e192]
+                        - button "Excluir" [ref=e195] [cursor=pointer]:
+                          - img [ref=e196]
+                  - row "Selecionar item a1cfd415-0ee0-4c46-a135-45f3ace53546 TESTEE2Eazure Lek42223 Supervisor International SCSI — pt_BR — Em análise 18 de mar. de 2026 Editar Excluir" [ref=e199]:
+                    - cell "Selecionar item a1cfd415-0ee0-4c46-a135-45f3ace53546" [ref=e200]:
+                      - generic [ref=e201]:
+                        - checkbox "Selecionar item a1cfd415-0ee0-4c46-a135-45f3ace53546"
+                    - cell "TESTEE2Eazure Lek42223" [ref=e202]:
+                      - link "TESTEE2Eazure Lek42223" [ref=e203] [cursor=pointer]:
+                        - /url: /templates/a1cfd415-0ee0-4c46-a135-45f3ace53546/edit
+                    - cell "Supervisor International SCSI" [ref=e204]:
+                      - generic [ref=e205]: Supervisor International SCSI
+                    - cell "—" [ref=e206]
+                    - cell "pt_BR" [ref=e207]
+                    - cell "—" [ref=e208]
+                    - cell "Em análise" [ref=e209]:
+                      - generic [ref=e210]: Em análise
+                    - cell "18 de mar. de 2026" [ref=e211]
+                    - cell "Editar Excluir" [ref=e212]:
+                      - generic [ref=e213]:
+                        - link "Editar" [ref=e214] [cursor=pointer]:
+                          - /url: /templates/a1cfd415-0ee0-4c46-a135-45f3ace53546/edit
+                          - img [ref=e215]
+                        - button "Excluir" [ref=e218] [cursor=pointer]:
+                          - img [ref=e219]
+                  - row "Selecionar item a1d100d9-bdb1-4698-8b5e-671c5cd9712c TESTEE2Etransform Granite9612 frictionless Forward THX — pt_BR — Em análise 10 de mar. de 2026 Editar Excluir" [ref=e222]:
+                    - cell "Selecionar item a1d100d9-bdb1-4698-8b5e-671c5cd9712c" [ref=e223]:
+                      - generic [ref=e224]:
+                        - checkbox "Selecionar item a1d100d9-bdb1-4698-8b5e-671c5cd9712c"
+                    - cell "TESTEE2Etransform Granite9612" [ref=e225]:
+                      - link "TESTEE2Etransform Granite9612" [ref=e226] [cursor=pointer]:
+                        - /url: /templates/a1d100d9-bdb1-4698-8b5e-671c5cd9712c/edit
+                    - cell "frictionless Forward THX" [ref=e227]:
+                      - generic [ref=e228]: frictionless Forward THX
+                    - cell "—" [ref=e229]
+                    - cell "pt_BR" [ref=e230]
+                    - cell "—" [ref=e231]
+                    - cell "Em análise" [ref=e232]:
+                      - generic [ref=e233]: Em análise
+                    - cell "10 de mar. de 2026" [ref=e234]
+                    - cell "Editar Excluir" [ref=e235]:
+                      - generic [ref=e236]:
+                        - link "Editar" [ref=e237] [cursor=pointer]:
+                          - /url: /templates/a1d100d9-bdb1-4698-8b5e-671c5cd9712c/edit
+                          - img [ref=e238]
+                        - button "Excluir" [ref=e241] [cursor=pointer]:
+                          - img [ref=e242]
+                  - row "Selecionar item a153172f-739c-465d-aa1e-1e019a7b7ccb TESTEE2Eclear-thinking concept53861 Borders generate — pt_BR — Em análise 4 de mar. de 2026 Editar Excluir" [ref=e245]:
+                    - cell "Selecionar item a153172f-739c-465d-aa1e-1e019a7b7ccb" [ref=e246]:
+                      - generic [ref=e247]:
+                        - checkbox "Selecionar item a153172f-739c-465d-aa1e-1e019a7b7ccb"
+                    - cell "TESTEE2Eclear-thinking concept53861" [ref=e248]:
+                      - link "TESTEE2Eclear-thinking concept53861" [ref=e249] [cursor=pointer]:
+                        - /url: /templates/a153172f-739c-465d-aa1e-1e019a7b7ccb/edit
+                    - cell "Borders generate" [ref=e250]:
+                      - generic [ref=e251]: Borders generate
+                    - cell "—" [ref=e252]
+                    - cell "pt_BR" [ref=e253]
+                    - cell "—" [ref=e254]
+                    - cell "Em análise" [ref=e255]:
+                      - generic [ref=e256]: Em análise
+                    - cell "4 de mar. de 2026" [ref=e257]
+                    - cell "Editar Excluir" [ref=e258]:
+                      - generic [ref=e259]:
+                        - link "Editar" [ref=e260] [cursor=pointer]:
+                          - /url: /templates/a153172f-739c-465d-aa1e-1e019a7b7ccb/edit
+                          - img [ref=e261]
+                        - button "Excluir" [ref=e264] [cursor=pointer]:
+                          - img [ref=e265]
+                  - row "Selecionar item a153172f-75d5-4dec-a7ea-b60ac34129d0 TESTEE2Ee-enable Salad Idaho76073 Passage — pt_BR — Em análise 25 de fev. de 2026 Editar Excluir" [ref=e268]:
+                    - cell "Selecionar item a153172f-75d5-4dec-a7ea-b60ac34129d0" [ref=e269]:
+                      - generic [ref=e270]:
+                        - checkbox "Selecionar item a153172f-75d5-4dec-a7ea-b60ac34129d0"
+                    - cell "TESTEE2Ee-enable Salad Idaho76073" [ref=e271]:
+                      - link "TESTEE2Ee-enable Salad Idaho76073" [ref=e272] [cursor=pointer]:
+                        - /url: /templates/a153172f-75d5-4dec-a7ea-b60ac34129d0/edit
+                    - cell "Passage" [ref=e273]:
+                      - generic [ref=e274]: Passage
+                    - cell "—" [ref=e275]
+                    - cell "pt_BR" [ref=e276]
+                    - cell "—" [ref=e277]
+                    - cell "Em análise" [ref=e278]:
+                      - generic [ref=e279]: Em análise
+                    - cell "25 de fev. de 2026" [ref=e280]
+                    - cell "Editar Excluir" [ref=e281]:
+                      - generic [ref=e282]:
+                        - link "Editar" [ref=e283] [cursor=pointer]:
+                          - /url: /templates/a153172f-75d5-4dec-a7ea-b60ac34129d0/edit
+                          - img [ref=e284]
+                        - button "Excluir" [ref=e287] [cursor=pointer]:
+                          - img [ref=e288]
+                  - row "Selecionar item a0c0050b-24cd-4151-9ed0-7147bbd552d1 Automacao63756 TESTEE2Eplatforms empowering GB Shirt Marketing pt_BR WABA QA Aprovado 2 de jan. de 2026 Editar Excluir" [ref=e291]:
+                    - cell "Selecionar item a0c0050b-24cd-4151-9ed0-7147bbd552d1" [ref=e292]:
+                      - generic [ref=e293]:
+                        - checkbox "Selecionar item a0c0050b-24cd-4151-9ed0-7147bbd552d1"
+                    - cell "Automacao63756" [ref=e294]:
+                      - link "Automacao63756" [ref=e295] [cursor=pointer]:
+                        - /url: /templates/a0c0050b-24cd-4151-9ed0-7147bbd552d1/edit
+                    - cell "TESTEE2Eplatforms empowering GB Shirt" [ref=e296]:
+                      - generic [ref=e297]: TESTEE2Eplatforms empowering GB Shirt
+                    - cell "Marketing" [ref=e298]:
+                      - generic [ref=e299]: Marketing
+                    - cell "pt_BR" [ref=e300]
+                    - cell "WABA QA" [ref=e301]
+                    - cell "Aprovado" [ref=e302]:
+                      - generic [ref=e303]: Aprovado
+                    - cell "2 de jan. de 2026" [ref=e304]
+                    - cell "Editar Excluir" [ref=e305]:
+                      - generic [ref=e306]:
+                        - link "Editar" [ref=e307] [cursor=pointer]:
+                          - /url: /templates/a0c0050b-24cd-4151-9ed0-7147bbd552d1/edit
+                          - img [ref=e308]
+                        - button "Excluir" [ref=e311] [cursor=pointer]:
+                          - img [ref=e312]
+                  - row "Selecionar item a0a94dd8-0443-4583-a896-3be6b102865e Automacao22239 TESTEE2Eback-end overriding area Shoes wireless Borders Marketing pt_BR WABA QA Aprovado 22 de dez. de 2025 Editar Excluir" [ref=e315]:
+                    - cell "Selecionar item a0a94dd8-0443-4583-a896-3be6b102865e" [ref=e316]:
+                      - generic [ref=e317]:
+                        - checkbox "Selecionar item a0a94dd8-0443-4583-a896-3be6b102865e"
+                    - cell "Automacao22239" [ref=e318]:
+                      - link "Automacao22239" [ref=e319] [cursor=pointer]:
+                        - /url: /templates/a0a94dd8-0443-4583-a896-3be6b102865e/edit
+                    - cell "TESTEE2Eback-end overriding area Shoes wireless Borders" [ref=e320]:
+                      - generic [ref=e321]: TESTEE2Eback-end overriding area Shoes wireless Borders
+                    - cell "Marketing" [ref=e322]:
+                      - generic [ref=e323]: Marketing
+                    - cell "pt_BR" [ref=e324]
+                    - cell "WABA QA" [ref=e325]
+                    - cell "Aprovado" [ref=e326]:
+                      - generic [ref=e327]: Aprovado
+                    - cell "22 de dez. de 2025" [ref=e328]
+                    - cell "Editar Excluir" [ref=e329]:
+                      - generic [ref=e330]:
+                        - link "Editar" [ref=e331] [cursor=pointer]:
+                          - /url: /templates/a0a94dd8-0443-4583-a896-3be6b102865e/edit
+                          - img [ref=e332]
+                        - button "Excluir" [ref=e335] [cursor=pointer]:
+                          - img [ref=e336]
+                  - row "Selecionar item a0c01330-5a38-4962-9efd-a9e62063302b TESTEE2EMouse core Interactions81294 SMTP — pt_BR — Em análise 22 de dez. de 2025 Editar Excluir" [ref=e339]:
+                    - cell "Selecionar item a0c01330-5a38-4962-9efd-a9e62063302b" [ref=e340]:
+                      - generic [ref=e341]:
+                        - checkbox "Selecionar item a0c01330-5a38-4962-9efd-a9e62063302b"
+                    - cell "TESTEE2EMouse core Interactions81294" [ref=e342]:
+                      - link "TESTEE2EMouse core Interactions81294" [ref=e343] [cursor=pointer]:
+                        - /url: /templates/a0c01330-5a38-4962-9efd-a9e62063302b/edit
+                    - cell "SMTP" [ref=e344]:
+                      - generic [ref=e345]: SMTP
+                    - cell "—" [ref=e346]
+                    - cell "pt_BR" [ref=e347]
+                    - cell "—" [ref=e348]
+                    - cell "Em análise" [ref=e349]:
+                      - generic [ref=e350]: Em análise
+                    - cell "22 de dez. de 2025" [ref=e351]
+                    - cell "Editar Excluir" [ref=e352]:
+                      - generic [ref=e353]:
+                        - link "Editar" [ref=e354] [cursor=pointer]:
+                          - /url: /templates/a0c01330-5a38-4962-9efd-a9e62063302b/edit
+                          - img [ref=e355]
+                        - button "Excluir" [ref=e358] [cursor=pointer]:
+                          - img [ref=e359]
+                  - row "Selecionar item a0c01330-5af8-4600-8701-6ca635229775 TESTEE2Eoptical Kong Chief64497 withdrawal — pt_BR — Em análise 22 de dez. de 2025 Editar Excluir" [ref=e362]:
+                    - cell "Selecionar item a0c01330-5af8-4600-8701-6ca635229775" [ref=e363]:
+                      - generic [ref=e364]:
+                        - checkbox "Selecionar item a0c01330-5af8-4600-8701-6ca635229775"
+                    - cell "TESTEE2Eoptical Kong Chief64497" [ref=e365]:
+                      - link "TESTEE2Eoptical Kong Chief64497" [ref=e366] [cursor=pointer]:
+                        - /url: /templates/a0c01330-5af8-4600-8701-6ca635229775/edit
+                    - cell "withdrawal" [ref=e367]:
+                      - generic [ref=e368]: withdrawal
+                    - cell "—" [ref=e369]
+                    - cell "pt_BR" [ref=e370]
+                    - cell "—" [ref=e371]
+                    - cell "Em análise" [ref=e372]:
+                      - generic [ref=e373]: Em análise
+                    - cell "22 de dez. de 2025" [ref=e374]
+                    - cell "Editar Excluir" [ref=e375]:
+                      - generic [ref=e376]:
+                        - link "Editar" [ref=e377] [cursor=pointer]:
+                          - /url: /templates/a0c01330-5af8-4600-8701-6ca635229775/edit
+                          - img [ref=e378]
+                        - button "Excluir" [ref=e381] [cursor=pointer]:
+                          - img [ref=e382]
+                  - row "Selecionar item a0c01330-604f-49cc-9e35-44e5e8da9932 TESTEE2Etransmitter53444 quantifying — pt_BR — Em análise 22 de dez. de 2025 Editar Excluir" [ref=e385]:
+                    - cell "Selecionar item a0c01330-604f-49cc-9e35-44e5e8da9932" [ref=e386]:
+                      - generic [ref=e387]:
+                        - checkbox "Selecionar item a0c01330-604f-49cc-9e35-44e5e8da9932"
+                    - cell "TESTEE2Etransmitter53444" [ref=e388]:
+                      - link "TESTEE2Etransmitter53444" [ref=e389] [cursor=pointer]:
+                        - /url: /templates/a0c01330-604f-49cc-9e35-44e5e8da9932/edit
+                    - cell "quantifying" [ref=e390]:
+                      - generic [ref=e391]: quantifying
+                    - cell "—" [ref=e392]
+                    - cell "pt_BR" [ref=e393]
+                    - cell "—" [ref=e394]
+                    - cell "Em análise" [ref=e395]:
+                      - generic [ref=e396]: Em análise
+                    - cell "22 de dez. de 2025" [ref=e397]
+                    - cell "Editar Excluir" [ref=e398]:
+                      - generic [ref=e399]:
+                        - link "Editar" [ref=e400] [cursor=pointer]:
+                          - /url: /templates/a0c01330-604f-49cc-9e35-44e5e8da9932/edit
+                          - img [ref=e401]
+                        - button "Excluir" [ref=e404] [cursor=pointer]:
+                          - img [ref=e405]
+                  - row "Selecionar item a0c01330-4b0c-4e40-97fb-d6ac4f949cba TESTEE2EB2C e-business55369 extend — pt_BR — Em análise 22 de dez. de 2025 Editar Excluir" [ref=e408]:
+                    - cell "Selecionar item a0c01330-4b0c-4e40-97fb-d6ac4f949cba" [ref=e409]:
+                      - generic [ref=e410]:
+                        - checkbox "Selecionar item a0c01330-4b0c-4e40-97fb-d6ac4f949cba"
+                    - cell "TESTEE2EB2C e-business55369" [ref=e411]:
+                      - link "TESTEE2EB2C e-business55369" [ref=e412] [cursor=pointer]:
+                        - /url: /templates/a0c01330-4b0c-4e40-97fb-d6ac4f949cba/edit
+                    - cell "extend" [ref=e413]:
+                      - generic [ref=e414]: extend
+                    - cell "—" [ref=e415]
+                    - cell "pt_BR" [ref=e416]
+                    - cell "—" [ref=e417]
+                    - cell "Em análise" [ref=e418]:
+                      - generic [ref=e419]: Em análise
+                    - cell "22 de dez. de 2025" [ref=e420]
+                    - cell "Editar Excluir" [ref=e421]:
+                      - generic [ref=e422]:
+                        - link "Editar" [ref=e423] [cursor=pointer]:
+                          - /url: /templates/a0c01330-4b0c-4e40-97fb-d6ac4f949cba/edit
+                          - img [ref=e424]
+                        - button "Excluir" [ref=e427] [cursor=pointer]:
+                          - img [ref=e428]
+                  - row "Selecionar item a0c01330-4d87-4bdd-9cfd-90670398f488 TESTEE2EBorders exploit60475 Wyoming Metal azure — pt_BR — Em análise 22 de dez. de 2025 Editar Excluir" [ref=e431]:
+                    - cell "Selecionar item a0c01330-4d87-4bdd-9cfd-90670398f488" [ref=e432]:
+                      - generic [ref=e433]:
+                        - checkbox "Selecionar item a0c01330-4d87-4bdd-9cfd-90670398f488"
+                    - cell "TESTEE2EBorders exploit60475" [ref=e434]:
+                      - link "TESTEE2EBorders exploit60475" [ref=e435] [cursor=pointer]:
+                        - /url: /templates/a0c01330-4d87-4bdd-9cfd-90670398f488/edit
+                    - cell "Wyoming Metal azure" [ref=e436]:
+                      - generic [ref=e437]: Wyoming Metal azure
+                    - cell "—" [ref=e438]
+                    - cell "pt_BR" [ref=e439]
+                    - cell "—" [ref=e440]
+                    - cell "Em análise" [ref=e441]:
+                      - generic [ref=e442]: Em análise
+                    - cell "22 de dez. de 2025" [ref=e443]
+                    - cell "Editar Excluir" [ref=e444]:
+                      - generic [ref=e445]:
+                        - link "Editar" [ref=e446] [cursor=pointer]:
+                          - /url: /templates/a0c01330-4d87-4bdd-9cfd-90670398f488/edit
+                          - img [ref=e447]
+                        - button "Excluir" [ref=e450] [cursor=pointer]:
+                          - img [ref=e451]
+                  - row "Selecionar item a0c01330-4e4d-42a7-a338-8855bce0b136 TESTEE2ECambridgeshire50437 Mountains compress — pt_BR — Em análise 22 de dez. de 2025 Editar Excluir" [ref=e454]:
+                    - cell "Selecionar item a0c01330-4e4d-42a7-a338-8855bce0b136" [ref=e455]:
+                      - generic [ref=e456]:
+                        - checkbox "Selecionar item a0c01330-4e4d-42a7-a338-8855bce0b136"
+                    - cell "TESTEE2ECambridgeshire50437" [ref=e457]:
+                      - link "TESTEE2ECambridgeshire50437" [ref=e458] [cursor=pointer]:
+                        - /url: /templates/a0c01330-4e4d-42a7-a338-8855bce0b136/edit
+                    - cell "Mountains compress" [ref=e459]:
+                      - generic [ref=e460]: Mountains compress
+                    - cell "—" [ref=e461]
+                    - cell "pt_BR" [ref=e462]
+                    - cell "—" [ref=e463]
+                    - cell "Em análise" [ref=e464]:
+                      - generic [ref=e465]: Em análise
+                    - cell "22 de dez. de 2025" [ref=e466]
+                    - cell "Editar Excluir" [ref=e467]:
+                      - generic [ref=e468]:
+                        - link "Editar" [ref=e469] [cursor=pointer]:
+                          - /url: /templates/a0c01330-4e4d-42a7-a338-8855bce0b136/edit
+                          - img [ref=e470]
+                        - button "Excluir" [ref=e473] [cursor=pointer]:
+                          - img [ref=e474]
+                  - row "Selecionar item a0a7d8a2-b628-40bc-931a-8956816371b9 Automacao62213 TESTEE2ETCP Awesome Handcrafted Auto Marketing pt_BR WABA QA Aprovado 22 de dez. de 2025 Editar Excluir" [ref=e477]:
+                    - cell "Selecionar item a0a7d8a2-b628-40bc-931a-8956816371b9" [ref=e478]:
+                      - generic [ref=e479]:
+                        - checkbox "Selecionar item a0a7d8a2-b628-40bc-931a-8956816371b9"
+                    - cell "Automacao62213" [ref=e480]:
+                      - link "Automacao62213" [ref=e481] [cursor=pointer]:
+                        - /url: /templates/a0a7d8a2-b628-40bc-931a-8956816371b9/edit
+                    - cell "TESTEE2ETCP Awesome Handcrafted Auto" [ref=e482]:
+                      - generic [ref=e483]: TESTEE2ETCP Awesome Handcrafted Auto
+                    - cell "Marketing" [ref=e484]:
+                      - generic [ref=e485]: Marketing
+                    - cell "pt_BR" [ref=e486]
+                    - cell "WABA QA" [ref=e487]
+                    - cell "Aprovado" [ref=e488]:
+                      - generic [ref=e489]: Aprovado
+                    - cell "22 de dez. de 2025" [ref=e490]
+                    - cell "Editar Excluir" [ref=e491]:
+                      - generic [ref=e492]:
+                        - link "Editar" [ref=e493] [cursor=pointer]:
+                          - /url: /templates/a0a7d8a2-b628-40bc-931a-8956816371b9/edit
+                          - img [ref=e494]
+                        - button "Excluir" [ref=e497] [cursor=pointer]:
+                          - img [ref=e498]
+              - generic [ref=e502]:
+                - generic [ref=e503]:
+                  - generic [ref=e504]: Página 1 de 6
+                  - generic [ref=e505]: "Total: 89 registros"
+                - generic [ref=e506]:
+                  - combobox [ref=e507]:
+                    - option "10 por página"
+                    - option "15 por página" [selected]
+                    - option "25 por página"
+                    - option "50 por página"
+                  - generic [ref=e508]:
+                    - button [disabled]:
+                      - img
+                    - button [disabled]:
+                      - img
+                    - button [ref=e509] [cursor=pointer]:
+                      - img [ref=e510]
+                    - button [ref=e512] [cursor=pointer]:
+                      - img [ref=e513]
+  - region "Notifications (F8)":
+    - list

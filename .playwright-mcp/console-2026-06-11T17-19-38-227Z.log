@@ -1,0 +1,128 @@
+[    3743ms] [LOG] Defining triggerGuiding @ :0
+[    5753ms] [LOG] User Guiding identify running @ :1
+[    7756ms] [LOG] User Guiding identify running @ :1
+[    9394ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-BLfBf08T.js:101
+[    9395ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.poli.digital/assets/index-BLfBf08T.js:101
+[    9760ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.poli.digital/assets/index-BLfBf08T.js:76
+[   10504ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   10504ms] [LOG] User Guiding identify cleared @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   13410ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.poli.digital/v3/users/settings/summary:0
+[   13415ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.poli.digital/v3/accounts/non-payment/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[   13416ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.poli.digital/v3/settings:0
+[   13418ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.poli.digital/v3/crm/index:0
+[   13419ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/chats/pinned:0
+[   13420ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[   13422ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[   13423ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.poli.digital/v3/accounts/balance/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[   13443ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   13946ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.poli.digital/v3/broadcasting/auth:0
+[   13951ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.poli.digital/auth/refresh-token:0
+[   13952ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at ABe (https://spa.poli.digital/assets/index-BLfBf08T.js:1101:10207)
+    at XMLHttpRequest.x (https://spa.poli.digital/assets/index-BLfBf08T.js:1101:15780)
+    at _2.request (https://spa.poli.digital/assets/index-BLfBf08T.js:1103:2243)
+    at async EMt (https://spa.poli.digital/assets/index-BLfBf08T.js:1107:6861)
+    at async https://spa.poli.digital/assets/index-BLfBf08T.js:1107:8208
+    at async _2.request (https://spa.poli.digital/assets/index-BLfBf08T.js:1103:2147)
+    at async Vme.getSummary (https://spa.poli.digital/assets/index-BLfBf08T.js:2241:64448)
+    at async https://spa.poli.digital/assets/index-BLfBf08T.js:2241:65149 @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   13957ms] [ERROR] AxiosError: Request failed with status code 401
+    at ABe (https://spa.poli.digital/assets/index-BLfBf08T.js:1101:10207)
+    at XMLHttpRequest.x (https://spa.poli.digital/assets/index-BLfBf08T.js:1101:15780)
+    at _2.request (https://spa.poli.digital/assets/index-BLfBf08T.js:1103:2243)
+    at async EMt (https://spa.poli.digital/assets/index-BLfBf08T.js:1107:6861)
+    at async https://spa.poli.digital/assets/index-BLfBf08T.js:1107:8208
+    at async _2.request (https://spa.poli.digital/assets/index-BLfBf08T.js:1103:2147)
+    at async Vme.getSummary (https://spa.poli.digital/assets/index-BLfBf08T.js:2241:64448)
+    at async https://spa.poli.digital/assets/index-BLfBf08T.js:2241:65149 @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   13968ms] [ERROR] [UserPreferencesService] Failed to get summary: AxiosError: Request failed with status code 401
+    at ABe (https://spa.poli.digital/assets/index-BLfBf08T.js:1101:10207)
+    at XMLHttpRequest.x (https://spa.poli.digital/assets/index-BLfBf08T.js:1101:15780)
+    at _2.request (https://spa.poli.digital/assets/index-BLfBf08T.js:1103:2243)
+    at async EMt (https://spa.poli.digital/assets/index-BLfBf08T.js:1107:6861)
+    at async https://spa.poli.digital/assets/index-BLfBf08T.js:1107:8208
+    at async _2.request (https://spa.poli.digital/assets/index-BLfBf08T.js:1103:2147)
+    at async Vme.getSummary (https://spa.poli.digital/assets/index-BLfBf08T.js:2241:64448)
+    at async https://spa.poli.digital/assets/index-BLfBf08T.js:2241:65149 @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   13968ms] [ERROR] [useUserPreferences] Error: AxiosError: Request failed with status code 401
+    at ABe (https://spa.poli.digital/assets/index-BLfBf08T.js:1101:10207)
+    at XMLHttpRequest.x (https://spa.poli.digital/assets/index-BLfBf08T.js:1101:15780)
+    at _2.request (https://spa.poli.digital/assets/index-BLfBf08T.js:1103:2243)
+    at async EMt (https://spa.poli.digital/assets/index-BLfBf08T.js:1107:6861)
+    at async https://spa.poli.digital/assets/index-BLfBf08T.js:1107:8208
+    at async _2.request (https://spa.poli.digital/assets/index-BLfBf08T.js:1103:2147)
+    at async Vme.getSummary (https://spa.poli.digital/assets/index-BLfBf08T.js:2241:64448)
+    at async https://spa.poli.digital/assets/index-BLfBf08T.js:2241:65149 @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   13971ms] [ERROR] Error: AxiosError: Request failed with status code 401
+    at https://spa.poli.digital/assets/index-BLfBf08T.js:1107:8175
+    at async _2.request (https://spa.poli.digital/assets/index-BLfBf08T.js:1103:2147)
+    at async r0n.getOverdueAccounts (https://spa.poli.digital/assets/index-BLfBf08T.js:2253:44732)
+    at async https://spa.poli.digital/assets/index-BLfBf08T.js:2579:5310 @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   13972ms] [ERROR] getCrmUserToken - Error on get crm user token: Error: AxiosError: Request failed with status code 401
+    at https://spa.poli.digital/assets/index-BLfBf08T.js:1107:8175
+    at async _2.request (https://spa.poli.digital/assets/index-BLfBf08T.js:1103:2147)
+    at async fz.getUserToken (https://spa.poli.digital/assets/index-BLfBf08T.js:2240:44294)
+    at async https://spa.poli.digital/assets/index-BLfBf08T.js:2240:44585 @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   13973ms] [ERROR] error ao buscar chats Error: AxiosError: Request failed with status code 401
+    at https://spa.poli.digital/assets/index-BLfBf08T.js:1107:8175
+    at async _2.request (https://spa.poli.digital/assets/index-BLfBf08T.js:1103:2147)
+    at async cDt (https://spa.poli.digital/assets/index-BLfBf08T.js:1137:26220)
+    at async C (https://spa.poli.digital/assets/index-BLfBf08T.js:54:37980)
+    at async Object.u [as fn] (https://spa.poli.digital/assets/index-BLfBf08T.js:54:38287) @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   14216ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.poli.digital/v3/accounts/balance/9b8af98e-0407-49a2-bce9-3620f29c513a:0
+[   14446ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.poli.digital/auth/refresh-token:0
+[   14447ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at ABe (https://spa.poli.digital/assets/index-BLfBf08T.js:1101:10207)
+    at XMLHttpRequest.x (https://spa.poli.digital/assets/index-BLfBf08T.js:1101:15780)
+    at _2.request (https://spa.poli.digital/assets/index-BLfBf08T.js:1103:2243)
+    at async EMt (https://spa.poli.digital/assets/index-BLfBf08T.js:1107:6861)
+    at async https://spa.poli.digital/assets/index-BLfBf08T.js:1107:8208
+    at async _2.request (https://spa.poli.digital/assets/index-BLfBf08T.js:1103:2147)
+    at async FE.getPanelCredits (https://spa.poli.digital/assets/index-BLfBf08T.js:1928:552) @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   14447ms] [ERROR] AxiosError: Request failed with status code 401
+    at ABe (https://spa.poli.digital/assets/index-BLfBf08T.js:1101:10207)
+    at XMLHttpRequest.x (https://spa.poli.digital/assets/index-BLfBf08T.js:1101:15780)
+    at _2.request (https://spa.poli.digital/assets/index-BLfBf08T.js:1103:2243)
+    at async EMt (https://spa.poli.digital/assets/index-BLfBf08T.js:1107:6861)
+    at async https://spa.poli.digital/assets/index-BLfBf08T.js:1107:8208
+    at async _2.request (https://spa.poli.digital/assets/index-BLfBf08T.js:1103:2147)
+    at async FE.getPanelCredits (https://spa.poli.digital/assets/index-BLfBf08T.js:1928:552) @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   14765ms] [INFO] WebSocket: Conexão finalizada @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   16254ms] [LOG] Defining triggerGuiding @ :0
+[   16526ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-BLfBf08T.js:101
+[   16526ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.poli.digital/assets/index-BLfBf08T.js:101
+[   16580ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.poli.digital/assets/index-BLfBf08T.js:76
+[   16681ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   17634ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   18265ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   19362ms] [WARNING] [UserGuiding] 
+ You are loading UserGuiding SDK multiple times 
+
+*Submit a ticket using the link below if you think this is a bug
+https://desk.zoho.com/portal/userguiding/newticket @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   20262ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   22268ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   23482ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/login:0
+[   23608ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/login:0
+[   24260ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   26266ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   28257ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   30256ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   31344ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   32065ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at vB (https://spa.poli.digital/assets/index-BLfBf08T.js:1103:282)
+    at _2.Mue (https://spa.poli.digital/assets/index-BLfBf08T.js:1103:320)
+    at async _2.request (https://spa.poli.digital/assets/index-BLfBf08T.js:1103:2147)
+    at async cDt (https://spa.poli.digital/assets/index-BLfBf08T.js:1137:26220)
+    at async C (https://spa.poli.digital/assets/index-BLfBf08T.js:54:37980)
+    at async Object.u [as fn] (https://spa.poli.digital/assets/index-BLfBf08T.js:54:38287) @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   32255ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   32255ms] [LOG] User Guiding identify cleared @ https://spa.poli.digital/assets/index-BLfBf08T.js:69
+[   36705ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/chat:0
+[   36981ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/chat:0
+[   37011ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fdrive.google.com%2Fdrivesharing%2Fclientmodel%3Fid%3D1d2EezTZTGec3nPV8-dUVEJI2t1TcbR93%26foreignService%3Dtexmex%26authuser%3D0%26origin%3Dhttps%3A%2F%2Fdrive.google.com&dsh=S-1341634005%3A1781198413787497&followup=https%3A%2F%2Fdrive.google.com%2Fdrivesharing%2Fclientmodel%3Fid%3D1d2EezTZTGec3nPV8-dUVEJI2t1TcbR93%26foreignService%3Dtexmex%26authuser%3D0%26origin%3Dhttps%3A%2F%2Fdrive.google.com&osid=1&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvzAjyX8QoP2gRu_rySt1oWKIbnBvccGXulJw_bgTwXChVrtq8YrYxqhYhxc-BVoD1gBoiG4:0
+[   37037ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://spa.poli.digital/chat:0
+[   44194ms] [WARNING] The resource https://drive.google.com/drive-viewer/AKGpihYL8yj9X5HDz2FATZvrMrc8YP2g7I2MflMJnxHgulXG0gEwnqlR20nMIiweHU7fCJUB1SnX8ueFo4QK6zIXh8EFNEKpMapT7BY=s1600-rw-v1 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://drive.google.com/file/d/1d2EezTZTGec3nPV8-dUVEJI2t1TcbR93/preview:0
+[   49161ms] [WARNING] The resource https://drive.google.com/drive-viewer/AKGpihYL8yj9X5HDz2FATZvrMrc8YP2g7I2MflMJnxHgulXG0gEwnqlR20nMIiweHU7fCJUB1SnX8ueFo4QK6zIXh8EFNEKpMapT7BY=s1600-rw-v1 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://drive.google.com/file/d/1d2EezTZTGec3nPV8-dUVEJI2t1TcbR93/preview:0
+[   68064ms] [WARNING] The resource https://drive.google.com/drive-viewer/AKGpihYL8yj9X5HDz2FATZvrMrc8YP2g7I2MflMJnxHgulXG0gEwnqlR20nMIiweHU7fCJUB1SnX8ueFo4QK6zIXh8EFNEKpMapT7BY=s1600-rw-v1 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://drive.google.com/file/d/1d2EezTZTGec3nPV8-dUVEJI2t1TcbR93/preview:0
+[  100458ms] [WARNING] The resource https://drive.google.com/drive-viewer/AKGpihYL8yj9X5HDz2FATZvrMrc8YP2g7I2MflMJnxHgulXG0gEwnqlR20nMIiweHU7fCJUB1SnX8ueFo4QK6zIXh8EFNEKpMapT7BY=s1600-rw-v1 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://drive.google.com/file/d/1d2EezTZTGec3nPV8-dUVEJI2t1TcbR93/preview:0

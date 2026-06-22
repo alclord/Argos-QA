@@ -1,0 +1,196 @@
+[     794ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:101
+[     795ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:101
+[     893ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:76
+[    1131ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:429
+    at $R (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:892:31)
+    at Nd.ZR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:889:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.xq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:716:315
+    at Cz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:621:1)
+    at Hz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:625:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:645:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:646:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:646:131)
+    at eB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:646:773)
+    at hB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:651:29)
+    at rD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:693:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:697:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65l0h2:683:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:853:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65k1:547:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:698:6
+    at r (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:70:9812)
+[    1507ms] [ERROR] `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[    1509ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[    1645ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[    1671ms] [ERROR] `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[    1671ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[    1802ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[    2184ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[    2311ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[    3502ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[    5693ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[    9877ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=9999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[   24093ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/584222251_803407049174736_6075839926295552254_n.jpg?ccb=11-4&oh=01_Q5Aa3QFO8EYqX4LE02YUHwjgnXcNkXQV4oXQO5SXs8CbPJfwPg&oe=695FD5E1&_nc_sid=5e03e0&_nc_cat=105:0
+[   33287ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/584222251_803407049174736_6075839926295552254_n.jpg?ccb=11-4&oh=01_Q5Aa3QFO8EYqX4LE02YUHwjgnXcNkXQV4oXQO5SXs8CbPJfwPg&oe=695FD5E1&_nc_sid=5e03e0&_nc_cat=105:0
+[   97198ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[  128386ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[  211364ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/584222251_803407049174736_6075839926295552254_n.jpg?ccb=11-4&oh=01_Q5Aa3QFO8EYqX4LE02YUHwjgnXcNkXQV4oXQO5SXs8CbPJfwPg&oe=695FD5E1&_nc_sid=5e03e0&_nc_cat=105:0
+[  300701ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/584222251_803407049174736_6075839926295552254_n.jpg?ccb=11-4&oh=01_Q5Aa3QFO8EYqX4LE02YUHwjgnXcNkXQV4oXQO5SXs8CbPJfwPg&oe=695FD5E1&_nc_sid=5e03e0&_nc_cat=105:0
+[  401957ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[  425985ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516821226_1034137662043294_8412083315673682112_n.jpg?ccb=11-4&oh=01_Q5Aa3wGV0w2YmnQ6TBMH0x-0rxT9pjZgTvTyDdDyH-6A-5wg7w&oe=69B819C9&_nc_sid=5e03e0&_nc_cat=109:0
+[  509067ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516821226_1034137662043294_8412083315673682112_n.jpg?ccb=11-4&oh=01_Q5Aa3wGV0w2YmnQ6TBMH0x-0rxT9pjZgTvTyDdDyH-6A-5wg7w&oe=69B819C9&_nc_sid=5e03e0&_nc_cat=109:0
+[  522379ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/516821226_1034137662043294_8412083315673682112_n.jpg?ccb=11-4&oh=01_Q5Aa3wGV0w2YmnQ6TBMH0x-0rxT9pjZgTvTyDdDyH-6A-5wg7w&oe=69B819C9&_nc_sid=5e03e0&_nc_cat=109:0
+[  635601ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/518550113_739148445546785_65357815861542829_n.jpg?ccb=11-4&oh=01_Q5Aa3gG0cgba-UGji03HYlok8HSIPkgyB25s0xfEE-uEjY25Xg&oe=6977D4B9&_nc_sid=5e03e0&_nc_cat=102:0
+[  650839ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/518550113_739148445546785_65357815861542829_n.jpg?ccb=11-4&oh=01_Q5Aa3gG0cgba-UGji03HYlok8HSIPkgyB25s0xfEE-uEjY25Xg&oe=6977D4B9&_nc_sid=5e03e0&_nc_cat=102:0
+[  756083ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/3035ce8b-c861-11f0-87d0-062ccf12487f/read:0
+[  756218ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c896ae2-08d0-4546-8041-2f2bd65747a3/unread:0
+[  758407ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/6019e765-12b2-11f1-b89b-06b3482cde9b?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  758408ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.poli.digital/auth/refresh-token:0
+[  758411ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at Zwe (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:976:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:976:15705)
+    at Xy.request (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:978:2234)
+    at async Wdt (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:982:6854)
+    at async https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:982:8196
+    at async Xy.request (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:978:2138)
+    at async Promise.all (index 0)
+    at async Object.mutationFn (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:16076) @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[  758419ms] [ERROR] AxiosError: Request failed with status code 401
+    at Zwe (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:976:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:976:15705)
+    at Xy.request (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:978:2234)
+    at async Wdt (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:982:6854)
+    at async https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:982:8196
+    at async Xy.request (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:978:2138)
+    at async Promise.all (index 0)
+    at async Object.mutationFn (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:16076) @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[  760360ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/66007bd0-5889-11f1-9d75-06799772b1cd/read:0
+[  760407ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c89e8b0-1311-406c-abf4-87d02b0ae55d?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  760453ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:982:8163
+    at async Xy.request (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:978:2138)
+    at async Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14008)
+[  760975ms] [INFO] WebSocket: Conexão finalizada @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[  760996ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/d723e0cc-5623-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  761001ms] [ERROR] Erro ao enriquecer contato d723e0cc-5623-11f1-9d75-06799772b1cd: TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080) @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[  761096ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.poli.digital/auth/refresh-token:0
+[  761096ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at Zwe (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:976:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:976:15705)
+    at Xy.request (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:978:2234)
+    at async Wdt (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:982:6854)
+    at async https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:982:8196
+    at async Xy.request (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:978:2138)
+    at async Promise.all (index 0)
+    at async Object.mutationFn (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:16076) @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[  761097ms] [ERROR] AxiosError: Request failed with status code 401
+    at Zwe (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:976:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:976:15705)
+    at Xy.request (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:978:2234)
+    at async Wdt (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:982:6854)
+    at async https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:982:8196
+    at async Xy.request (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:978:2138)
+    at async Promise.all (index 0)
+    at async Object.mutationFn (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:16076) @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[  761163ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761163ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761163ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761163ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761163ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761163ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761163ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761163ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761163ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761163ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761163ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761164ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761164ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761164ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761164ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761164ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761164ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761164ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761164ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761164ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761164ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761164ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761164ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761164ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761164ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761164ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761165ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761165ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761165ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761165ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761165ms] TypeError: Cannot read properties of undefined (reading 'data')
+    at Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14080)
+[  761165ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:982:8163
+    at async Xy.request (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:978:2138)
+    at async Yke (https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:1059:14008)
+[  761264ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/d723e0cc-5623-11f1-9d75-06799772b1cd/read:0
+[  761310ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.poli.digital/auth/logout:0
+[  762224ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:101
+[  762224ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:101
+[  762366ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:76
+[  762415ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[  762958ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[  802809ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[  802853ms] [ERROR] `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69
+[  802853ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-TTUTAaxS.js:69

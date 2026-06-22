@@ -1,0 +1,334 @@
+[   12777ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:101
+[   12777ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:101
+[   12902ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:76
+[   13508ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69
+[   13983ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/non-payment/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[   13991ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/users/settings/summary:0
+[   14064ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[   14068ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/crm/index:0
+[   14159ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/broadcasting/auth:0
+[   14177ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[   14178ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/settings:0
+[   14381ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats/pinned:0
+[   14384ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[   15268ms] Identifier 'TCRMEmbed' has already been declared
+[   18608ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69
+[   19475ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[   19478ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69
+[   19478ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa.qa.poli.digital/assets/index-C7Uxcqvc.js:69
+[   24240ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[   24240ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[   24354ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:76
+[   24830ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[   26047ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[   27098ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[   27100ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1,
+      3
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[   27101ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[   27101ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[   27157ms] [INFO] WebSocket: Conexão finalizada @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[   27204ms] [WARNING] Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component. @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[   27205ms] [WARNING] Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component. @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[   27300ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[   27305ms] [ERROR] error ao buscar chats TypeError: Cannot read properties of undefined (reading 'data')
+    at XRt (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1147:26257)
+    at async w (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:54:37980)
+    at async Object.u [as fn] (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:54:38287) @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[   27397ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/users/settings/language:0
+[   27928ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[   27928ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[   27984ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:76
+[   28014ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[   28457ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[   42680ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[   43407ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/crm/index:0
+[   43408ms] [ERROR] getCrmUserToken - Error on get crm user token: AxiosError: Request failed with status code 404
+    at nze (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2243)
+    at async Sz.getUserToken (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2250:44292)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2250:44583 @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  182609ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  182610ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      2
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  182611ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  183338ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  183342ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      2
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  183342ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  185535ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/redirect?sessionId=8b813f493ef582ef3ebf8de967f09ea19040f4c0&toPath=https%3A%2F%2Fapp-spa.qa.poli.digital%2Ftools%2Fchannels%2Flist&_gl=1*1il4r8r*_gcl_au*MTE1MTE3MjE1My4xNzgxMjcxMjUwLjUxMTcyOTQzNi4xNzgxMjg4NjQwLjE3ODEyODg2Mzk.*_ga*MTczMjYyNzczMi4xNzgxMjcxMjUw*_ga_GDG103ZG81*czE3ODEyODgzNTMkbzQkZzEkdDE3ODEyODg3ODUkajYwJGwwJGg0ODA4MjcyMTg.:0
+[  185667ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  186106ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/redirect?sessionId=8b813f493ef582ef3ebf8de967f09ea19040f4c0&toPath=https%3A%2F%2Fapp-spa.qa.poli.digital%2Ftools%2Fchannels%2Flist&_gl=1*1il4r8r*_gcl_au*MTE1MTE3MjE1My4xNzgxMjcxMjUwLjUxMTcyOTQzNi4xNzgxMjg4NjQwLjE3ODEyODg2Mzk.*_ga*MTczMjYyNzczMi4xNzgxMjcxMjUw*_ga_GDG103ZG81*czE3ODEyODgzNTMkbzQkZzEkdDE3ODEyODg3ODUkajYwJGwwJGg0ODA4MjcyMTg.:0
+[  186111ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/redirect?sessionId=8b813f493ef582ef3ebf8de967f09ea19040f4c0&toPath=https%3A%2F%2Fapp-spa.qa.poli.digital%2Ftools%2Fchannels%2Flist&_gl=1*1il4r8r*_gcl_au*MTE1MTE3MjE1My4xNzgxMjcxMjUwLjUxMTcyOTQzNi4xNzgxMjg4NjQwLjE3ODEyODg2Mzk.*_ga*MTczMjYyNzczMi4xNzgxMjcxMjUw*_ga_GDG103ZG81*czE3ODEyODgzNTMkbzQkZzEkdDE3ODEyODg3ODUkajYwJGwwJGg0ODA4MjcyMTg.:0
+[  188797ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/tools/channels/list:0
+[  188813ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  189531ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/tools/channels/list:0
+[  189537ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/tools/channels/list:0
+[  249224ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/alive:0
+[  249562ms] [LOG] websocket on close - ws_unauthorized true @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  249587ms] [LOG] websocket on close - ws_unauthorized true @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  249894ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/logout:0
+[  249923ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  250567ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/logout:0
+[  250571ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/logout:0
+[  251082ms] [ERROR] WebSocket connection to 'wss://dispatch-wss.qa.poli.digital/?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6NTA2MjEsImN1c3RvbWVycyI6WzUwNjIxXSwicm9sZXMiOlsxLDIsM10sInBlcm1pc3Npb25zIjpbXX0sInBlcm1pc3Npb25zIjpbXSwiaWF0IjoxNzgxMjg4NjQ1LCJleHAiOjE3ODEzNzUwNDV9._pTmONguP5cB81HsCyAopdruid6KbwMYOFE6Q93OEI4&customer_id=50621' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  251082ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  251408ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app-spa.qa.poli.digital/login:0
+[  252122ms] [ERROR] WebSocket connection to 'wss://dispatch-wss.qa.poli.digital/?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6NTA2MjEsImN1c3RvbWVycyI6WzUwNjIxXSwicm9sZXMiOlsxLDIsM10sInBlcm1pc3Npb25zIjpbXX0sInBlcm1pc3Npb25zIjpbXSwiaWF0IjoxNzgxMjg4NjQ1LCJleHAiOjE3ODEzNzUwNDV9._pTmONguP5cB81HsCyAopdruid6KbwMYOFE6Q93OEI4&customer_id=50621' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  252123ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  253646ms] [ERROR] WebSocket connection to 'wss://dispatch-wss.qa.poli.digital/?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6NTA2MjEsImN1c3RvbWVycyI6WzUwNjIxXSwicm9sZXMiOlsxLDIsM10sInBlcm1pc3Npb25zIjpbXX0sInBlcm1pc3Npb25zIjpbXSwiaWF0IjoxNzgxMjg4NjQ1LCJleHAiOjE3ODEzNzUwNDV9._pTmONguP5cB81HsCyAopdruid6KbwMYOFE6Q93OEI4&customer_id=50621' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  253647ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  256191ms] [ERROR] WebSocket connection to 'wss://dispatch-wss.qa.poli.digital/?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6NTA2MjEsImN1c3RvbWVycyI6WzUwNjIxXSwicm9sZXMiOlsxLDIsM10sInBlcm1pc3Npb25zIjpbXX0sInBlcm1pc3Npb25zIjpbXSwiaWF0IjoxNzgxMjg4NjQ1LCJleHAiOjE3ODEzNzUwNDV9._pTmONguP5cB81HsCyAopdruid6KbwMYOFE6Q93OEI4&customer_id=50621' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  256192ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  260747ms] [ERROR] WebSocket connection to 'wss://dispatch-wss.qa.poli.digital/?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6NTA2MjEsImN1c3RvbWVycyI6WzUwNjIxXSwicm9sZXMiOlsxLDIsM10sInBlcm1pc3Npb25zIjpbXX0sInBlcm1pc3Npb25zIjpbXSwiaWF0IjoxNzgxMjg4NjQ1LCJleHAiOjE3ODEzNzUwNDV9._pTmONguP5cB81HsCyAopdruid6KbwMYOFE6Q93OEI4&customer_id=50621' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  260748ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  269302ms] [ERROR] WebSocket connection to 'wss://dispatch-wss.qa.poli.digital/?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6NTA2MjEsImN1c3RvbWVycyI6WzUwNjIxXSwicm9sZXMiOlsxLDIsM10sInBlcm1pc3Npb25zIjpbXX0sInBlcm1pc3Npb25zIjpbXSwiaWF0IjoxNzgxMjg4NjQ1LCJleHAiOjE3ODEzNzUwNDV9._pTmONguP5cB81HsCyAopdruid6KbwMYOFE6Q93OEI4&customer_id=50621' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  269302ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  269533ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.qa.poli.digital/auth/foundation/allowed:0
+[  269534ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  344978ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/tools/channels?_gl=1*17cjf5d*_gcl_au*MTE1MTE3MjE1My4xNzgxMjcxMjUwLjUxMTcyOTQzNi4xNzgxMjg4NjQwLjE3ODEyODg4Njg.*_ga*MTczMjYyNzczMi4xNzgxMjcxMjUw*_ga_GDG103ZG81*czE3ODEyODgzNTMkbzQkZzEkdDE3ODEyODg4NzQkajM4JGwwJGg0ODA4MjcyMTg.:0
+[  345006ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  346223ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/tools/channels?_gl=1*17cjf5d*_gcl_au*MTE1MTE3MjE1My4xNzgxMjcxMjUwLjUxMTcyOTQzNi4xNzgxMjg4NjQwLjE3ODEyODg4Njg.*_ga*MTczMjYyNzczMi4xNzgxMjcxMjUw*_ga_GDG103ZG81*czE3ODEyODgzNTMkbzQkZzEkdDE3ODEyODg4NzQkajM4JGwwJGg0ODA4MjcyMTg.:0
+[  346233ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/tools/channels?_gl=1*17cjf5d*_gcl_au*MTE1MTE3MjE1My4xNzgxMjcxMjUwLjUxMTcyOTQzNi4xNzgxMjg4NjQwLjE3ODEyODg4Njg.*_ga*MTczMjYyNzczMi4xNzgxMjcxMjUw*_ga_GDG103ZG81*czE3ODEyODgzNTMkbzQkZzEkdDE3ODEyODg4NzQkajM4JGwwJGg0ODA4MjcyMTg.:0
+[  389157ms] [LOG] Found 1 WABA(s) for token @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  389900ms] [LOG] getInfoAllByWabaId: Successfully retrieved info for WABA 1679068343295544 {on_behalf_of_business_info: Object, id: 1679068343295544, name: Alclord, message_template_namespace: 6a24ae42_af38_4d47_85cc_dfc2e93b993e, phone_numbers: Object} @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  439956ms] [LOG] dataFromDad {id: 94837, channel_id: 6, customer_id: 50621, phone: 15558789373, name: TesteEmpresa} @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  440503ms] [LOG] dataFromDad {id: 94837, channel_id: 6, customer_id: 50621, phone: 15558789373, name: TesteEmpresa} @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  440508ms] [LOG] dataFromDad {id: 94837, channel_id: 6, customer_id: 50621, phone: 15558789373, name: TesteEmpresa} @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  440792ms] [LOG] dataFromDad {id: 94837, channel_id: 6, customer_id: 50621, phone: 15558789373, name: TesteEmpresa} @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  440800ms] [LOG] dataFromDad {id: 94837, channel_id: 6, customer_id: 50621, phone: 15558789373, name: TesteEmpresa} @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  440916ms] [LOG] dataFromDad {id: 94837, channel_id: 6, customer_id: 50621, phone: 15558789373, name: TesteEmpresa} @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  440935ms] [LOG] dataFromDad {id: 94837, channel_id: 6, customer_id: 50621, phone: 15558789373, name: TesteEmpresa} @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  445320ms] [LOG] dataFromDad {id: 94837, channel_id: 6, customer_id: 50621, phone: 15558789373, name: TesteEmpresa} @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  445327ms] [LOG] dataFromDad {id: 94837, channel_id: 6, customer_id: 50621, phone: 15558789373, name: TesteEmpresa} @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  445331ms] [LOG] dataFromDad {id: 94837, channel_id: 6, customer_id: 50621, phone: 15558789373, name: TesteEmpresa} @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  445732ms] [LOG] dataFromDad {id: 94837, channel_id: 6, customer_id: 50621, phone: 15558789373, name: TesteEmpresa} @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  445740ms] [LOG] dataFromDad {id: 94837, channel_id: 6, customer_id: 50621, phone: 15558789373, name: TesteEmpresa} @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[  459286ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/login:0
+[  459649ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app-spa.qa.poli.digital/login:0
+[  460242ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/login:0
+[  460245ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/login:0
+[  463226ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[  463226ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[  463352ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:76
+[  463731ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/balance/4235fc1d-7384-11f0-a5f1-02b38fc4ba53:0
+[  463734ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/settings:0
+[  463736ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/4235fc1d-7384-11f0-a5f1-02b38fc4ba53/chats/pinned:0
+[  463738ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/4235fc1d-7384-11f0-a5f1-02b38fc4ba53/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[  463744ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/4235fc1d-7384-11f0-a5f1-02b38fc4ba53/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[  463763ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/users/settings/summary:0
+[  463764ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/non-payment/4235fc1d-7384-11f0-a5f1-02b38fc4ba53:0
+[  463764ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/crm/index:0
+[  463861ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  463930ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.qa.poli.digital/auth/activity:0
+[  463931ms] [WARNING] Erro ao enviar heartbeat: AxiosError: Request failed with status code 404
+    at nze (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:15855) @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  464051ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/broadcasting/auth:0
+[  464095ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.qa.poli.digital/auth/refresh-token:0
+[  464096ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at nze (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2243)
+    at async vRt (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:6917)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:8264
+    at async P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2147)
+    at async W9.getPanelCredits (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1938:552) @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  464096ms] [ERROR] AxiosError: Request failed with status code 401
+    at nze (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2243)
+    at async vRt (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:6917)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:8264
+    at async P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2147)
+    at async W9.getPanelCredits (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1938:552) @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  464100ms] [ERROR] [UserPreferencesService] Failed to get summary: Error: AxiosError: Request failed with status code 401
+    at https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:8231
+    at async P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2147)
+    at async kge.getSummary (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2251:64653)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2251:65354 @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  464100ms] [ERROR] [useUserPreferences] Error: Error: AxiosError: Request failed with status code 401
+    at https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:8231
+    at async P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2147)
+    at async kge.getSummary (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2251:64653)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2251:65354 @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  464101ms] [ERROR] Error: AxiosError: Request failed with status code 401
+    at https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:8231
+    at async P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2147)
+    at async Zvn.getOverdueAccounts (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2263:45555)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2589:5315 @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  464101ms] [ERROR] getCrmUserToken - Error on get crm user token: Error: AxiosError: Request failed with status code 401
+    at https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:8231
+    at async P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2147)
+    at async Sz.getUserToken (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2250:44292)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2250:44583 @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  464102ms] [ERROR] error ao buscar chats Error: AxiosError: Request failed with status code 401
+    at https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:8231
+    at async P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2147)
+    at async XRt (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1147:26220)
+    at async w (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:54:37980)
+    at async Object.u [as fn] (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:54:38287) @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  464289ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/balance/4235fc1d-7384-11f0-a5f1-02b38fc4ba53:0
+[  464483ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.qa.poli.digital/auth/refresh-token:0
+[  464484ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at nze (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2243)
+    at async vRt (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:6917)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:8264
+    at async P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2147)
+    at async W9.getPanelCredits (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1938:552) @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  464484ms] [ERROR] AxiosError: Request failed with status code 401
+    at nze (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2243)
+    at async vRt (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:6917)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:8264
+    at async P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2147)
+    at async W9.getPanelCredits (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1938:552) @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  464503ms] [INFO] WebSocket: Conexão finalizada @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  464944ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[  464944ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[  464997ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:76
+[  465034ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  465475ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  466092ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  466095ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  471373ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.qa.poli.digital/auth/token:0
+[  471375ms] [ERROR] Error login AuthService:  AxiosError: Request failed with status code 401
+    at nze (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2243)
+    at async $m.login (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1121:6187)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2251:63634
+    at async w (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2258:1483)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2186:56967 @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  471376ms] [ERROR] Error during authentication: AxiosError: Request failed with status code 401
+    at nze (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2243)
+    at async $m.login (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1121:6187)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2251:63634
+    at async w (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2258:1483)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2186:56967 @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  471377ms] [ERROR] AxiosError: Request failed with status code 401
+    at nze (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2243)
+    at async $m.login (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1121:6187)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2251:63634
+    at async w (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2258:1483)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2186:56967 @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  471377ms] [ERROR] Login failed: AxiosError: Request failed with status code 401
+    at nze (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2243)
+    at async $m.login (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1121:6187)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2251:63634
+    at async w (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2258:1483)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2186:56967 @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  476394ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  476901ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/crm/index:0
+[  476904ms] [ERROR] getCrmUserToken - Error on get crm user token: AxiosError: Request failed with status code 404
+    at nze (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2243)
+    at async Sz.getUserToken (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2250:44292)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2250:44583 @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  481583ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  481588ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[  481588ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69

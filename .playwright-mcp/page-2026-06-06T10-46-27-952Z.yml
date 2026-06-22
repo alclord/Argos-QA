@@ -1,0 +1,79 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=23c8638deadc2fe1cab3487c7d78d39c84f64b1f&toPath=https://app.poli.digital/home
+        - img [ref=e11]
+      - generic [ref=e12]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link [ref=e16] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e18]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=23c8638deadc2fe1cab3487c7d78d39c84f64b1f&toPath=https://app.poli.digital/settings/46667/chatbot
+              - img [ref=e30]
+          - listitem [ref=e33]:
+            - link [ref=e34] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e36]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=23c8638deadc2fe1cab3487c7d78d39c84f64b1f&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e41]
+          - listitem [ref=e44]:
+            - link [ref=e45] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=23c8638deadc2fe1cab3487c7d78d39c84f64b1f&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e47]
+          - listitem [ref=e50]:
+            - link [ref=e51] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=23c8638deadc2fe1cab3487c7d78d39c84f64b1f&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e53]
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - link [ref=e61] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e63]
+      - generic [ref=e66]:
+        - button "Consumo de créditos" [ref=e67] [cursor=pointer]:
+          - img [ref=e69]
+        - button "YA" [ref=e73] [cursor=pointer]:
+          - generic [ref=e79]: YA
+        - generic [ref=e82]: 3.5.347
+    - main [ref=e83]:
+      - main [ref=e84]:
+        - generic [ref=e86]:
+          - navigation "breadcrumb" [ref=e88]:
+            - link "Página inicial" [ref=e90] [cursor=pointer]:
+              - /url: /
+            - generic [ref=e91]:
+              - img [ref=e92]
+              - link "Configurações" [ref=e94] [cursor=pointer]:
+                - /url: /settings
+            - img [ref=e95]
+            - generic [ref=e97]: Canais
+          - generic [ref=e100]:
+            - generic [ref=e102]:
+              - textbox "Buscar canais..." [ref=e103]
+              - button [ref=e104] [cursor=pointer]:
+                - img [ref=e105]
+            - generic [ref=e108]:
+              - combobox [ref=e109] [cursor=pointer]:
+                - generic: Todos os tipos
+                - img [ref=e110]
+              - combobox [ref=e112] [cursor=pointer]:
+                - generic: Todas as situações
+                - img [ref=e113]
+              - combobox [ref=e115] [cursor=pointer]:
+                - generic: Todas as conexões
+                - img [ref=e116]
+              - button "Adicionar novo canal" [disabled]:
+                - img
+                - text: Adicionar novo canal
+  - region "Notifications (F8)":
+    - list

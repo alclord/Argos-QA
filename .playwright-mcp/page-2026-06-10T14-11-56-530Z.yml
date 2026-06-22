@@ -1,0 +1,220 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link [ref=e6] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e8]:
+          - listitem [ref=e9] [cursor=pointer]:
+            - generic "Pesquisar" [ref=e10]:
+              - generic [ref=e11]:
+                - img [ref=e12]
+                - generic: Pesquisar
+          - listitem
+          - listitem [ref=e14]:
+            - link "Página Inicial" [ref=e15] [cursor=pointer]:
+              - /url: https://homolog.qa.poli.digital/home
+              - generic [ref=e16]:
+                - img [ref=e17]
+                - generic: Página Inicial
+          - listitem [ref=e19]:
+            - link "Chat" [ref=e20] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/chat
+              - generic [ref=e21]:
+                - img [ref=e22]
+                - generic: Chat
+          - listitem [ref=e24]:
+            - link "Automações" [ref=e25] [cursor=pointer]:
+              - /url: https://homolog.qa.poli.digital/settings/46667/chatbot
+              - generic [ref=e26]:
+                - img [ref=e27]
+                - generic: Automações
+          - listitem [ref=e29]:
+            - link "Marketing" [ref=e30] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/marketing
+              - generic [ref=e31]:
+                - img [ref=e32]
+                - generic: Marketing
+          - listitem [ref=e34]:
+            - link "Relatórios" [ref=e35] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/relatorio
+              - generic [ref=e36]:
+                - img [ref=e37]
+                - generic: Relatórios
+          - listitem [ref=e39]:
+            - link "Configurações" [ref=e40] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/tools
+              - generic [ref=e41]:
+                - img [ref=e42]
+                - generic: Configurações
+          - listitem [ref=e44]:
+            - link "Administração" [ref=e45] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/admin
+              - generic [ref=e46]:
+                - img [ref=e47]
+                - generic: Administração
+        - generic [ref=e49]:
+          - listitem [ref=e50]:
+            - link "Notificação" [ref=e51] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e52]:
+                - img [ref=e53]
+                - generic: Notificação
+          - listitem [ref=e55]:
+            - link "Suporte" [ref=e56] [cursor=pointer]:
+              - /url: https://polichat.com.br/central-de-conhecimento/
+              - generic [ref=e57]:
+                - img [ref=e58]
+                - generic: Suporte
+          - listitem [ref=e61]:
+            - generic [ref=e64]:
+              - img "Yuri Alcantara" [ref=e66]
+              - generic: Yuri Alcantara
+          - listitem [ref=e68]:
+            - link " Recolher Menu" [ref=e69] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e70]:
+                - generic [ref=e71]: 
+                - generic: Recolher Menu
+          - listitem [ref=e72]:
+            - generic "versão" [ref=e73]:
+              - paragraph [ref=e75]: v2.18.466
+    - generic [ref=e77]:
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e80]: 
+          - generic [ref=e81]: Lista de usuários
+        - generic [ref=e82]:
+          - link "Voltar" [ref=e84] [cursor=pointer]:
+            - /url: https://homolog.qa.poli.digital/home
+            - generic [ref=e85]: 
+            - text: Voltar
+          - link " Carteira de clientes" [ref=e87] [cursor=pointer]:
+            - /url: https://homolog.qa.poli.digital/wallets/46667
+            - generic [ref=e88]: 
+            - text: Carteira de clientes
+          - generic [ref=e92]:
+            - textbox "Pesquisar Colaborador" [ref=e93]
+            - button "" [ref=e95] [cursor=pointer]:
+              - generic [ref=e96]: 
+        - separator [ref=e97]
+        - generic [ref=e98]:
+          - button "Adicionar usuário" [ref=e100] [cursor=pointer]:
+            - generic [ref=e101]: 
+            - text: Adicionar usuário
+          - link "Usuários Excluídos" [ref=e103] [cursor=pointer]:
+            - /url: https://homolog.qa.poli.digital/users/46667/deleted
+            - generic [ref=e104]: 
+            - text: Usuários Excluídos
+        - text:   
+      - generic [ref=e106]:
+        - text: 
+        - table [ref=e107]:
+          - rowgroup [ref=e108]:
+            - row "Usuário Email Cargos Canais Setores Criado em Ações" [ref=e109]:
+              - columnheader "Usuário" [ref=e110]
+              - columnheader "Email" [ref=e111]
+              - columnheader "Cargos" [ref=e112]
+              - columnheader "Canais" [ref=e113]
+              - columnheader "Setores" [ref=e114]
+              - columnheader "Criado em" [ref=e115]
+              - columnheader "Ações" [ref=e116]
+          - rowgroup [ref=e117]:
+            - row "Yuri Alcantara Supervisor Yuri Alcantara Supervisor yuri.alcantara@poli.digital Operador de chat Supervisor                                   TesteDoLineu 03/03/2026 14:12  " [ref=e118]:
+              - cell "Yuri Alcantara Supervisor Yuri Alcantara Supervisor" [ref=e119]:
+                - img "Yuri Alcantara Supervisor" [ref=e120]
+                - text: Yuri Alcantara Supervisor
+              - cell "yuri.alcantara@poli.digital" [ref=e122]
+              - cell "Operador de chat Supervisor" [ref=e123]:
+                - list [ref=e124]:
+                  - listitem [ref=e125]:
+                    - img "Operador de chat" [ref=e126]
+                  - listitem [ref=e127]:
+                    - img "Supervisor" [ref=e128]
+              - cell "                                 " [ref=e129]:
+                - list [ref=e130]:
+                  - listitem [ref=e131]:
+                    - generic "TestSup" [ref=e132]: 
+                  - listitem [ref=e133]:
+                    - generic "grelha-zapi" [ref=e134]: 
+                  - listitem [ref=e135]:
+                    - generic "[TESTE] TesteCypress62992548428" [ref=e136]: 
+                  - listitem [ref=e137]:
+                    - generic "[TESTE] TesteCypress62997603244" [ref=e138]: 
+                  - listitem [ref=e139]:
+                    - generic "Apenas QA" [ref=e140]: 
+                  - listitem [ref=e141]:
+                    - generic "Pv Teste" [ref=e142]: 
+                  - listitem [ref=e143]:
+                    - generic "teste360" [ref=e144]: 
+                  - listitem [ref=e145]:
+                    - generic "Cypress" [ref=e146]: 
+                  - listitem [ref=e147]:
+                    - generic "Automação QA" [ref=e148]: 
+                  - listitem [ref=e149]:
+                    - generic "Messenger Staging" [ref=e150]: 
+                  - listitem [ref=e151]:
+                    - generic "Meu Teste Favorito" [ref=e152]: 
+                  - listitem [ref=e153]:
+                    - generic "hml web-chat" [ref=e154]: 
+                  - listitem [ref=e155]:
+                    - generic "lineu" [ref=e156]: 
+                  - listitem [ref=e157]:
+                    - generic "Pv Teste" [ref=e158]: 
+                  - listitem [ref=e159]:
+                    - generic "alow teste" [ref=e160]: 
+                  - listitem [ref=e161]:
+                    - generic "pv teste 123" [ref=e162]: 
+                  - listitem [ref=e163]:
+                    - generic "pv" [ref=e164]: 
+                  - listitem [ref=e165]:
+                    - generic "Pv Teste" [ref=e166]: 
+                  - listitem [ref=e167]:
+                    - generic "Webchat 0302" [ref=e168]: 
+                  - listitem [ref=e169]:
+                    - generic "[TESTE] TesteCypress62999483927" [ref=e170]: 
+                  - listitem [ref=e171]:
+                    - generic "Automação QA Webchat" [ref=e172]: 
+                  - listitem [ref=e173]:
+                    - generic "Fake messenger" [ref=e174]: 
+                  - listitem [ref=e175]:
+                    - generic "Staging Messenger (Instagram)" [ref=e176]: 
+                  - listitem [ref=e177]:
+                    - generic "Page 101 (Instagram)" [ref=e178]: 
+                  - listitem [ref=e179]:
+                    - generic "Meu Teste Favorito (Instagram)" [ref=e180]: 
+                  - listitem [ref=e181]:
+                    - generic "WABA 0402" [ref=e182]: 
+                  - listitem [ref=e183]:
+                    - generic "WABA 0302" [ref=e184]: 
+                  - listitem [ref=e185]:
+                    - generic "WABA 2" [ref=e186]: 
+                  - listitem [ref=e187]:
+                    - generic "Waba Staging 2" [ref=e188]: 
+                  - listitem [ref=e189]:
+                    - generic "WABA QA" [ref=e190]: 
+                  - listitem [ref=e191]:
+                    - generic "WABA Staging" [ref=e192]: 
+                  - listitem [ref=e193]:
+                    - generic "WABA EXEMPLO" [ref=e194]: 
+                  - listitem [ref=e195]:
+                    - generic "WABA 20/01" [ref=e196]: 
+                  - listitem [ref=e197]:
+                    - generic "fghfghfghfg" [ref=e198]: 
+              - cell "TesteDoLineu" [ref=e199]:
+                - list [ref=e200]:
+                  - listitem [ref=e201]:
+                    - img "TesteDoLineu" [ref=e202]
+              - cell "03/03/2026 14:12" [ref=e203]
+              - cell " " [ref=e204]:
+                - list [ref=e205]:
+                  - listitem [ref=e206]:
+                    - link "" [ref=e207] [cursor=pointer]:
+                      - /url: https://homolog.qa.poli.digital/users/46667/101836/edit
+                      - generic [ref=e208]: 
+                  - listitem [ref=e209]:
+                    - generic [ref=e211] [cursor=pointer]: 
+  - text:    
+  - tooltip "Excluir" [ref=e212]:
+    - generic [ref=e214]: Excluir

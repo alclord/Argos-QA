@@ -1,0 +1,94 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=f8d6312a679ebf78fc78af6e918da918c7377893&toPath=https://app.poli.digital/home
+        - img [ref=e11]
+      - generic [ref=e12]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link [ref=e16] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e18]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=f8d6312a679ebf78fc78af6e918da918c7377893&toPath=https://app.poli.digital/settings/46667/chatbot
+              - img [ref=e30]
+          - listitem [ref=e33]:
+            - link [ref=e34] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e36]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=f8d6312a679ebf78fc78af6e918da918c7377893&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e41]
+          - listitem [ref=e44]:
+            - link [ref=e45] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=f8d6312a679ebf78fc78af6e918da918c7377893&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e47]
+        - list [ref=e52]:
+          - listitem [ref=e53]:
+            - link [ref=e55] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e57]
+      - generic [ref=e60]:
+        - button "Consumo de créditos" [ref=e61] [cursor=pointer]:
+          - img [ref=e63]
+        - button "OC" [ref=e67] [cursor=pointer]:
+          - generic [ref=e73]: OC
+        - generic [ref=e76]: 3.5.347
+    - main [ref=e77]:
+      - main [ref=e78]:
+        - generic [ref=e80]:
+          - navigation "breadcrumb" [ref=e82]:
+            - link "Página inicial" [ref=e84] [cursor=pointer]:
+              - /url: /
+            - img [ref=e85]
+            - generic [ref=e87]: Configurações gerais
+          - generic [ref=e89]:
+            - generic [ref=e90]:
+              - textbox "Buscar configuração..." [ref=e91]
+              - button [ref=e92] [cursor=pointer]:
+                - img [ref=e93]
+            - region "Atendimento" [ref=e96]:
+              - heading "Atendimento" [level=2] [ref=e97]
+              - generic [ref=e98]:
+                - link "Modelos Crie e gerencie modelos de mensagem para agilizar o atendimento." [ref=e99] [cursor=pointer]:
+                  - /url: /templates
+                  - img [ref=e101]
+                  - generic [ref=e106]:
+                    - generic [ref=e107]: Modelos
+                    - generic [ref=e108]: Crie e gerencie modelos de mensagem para agilizar o atendimento.
+                - link "Departamentos Estruture suas equipes e direcione os atendimentos." [ref=e109] [cursor=pointer]:
+                  - /url: /teams
+                  - img [ref=e111]
+                  - generic [ref=e113]:
+                    - generic [ref=e114]: Departamentos
+                    - generic [ref=e115]: Estruture suas equipes e direcione os atendimentos.
+                - link "Canais Conecte e configure os canais de atendimento da conta." [ref=e116] [cursor=pointer]:
+                  - /url: /channels
+                  - img [ref=e118]
+                  - generic [ref=e123]:
+                    - generic [ref=e124]: Canais
+                    - generic [ref=e125]: Conecte e configure os canais de atendimento da conta.
+            - region "Empresa" [ref=e126]:
+              - heading "Empresa" [level=2] [ref=e127]
+              - generic [ref=e128]:
+                - link "Empresa Atualize os dados e as informações da sua empresa." [ref=e129] [cursor=pointer]:
+                  - /url: /settings/company
+                  - img [ref=e131]
+                  - generic [ref=e134]:
+                    - generic [ref=e135]: Empresa
+                    - generic [ref=e136]: Atualize os dados e as informações da sua empresa.
+                - link "Permissões Controle o que cada perfil de usuário pode acessar." [ref=e137] [cursor=pointer]:
+                  - /url: /settings/permissions
+                  - img [ref=e139]
+                  - generic [ref=e141]:
+                    - generic [ref=e142]: Permissões
+                    - generic [ref=e143]: Controle o que cada perfil de usuário pode acessar.
+  - region "Notifications (F8)":
+    - list

@@ -1,0 +1,190 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https://app.poli.digital/home
+        - img [ref=e11]
+        - generic [ref=e1014]: Dashboard
+      - generic [ref=e12]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link "Chats" [ref=e1015] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e18]
+              - generic [ref=e1016]: Chats
+          - listitem [ref=e21]:
+            - link "Contatos" [ref=e1017] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e24]
+              - generic [ref=e1018]: Contatos
+          - listitem [ref=e27]:
+            - link "Automação" [ref=e1019] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e30]
+              - generic [ref=e1020]: Automação
+          - listitem [ref=e33]:
+            - link "Flow" [ref=e1021] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e36]
+              - generic [ref=e1022]: Flow
+          - listitem [ref=e38]:
+            - link "Marketing" [ref=e1023] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e41]
+              - generic [ref=e1024]: Marketing
+          - listitem [ref=e44]:
+            - link "Pay" [ref=e1025] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e47]
+              - generic [ref=e1026]: Pay
+          - listitem [ref=e50]:
+            - link "Relatório" [ref=e1027] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e53]
+              - generic [ref=e1028]: Relatório
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - generic [ref=e60]:
+              - link "Configurações" [active] [ref=e1029] [cursor=pointer]:
+                - /url: /settings
+                - img [ref=e63]
+                - generic [ref=e1030]: Configurações
+              - button "Configurações" [ref=e1032] [cursor=pointer]:
+                - img [ref=e1033]
+      - generic [ref=e66]:
+        - button "Consumo de créditos" [ref=e67] [cursor=pointer]:
+          - img [ref=e69]
+          - generic [ref=e1035]:
+            - generic [ref=e1036]: Créditos disponíveis
+            - generic [ref=e1037]: 106.980,4
+          - img [ref=e1038]
+        - button "YA Yuri Alcantara Poli teste" [ref=e1040] [cursor=pointer]:
+          - generic [ref=e79]: YA
+          - generic [ref=e1041]: Yuri Alcantara Poli teste
+        - generic [ref=e82]: 3.5.359-DEV4-4405
+    - main [ref=e83]:
+      - main [ref=e84]:
+        - generic [ref=e1043]:
+          - navigation "breadcrumb" [ref=e1045]:
+            - link "Página inicial" [ref=e1047] [cursor=pointer]:
+              - /url: /
+            - img [ref=e1048]
+            - generic [ref=e1050]: Configurações gerais
+          - generic [ref=e1052]:
+            - generic [ref=e1053]:
+              - textbox "Buscar configuração..." [ref=e1054]
+              - button "Pesquisar" [ref=e1055] [cursor=pointer]:
+                - img [ref=e1056]
+            - region "Atendimento" [ref=e1059]:
+              - heading "Atendimento" [level=2] [ref=e1060]
+              - generic [ref=e1061]:
+                - link "Modelos Crie e gerencie modelos de mensagem para agilizar o atendimento." [ref=e1063] [cursor=pointer]:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https%3A%2F%2Fapp-spa.poli.digital%2Ftools%2Fmessages-builder
+                  - img [ref=e1065]
+                  - generic [ref=e1070]:
+                    - generic [ref=e1071]: Modelos
+                    - generic [ref=e1072]: Crie e gerencie modelos de mensagem para agilizar o atendimento.
+                - link "Etiquetas Organize contatos e conversas com etiquetas personalizadas." [ref=e1074] [cursor=pointer]:
+                  - /url: /tags
+                  - img [ref=e1076]
+                  - generic [ref=e1080]:
+                    - generic [ref=e1081]: Etiquetas
+                    - generic [ref=e1082]: Organize contatos e conversas com etiquetas personalizadas.
+                - link "Departamentos Estruture suas equipes e direcione os atendimentos." [ref=e1084] [cursor=pointer]:
+                  - /url: /teams
+                  - img [ref=e1086]
+                  - generic [ref=e1088]:
+                    - generic [ref=e1089]: Departamentos
+                    - generic [ref=e1090]: Estruture suas equipes e direcione os atendimentos.
+                - link "Canais Conecte e configure os canais de atendimento da conta." [ref=e1092] [cursor=pointer]:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https%3A%2F%2Fapp-spa.poli.digital%2Ftools%2Fchannels%2Flist
+                  - img [ref=e1094]
+                  - generic [ref=e1099]:
+                    - generic [ref=e1100]: Canais
+                    - generic [ref=e1101]: Conecte e configure os canais de atendimento da conta.
+                - link "Distribuição Defina como as conversas são distribuídas entre os atendentes." [ref=e1103] [cursor=pointer]:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https%3A%2F%2Fapp.poli.digital%2Fdistribution%2F1
+                  - img [ref=e1105]
+                  - generic [ref=e1110]:
+                    - generic [ref=e1111]: Distribuição
+                    - generic [ref=e1112]: Defina como as conversas são distribuídas entre os atendentes.
+            - region "Empresa" [ref=e1113]:
+              - heading "Empresa" [level=2] [ref=e1114]
+              - generic [ref=e1115]:
+                - link "Empresa Atualize os dados e as informações da sua empresa." [ref=e1117] [cursor=pointer]:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https%3A%2F%2Fapp.poli.digital%2Fdados_empresa%2F1
+                  - img [ref=e1119]
+                  - generic [ref=e1122]:
+                    - generic [ref=e1123]: Empresa
+                    - generic [ref=e1124]: Atualize os dados e as informações da sua empresa.
+                - link "Usuários Gerencie os usuários e seus acessos à plataforma." [ref=e1126] [cursor=pointer]:
+                  - /url: /users
+                  - img [ref=e1128]
+                  - generic [ref=e1131]:
+                    - generic [ref=e1132]: Usuários
+                    - generic [ref=e1133]: Gerencie os usuários e seus acessos à plataforma.
+                - link "Integrações Conecte aplicativos e serviços externos à sua conta." [ref=e1135] [cursor=pointer]:
+                  - /url: /applications
+                  - img [ref=e1137]
+                  - generic [ref=e1144]:
+                    - generic [ref=e1145]: Integrações
+                    - generic [ref=e1146]: Conecte aplicativos e serviços externos à sua conta.
+                - link "Inteligência artificial Configure os recursos de IA do atendimento." [ref=e1148] [cursor=pointer]:
+                  - /url: /settings/ai
+                  - img [ref=e1150]
+                  - generic [ref=e1152]:
+                    - generic [ref=e1153]: Inteligência artificial
+                    - generic [ref=e1154]: Configure os recursos de IA do atendimento.
+                - link "Assinatura Acompanhe seu plano, faturas e forma de pagamento." [ref=e1156] [cursor=pointer]:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https%3A%2F%2Fapp.poli.digital%2Fdados_plano%2F1
+                  - img [ref=e1158]
+                  - generic [ref=e1160]:
+                    - generic [ref=e1161]: Assinatura
+                    - generic [ref=e1162]: Acompanhe seu plano, faturas e forma de pagamento.
+                - link "Carteiras Gerencie as carteiras de atendimento da conta." [ref=e1164] [cursor=pointer]:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https%3A%2F%2Fapp.poli.digital%2Fwallets%2F1
+                  - img [ref=e1166]
+                  - generic [ref=e1169]:
+                    - generic [ref=e1170]: Carteiras
+                    - generic [ref=e1171]: Gerencie as carteiras de atendimento da conta.
+                - link "Avaliações Configure as avaliações de atendimento." [ref=e1173] [cursor=pointer]:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https%3A%2F%2Fapp.poli.digital%2Fsettings%2F1%2Frateconfig
+                  - img [ref=e1175]
+                  - generic [ref=e1177]:
+                    - generic [ref=e1178]: Avaliações
+                    - generic [ref=e1179]: Configure as avaliações de atendimento.
+                - link "Protocolos Acompanhe os protocolos de atendimento." [ref=e1181] [cursor=pointer]:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https%3A%2F%2Fapp.poli.digital%2Ftickets%2F1
+                  - img [ref=e1183]
+                  - generic [ref=e1185]:
+                    - generic [ref=e1186]: Protocolos
+                    - generic [ref=e1187]: Acompanhe os protocolos de atendimento.
+                - button "Widget para site Instale o widget de atendimento no seu site." [ref=e1189] [cursor=pointer]:
+                  - img [ref=e1191]
+                  - generic [ref=e1194]:
+                    - generic [ref=e1195]: Widget para site
+                    - generic [ref=e1196]: Instale o widget de atendimento no seu site.
+                - generic [ref=e1197]:
+                  - button "Segurança Defina as políticas de segurança e acesso da conta." [disabled]:
+                    - generic:
+                      - img
+                    - generic:
+                      - generic: Segurança
+                      - generic: Defina as políticas de segurança e acesso da conta.
+                  - generic: Em breve
+                - generic [ref=e1198]:
+                  - button "Permissões Controle o que cada perfil de usuário pode acessar." [disabled]:
+                    - generic:
+                      - img
+                    - generic:
+                      - generic: Permissões
+                      - generic: Controle o que cada perfil de usuário pode acessar.
+                  - generic: Em breve
+                - link "Ações críticas Audite e gerencie ações sensíveis realizadas na conta." [ref=e1200] [cursor=pointer]:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https%3A%2F%2Fapp.poli.digital%2Factions%2F1
+                  - img [ref=e1202]
+                  - generic [ref=e1205]:
+                    - generic [ref=e1206]: Ações críticas
+                    - generic [ref=e1207]: Audite e gerencie ações sensíveis realizadas na conta.
+  - region "Notifications (F8)":
+    - list

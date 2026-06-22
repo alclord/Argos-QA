@@ -1,0 +1,18 @@
+[     438ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/logout:0
+[     480ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1
+[    1397ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app-spa.qa.poli.digital/login:0
+[    2824ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/login:0
+[    3101ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/login:0
+[   10796ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.qa.poli.digital/login:0
+[   33373ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://heimdall.qa.poli.digital/auth/token:0
+[   33383ms] [ERROR] Erro ao fazer login com o Heimdall rd @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1
+[   33387ms] [ERROR] login error Error: Token not received!
+    at https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:3377425
+    at f (https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:1825709)
+    at Generator.<anonymous> (https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:1827061)
+    at Generator.next (https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:1826138)
+    at d (https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:2816545)
+    at l (https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:2816879) @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1
+[   33501ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app-spa.qa.poli.digital/login:0
+[   66983ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.qa.poli.digital/auth/foundation/allowed:0
+[   66984ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1

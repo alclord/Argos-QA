@@ -1,0 +1,19 @@
+﻿Módulo;Cluster (Problema);Serviço(s) Suspeito(s);Confiança;Evidência;Cards SM;Qtd Cards
+Chat / Mensagens;Ícone de relógio / ACK preso permanentemente;meta-whatsapp-cloud-api > foundation-spa;Alta;Sentry 439K ENABLE_ACK_LOG + DEV4-4078 em dev;SM-7805 SM-7803 SM-7797;3
+Chat / Mensagens;Mensagens chegando com atraso 20-30 min;polichat-web-app > dispatch-service;Média;KB pipeline legado + SM N2;SM-5430 SM-5910;2
+Chat / Mensagens;Mensagem não entrega;polichat-web-app > channel-customer;Média;Sentry: Mensagem não encontrada CloudApiWebHook 8.918x;SM-7867 SM-7859 SM-7848 SM-7797 SM-7872;5
+Chat / Mensagens;401 em endpoint mensagens agendadas;foundation-spa > foundation-api;Alta;Sentry omnispa 11.878x 3.270 usuários;—;0
+Distribuição / Filas;Chats sem atendente / bot não distribui;dispatch-service > polichat-web-app;Alta;Sentry dispatch erros 2.600+2.160 + KB race condition Redis;SM-5918 SM-5911 SM-5016 SM-3958 SM-5716;5
+Distribuição / Filas;Lentidão 8-10 min na distribuição;dispatch-service;Média;KB: Redis lock timeout alto volume;SM-7825;1
+Distribuição / Filas;Redirecionamento automático falha;dispatch-service > automatic-actions;Média;Sentry automatic-actions TypeError 1.489x;SM-2099 SM-2035;2
+Integrações CRM;CRM token expirado/inválido 401 em massa;foundation-api > polichat-web-app (CRM client);Alta;Sentry 17.7K+10.9K erros 401 foundation-api;SM-5098;1
+Integrações CRM;Contato duplicado ao sincronizar;foundation-api;Alta;Sentry 16.473 duplicatas;—;0
+Canais / WhatsApp;ACK=0 em contatos @lid;waba-webhook > polichat-web-app;Alta;Sentry ZAPI 1.034K erros null property;SM-5831;1
+Canais / WhatsApp;Template não envia;channel-customer > waba-webhook;Média;Sentry template 10.991x;SM-7841 SM-5300;2
+Canais / WhatsApp;Leads Instagram não chegam;polichat-web-app (FacebookWebHook);Alta;Sentry FacebookWebHook 12.120x 706 users;SM-7821;1
+Canais / WhatsApp;Canal específico não envia;channel-customer > waba-webhook;Média;KB responsabilidade channel-customer;SM-5181;1
+Busca / Contatos;Busca retorna vazio para registros existentes;contacts-service > elasticsearch;Especulativa;Apenas sintoma sem Sentry;SM-5912 SM-7833 SM-7846;3
+Permissões / Roles;Furo de privacidade operador acessa chats alheios;foundation-api (Gates/Policies);Média;KB: Gate is-user sem verify assigned_user_id;SM-3211;1
+Permissões / Roles;Filtro departamento incorreto para Supervisor;foundation-api (permissões);Média;KB: hierarquia de roles;SM-5905;1
+Upload / Mídia;Áudio não reproduz na plataforma web;polichat-spa > spa-backend;Média;SM N2 + N1 consistentes;SM-5880 SM-7816;2
+Upload / Mídia;PDF não envia;polichat-web-app;Especulativa;Apenas sintoma;SM-2091;1

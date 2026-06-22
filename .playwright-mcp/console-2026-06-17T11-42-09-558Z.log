@@ -1,0 +1,12 @@
+[     568ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/tools/channels/list:0
+[     615ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1
+[    1275ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/tools/channels/list:0
+[    1295ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/tools/channels/list:0
+[   65396ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://ag.qa.poli.digital/channel-customer/:0
+[  122207ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://ag.qa.poli.digital/channel-customer/:0
+[  122391ms] [ERROR] Access to fetch at 'https://ag.qa.poli.digital/channel-customer/' from origin 'https://app-spa.qa.poli.digital' has been blocked by CORS policy: Method OPTIONS is not allowed by Access-Control-Allow-Methods in preflight response. @ https://app-spa.qa.poli.digital/tools/channels/list:0
+[  122391ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://ag.qa.poli.digital/channel-customer/:0
+[  172489ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://ag.qa.poli.digital/channel-customer/:0
+[  172842ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://ag.qa.poli.digital/channel-customer/?customer_id=46667:0
+[  259592ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://ag.qa.poli.digital/channel-customer/:0
+[  259772ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://ag.qa.poli.digital/channel-customer/?customer_id=46667:0

@@ -1,0 +1,24 @@
+- generic [ref=e11]:
+  - generic [ref=e12]:
+    - link [ref=e13] [cursor=pointer]:
+      - /url: /login
+    - generic [ref=e15]: Seja bem-vindo!
+  - generic [ref=e39]:
+    - generic [ref=e40]:
+      - generic [ref=e42]: 
+      - generic [ref=e44]: "E-mail:"
+    - textbox "user@poli.digital" [ref=e45]: yuri.castro@poli.digital
+    - generic [ref=e46]:
+      - generic [ref=e48]: 
+      - generic [ref=e50]: "Senha:"
+    - generic [ref=e52]:
+      - textbox [ref=e53]
+      - generic [ref=e54] [cursor=pointer]:
+        - text: Mostrar
+        - generic [ref=e55]: 
+    - generic [ref=e56]: Erro ao tentar logar
+    - link "Esqueci minha senha" [ref=e58] [cursor=pointer]:
+      - /url: /recover-password
+    - button "Login" [ref=e60] [cursor=pointer]
+  - link "Confira nossa politica de segurança e privacidade" [ref=e38] [cursor=pointer]:
+    - /url: https://polichat.com.br/privacidade-e-seguranca/

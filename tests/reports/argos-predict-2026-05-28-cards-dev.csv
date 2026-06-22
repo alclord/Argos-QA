@@ -1,0 +1,40 @@
+﻿ID;Título;Status;Prioridade;Módulo(s);Classificação;Tipo;Assignee
+DEV4-4078;[Nova Interface e Legado] Status de envio não atualiza (ícone ⏳ permanente);Desenvolvimento;Highest;Chat / Mensagens;Corretivo;Em Desenvolvimento;Rafael Gratão Rodrigues
+DEV4-4023;Estrutura base do PLBV (pré-requisitos estados e ciclo de vida da verificação);Desenvolvimento;High;Canais;Feature em área instável;Em Desenvolvimento;Guilherme Cruz
+DEV4-4229;Mensagens agendadas — Filtros edição e criação de agendamento;Desenvolvimento;Medium;Chat / Mensagens;Feature em área instável;Em Desenvolvimento;Marina Santos
+DEV4-4158;Showcase — Galeria de componentes do Design System Poli;Desenvolvimento;Medium;Nova Interface;Feature em área estável;Em Desenvolvimento;Gabriel Henrique
+DEV4-4164;[Nova Interface] Sugestão de envio de template Utility quando Marketing falhar;Aguardando Handoff;Highest;Canais;Feature em área instável;Backlog;—
+DEV4-4166;Nova Estrutura de Páginas na Nova Interface da Poli;Pronto para desenvolvimento;High;Nova Interface;Feature em área instável;Backlog;—
+DEV4-4136;Autenticação de Dois Fatores (2FA) no Login;Aguardando Handoff;High;Autenticação;Feature em área estável;Backlog;—
+DEV4-4055;Suporte a contatos sem telefone (Ghost Contacts) e preservação de histórico;Aguardando Handoff;High;Canais / Contatos;Feature em área instável;Backlog;—
+DEV4-4030;Ingestão e processamento de mensagens via Username (BSUID vs Phone Number);Aguardando Handoff;High;Canais;Feature em área instável;Backlog;—
+DEV4-4032;Estrutura de identidade baseada em BSUID;Aguardando Handoff;High;Canais;Feature em área instável;Backlog;—
+DEV4-4268;Exibir comentários de Status do WhatsApp de forma diferenciada no chat;Aguardando Cenários de Teste;Medium;Canais;Feature em área instável;Backlog;—
+DEV4-4267;Configurações: Exportação de Conversas (Nova interface);Aguardando Cenários de Teste;Medium;Nova Interface;Feature em área instável;Backlog;—
+DEV4-4225;Configurações: Ações críticas (Nova interface);Aguardando Cenários de Teste;Medium;Nova Interface;Feature em área instável;Backlog;—
+DEV4-4266;Notas Fiscais (Nova interface);Aguardando Cenários de Teste;Medium;Configurações;Feature em área estável;Backlog;—
+DEV4-4257;Faturas e Formas de Pagamento (Nova interface);Aguardando Cenários de Teste;Medium;Configurações;Feature em área estável;Backlog;—
+DEV4-4256;Dados do Plano (Nova interface);Aguardando Cenários de Teste;Medium;Configurações;Feature em área estável;Backlog;—
+DEV4-4224;Dados Cadastrais (Nova interface);Aguardando Cenários de Teste;Medium;Configurações;Feature em área estável;Backlog;—
+DEV4-4202;Novas contas indexadas na Nova Interface por padrão;Aguardando Handoff;Medium;Nova Interface;Feature em área instável;Backlog;—
+DEV4-3446;[Sentinela] Fechamento e redirecionamento automático de chats por inatividade;Aguardando Handoff;Medium;Distribuição / Automação;Feature em área instável;Backlog;—
+DEV4-4104;[App] Evolução do Aplicativo;Pronto para desenvolvimento;Medium;App;Feature em área estável;Backlog;—
+DEV4-4197;Migração da tela de Créditos (Assinaturas) para Nova Interface;Aguardando Cenários de Teste;Medium;Configurações;Feature em área estável;Backlog;—
+DEV4-4227;Remover filtro "Cliente aguardando" de produção — baixa adoção no piloto;Pronto para desenvolvimento;Medium;Chat / Interface;Corretivo;Backlog;—
+DEV4-4149;Construção do 2FA;Pronto para desenvolvimento;Medium;Autenticação;Feature em área estável;Backlog;—
+DEV4-4003;Tela de Gestão de Chats para Gestor e Supervisor;Pronto para desenvolvimento;Medium;Distribuição / Filas;Feature em área instável;Backlog;—
+DEV4-4148;2FA via Aplicativo Autenticador (TOTP) no Login;Pronto para desenvolvimento;Medium;Autenticação;Feature em área estável;Backlog;—
+DEV4-4147;2FA via E-mail no Login;Pronto para desenvolvimento;Medium;Autenticação;Feature em área estável;Backlog;—
+DEV4-4145;2FA via WhatsApp no Login;Pronto para desenvolvimento;Medium;Autenticação;Feature em área estável;Backlog;—
+DEV4-4154;Corrigir placeholder de anotações;Pronto para desenvolvimento;Medium;Chat / Interface;Corretivo;Backlog;—
+DEV4-4087;Detecção de mudança de categoria de template pela Meta;Aguardando Handoff;Medium;Canais;Feature em área instável;Backlog;—
+DEV4-4188;Criar evento Atendimento finalizado para API;Aguardando Handoff;Medium;Chat / Mensagens;Feature em área instável;Backlog;—
+DEV4-4198;Atualizar Embedded Signup para v4.0;Aguardando Handoff;Medium;Canais;Feature em área instável;Backlog;—
+DEV4-4031;Desbloqueio e bloqueio automático de recursos baseado em status PLBV;Aguardando Handoff;Medium;Canais;Feature em área instável;Backlog;—
+DEV4-4040;Sincronização de status de verificação via webhooks da Meta;Aguardando Handoff;Medium;Canais;Feature em área instável;Backlog;—
+DEV4-4044;Integração PLBV com a Meta (self-certify API);Aguardando Handoff;Medium;Canais;Feature em área instável;Backlog;—
+DEV4-4043;Fluxo interno de compliance para análise aprovação e rejeição;Aguardando Handoff;Medium;Canais;Feature em área instável;Backlog;—
+DEV4-4024;Fluxo de submissão e acompanhamento da verificação de negócio;Aguardando Handoff;Medium;Canais;Feature em área instável;Backlog;—
+DEV4-4046;Integração de identidade por Username com CRM e campanhas;Aguardando Handoff;Medium;CRM / Canais;Feature em área instável;Backlog;—
+DEV4-4045;Consolidação e merge de identidade (BSUID → Phone Number);Aguardando Handoff;Medium;Canais;Feature em área instável;Backlog;—
+DEV4-4053;Fluxo nativo de Request Phone Number;Aguardando Handoff;Medium;Canais;Feature em área instável;Backlog;—

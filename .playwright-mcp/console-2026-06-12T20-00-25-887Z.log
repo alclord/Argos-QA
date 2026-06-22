@@ -1,0 +1,70 @@
+[    9538ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:101
+[    9538ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:101
+[    9688ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:76
+[    9946ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at cP (https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:1108:280)
+    at E2.$Z (https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:1108:317)
+    at async E2.request (https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:1108:2138)
+    at async Ayt (https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:1142:26115)
+    at async C (https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:54:38122)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:54:38429) @ https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:69
+[   10274ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:69
+[   10489ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/contacts/9bb49c4f-2c88-4a7f-84bb-38074c239b4b?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[   10490ms] [ERROR] AxiosError: Request failed with status code 403
+    at W6e (https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:1106:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:1106:15705) @ https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:69
+[  235271ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/api/v1/cart/send:0
+[  251445ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/api/v1/cart/send:0
+[  251814ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/cart/send:0
+[  252190ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/api/v3/cart/send:0
+[  252567ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/api/v1/orders:0
+[  252965ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/orders:0
+[  253333ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/api/v1/commerce/orders:0
+[  253718ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/api/v1/polipay/orders:0
+[  254092ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/chat-commerce/orders:0
+[  728795ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at cP (https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:1108:280)
+    at E2.$Z (https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:1108:317)
+    at async E2.request (https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:1108:2138)
+    at async Ayt (https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:1142:26115)
+    at async C (https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:54:38122)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:54:38429) @ https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:69
+[  729036ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  729040ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      2
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:69
+[  729041ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:69
+[  730067ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  730070ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      4
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:69
+[  730071ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-CLHaWMTy.js:69
+[  734090ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/users?per_page=100&page=1&name=&include=status,email,attributes,teams&order=name:0

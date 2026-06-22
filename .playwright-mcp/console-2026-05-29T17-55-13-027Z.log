@@ -1,0 +1,10 @@
+[     734ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[     735ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:101
+[     775ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:76
+[    1301ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[    1377ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CXHWts-2.js:69
+[    2615ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[    4856ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[    9085ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   64809ms] [ERROR] Access to fetch at 'https://sentry.poli.digital/api/20/envelope/?sentry_version=7&sentry_key=45d27e79e794b3e254ec8212c0ad0250&sentry_client=sentry.javascript.react%2F9.47.1' from origin 'https://spa-canary.poli.digital' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://spa-canary.poli.digital/templates:0
+[   64809ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://sentry.poli.digital/api/20/envelope/?sentry_version=7&sentry_key=45d27e79e794b3e254ec8212c0ad0250&sentry_client=sentry.javascript.react%2F9.47.1:0

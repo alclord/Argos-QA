@@ -1,0 +1,87 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: 🔮
+      - generic [ref=e5]:
+        - generic [ref=e6]: Argos Predict
+        - generic [ref=e7]: QA Risk Intelligence
+    - generic [ref=e20]:
+      - generic [ref=e21]: 1 / 11
+      - button "←" [ref=e22] [cursor=pointer]
+      - button "→" [ref=e23] [cursor=pointer]
+  - generic [ref=e24]:
+    - generic [ref=e26]:
+      - generic [ref=e27]: ⚠️ 3 áreas críticas · 47 bugs confirmados pelo suporte · 5 serviços em alerta
+      - generic [ref=e28]: Qualidade · Risco · Produto
+      - heading "QA Risk Intelligence" [level=1] [ref=e29]:
+        - text: QA Risk
+        - text: Intelligence
+      - paragraph [ref=e31]:
+        - text: "Mapa de risco semanal baseado em sinais reais:"
+        - text: reclamações de clientes, erros em produção e atividade de código.
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - text: Data
+          - generic [ref=e34]: 28 de Maio de 2026
+        - generic [ref=e35]:
+          - text: Janela
+          - generic [ref=e36]: 14 dias
+    - generic:
+      - generic: Visão Geral
+      - heading "O que está acontecendo esta semana" [level=2]
+    - generic:
+      - generic: Mapa de Risco
+      - heading "Onde estão os problemas" [level=2]
+      - paragraph: Score = reclamações de clientes + erros em produção + atividade de código. Quanto maior, mais urgente.
+    - generic:
+      - generic: Causa Raiz
+      - heading "Quais serviços estão causando os problemas" [level=2]
+      - paragraph: Para cada área com problemas, identificamos qual sistema é o mais provável responsável.
+    - generic:
+      - generic: Cobertura
+      - heading "O dev está trabalhando nas áreas certas?" [level=2]
+      - paragraph: "Gráfico de aranha: quanto maior a área vermelha vs verde, maior o desalinhamento entre o problema e a atenção do dev."
+      - generic:
+        - generic:
+          - generic:
+            - generic: Pressão dos clientes
+            - generic: Atenção do dev
+        - generic:
+          - generic:
+            - generic:
+              - generic: Módulo
+              - generic: Clientes
+              - generic: Dev
+              - generic: Zona
+          - generic: ⚠️ 5 áreas negligenciadas. A área vermelha do radar é muito maior que a verde — o dev está em áreas de baixa pressão de clientes enquanto os bugs críticos acumulam.
+          - generic: "💡 Como ler o gráfico: cada eixo é um módulo. Quando a linha vermelha (problema) fica bem fora da linha verde (atenção), há um desalinhamento — esse módulo está sendo ignorado pelo dev."
+    - generic:
+      - generic: Zoom nos Serviços
+      - heading "Quem está com problema — e quem o dev está tocando?" [level=2]
+      - paragraph: Cada eixo é um serviço. Quanto maior a área vermelha, mais bugs. Quanto maior a verde, mais ativo o dev. Azul tracejado = o que está planejado.
+      - generic:
+        - generic:
+          - generic:
+            - generic: Bugs confirmados
+            - generic: Dev ativo agora
+            - generic: Planejado (backlog)
+    - generic:
+      - generic: Risco Imediato
+      - heading "💣 O que pode explodir esta semana" [level=2]
+      - paragraph: Cenários onde uma decisão errada de deploy pode transformar um problema controlado em uma crise.
+    - generic:
+      - generic: Próximos Passos
+      - heading "O que precisa ser feito agora" [level=2]
+      - generic:
+        - table:
+          - rowgroup:
+            - row "Prioridade Área Ação Prazo":
+              - columnheader "Prioridade"
+              - columnheader "Área"
+              - columnheader "Ação"
+              - columnheader "Prazo"
+          - rowgroup
+      - generic: 💡 Use ← → para navegar entre os slides · F = tela cheia · P = imprimir / exportar PDF
+  - contentinfo [ref=e37]:
+    - generic [ref=e38]: Argos Predict · 28 de Maio de 2026 · 14 dias
+    - generic [ref=e39]: Gerado por Argos Predict · Atualizado semanalmente

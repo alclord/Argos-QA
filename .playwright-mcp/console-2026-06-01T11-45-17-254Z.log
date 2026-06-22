@@ -1,0 +1,148 @@
+[    1781ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:101
+[    1783ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:101
+[    2031ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:76
+[    5938ms] [WARNING] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: WebSocket is closed before the connection is established. @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1007
+[    8868ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at dS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Gz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Lz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:100)
+    at iB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:742)
+    at lB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:648:183)
+    at vD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:857:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65r2:681:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65r2h1:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:495
+    at r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+[    8873ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[   99460ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[  100336ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users:0
+[  100336ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users:0
+[  341264ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[  343019ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1064176ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1079801ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1082060ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/profile:0
+[ 1082062ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/profile:0
+[ 1087612ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://www.google-analytics.com/g/collect?v=2&tid=G-EPZWL6H9X8&gtm=45je65r2v9226758928za20gzb846319599zd846319599&_p=1780314317953&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAAQ&ae=a&are=1&cid=1345723152.1779910388&frm=0&pscdl=noapi&rcb=8&sr=1366x768&uaa=x86&uab=64&uafvl=Chromium%3B149.0.7827.3%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0.0&uaw=0&ul=pt-br&_s=4&tag_exp=0~115616986~115938465~115938468~119027224~119034491~119064590&dl=https%3A%2F%2Fspa-canary.poli.digital%2Fprofile&dr=https%3A%2F%2Fspa-canary.poli.digital%2Fusers%3Fsearch%3Dyuri&sid=1780313984&sct=10&seg=1&dt=Poli%20%7C%20Meu%20perfil&en=page_view&_et=25431&tfd=1087428:0
+[ 1094036ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:101
+[ 1094036ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:101
+[ 1094187ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:76
+[ 1094818ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1094829ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/profile:0
+[ 1094829ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/profile:0
+[ 1095007ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://ad.doubleclick.net/ccm/s/collect?auid=317096333.1779910388&gtm=45He65r2v846319599za200zd846319599xea:0
+[ 1095764ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at dS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Gz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Lz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:100)
+    at iB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:742)
+    at lB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:648:183)
+    at vD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65r2:681:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:857:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65r2:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:495
+    at r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+[ 1114343ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1118036ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1132883ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:101
+[ 1132883ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:101
+[ 1132957ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:76
+[ 1133778ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1134299ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/profile:0
+[ 1134299ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/profile:0
+[ 1134783ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at dS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.zq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Gz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Lz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:100)
+    at iB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:742)
+    at lB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:648:183)
+    at vD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65r2:681:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:857:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65r2:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:495
+    at r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+[ 1248953ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1250031ms] [INFO] WebSocket: Conexão finalizada @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1250110ms] [WARNING] Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component. @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1250110ms] [WARNING] Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component. @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1250211ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1250318ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/users/settings/language:0
+[ 1250321ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/users/9b923395-84e2-4063-81d7-359a828bc66d?include=status,status_of_service,email,attributes,roles,permissions,user_permissions,active_account,accounts,account_channels,teams,addresses,metadata,notifications_per_user,edit_contacts,blocked_redirect,change_name,supervisor_view_no_assignment,bot,trigger,picture:0
+[ 1251097ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:101
+[ 1251097ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:101
+[ 1251154ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:76
+[ 1251184ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1251671ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1256513ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1257804ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at s8 (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:280)
+    at lx.lY (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:317)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1261874ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[ 1263546ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/users/b59da428-26e6-11f1-9d75-06799772b1cd?include=status,status_of_service,email,attributes,roles,permissions,user_permissions,active_account,accounts,account_channels,teams,addresses,metadata,notifications_per_user,edit_contacts,blocked_redirect,change_name,supervisor_view_no_assignment,bot,trigger,picture:0
+[ 1264741ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/users/b59da428-26e6-11f1-9d75-06799772b1cd?include=status,status_of_service,email,attributes,roles,permissions,user_permissions,active_account,accounts,account_channels,teams,addresses,metadata,notifications_per_user,edit_contacts,blocked_redirect,change_name,supervisor_view_no_assignment,bot,trigger,picture:0
+[ 1266935ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/users/b59da428-26e6-11f1-9d75-06799772b1cd?include=status,status_of_service,email,attributes,roles,permissions,user_permissions,active_account,accounts,account_channels,teams,addresses,metadata,notifications_per_user,edit_contacts,blocked_redirect,change_name,supervisor_view_no_assignment,bot,trigger,picture:0
+[ 1271146ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/users/b59da428-26e6-11f1-9d75-06799772b1cd?include=status,status_of_service,email,attributes,roles,permissions,user_permissions,active_account,accounts,account_channels,teams,addresses,metadata,notifications_per_user,edit_contacts,blocked_redirect,change_name,supervisor_view_no_assignment,bot,trigger,picture:0

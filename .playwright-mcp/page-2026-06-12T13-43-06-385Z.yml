@@ -1,0 +1,28 @@
+- generic [ref=e2]:
+  - generic [ref=e5]:
+    - button [ref=e7] [cursor=pointer]:
+      - img [ref=e8]
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - img "Poli" [ref=e12]
+        - heading "Seja bem-vindo!" [level=1] [ref=e13]
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - img [ref=e17]
+            - generic [ref=e20]: Email
+            - textbox "nome@exemplo.com" [active] [ref=e22]: abc@
+          - generic [ref=e24]:
+            - img [ref=e25]
+            - generic [ref=e29]: Senha
+            - generic [ref=e31]:
+              - textbox "Senha" [ref=e32]:
+                - /placeholder: "#SenhaForte!"
+              - button "Show password" [disabled]:
+                - img
+                - generic: Show password
+        - link "Esqueci minha senha" [ref=e34] [cursor=pointer]:
+          - /url: /forgot-password
+        - button "Login" [ref=e35] [cursor=pointer]
+  - region "Notifications (F8)":
+    - list

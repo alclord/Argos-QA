@@ -1,0 +1,66 @@
+﻿ID;Título;Status;Tipo;Prioridade;Módulo(s);Dias Aberto;Card DEV Vinculado;Decay Aplicado;Peso SM
+SM-5716;Distribuição do bot não está coerente com o fluxo;Em Triagem;Bug;Medium;Distribuição / Filas;30;—;×0,8;5
+SM-5911;Encaminhamento de clientes para filas não funciona corretamente;Em Triagem;Bug;Medium;Distribuição / Filas;28;—;×0,8;5
+SM-5906;Transcrição de áudio não funciona para alguns perfis;Em Triagem;Bug;Medium;Jarvis / IA;28;—;×0,8;5
+SM-5905;Filtro de departamento não funciona para perfil Supervisor;Em Triagem;Bug;Medium;Permissões / Roles;28;—;×0,8;5
+SM-5910;Mensagens demoram para aparecer nos usuários após certo tempo;Em Triagem;Bug;Medium;Chat / Mensagens;28;DEV4-4078;×0,8;5
+SM-5912;Pesquisa de contatos não localiza registros existentes;Em Triagem;Bug;Medium;Contatos;28;—;×0,8;5
+SM-5918;Chats ficando na aba sem atendente sem distribuir;Em Triagem;Bug;Medium;Distribuição / Filas;28;—;×0,8;5
+SM-5916;Usuário aparece offline mesmo estando conectado;Em Triagem;Bug;Medium;WebSocket / Presença;28;DEV4-4078;×0,8;5
+SM-5831;CHATSHUB Falha de Envio (ACK 0) — Contatos @lid;Em Triagem;Bug;Medium;Canais;28;—;×0,8;5
+SM-5880;Áudio não reproduz ao tentar ouvir pela resposta;Em Triagem;Bug;Medium;Upload / Mídia;28;—;×0,8;5
+SM-5401;Filtro de não lidos não funciona corretamente;Em Triagem;Bug;Medium;Chat / Mensagens;34;—;×0,8;5
+SM-4668;Problema com redirecionamento de bots;Em Triagem;Bug;Medium;Distribuição / Filas;43;—;×0,6;5
+SM-3958;Bot não direcionando;Em Triagem;Bug;Medium;Distribuição / Filas;50;—;×0,6;5
+SM-5098;Contato não aparece na busca de oportunidades do CRM;Em Triagem;Bug;Medium;CRM / Integrações;38;—;×0,6;5
+SM-5438;Backup não está sendo liberado para download;Em Triagem;Bug;Medium;Upload / Mídia;34;—;×0,6;5
+SM-5423;Chatbot parou de funcionar no feriado — não envia opções;Em Triagem;Bug;Medium;Canais;34;—;×0,6;5
+SM-5430;Mensagens chegando com atraso de 20-30 minutos;Em Triagem;Bug;Medium;Chat / Mensagens;34;—;×0,6;5
+SM-5412;Cliente não consegue enviar mensagens pelo canal Badge Leads;Em Triagem;Bug;Medium;Canais;34;—;×0,6;5
+SM-5383;Instagram mostra desconectado mesmo após reconectar;Em Triagem;Bug;Medium;Canais;34;—;×0,6;5
+SM-5326;Nova versão do sistema está muito lenta;Em Triagem;Bug;Medium;Nova Interface;35;—;×0,6;5
+SM-5334;Não é possível responder mensagens com dois canais ativos;Em Triagem;Bug;Medium;Chat / Mensagens;35;—;×0,6;5
+SM-5308;Conversas não estão abrindo na plataforma;Em Triagem;Bug;Medium;Nova Interface;35;—;×0,6;5
+SM-5311;Cliente não consegue acessar a plataforma — tela em branco;Em Triagem;Bug;Medium;Nova Interface;35;—;×0,6;5
+SM-5300;Falha recorrente ao criar templates de mensagem;Em Triagem;Bug;Medium;Canais;35;—;×0,6;5
+SM-3114;Bug na automação — acompanhamento de chamado;Em Triagem;Bug;Medium;Automação;58;—;×0,6;5
+SM-3211;[PRIVACIDADE] Operador acessando chats de terceiros via Pop-up;Em Triagem;Bug;Medium;Permissões / Roles;58;—;×0,6;5
+SM-5245;Grupos não recebem mensagens dos operadores;Em Triagem;Bug;Medium;Chat / Mensagens;36;—;×0,6;5
+SM-4636;Problema de duplicação de funil para outro funil;Em Triagem;Bug;Medium;CRM / Integrações;44;—;×0,6;5
+SM-4761;Instabilidade no acesso e recebimento de mensagens;Em Triagem;Bug;Medium;Chat / Mensagens;43;—;×0,6;5
+SM-4820;Demora e falha na entrega de mensagens do WhatsApp;Em Triagem;Bug;Medium;Canais;42;—;×0,6;5
+SM-4996;Lentidão no carregamento de mensagens/chamados;Em Triagem;Bug;Medium;Chat / Mensagens;41;—;×0,6;5
+SM-5016;Mensagens não sendo direcionadas automaticamente após implantação;Em Triagem;Bug;Medium;Distribuição / Filas;41;—;×0,6;5
+SM-5181;Cliente não consegue enviar número por canal específico;Em Triagem;Bug;Medium;Canais;36;—;×0,6;5
+SM-5033;Usuários não conseguem enviar mensagens para contato específico;Em Triagem;Bug;Medium;Chat / Mensagens;41;—;×0,6;5
+SM-3739;Ajuste de Notificações — Sistema Legado;Em Triagem;Bug;Medium;Chat / Mensagens;51;—;×0,6;5
+SM-3840;Bot funciona de forma intermitente;Em Triagem;Bug;Medium;Distribuição / Filas;51;—;×0,6;5
+SM-3927;Falha na Ativação do Bot — Mensagem sem Geração de Chat_ID;Em Triagem;Bug;Medium;Distribuição / Filas;50;—;×0,6;5
+SM-2099;Falha no Redirecionamento Automático;Em Triagem;Bug;Medium;Distribuição / Filas;86;—;×0,6;5
+SM-3017;Botão Enviar Template desabilitado — Interface Legada (WABA);Em Triagem;Bug;Medium;Canais;59;—;×0,6;5
+SM-2037;Erro 403 ao criar etiquetas;Em Triagem;Bug;Medium;Permissões / Roles;89;—;×0,4;5
+SM-2035;Erro na atribuição automática de atendentes;Em Triagem;Bug;Medium;Distribuição / Filas;89;—;×0,4;5
+SM-2678;Canal não envia mensagem;Em Triagem;Bug;Medium;Canais;69;—;×0,6;5
+SM-2209;Loading infinito na aba de chats;Em Triagem;Bug;Medium;Nova Interface;84;—;×0,4;5
+SM-2581;Problema ao Enviar Mensagens e Encerrar Chats;Em Triagem;Bug;Medium;Chat / Mensagens;72;—;×0,6;5
+SM-2091;Cliente não consegue enviar PDF;Em Triagem;Bug;Medium;Upload / Mídia;86;—;×0,4;5
+SM-2151;Plataforma Travando;Em Triagem;Bug;Medium;Nova Interface;85;—;×0,4;5
+SM-2229;Erro 500 ao subir planilha de contato;Em Triagem;Bug;Medium;Upload / Mídia;82;—;×0,4;5
+SM-7592;Bot não fez direcionamento para atendente;Aberto;Bug;Medium;Distribuição / Filas;0;—;×1,0;3
+SM-7588;Erro ao configurar canal do Instagram;Aberto;Bug;Medium;Canais;1;—;×1,0;3
+SM-7582;Erro 500 na rota GET /accounts/{account_uuid}/messages;Aberto;Bug;Medium;Chat / Mensagens;1;—;×1,0;3
+SM-7574;Mensagens não chegam no tablet — cliente com dois números;Aberto;Bug;Medium;Chat / Mensagens;1;—;×1,0;3
+SM-7569;Chat preso — mensagens não distribuídas corretamente após bot;Aberto;Bug;Medium;Distribuição / Filas;1;—;×1,0;3
+SM-7567;Webhook não recebe eventos mesmo com configuração correta;Aberto;Bug;Medium;CRM / Integrações;1;—;×1,0;3
+SM-7544;Erro no envio de mensagens na Polichat;Aberto;Bug;Medium;Chat / Mensagens;1;—;×1,0;3
+SM-7539;Não consegue responder mensagens dos pacientes — restrição Meta;Aberto;Bug;Medium;Canais;1;—;×1,0;3
+SM-7532;Template aprovado e vinculado ao canal não aparece para uso;Aberto;Bug;Medium;Canais;1;—;×1,0;3
+SM-7528;Cliente sem atendimento — problema recorrente;Aberto;Bug;Medium;Chat / Mensagens;1;—;×1,0;3
+SM-7527;Atalhos utilizando Ctrl não estão funcionando;Aberto;Bug;Medium;Nova Interface;1;—;×1,0;3
+SM-7520;Envio de arquivos instável na plataforma;Aberto;Bug;Medium;Upload / Mídia;1;—;×1,0;3
+SM-7519;Atendente não consegue enviar mensagem após resposta a template;Aberto;Bug;Medium;Chat / Mensagens;1;—;×1,0;3
+SM-7518;Mensagens não aparecem no chat — atualização manual necessária;Aberto;Bug;Medium;Chat / Mensagens;1;—;×1,0;3
+SM-7511;Novas mensagens não notificam o atendente;Aberto;Bug;Medium;WebSocket / Presença;1;—;×1,0;3
+SM-7503;PDF não aparece na plataforma (interface antiga e nova);Aberto;Bug;Medium;Upload / Mídia;1;—;×1,0;3
+SM-7498;Emojis aparecem automaticamente nas mensagens enviadas;Aberto;Bug;Medium;Chat / Mensagens;1;—;×1,0;3
+SM-7496;Extensão parou de funcionar após atualização da nova interface;Aberto;Bug;Medium;Nova Interface;1;—;×1,0;3

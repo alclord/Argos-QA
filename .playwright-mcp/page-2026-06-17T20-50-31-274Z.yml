@@ -1,0 +1,256 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=b7159a0860a0f4e1459a2364042b3ac8d947aa46&toPath=https://app.poli.digital/home
+        - img [ref=e11]
+      - generic [ref=e12]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link [ref=e16] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e18]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=b7159a0860a0f4e1459a2364042b3ac8d947aa46&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e30]
+          - listitem [ref=e33]:
+            - link [ref=e34] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e36]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=b7159a0860a0f4e1459a2364042b3ac8d947aa46&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e41]
+          - listitem [ref=e44]:
+            - link [ref=e45] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=b7159a0860a0f4e1459a2364042b3ac8d947aa46&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e47]
+          - listitem [ref=e50]:
+            - link [ref=e51] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=b7159a0860a0f4e1459a2364042b3ac8d947aa46&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e53]
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - link [ref=e61] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e63]
+      - generic [ref=e66]:
+        - button "Consumo de créditos" [ref=e67] [cursor=pointer]:
+          - img [ref=e69]
+        - button "YA" [ref=e73] [cursor=pointer]:
+          - generic [ref=e79]: YA
+        - generic [ref=e82]: 3.5.359-DEV4-4390
+    - main [ref=e83]:
+      - main [ref=e84]:
+        - generic [ref=e85]:
+          - button "✨ Nova Versão" [ref=e86] [cursor=pointer]:
+            - generic [ref=e87]: ✨ Nova Versão
+            - img [ref=e88]
+          - generic [ref=e92]:
+            - generic [ref=e93]:
+              - button "Em atendimento" [ref=e94] [cursor=pointer]:
+                - generic [ref=e95]: Em atendimento
+                - img [ref=e96]
+              - generic [ref=e98]:
+                - button "Contatos" [ref=e99] [cursor=pointer]:
+                  - img [ref=e100]
+                - button "Filtros" [ref=e104] [cursor=pointer]:
+                  - img [ref=e105]
+            - generic [ref=e109]:
+              - generic [ref=e110]:
+                - textbox "Pesquisar" [ref=e111]
+                - button "Pesquisar" [ref=e112] [cursor=pointer]:
+                  - img [ref=e113]
+              - button "Ordenação das conversas" [ref=e116] [cursor=pointer]:
+                - img [ref=e117]
+        - button "YU \"Yuri\" Yuri Alcantara Gestor Alertas de crédito" [ref=e243] [cursor=pointer]:
+          - generic [ref=e245]:
+            - generic [ref=e246]:
+              - generic [ref=e250]: YU
+              - generic [ref=e251]:
+                - generic [ref=e252]: "\"Yuri\""
+                - generic [ref=e254]:
+                  - img [ref=e256]
+                  - generic [ref=e260]: Yuri Alcantara Gestor
+            - generic [ref=e261]:
+              - button [ref=e262]:
+                - img [ref=e263]
+              - button [ref=e267]:
+                - img [ref=e268]
+              - button [ref=e273]:
+                - img [ref=e274]
+              - button [ref=e277]:
+                - img [ref=e278]
+              - button [ref=e280]:
+                - img [ref=e281]
+          - region "Alertas de crédito" [ref=e337]
+        - generic [ref=e346]:
+          - generic [ref=e349]:
+            - generic [ref=e353] [cursor=pointer]: YU
+            - button [ref=e354] [cursor=pointer]:
+              - img [ref=e355]
+          - list [ref=e361]:
+            - generic [ref=e362]:
+              - generic [ref=e363]:
+                - img [ref=e365]
+                - generic [ref=e368]: Detalhes do contato
+              - generic [ref=e369]:
+                - generic [ref=e372]:
+                  - generic "Nome" [ref=e374]
+                  - generic [ref=e375]: "\"Yuri\""
+                - generic [ref=e379]:
+                  - generic "Telefone" [ref=e381]
+                  - generic [ref=e382]: +55 (62) 9921-0609
+                - generic "E-mail" [ref=e387]
+                - generic "CPF" [ref=e392]
+            - generic [ref=e393]:
+              - generic [ref=e394]:
+                - img [ref=e396]
+                - generic [ref=e398]: Categoria
+              - generic [ref=e399]:
+                - generic [ref=e402]:
+                  - generic "Origem" [ref=e404]
+                  - generic [ref=e405]: orgânico
+                - generic "Fonte" [ref=e410]
+            - generic [ref=e411]:
+              - generic [ref=e412]:
+                - generic [ref=e413]:
+                  - img [ref=e414]
+                  - generic [ref=e416]: Etiquetas
+                - button "Adicionar etiqueta" [ref=e417] [cursor=pointer]:
+                  - img [ref=e418]
+                  - text: Adicionar etiqueta
+              - generic [ref=e422]:
+                - generic [ref=e424]:
+                  - generic [ref=e425]: 14\01
+                  - button "remove tag" [ref=e426] [cursor=pointer]:
+                    - img [ref=e427]
+                - generic [ref=e431]:
+                  - generic [ref=e432]: disparo_11000_2024-03-27 09:49:56.796706-03:00
+                  - button "remove tag" [ref=e433] [cursor=pointer]:
+                    - img [ref=e434]
+                - generic [ref=e438]:
+                  - generic [ref=e439]: disparo_11000_2024-04-24 10:03:12.271478-03:00
+                  - button "remove tag" [ref=e440] [cursor=pointer]:
+                    - img [ref=e441]
+                - generic [ref=e445]:
+                  - generic [ref=e446]: disparo_2024-10-23 09:52:26_11000
+                  - button "remove tag" [ref=e447] [cursor=pointer]:
+                    - img [ref=e448]
+                - generic [ref=e452]:
+                  - generic [ref=e453]: disparo_2025-05-06 11:26:00_57780
+                  - button "remove tag" [ref=e454] [cursor=pointer]:
+                    - img [ref=e455]
+                - generic [ref=e459]:
+                  - generic [ref=e460]: disparo_2025-05-06 11:30:59_57780
+                  - button "remove tag" [ref=e461] [cursor=pointer]:
+                    - img [ref=e462]
+                - generic [ref=e466]:
+                  - generic [ref=e467]: disparo_2025-05-06 11:35:17_57780
+                  - button "remove tag" [ref=e468] [cursor=pointer]:
+                    - img [ref=e469]
+                - generic [ref=e473]:
+                  - generic [ref=e474]: disparo_2025-05-06 11:36:13_57780
+                  - button "remove tag" [ref=e475] [cursor=pointer]:
+                    - img [ref=e476]
+                - generic [ref=e480]:
+                  - generic [ref=e481]: disparo_2025-05-07 11:30:55_57780
+                  - button "remove tag" [ref=e482] [cursor=pointer]:
+                    - img [ref=e483]
+                - generic [ref=e487]:
+                  - generic [ref=e488]: disparo_2025-06-12 15:05:00_11000
+                  - button "remove tag" [ref=e489] [cursor=pointer]:
+                    - img [ref=e490]
+                - generic [ref=e494]:
+                  - generic [ref=e495]: disparo_2025-08-20 15:20:24_11000
+                  - button "remove tag" [ref=e496] [cursor=pointer]:
+                    - img [ref=e497]
+                - generic [ref=e501]:
+                  - generic [ref=e502]: disparo_2025-08-20 15:24:20_11000
+                  - button "remove tag" [ref=e503] [cursor=pointer]:
+                    - img [ref=e504]
+                - generic [ref=e508]:
+                  - generic [ref=e509]: disparo_2025-08-20 15:37:06_11000
+                  - button "remove tag" [ref=e510] [cursor=pointer]:
+                    - img [ref=e511]
+                - generic [ref=e515]:
+                  - generic [ref=e516]: disparo_2025-08-20 15:43:43_11000
+                  - button "remove tag" [ref=e517] [cursor=pointer]:
+                    - img [ref=e518]
+                - generic [ref=e522]:
+                  - generic [ref=e523]: disparo_2025-09-22 15:40:12_11000
+                  - button "remove tag" [ref=e524] [cursor=pointer]:
+                    - img [ref=e525]
+                - generic [ref=e529]:
+                  - generic [ref=e530]: disparo_2025-09-22 15:44:15_11000
+                  - button "remove tag" [ref=e531] [cursor=pointer]:
+                    - img [ref=e532]
+                - generic [ref=e536]:
+                  - generic [ref=e537]: disparo_2025-09-22 15:45:16_11000
+                  - button "remove tag" [ref=e538] [cursor=pointer]:
+                    - img [ref=e539]
+                - generic [ref=e543]:
+                  - generic [ref=e544]: disparo_2025-09-22 16:10:01_11000
+                  - button "remove tag" [ref=e545] [cursor=pointer]:
+                    - img [ref=e546]
+                - generic [ref=e550]:
+                  - generic [ref=e551]: disparo_2025-09-22 16:12:28_11000
+                  - button "remove tag" [ref=e552] [cursor=pointer]:
+                    - img [ref=e553]
+                - generic [ref=e557]:
+                  - generic [ref=e558]: disparo_2025-09-24 18:36:34_11000
+                  - button "remove tag" [ref=e559] [cursor=pointer]:
+                    - img [ref=e560]
+                - generic [ref=e564]:
+                  - generic [ref=e565]: disparo_2025-09-25 14:32:33_57780
+                  - button "remove tag" [ref=e566] [cursor=pointer]:
+                    - img [ref=e567]
+                - generic [ref=e571]:
+                  - generic [ref=e572]: disparo_2025-09-25 14:35:20_57780
+                  - button "remove tag" [ref=e573] [cursor=pointer]:
+                    - img [ref=e574]
+                - generic [ref=e578]:
+                  - generic [ref=e579]: CTWA
+                  - button "remove tag" [ref=e580] [cursor=pointer]:
+                    - img [ref=e581]
+            - generic [ref=e584]:
+              - generic [ref=e585]:
+                - img [ref=e586]
+                - text: Canais
+              - generic [ref=e591]:
+                - generic [ref=e593] [cursor=pointer]:
+                  - img "WhatsApp Business" [ref=e594]
+                  - generic [ref=e597]: WhatsApp Business
+                - generic "556299210609@c.us" [ref=e598]
+              - generic [ref=e601]:
+                - generic [ref=e603] [cursor=pointer]:
+                  - img "WhatsApp" [ref=e604]
+                  - generic [ref=e606]: WhatsApp
+                - generic "30301044633685@lid" [ref=e607]
+            - generic [ref=e608]:
+              - generic [ref=e609]:
+                - img [ref=e610]
+                - text: Endereço
+              - generic [ref=e614]: Endereço não registrado
+        - complementary [ref=e615]:
+          - button [ref=e617] [cursor=pointer]:
+            - img [ref=e618]
+          - button [ref=e622] [cursor=pointer]:
+            - img [ref=e623]
+          - button [ref=e627] [cursor=pointer]:
+            - img [ref=e628]
+          - button [ref=e633] [cursor=pointer]:
+            - img [ref=e634]
+          - button [ref=e639] [cursor=pointer]:
+            - img [ref=e640]
+          - button [ref=e644] [cursor=pointer]:
+            - img [ref=e645]
+          - button [ref=e650] [cursor=pointer]:
+            - img [ref=e651]
+  - region "Notifications (F8)":
+    - list

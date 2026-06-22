@@ -1,0 +1,20 @@
+[     552ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:101
+[     553ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:101
+[     601ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:76
+[     636ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:69
+[    1259ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:69
+[   16926ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:69
+[   19497ms] Identifier 'TCRMEmbed' has already been declared
+[  222949ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/548134781_1781502265816811_2954724867400925786_n.jpg?ccb=11-4&oh=01_Q5Aa2wEwe2TkXmp4OI_CymB2ioQmFVHYSDW-YPpaHjNvb2U51g&oe=690DB3C8&_nc_sid=5e03e0&_nc_cat=108:0
+[  291385ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:69
+[  390007ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[  390013ms] [ERROR] error ao buscar chats AxiosError: Request failed with status code 500
+    at FCe (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1051:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1051:15759)
+    at y2.request (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1053:2234)
+    at async U0t (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:1087:26108)
+    at async C (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:37954)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:54:38261) @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:69
+[  390198ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/473401787_1776961919511233_1796431923958519858_n.jpg?ccb=11-4&oh=01_Q5Aa3gGfUimcsz5PJCl57DyIzZByr1rsN6CeYgYIYyjFXiIZOA&oe=698DB2E8&_nc_sid=5e03e0&_nc_cat=104:0
+[  409529ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:69
+[  451639ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0

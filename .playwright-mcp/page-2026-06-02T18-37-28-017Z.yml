@@ -1,0 +1,1031 @@
+- generic:
+  - generic:
+    - generic:
+      - alert:
+        - generic:
+          - img
+          - generic:
+            - generic: 38 dias de pagamento em atraso.
+            - generic: Pagamento efetuado? Desconsidere. A compensação do boleto pode levar até 2 dias úteis.
+        - generic:
+          - button "Acessar boleto":
+            - img
+            - text: Acessar boleto
+          - button "Fechar aviso":
+            - img
+      - generic:
+        - complementary:
+          - generic:
+            - img
+          - navigation:
+            - list:
+              - listitem:
+                - link:
+                  - /url: https://app-spa.qa.poli.digital/redirect?sessionId=db0aad2093101d6de0010cf520bd049ba58c38d5&toPath=https://homolog.qa.poli.digital/home
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /chat
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.qa.poli.digital/redirect?sessionId=db0aad2093101d6de0010cf520bd049ba58c38d5&toPath=https://homolog.qa.poli.digital/settings/46667/chatbot
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /poli-flow
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.qa.poli.digital/redirect?sessionId=db0aad2093101d6de0010cf520bd049ba58c38d5&toPath=https://app-spa.qa.poli.digital/marketing
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.qa.poli.digital/redirect?sessionId=db0aad2093101d6de0010cf520bd049ba58c38d5&toPath=https://app-spa.qa.poli.digital/shopping
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.qa.poli.digital/redirect?sessionId=db0aad2093101d6de0010cf520bd049ba58c38d5&toPath=https://app-spa.qa.poli.digital/relatorio
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.qa.poli.digital/redirect?sessionId=db0aad2093101d6de0010cf520bd049ba58c38d5&toPath=https://app-spa.qa.poli.digital/tools
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /contacts
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /templates
+                  - generic:
+                    - img
+            - list:
+              - listitem:
+                - button:
+                  - img
+              - listitem:
+                - button:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: YA
+              - listitem:
+                - button:
+                  - img
+              - listitem:
+                - generic:
+                  - generic: 3.5.336
+        - main:
+          - generic:
+            - button:
+              - generic: ✨ Nova Versão
+              - img
+            - generic:
+              - generic:
+                - generic:
+                  - button:
+                    - generic: Em atendimento
+                    - img
+                  - generic:
+                    - button:
+                      - img
+                    - button:
+                      - img
+                    - button:
+                      - img
+                - generic:
+                  - generic:
+                    - textbox:
+                      - /placeholder: Pesquisar
+                    - button:
+                      - img
+                  - button:
+                    - img
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: YA
+                    - generic:
+                      - generic:
+                        - generic: Yuri Alcantara 3
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: WhatsApp Business
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - text: Imagem
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: Yuri Alcantara
+                  - generic:
+                    - generic:
+                      - generic:
+                        - button:
+                          - generic: "+2"
+                        - button
+                        - button
+                        - button
+                        - button
+                        - button
+                    - generic:
+                      - generic: Há 1min
+                      - button:
+                        - img
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                    - generic:
+                      - generic:
+                        - generic: Pedro Vieira
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: WhatsApp Business
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - text: Imagem
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: Allan bezerra
+                  - generic:
+                    - generic:
+                      - generic:
+                        - button
+                    - generic:
+                      - generic: Há 1 hora
+                      - button:
+                        - img
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: GT
+                    - generic:
+                      - generic:
+                        - generic: Grupo teste
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: WhatsApp
+                        - generic:
+                          - generic:
+                            - generic: "Pedro Vieira:"
+                            - generic:
+                              - generic: Mensagem pelo WhatsApp
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: Yuri Alcantara
+                  - generic:
+                    - generic:
+                      - generic: 21/05/2026
+                      - button:
+                        - img
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: NG
+                    - generic:
+                      - generic:
+                        - generic: Nov grupo teste
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: WhatsApp
+                        - generic:
+                          - generic:
+                            - generic: "Pedro Vieira:"
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: Pedro
+                  - generic:
+                    - generic:
+                      - generic: 21/05/2026
+                      - button:
+                        - img
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: TP
+                    - generic:
+                      - generic:
+                        - generic: Teste Poli Group
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: WhatsApp
+                        - generic:
+                          - generic:
+                            - generic: ":"
+                            - generic:
+                              - generic: "Operador Lineu Canha:"
+                              - generic: teste 2
+                        - img
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: Lineu Canha
+                  - generic:
+                    - generic:
+                      - generic: 20/05/2026
+                      - button:
+                        - img
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                    - generic:
+                      - generic:
+                        - generic: Lineu felipe Gomes Canha
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: WhatsApp
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: "Operador Lineu Canha:"
+                              - generic: teste
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: Lineu Canha
+                  - generic:
+                    - generic:
+                      - generic: 20/05/2026
+                      - button:
+                        - img
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: T3
+                    - generic:
+                      - generic:
+                        - generic: Teste 333
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: WhatsApp
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: "Operador Pedro:"
+                              - generic: olá
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: Pedro
+                  - generic:
+                    - generic:
+                      - generic: 14/05/2026
+                      - button:
+                        - img
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: VS
+                    - generic:
+                      - generic:
+                        - generic: Veiga Stg 01
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: Web Chat Sistema
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: Contato redirecionado para Allan bezerra por Yuri Alcantara
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: Allan bezerra
+                  - generic:
+                    - generic:
+                      - generic: 13/05/2026
+                      - button:
+                        - img
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: PB
+                    - generic:
+                      - generic:
+                        - generic: Paulo Buzeli editado
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: Web Chat Sistema
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: Contato redirecionado para Allan bezerra por Yuri Alcantara
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: Allan bezerra
+                  - generic:
+                    - generic:
+                      - generic: 13/05/2026
+                      - button:
+                        - img
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: QP
+                    - generic:
+                      - generic:
+                        - generic: QA Pedro Vieira Testes 123
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: Web Chat Sistema
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: Contato redirecionado para Carga Empresas por Luiz Teste
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: Carga Empresas
+                  - generic:
+                    - generic:
+                      - generic: 30/04/2026
+                      - button:
+                        - img
+                - generic:
+                  - button: Carregar mais
+          - button:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: YA
+                  - generic:
+                    - generic: Yuri Alcantara 3
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                        - generic: Yuri Alcantara
+                - generic:
+                  - button:
+                    - img
+                  - generic:
+                    - button:
+                      - img
+                  - button:
+                    - img
+                  - button:
+                    - img
+                  - button:
+                    - img
+            - generic:
+              - generic:
+                - button: Carregar mais
+                - generic:
+                  - generic: 02/06/2026
+                - article:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: YA
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Argos QA - canal INATIVO [DEV4-4261]
+                      - generic:
+                        - generic:
+                          - generic: 08:56
+                        - generic:
+                          - img
+                          - generic: Enviando
+                    - generic:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: WhatsApp Business
+                - article:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: YA
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Teste homologacao
+                      - generic:
+                        - generic:
+                          - generic: 08:58
+                        - generic:
+                          - img
+                          - generic: Enviando
+                    - generic:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: WhatsApp Business
+                - article:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: YA
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Bom dia Yuri Alcantara 3 sua reserva está marcada para 1 do dia 2
+                      - generic:
+                        - generic:
+                          - generic: 09:00
+                        - generic:
+                          - img
+                          - generic: Enviando
+                    - generic:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: WhatsApp Business
+                - article:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: YA
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: "12"
+                      - generic:
+                        - generic:
+                          - generic: 09:00
+                        - generic:
+                          - img
+                          - generic: Enviando
+                    - generic:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: WhatsApp
+                - article:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: YA
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: "12"
+                      - generic:
+                        - generic:
+                          - generic: 09:00
+                        - generic:
+                          - img
+                          - generic: Enviando
+                    - generic:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: WhatsApp
+                - article:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: PE
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Teste homologacao
+                      - generic:
+                        - generic:
+                          - generic: 10:22
+                        - generic:
+                          - img
+                          - generic: Falha ao enviar
+                    - generic:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: WhatsApp Business
+                - article:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: PE
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Teste homologacao
+                      - generic:
+                        - generic:
+                          - generic: 10:23
+                        - generic:
+                          - img
+                          - generic: Falha ao enviar
+                    - generic:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: WhatsApp Business
+                - article:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: PE
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Teste homologacao
+                      - generic:
+                        - generic:
+                          - generic: 10:29
+                        - generic:
+                          - img
+                          - generic: Falha ao enviar
+                    - generic:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: WhatsApp Business
+                - article:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: PE
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Bom dia Yuri Alcantara 3 sua reserva está marcada para do dia
+                      - generic:
+                        - generic:
+                          - generic: 10:31
+                        - generic:
+                          - img
+                          - generic: Falha ao enviar
+                    - generic:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: WhatsApp Business
+                - article:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: PE
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Bom dia Yuri Alcantara 3 sua reserva está marcada para do dia
+                      - generic:
+                        - generic:
+                          - generic: 10:53
+                        - generic:
+                          - img
+                          - generic: Enviando
+                    - generic:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: WhatsApp Business
+                - article:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: YA
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Teste homologacao
+                      - generic:
+                        - generic:
+                          - generic: 14:45
+                        - generic:
+                          - img
+                          - generic: Enviando
+                    - generic:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: WhatsApp Business
+                - article:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: YA
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: ok
+                      - generic:
+                        - generic:
+                          - generic: 14:45
+                    - generic:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: WhatsApp Business
+                - article:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: YA
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Argos QA — teste de envio DEV4-4261
+                      - generic:
+                        - generic:
+                          - generic: 14:47
+                        - generic:
+                          - img
+                          - generic: Enviando
+                    - generic:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: WhatsApp Business
+                - article:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: YA
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Mensagem enviada!
+                      - generic:
+                        - generic:
+                          - generic: 14:50
+                    - generic:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: WhatsApp Business
+                - article:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: YA
+                    - generic:
+                      - generic:
+                        - generic:
+                          - button
+                      - generic:
+                        - generic:
+                          - generic: 14:52
+                        - generic:
+                          - img
+                          - generic: Falha ao enviar
+                    - generic:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: WhatsApp Business
+                - article:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: YA
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Argos QA — teste CT-4261-001 envio texto
+                      - generic:
+                        - generic:
+                          - generic: 15:34
+                        - generic:
+                          - img
+                          - generic: Falha ao enviar
+                    - generic:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: WhatsApp Business
+                - article:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: YA
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: Argos QA — teste CT-4261-001 envio texto
+                      - generic:
+                        - generic:
+                          - generic: 15:34
+                      - generic:
+                        - generic:
+                          - heading [level=3]:
+                            - button:
+                              - generic:
+                                - img
+                                - generic: Envio bloqueado pelo Whatsapp. (unknown)
+                              - img
+                    - generic:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: WhatsApp Business
+                - article:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: YA
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: teste!!
+                      - generic:
+                        - generic:
+                          - generic: 15:34
+                      - generic:
+                        - generic:
+                          - heading [level=3]:
+                            - button [expanded]:
+                              - generic:
+                                - img
+                                - generic: Envio bloqueado pelo Whatsapp. (unknown)
+                              - img
+                          - region:
+                            - generic:
+                              - paragraph: "HTTP request returned status code 422: {\"status\":\"error\",\"code\":\"VALIDATION_ERROR\",\"message\":\"Falha na validação da requisição\",\"error_alias\":\"invalid_payl (truncated...)"
+                    - generic:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: WhatsApp Business
+                - article:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: YA
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - paragraph: teste!!
+                      - generic:
+                        - generic:
+                          - generic: 15:34
+                        - generic:
+                          - img
+                          - generic: Falha ao enviar
+                    - generic:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: WhatsApp Business
+                - article:
+                  - generic:
+                    - button:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: YA
+                    - generic:
+                      - generic:
+                        - generic:
+                          - button:
+                            - generic:
+                              - generic:
+                                - generic: Argos QA — teste CT-4261-002 envio imagem
+                      - generic:
+                        - generic:
+                          - generic: 15:36
+                        - generic:
+                          - img
+                          - generic: Enviando
+                    - generic:
+                      - button:
+                        - generic:
+                          - img
+                          - generic: WhatsApp Business
+              - region
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - button:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: WhatsApp Business
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - paragraph: Digite sua mensagem aqui ou / para mensagens rápidas
+                            - generic:
+                              - button:
+                                - img
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - button:
+                            - img
+                          - button:
+                            - img
+                          - button:
+                            - img
+                        - button:
+                          - img
+          - complementary:
+            - generic:
+              - button:
+                - img
+            - generic:
+              - button:
+                - img
+            - generic:
+              - button:
+                - img
+            - generic:
+              - button:
+                - img
+            - generic:
+              - button:
+                - img
+    - list
+  - dialog [ref=e1580]:
+    - generic [ref=e1581]:
+      - generic [ref=e1584]:
+        - generic [ref=e1585]: test-document.pdf
+        - text: "- 433 B"
+      - generic [ref=e1586]:
+        - button [active] [ref=e1592] [cursor=pointer]:
+          - img [ref=e1594]
+        - button [ref=e1598] [cursor=pointer]:
+          - img [ref=e1599]
+    - generic [ref=e1600]:
+      - generic [ref=e1601]:
+        - generic [ref=e1602]: Adicione uma legenda
+        - generic [ref=e1603]:
+          - textbox "Adicione uma legenda" [ref=e1604]
+          - button "Emoji" [ref=e1607] [cursor=pointer]:
+            - img [ref=e1608]
+            - generic [ref=e1611]: Emoji
+      - button [ref=e1612] [cursor=pointer]:
+        - img [ref=e1613]
+    - button "Close" [ref=e1615] [cursor=pointer]:
+      - img [ref=e1616]
+      - generic [ref=e1619]: Close
+  - generic [ref=e1620]:
+    - text: test-document.pdf
+    - tooltip "test-document.pdf" [ref=e1621]

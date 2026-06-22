@@ -1,0 +1,443 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=23c8638deadc2fe1cab3487c7d78d39c84f64b1f&toPath=https://app.poli.digital/home
+        - img [ref=e11]
+      - generic [ref=e12]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link [ref=e16] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e18]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=23c8638deadc2fe1cab3487c7d78d39c84f64b1f&toPath=https://app.poli.digital/settings/46667/chatbot
+              - img [ref=e30]
+          - listitem [ref=e33]:
+            - link [ref=e34] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e36]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=23c8638deadc2fe1cab3487c7d78d39c84f64b1f&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e41]
+          - listitem [ref=e44]:
+            - link [ref=e45] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=23c8638deadc2fe1cab3487c7d78d39c84f64b1f&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e47]
+          - listitem [ref=e50]:
+            - link [ref=e51] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=23c8638deadc2fe1cab3487c7d78d39c84f64b1f&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e53]
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - link [ref=e61] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e63]
+      - generic [ref=e66]:
+        - button "Consumo de créditos" [ref=e67] [cursor=pointer]:
+          - img [ref=e69]
+        - button "YA" [ref=e73] [cursor=pointer]:
+          - generic [ref=e79]: YA
+        - generic [ref=e82]: 3.5.347
+    - main [ref=e83]:
+      - main [ref=e84]:
+        - generic [ref=e86]:
+          - navigation "breadcrumb" [ref=e88]:
+            - link "Página inicial" [ref=e90] [cursor=pointer]:
+              - /url: /
+            - generic [ref=e91]:
+              - img [ref=e92]
+              - link "Configurações" [ref=e94] [cursor=pointer]:
+                - /url: /settings
+            - img [ref=e95]
+            - generic [ref=e97]: Construtor de Etiquetas
+          - generic [ref=e101]:
+            - generic [ref=e102]:
+              - generic [ref=e104]:
+                - textbox "Buscar por nome da etiqueta..." [ref=e105]
+                - button [ref=e106] [cursor=pointer]:
+                  - img [ref=e107]
+              - generic [ref=e110]:
+                - combobox "Categoria" [ref=e111] [cursor=pointer]:
+                  - generic [ref=e112]: Todas as categorias
+                  - img [ref=e113]
+                - button "Criar nova etiqueta" [ref=e115] [cursor=pointer]:
+                  - img [ref=e116]
+                  - text: Criar nova etiqueta
+            - generic [ref=e118]:
+              - table [ref=e122]:
+                - rowgroup [ref=e123]:
+                  - row "Selecionar todos da página Nome Descrição Categoria Contatos Status Criada em" [ref=e124]:
+                    - columnheader "Selecionar todos da página" [ref=e125]:
+                      - checkbox "Selecionar todos da página" [ref=e127] [cursor=pointer]
+                    - columnheader "Nome" [ref=e128]:
+                      - button "Nome" [ref=e129] [cursor=pointer]:
+                        - text: Nome
+                        - img [ref=e130]
+                    - columnheader "Descrição" [ref=e133]
+                    - columnheader "Categoria" [ref=e134]
+                    - columnheader "Contatos" [ref=e135]
+                    - columnheader "Status" [ref=e136]
+                    - columnheader "Criada em" [ref=e137]:
+                      - button "Criada em" [ref=e138] [cursor=pointer]:
+                        - text: Criada em
+                        - img [ref=e139]
+                    - columnheader [ref=e142]
+                - rowgroup [ref=e143]:
+                  - row "Selecionar item 47f9f5c1-5b8a-11f1-9d75-06799772b1cd teste — Padrão 0 Ativa 29 de mai. de 2026 Desativar Editar etiqueta Excluir etiqueta" [ref=e144]:
+                    - cell "Selecionar item 47f9f5c1-5b8a-11f1-9d75-06799772b1cd" [ref=e145]:
+                      - generic [ref=e146]:
+                        - checkbox "Selecionar item 47f9f5c1-5b8a-11f1-9d75-06799772b1cd"
+                    - cell "teste" [ref=e147]:
+                      - generic "teste" [ref=e148]:
+                        - generic [ref=e149]: teste
+                    - cell "—" [ref=e150]:
+                      - generic [ref=e151]: —
+                    - cell "Padrão" [ref=e152]
+                    - cell "0" [ref=e153]
+                    - cell "Ativa" [ref=e154]:
+                      - generic [ref=e155]: Ativa
+                    - cell "29 de mai. de 2026" [ref=e156]
+                    - cell "Desativar Editar etiqueta Excluir etiqueta" [ref=e157]:
+                      - generic [ref=e158]:
+                        - button "Desativar" [ref=e159] [cursor=pointer]:
+                          - img [ref=e160]
+                        - button "Editar etiqueta" [ref=e164] [cursor=pointer]:
+                          - img [ref=e165]
+                        - button "Excluir etiqueta" [ref=e168] [cursor=pointer]:
+                          - img [ref=e169]
+                  - row "Selecionar item ce00ba40-5b89-11f1-9d75-06799772b1cd Gerenciamento Interno — Padrão 0 Ativa 29 de mai. de 2026 Desativar Editar etiqueta Excluir etiqueta" [ref=e172]:
+                    - cell "Selecionar item ce00ba40-5b89-11f1-9d75-06799772b1cd" [ref=e173]:
+                      - generic [ref=e174]:
+                        - checkbox "Selecionar item ce00ba40-5b89-11f1-9d75-06799772b1cd"
+                    - cell "Gerenciamento Interno" [ref=e175]:
+                      - generic "Gerenciamento Interno" [ref=e176]:
+                        - generic [ref=e177]: Gerenciamento Interno
+                    - cell "—" [ref=e178]:
+                      - generic [ref=e179]: —
+                    - cell "Padrão" [ref=e180]
+                    - cell "0" [ref=e181]
+                    - cell "Ativa" [ref=e182]:
+                      - generic [ref=e183]: Ativa
+                    - cell "29 de mai. de 2026" [ref=e184]
+                    - cell "Desativar Editar etiqueta Excluir etiqueta" [ref=e185]:
+                      - generic [ref=e186]:
+                        - button "Desativar" [ref=e187] [cursor=pointer]:
+                          - img [ref=e188]
+                        - button "Editar etiqueta" [ref=e192] [cursor=pointer]:
+                          - img [ref=e193]
+                        - button "Excluir etiqueta" [ref=e196] [cursor=pointer]:
+                          - img [ref=e197]
+                  - row "Selecionar item 2516137e-5625-11f1-9d75-06799772b1cd teste — Padrão 9 Ativa 22 de mai. de 2026 Desativar Editar etiqueta Excluir etiqueta" [ref=e200]:
+                    - cell "Selecionar item 2516137e-5625-11f1-9d75-06799772b1cd" [ref=e201]:
+                      - generic [ref=e202]:
+                        - checkbox "Selecionar item 2516137e-5625-11f1-9d75-06799772b1cd"
+                    - cell "teste" [ref=e203]:
+                      - generic "teste" [ref=e204]:
+                        - generic [ref=e205]: teste
+                    - cell "—" [ref=e206]:
+                      - generic [ref=e207]: —
+                    - cell "Padrão" [ref=e208]
+                    - cell "9" [ref=e209]
+                    - cell "Ativa" [ref=e210]:
+                      - generic [ref=e211]: Ativa
+                    - cell "22 de mai. de 2026" [ref=e212]
+                    - cell "Desativar Editar etiqueta Excluir etiqueta" [ref=e213]:
+                      - generic [ref=e214]:
+                        - button "Desativar" [ref=e215] [cursor=pointer]:
+                          - img [ref=e216]
+                        - button "Editar etiqueta" [ref=e220] [cursor=pointer]:
+                          - img [ref=e221]
+                        - button "Excluir etiqueta" [ref=e224] [cursor=pointer]:
+                          - img [ref=e225]
+                  - row "Selecionar item e3c41853-5624-11f1-9d75-06799772b1cd teste — Padrão 2 Ativa 22 de mai. de 2026 Desativar Editar etiqueta Excluir etiqueta" [ref=e228]:
+                    - cell "Selecionar item e3c41853-5624-11f1-9d75-06799772b1cd" [ref=e229]:
+                      - generic [ref=e230]:
+                        - checkbox "Selecionar item e3c41853-5624-11f1-9d75-06799772b1cd"
+                    - cell "teste" [ref=e231]:
+                      - generic "teste" [ref=e232]:
+                        - generic [ref=e233]: teste
+                    - cell "—" [ref=e234]:
+                      - generic [ref=e235]: —
+                    - cell "Padrão" [ref=e236]
+                    - cell "2" [ref=e237]
+                    - cell "Ativa" [ref=e238]:
+                      - generic [ref=e239]: Ativa
+                    - cell "22 de mai. de 2026" [ref=e240]
+                    - cell "Desativar Editar etiqueta Excluir etiqueta" [ref=e241]:
+                      - generic [ref=e242]:
+                        - button "Desativar" [ref=e243] [cursor=pointer]:
+                          - img [ref=e244]
+                        - button "Editar etiqueta" [ref=e248] [cursor=pointer]:
+                          - img [ref=e249]
+                        - button "Excluir etiqueta" [ref=e252] [cursor=pointer]:
+                          - img [ref=e253]
+                  - row "Selecionar item 30352961-4e71-11f1-9d75-06799772b1cd teste — Padrão 0 Ativa 12 de mai. de 2026 Desativar Editar etiqueta Excluir etiqueta" [ref=e256]:
+                    - cell "Selecionar item 30352961-4e71-11f1-9d75-06799772b1cd" [ref=e257]:
+                      - generic [ref=e258]:
+                        - checkbox "Selecionar item 30352961-4e71-11f1-9d75-06799772b1cd"
+                    - cell "teste" [ref=e259]:
+                      - generic "teste" [ref=e260]:
+                        - generic [ref=e261]: teste
+                    - cell "—" [ref=e262]:
+                      - generic [ref=e263]: —
+                    - cell "Padrão" [ref=e264]
+                    - cell "0" [ref=e265]
+                    - cell "Ativa" [ref=e266]:
+                      - generic [ref=e267]: Ativa
+                    - cell "12 de mai. de 2026" [ref=e268]
+                    - cell "Desativar Editar etiqueta Excluir etiqueta" [ref=e269]:
+                      - generic [ref=e270]:
+                        - button "Desativar" [ref=e271] [cursor=pointer]:
+                          - img [ref=e272]
+                        - button "Editar etiqueta" [ref=e276] [cursor=pointer]:
+                          - img [ref=e277]
+                        - button "Excluir etiqueta" [ref=e280] [cursor=pointer]:
+                          - img [ref=e281]
+                  - row "Selecionar item c3b84e62-4e70-11f1-9d75-06799772b1cd teste — Padrão 2 Ativa 12 de mai. de 2026 Desativar Editar etiqueta Excluir etiqueta" [ref=e284]:
+                    - cell "Selecionar item c3b84e62-4e70-11f1-9d75-06799772b1cd" [ref=e285]:
+                      - generic [ref=e286]:
+                        - checkbox "Selecionar item c3b84e62-4e70-11f1-9d75-06799772b1cd"
+                    - cell "teste" [ref=e287]:
+                      - generic "teste" [ref=e288]:
+                        - generic [ref=e289]: teste
+                    - cell "—" [ref=e290]:
+                      - generic [ref=e291]: —
+                    - cell "Padrão" [ref=e292]
+                    - cell "2" [ref=e293]
+                    - cell "Ativa" [ref=e294]:
+                      - generic [ref=e295]: Ativa
+                    - cell "12 de mai. de 2026" [ref=e296]
+                    - cell "Desativar Editar etiqueta Excluir etiqueta" [ref=e297]:
+                      - generic [ref=e298]:
+                        - button "Desativar" [ref=e299] [cursor=pointer]:
+                          - img [ref=e300]
+                        - button "Editar etiqueta" [ref=e304] [cursor=pointer]:
+                          - img [ref=e305]
+                        - button "Excluir etiqueta" [ref=e308] [cursor=pointer]:
+                          - img [ref=e309]
+                  - row "Selecionar item e590b5e5-4e28-11f1-9d75-06799772b1cd teste teste Padrão 0 Ativa 12 de mai. de 2026 Desativar Editar etiqueta Excluir etiqueta" [ref=e312]:
+                    - cell "Selecionar item e590b5e5-4e28-11f1-9d75-06799772b1cd" [ref=e313]:
+                      - generic [ref=e314]:
+                        - checkbox "Selecionar item e590b5e5-4e28-11f1-9d75-06799772b1cd"
+                    - cell "teste" [ref=e315]:
+                      - generic "teste" [ref=e316]:
+                        - generic [ref=e317]: teste
+                    - cell "teste" [ref=e318]:
+                      - generic [ref=e319]: teste
+                    - cell "Padrão" [ref=e320]
+                    - cell "0" [ref=e321]
+                    - cell "Ativa" [ref=e322]:
+                      - generic [ref=e323]: Ativa
+                    - cell "12 de mai. de 2026" [ref=e324]
+                    - cell "Desativar Editar etiqueta Excluir etiqueta" [ref=e325]:
+                      - generic [ref=e326]:
+                        - button "Desativar" [ref=e327] [cursor=pointer]:
+                          - img [ref=e328]
+                        - button "Editar etiqueta" [ref=e332] [cursor=pointer]:
+                          - img [ref=e333]
+                        - button "Excluir etiqueta" [ref=e336] [cursor=pointer]:
+                          - img [ref=e337]
+                  - row "Selecionar item 7ceeb1b1-49b5-11f1-9d75-06799772b1cd disparo_2026-05-06 22:38:45_95395 — Padrão 2 Ativa 6 de mai. de 2026 Desativar Editar etiqueta Excluir etiqueta" [ref=e340]:
+                    - cell "Selecionar item 7ceeb1b1-49b5-11f1-9d75-06799772b1cd" [ref=e341]:
+                      - generic [ref=e342]:
+                        - checkbox "Selecionar item 7ceeb1b1-49b5-11f1-9d75-06799772b1cd"
+                    - cell "disparo_2026-05-06 22:38:45_95395" [ref=e343]:
+                      - generic "disparo_2026-05-06 22:38:45_95395" [ref=e344]:
+                        - generic [ref=e345]: disparo_2026-05-06 22:38:45_95395
+                    - cell "—" [ref=e346]:
+                      - generic [ref=e347]: —
+                    - cell "Padrão" [ref=e348]
+                    - cell "2" [ref=e349]
+                    - cell "Ativa" [ref=e350]:
+                      - generic [ref=e351]: Ativa
+                    - cell "6 de mai. de 2026" [ref=e352]
+                    - cell "Desativar Editar etiqueta Excluir etiqueta" [ref=e353]:
+                      - generic [ref=e354]:
+                        - button "Desativar" [ref=e355] [cursor=pointer]:
+                          - img [ref=e356]
+                        - button "Editar etiqueta" [ref=e360] [cursor=pointer]:
+                          - img [ref=e361]
+                        - button "Excluir etiqueta" [ref=e364] [cursor=pointer]:
+                          - img [ref=e365]
+                  - row "Selecionar item 444ff8c8-3f33-11f1-9d75-06799772b1cd disparo_2026-04-23 13:41:24_95395 — Padrão 1 Ativa 23 de abr. de 2026 Desativar Editar etiqueta Excluir etiqueta" [ref=e368]:
+                    - cell "Selecionar item 444ff8c8-3f33-11f1-9d75-06799772b1cd" [ref=e369]:
+                      - generic [ref=e370]:
+                        - checkbox "Selecionar item 444ff8c8-3f33-11f1-9d75-06799772b1cd"
+                    - cell "disparo_2026-04-23 13:41:24_95395" [ref=e371]:
+                      - generic "disparo_2026-04-23 13:41:24_95395" [ref=e372]:
+                        - generic [ref=e373]: disparo_2026-04-23 13:41:24_95395
+                    - cell "—" [ref=e374]:
+                      - generic [ref=e375]: —
+                    - cell "Padrão" [ref=e376]
+                    - cell "1" [ref=e377]
+                    - cell "Ativa" [ref=e378]:
+                      - generic [ref=e379]: Ativa
+                    - cell "23 de abr. de 2026" [ref=e380]
+                    - cell "Desativar Editar etiqueta Excluir etiqueta" [ref=e381]:
+                      - generic [ref=e382]:
+                        - button "Desativar" [ref=e383] [cursor=pointer]:
+                          - img [ref=e384]
+                        - button "Editar etiqueta" [ref=e388] [cursor=pointer]:
+                          - img [ref=e389]
+                        - button "Excluir etiqueta" [ref=e392] [cursor=pointer]:
+                          - img [ref=e393]
+                  - row "Selecionar item a245df7c-3e78-11f1-9d75-06799772b1cd teste — Padrão 2 Ativa 22 de abr. de 2026 Desativar Editar etiqueta Excluir etiqueta" [ref=e396]:
+                    - cell "Selecionar item a245df7c-3e78-11f1-9d75-06799772b1cd" [ref=e397]:
+                      - generic [ref=e398]:
+                        - checkbox "Selecionar item a245df7c-3e78-11f1-9d75-06799772b1cd"
+                    - cell "teste" [ref=e399]:
+                      - generic "teste" [ref=e400]:
+                        - generic [ref=e401]: teste
+                    - cell "—" [ref=e402]:
+                      - generic [ref=e403]: —
+                    - cell "Padrão" [ref=e404]
+                    - cell "2" [ref=e405]
+                    - cell "Ativa" [ref=e406]:
+                      - generic [ref=e407]: Ativa
+                    - cell "22 de abr. de 2026" [ref=e408]
+                    - cell "Desativar Editar etiqueta Excluir etiqueta" [ref=e409]:
+                      - generic [ref=e410]:
+                        - button "Desativar" [ref=e411] [cursor=pointer]:
+                          - img [ref=e412]
+                        - button "Editar etiqueta" [ref=e416] [cursor=pointer]:
+                          - img [ref=e417]
+                        - button "Excluir etiqueta" [ref=e420] [cursor=pointer]:
+                          - img [ref=e421]
+                  - row "Selecionar item b1144312-3463-11f1-9d75-06799772b1cd teste — Padrão 4 Ativa 9 de abr. de 2026 Desativar Editar etiqueta Excluir etiqueta" [ref=e424]:
+                    - cell "Selecionar item b1144312-3463-11f1-9d75-06799772b1cd" [ref=e425]:
+                      - generic [ref=e426]:
+                        - checkbox "Selecionar item b1144312-3463-11f1-9d75-06799772b1cd"
+                    - cell "teste" [ref=e427]:
+                      - generic "teste" [ref=e428]:
+                        - generic [ref=e429]: teste
+                    - cell "—" [ref=e430]:
+                      - generic [ref=e431]: —
+                    - cell "Padrão" [ref=e432]
+                    - cell "4" [ref=e433]
+                    - cell "Ativa" [ref=e434]:
+                      - generic [ref=e435]: Ativa
+                    - cell "9 de abr. de 2026" [ref=e436]
+                    - cell "Desativar Editar etiqueta Excluir etiqueta" [ref=e437]:
+                      - generic [ref=e438]:
+                        - button "Desativar" [ref=e439] [cursor=pointer]:
+                          - img [ref=e440]
+                        - button "Editar etiqueta" [ref=e444] [cursor=pointer]:
+                          - img [ref=e445]
+                        - button "Excluir etiqueta" [ref=e448] [cursor=pointer]:
+                          - img [ref=e449]
+                  - row "Selecionar item 2dcd1243-2e1e-11f1-9d75-06799772b1cd teste — Padrão 2 Ativa 1 de abr. de 2026 Desativar Editar etiqueta Excluir etiqueta" [ref=e452]:
+                    - cell "Selecionar item 2dcd1243-2e1e-11f1-9d75-06799772b1cd" [ref=e453]:
+                      - generic [ref=e454]:
+                        - checkbox "Selecionar item 2dcd1243-2e1e-11f1-9d75-06799772b1cd"
+                    - cell "teste" [ref=e455]:
+                      - generic "teste" [ref=e456]:
+                        - generic [ref=e457]: teste
+                    - cell "—" [ref=e458]:
+                      - generic [ref=e459]: —
+                    - cell "Padrão" [ref=e460]
+                    - cell "2" [ref=e461]
+                    - cell "Ativa" [ref=e462]:
+                      - generic [ref=e463]: Ativa
+                    - cell "1 de abr. de 2026" [ref=e464]
+                    - cell "Desativar Editar etiqueta Excluir etiqueta" [ref=e465]:
+                      - generic [ref=e466]:
+                        - button "Desativar" [ref=e467] [cursor=pointer]:
+                          - img [ref=e468]
+                        - button "Editar etiqueta" [ref=e472] [cursor=pointer]:
+                          - img [ref=e473]
+                        - button "Excluir etiqueta" [ref=e476] [cursor=pointer]:
+                          - img [ref=e477]
+                  - row "Selecionar item 4c245a10-2c74-11f1-9d75-06799772b1cd disparo_2026-03-30 17:09:02_95395 — Padrão 2 Ativa 30 de mar. de 2026 Desativar Editar etiqueta Excluir etiqueta" [ref=e480]:
+                    - cell "Selecionar item 4c245a10-2c74-11f1-9d75-06799772b1cd" [ref=e481]:
+                      - generic [ref=e482]:
+                        - checkbox "Selecionar item 4c245a10-2c74-11f1-9d75-06799772b1cd"
+                    - cell "disparo_2026-03-30 17:09:02_95395" [ref=e483]:
+                      - generic "disparo_2026-03-30 17:09:02_95395" [ref=e484]:
+                        - generic [ref=e485]: disparo_2026-03-30 17:09:02_95395
+                    - cell "—" [ref=e486]:
+                      - generic [ref=e487]: —
+                    - cell "Padrão" [ref=e488]
+                    - cell "2" [ref=e489]
+                    - cell "Ativa" [ref=e490]:
+                      - generic [ref=e491]: Ativa
+                    - cell "30 de mar. de 2026" [ref=e492]
+                    - cell "Desativar Editar etiqueta Excluir etiqueta" [ref=e493]:
+                      - generic [ref=e494]:
+                        - button "Desativar" [ref=e495] [cursor=pointer]:
+                          - img [ref=e496]
+                        - button "Editar etiqueta" [ref=e500] [cursor=pointer]:
+                          - img [ref=e501]
+                        - button "Excluir etiqueta" [ref=e504] [cursor=pointer]:
+                          - img [ref=e505]
+                  - row "Selecionar item 09f57982-2a5f-11f1-9d75-06799772b1cd disparo_2026-03-28 01:31:50_92058 — Padrão 1 Ativa 28 de mar. de 2026 Desativar Editar etiqueta Excluir etiqueta" [ref=e508]:
+                    - cell "Selecionar item 09f57982-2a5f-11f1-9d75-06799772b1cd" [ref=e509]:
+                      - generic [ref=e510]:
+                        - checkbox "Selecionar item 09f57982-2a5f-11f1-9d75-06799772b1cd"
+                    - cell "disparo_2026-03-28 01:31:50_92058" [ref=e511]:
+                      - generic "disparo_2026-03-28 01:31:50_92058" [ref=e512]:
+                        - generic [ref=e513]: disparo_2026-03-28 01:31:50_92058
+                    - cell "—" [ref=e514]:
+                      - generic [ref=e515]: —
+                    - cell "Padrão" [ref=e516]
+                    - cell "1" [ref=e517]
+                    - cell "Ativa" [ref=e518]:
+                      - generic [ref=e519]: Ativa
+                    - cell "28 de mar. de 2026" [ref=e520]
+                    - cell "Desativar Editar etiqueta Excluir etiqueta" [ref=e521]:
+                      - generic [ref=e522]:
+                        - button "Desativar" [ref=e523] [cursor=pointer]:
+                          - img [ref=e524]
+                        - button "Editar etiqueta" [ref=e528] [cursor=pointer]:
+                          - img [ref=e529]
+                        - button "Excluir etiqueta" [ref=e532] [cursor=pointer]:
+                          - img [ref=e533]
+                  - row "Selecionar item 74dc0985-2a5e-11f1-9d75-06799772b1cd teste — Padrão 0 Ativa 28 de mar. de 2026 Desativar Editar etiqueta Excluir etiqueta" [ref=e536]:
+                    - cell "Selecionar item 74dc0985-2a5e-11f1-9d75-06799772b1cd" [ref=e537]:
+                      - generic [ref=e538]:
+                        - checkbox "Selecionar item 74dc0985-2a5e-11f1-9d75-06799772b1cd"
+                    - cell "teste" [ref=e539]:
+                      - generic "teste" [ref=e540]:
+                        - generic [ref=e541]: teste
+                    - cell "—" [ref=e542]:
+                      - generic [ref=e543]: —
+                    - cell "Padrão" [ref=e544]
+                    - cell "0" [ref=e545]
+                    - cell "Ativa" [ref=e546]:
+                      - generic [ref=e547]: Ativa
+                    - cell "28 de mar. de 2026" [ref=e548]
+                    - cell "Desativar Editar etiqueta Excluir etiqueta" [ref=e549]:
+                      - generic [ref=e550]:
+                        - button "Desativar" [ref=e551] [cursor=pointer]:
+                          - img [ref=e552]
+                        - button "Editar etiqueta" [ref=e556] [cursor=pointer]:
+                          - img [ref=e557]
+                        - button "Excluir etiqueta" [ref=e560] [cursor=pointer]:
+                          - img [ref=e561]
+              - generic [ref=e565]:
+                - generic [ref=e566]:
+                  - generic [ref=e567]: Página 1 de 62
+                  - generic [ref=e568]: "Total: 926 registros"
+                - generic [ref=e569]:
+                  - combobox [ref=e570]:
+                    - option "10 por página"
+                    - option "15 por página" [selected]
+                    - option "25 por página"
+                    - option "50 por página"
+                  - generic [ref=e571]:
+                    - button [disabled]:
+                      - img
+                    - button [disabled]:
+                      - img
+                    - button [ref=e572] [cursor=pointer]:
+                      - img [ref=e573]
+                    - button [ref=e575] [cursor=pointer]:
+                      - img [ref=e576]
+  - region "Notifications (F8)":
+    - list

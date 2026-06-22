@@ -1,0 +1,38 @@
+[    1888ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/login:0
+[    2291ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[    2338ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/login:0
+[    2363ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/login:0
+[    3055ms] [ERROR] WebSocket connection to 'wss://ms.qa.poli.digital/spa-websocket-ativo?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjEwMTgzNiwiZW1haWwiOiJ5dXJpLmFsY2FudGFyYUBwb2xpLmRpZ2l0YWwiLCJuYW1lIjoiIiwiY3VzdG9tZXJfaWQiOjQ2NjY3LCJjdXN0b21lcnMiOls0NjY2N10sInJvbGVzIjpbMiw1XSwicGVybWlzc2lvbnMiOltdfSwicGVybWlzc2lvbnMiOltdLCJpYXQiOjE3ODExMDExMTYsImV4cCI6MTc4MTE4NzUxNn0.rWjvIonu0V5XwJb2S04PyDmyveCeeoGEwW2HRUnIPaU&customer_id=46667' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[    3056ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[    3288ms] [ERROR] Amplitude Logger [Error]: Failed to fetch @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[    3290ms] [WARNING] Amplitude Logger [Warn]: {code: 0, error: "Status 'failed' provided for 1 events"} @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[    3553ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[    4022ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[    4406ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/users/settings/language:0
+[    4409ms] [ERROR] [UserPreferencesService] Failed to get language: Error: Dados de autenticação não encontrados. Faça login novamente.
+    at https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:2278575
+    at f (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1825709)
+    at Generator.<anonymous> (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1827061)
+    at Generator.next (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1826138)
+    at r (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1819801)
+    at s (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1820012)
+    at https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1820071
+    at new Promise (<anonymous>)
+    at https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1819952
+    at https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:2281625 @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[    4410ms] [WARNING] Não foi possível carregar idioma salvo, usando padrão: Error: Dados de autenticação não encontrados. Faça login novamente.
+    at https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:2278575
+    at f (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1825709)
+    at Generator.<anonymous> (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1827061)
+    at Generator.next (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1826138)
+    at r (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1819801)
+    at s (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1820012)
+    at https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1820071
+    at new Promise (<anonymous>)
+    at https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1819952
+    at https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:2281625 @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[    4421ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[    4424ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[   13220ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[   13634ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.qa.poli.digital/auth/foundation/allowed:0
+[   13635ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1

@@ -1,0 +1,18 @@
+[     249ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/user/presence:0
+[    1388ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/relatorio:0
+[    1520ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[    1739ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/relatorio:0
+[    2015ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/relatorio:0
+[    6901ms] [ERROR] Applying inline style violates the following Content Security Policy directive 'style-src 'self' 'nonce-n4hDSlUbja'   https://accounts.google.com'. Either the 'unsafe-inline' keyword, a hash ('sha256-bgUp5tqDCSC1xokY+fdYcHMM/Fap5RX+TCFkA0sXuRk='), or a nonce ('nonce-...') is required to enable inline execution. The action has been blocked. @ https://metabase.prod.cloud.polichat.com.br/app/dist/vendor.21094c4e1f01c7c7.js:5
+[    8090ms] [WARNING] Error getting setting graph.tooltip_columns TypeError: Cannot read properties of undefined (reading 'column')
+    at https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:293:8879
+    at Array.forEach (<anonymous>)
+    at K (https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:293:8849)
+    at Object.F [as getValue] (https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:293:9102)
+    at e (https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:301:118035)
+    at K (https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:301:118283)
+    at f (https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:301:142345)
+    at https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:92:21621
+    at Object.useMemo (https://metabase.prod.cloud.polichat.com.br/app/dist/vendor.21094c4e1f01c7c7.js:6:2154693)
+    at t.useMemo (https://metabase.prod.cloud.polichat.com.br/app/dist/vendor.21094c4e1f01c7c7.js:6:2510369) @ https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:300
+[  306186ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1

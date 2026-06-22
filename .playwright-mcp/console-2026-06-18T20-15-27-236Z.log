@@ -1,0 +1,105 @@
+[    3267ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[    3270ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[    3459ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:76
+[    4007ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[    4728ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.qa.poli.digital/auth/activity:0
+[    4731ms] [WARNING] Erro ao enviar heartbeat: AxiosError: Request failed with status code 404
+    at nze (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:15855) @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[    4734ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[    4737ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/broadcasting/auth:0
+[    4738ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[    4739ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[    4740ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/settings:0
+[    4917ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/non-payment/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[    4918ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/crm/index:0
+[    4919ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/users/settings/summary:0
+[    4944ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats/pinned:0
+[    5147ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.qa.poli.digital/auth/refresh-token:0
+[    5149ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at nze (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2243)
+    at async vRt (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:6917)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:8264
+    at async P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2147)
+    at async W9.getPanelCredits (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1938:552) @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[    5151ms] [ERROR] AxiosError: Request failed with status code 401
+    at nze (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2243)
+    at async vRt (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:6917)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:8264
+    at async P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2147)
+    at async W9.getPanelCredits (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1938:552) @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[    5155ms] [ERROR] [UserPreferencesService] Failed to get summary: Error: AxiosError: Request failed with status code 401
+    at https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:8231
+    at async P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2147)
+    at async kge.getSummary (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2251:64653)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2251:65354 @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[    5156ms] [ERROR] Error: AxiosError: Request failed with status code 401
+    at https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:8231
+    at async P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2147)
+    at async Zvn.getOverdueAccounts (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2263:45555)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2589:5315 @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[    5156ms] [ERROR] getCrmUserToken - Error on get crm user token: Error: AxiosError: Request failed with status code 401
+    at https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:8231
+    at async P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2147)
+    at async Sz.getUserToken (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2250:44292)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2250:44583 @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[    5157ms] [ERROR] [useUserPreferences] Error: Error: AxiosError: Request failed with status code 401
+    at https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:8231
+    at async P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2147)
+    at async kge.getSummary (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2251:64653)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:2251:65354 @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[    5157ms] [ERROR] error ao buscar chats Error: AxiosError: Request failed with status code 401
+    at https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:8231
+    at async P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2147)
+    at async XRt (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1147:26220)
+    at async w (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:54:37980)
+    at async Object.u [as fn] (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:54:38287) @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[    5390ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[    5580ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.qa.poli.digital/auth/refresh-token:0
+[    5588ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at nze (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2243)
+    at async vRt (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:6917)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:8264
+    at async P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2147)
+    at async W9.getPanelCredits (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1938:552) @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[    5588ms] [ERROR] AxiosError: Request failed with status code 401
+    at nze (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:10242)
+    at XMLHttpRequest.x (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1111:15855)
+    at P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2243)
+    at async vRt (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:6917)
+    at async https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1117:8264
+    at async P2.request (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1113:2147)
+    at async W9.getPanelCredits (https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:1938:552) @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[    6131ms] [INFO] WebSocket: Conexão finalizada @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[    6413ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats/pinned:0
+[    6423ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/settings:0
+[    6426ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[    6649ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[    6653ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[    7001ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[    7001ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:101
+[    7068ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:76
+[    7116ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69
+[    7552ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-C9cvgU4J.js:69

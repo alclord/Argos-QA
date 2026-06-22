@@ -1,0 +1,61 @@
+[    1654ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-hnKoqB83.js:101
+[    1656ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-hnKoqB83.js:101
+[    1887ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-hnKoqB83.js:76
+[    2561ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-hnKoqB83.js:69
+[    2956ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:895:429
+    at qS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:897:31)
+    at Od.pS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:894:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:309:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:255:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Lq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:266:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:719:315
+    at Kz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:622:1)
+    at Pz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:626:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:646:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:647:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:647:100)
+    at mB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:647:742)
+    at pB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:651:183)
+    at BD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:696:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:700:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e6631:687:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:863:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e6631:551:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:700:495
+    at r (https://spa-canary.poli.digital/assets/index-hnKoqB83.js:70:9827)
+[    5590ms] Identifier 'TCRMEmbed' has already been declared
+[   14391ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DbOYRZMg.js:101
+[   14391ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-DbOYRZMg.js:101
+[   14535ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-DbOYRZMg.js:76
+[   15052ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/undefined/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[   15057ms] [ERROR] error ao buscar chats TypeError: Cannot read properties of undefined (reading 'data')
+    at avt (https://spa-canary.poli.digital/assets/index-DbOYRZMg.js:1127:26145)
+    at async C (https://spa-canary.poli.digital/assets/index-DbOYRZMg.js:54:37954)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-DbOYRZMg.js:54:38261) @ https://spa-canary.poli.digital/assets/index-DbOYRZMg.js:69
+[   15154ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/undefined/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[   15158ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/users/settings/summary:0
+[   15160ms] [ERROR] [UserPreferencesService] Failed to get summary: TypeError: Cannot read properties of undefined (reading 'data')
+    at vne.getSummary (https://spa-canary.poli.digital/assets/index-DbOYRZMg.js:2231:64686)
+    at async https://spa-canary.poli.digital/assets/index-DbOYRZMg.js:2231:65346 @ https://spa-canary.poli.digital/assets/index-DbOYRZMg.js:69
+[   15162ms] [ERROR] [useUserPreferences] Error: TypeError: Cannot read properties of undefined (reading 'data')
+    at vne.getSummary (https://spa-canary.poli.digital/assets/index-DbOYRZMg.js:2231:64686)
+    at async https://spa-canary.poli.digital/assets/index-DbOYRZMg.js:2231:65346 @ https://spa-canary.poli.digital/assets/index-DbOYRZMg.js:69
+[   15168ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-DbOYRZMg.js:69
+[   15212ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DbOYRZMg.js:69
+[   15739ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DbOYRZMg.js:101
+[   15740ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-DbOYRZMg.js:101
+[   15791ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-DbOYRZMg.js:76
+[   15832ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DbOYRZMg.js:69
+[   16356ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-DbOYRZMg.js:69
+[   37040ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DbOYRZMg.js:69
+[   42685ms] Identifier 'TCRMEmbed' has already been declared

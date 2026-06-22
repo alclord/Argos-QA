@@ -1,0 +1,35 @@
+[   12010ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:101
+[   12012ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:101
+[   12212ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:76
+[   12811ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:69
+[   13342ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats/pinned:0
+[   13351ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[   13354ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/crm/index:0
+[   13355ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[   13357ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/broadcasting/auth:0
+[   13358ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[   13360ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/users/settings/summary:0
+[   13491ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/non-payment/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[   13500ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/settings:0
+[   13502ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   13976ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   15179ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   16338ms] Identifier 'TCRMEmbed' has already been declared
+[   17368ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   18008ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:101
+[   18008ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:101
+[   18061ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:76
+[   18106ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:69
+[   18599ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:69
+[   71972ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:69
+[   73512ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   74709ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   76919ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   81117ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[  333856ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at LM (https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:1058:280)
+    at g2.iZ (https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:1058:317)
+    at async g2.request (https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:1058:2138)
+    at async evt (https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:1092:26108)
+    at async C (https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:54:37954)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:54:38261) @ https://spa-canary.poli.digital/assets/index-i3JOGCyX.js:69

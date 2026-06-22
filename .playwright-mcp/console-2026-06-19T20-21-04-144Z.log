@@ -1,0 +1,50 @@
+[     948ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:101
+[     948ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:101
+[    1026ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:76
+[    1066ms] [WARNING] TCRMEmbed não está disponível ainda @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[    1357ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:908:429
+    at PR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:910:31)
+    at Nd.OR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:907:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:317:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:263:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at k.Tq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:274:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:734:315
+    at Rz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:637:1)
+    at Yz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:642:289)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:662:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:206:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:663:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:663:100)
+    at vB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:663:742)
+    at yB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:667:183)
+    at ID (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:711:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:715:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:869:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e66h0:692:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e66h0h1:553:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:715:457
+    at r (https://spa-canary.poli.digital/assets/index-ClphRREw.js:70:9827)
+[    1627ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[    5365ms] [LOG] identify @ :0
+[    6942ms] [LOG] window.CRMUser true @ :0
+[    6942ms] [LOG] start @ :0
+[   10781ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.crm.poli.digital/dashboard:0
+[   10781ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.crm.poli.digital/dashboard:0
+[  332864ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[  332875ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[  332876ms] [ERROR] [WebSocket: Erro na conexão: {type: WebSocketError, error: Object} @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[  334199ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error during WebSocket handshake: Unexpected response code: 503 @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:1098
+[  334898ms] [ERROR] [WebSocket: Erro na conexão: {type: WebSocketError, error: Object} @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69
+[  335482ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error during WebSocket handshake: Unexpected response code: 503 @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:1098
+[  336039ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error during WebSocket handshake: Unexpected response code: 503 @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:1098
+[  351088ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error during WebSocket handshake: Unexpected response code: 503 @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:1098
+[  381059ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-ClphRREw.js:69

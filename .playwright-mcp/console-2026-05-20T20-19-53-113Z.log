@@ -1,0 +1,83 @@
+[    1840ms] [LOG] i18next: languageChanged pt @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    1841ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    1915ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    2258ms] [LOG] i18next: languageChanged pt @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    2267ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.u (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:16854)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:70:9812)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:54:42897)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:54:35513)
+    at hne.removeObserver (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:54:41261)
+    at ILe.destroy (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:54:46743)
+    at ILe.onUnsubscribe (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:54:46446)
+    at https://spa-canary.poli.digital/assets/index-hoijn-GF.js:54:29000
+    at d_ (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:41:22877)
+    at M1 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:41:24658)
+    at Bg (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:41:42704)
+    at IE (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:41:37476)
+    at Yo (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:39:3273)
+    at o$ (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:41:42282)
+    at Mp (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:41:41243)
+    at PE (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:41:36580)
+    at j (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:26:1602)
+    at MessagePort.O (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:26:1969)
+    at zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2234)
+    at async Edt (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1002:26256)
+    at async C (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:54:37851) @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    2380ms] [INFO] WebSocket: Conexão estabelecida @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    2602ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/users/settings/summary:0
+[    2985ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.poli.digital/auth/refresh-token:0
+[    2987ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at fwe (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:15705)
+    at zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2234)
+    at async Wct (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:6854)
+    at async https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:8196
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async Gee.getSummary (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2108:64520)
+    at async https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2108:65221 @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    2988ms] [ERROR] AxiosError: Request failed with status code 401
+    at fwe (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:15705)
+    at zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2234)
+    at async Wct (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:6854)
+    at async https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:8196
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async Gee.getSummary (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2108:64520)
+    at async https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2108:65221 @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    2990ms] [ERROR] [UserPreferencesService] Failed to get summary: AxiosError: Request failed with status code 401
+    at fwe (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:15705)
+    at zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2234)
+    at async Wct (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:6854)
+    at async https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:8196
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async Gee.getSummary (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2108:64520)
+    at async https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2108:65221 @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    2991ms] [ERROR] [useUserPreferences] Error: AxiosError: Request failed with status code 401
+    at fwe (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:15705)
+    at zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2234)
+    at async Wct (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:6854)
+    at async https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:8196
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async Gee.getSummary (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2108:64520)
+    at async https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2108:65221 @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    3426ms] [INFO] WebSocket: Conexão finalizada @ https://cdn.amplitude.com/libs/analytics-browser-gtm-wrapper-2.33.4.min.js.br:0
+[    3705ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:101
+[    3705ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:101
+[    3754ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:76
+[    3792ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[    4240ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[   24376ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[   26814ms] Identifier 'TCRMEmbed' has already been declared
+[  100431ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/tags?status=XPTO:0
+[  100432ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/tags?category=INVALIDO:0
+[  221922ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[  228078ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[  232138ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/tags?order=campo_invalido_xyz:0
+[  245083ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[  248407ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/tags?category=DEFAULT,SUCCESS&per_page=5:0
+[  248423ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/tags?per_page=0:0
+[  248428ms] [ERROR] Failed to load resource: the server responded with a status of 422 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-0407-49a2-bce9-3620f29c513a/tags?category[]=DEFAULT&category[]=SUCCESS&per_page=5:0

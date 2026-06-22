@@ -1,0 +1,263 @@
+[    2728ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[    2730ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[    2860ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[    3662ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[    3684ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[    3695ms] [ERROR] error ao buscar chats TypeError: Cannot read properties of undefined (reading 'data')
+    at gDt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1137:36193)
+    at async C (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:38287) @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[    3890ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/users/settings/summary:0
+[    3893ms] [ERROR] [UserPreferencesService] Failed to get summary: TypeError: Cannot read properties of undefined (reading 'data')
+    at Hme.getSummary (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:2241:64629)
+    at async https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:2241:65289 @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[    3894ms] [ERROR] [useUserPreferences] Error: TypeError: Cannot read properties of undefined (reading 'data')
+    at Hme.getSummary (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:2241:64629)
+    at async https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:2241:65289 @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[    4389ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[    4389ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[    4427ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[    4452ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[    4930ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   47787ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   48358ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at yB (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:282)
+    at _2.Rue (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:320)
+    at async _2.request (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:2147)
+    at async gDt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1137:36156)
+    at async C (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:38287) @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   80702ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[   80702ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[   80845ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[   80976ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at yB (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:282)
+    at _2.Rue (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:320)
+    at async _2.request (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:2147)
+    at async gDt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1137:36156)
+    at async C (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:38287) @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   81313ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  170450ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  170450ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  170529ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  171035ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  171128ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.poli.digital/auth/loginWithToken:0
+[  171130ms] [ERROR] AuthTokenPage login failed: AxiosError: Request failed with status code 401
+    at CBe (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1101:15780)
+    at _2.request (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:2243)
+    at async Cf.loginWithToken (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1111:7379)
+    at async https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1137:26861 @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  175998ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  175998ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  176080ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  176124ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  176686ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  217773ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  217773ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  217831ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  218360ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  218361ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  218417ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  218452ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  218906ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  229539ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  229539ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  229589ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  230114ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  230114ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  230171ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  230194ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  230640ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  241138ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  241138ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  241181ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  241710ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  241710ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  241762ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  241785ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  242264ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  254068ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  254068ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  254116ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  254666ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  254667ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  254718ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  254742ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  255199ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  261710ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  261710ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  261756ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  261782ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  262259ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  486320ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  486321ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  486373ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  486923ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  503618ms] TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.
+    at <anonymous>:14:14
+    at <anonymous>:15:5
+    at <anonymous>:16:7
+[  504650ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  504650ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  504683ms] TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.
+    at <anonymous>:14:14
+    at <anonymous>:15:5
+    at <anonymous>:16:7
+    at f4e (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:73:14515)
+    at Object.Ebt [as transport] (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:73:17912)
+    at new F0t (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:62:20878)
+    at new uyt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:70:13468)
+    at q0t (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:63:2059)
+    at _xt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:73:28398)
+    at j3t (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:77:30296)
+[  504690ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  505183ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  507401ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.poli.digital/auth/loginWithToken:0
+[  507404ms] [ERROR] AuthTokenPage login failed: AxiosError: Request failed with status code 401
+    at CBe (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1101:15780)
+    at _2.request (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:2243)
+    at async Cf.loginWithToken (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1111:7379)
+    at async https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1137:26861 @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  507454ms] TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.
+    at <anonymous>:14:14
+    at <anonymous>:15:5
+    at <anonymous>:16:7
+[  507961ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  507961ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  508015ms] TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.
+    at <anonymous>:14:14
+    at <anonymous>:15:5
+    at <anonymous>:16:7
+    at f4e (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:73:14515)
+    at Object.Ebt [as transport] (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:73:17912)
+    at new F0t (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:62:20878)
+    at new uyt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:70:13468)
+    at q0t (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:63:2059)
+    at _xt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:73:28398)
+    at j3t (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:77:30296)
+[  508021ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  508046ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  508499ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  526390ms] TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.
+    at <anonymous>:14:14
+    at <anonymous>:15:5
+    at <anonymous>:16:7
+[  526679ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  526679ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  526729ms] TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.
+    at <anonymous>:14:14
+    at <anonymous>:15:5
+    at <anonymous>:16:7
+    at f4e (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:73:14515)
+    at Object.Ebt [as transport] (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:73:17912)
+    at new F0t (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:62:20878)
+    at new uyt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:70:13468)
+    at q0t (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:63:2059)
+    at _xt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:73:28398)
+    at j3t (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:77:30296)
+[  526736ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  527219ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  527593ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.poli.digital/auth/loginWithToken:0
+[  527594ms] [ERROR] AuthTokenPage login failed: AxiosError: Request failed with status code 401
+    at CBe (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1101:15780)
+    at _2.request (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:2243)
+    at async Cf.loginWithToken (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1111:7379)
+    at async https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1137:26861 @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  527674ms] TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.
+    at <anonymous>:14:14
+    at <anonymous>:15:5
+    at <anonymous>:16:7
+[  527969ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  527969ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  528064ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  528109ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  528503ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  551783ms] TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.
+    at <anonymous>:14:14
+    at <anonymous>:15:5
+    at <anonymous>:16:7
+[  552681ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  552681ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  552725ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  553298ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  553772ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.poli.digital/auth/loginWithToken:0
+[  553774ms] [ERROR] AuthTokenPage login failed: AxiosError: Request failed with status code 401
+    at CBe (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1101:15780)
+    at _2.request (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:2243)
+    at async Cf.loginWithToken (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1111:7379)
+    at async https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1137:26861 @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  554006ms] TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.
+    at <anonymous>:14:14
+    at <anonymous>:15:5
+    at <anonymous>:16:7
+[  554778ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  554778ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  554827ms] TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.
+    at <anonymous>:14:14
+    at <anonymous>:15:5
+    at <anonymous>:16:7
+    at f4e (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:73:14515)
+    at Object.Ebt [as transport] (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:73:17912)
+    at new F0t (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:62:20878)
+    at new uyt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:70:13468)
+    at q0t (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:63:2059)
+    at _xt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:73:28398)
+    at j3t (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:77:30296)
+[  554834ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  554859ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  555310ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  569326ms] TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.
+    at <anonymous>:14:14
+    at <anonymous>:15:5
+    at <anonymous>:16:7
+[  569479ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ https://www.clarity.ms/tag/u4k89qf9gw:0
+[  569728ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ https://www.clarity.ms/tag/fqo9f8ulad?ref=gtm2:0
+[  570127ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  570127ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  570175ms] TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.
+    at <anonymous>:14:14
+    at <anonymous>:15:5
+    at <anonymous>:16:7
+    at f4e (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:73:14515)
+    at Object.Ebt [as transport] (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:73:17912)
+    at new F0t (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:62:20878)
+    at new uyt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:70:13468)
+    at q0t (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:63:2059)
+    at _xt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:73:28398)
+    at j3t (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:77:30296)
+[  570179ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  570655ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  572284ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.poli.digital/auth/loginWithToken:0
+[  572285ms] [ERROR] AuthTokenPage login failed: AxiosError: Request failed with status code 401
+    at CBe (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1101:15780)
+    at _2.request (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:2243)
+    at async Cf.loginWithToken (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1111:7379)
+    at async https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1137:26861 @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  572504ms] TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.
+    at <anonymous>:14:14
+    at <anonymous>:15:5
+    at <anonymous>:16:7
+[  572560ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ https://www.clarity.ms/tag/u4k89qf9gw:0
+[  572902ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ https://www.clarity.ms/tag/fqo9f8ulad?ref=gtm2:0
+[  573168ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  573168ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[  573226ms] TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.
+    at <anonymous>:14:14
+    at <anonymous>:15:5
+    at <anonymous>:16:7
+    at f4e (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:73:14515)
+    at Object.Ebt [as transport] (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:73:17912)
+    at new F0t (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:62:20878)
+    at new uyt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:70:13468)
+    at q0t (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:63:2059)
+    at _xt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:73:28398)
+    at j3t (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:77:30296)
+[  573232ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[  573268ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[  573710ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69

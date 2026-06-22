@@ -1,0 +1,11 @@
+[    1142ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/tools/quick-messages:0
+[    1406ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.c3fe8322.js:1
+[    1687ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/tools/quick-messages:0
+[    1702ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/tools/quick-messages:0
+[   69853ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v1/customers/46667/quick-messages?page=1&limit=20:0
+[   85969ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v1/quick-messages?customer_id=1&page=1&limit=10:0
+[   86045ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v1/customers/46667/quick-messages?page=1&limit=10&type=flow:0
+[   86046ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v1/customers/1/quick-messages?page=1&limit=10:0
+[   86081ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v1/customers/46667/quick-messages?page=1&limit=5:0
+[  146612ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://homolog.qa.poli.digital/api/v1/customers/46667/whatsapp/send_flow_template/channels/1522/phone/556299210609:0
+[  147303ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://homolog.qa.poli.digital/api/v1/customers/1/whatsapp/send_template/channels/1522/phone/556299210609:0

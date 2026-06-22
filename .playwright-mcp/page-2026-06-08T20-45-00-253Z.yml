@@ -1,0 +1,550 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=496dd2d0c02b10c0838b944268af4b53c2455632&toPath=https://app.poli.digital/home
+        - img [ref=e11]
+      - generic [ref=e12]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link [ref=e16] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e18]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=496dd2d0c02b10c0838b944268af4b53c2455632&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e30]
+          - listitem [ref=e33]:
+            - link [ref=e34] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e36]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=496dd2d0c02b10c0838b944268af4b53c2455632&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e41]
+          - listitem [ref=e44]:
+            - link [ref=e45] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=496dd2d0c02b10c0838b944268af4b53c2455632&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e47]
+          - listitem [ref=e50]:
+            - link [ref=e51] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=496dd2d0c02b10c0838b944268af4b53c2455632&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e53]
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - link [ref=e61] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e63]
+      - generic [ref=e66]:
+        - button "Consumo de créditos" [ref=e67] [cursor=pointer]:
+          - img [ref=e69]
+        - button "YA" [ref=e73] [cursor=pointer]:
+          - generic [ref=e79]: YA
+        - generic [ref=e82]: 3.5.352
+    - main [ref=e83]:
+      - main [ref=e84]:
+        - generic [ref=e86]:
+          - navigation "breadcrumb" [ref=e88]:
+            - link "Página inicial" [ref=e90] [cursor=pointer]:
+              - /url: /
+            - img [ref=e91]
+            - generic [ref=e93]: Contatos
+          - generic [ref=e95]:
+            - generic [ref=e96]:
+              - generic [ref=e98]:
+                - textbox "Buscar contatos..." [active] [ref=e99]: Yuri
+                - button "Limpar" [ref=e974] [cursor=pointer]:
+                  - img [ref=e975]
+              - generic [ref=e104]:
+                - button "Ver excluídos" [ref=e105] [cursor=pointer]:
+                  - img [ref=e106]
+                  - text: Ver excluídos
+                - button "Adicionar Novo" [ref=e109] [cursor=pointer]:
+                  - img [ref=e110]
+                  - text: Adicionar Novo
+            - generic [ref=e112]:
+              - table [ref=e1094]:
+                - rowgroup [ref=e1095]:
+                  - row "Selecionar todos da página Nome Email Telefone Atendente Canais Etiquetas Data de criação" [ref=e1096]:
+                    - columnheader "Selecionar todos da página" [ref=e1097]:
+                      - checkbox "Selecionar todos da página" [ref=e1099] [cursor=pointer]
+                    - columnheader "Nome" [ref=e1100]:
+                      - button "Nome" [ref=e1101] [cursor=pointer]:
+                        - text: Nome
+                        - img [ref=e1102]
+                    - columnheader "Email" [ref=e1105]:
+                      - button "Email" [ref=e1106] [cursor=pointer]:
+                        - text: Email
+                        - img [ref=e1107]
+                    - columnheader "Telefone" [ref=e1110]
+                    - columnheader "Atendente" [ref=e1111]
+                    - columnheader "Canais" [ref=e1112]
+                    - columnheader "Etiquetas" [ref=e1113]
+                    - columnheader "Data de criação" [ref=e1114]:
+                      - button "Data de criação" [ref=e1115] [cursor=pointer]:
+                        - text: Data de criação
+                        - img [ref=e1116]
+                    - columnheader [ref=e1119]
+                - rowgroup [ref=e1120]:
+                  - row "Selecionar item c7fbfdf5-6282-11f1-9d75-06799772b1cd YE Yuri Espindola Ferrari Negrão yuriferrary@gmail.com 5575982217950 LM WhatsApp WhatsApp — 7 de jun. de 2026 Editar Excluir" [ref=e1121]:
+                    - cell "Selecionar item c7fbfdf5-6282-11f1-9d75-06799772b1cd" [ref=e1122]:
+                      - generic [ref=e1123]:
+                        - checkbox "Selecionar item c7fbfdf5-6282-11f1-9d75-06799772b1cd"
+                    - cell "YE Yuri Espindola Ferrari Negrão" [ref=e1124]:
+                      - generic [ref=e1125]:
+                        - generic [ref=e1129]: YE
+                        - button [ref=e1130] [cursor=pointer]:
+                          - img [ref=e1131]
+                        - generic [ref=e1134]: Yuri Espindola Ferrari Negrão
+                        - button [ref=e1135] [cursor=pointer]:
+                          - img [ref=e1136]
+                    - cell "yuriferrary@gmail.com" [ref=e1140]
+                    - cell "5575982217950" [ref=e1141]
+                    - cell "LM" [ref=e1142]:
+                      - generic [ref=e1147]: LM
+                    - cell "WhatsApp WhatsApp" [ref=e1148]:
+                      - generic [ref=e1151]:
+                        - img "WhatsApp" [ref=e1152]
+                        - generic [ref=e1155]: WhatsApp
+                    - cell "—" [ref=e1156]
+                    - cell "7 de jun. de 2026" [ref=e1157]
+                    - cell "Editar Excluir" [ref=e1158]:
+                      - generic [ref=e1159]:
+                        - button "Editar" [ref=e1160] [cursor=pointer]:
+                          - img [ref=e1161]
+                        - button "Excluir" [ref=e1164] [cursor=pointer]:
+                          - img [ref=e1165]
+                  - row "Selecionar item a6551930-5ab9-11f1-9d75-06799772b1cd YU yuri — 556799501828 GL WhatsApp WhatsApp dsq280526 28 de mai. de 2026 Editar Excluir" [ref=e1168]:
+                    - cell "Selecionar item a6551930-5ab9-11f1-9d75-06799772b1cd" [ref=e1169]:
+                      - generic [ref=e1170]:
+                        - checkbox "Selecionar item a6551930-5ab9-11f1-9d75-06799772b1cd"
+                    - cell "YU yuri" [ref=e1171]:
+                      - generic [ref=e1172]:
+                        - generic [ref=e1176]: YU
+                        - button [ref=e1177] [cursor=pointer]:
+                          - img [ref=e1178]
+                        - generic [ref=e1181]: yuri
+                        - button [ref=e1182] [cursor=pointer]:
+                          - img [ref=e1183]
+                    - cell "—" [ref=e1187]
+                    - cell "556799501828" [ref=e1188]
+                    - cell "GL" [ref=e1189]:
+                      - generic [ref=e1194]: GL
+                    - cell "WhatsApp WhatsApp" [ref=e1195]:
+                      - generic [ref=e1198]:
+                        - img "WhatsApp" [ref=e1199]
+                        - generic [ref=e1202]: WhatsApp
+                    - cell "dsq280526" [ref=e1203]:
+                      - generic [ref=e1206]: dsq280526
+                    - cell "28 de mai. de 2026" [ref=e1207]
+                    - cell "Editar Excluir" [ref=e1208]:
+                      - generic [ref=e1209]:
+                        - button "Editar" [ref=e1210] [cursor=pointer]:
+                          - img [ref=e1211]
+                        - button "Excluir" [ref=e1214] [cursor=pointer]:
+                          - img [ref=e1215]
+                  - row "Selecionar item 32774af2-58ee-11f1-9d75-06799772b1cd YF Yuri Ferraz Silva yuriferrazwy@gmail.com 5518988226886 JF WhatsApp WhatsApp — 26 de mai. de 2026 Editar Excluir" [ref=e1218]:
+                    - cell "Selecionar item 32774af2-58ee-11f1-9d75-06799772b1cd" [ref=e1219]:
+                      - generic [ref=e1220]:
+                        - checkbox "Selecionar item 32774af2-58ee-11f1-9d75-06799772b1cd"
+                    - cell "YF Yuri Ferraz Silva" [ref=e1221]:
+                      - generic [ref=e1222]:
+                        - generic [ref=e1226]: YF
+                        - button [ref=e1227] [cursor=pointer]:
+                          - img [ref=e1228]
+                        - generic [ref=e1231]: Yuri Ferraz Silva
+                        - button [ref=e1232] [cursor=pointer]:
+                          - img [ref=e1233]
+                    - cell "yuriferrazwy@gmail.com" [ref=e1237]
+                    - cell "5518988226886" [ref=e1238]
+                    - cell "JF" [ref=e1239]:
+                      - generic [ref=e1244]: JF
+                    - cell "WhatsApp WhatsApp" [ref=e1245]:
+                      - generic [ref=e1248]:
+                        - img "WhatsApp" [ref=e1249]
+                        - generic [ref=e1252]: WhatsApp
+                    - cell "—" [ref=e1253]
+                    - cell "26 de mai. de 2026" [ref=e1254]
+                    - cell "Editar Excluir" [ref=e1255]:
+                      - generic [ref=e1256]:
+                        - button "Editar" [ref=e1257] [cursor=pointer]:
+                          - img [ref=e1258]
+                        - button "Excluir" [ref=e1261] [cursor=pointer]:
+                          - img [ref=e1262]
+                  - row "Selecionar item 94cc89c7-552c-11f1-9d75-06799772b1cd YU Yuri yuriry2@gmail.com 5596981143671 SS WhatsApp WhatsApp — 21 de mai. de 2026 Editar Excluir" [ref=e1265]:
+                    - cell "Selecionar item 94cc89c7-552c-11f1-9d75-06799772b1cd" [ref=e1266]:
+                      - generic [ref=e1267]:
+                        - checkbox "Selecionar item 94cc89c7-552c-11f1-9d75-06799772b1cd"
+                    - cell "YU Yuri" [ref=e1268]:
+                      - generic [ref=e1269]:
+                        - generic [ref=e1273]: YU
+                        - button [ref=e1274] [cursor=pointer]:
+                          - img [ref=e1275]
+                        - generic [ref=e1278]: Yuri
+                        - button [ref=e1279] [cursor=pointer]:
+                          - img [ref=e1280]
+                    - cell "yuriry2@gmail.com" [ref=e1284]
+                    - cell "5596981143671" [ref=e1285]
+                    - cell "SS" [ref=e1286]:
+                      - generic [ref=e1291]: SS
+                    - cell "WhatsApp WhatsApp" [ref=e1292]:
+                      - generic [ref=e1295]:
+                        - img "WhatsApp" [ref=e1296]
+                        - generic [ref=e1299]: WhatsApp
+                    - cell "—" [ref=e1300]
+                    - cell "21 de mai. de 2026" [ref=e1301]
+                    - cell "Editar Excluir" [ref=e1302]:
+                      - generic [ref=e1303]:
+                        - button "Editar" [ref=e1304] [cursor=pointer]:
+                          - img [ref=e1305]
+                        - button "Excluir" [ref=e1308] [cursor=pointer]:
+                          - img [ref=e1309]
+                  - row "Selecionar item ee7cf20d-53a5-11f1-9d75-06799772b1cd YW Yuri Werner yuriwerner27@gmail.com 5521976613533 GL WhatsApp WhatsApp — 19 de mai. de 2026 Editar Excluir" [ref=e1312]:
+                    - cell "Selecionar item ee7cf20d-53a5-11f1-9d75-06799772b1cd" [ref=e1313]:
+                      - generic [ref=e1314]:
+                        - checkbox "Selecionar item ee7cf20d-53a5-11f1-9d75-06799772b1cd"
+                    - cell "YW Yuri Werner" [ref=e1315]:
+                      - generic [ref=e1316]:
+                        - generic [ref=e1320]: YW
+                        - button [ref=e1321] [cursor=pointer]:
+                          - img [ref=e1322]
+                        - generic [ref=e1325]: Yuri Werner
+                        - button [ref=e1326] [cursor=pointer]:
+                          - img [ref=e1327]
+                    - cell "yuriwerner27@gmail.com" [ref=e1331]
+                    - cell "5521976613533" [ref=e1332]
+                    - cell "GL" [ref=e1333]:
+                      - generic [ref=e1338]: GL
+                    - cell "WhatsApp WhatsApp" [ref=e1339]:
+                      - generic [ref=e1342]:
+                        - img "WhatsApp" [ref=e1343]
+                        - generic [ref=e1346]: WhatsApp
+                    - cell "—" [ref=e1347]
+                    - cell "19 de mai. de 2026" [ref=e1348]
+                    - cell "Editar Excluir" [ref=e1349]:
+                      - generic [ref=e1350]:
+                        - button "Editar" [ref=e1351] [cursor=pointer]:
+                          - img [ref=e1352]
+                        - button "Excluir" [ref=e1355] [cursor=pointer]:
+                          - img [ref=e1356]
+                  - row "Selecionar item 78a9e289-4b2e-11f1-9d75-06799772b1cd YU Yuri yuri.bhernandes@gmail.com 5547920013185 GL WhatsApp WhatsApp WhatsApp WhatsApp reunião marcada 8 de mai. de 2026 Editar Excluir" [ref=e1359]:
+                    - cell "Selecionar item 78a9e289-4b2e-11f1-9d75-06799772b1cd" [ref=e1360]:
+                      - generic [ref=e1361]:
+                        - checkbox "Selecionar item 78a9e289-4b2e-11f1-9d75-06799772b1cd"
+                    - cell "YU Yuri" [ref=e1362]:
+                      - generic [ref=e1363]:
+                        - generic [ref=e1367]: YU
+                        - button [ref=e1368] [cursor=pointer]:
+                          - img [ref=e1369]
+                        - generic [ref=e1372]: Yuri
+                        - button [ref=e1373] [cursor=pointer]:
+                          - img [ref=e1374]
+                    - cell "yuri.bhernandes@gmail.com" [ref=e1378]
+                    - cell "5547920013185" [ref=e1379]
+                    - cell "GL" [ref=e1380]:
+                      - generic [ref=e1385]: GL
+                    - cell "WhatsApp WhatsApp WhatsApp WhatsApp" [ref=e1386]:
+                      - generic [ref=e1387]:
+                        - generic [ref=e1389]:
+                          - img "WhatsApp" [ref=e1390]
+                          - generic [ref=e1393]: WhatsApp
+                        - generic [ref=e1395]:
+                          - img "WhatsApp" [ref=e1396]
+                          - generic [ref=e1399]: WhatsApp
+                    - cell "reunião marcada" [ref=e1400]:
+                      - generic [ref=e1403]: reunião marcada
+                    - cell "8 de mai. de 2026" [ref=e1404]
+                    - cell "Editar Excluir" [ref=e1405]:
+                      - generic [ref=e1406]:
+                        - button "Editar" [ref=e1407] [cursor=pointer]:
+                          - img [ref=e1408]
+                        - button "Excluir" [ref=e1411] [cursor=pointer]:
+                          - img [ref=e1412]
+                  - row "Selecionar item d4882b5d-4b03-11f1-9d75-06799772b1cd YU Yuri yuri.yurigr@hotmail.com 5538999060007 GL WhatsApp WhatsApp — 8 de mai. de 2026 Editar Excluir" [ref=e1415]:
+                    - cell "Selecionar item d4882b5d-4b03-11f1-9d75-06799772b1cd" [ref=e1416]:
+                      - generic [ref=e1417]:
+                        - checkbox "Selecionar item d4882b5d-4b03-11f1-9d75-06799772b1cd"
+                    - cell "YU Yuri" [ref=e1418]:
+                      - generic [ref=e1419]:
+                        - generic [ref=e1423]: YU
+                        - button [ref=e1424] [cursor=pointer]:
+                          - img [ref=e1425]
+                        - generic [ref=e1428]: Yuri
+                        - button [ref=e1429] [cursor=pointer]:
+                          - img [ref=e1430]
+                    - cell "yuri.yurigr@hotmail.com" [ref=e1434]
+                    - cell "5538999060007" [ref=e1435]
+                    - cell "GL" [ref=e1436]:
+                      - generic [ref=e1441]: GL
+                    - cell "WhatsApp WhatsApp" [ref=e1442]:
+                      - generic [ref=e1445]:
+                        - img "WhatsApp" [ref=e1446]
+                        - generic [ref=e1449]: WhatsApp
+                    - cell "—" [ref=e1450]
+                    - cell "8 de mai. de 2026" [ref=e1451]
+                    - cell "Editar Excluir" [ref=e1452]:
+                      - generic [ref=e1453]:
+                        - button "Editar" [ref=e1454] [cursor=pointer]:
+                          - img [ref=e1455]
+                        - button "Excluir" [ref=e1458] [cursor=pointer]:
+                          - img [ref=e1459]
+                  - row "Selecionar item e2588475-4ad0-11f1-9d75-06799772b1cd YU Yuri klebinhoea@hotmail.com 5562999896226 ME WhatsApp WhatsApp — 8 de mai. de 2026 Editar Excluir" [ref=e1462]:
+                    - cell "Selecionar item e2588475-4ad0-11f1-9d75-06799772b1cd" [ref=e1463]:
+                      - generic [ref=e1464]:
+                        - checkbox "Selecionar item e2588475-4ad0-11f1-9d75-06799772b1cd"
+                    - cell "YU Yuri" [ref=e1465]:
+                      - generic [ref=e1466]:
+                        - generic [ref=e1470]: YU
+                        - button [ref=e1471] [cursor=pointer]:
+                          - img [ref=e1472]
+                        - generic [ref=e1475]: Yuri
+                        - button [ref=e1476] [cursor=pointer]:
+                          - img [ref=e1477]
+                    - cell "klebinhoea@hotmail.com" [ref=e1481]
+                    - cell "5562999896226" [ref=e1482]
+                    - cell "ME" [ref=e1483]:
+                      - generic [ref=e1488]: ME
+                    - cell "WhatsApp WhatsApp" [ref=e1489]:
+                      - generic [ref=e1492]:
+                        - img "WhatsApp" [ref=e1493]
+                        - generic [ref=e1496]: WhatsApp
+                    - cell "—" [ref=e1497]
+                    - cell "8 de mai. de 2026" [ref=e1498]
+                    - cell "Editar Excluir" [ref=e1499]:
+                      - generic [ref=e1500]:
+                        - button "Editar" [ref=e1501] [cursor=pointer]:
+                          - img [ref=e1502]
+                        - button "Excluir" [ref=e1505] [cursor=pointer]:
+                          - img [ref=e1506]
+                  - row "Selecionar item cd10fd17-4982-11f1-9d75-06799772b1cd YU Yuri — 5521999293829 IR WhatsApp WhatsApp — 6 de mai. de 2026 Editar Excluir" [ref=e1509]:
+                    - cell "Selecionar item cd10fd17-4982-11f1-9d75-06799772b1cd" [ref=e1510]:
+                      - generic [ref=e1511]:
+                        - checkbox "Selecionar item cd10fd17-4982-11f1-9d75-06799772b1cd"
+                    - cell "YU Yuri" [ref=e1512]:
+                      - generic [ref=e1513]:
+                        - generic [ref=e1517]: YU
+                        - button [ref=e1518] [cursor=pointer]:
+                          - img [ref=e1519]
+                        - generic [ref=e1522]: Yuri
+                        - button [ref=e1523] [cursor=pointer]:
+                          - img [ref=e1524]
+                    - cell "—" [ref=e1528]
+                    - cell "5521999293829" [ref=e1529]
+                    - cell "IR" [ref=e1530]:
+                      - generic [ref=e1535]: IR
+                    - cell "WhatsApp WhatsApp" [ref=e1536]:
+                      - generic [ref=e1539]:
+                        - img "WhatsApp" [ref=e1540]
+                        - generic [ref=e1543]: WhatsApp
+                    - cell "—" [ref=e1544]
+                    - cell "6 de mai. de 2026" [ref=e1545]
+                    - cell "Editar Excluir" [ref=e1546]:
+                      - generic [ref=e1547]:
+                        - button "Editar" [ref=e1548] [cursor=pointer]:
+                          - img [ref=e1549]
+                        - button "Excluir" [ref=e1552] [cursor=pointer]:
+                          - img [ref=e1553]
+                  - row "Selecionar item dda76d3b-48b5-11f1-9d75-06799772b1cd YU Yuri yuri.morrodesaopaulo@gmail.com 5516996012255 JF WhatsApp WhatsApp — 5 de mai. de 2026 Editar Excluir" [ref=e1556]:
+                    - cell "Selecionar item dda76d3b-48b5-11f1-9d75-06799772b1cd" [ref=e1557]:
+                      - generic [ref=e1558]:
+                        - checkbox "Selecionar item dda76d3b-48b5-11f1-9d75-06799772b1cd"
+                    - cell "YU Yuri" [ref=e1559]:
+                      - generic [ref=e1560]:
+                        - generic [ref=e1564]: YU
+                        - button [ref=e1565] [cursor=pointer]:
+                          - img [ref=e1566]
+                        - generic [ref=e1569]: Yuri
+                        - button [ref=e1570] [cursor=pointer]:
+                          - img [ref=e1571]
+                    - cell "yuri.morrodesaopaulo@gmail.com" [ref=e1575]
+                    - cell "5516996012255" [ref=e1576]
+                    - cell "JF" [ref=e1577]:
+                      - generic [ref=e1582]: JF
+                    - cell "WhatsApp WhatsApp" [ref=e1583]:
+                      - generic [ref=e1586]:
+                        - img "WhatsApp" [ref=e1587]
+                        - generic [ref=e1590]: WhatsApp
+                    - cell "—" [ref=e1591]
+                    - cell "5 de mai. de 2026" [ref=e1592]
+                    - cell "Editar Excluir" [ref=e1593]:
+                      - generic [ref=e1594]:
+                        - button "Editar" [ref=e1595] [cursor=pointer]:
+                          - img [ref=e1596]
+                        - button "Excluir" [ref=e1599] [cursor=pointer]:
+                          - img [ref=e1600]
+                  - row "Selecionar item 240e3942-4709-11f1-9d75-06799772b1cd GA Gabriel gabrielyuri77@gmail.com 5592981341999 JF WhatsApp WhatsApp — 3 de mai. de 2026 Editar Excluir" [ref=e1603]:
+                    - cell "Selecionar item 240e3942-4709-11f1-9d75-06799772b1cd" [ref=e1604]:
+                      - generic [ref=e1605]:
+                        - checkbox "Selecionar item 240e3942-4709-11f1-9d75-06799772b1cd"
+                    - cell "GA Gabriel" [ref=e1606]:
+                      - generic [ref=e1607]:
+                        - generic [ref=e1611]: GA
+                        - button [ref=e1612] [cursor=pointer]:
+                          - img [ref=e1613]
+                        - generic [ref=e1616]: Gabriel
+                        - button [ref=e1617] [cursor=pointer]:
+                          - img [ref=e1618]
+                    - cell "gabrielyuri77@gmail.com" [ref=e1622]
+                    - cell "5592981341999" [ref=e1623]
+                    - cell "JF" [ref=e1624]:
+                      - generic [ref=e1629]: JF
+                    - cell "WhatsApp WhatsApp" [ref=e1630]:
+                      - generic [ref=e1633]:
+                        - img "WhatsApp" [ref=e1634]
+                        - generic [ref=e1637]: WhatsApp
+                    - cell "—" [ref=e1638]
+                    - cell "3 de mai. de 2026" [ref=e1639]
+                    - cell "Editar Excluir" [ref=e1640]:
+                      - generic [ref=e1641]:
+                        - button "Editar" [ref=e1642] [cursor=pointer]:
+                          - img [ref=e1643]
+                        - button "Excluir" [ref=e1646] [cursor=pointer]:
+                          - img [ref=e1647]
+                  - row "Selecionar item 39ec8e3d-3e32-11f1-9d75-06799772b1cd YL Yuri Lobao ybarnabe@gmail.com 5511942440777 ME WhatsApp WhatsApp WhatsApp WhatsApp — 22 de abr. de 2026 Editar Excluir" [ref=e1650]:
+                    - cell "Selecionar item 39ec8e3d-3e32-11f1-9d75-06799772b1cd" [ref=e1651]:
+                      - generic [ref=e1652]:
+                        - checkbox "Selecionar item 39ec8e3d-3e32-11f1-9d75-06799772b1cd"
+                    - cell "YL Yuri Lobao" [ref=e1653]:
+                      - generic [ref=e1654]:
+                        - generic [ref=e1658]: YL
+                        - button [ref=e1659] [cursor=pointer]:
+                          - img [ref=e1660]
+                        - generic [ref=e1663]: Yuri Lobao
+                        - button [ref=e1664] [cursor=pointer]:
+                          - img [ref=e1665]
+                    - cell "ybarnabe@gmail.com" [ref=e1669]
+                    - cell "5511942440777" [ref=e1670]
+                    - cell "ME" [ref=e1671]:
+                      - generic [ref=e1676]: ME
+                    - cell "WhatsApp WhatsApp WhatsApp WhatsApp" [ref=e1677]:
+                      - generic [ref=e1678]:
+                        - generic [ref=e1680]:
+                          - img "WhatsApp" [ref=e1681]
+                          - generic [ref=e1684]: WhatsApp
+                        - generic [ref=e1686]:
+                          - img "WhatsApp" [ref=e1687]
+                          - generic [ref=e1690]: WhatsApp
+                    - cell "—" [ref=e1691]
+                    - cell "22 de abr. de 2026" [ref=e1692]
+                    - cell "Editar Excluir" [ref=e1693]:
+                      - generic [ref=e1694]:
+                        - button "Editar" [ref=e1695] [cursor=pointer]:
+                          - img [ref=e1696]
+                        - button "Excluir" [ref=e1699] [cursor=pointer]:
+                          - img [ref=e1700]
+                  - row "Selecionar item d1e1356b-3d1a-11f1-9d75-06799772b1cd AN Anthony yuriolyver@hotmail.com 5511983880668 GL WhatsApp WhatsApp registro-pipe lead-perdido 20 de abr. de 2026 Editar Excluir" [ref=e1703]:
+                    - cell "Selecionar item d1e1356b-3d1a-11f1-9d75-06799772b1cd" [ref=e1704]:
+                      - generic [ref=e1705]:
+                        - checkbox "Selecionar item d1e1356b-3d1a-11f1-9d75-06799772b1cd"
+                    - cell "AN Anthony" [ref=e1706]:
+                      - generic [ref=e1707]:
+                        - generic [ref=e1711]: AN
+                        - button [ref=e1712] [cursor=pointer]:
+                          - img [ref=e1713]
+                        - generic [ref=e1716]: Anthony
+                        - button [ref=e1717] [cursor=pointer]:
+                          - img [ref=e1718]
+                    - cell "yuriolyver@hotmail.com" [ref=e1722]
+                    - cell "5511983880668" [ref=e1723]
+                    - cell "GL" [ref=e1724]:
+                      - generic [ref=e1729]: GL
+                    - cell "WhatsApp WhatsApp" [ref=e1730]:
+                      - generic [ref=e1733]:
+                        - img "WhatsApp" [ref=e1734]
+                        - generic [ref=e1737]: WhatsApp
+                    - cell "registro-pipe lead-perdido" [ref=e1738]:
+                      - generic [ref=e1739]:
+                        - generic [ref=e1741]: registro-pipe
+                        - generic [ref=e1743]: lead-perdido
+                    - cell "20 de abr. de 2026" [ref=e1744]
+                    - cell "Editar Excluir" [ref=e1745]:
+                      - generic [ref=e1746]:
+                        - button "Editar" [ref=e1747] [cursor=pointer]:
+                          - img [ref=e1748]
+                        - button "Excluir" [ref=e1751] [cursor=pointer]:
+                          - img [ref=e1752]
+                  - row "Selecionar item d6f77680-3cf6-11f1-9d75-06799772b1cd Y Yuri - Espaço Laser — 5511981989400 AH WhatsApp Business WhatsApp Business WhatsApp WhatsApp — 20 de abr. de 2026 Editar Excluir" [ref=e1755]:
+                    - cell "Selecionar item d6f77680-3cf6-11f1-9d75-06799772b1cd" [ref=e1756]:
+                      - generic [ref=e1757]:
+                        - checkbox "Selecionar item d6f77680-3cf6-11f1-9d75-06799772b1cd"
+                    - cell "Y Yuri - Espaço Laser" [ref=e1758]:
+                      - generic [ref=e1759]:
+                        - generic [ref=e1763]: "Y"
+                        - button [ref=e1764] [cursor=pointer]:
+                          - img [ref=e1765]
+                        - generic [ref=e1768]: Yuri - Espaço Laser
+                        - button [ref=e1769] [cursor=pointer]:
+                          - img [ref=e1770]
+                    - cell "—" [ref=e1774]
+                    - cell "5511981989400" [ref=e1775]
+                    - cell "AH" [ref=e1776]:
+                      - generic [ref=e1781]: AH
+                    - cell "WhatsApp Business WhatsApp Business WhatsApp WhatsApp" [ref=e1782]:
+                      - generic [ref=e1783]:
+                        - generic [ref=e1785]:
+                          - img "WhatsApp Business" [ref=e1786]
+                          - generic [ref=e1789]: WhatsApp Business
+                        - generic [ref=e1791]:
+                          - img "WhatsApp" [ref=e1792]
+                          - generic [ref=e1795]: WhatsApp
+                    - cell "—" [ref=e1796]
+                    - cell "20 de abr. de 2026" [ref=e1797]
+                    - cell "Editar Excluir" [ref=e1798]:
+                      - generic [ref=e1799]:
+                        - button "Editar" [ref=e1800] [cursor=pointer]:
+                          - img [ref=e1801]
+                        - button "Excluir" [ref=e1804] [cursor=pointer]:
+                          - img [ref=e1805]
+                  - row "Selecionar item 33acac52-3cc9-11f1-9d75-06799772b1cd Y Yuri - Tutors Participações yuri.randi@tutorsparticipacoes.com 5531991983183 GM WhatsApp WhatsApp — 20 de abr. de 2026 Editar Excluir" [ref=e1808]:
+                    - cell "Selecionar item 33acac52-3cc9-11f1-9d75-06799772b1cd" [ref=e1809]:
+                      - generic [ref=e1810]:
+                        - checkbox "Selecionar item 33acac52-3cc9-11f1-9d75-06799772b1cd"
+                    - cell "Y Yuri - Tutors Participações" [ref=e1811]:
+                      - generic [ref=e1812]:
+                        - generic [ref=e1816]: "Y"
+                        - button [ref=e1817] [cursor=pointer]:
+                          - img [ref=e1818]
+                        - generic [ref=e1821]: Yuri - Tutors Participações
+                        - button [ref=e1822] [cursor=pointer]:
+                          - img [ref=e1823]
+                    - cell "yuri.randi@tutorsparticipacoes.com" [ref=e1827]
+                    - cell "5531991983183" [ref=e1828]
+                    - cell "GM" [ref=e1829]:
+                      - generic [ref=e1834]: GM
+                    - cell "WhatsApp WhatsApp" [ref=e1835]:
+                      - generic [ref=e1838]:
+                        - img "WhatsApp" [ref=e1839]
+                        - generic [ref=e1842]: WhatsApp
+                    - cell "—" [ref=e1843]
+                    - cell "20 de abr. de 2026" [ref=e1844]
+                    - cell "Editar Excluir" [ref=e1845]:
+                      - generic [ref=e1846]:
+                        - button "Editar" [ref=e1847] [cursor=pointer]:
+                          - img [ref=e1848]
+                        - button "Excluir" [ref=e1851] [cursor=pointer]:
+                          - img [ref=e1852]
+              - generic [ref=e1856]:
+                - generic [ref=e1857]:
+                  - generic [ref=e1858]: Página 1 de 17
+                  - generic [ref=e1859]: "Total: 255 registros"
+                - generic [ref=e1860]:
+                  - combobox [ref=e1861]:
+                    - option "10 por página"
+                    - option "15 por página" [selected]
+                    - option "25 por página"
+                    - option "50 por página"
+                  - generic [ref=e1862]:
+                    - button [disabled]:
+                      - img
+                    - button [disabled]:
+                      - img
+                    - button [ref=e1863] [cursor=pointer]:
+                      - img [ref=e1864]
+                    - button [ref=e1866] [cursor=pointer]:
+                      - img [ref=e1867]
+  - region "Notifications (F8)":
+    - list

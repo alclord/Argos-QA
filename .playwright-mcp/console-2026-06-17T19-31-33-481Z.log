@@ -1,0 +1,57 @@
+[    1727ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:101
+[    1729ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:101
+[    1976ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:76
+[    2682ms] [WARNING] TCRMEmbed não está disponível ainda @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:69
+[    3029ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:69
+[    3143ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:904:429
+    at $R (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:906:31)
+    at Od.ZR (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:903:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:317:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:263:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:239:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:719)
+    at k.Vq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:201:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:274:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:729:315
+    at Mz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:632:1)
+    at Tz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:637:289)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:657:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:206:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:658:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:658:100)
+    at qB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:658:742)
+    at tB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:662:183)
+    at DD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:706:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:710:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:865:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e66g1h2:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e66g1h2:550:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:710:457
+    at r (https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:70:9827)
+[    6590ms] [LOG] identify @ :0
+[    8561ms] [LOG] window.CRMUser true @ :0
+[    8561ms] [LOG] start @ :0
+[   12196ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.crm.poli.digital/dashboard:0
+[   12196ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.crm.poli.digital/dashboard:0
+[  502565ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://crm-api-nc3u5uqf3q-uk.a.run.app/web/notifications?page=1&perPage=20&read=0&dateStart=2026-06-17T19:09:55.473Z&dateEnd=2026-06-17T20:09:55.473Z:0
+[  502598ms] [ERROR] Error: Request failed with status code 401
+    at e.exports (https://app.crm.poli.digital/static/js/main.c38e6b40.js:2:644082)
+    at e.exports (https://app.crm.poli.digital/static/js/main.c38e6b40.js:2:646488)
+    at XMLHttpRequest.x (https://app.crm.poli.digital/static/js/main.c38e6b40.js:2:638755) @ https://app.crm.poli.digital/static/js/main.c38e6b40.js:1
+[  504892ms] [LOG] identify @ :0
+[  504987ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/crm/index:0
+[  505011ms] [ERROR] getCrmUserToken - Error on get crm user token: TypeError: Cannot read properties of undefined (reading 'data')
+    at eK.getUserToken (https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:2584:582167)
+    at async https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:2584:582431
+    at async Object.callback (https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:2584:629499) @ https://spa-canary.poli.digital/assets/index-Ck5WY6p2.js:69
+[  507156ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:101
+[  507157ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:101
+[  507385ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:76
+[  507629ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[  507782ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69

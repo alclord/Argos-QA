@@ -1,0 +1,8 @@
+[     723ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/bots:0
+[     802ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[    1346ms] Uncaught TypeError: Cannot read properties of undefined (reading 'unshift')
+    at <anonymous> (https://www.clarity.ms/tag/fqo9f8ulad?ref=gtm2:0:325)
+    at <anonymous> (https://www.clarity.ms/tag/fqo9f8ulad?ref=gtm2:0:370)
+[    1336ms] [WARNING] Error CL001: Multiple Clarity tags detected. @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[    1408ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/:0
+[    3191ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/user/presence:0

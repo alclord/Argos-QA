@@ -1,0 +1,225 @@
+- generic [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: 🔮
+      - generic [ref=e5]:
+        - generic [ref=e6]: Argos Predict
+        - generic [ref=e7]: QA Risk Intelligence
+    - generic [ref=e8]:
+      - generic "Capa" [ref=e9] [cursor=pointer]
+      - generic "Indicadores" [ref=e10] [cursor=pointer]
+      - generic "Ranking de Risco" [ref=e11] [cursor=pointer]
+      - generic "Causa Raiz" [ref=e12] [cursor=pointer]
+      - 'generic "Zoom: Chat" [ref=e13] [cursor=pointer]'
+      - 'generic "Zoom: Canais" [ref=e14] [cursor=pointer]'
+      - 'generic "Zoom: Distribuição" [ref=e15] [cursor=pointer]'
+      - generic "Radar de Serviços" [ref=e16] [cursor=pointer]
+      - generic "Bombas" [ref=e17] [cursor=pointer]
+      - generic "Qualidade" [ref=e18] [cursor=pointer]
+      - generic "PRs em Risco" [ref=e19] [cursor=pointer]
+      - generic "Timeline" [ref=e20] [cursor=pointer]
+      - generic "Ações" [ref=e21] [cursor=pointer]
+    - generic [ref=e22]:
+      - generic "Modo de visualização" [ref=e23]:
+        - button "🚨 Agora" [ref=e24] [cursor=pointer]
+        - button "📈 Tendência" [ref=e25] [cursor=pointer]
+      - button "⊞" [ref=e26] [cursor=pointer]
+      - generic [ref=e27]: Ranking de Risco
+      - generic [ref=e28]: 3 / 13
+      - button "←" [ref=e29] [cursor=pointer]
+      - button "→" [active] [ref=e30] [cursor=pointer]
+  - generic [ref=e31]:
+    - generic:
+      - generic:
+        - generic:
+          - generic: 🚨 SITUAÇÃO CRÍTICA
+          - generic: "07 de Junho de 2026 · Janela: 14 dias"
+        - heading "Argos Predict" [level=1]
+        - generic: Mapa de risco semanal · Jira Suporte (100 N1 Aberto) · DEV4 (22 backlog + 0 em dev) · Sentry (100 issues + Δ) · GitHub (28+ PRs)
+        - generic:
+          - generic: ↑ Autenticação +5pts
+          - generic: ↑ Chat +2pts
+          - generic: ↑ WebSocket +2pts
+          - generic: ↓ Distribuição -11pts
+          - generic: ↓ Contatos -10pts
+        - generic:
+          - generic:
+            - generic: Situação atual
+            - generic:
+              - generic:
+                - generic: "64"
+                - generic:
+                  - generic: Chat / Mensagens
+                  - generic: 🚨 Emergência
+              - generic:
+                - generic: "30"
+                - generic:
+                  - generic: Canais / WhatsApp
+                  - generic: 🟡 Alto
+              - generic:
+                - generic: "27"
+                - generic:
+                  - generic: Distribuição / Filas
+                  - generic: 🟡 Alto
+              - generic: 5 módulos em zona de risco
+          - generic:
+            - generic: ⚡ Ação imediata
+            - generic:
+              - generic:
+                - generic: P0
+                - generic: Rollback ou hotfix SPA:1509 (Dev4-4278). omnispa AxiosError 401 ESCALATING com 4…
+              - generic:
+                - generic: P0
+                - generic: Investigar Hermes SQS event-bus-sqs connection errors. DEV4-4262 merged 06-03 → …
+              - generic:
+                - generic: P0
+                - generic: Criar DEV4 corretivo para chats presos na fila (SM-8288, SM-8292, SM-8243). Módu…
+            - generic:
+              - strong: "✅ ✅ Resolvido: bugs recentes"
+              - text: ": DEV4-4338 (busca contato, 06-05) · DEV4-4286 (painel lateral…"
+              - strong: Canais / WhatsApp
+              - text: "-7 pts (melhorando)"
+              - strong: Distribuição / Filas
+              - text: "-11 pts (melhorando)"
+              - strong: Contatos / Busca
+              - text: "-10 pts (melhorando)"
+    - generic:
+      - generic: Visão Geral
+      - heading "O que está acontecendo esta semana" [level=2]
+      - generic:
+        - generic: 🔴 Requer atenção agora
+        - generic:
+          - generic "Chat · Distribuição · Canais · Autenticação · WebSocket — todos score ≥ 10.":
+            - generic: 🔴
+            - generic: "5"
+            - generic: Módulos críticos (ALTO)
+            - generic: Chat · Distribuição · Canais · Autenticação · WebSocket — todos score ≥ 10.
+            - generic: ↓ -2 vs semana anterior
+            - generic: "Meta: < 3"
+          - generic "omnispa encoder (1.312u) · Uncompressed Asset (629u) · AxiosError 401 omnispa ESCALANDO (496u) · outros.":
+            - generic: 🔴
+            - generic: 2.7K+
+            - generic: Usuários afetados (prod)
+            - generic: omnispa encoder (1.312u) · Uncompressed Asset (629u) · AxiosError 401 omnispa ES…
+            - generic: ↓ -1.3K vs semana anterior
+          - 'generic "17 bugs em SM Aberto (14d): Chat (9 bugs) · Distribuição (3) · Canais (2) · Contatos (1) · Upload (1) · Outros (1)."':
+            - generic: 🟡
+            - generic: "17"
+            - generic: Bugs ativos N1
+            - generic: "17 bugs em SM Aberto (14d): Chat (9 bugs) · Distribuição (3) · Canais (2) · Cont…"
+            - generic: ↑ +2 vs semana anterior
+        - generic: 📊 Contexto — dimensão do problema
+        - generic:
+          - generic "Distribuição (HEAT=13, DEV_ATTENTION=0) · Autenticação (HEAT=3, DEV_ATTENTION=0). Zero corretivos no backlog.":
+            - generic: 🔴
+            - generic: "2"
+            - generic: Módulos negligenciados
+            - generic: Distribuição (HEAT=13, DEV_ATTENTION=0) · Autenticação (HEAT=3, DEV_ATTENTION=0)…
+            - generic: ↓ -2 vs semana anterior
+          - 'generic "2 PRs confirmados com bug pós-merge: SPA:1509 (→ AxiosError 401) · FoundationAPI:1102 (→ Hermes SQS errors)."':
+            - generic: 📉
+            - generic: "2"
+            - generic: DORA CFR instável
+            - generic: "2 PRs confirmados com bug pós-merge: SPA:1509 (→ AxiosError 401) · FoundationAPI…"
+            - generic: → 0 vs semana anterior
+          - generic "DEV4-4249 (4 dias stale · Upload/Mídia) · DEV4-4274 (2 dias stale · Canais). Jira atualizado mas cenários não.":
+            - generic: 🧪
+            - generic: "2"
+            - generic: Cenários QA desatualizados
+            - generic: DEV4-4249 (4 dias stale · Upload/Mídia) · DEV4-4274 (2 dias stale · Canais). Jir…
+            - generic: → 0 vs semana anterior
+          - 'generic "4 issues NEW/ESCALATING em omnispa (AxiosError 401: 496u · Uncompressed Asset: 629u · Network Error ×2: 47u total)."':
+            - generic: 📊
+            - generic: "4"
+            - generic: Sentry escalating (omnispa)
+            - generic: "4 issues NEW/ESCALATING em omnispa (AxiosError 401: 496u · Uncompressed Asset: 6…"
+            - generic: ↑ +4 vs semana anterior
+            - generic: "Meta: 0"
+        - generic: ✅ Melhorias desta semana
+        - generic:
+          - generic "DEV4-4338 (busca contato, 06-05) · DEV4-4286 (painel lateral, 06-05) · DEV4-4180 (config gerais, 06-06) aprovados.":
+            - generic: ✅
+            - generic: "3"
+            - generic: "✅ Resolvido: bugs recentes"
+            - generic: DEV4-4338 (busca contato, 06-05) · DEV4-4286 (painel lateral, 06-05) · DEV4-4180…
+            - generic: ↑ +3 vs semana anterior
+    - generic [ref=e172]:
+      - generic [ref=e173]: Mapa de Risco
+      - heading "Onde estão os problemas" [level=2] [ref=e174]
+      - paragraph [ref=e175]: "Baseado em sinais ativos: bugs N1 abertos, erros em produção (Sentry) e atividade de código. Quanto maior a barra, mais urgente."
+    - generic:
+      - generic: Causa Raiz
+      - heading "Quais serviços estão causando os problemas" [level=2]
+      - paragraph: Para cada área com problemas, identificamos qual sistema é o mais provável responsável.
+    - generic:
+      - generic: Zoom nos Serviços
+      - heading "Cobertura de dev vs. pressão por serviço" [level=2]
+      - paragraph: Cada eixo é um serviço. Vermelho = bugs. Verde = dev ativo. Âmbar = risco técnico latente (KB + Sentry + churn). Azul tracejado = planejado.
+      - generic:
+        - generic:
+          - generic:
+            - button "Score de problemas": Score de problemas
+            - button "Dev trabalhando agora": Dev trabalhando agora
+            - button "Dev planejado (em breve)": Dev planejado (em breve)
+            - button "Risco técnico": Risco técnico
+            - button "resetar"
+          - generic:
+            - button "🕸️ Radar"
+            - button "📊 Tabela"
+    - generic:
+      - generic: Risco Imediato
+      - heading "💣 Riscos que podem virar crise esta semana" [level=2]
+      - paragraph: Cada "bomba" é um cenário onde um deploy ou inação nos próximos dias pode gerar impacto visível para os clientes. Barra = risco relativo entre os 3 cenários.
+    - generic:
+      - generic: Sinais de Processo
+      - heading "🔬 Qualidade do processo de desenvolvimento" [level=2]
+      - paragraph: "Sinais que revelam fragilidades no ciclo de desenvolvimento antes que virem bugs: regressões confirmadas, revisões precipitadas, cobertura desatualizada e padrões de falha por ambiente."
+    - generic:
+      - generic: Rastreabilidade de Deploy
+      - heading "🔍 PRs em risco — Dispersão + DORA CFR" [level=2]
+      - paragraph: Cada PR que tocou muitos módulos ao mesmo tempo, ou que gerou bugs nos 3 dias seguintes ao merge. Clique no título para abrir no GitHub.
+    - generic:
+      - generic: Evolução Histórica
+      - heading "Tendência de risco — últimas 8 semanas" [level=2]
+      - paragraph: Picos revelam eventos críticos (deploys arriscados, escalada de erros). Quedas indicam resolução efetiva. Marcadores ✅ mostram correções entregues.
+    - generic:
+      - generic: Próximos Passos
+      - heading "O que precisa ser feito agora" [level=2]
+      - generic:
+        - table:
+          - rowgroup:
+            - row "Prioridade Área Ação Prazo":
+              - columnheader "Prioridade"
+              - columnheader "Área"
+              - columnheader "Ação"
+              - columnheader "Prazo"
+          - rowgroup
+      - generic: 💡 Use ← → para navegar entre os slides · F = tela cheia · P = imprimir / exportar PDF
+  - button "?" [ref=e82] [cursor=pointer]
+  - generic [ref=e83]:
+    - button "✕" [ref=e85] [cursor=pointer]
+    - generic [ref=e87]:
+      - generic [ref=e88]: Atalhos de teclado
+      - generic [ref=e89]:
+        - generic [ref=e90]:
+          - generic [ref=e91]: ← →
+          - generic [ref=e92]: Navegar slides
+        - generic [ref=e93]:
+          - generic [ref=e94]: Ctrl K
+          - generic [ref=e95]: Busca global
+        - generic [ref=e96]:
+          - generic [ref=e97]: F
+          - generic [ref=e98]: Tela cheia
+        - generic [ref=e99]:
+          - generic [ref=e100]: P
+          - generic [ref=e101]: Exportar PDF
+        - generic [ref=e102]:
+          - generic [ref=e103]: "?"
+          - generic [ref=e104]: Abrir ajuda
+        - generic [ref=e105]:
+          - generic [ref=e106]: Esc
+          - generic [ref=e107]: Fechar modal
+    - generic [ref=e108]: Clique fora do painel para fechar
+  - contentinfo [ref=e109]:
+    - generic [ref=e110]: Argos Predict · 07 de Junho de 2026 · 14 dias
+    - generic [ref=e111]: Gerado por Argos Predict · Atualizado semanalmente

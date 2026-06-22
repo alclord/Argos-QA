@@ -1,0 +1,9 @@
+repo,pr_number,titulo,author,merged_at,entropy,churn_lines,arquivos,risco_cfr,modulo,bug_pos_merge
+SPA,1509,Dev4 4278 fix phone max length,Buzeli,2026-06-03,1.5,50,3,SIM,Autenticação / Chat,omnispa AxiosError 401 ESCALATING (100474)
+FoundationAPI,1102,DEV4-4262 hermes-inbound Fase 1 EventBus,akappes,2026-06-03,3.5,2800,45,SIM,WebSocket / Presença,foundationapi SQS queue connection error (100397)
+SPA,1506,DEV4-4248 Reformular sidebar com shadcn,gabrieldesousah,2026-06-05,3.2,3500,60,NAO,Chat / Mensagens,omnispa release 06-06 com 16 novos grupos (correlação temporal)
+FoundationAPI,1112,DEV4-4190 Atualização Laravel para última versão,akappes,2026-05-25,2.8,1500,35,NAO,Chat / Mensagens,
+SPA,1494,feat jarvis integração SPA,gabrieldesousah,2026-06-01,1.5,300,15,NAO,Jarvis / IA,
+FoundationAPI,1119,jarvis AI template suggestion API,MarinaSantosPoli,2026-06-03,1.2,200,8,NAO,Jarvis / IA,
+waba-webhook,3,OTI-1548 poli-kernel update,guipoli,2026-05-31,0.8,150,5,NAO,Canais / WhatsApp,
+polichat-web-app,304,DEV4-4199 template flow API,darkSasori,2026-05-26,1.1,600,12,NAO,Canais / WhatsApp,

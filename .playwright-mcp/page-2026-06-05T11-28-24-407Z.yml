@@ -1,0 +1,395 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e44]:
+      - complementary [ref=e45]:
+        - img [ref=e47]
+        - navigation [ref=e48]:
+          - list [ref=e49]:
+            - listitem [ref=e50]:
+              - link [ref=e51] [cursor=pointer]:
+                - /url: https://app-spa.poli.digital/redirect?sessionId=81f07ee3e489b2ffc42c0c0f25f9880ba1a69807&toPath=https://app.poli.digital/home
+                - img [ref=e53]
+            - listitem [ref=e56]:
+              - link [ref=e57] [cursor=pointer]:
+                - /url: /chat
+                - img [ref=e59]
+            - listitem [ref=e62]:
+              - link [ref=e63] [cursor=pointer]:
+                - /url: https://app-spa.poli.digital/redirect?sessionId=81f07ee3e489b2ffc42c0c0f25f9880ba1a69807&toPath=https://app.poli.digital/settings/46667/chatbot
+                - img [ref=e65]
+            - listitem [ref=e68]:
+              - link [ref=e69] [cursor=pointer]:
+                - /url: /poli-flow
+                - img [ref=e71]
+            - listitem [ref=e73]:
+              - link [ref=e74] [cursor=pointer]:
+                - /url: https://app-spa.poli.digital/redirect?sessionId=81f07ee3e489b2ffc42c0c0f25f9880ba1a69807&toPath=https://app-spa.poli.digital/marketing
+                - img [ref=e76]
+            - listitem [ref=e79]:
+              - link [ref=e80] [cursor=pointer]:
+                - /url: https://app-spa.poli.digital/redirect?sessionId=81f07ee3e489b2ffc42c0c0f25f9880ba1a69807&toPath=https://app-spa.poli.digital/shopping
+                - img [ref=e82]
+            - listitem [ref=e85]:
+              - link [ref=e86] [cursor=pointer]:
+                - /url: https://app-spa.poli.digital/redirect?sessionId=81f07ee3e489b2ffc42c0c0f25f9880ba1a69807&toPath=https://app-spa.poli.digital/relatorio
+                - img [ref=e88]
+            - listitem [ref=e92]:
+              - link [ref=e93] [cursor=pointer]:
+                - /url: https://app-spa.poli.digital/redirect?sessionId=81f07ee3e489b2ffc42c0c0f25f9880ba1a69807&toPath=https://app.poli.digital/settings/46667
+                - img [ref=e95]
+            - listitem [ref=e98]:
+              - link [ref=e99] [cursor=pointer]:
+                - /url: /contacts
+                - img [ref=e101]
+            - listitem [ref=e104]:
+              - link [ref=e105] [cursor=pointer]:
+                - /url: /channels
+                - img [ref=e107]
+            - listitem [ref=e110]:
+              - link [ref=e111] [cursor=pointer]:
+                - /url: /teams
+                - img [ref=e113]
+            - listitem [ref=e118]:
+              - link [ref=e119] [cursor=pointer]:
+                - /url: /templates
+                - img [ref=e121]
+          - list [ref=e124]:
+            - listitem [ref=e125]:
+              - button "Consumo de créditos" [ref=e126] [cursor=pointer]:
+                - img [ref=e127]
+            - listitem [ref=e130]:
+              - button "YA" [ref=e131] [cursor=pointer]:
+                - generic [ref=e136]: YA
+            - listitem [ref=e138]:
+              - button [ref=e139] [cursor=pointer]:
+                - img [ref=e140]
+            - listitem [ref=e142]:
+              - generic [ref=e144]: 3.5.347
+      - main [ref=e145]:
+        - generic [ref=e146]:
+          - button "✨ Nova Versão" [ref=e147] [cursor=pointer]:
+            - generic [ref=e148]: ✨ Nova Versão
+            - img [ref=e149]
+          - generic [ref=e153]:
+            - generic [ref=e154]:
+              - button "Em atendimento" [ref=e155] [cursor=pointer]:
+                - generic [ref=e156]: Em atendimento
+                - img [ref=e157]
+              - generic [ref=e159]:
+                - button [ref=e160] [cursor=pointer]:
+                  - img [ref=e161]
+                - button "Contatos" [ref=e166] [cursor=pointer]:
+                  - img [ref=e167]
+                - button "Filtros" [ref=e171] [cursor=pointer]:
+                  - img [ref=e172]
+            - generic [ref=e176]:
+              - generic [ref=e177]:
+                - textbox "Pesquisar" [ref=e178]
+                - button "Pesquisar" [ref=e179] [cursor=pointer]:
+                  - img [ref=e180]
+              - button "Ordenação das conversas" [active] [ref=e183] [cursor=pointer]:
+                - img [ref=e725]
+          - generic [ref=e728]:
+            - generic [ref=e729] [cursor=pointer]:
+              - generic [ref=e730]:
+                - generic [ref=e732]:
+                  - generic [ref=e736]: DI
+                  - button "Selecionar todos" [ref=e737]:
+                    - checkbox
+                - generic [ref=e738]:
+                  - generic [ref=e740]: distribuir-8
+                  - generic [ref=e741]:
+                    - generic [ref=e742]:
+                      - img "Web Chat" [ref=e743]
+                      - generic [ref=e746]: Web Chat
+                    - generic [ref=e750]: Contato redirecionado para Gabi Hoffmann pelo sistema em 09/06/2025 às 11:32
+                  - generic [ref=e751]:
+                    - generic [ref=e752]:
+                      - img [ref=e753]
+                      - generic [ref=e755]: Gabi Hoffmann
+                    - generic [ref=e756]:
+                      - img [ref=e757]
+                      - generic [ref=e759]: webchat Jmeter Nik
+              - generic [ref=e760]:
+                - generic [ref=e762]:
+                  - button [ref=e763]
+                  - button [ref=e765]
+                - generic [ref=e767]:
+                  - generic [ref=e768]: 09/06/2025
+                  - button "Abrir menu de opções" [ref=e769]:
+                    - img [ref=e770]
+            - generic [ref=e772] [cursor=pointer]:
+              - generic [ref=e773]:
+                - generic [ref=e775]:
+                  - generic [ref=e779]: C3
+                  - button "Selecionar todos" [ref=e780]:
+                    - checkbox
+                - generic [ref=e781]:
+                  - generic [ref=e783]: corinthians 3
+                  - generic [ref=e784]:
+                    - generic [ref=e785]:
+                      - img "Web Chat" [ref=e786]
+                      - generic [ref=e789]: Web Chat
+                    - generic [ref=e793]: Contato redirecionado para Gabi Hoffmann pelo sistema em 09/06/2025 às 11:32
+                  - generic [ref=e794]:
+                    - generic [ref=e795]:
+                      - img [ref=e796]
+                      - generic [ref=e798]: Gabi Hoffmann
+                    - generic [ref=e799]:
+                      - img [ref=e800]
+                      - generic [ref=e802]: webchat Jmeter Nik
+              - generic [ref=e804]:
+                - generic [ref=e805]: 09/06/2025
+                - button "Abrir menu de opções" [ref=e806]:
+                  - img [ref=e807]
+            - generic [ref=e809] [cursor=pointer]:
+              - generic [ref=e810]:
+                - generic [ref=e812]:
+                  - generic [ref=e816]: DI
+                  - button "Selecionar todos" [ref=e817]:
+                    - checkbox
+                - generic [ref=e818]:
+                  - generic [ref=e820]: distribuit-03
+                  - generic [ref=e821]:
+                    - generic [ref=e822]:
+                      - img "Web Chat" [ref=e823]
+                      - generic [ref=e826]: Web Chat
+                    - generic [ref=e830]: Contato redirecionado para Gabi Hoffmann pelo sistema em 09/06/2025 às 17:06
+                  - generic [ref=e831]:
+                    - generic [ref=e832]:
+                      - img [ref=e833]
+                      - generic [ref=e835]: Gabi Hoffmann
+                    - generic [ref=e836]:
+                      - img [ref=e837]
+                      - generic [ref=e839]: webchat Jmeter Nik
+              - generic [ref=e841]:
+                - generic [ref=e842]: 09/06/2025
+                - button "Abrir menu de opções" [ref=e844]:
+                  - img [ref=e845]
+            - generic [ref=e847] [cursor=pointer]:
+              - generic [ref=e848]:
+                - generic [ref=e850]:
+                  - generic [ref=e854]: DI
+                  - button "Selecionar todos" [ref=e855]:
+                    - checkbox
+                - generic [ref=e856]:
+                  - generic [ref=e858]: direcionar-06
+                  - generic [ref=e859]:
+                    - generic [ref=e860]:
+                      - img "Web Chat" [ref=e861]
+                      - generic [ref=e864]: Web Chat
+                    - generic [ref=e868]: Contato redirecionado para Gabi Hoffmann pelo sistema em 09/06/2025 às 17:06
+                  - generic [ref=e869]:
+                    - generic [ref=e870]:
+                      - img [ref=e871]
+                      - generic [ref=e873]: Gabi Hoffmann
+                    - generic [ref=e874]:
+                      - img [ref=e875]
+                      - generic [ref=e877]: webchat Jmeter Nik
+              - generic [ref=e879]:
+                - generic [ref=e880]: 09/06/2025
+                - button "Abrir menu de opções" [ref=e882]:
+                  - img [ref=e883]
+            - generic [ref=e885] [cursor=pointer]:
+              - generic [ref=e886]:
+                - generic [ref=e888]:
+                  - generic [ref=e892]: DI
+                  - button "Selecionar todos" [ref=e893]:
+                    - checkbox
+                - generic [ref=e894]:
+                  - generic [ref=e896]: distribuir-7
+                  - generic [ref=e897]:
+                    - generic [ref=e898]:
+                      - img "Web Chat" [ref=e899]
+                      - generic [ref=e902]: Web Chat
+                    - generic [ref=e906]: Contato redirecionado para Gabi Hoffmann pelo sistema em 09/06/2025 às 17:06
+                  - generic [ref=e907]:
+                    - generic [ref=e908]:
+                      - img [ref=e909]
+                      - generic [ref=e911]: Gabi Hoffmann
+                    - generic [ref=e912]:
+                      - img [ref=e913]
+                      - generic [ref=e915]: webchat Jmeter Nik
+              - generic [ref=e917]:
+                - generic [ref=e918]: 09/06/2025
+                - button "Abrir menu de opções" [ref=e920]:
+                  - img [ref=e921]
+            - generic [ref=e923] [cursor=pointer]:
+              - generic [ref=e924]:
+                - generic [ref=e926]:
+                  - generic [ref=e930]: DI
+                  - button "Selecionar todos" [ref=e931]:
+                    - checkbox
+                - generic [ref=e932]:
+                  - generic [ref=e934]: distribuir-002
+                  - generic [ref=e935]:
+                    - generic [ref=e936]:
+                      - img "Web Chat" [ref=e937]
+                      - generic [ref=e940]: Web Chat
+                    - generic [ref=e944]: Contato redirecionado para Gabi Hoffmann pelo sistema em 09/06/2025 às 17:06
+                  - generic [ref=e945]:
+                    - generic [ref=e946]:
+                      - img [ref=e947]
+                      - generic [ref=e949]: Gabi Hoffmann
+                    - generic [ref=e950]:
+                      - img [ref=e951]
+                      - generic [ref=e953]: webchat Jmeter Nik
+              - generic [ref=e955]:
+                - generic [ref=e956]: 09/06/2025
+                - button "Abrir menu de opções" [ref=e958]:
+                  - img [ref=e959]
+            - generic [ref=e961] [cursor=pointer]:
+              - generic [ref=e962]:
+                - generic [ref=e964]:
+                  - generic [ref=e968]: DI
+                  - button "Selecionar todos" [ref=e969]:
+                    - checkbox
+                - generic [ref=e970]:
+                  - generic [ref=e972]: direcionar-05
+                  - generic [ref=e973]:
+                    - generic [ref=e974]:
+                      - img "Web Chat" [ref=e975]
+                      - generic [ref=e978]: Web Chat
+                    - generic [ref=e982]: Contato redirecionado para Gabi Hoffmann pelo sistema em 09/06/2025 às 17:06
+                  - generic [ref=e983]:
+                    - generic [ref=e984]:
+                      - img [ref=e985]
+                      - generic [ref=e987]: Gabi Hoffmann
+                    - generic [ref=e988]:
+                      - img [ref=e989]
+                      - generic [ref=e991]: webchat Jmeter Nik
+              - generic [ref=e993]:
+                - generic [ref=e994]: 09/06/2025
+                - button "Abrir menu de opções" [ref=e995]:
+                  - img [ref=e996]
+            - generic [ref=e998] [cursor=pointer]:
+              - generic [ref=e999]:
+                - generic [ref=e1001]:
+                  - generic [ref=e1005]: DI
+                  - button "Selecionar todos" [ref=e1006]:
+                    - checkbox
+                - generic [ref=e1007]:
+                  - generic [ref=e1009]: distribuir-04
+                  - generic [ref=e1010]:
+                    - generic [ref=e1011]:
+                      - img "Web Chat" [ref=e1012]
+                      - generic [ref=e1015]: Web Chat
+                    - generic [ref=e1019]: Contato redirecionado para Gabi Hoffmann pelo sistema em 09/06/2025 às 17:06
+                  - generic [ref=e1020]:
+                    - generic [ref=e1021]:
+                      - img [ref=e1022]
+                      - generic [ref=e1024]: Gabi Hoffmann
+                    - generic [ref=e1025]:
+                      - img [ref=e1026]
+                      - generic [ref=e1028]: webchat Jmeter Nik
+              - generic [ref=e1030]:
+                - generic [ref=e1031]: 09/06/2025
+                - button "Abrir menu de opções" [ref=e1032]:
+                  - img [ref=e1033]
+            - generic [ref=e1035] [cursor=pointer]:
+              - generic [ref=e1036]:
+                - generic [ref=e1038]:
+                  - generic [ref=e1042]: TK
+                  - button "Selecionar todos" [ref=e1043]:
+                    - checkbox
+                - generic [ref=e1044]:
+                  - generic [ref=e1046]: "\"Teste Kellen DDD 11\""
+                  - generic [ref=e1047]:
+                    - generic [ref=e1048]:
+                      - img "Web Chat Sistema" [ref=e1049]
+                      - generic [ref=e1052]: Web Chat Sistema
+                    - paragraph [ref=e1055]: Olá, "Teste, tudo bem? Muito prazer! Me chamo Kellen da Outlet das Câmeras. Está disponível no momento para conversar?
+                  - generic [ref=e1057]:
+                    - img [ref=e1058]
+                    - generic [ref=e1060]: Kellen Prado
+              - generic [ref=e1062]:
+                - generic [ref=e1063]: 11/06/2025
+                - button "Abrir menu de opções" [ref=e1064]:
+                  - img [ref=e1065]
+            - generic [ref=e1067] [cursor=pointer]:
+              - generic [ref=e1068]:
+                - generic [ref=e1070]:
+                  - img "6803511533102678" [ref=e1074]
+                  - button "Selecionar todos" [ref=e1075]:
+                    - checkbox
+                - generic [ref=e1076]:
+                  - generic [ref=e1078]: "6803511533102678"
+                  - generic [ref=e1079]:
+                    - generic [ref=e1080]:
+                      - img "Web Chat Sistema" [ref=e1081]
+                      - generic [ref=e1084]: Web Chat Sistema
+                    - generic [ref=e1088]: oi
+                  - generic [ref=e1090]:
+                    - img [ref=e1091]
+                    - generic [ref=e1093]: Aldi Nectar
+              - generic [ref=e1094]:
+                - button [ref=e1097]
+                - generic [ref=e1099]:
+                  - generic [ref=e1100]: 12/06/2025
+                  - button "Abrir menu de opções" [ref=e1102]:
+                    - img [ref=e1103]
+            - generic [ref=e1105] [cursor=pointer]:
+              - generic [ref=e1106]:
+                - generic [ref=e1108]:
+                  - generic [ref=e1112]: MC
+                  - button "Selecionar todos" [ref=e1113]:
+                    - checkbox
+                - generic [ref=e1114]:
+                  - generic [ref=e1116]: Maria Clara
+                  - generic [ref=e1117]:
+                    - generic [ref=e1118]:
+                      - img "Web Chat Sistema" [ref=e1119]
+                      - generic [ref=e1122]: Web Chat Sistema
+                    - generic [ref=e1126]: Este contato foi editado em 12/06/2025 13:51
+                  - generic [ref=e1127]:
+                    - generic [ref=e1128]:
+                      - img [ref=e1129]
+                      - generic [ref=e1131]: Sarah Menezes
+                    - generic [ref=e1132]:
+                      - img [ref=e1133]
+                      - generic [ref=e1135]: dep teste
+              - generic [ref=e1137]:
+                - generic [ref=e1138]: 12/06/2025
+                - button "Abrir menu de opções" [ref=e1139]:
+                  - img [ref=e1140]
+            - generic [ref=e1142] [cursor=pointer]:
+              - generic [ref=e1143]:
+                - generic [ref=e1145]:
+                  - generic [ref=e1149]: LF
+                  - button "Selecionar todos" [ref=e1150]:
+                    - checkbox
+                - generic [ref=e1151]:
+                  - generic [ref=e1153]: Lucas Ferreira
+                  - generic [ref=e1154]:
+                    - generic [ref=e1155]:
+                      - img "WhatsApp" [ref=e1156]
+                      - generic [ref=e1159]: WhatsApp
+                    - generic [ref=e1162]:
+                      - generic [ref=e1163]: "Sarah Menezes:"
+                      - generic [ref=e1164]: Combinado! Até mais
+                    - img [ref=e1165]
+                  - generic [ref=e1168]:
+                    - generic [ref=e1169]:
+                      - img [ref=e1170]
+                      - generic [ref=e1172]: Sarah Menezes
+                    - generic [ref=e1173]:
+                      - img [ref=e1174]
+                      - generic [ref=e1176]: INATIVO ok
+              - generic [ref=e1177]:
+                - generic [ref=e1179]:
+                  - button [ref=e1180]
+                  - button [ref=e1182]
+                - generic [ref=e1184]:
+                  - generic [ref=e1185]: 12/06/2025
+                  - button "Abrir menu de opções" [ref=e1186]:
+                    - img [ref=e1187]
+            - button "Carregar mais" [ref=e1190] [cursor=pointer]
+        - generic [ref=e670]:
+          - img "Logo" [ref=e671]
+          - heading "Bem-vindo!" [level=1] [ref=e672]
+    - region "Notifications (F8)":
+      - list
+  - generic [ref=e1192]:
+    - paragraph [ref=e1193]: Ordenação das conversas
+    - tooltip "Ordenação das conversas" [ref=e1194]:
+      - paragraph [ref=e1195]: Ordenação das conversas

@@ -1,0 +1,438 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - alert [ref=e317]:
+      - generic [ref=e318]:
+        - img [ref=e319]
+        - generic [ref=e321]:
+          - generic [ref=e322]: 33 dias de pagamento em atraso.
+          - generic [ref=e323]: Pagamento efetuado? Desconsidere. A compensação do boleto pode levar até 2 dias úteis.
+      - generic [ref=e324]:
+        - button "Acessar boleto" [ref=e325] [cursor=pointer]:
+          - img [ref=e326]
+          - text: Acessar boleto
+        - button "Fechar aviso" [ref=e330] [cursor=pointer]:
+          - img [ref=e331]
+    - generic [ref=e4]:
+      - complementary [ref=e5]:
+        - img [ref=e7]
+        - navigation [ref=e8]:
+          - list [ref=e9]:
+            - listitem [ref=e10]:
+              - link [ref=e11] [cursor=pointer]:
+                - /url: https://app-spa.qa.poli.digital/redirect?sessionId=89191bf9bb0b54399076ba4b42e7c5803bbe8850&toPath=https://homolog.qa.poli.digital/home
+                - img [ref=e13]
+            - listitem [ref=e16]:
+              - link [ref=e17] [cursor=pointer]:
+                - /url: /chat
+                - img [ref=e19]
+            - listitem [ref=e21]:
+              - link [ref=e22] [cursor=pointer]:
+                - /url: https://app-spa.qa.poli.digital/redirect?sessionId=89191bf9bb0b54399076ba4b42e7c5803bbe8850&toPath=https://homolog.qa.poli.digital/settings/46667/chatbot
+                - img [ref=e24]
+            - listitem [ref=e27]:
+              - link [ref=e28] [cursor=pointer]:
+                - /url: /poli-flow
+                - img [ref=e30]
+            - listitem [ref=e32]:
+              - link [ref=e33] [cursor=pointer]:
+                - /url: https://app-spa.qa.poli.digital/redirect?sessionId=89191bf9bb0b54399076ba4b42e7c5803bbe8850&toPath=https://app-spa.qa.poli.digital/marketing
+                - img [ref=e35]
+            - listitem [ref=e38]:
+              - link [ref=e39] [cursor=pointer]:
+                - /url: https://app-spa.qa.poli.digital/redirect?sessionId=89191bf9bb0b54399076ba4b42e7c5803bbe8850&toPath=https://app-spa.qa.poli.digital/shopping
+                - img [ref=e41]
+            - listitem [ref=e43]:
+              - link [ref=e44] [cursor=pointer]:
+                - /url: https://app-spa.qa.poli.digital/redirect?sessionId=89191bf9bb0b54399076ba4b42e7c5803bbe8850&toPath=https://app-spa.qa.poli.digital/relatorio
+                - img [ref=e46]
+            - listitem [ref=e49]:
+              - link [ref=e50] [cursor=pointer]:
+                - /url: https://app-spa.qa.poli.digital/redirect?sessionId=89191bf9bb0b54399076ba4b42e7c5803bbe8850&toPath=https://app-spa.qa.poli.digital/tools
+                - img [ref=e52]
+            - listitem [ref=e55]:
+              - link [ref=e56] [cursor=pointer]:
+                - /url: /contacts
+                - img [ref=e58]
+            - listitem [ref=e62]:
+              - link [ref=e63] [cursor=pointer]:
+                - /url: /templates
+                - img [ref=e65]
+          - list [ref=e68]:
+            - listitem [ref=e69]:
+              - button "Consumo de créditos" [ref=e70] [cursor=pointer]:
+                - img [ref=e71]
+            - listitem [ref=e74]:
+              - button "YA" [ref=e75] [cursor=pointer]:
+                - generic [ref=e80]: YA
+            - listitem [ref=e82]:
+              - button [ref=e83] [cursor=pointer]:
+                - img [ref=e84]
+            - listitem [ref=e86]:
+              - generic [ref=e88]: 3.5.336
+      - main [ref=e89]:
+        - generic [ref=e90]:
+          - button "✨ Nova Versão" [ref=e91] [cursor=pointer]:
+            - generic [ref=e92]: ✨ Nova Versão
+            - img [ref=e93]
+          - generic [ref=e97]:
+            - generic [ref=e98]:
+              - button "Em atendimento" [ref=e99] [cursor=pointer]:
+                - generic [ref=e100]: Em atendimento
+                - img [ref=e101]
+              - generic [ref=e103]:
+                - button [ref=e104] [cursor=pointer]:
+                  - img [ref=e105]
+                - button [ref=e110] [cursor=pointer]:
+                  - img [ref=e111]
+                - button [ref=e115] [cursor=pointer]:
+                  - img [ref=e116]
+            - generic [ref=e118]:
+              - generic [ref=e119]:
+                - textbox "Pesquisar" [ref=e120]
+                - button [ref=e121] [cursor=pointer]:
+                  - img [ref=e122]
+              - button "Ordenação das conversas" [ref=e125] [cursor=pointer]:
+                - img [ref=e126]
+          - generic [ref=e334]:
+            - generic [ref=e335] [cursor=pointer]:
+              - generic [ref=e336]:
+                - generic [ref=e342]: YA
+                - generic [ref=e343]:
+                  - generic [ref=e345]: Yuri Alcantara 3
+                  - generic [ref=e346]:
+                    - generic [ref=e347]:
+                      - img "WhatsApp Business" [ref=e348]
+                      - generic [ref=e351]: WhatsApp Business
+                    - paragraph [ref=e354]: Ola, esse e um template para testar o envio de flows
+                  - generic [ref=e356]:
+                    - img [ref=e357]
+                    - generic [ref=e359]: Yuri Alcantara
+              - generic [ref=e360]:
+                - generic [ref=e362]:
+                  - button "+2" [ref=e363]:
+                    - generic [ref=e364]: "+2"
+                  - button [ref=e365]
+                  - button [ref=e367]
+                  - button [ref=e369]
+                  - button [ref=e371]
+                  - button [ref=e373]
+                - generic [ref=e375]:
+                  - generic [ref=e376]: Há 2 dias
+                  - button "Abrir menu de opções" [ref=e377]:
+                    - img [ref=e378]
+            - generic [ref=e380] [cursor=pointer]:
+              - generic [ref=e381]:
+                - generic [ref=e387]: GT
+                - generic [ref=e388]:
+                  - generic [ref=e390]: Grupo teste
+                  - generic [ref=e391]:
+                    - generic [ref=e392]:
+                      - img "WhatsApp" [ref=e393]
+                      - generic [ref=e396]: WhatsApp
+                    - generic [ref=e398]:
+                      - generic [ref=e399]: "Pedro Vieira:"
+                      - generic [ref=e401]: Mensagem pelo WhatsApp
+                  - generic [ref=e403]:
+                    - img [ref=e404]
+                    - generic [ref=e406]: Yuri Alcantara
+              - generic [ref=e408]:
+                - generic [ref=e409]: 21/05/2026
+                - button "Abrir menu de opções" [ref=e410]:
+                  - img [ref=e411]
+            - generic [ref=e413] [cursor=pointer]:
+              - generic [ref=e414]:
+                - img "Pedro Vieira" [ref=e420]
+                - generic [ref=e421]:
+                  - generic [ref=e423]: Pedro Vieira
+                  - generic [ref=e424]:
+                    - generic [ref=e425]:
+                      - img "WhatsApp" [ref=e426]
+                      - generic [ref=e429]: WhatsApp
+                    - generic [ref=e433]: Mensagem chegando
+                  - generic [ref=e435]:
+                    - img [ref=e436]
+                    - generic [ref=e438]: Allan bezerra
+              - generic [ref=e439]:
+                - button [ref=e442]
+                - generic [ref=e444]:
+                  - generic [ref=e445]: 21/05/2026
+                  - generic [ref=e446]: "3"
+                  - button "Abrir menu de opções" [ref=e447]:
+                    - img [ref=e448]
+            - generic [ref=e450] [cursor=pointer]:
+              - generic [ref=e451]:
+                - generic [ref=e457]: NG
+                - generic [ref=e458]:
+                  - generic [ref=e460]: Nov grupo teste
+                  - generic [ref=e461]:
+                    - generic [ref=e462]:
+                      - img "WhatsApp" [ref=e463]
+                      - generic [ref=e466]: WhatsApp
+                    - generic [ref=e469]: "Pedro Vieira:"
+                  - generic [ref=e471]:
+                    - img [ref=e472]
+                    - generic [ref=e474]: Pedro
+              - generic [ref=e476]:
+                - generic [ref=e477]: 21/05/2026
+                - button "Abrir menu de opções" [ref=e478]:
+                  - img [ref=e479]
+            - generic [ref=e481] [cursor=pointer]:
+              - generic [ref=e482]:
+                - generic [ref=e488]: TP
+                - generic [ref=e489]:
+                  - generic [ref=e491]: Teste Poli Group
+                  - generic [ref=e492]:
+                    - generic [ref=e493]:
+                      - img "WhatsApp" [ref=e494]
+                      - generic [ref=e497]: WhatsApp
+                    - generic [ref=e499]:
+                      - generic [ref=e500]: ":"
+                      - generic [ref=e501]:
+                        - generic [ref=e502]: "Operador Lineu Canha:"
+                        - generic [ref=e503]: teste 2
+                    - img [ref=e504]
+                  - generic [ref=e508]:
+                    - img [ref=e509]
+                    - generic [ref=e511]: Lineu Canha
+              - generic [ref=e513]:
+                - generic [ref=e514]: 20/05/2026
+                - button "Abrir menu de opções" [ref=e515]:
+                  - img [ref=e516]
+            - generic [ref=e518] [cursor=pointer]:
+              - generic [ref=e519]:
+                - img "Lineu felipe Gomes Canha" [ref=e525]
+                - generic [ref=e526]:
+                  - generic [ref=e528]: Lineu felipe Gomes Canha
+                  - generic [ref=e529]:
+                    - generic [ref=e530]:
+                      - img "WhatsApp" [ref=e531]
+                      - generic [ref=e534]: WhatsApp
+                    - generic [ref=e537]:
+                      - generic [ref=e538]: "Operador Lineu Canha:"
+                      - generic [ref=e539]: teste
+                  - generic [ref=e541]:
+                    - img [ref=e542]
+                    - generic [ref=e544]: Lineu Canha
+              - generic [ref=e546]:
+                - generic [ref=e547]: 20/05/2026
+                - button "Abrir menu de opções" [ref=e548]:
+                  - img [ref=e549]
+            - generic [ref=e551] [cursor=pointer]:
+              - generic [ref=e552]:
+                - generic [ref=e558]: T3
+                - generic [ref=e559]:
+                  - generic [ref=e561]: Teste 333
+                  - generic [ref=e562]:
+                    - generic [ref=e563]:
+                      - img "WhatsApp" [ref=e564]
+                      - generic [ref=e567]: WhatsApp
+                    - generic [ref=e570]:
+                      - generic [ref=e571]: "Operador Pedro:"
+                      - generic [ref=e572]: olá
+                  - generic [ref=e574]:
+                    - img [ref=e575]
+                    - generic [ref=e577]: Pedro
+              - generic [ref=e579]:
+                - generic [ref=e580]: 14/05/2026
+                - button "Abrir menu de opções" [ref=e581]:
+                  - img [ref=e582]
+            - generic [ref=e584] [cursor=pointer]:
+              - generic [ref=e585]:
+                - generic [ref=e591]: VS
+                - generic [ref=e592]:
+                  - generic [ref=e594]: Veiga Stg 01
+                  - generic [ref=e595]:
+                    - generic [ref=e596]:
+                      - img "Web Chat Sistema" [ref=e597]
+                      - generic [ref=e600]: Web Chat Sistema
+                    - generic [ref=e604]: Contato redirecionado para Allan bezerra por Yuri Alcantara
+                  - generic [ref=e606]:
+                    - img [ref=e607]
+                    - generic [ref=e609]: Allan bezerra
+              - generic [ref=e611]:
+                - generic [ref=e612]: 13/05/2026
+                - button "Abrir menu de opções" [ref=e614]:
+                  - img [ref=e615]
+            - generic [ref=e617] [cursor=pointer]:
+              - generic [ref=e618]:
+                - generic [ref=e624]: PB
+                - generic [ref=e625]:
+                  - generic [ref=e627]: Paulo Buzeli editado
+                  - generic [ref=e628]:
+                    - generic [ref=e629]:
+                      - img "Web Chat Sistema" [ref=e630]
+                      - generic [ref=e633]: Web Chat Sistema
+                    - generic [ref=e637]: Contato redirecionado para Allan bezerra por Yuri Alcantara
+                  - generic [ref=e639]:
+                    - img [ref=e640]
+                    - generic [ref=e642]: Allan bezerra
+              - generic [ref=e644]:
+                - generic [ref=e645]: 13/05/2026
+                - button "Abrir menu de opções" [ref=e647]:
+                  - img [ref=e648]
+            - generic [ref=e650] [cursor=pointer]:
+              - generic [ref=e651]:
+                - generic [ref=e657]: QP
+                - generic [ref=e658]:
+                  - generic [ref=e660]: QA Pedro Vieira Testes 123
+                  - generic [ref=e661]:
+                    - generic [ref=e662]:
+                      - img "Web Chat Sistema" [ref=e663]
+                      - generic [ref=e666]: Web Chat Sistema
+                    - generic [ref=e670]: Contato redirecionado para Carga Empresas por Luiz Teste
+                  - generic [ref=e672]:
+                    - img [ref=e673]
+                    - generic [ref=e675]: Carga Empresas
+              - generic [ref=e677]:
+                - generic [ref=e678]: 30/04/2026
+                - button "Abrir menu de opções" [ref=e680]:
+                  - img [ref=e681]
+            - button "Carregar mais" [ref=e684] [cursor=pointer]
+        - button "Teste A Teste A Teste Poli Carregar mais 06/05/2025 Chat finalizado em 06/05/2025 às 11:26 Este contato foi editado em 06/05/2025 - 11:26 Chat finalizado em 06/05/2025 às 11:31 Este contato foi editado em 06/05/2025 - 11:31 Chat finalizado em 06/05/2025 às 11:35 Este contato foi editado em 06/05/2025 - 11:35 Chat finalizado em 06/05/2025 às 11:36 Este contato foi editado em 06/05/2025 - 11:36 07/05/2025 Chat finalizado em 07/05/2025 às 11:31 Este contato foi editado em 07/05/2025 - 11:31 Alertas de crédito" [ref=e685] [cursor=pointer]:
+          - generic [ref=e687]:
+            - generic [ref=e688]:
+              - img "Teste A" [ref=e692]
+              - generic [ref=e693]:
+                - generic [ref=e694]: Teste A
+                - generic [ref=e696]:
+                  - img [ref=e698]
+                  - generic [ref=e702]: Teste Poli
+            - generic [ref=e703]:
+              - button [ref=e704]:
+                - img [ref=e705]
+              - button [ref=e708]:
+                - img [ref=e709]
+              - button [ref=e711]:
+                - img [ref=e712]
+              - button [ref=e716]:
+                - img [ref=e717]
+              - button [ref=e720]:
+                - img [ref=e721]
+          - generic [ref=e725]:
+            - generic [ref=e726]:
+              - button "Carregar mais" [ref=e727]
+              - generic [ref=e729]: 06/05/2025
+              - generic [ref=e731]: Chat finalizado em 06/05/2025 às 11:26
+              - article [ref=e732]:
+                - generic [ref=e733]:
+                  - button "TP" [ref=e734]:
+                    - generic [ref=e738]: TP
+                  - generic [ref=e739]:
+                    - generic [ref=e743]:
+                      - generic [ref=e744]: "Teste Poli diz:"
+                      - separator [ref=e745]
+                      - paragraph [ref=e747]: "[contact_name] Teste"
+                    - generic [ref=e748]:
+                      - generic [ref=e750]: 11:26
+                      - generic [ref=e751]:
+                        - img [ref=e752]
+                        - generic [ref=e755]: Entregue
+                  - button "Web Chat Sistema Web Chat Sistema" [ref=e757]:
+                    - generic [ref=e758]:
+                      - img "Web Chat Sistema" [ref=e759]
+                      - generic [ref=e762]: Web Chat Sistema
+              - generic [ref=e764]: Este contato foi editado em 06/05/2025 - 11:26
+              - article [ref=e765]:
+                - generic [ref=e766]:
+                  - button "YA" [ref=e767]:
+                    - generic [ref=e771]: YA
+                  - generic [ref=e772]:
+                    - generic [ref=e776]:
+                      - generic [ref=e777]: "Yuri Alcantara diz:"
+                      - separator [ref=e778]
+                      - paragraph [ref=e780]: "[custom] Teste2"
+                    - generic [ref=e781]:
+                      - generic [ref=e783]: 11:31
+                      - generic [ref=e784]:
+                        - img [ref=e785]
+                        - generic [ref=e788]: Entregue
+                  - button "Web Chat Sistema Web Chat Sistema" [ref=e790]:
+                    - generic [ref=e791]:
+                      - img "Web Chat Sistema" [ref=e792]
+                      - generic [ref=e795]: Web Chat Sistema
+              - generic [ref=e797]: Chat finalizado em 06/05/2025 às 11:31
+              - generic [ref=e799]: Este contato foi editado em 06/05/2025 - 11:31
+              - generic [ref=e801]: Chat finalizado em 06/05/2025 às 11:35
+              - article [ref=e802]:
+                - generic [ref=e803]:
+                  - button "TP" [ref=e804]:
+                    - generic [ref=e808]: TP
+                  - generic [ref=e809]:
+                    - generic [ref=e813]:
+                      - generic [ref=e814]: "Teste Poli diz:"
+                      - separator [ref=e815]
+                      - paragraph [ref=e817]: "{custom} teste3"
+                    - generic [ref=e818]:
+                      - generic [ref=e820]: 11:35
+                      - generic [ref=e821]:
+                        - img [ref=e822]
+                        - generic [ref=e825]: Entregue
+                  - button "Web Chat Sistema Web Chat Sistema" [ref=e827]:
+                    - generic [ref=e828]:
+                      - img "Web Chat Sistema" [ref=e829]
+                      - generic [ref=e832]: Web Chat Sistema
+              - generic [ref=e834]: Este contato foi editado em 06/05/2025 - 11:35
+              - article [ref=e835]:
+                - generic [ref=e836]:
+                  - button "TP" [ref=e837]:
+                    - generic [ref=e841]: TP
+                  - generic [ref=e842]:
+                    - generic [ref=e846]:
+                      - generic [ref=e847]: "Teste Poli diz:"
+                      - separator [ref=e848]
+                      - paragraph [ref=e850]: "["
+                    - generic [ref=e851]:
+                      - generic [ref=e853]: 11:36
+                      - generic [ref=e854]:
+                        - img [ref=e855]
+                        - generic [ref=e858]: Entregue
+                  - button "Web Chat Sistema Web Chat Sistema" [ref=e860]:
+                    - generic [ref=e861]:
+                      - img "Web Chat Sistema" [ref=e862]
+                      - generic [ref=e865]: Web Chat Sistema
+              - generic [ref=e867]: Chat finalizado em 06/05/2025 às 11:36
+              - generic [ref=e869]: Este contato foi editado em 06/05/2025 - 11:36
+              - generic [ref=e871]: 07/05/2025
+              - article [ref=e872]:
+                - generic [ref=e873]:
+                  - button "TP" [ref=e874]:
+                    - generic [ref=e878]: TP
+                  - generic [ref=e879]:
+                    - generic:
+                      - generic:
+                        - link:
+                          - /url: https://rastreamento.correios.com.br/app/index.php.
+                    - generic [ref=e883]:
+                      - generic [ref=e884]: "Teste Poli diz:"
+                      - separator [ref=e885]
+                      - generic [ref=e886]:
+                        - paragraph [ref=e887]: Bom dia!
+                        - paragraph [ref=e888]:
+                          - text: Esse é seu código 123456 de rastreio e poderá ser consultado em
+                          - link "https://rastreamento.correios.com.br/app/index.php." [ref=e889]:
+                            - /url: https://rastreamento.correios.com.br/app/index.php.
+                    - generic [ref=e890]:
+                      - generic [ref=e892]: 11:31
+                      - generic [ref=e893]:
+                        - img [ref=e894]
+                        - generic [ref=e897]: Entregue
+                  - button "Web Chat Sistema Web Chat Sistema" [ref=e899]:
+                    - generic [ref=e900]:
+                      - img "Web Chat Sistema" [ref=e901]
+                      - generic [ref=e904]: Web Chat Sistema
+              - generic [ref=e906]: Chat finalizado em 07/05/2025 às 11:31
+              - generic [ref=e908]: Este contato foi editado em 07/05/2025 - 11:31
+            - region "Alertas de crédito" [ref=e909]
+        - complementary [ref=e918]:
+          - button [ref=e920] [cursor=pointer]:
+            - img [ref=e921]
+          - button [ref=e925] [cursor=pointer]:
+            - img [ref=e926]
+          - button [ref=e931] [cursor=pointer]:
+            - img [ref=e932]
+          - button [ref=e935] [cursor=pointer]:
+            - img [ref=e936]
+          - button [ref=e941] [cursor=pointer]:
+            - img [ref=e942]
+  - region "Notifications (F8)":
+    - list

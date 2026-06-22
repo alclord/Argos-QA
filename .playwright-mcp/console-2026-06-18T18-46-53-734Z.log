@@ -1,0 +1,36 @@
+[      90ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DilrYWd5.js:101
+[      90ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-DilrYWd5.js:101
+[     152ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-DilrYWd5.js:76
+[     200ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DilrYWd5.js:69
+[     722ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-DilrYWd5.js:69
+[   37656ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DilrYWd5.js:69
+[   54949ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at AbortSignal.d (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:1101:16926)
+    at AbortSignal.r (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:70:9827)
+    at Object.onCancel (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:54:43336)
+    at Object.o [as cancel] (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:54:35949)
+    at oAe.cancel (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:54:40216)
+    at oAe.fetch (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:54:42164)
+    at https://spa-canary.poli.digital/assets/index-DilrYWd5.js:54:67190
+    at Array.map (<anonymous>)
+    at https://spa-canary.poli.digital/assets/index-DilrYWd5.js:54:67174
+    at Object.batch (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:54:34562)
+    at hAe.refetchQueries (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:54:67099)
+    at https://spa-canary.poli.digital/assets/index-DilrYWd5.js:54:66924
+    at Object.batch (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:54:34562)
+    at hAe.invalidateQueries (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:54:66798)
+    at u (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:2201:4079)
+    at bt.emit (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:1098:17395)
+    at bt.handleEvent (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:1098:26338)
+    at https://spa-canary.poli.digital/assets/index-DilrYWd5.js:1099:16138
+    at rn.emit (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:1098:17395)
+    at message (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:1098:34869)
+    at Or.emit (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:1098:17395)
+    at message (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:1098:23959)
+    at ba.emit (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:1098:17395)
+    at ba.onMessage (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:1098:18951)
+    at socket.onmessage (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:1098:19172)
+    at _2.request (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:1103:2243)
+    at async hDt (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:1137:26220)
+    at async C (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-DilrYWd5.js:54:38287) @ https://spa-canary.poli.digital/assets/index-DilrYWd5.js:69

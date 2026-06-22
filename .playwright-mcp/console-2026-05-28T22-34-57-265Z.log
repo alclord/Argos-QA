@@ -1,0 +1,15 @@
+[10337399ms] [ERROR] Access to fetch at 'https://api-hub.localiza.com/oauth/token/accesstoken?grant_type=client_credentials' from origin 'https://www.localiza.com' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://www.localiza.com/brasil/pt-br:0
+[10337402ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://api-hub.localiza.com/oauth/token/accesstoken?grant_type=client_credentials:0
+[10337410ms] [ERROR] ERROR Fr @ https://www.localiza.com/chunk-DZVPGW4O.js:7
+[10337415ms] [ERROR] Fr @ https://www.localiza.com/chunk-DZVPGW4O.js:7
+[10339794ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://siteintercept.qualtrics.com/dxjsmodule/37.563258faf691eb76a2b2.chunk.js?Q_CLIENTVERSION=2.49.0&Q_CLIENTTYPE=web&Q_BRANDID=www.localiza.com:0
+[10339797ms] [ERROR] Error: Loading chunk 37 failed.
+(error: https://siteintercept.qualtrics.com/dxjsmodule/37.563258faf691eb76a2b2.chunk.js?Q_CLIENTVERSION=2.49.0&Q_CLIENTTYPE=web&Q_BRANDID=www.localiza.com)
+    at a.e (https://zn1p5ypnoatuouazo-localiza.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_1P5ypNoaTUOuAzo:39:2027)
+    at Module.<anonymous> (https://zn1p5ypnoatuouazo-localiza.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_1P5ypNoaTUOuAzo:39:7645)
+    at a (https://zn1p5ypnoatuouazo-localiza.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_1P5ypNoaTUOuAzo:39:1727)
+    at Object.<anonymous> (https://zn1p5ypnoatuouazo-localiza.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_1P5ypNoaTUOuAzo:39:7489)
+    at a (https://zn1p5ypnoatuouazo-localiza.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_1P5ypNoaTUOuAzo:39:1727)
+    at https://zn1p5ypnoatuouazo-localiza.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_1P5ypNoaTUOuAzo:39:3407
+    at https://zn1p5ypnoatuouazo-localiza.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_1P5ypNoaTUOuAzo:39:3416 @ https://www.localiza.com/chunk-DZVPGW4O.js:7
+[10339801ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://siteintercept.qualtrics.com/dxjsmodule/12.3523fa7a83a73a0ea556.chunk.js?Q_CLIENTVERSION=2.49.0&Q_CLIENTTYPE=web&Q_BRANDID=www.localiza.com:0

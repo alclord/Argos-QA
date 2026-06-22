@@ -1,0 +1,19 @@
+﻿Título do Erro;Projeto Sentry;Ocorrências (7d);Ocorrências (14d);Δ Semana (%);Usuários Afetados;Primeiro Visto;Último Visto;Módulo;Sinal Oculto
+AxiosError: Request failed with status code 404;omnispa;2117;2118;+211500%;1278;30/05/2026;01/06/2026;Chat / Mensagens;Sim
+Error: No error message;omnispa;100;108;+1150%;86;20/05/2026;01/06/2026;Chat / Mensagens;Sim
+Exception: The requested URL returned error: 403;revendedor-api;6428;14327;-18%;180;18/05/2026;01/06/2026;Integrações Externas;Sim
+Exception: The requested URL returned error: 404;revendedor-api;234;560;-17%;61;18/05/2026;01/06/2026;Integrações Externas;Sim
+TypeError: Cannot read properties of undefined (reading 'plugin');omnispa;46;47;+100% (Novo);25;01/06/2026;01/06/2026;Chat / Mensagens;Sim
+TypeError: Cannot read properties of undefined (reading 'dat');omnispa;51;51;+100% (Novo);28;30/05/2026;01/06/2026;Chat / Mensagens;Sim
+Error: Maximum update depth exceeded;omnispa;9;9;+100% (Novo);6;30/05/2026;01/06/2026;WebSocket / Presença;Sim
+EncodingError: Decoding failed;omnispa;10;19;-47%;6;18/05/2026;01/06/2026;Chat / Mensagens;Sim
+TypeError: Cannot read properties of undefined (reading 'plugin') #2;omnispa;34;35;+100% (Novo);5;01/06/2026;01/06/2026;Chat / Mensagens;Sim
+TypeError: Cannot read properties of undefined (reading 'plugin') #3;omnispa;16;16;+100% (Novo);2;01/06/2026;01/06/2026;Chat / Mensagens;Sim
+TypeError: Cannot read properties of undefined (reading 'len');automatic-actions;1417;1635;+549%;0;18/05/2026;01/06/2026;Distribuição / Filas;Sim
+Chat created (dispatch log error);dispatch;1803;3999;-10%;0;18/05/2026;01/06/2026;Distribuição / Filas;Sim
+Distribute to department;dispatch;1167;2608;-11%;0;18/05/2026;01/06/2026;Distribuição / Filas;Sim
+Distribute from the queue;dispatch;949;2162;-12%;0;18/05/2026;01/06/2026;Distribuição / Filas;Sim
+Object.Logger.error;contacts;91;181;0%;0;18/05/2026;01/06/2026;Contatos / Busca;Sim
+Error: Failed to fetch tempstorage;omnispa;46;46;+100% (Novo);12;30/05/2026;01/06/2026;Upload / Mídia;Sim
+AxiosError: Request failed with status code 400;meta-business-management;564;1047;+17%;0;18/05/2026;01/06/2026;Canais / WhatsApp;Não
+*errors.errorString: Customer dont have token;leads;1842;4080;-10%;0;18/05/2026;01/06/2026;Integrações Externas;Sim

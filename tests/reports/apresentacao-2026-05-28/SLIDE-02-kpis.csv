@@ -1,0 +1,9 @@
+﻿Indicador;Valor;Ícone;Cor;Descrição
+Bugs confirmados N2;47;🔴;vermelho;Investigados pelo time de N2 — problema confirmado
+Reclamações ativas N1;18;🟡;amarelo;Bugs abertos por clientes nas últimas 2 semanas
+Módulos em risco crítico;3;🔴;vermelho;Chat · Canais · Distribuição
+Usuários afetados em prod;3.433+;🔴;vermelho;Só no maior erro do omnispa (AxiosError 404)
+Features instáveis em dev;2;🟠;laranja;Adicionando complexidade sobre bugs abertos
+Corretivos em dev ativo;1;🟡;amarelo;DEV4-4078 — cobre 1 de 8 bugs N2 de Chat
+Módulos sem atenção do dev;5;🔴;vermelho;Distribuição · Upload · Permissões · CRM · Auth
+Bugs N2 sem corretivo;29;🔴;vermelho;Dos 47 bugs N2 confirmados

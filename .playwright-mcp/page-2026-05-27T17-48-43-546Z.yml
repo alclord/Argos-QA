@@ -1,0 +1,267 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - complementary:
+          - generic:
+            - img
+          - navigation:
+            - list:
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=792e1fffe991b07f49e6568efd5734949676ff3c&toPath=https://app.poli.digital/home
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /chat
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=792e1fffe991b07f49e6568efd5734949676ff3c&toPath=https://app.poli.digital/settings/1/chatbot
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /poli-flow
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=792e1fffe991b07f49e6568efd5734949676ff3c&toPath=https://app-spa.poli.digital/marketing
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=792e1fffe991b07f49e6568efd5734949676ff3c&toPath=https://app-spa.poli.digital/shopping
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=792e1fffe991b07f49e6568efd5734949676ff3c&toPath=https://app-spa.poli.digital/relatorio
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=792e1fffe991b07f49e6568efd5734949676ff3c&toPath=https://app.poli.digital/settings/1
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /contacts
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /templates
+                  - generic:
+                    - img
+            - list:
+              - listitem:
+                - button:
+                  - img
+              - listitem:
+                - button:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: YA
+              - listitem:
+                - button:
+                  - img
+              - listitem:
+                - generic:
+                  - generic: 3.5.334
+        - main:
+          - generic:
+            - generic:
+              - navigation:
+                - generic:
+                  - link:
+                    - /url: /
+                    - text: Página inicial
+                - generic:
+                  - img
+                  - link:
+                    - /url: /templates
+                    - text: Templates
+                - img
+                - generic: Criar template
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                    - generic:
+                      - paragraph: Gerar template com IA
+                      - paragraph: Descreva o objetivo e a IA cria um rascunho para você ajustar.
+                  - button:
+                    - img
+                    - text: Gerar com IA
+                - generic:
+                  - generic:
+                    - generic:
+                      - heading [level=2]: Tipo
+                      - generic:
+                        - text: Como esse template será usado?
+                        - radiogroup:
+                          - generic:
+                            - radio [checked]:
+                              - generic:
+                                - img
+                            - radio [checked]
+                            - generic:
+                              - generic: Mensagem rápida
+                              - generic: Disponível para enviar em conversas abertas. Não passa por aprovação.
+                          - generic:
+                            - radio
+                            - radio
+                            - generic:
+                              - generic: Template de canal
+                              - generic: Necessário para iniciar conversas. Será submetido à aprovação do canal.
+                    - generic:
+                      - heading [level=2]: Informações básicas
+                      - generic:
+                        - generic:
+                          - text: Nome
+                          - textbox
+                          - paragraph: lowercase, números e underscore
+                        - generic:
+                          - text: Idioma
+                          - combobox:
+                            - generic: Português (Brasil)
+                            - img
+                          - combobox
+                        - generic:
+                          - text: Objetivo
+                          - combobox:
+                            - generic: Personalizado
+                            - img
+                          - combobox
+                          - paragraph: O objetivo orienta a geração de variações e ajuda na curadoria de templates.
+                        - generic:
+                          - text: Categoria
+                          - combobox:
+                            - generic: Selecione uma categoria
+                            - img
+                          - combobox
+                        - generic:
+                          - text: Equipe
+                          - combobox:
+                            - generic: Sem equipe
+                            - img
+                          - combobox
+                    - generic:
+                      - heading [level=2]: Cabeçalho
+                      - generic:
+                        - text: Tipo de cabeçalho
+                        - radiogroup:
+                          - generic:
+                            - radio [checked]:
+                              - generic:
+                                - img
+                            - radio [checked]
+                            - text: Sem cabeçalho
+                          - generic:
+                            - radio
+                            - radio
+                            - text: Texto
+                          - generic:
+                            - radio
+                            - radio
+                            - text: Mídia
+                    - generic:
+                      - heading [level=2]: Corpo
+                      - generic:
+                        - generic:
+                          - generic: Conteúdo da mensagem
+                          - button: Inserir variável
+                        - textbox
+                        - generic: 0/1024
+                    - generic:
+                      - heading [level=2]: Rodapé
+                      - generic:
+                        - text: Rodapé
+                        - textbox
+                        - generic: 0/60
+                    - generic:
+                      - heading [level=2]: Interatividade
+                      - generic:
+                        - text: Tipo de interação
+                        - radiogroup:
+                          - generic:
+                            - radio [checked]:
+                              - generic:
+                                - img
+                            - radio [checked]
+                            - text: Sem interação
+                          - generic:
+                            - radio
+                            - radio
+                            - text: Botões
+                          - generic:
+                            - radio
+                            - radio
+                            - text: Lista
+                          - generic:
+                            - radio
+                            - radio
+                            - text: Pedir localização
+                    - generic:
+                      - button: Cancelar
+                      - button [disabled]: Criar template
+                  - complementary:
+                    - generic:
+                      - heading [level=3]: Pré-visualização
+                      - paragraph: Comece a preencher o formulário para ver a prévia
+    - list
+  - dialog "Copiloto de templates" [ref=e208]:
+    - generic [ref=e209]:
+      - heading "Copiloto de templates" [level=2] [ref=e210]:
+        - img [ref=e211]
+        - text: Copiloto de templates
+      - paragraph [ref=e213]: Conte o que você quer comunicar. A IA monta um rascunho que você pode revisar antes de aplicar.
+    - generic [ref=e214]:
+      - generic [ref=e215]:
+        - text: Objetivo
+        - combobox "Objetivo" [active] [ref=e216] [cursor=pointer]:
+          - generic: Notificação geral
+          - img [ref=e217]
+        - combobox [ref=e219]
+      - generic [ref=e220]:
+        - text: Categoria
+        - radiogroup [ref=e221]:
+          - generic [ref=e222] [cursor=pointer]:
+            - radio "Marketing" [ref=e223]
+            - radio
+            - text: Marketing
+          - generic [ref=e224] [cursor=pointer]:
+            - radio "Utilidade" [checked] [ref=e225]:
+              - img [ref=e227]
+            - radio [checked]
+            - text: Utilidade
+          - generic [ref=e229] [cursor=pointer]:
+            - radio "Autenticação" [ref=e230]
+            - radio
+            - text: Autenticação
+      - generic [ref=e231]:
+        - text: Idioma
+        - combobox "Idioma" [ref=e232] [cursor=pointer]:
+          - generic: Português (Brasil)
+          - img [ref=e233]
+        - combobox [ref=e235]
+      - generic [ref=e236]:
+        - text: O que você quer dizer ao cliente?
+        - textbox "O que você quer dizer ao cliente?" [ref=e237]:
+          - /placeholder: "Ex: avisar sobre uma promoção de 20% off em produtos da linha verão, válida até domingo."
+        - generic [ref=e238]:
+          - generic [ref=e239]: Mínimo 10 caracteres
+          - generic [ref=e240]: 0/500
+      - generic [ref=e241]:
+        - button "Cancelar" [ref=e242] [cursor=pointer]
+        - button "Gerar sugestão" [disabled]
+    - button "Close" [ref=e243] [cursor=pointer]:
+      - img [ref=e244]
+      - generic [ref=e247]: Close

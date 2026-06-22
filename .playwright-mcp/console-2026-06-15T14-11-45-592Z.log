@@ -1,0 +1,59 @@
+[    9225ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[    9227ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[    9489ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[    9614ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[    9922ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   10567ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/non-payment/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[   10943ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.poli.digital/auth/refresh-token:0
+[   10947ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at CBe (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1101:15780)
+    at _2.request (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:2243)
+    at async jMt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1107:6861)
+    at async https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1107:8208
+    at async _2.request (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:2147)
+    at async i0n.getOverdueAccounts (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:2253:44732)
+    at async https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:2579:5314 @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   10949ms] [ERROR] AxiosError: Request failed with status code 401
+    at CBe (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1101:15780)
+    at _2.request (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:2243)
+    at async jMt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1107:6861)
+    at async https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1107:8208
+    at async _2.request (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:2147)
+    at async i0n.getOverdueAccounts (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:2253:44732)
+    at async https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:2579:5314 @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   10951ms] [ERROR] AxiosError: Request failed with status code 401
+    at CBe (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1101:15780)
+    at _2.request (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:2243)
+    at async jMt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1107:6861)
+    at async https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1107:8208
+    at async _2.request (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:2147)
+    at async i0n.getOverdueAccounts (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:2253:44732)
+    at async https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:2579:5314 @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   11611ms] [INFO] WebSocket: Conexão finalizada @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   12091ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[   12091ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[   12162ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[   12215ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   12661ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   29414ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   30206ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at yB (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:282)
+    at _2.Rue (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:320)
+    at async _2.request (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:2147)
+    at async gDt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1137:36156)
+    at async C (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:38287) @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   53417ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[   53418ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[   53517ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[   53754ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at yB (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:282)
+    at _2.Rue (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:320)
+    at async _2.request (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:2147)
+    at async gDt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1137:36156)
+    at async C (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:38287) @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   54311ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69

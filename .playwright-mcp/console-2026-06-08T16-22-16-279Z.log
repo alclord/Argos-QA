@@ -1,0 +1,15 @@
+[    1449ms] [WARNING] Notifications permission has been blocked as the user has dismissed the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/login:0
+[    1918ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/login:0
+[    1943ms] [WARNING] Notifications permission has been blocked as the user has dismissed the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/login:0
+[    2051ms] [WARNING] Amplitude Logger [Warn]: Failed to transition session replay events from keyval to new store: NotFoundError: Failed to execute 'transaction' on 'IDBDatabase': One of the specified object stores was not found. @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[    2487ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app-spa.qa.poli.digital/login:0
+[   10586ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.qa.poli.digital/auth/token:0
+[   10587ms] [ERROR] Erro ao fazer login com o Heimdall rd @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[   10590ms] [ERROR] login error Error: Token not received!
+    at https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:3377425
+    at f (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1825709)
+    at Generator.<anonymous> (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1827061)
+    at Generator.next (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:1826138)
+    at d (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:2816545)
+    at l (https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:2:2816879) @ https://app-spa.qa.poli.digital/static/js/main.1bfda9ba.js:1
+[   10702ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app-spa.qa.poli.digital/login:0

@@ -1,0 +1,32 @@
+[     301ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:101
+[     301ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:101
+[     361ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:76
+[     976ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[    1225ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[    2199ms] Identifier 'TCRMEmbed' has already been declared
+[    2226ms] Identifier 'TCRMEmbed' has already been declared
+[    2236ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[    3737ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/584222251_803407049174736_6075839926295552254_n.jpg?ccb=11-4&oh=01_Q5Aa3QFO8EYqX4LE02YUHwjgnXcNkXQV4oXQO5SXs8CbPJfwPg&oe=695FD5E1&_nc_sid=5e03e0&_nc_cat=105:0
+[  240012ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[ 1107308ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/534423175_1799447770670529_4376520691174631462_n.jpg?ccb=11-4&oh=01_Q5Aa4gHg3W52uJ3aD8TugoXVEH96_vn486Chx9MU1ri8fdkIGQ&oe=6A21B371&_nc_sid=5e03e0&_nc_cat=104:0
+[ 2091799ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/92a7df26-622f-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 2229634ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/582343687_883674010967360_7702721648056132525_n.jpg?ccb=11-4&oh=01_Q5Aa4QEjMmSkVJbyZvIh6_nY1jIbTaKGx15KmlqIRfD2ss6Dzw&oe=69EF49EE&_nc_sid=5e03e0&_nc_cat=100:0
+[ 2275665ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[ 2275683ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ https://api-sr.amplitude.com/sessions/v2/track?device_id=62078fea-a697-45f7-9653-6e4daa442075&session_id=1781125637450&type=replay:0
+[ 2275686ms] [WARNING] Amplitude Logger [Warn]: TypeError: Failed to fetch (api-sr.amplitude.com) @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[50020572ms] Uncaught (in promise) TypeError: Cannot read properties of null (reading 'sequence')
+    at <anonymous> (https://scripts.clarity.ms/0.8.65/clarity.js:1:48859)
+    at <anonymous> (https://scripts.clarity.ms/0.8.65/clarity.js:1:6498)
+    at <anonymous> (https://scripts.clarity.ms/0.8.65/clarity.js:1:6603)
+    at o (https://scripts.clarity.ms/0.8.65/clarity.js:1:5320)
+[50022661ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:69
+[50022856ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.poli.digital/auth/inactivity:0
+[50022931ms] AxiosError: Request failed with status code 404
+    at yBe (https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-BB7gOYo1.js:1101:15780)
+[50023099ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/broadcasting/auth:0
+[50023231ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://sentry.poli.digital/api/20/envelope/?sentry_version=7&sentry_key=45d27e79e794b3e254ec8212c0ad0250&sentry_client=sentry.javascript.react%2F9.47.1:0
+[50028369ms] Identifier 'TCRMEmbed' has already been declared
+[50048698ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/491871813_3946685305571169_7617893534903263786_n.jpg?ccb=11-4&oh=01_Q5Aa3wHCYoPuPLHqR7EcO3zfHMfkaca_S21FbKHI4kgQMUoxCg&oe=69B408E9&_nc_sid=5e03e0&_nc_cat=106:0
+[50109648ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/491871813_3946685305571169_7617893534903263786_n.jpg?ccb=11-4&oh=01_Q5Aa3wHCYoPuPLHqR7EcO3zfHMfkaca_S21FbKHI4kgQMUoxCg&oe=69B408E9&_nc_sid=5e03e0&_nc_cat=106:0
+[50268867ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/360233190_1320356438684638_4102759860464303013_n.jpg?ccb=11-4&oh=01_Q5Aa3QHu-xoU4uoM2tG1El3Ga3AmDvYuqltgir_cSu3V7El2gw&oe=6952A87C&_nc_sid=5e03e0&_nc_cat=101:0

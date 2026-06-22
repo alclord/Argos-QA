@@ -1,0 +1,76 @@
+- generic [ref=e2]:
+  - generic [ref=e44]:
+    - generic [ref=e47]:
+      - link "Dashboard" [ref=e49] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=a1fa34fcb74e61ea99f2feef9493a367ae0d3c4d&toPath=https://app.poli.digital/home
+        - img [ref=e51]
+      - generic [ref=e52]:
+        - list [ref=e54]:
+          - listitem [ref=e55]:
+            - link [ref=e56] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e58]
+          - listitem [ref=e61]:
+            - link [ref=e62] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e64]
+          - listitem [ref=e67]:
+            - link [ref=e68] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=a1fa34fcb74e61ea99f2feef9493a367ae0d3c4d&toPath=https://app.poli.digital/settings/46667/chatbot
+              - img [ref=e70]
+          - listitem [ref=e73]:
+            - link [ref=e74] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e76]
+          - listitem [ref=e78]:
+            - link [ref=e79] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=a1fa34fcb74e61ea99f2feef9493a367ae0d3c4d&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e81]
+          - listitem [ref=e84]:
+            - link [ref=e85] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=a1fa34fcb74e61ea99f2feef9493a367ae0d3c4d&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e87]
+        - list [ref=e92]:
+          - listitem [ref=e93]:
+            - link [ref=e95] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e97]
+      - generic [ref=e100]:
+        - button "Consumo de créditos" [ref=e101] [cursor=pointer]:
+          - img [ref=e103]
+        - button "OC" [ref=e107] [cursor=pointer]:
+          - generic [ref=e113]: OC
+        - generic [ref=e116]: 3.5.352
+    - main [ref=e117]:
+      - main [ref=e118]:
+        - generic [ref=e119]:
+          - button "✨ Nova Versão" [ref=e120] [cursor=pointer]:
+            - generic [ref=e121]: ✨ Nova Versão
+            - img [ref=e122]
+          - generic [ref=e126]:
+            - generic [ref=e127]:
+              - button "Atribuídos a mim" [ref=e128] [cursor=pointer]:
+                - generic [ref=e129]: Atribuídos a mim
+                - img [ref=e130]
+              - generic [ref=e132]:
+                - button [ref=e133] [cursor=pointer]:
+                  - img [ref=e134]
+                - button "Contatos" [ref=e139] [cursor=pointer]:
+                  - img [ref=e140]
+                - button "Filtros" [ref=e144] [cursor=pointer]:
+                  - img [ref=e145]
+            - generic [ref=e149]:
+              - generic [ref=e150]:
+                - textbox "Pesquisar" [ref=e151]
+                - button "Pesquisar" [ref=e152] [cursor=pointer]:
+                  - img [ref=e153]
+              - button "Ordenação das conversas" [ref=e156] [cursor=pointer]:
+                - img [ref=e157]
+          - heading "Nada encontrado" [level=1] [ref=e163]:
+            - img [ref=e164]
+            - text: Nada encontrado
+        - generic [ref=e169]:
+          - img "Logo" [ref=e170]
+          - heading "Bem-vindo!" [level=1] [ref=e171]
+  - region "Notifications (F8)":
+    - list

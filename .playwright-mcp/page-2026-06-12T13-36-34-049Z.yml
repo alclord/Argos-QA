@@ -1,0 +1,116 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=4b5a378b82d69930bdcfe8914b8a654de3d564f0&toPath=https://app.poli.digital/home
+                  - generic:
+                    - img
+              - generic:
+                - generic:
+                  - list:
+                    - listitem:
+                      - link:
+                        - /url: /chat
+                        - generic:
+                          - img
+                    - listitem:
+                      - link:
+                        - /url: /contacts
+                        - generic:
+                          - img
+                    - listitem:
+                      - link:
+                        - /url: https://app-spa.poli.digital/redirect?sessionId=4b5a378b82d69930bdcfe8914b8a654de3d564f0&toPath=https://app.poli.digital/settings//chatbot
+                        - generic:
+                          - img
+                    - listitem:
+                      - link:
+                        - /url: /poli-flow
+                        - generic:
+                          - img
+                    - listitem:
+                      - link:
+                        - /url: https://app-spa.poli.digital/redirect?sessionId=4b5a378b82d69930bdcfe8914b8a654de3d564f0&toPath=https://app-spa.poli.digital/shopping
+                        - generic:
+                          - img
+                    - listitem:
+                      - link:
+                        - /url: https://app-spa.poli.digital/redirect?sessionId=4b5a378b82d69930bdcfe8914b8a654de3d564f0&toPath=https://app-spa.poli.digital/relatorio
+                        - generic:
+                          - img
+                - generic:
+                  - list:
+                    - listitem:
+                      - generic:
+                        - link:
+                          - /url: /settings
+                          - generic:
+                            - img
+              - generic:
+                - button:
+                  - generic:
+                    - img
+                - generic:
+                  - button:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: OC
+                - generic:
+                  - generic: 3.5.358-DEV4-4370
+        - main:
+          - main:
+            - generic:
+              - button:
+                - generic: ✨ Nova Versão
+                - img
+              - generic:
+                - generic:
+                  - generic:
+                    - button [expanded]:
+                      - generic: Atribuídos a mim
+                      - img
+                    - generic:
+                      - button:
+                        - img
+                      - button:
+                        - img
+                  - generic:
+                    - generic:
+                      - textbox:
+                        - /placeholder: Pesquisar
+                      - button:
+                        - img
+                    - button:
+                      - img
+              - generic:
+                - generic:
+                  - generic:
+                    - heading [level=1]:
+                      - img
+                      - text: Nada encontrado
+            - generic:
+              - img
+              - heading [level=1]: Bem-vindo!
+    - list
+  - menu "Atribuídos a mim" [active] [ref=e126]:
+    - menuitemcheckbox "Em atendimento" [ref=e127] [cursor=pointer]:
+      - generic [ref=e129]: Em atendimento
+    - menuitemcheckbox "Todas as conversas" [ref=e130] [cursor=pointer]:
+      - generic [ref=e132]: Todas as conversas
+    - menuitemcheckbox "Sem atendente" [ref=e133] [cursor=pointer]:
+      - generic [ref=e135]: Sem atendente
+    - menuitemcheckbox "Não lidas" [ref=e136] [cursor=pointer]:
+      - generic [ref=e138]: Não lidas
+    - menuitemcheckbox "Atribuídos a mim" [checked] [ref=e139] [cursor=pointer]:
+      - img [ref=e142]
+      - generic [ref=e144]: Atribuídos a mim
+    - menuitemcheckbox "Disparos" [ref=e145] [cursor=pointer]:
+      - generic [ref=e147]: Disparos

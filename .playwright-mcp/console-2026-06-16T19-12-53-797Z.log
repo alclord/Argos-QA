@@ -1,0 +1,76 @@
+[     712ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[     712ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:101
+[     860ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:76
+[    1110ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at yB (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:282)
+    at _2.Rue (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:320)
+    at async _2.request (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1103:2147)
+    at async gDt (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:1137:36156)
+    at async C (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:54:38287) @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[    1985ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[    9916ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[    9918ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[    9919ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   14311ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   15174ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[   15176ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   15176ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-D8Tbkmad.js:69
+[   21522ms] [LOG] Defining triggerGuiding @ :0
+[   21719ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/redirect?sessionId=1399757a85484e9afa71f7fabdacb366ba13fdd4&toPath=https://app.poli.digital/home&_gl=1*1jrw4dc*_gcl_au*MTYwMDIyNjQxNC4xNzgxNTMzMDE3LjE1NjExNjQxMjQuMTc4MTYxNjgyNS4xNzgxNjE2ODk3*_ga*ODc5OTYzMzAyLjE3ODE1MzMwMTc.*_ga_GDG103ZG81*czE3ODE2MzY0MzQkbzUkZzEkdDE3ODE2MzcxNzQkajI1JGwwJGg4MTc4NDcyMzQ.:0
+[   21893ms] [LOG] openSocketRequest @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   22413ms] [ERROR] WebSocket connection to 'wss://ms.poli.digital/spa-websocket-ativo?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6MSwiY3VzdG9tZXJzIjpbMSw0NjY2Nyw1MDYyMV0sInJvbGVzIjpbMiwzXSwicGVybWlzc2lvbnMiOltdfSwicGVybWlzc2lvbnMiOltdLCJpYXQiOjE3ODExMTcwNzQsImV4cCI6MTc4MTIwMzQ3NH0.ua5kQGQ18nU1bIJEy9LExh1rrJcWGgnemz7RNYIDpyU&customer_id=1' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   22415ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   22425ms] [ERROR] WebSocket connection to 'wss://dispatch-wss.poli.digital/?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6MSwiY3VzdG9tZXJzIjpbMSw0NjY2Nyw1MDYyMV0sInJvbGVzIjpbMiwzXSwicGVybWlzc2lvbnMiOltdfSwicGVybWlzc2lvbnMiOltdLCJpYXQiOjE3ODExMTcwNzQsImV4cCI6MTc4MTIwMzQ3NH0.ua5kQGQ18nU1bIJEy9LExh1rrJcWGgnemz7RNYIDpyU&customer_id=1' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   22425ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   22845ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.poli.digital/redirect?sessionId=1399757a85484e9afa71f7fabdacb366ba13fdd4&toPath=https://app.poli.digital/home&_gl=1*1jrw4dc*_gcl_au*MTYwMDIyNjQxNC4xNzgxNTMzMDE3LjE1NjExNjQxMjQuMTc4MTYxNjgyNS4xNzgxNjE2ODk3*_ga*ODc5OTYzMzAyLjE3ODE1MzMwMTc.*_ga_GDG103ZG81*czE3ODE2MzY0MzQkbzUkZzEkdDE3ODE2MzcxNzQkajI1JGwwJGg4MTc4NDcyMzQ.:0
+[   22856ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.poli.digital/redirect?sessionId=1399757a85484e9afa71f7fabdacb366ba13fdd4&toPath=https://app.poli.digital/home&_gl=1*1jrw4dc*_gcl_au*MTYwMDIyNjQxNC4xNzgxNTMzMDE3LjE1NjExNjQxMjQuMTc4MTYxNjgyNS4xNzgxNjE2ODk3*_ga*ODc5OTYzMzAyLjE3ODE1MzMwMTc.*_ga_GDG103ZG81*czE3ODE2MzY0MzQkbzUkZzEkdDE3ODE2MzcxNzQkajI1JGwwJGg4MTc4NDcyMzQ.:0
+[   23459ms] [ERROR] WebSocket connection to 'wss://ms.poli.digital/spa-websocket-ativo?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6MSwiY3VzdG9tZXJzIjpbMSw0NjY2Nyw1MDYyMV0sInJvbGVzIjpbMiwzXSwicGVybWlzc2lvbnMiOltdfSwicGVybWlzc2lvbnMiOltdLCJpYXQiOjE3ODExMTcwNzQsImV4cCI6MTc4MTIwMzQ3NH0.ua5kQGQ18nU1bIJEy9LExh1rrJcWGgnemz7RNYIDpyU&customer_id=1' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   23459ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   23464ms] [ERROR] WebSocket connection to 'wss://dispatch-wss.poli.digital/?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6MSwiY3VzdG9tZXJzIjpbMSw0NjY2Nyw1MDYyMV0sInJvbGVzIjpbMiwzXSwicGVybWlzc2lvbnMiOltdfSwicGVybWlzc2lvbnMiOltdLCJpYXQiOjE3ODExMTcwNzQsImV4cCI6MTc4MTIwMzQ3NH0.ua5kQGQ18nU1bIJEy9LExh1rrJcWGgnemz7RNYIDpyU&customer_id=1' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   23464ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   23528ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   25021ms] [ERROR] WebSocket connection to 'wss://ms.poli.digital/spa-websocket-ativo?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6MSwiY3VzdG9tZXJzIjpbMSw0NjY2Nyw1MDYyMV0sInJvbGVzIjpbMiwzXSwicGVybWlzc2lvbnMiOltdfSwicGVybWlzc2lvbnMiOltdLCJpYXQiOjE3ODExMTcwNzQsImV4cCI6MTc4MTIwMzQ3NH0.ua5kQGQ18nU1bIJEy9LExh1rrJcWGgnemz7RNYIDpyU&customer_id=1' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   25021ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   25025ms] [ERROR] WebSocket connection to 'wss://dispatch-wss.poli.digital/?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjc5MzU2LCJlbWFpbCI6Inl1cmkuY2FzdHJvQHBvbGkuZGlnaXRhbCIsIm5hbWUiOiIiLCJjdXN0b21lcl9pZCI6MSwiY3VzdG9tZXJzIjpbMSw0NjY2Nyw1MDYyMV0sInJvbGVzIjpbMiwzXSwicGVybWlzc2lvbnMiOltdfSwicGVybWlzc2lvbnMiOltdLCJpYXQiOjE3ODExMTcwNzQsImV4cCI6MTc4MTIwMzQ3NH0.ua5kQGQ18nU1bIJEy9LExh1rrJcWGgnemz7RNYIDpyU&customer_id=1' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   25026ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   25527ms] [LOG] User Guiding identify running @ https://app-spa.poli.digital/static/js/main.b10d375c.js:1
+[   26389ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/redirect?sessionId=1399757a85484e9afa71f7fabdacb366ba13fdd4&toPath=https://app.poli.digital/home&_gl=1*1jrw4dc*_gcl_au*MTYwMDIyNjQxNC4xNzgxNTMzMDE3LjE1NjExNjQxMjQuMTc4MTYxNjgyNS4xNzgxNjE2ODk3*_ga*ODc5OTYzMzAyLjE3ODE1MzMwMTc.*_ga_GDG103ZG81*czE3ODE2MzY0MzQkbzUkZzEkdDE3ODE2MzcxNzQkajI1JGwwJGg4MTc4NDcyMzQ.:0
+[   26396ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app-spa.poli.digital/redirect?sessionId=1399757a85484e9afa71f7fabdacb366ba13fdd4&toPath=https://app.poli.digital/home&_gl=1*1jrw4dc*_gcl_au*MTYwMDIyNjQxNC4xNzgxNTMzMDE3LjE1NjExNjQxMjQuMTc4MTYxNjgyNS4xNzgxNjE2ODk3*_ga*ODc5OTYzMzAyLjE3ODE1MzMwMTc.*_ga_GDG103ZG81*czE3ODE2MzY0MzQkbzUkZzEkdDE3ODE2MzcxNzQkajI1JGwwJGg4MTc4NDcyMzQ.:0
+[   27885ms] [LOG] Defining triggerGuiding @ :0
+[   29889ms] [LOG] User Guiding identify running @ :1
+[   29889ms] [LOG] User Guiding identify cleared @ :1
+[   32094ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/home:0
+[   32106ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://app.poli.digital/home:0

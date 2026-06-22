@@ -1,0 +1,393 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - img [ref=e7]
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link [ref=e11] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app.poli.digital/home
+              - img [ref=e13]
+          - listitem [ref=e16]:
+            - link [ref=e17] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e19]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e30]
+          - listitem [ref=e32]:
+            - link [ref=e33] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e35]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e41]
+          - listitem [ref=e43]:
+            - link [ref=e44] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e46]
+          - listitem [ref=e49]:
+            - link [ref=e50] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=9022062924c226ae438dc57a5d3bb45e5abf6b40&toPath=https://app.poli.digital/settings/1
+              - img [ref=e52]
+          - listitem [ref=e55]:
+            - link [ref=e56] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e58]
+          - listitem [ref=e62]:
+            - link [ref=e63] [cursor=pointer]:
+              - /url: /templates
+              - img [ref=e65]
+        - list [ref=e68]:
+          - listitem [ref=e69]:
+            - button "Consumo de créditos" [ref=e70] [cursor=pointer]:
+              - img [ref=e71]
+          - listitem [ref=e74]:
+            - button "YA" [ref=e75] [cursor=pointer]:
+              - generic [ref=e80]: YA
+          - listitem [ref=e82]:
+            - button [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+          - listitem [ref=e86]:
+            - generic [ref=e88]: v3.5.327
+    - main [ref=e89]:
+      - generic [ref=e90]:
+        - navigation "breadcrumb" [ref=e92]:
+          - link "Página inicial" [ref=e94] [cursor=pointer]:
+            - /url: /
+          - img [ref=e95]
+          - generic [ref=e97]: Templates
+        - generic [ref=e99]:
+          - generic [ref=e101]:
+            - generic [ref=e102]:
+              - textbox "Buscar templates" [ref=e103]: retorno
+              - button [ref=e104] [cursor=pointer]:
+                - img [ref=e105]
+            - generic [ref=e108]:
+              - generic [ref=e109]: Status
+              - combobox "Status" [ref=e110] [cursor=pointer]:
+                - generic: Aprovado
+                - img [ref=e111]
+            - generic [ref=e113]:
+              - generic [ref=e114]: Categoria
+              - combobox "Categoria" [ref=e115] [cursor=pointer]:
+                - generic: Todos
+                - img [ref=e116]
+            - generic [ref=e118]:
+              - generic [ref=e119]: Tipo
+              - combobox "Tipo" [ref=e120] [cursor=pointer]:
+                - generic: Todos
+                - img [ref=e121]
+            - generic [ref=e123]:
+              - generic [ref=e124]: Canal
+              - combobox "Canal" [disabled] [ref=e125]:
+                - generic: Todos
+                - img [ref=e126]
+            - generic [ref=e129]:
+              - generic [ref=e130]: "Status:"
+              - generic [ref=e131]: Aprovado
+              - button "Remove filter Status" [ref=e132] [cursor=pointer]:
+                - img [ref=e133]
+          - generic [ref=e136]:
+            - table [ref=e579]:
+              - rowgroup [ref=e580]:
+                - row "Selecionar todos da página Nome Conteúdo Categoria Idioma Canal Status Criado em Ações" [ref=e581]:
+                  - columnheader "Selecionar todos da página" [ref=e582]:
+                    - checkbox "Selecionar todos da página" [ref=e584] [cursor=pointer]
+                  - columnheader "Nome" [ref=e585]:
+                    - button "Nome" [ref=e586] [cursor=pointer]:
+                      - text: Nome
+                      - img [ref=e587]
+                  - columnheader "Conteúdo" [ref=e590]
+                  - columnheader "Categoria" [ref=e591]
+                  - columnheader "Idioma" [ref=e592]
+                  - columnheader "Canal" [ref=e593]
+                  - columnheader "Status" [ref=e594]
+                  - columnheader "Criado em" [ref=e595]:
+                    - button "Criado em" [ref=e596] [cursor=pointer]:
+                      - text: Criado em
+                      - img [ref=e597]
+                  - columnheader "Ações" [ref=e600]
+              - rowgroup [ref=e601]:
+                - 'row "Selecionar item a1b6d005-5254-47f7-aca8-ecbe840e3324 #propostaUniFatecie Olá, [contact_first_name], boa tarde! Alessandra, da Poli. Tudo bem? Conforme alinhamos em nossa call, formalizei sua proposta comercial e encaminhei também por e-mail, com as condições e valores personalizados que aprovamos, válidos para retorno em até 24h após nossa apresentação. Estou te enviando por aqui também, para facilitar seu acesso e análise. Permaneço à disposição caso surja qualquer dúvida ou se precisarem de algum alinhamento adicional. No mais, seguimos com nosso retorno combinado amanhã às 15h30. Desejo um excelente final de tarde! https://app.pipe.run/proposta/gerenciador/visualizar?hash=ckvpmk7brfw4o0kgcksssgsscgc0wks&_=1778008050 Marketing pt_BR Canal Principal Aprovado 5 de mai. de 2026 Excluir" [ref=e602]':
+                  - cell "Selecionar item a1b6d005-5254-47f7-aca8-ecbe840e3324" [ref=e603]:
+                    - generic [ref=e604]:
+                      - checkbox "Selecionar item a1b6d005-5254-47f7-aca8-ecbe840e3324"
+                  - cell "#propostaUniFatecie" [ref=e605]
+                  - cell "Olá, [contact_first_name], boa tarde! Alessandra, da Poli. Tudo bem? Conforme alinhamos em nossa call, formalizei sua proposta comercial e encaminhei também por e-mail, com as condições e valores personalizados que aprovamos, válidos para retorno em até 24h após nossa apresentação. Estou te enviando por aqui também, para facilitar seu acesso e análise. Permaneço à disposição caso surja qualquer dúvida ou se precisarem de algum alinhamento adicional. No mais, seguimos com nosso retorno combinado amanhã às 15h30. Desejo um excelente final de tarde! https://app.pipe.run/proposta/gerenciador/visualizar?hash=ckvpmk7brfw4o0kgcksssgsscgc0wks&_=1778008050" [ref=e606]:
+                    - generic [ref=e607]: Olá, [contact_first_name], boa tarde! Alessandra, da Poli. Tudo bem? Conforme alinhamos em nossa call, formalizei sua proposta comercial e encaminhei também por e-mail, com as condições e valores personalizados que aprovamos, válidos para retorno em até 24h após nossa apresentação. Estou te enviando por aqui também, para facilitar seu acesso e análise. Permaneço à disposição caso surja qualquer dúvida ou se precisarem de algum alinhamento adicional. No mais, seguimos com nosso retorno combinado amanhã às 15h30. Desejo um excelente final de tarde! https://app.pipe.run/proposta/gerenciador/visualizar?hash=ckvpmk7brfw4o0kgcksssgsscgc0wks&_=1778008050
+                  - cell "Marketing" [ref=e608]:
+                    - generic [ref=e609]: Marketing
+                  - cell "pt_BR" [ref=e610]
+                  - cell "Canal Principal" [ref=e611]
+                  - cell "Aprovado" [ref=e612]:
+                    - generic [ref=e613]: Aprovado
+                  - cell "5 de mai. de 2026" [ref=e614]
+                  - cell "Excluir" [ref=e615]:
+                    - button "Excluir" [ref=e617] [cursor=pointer]:
+                      - img [ref=e618]
+                - row "Selecionar item a1b2db7e-ef9e-40fc-b5ed-60e7a431c7bc retorno-estender.desconto Bom dia, [contact_first_name] Passando para informar que as condições passadas no mês passado são válidas até 12h. Caso tenha interesse, me sinaliza aqui, por favor! Marketing pt_BR Canal Principal Aprovado 4 de mai. de 2026 Excluir" [ref=e621]:
+                  - cell "Selecionar item a1b2db7e-ef9e-40fc-b5ed-60e7a431c7bc" [ref=e622]:
+                    - generic [ref=e623]:
+                      - checkbox "Selecionar item a1b2db7e-ef9e-40fc-b5ed-60e7a431c7bc"
+                  - cell "retorno-estender.desconto" [ref=e624]
+                  - cell "Bom dia, [contact_first_name] Passando para informar que as condições passadas no mês passado são válidas até 12h. Caso tenha interesse, me sinaliza aqui, por favor!" [ref=e625]:
+                    - generic [ref=e626]: Bom dia, [contact_first_name] Passando para informar que as condições passadas no mês passado são válidas até 12h. Caso tenha interesse, me sinaliza aqui, por favor!
+                  - cell "Marketing" [ref=e627]:
+                    - generic [ref=e628]: Marketing
+                  - cell "pt_BR" [ref=e629]
+                  - cell "Canal Principal" [ref=e630]
+                  - cell "Aprovado" [ref=e631]:
+                    - generic [ref=e632]: Aprovado
+                  - cell "4 de mai. de 2026" [ref=e633]
+                  - cell "Excluir" [ref=e634]:
+                    - button "Excluir" [ref=e636] [cursor=pointer]:
+                      - img [ref=e637]
+                - row "Selecionar item a1b2da9e-1482-4490-bff1-276972ad8aec retorno.machado Bom dia, [contact_first_name] Sempre que a janela de conversa de 24h fechar, você vai precisar mandar um template. E a cada template enviado, o Meta cobra 1 crédito. Isso que eu estou te enviando agora é um exemplo de template kkk Marketing pt_BR Canal Principal Aprovado 4 de mai. de 2026 Excluir" [ref=e640]:
+                  - cell "Selecionar item a1b2da9e-1482-4490-bff1-276972ad8aec" [ref=e641]:
+                    - generic [ref=e642]:
+                      - checkbox "Selecionar item a1b2da9e-1482-4490-bff1-276972ad8aec"
+                  - cell "retorno.machado" [ref=e643]
+                  - cell "Bom dia, [contact_first_name] Sempre que a janela de conversa de 24h fechar, você vai precisar mandar um template. E a cada template enviado, o Meta cobra 1 crédito. Isso que eu estou te enviando agora é um exemplo de template kkk" [ref=e644]:
+                    - generic [ref=e645]: Bom dia, [contact_first_name] Sempre que a janela de conversa de 24h fechar, você vai precisar mandar um template. E a cada template enviado, o Meta cobra 1 crédito. Isso que eu estou te enviando agora é um exemplo de template kkk
+                  - cell "Marketing" [ref=e646]:
+                    - generic [ref=e647]: Marketing
+                  - cell "pt_BR" [ref=e648]
+                  - cell "Canal Principal" [ref=e649]
+                  - cell "Aprovado" [ref=e650]:
+                    - generic [ref=e651]: Aprovado
+                  - cell "4 de mai. de 2026" [ref=e652]
+                  - cell "Excluir" [ref=e653]:
+                    - button "Excluir" [ref=e655] [cursor=pointer]:
+                      - img [ref=e656]
+                - 'row "Selecionar item a1aadf99-85d4-4d92-9366-d54f3a689afc #retornodani Bom dia Dani tudo bem ? Conseguiu verificar com a Jane um horário ? Hoje é o fechamento do mês eu estou com um bom desconto aqui pra oferecer e até a cobrança dos créditos da meta com um formato novo , que está excelente. Consegue um tempinho pra falarmos hoje ? Marketing pt_BR Canal Principal Aprovado 30 de abr. de 2026 Excluir" [ref=e659]':
+                  - cell "Selecionar item a1aadf99-85d4-4d92-9366-d54f3a689afc" [ref=e660]:
+                    - generic [ref=e661]:
+                      - checkbox "Selecionar item a1aadf99-85d4-4d92-9366-d54f3a689afc"
+                  - cell "#retornodani" [ref=e662]
+                  - cell "Bom dia Dani tudo bem ? Conseguiu verificar com a Jane um horário ? Hoje é o fechamento do mês eu estou com um bom desconto aqui pra oferecer e até a cobrança dos créditos da meta com um formato novo , que está excelente. Consegue um tempinho pra falarmos hoje ?" [ref=e663]:
+                    - generic [ref=e664]: Bom dia Dani tudo bem ? Conseguiu verificar com a Jane um horário ? Hoje é o fechamento do mês eu estou com um bom desconto aqui pra oferecer e até a cobrança dos créditos da meta com um formato novo , que está excelente. Consegue um tempinho pra falarmos hoje ?
+                  - cell "Marketing" [ref=e665]:
+                    - generic [ref=e666]: Marketing
+                  - cell "pt_BR" [ref=e667]
+                  - cell "Canal Principal" [ref=e668]
+                  - cell "Aprovado" [ref=e669]:
+                    - generic [ref=e670]: Aprovado
+                  - cell "30 de abr. de 2026" [ref=e671]
+                  - cell "Excluir" [ref=e672]:
+                    - button "Excluir" [ref=e674] [cursor=pointer]:
+                      - img [ref=e675]
+                - row "Selecionar item a1d342ec-bdb7-4b4f-91ef-a8274f0e9fbb MV4 Oi [contact_first_name]! Como você tá? Lembra quando a gente conversou e você disse que conseguiria me dar um retorno nessa data? Agora é hora de prosseguir. Vamos? Vou refazer a proposta pra você, que tal? Marketing pt_BR Canal Principal Aprovado 30 de abr. de 2026 Excluir" [ref=e678]:
+                  - cell "Selecionar item a1d342ec-bdb7-4b4f-91ef-a8274f0e9fbb" [ref=e679]:
+                    - generic [ref=e680]:
+                      - checkbox "Selecionar item a1d342ec-bdb7-4b4f-91ef-a8274f0e9fbb"
+                  - cell "MV4" [ref=e681]
+                  - cell "Oi [contact_first_name]! Como você tá? Lembra quando a gente conversou e você disse que conseguiria me dar um retorno nessa data? Agora é hora de prosseguir. Vamos? Vou refazer a proposta pra você, que tal?" [ref=e682]:
+                    - generic [ref=e683]: Oi [contact_first_name]! Como você tá? Lembra quando a gente conversou e você disse que conseguiria me dar um retorno nessa data? Agora é hora de prosseguir. Vamos? Vou refazer a proposta pra você, que tal?
+                  - cell "Marketing" [ref=e684]:
+                    - generic [ref=e685]: Marketing
+                  - cell "pt_BR" [ref=e686]
+                  - cell "Canal Principal" [ref=e687]
+                  - cell "Aprovado" [ref=e688]:
+                    - generic [ref=e689]: Aprovado
+                  - cell "30 de abr. de 2026" [ref=e690]
+                  - cell "Excluir" [ref=e691]:
+                    - button "Excluir" [ref=e693] [cursor=pointer]:
+                      - img [ref=e694]
+                - row "Selecionar item a1a9366f-f458-4ed7-9877-6317eec1e4ad Andressa retorno Olá [contact_first_name]. Aqui é da Poli Digital. Estou entrando em contato pois precisamos de um retorno quanto ao processo de implantação da plataforma para a Empresa de vocês. Tendo em vista que não conseguimos avançar Gostaria também de ressaltar que *é importante alinharmos, pois a assinatura está ativa e passível a geração de novas cobranças ao cnpj de vocês.* Se não houver mais interesse em prosseguir me informe por favor para que possamos encerrar o processo. *Agradeço retorno* Marketing pt_BR Canal Principal Aprovado 29 de abr. de 2026 Excluir" [ref=e697]:
+                  - cell "Selecionar item a1a9366f-f458-4ed7-9877-6317eec1e4ad" [ref=e698]:
+                    - generic [ref=e699]:
+                      - checkbox "Selecionar item a1a9366f-f458-4ed7-9877-6317eec1e4ad"
+                  - cell "Andressa retorno" [ref=e700]
+                  - cell "Olá [contact_first_name]. Aqui é da Poli Digital. Estou entrando em contato pois precisamos de um retorno quanto ao processo de implantação da plataforma para a Empresa de vocês. Tendo em vista que não conseguimos avançar Gostaria também de ressaltar que *é importante alinharmos, pois a assinatura está ativa e passível a geração de novas cobranças ao cnpj de vocês.* Se não houver mais interesse em prosseguir me informe por favor para que possamos encerrar o processo. *Agradeço retorno*" [ref=e701]:
+                    - generic [ref=e702]: Olá [contact_first_name]. Aqui é da Poli Digital. Estou entrando em contato pois precisamos de um retorno quanto ao processo de implantação da plataforma para a Empresa de vocês. Tendo em vista que não conseguimos avançar Gostaria também de ressaltar que *é importante alinharmos, pois a assinatura está ativa e passível a geração de novas cobranças ao cnpj de vocês.* Se não houver mais interesse em prosseguir me informe por favor para que possamos encerrar o processo. *Agradeço retorno*
+                  - cell "Marketing" [ref=e703]:
+                    - generic [ref=e704]: Marketing
+                  - cell "pt_BR" [ref=e705]
+                  - cell "Canal Principal" [ref=e706]
+                  - cell "Aprovado" [ref=e707]:
+                    - generic [ref=e708]: Aprovado
+                  - cell "29 de abr. de 2026" [ref=e709]
+                  - cell "Excluir" [ref=e710]:
+                    - button "Excluir" [ref=e712] [cursor=pointer]:
+                      - img [ref=e713]
+                - row "Selecionar item a1a93260-0268-406c-bdb4-bdccf5a78497 Andressa *Olá [contact_first_name].* Aqui é da Poli Digital. Estou entrando em contato pois precisamos de um retorno quanto ao processo de implantação da plataforma para a Empresa de vocês. Tendo em vista que não conseguimos avançar Gostaria também de ressaltar que *é importante alinharmos, pois a assinatura está ativa e passível a geração de novas cobranças ao cnpj de vocês*. Se não houver mais interesse em prosseguir me informe por favor para que possamos encerrar o processo. *Agradeço retorno* Utility pt_BR Atualizações Poli Aprovado 29 de abr. de 2026 Excluir" [ref=e716]:
+                  - cell "Selecionar item a1a93260-0268-406c-bdb4-bdccf5a78497" [ref=e717]:
+                    - generic [ref=e718]:
+                      - checkbox "Selecionar item a1a93260-0268-406c-bdb4-bdccf5a78497"
+                  - cell "Andressa" [ref=e719]
+                  - cell "*Olá [contact_first_name].* Aqui é da Poli Digital. Estou entrando em contato pois precisamos de um retorno quanto ao processo de implantação da plataforma para a Empresa de vocês. Tendo em vista que não conseguimos avançar Gostaria também de ressaltar que *é importante alinharmos, pois a assinatura está ativa e passível a geração de novas cobranças ao cnpj de vocês*. Se não houver mais interesse em prosseguir me informe por favor para que possamos encerrar o processo. *Agradeço retorno*" [ref=e720]:
+                    - generic [ref=e721]: "*Olá [contact_first_name].* Aqui é da Poli Digital. Estou entrando em contato pois precisamos de um retorno quanto ao processo de implantação da plataforma para a Empresa de vocês. Tendo em vista que não conseguimos avançar Gostaria também de ressaltar que *é importante alinharmos, pois a assinatura está ativa e passível a geração de novas cobranças ao cnpj de vocês*. Se não houver mais interesse em prosseguir me informe por favor para que possamos encerrar o processo. *Agradeço retorno*"
+                  - cell "Utility" [ref=e722]:
+                    - generic [ref=e723]: Utility
+                  - cell "pt_BR" [ref=e724]
+                  - cell "Atualizações Poli" [ref=e725]
+                  - cell "Aprovado" [ref=e726]:
+                    - generic [ref=e727]: Aprovado
+                  - cell "29 de abr. de 2026" [ref=e728]
+                  - cell "Excluir" [ref=e729]:
+                    - button "Excluir" [ref=e731] [cursor=pointer]:
+                      - img [ref=e732]
+                - row "Selecionar item a1baf3dc-fc46-43de-889a-55fe7d1121ba MV4 Olá, [contact_first_name]! Como você está? Aqui é a [operator_name], estou entrando em contato com você pra ver se já tiveram um tempinho de analisarem outras propostas, como estão com isso? Lembrando que nosso retorno é amanhã, ok? Me confirmem aqui se poderão participar. Vamos debater precificações pra chegar em um preço mais agradável para vocês 😉 Marketing pt_BR Canal Principal Aprovado 29 de abr. de 2026 Excluir" [ref=e735]:
+                  - cell "Selecionar item a1baf3dc-fc46-43de-889a-55fe7d1121ba" [ref=e736]:
+                    - generic [ref=e737]:
+                      - checkbox "Selecionar item a1baf3dc-fc46-43de-889a-55fe7d1121ba"
+                  - cell "MV4" [ref=e738]
+                  - cell "Olá, [contact_first_name]! Como você está? Aqui é a [operator_name], estou entrando em contato com você pra ver se já tiveram um tempinho de analisarem outras propostas, como estão com isso? Lembrando que nosso retorno é amanhã, ok? Me confirmem aqui se poderão participar. Vamos debater precificações pra chegar em um preço mais agradável para vocês 😉" [ref=e739]:
+                    - generic [ref=e740]: Olá, [contact_first_name]! Como você está? Aqui é a [operator_name], estou entrando em contato com você pra ver se já tiveram um tempinho de analisarem outras propostas, como estão com isso? Lembrando que nosso retorno é amanhã, ok? Me confirmem aqui se poderão participar. Vamos debater precificações pra chegar em um preço mais agradável para vocês 😉
+                  - cell "Marketing" [ref=e741]:
+                    - generic [ref=e742]: Marketing
+                  - cell "pt_BR" [ref=e743]
+                  - cell "Canal Principal" [ref=e744]
+                  - cell "Aprovado" [ref=e745]:
+                    - generic [ref=e746]: Aprovado
+                  - cell "29 de abr. de 2026" [ref=e747]
+                  - cell "Excluir" [ref=e748]:
+                    - button "Excluir" [ref=e750] [cursor=pointer]:
+                      - img [ref=e751]
+                - 'row "Selecionar item a1a95e6a-13a5-417b-853f-427688ae2b9a #propostapijamas Olá, [contact_first_name], tudo bem? Segue proposta personalizada, conforme alinhado em call, com a utilização da campanha de fechamento em 24h, com retorno até amanhã às 10:30h. https://app.pipe.run/proposta/gerenciador/visualizar?hash=8eqmx4jksnocg44gko44ogo0cs4ssk0&_=1777471834 Qualquer dúvida, sigo a disposição! Marketing pt_BR Canal Principal Aprovado 29 de abr. de 2026 Excluir" [ref=e754]':
+                  - cell "Selecionar item a1a95e6a-13a5-417b-853f-427688ae2b9a" [ref=e755]:
+                    - generic [ref=e756]:
+                      - checkbox "Selecionar item a1a95e6a-13a5-417b-853f-427688ae2b9a"
+                  - cell "#propostapijamas" [ref=e757]
+                  - cell "Olá, [contact_first_name], tudo bem? Segue proposta personalizada, conforme alinhado em call, com a utilização da campanha de fechamento em 24h, com retorno até amanhã às 10:30h. https://app.pipe.run/proposta/gerenciador/visualizar?hash=8eqmx4jksnocg44gko44ogo0cs4ssk0&_=1777471834 Qualquer dúvida, sigo a disposição!" [ref=e758]:
+                    - generic [ref=e759]: Olá, [contact_first_name], tudo bem? Segue proposta personalizada, conforme alinhado em call, com a utilização da campanha de fechamento em 24h, com retorno até amanhã às 10:30h. https://app.pipe.run/proposta/gerenciador/visualizar?hash=8eqmx4jksnocg44gko44ogo0cs4ssk0&_=1777471834 Qualquer dúvida, sigo a disposição!
+                  - cell "Marketing" [ref=e760]:
+                    - generic [ref=e761]: Marketing
+                  - cell "pt_BR" [ref=e762]
+                  - cell "Canal Principal" [ref=e763]
+                  - cell "Aprovado" [ref=e764]:
+                    - generic [ref=e765]: Aprovado
+                  - cell "29 de abr. de 2026" [ref=e766]
+                  - cell "Excluir" [ref=e767]:
+                    - button "Excluir" [ref=e769] [cursor=pointer]:
+                      - img [ref=e770]
+                - 'row "Selecionar item a1a97205-3391-4c87-b34a-5574c3c2ae2e #retornocreditos Olá [contact_first_name], tudo bem? Identifiquei que a formalização da contratação dos créditos ainda não foi realizada. Precisa de algum auxilio? Minha preocupação é que, como o mês está quase encerrando, pode correr o risco da utilização no avulso novamente. Qualquer coisa, estou por aqui, é só chamar! Marketing pt_BR Canal Principal Aprovado 29 de abr. de 2026 Excluir" [ref=e773]':
+                  - cell "Selecionar item a1a97205-3391-4c87-b34a-5574c3c2ae2e" [ref=e774]:
+                    - generic [ref=e775]:
+                      - checkbox "Selecionar item a1a97205-3391-4c87-b34a-5574c3c2ae2e"
+                  - cell "#retornocreditos" [ref=e776]
+                  - cell "Olá [contact_first_name], tudo bem? Identifiquei que a formalização da contratação dos créditos ainda não foi realizada. Precisa de algum auxilio? Minha preocupação é que, como o mês está quase encerrando, pode correr o risco da utilização no avulso novamente. Qualquer coisa, estou por aqui, é só chamar!" [ref=e777]:
+                    - generic [ref=e778]: Olá [contact_first_name], tudo bem? Identifiquei que a formalização da contratação dos créditos ainda não foi realizada. Precisa de algum auxilio? Minha preocupação é que, como o mês está quase encerrando, pode correr o risco da utilização no avulso novamente. Qualquer coisa, estou por aqui, é só chamar!
+                  - cell "Marketing" [ref=e779]:
+                    - generic [ref=e780]: Marketing
+                  - cell "pt_BR" [ref=e781]
+                  - cell "Canal Principal" [ref=e782]
+                  - cell "Aprovado" [ref=e783]:
+                    - generic [ref=e784]: Aprovado
+                  - cell "29 de abr. de 2026" [ref=e785]
+                  - cell "Excluir" [ref=e786]:
+                    - button "Excluir" [ref=e788] [cursor=pointer]:
+                      - img [ref=e789]
+                - row "Selecionar item a1d342ec-c127-4752-b9cc-0e37e420868c retornoquarta Bom dia. [contact_first_name]! Tudo bem? Passando para avisar que nosso retorno é agora quarta-feira. Se eu puder te ajudar com algo antes disso, me avise! Estamos à disposição. Utility pt_BR Canal Principal Aprovado 27 de abr. de 2026 Excluir" [ref=e792]:
+                  - cell "Selecionar item a1d342ec-c127-4752-b9cc-0e37e420868c" [ref=e793]:
+                    - generic [ref=e794]:
+                      - checkbox "Selecionar item a1d342ec-c127-4752-b9cc-0e37e420868c"
+                  - cell "retornoquarta" [ref=e795]
+                  - cell "Bom dia. [contact_first_name]! Tudo bem? Passando para avisar que nosso retorno é agora quarta-feira. Se eu puder te ajudar com algo antes disso, me avise! Estamos à disposição." [ref=e796]:
+                    - generic [ref=e797]: Bom dia. [contact_first_name]! Tudo bem? Passando para avisar que nosso retorno é agora quarta-feira. Se eu puder te ajudar com algo antes disso, me avise! Estamos à disposição.
+                  - cell "Utility" [ref=e798]:
+                    - generic [ref=e799]: Utility
+                  - cell "pt_BR" [ref=e800]
+                  - cell "Canal Principal" [ref=e801]
+                  - cell "Aprovado" [ref=e802]:
+                    - generic [ref=e803]: Aprovado
+                  - cell "27 de abr. de 2026" [ref=e804]
+                  - cell "Excluir" [ref=e805]:
+                    - button "Excluir" [ref=e807] [cursor=pointer]:
+                      - img [ref=e808]
+                - row "Selecionar item a1d342ec-c58a-417e-bb0f-bfc925d6445a retornoterça Bom dia [contact_first_name]! Tudo certo? Passando para te avisar que nosso retorno é nessa terça-feira agora. Consigo te ajudar com alguma coisa antes da gente conversar? Marketing pt_BR Canal Principal Aprovado 27 de abr. de 2026 Excluir" [ref=e811]:
+                  - cell "Selecionar item a1d342ec-c58a-417e-bb0f-bfc925d6445a" [ref=e812]:
+                    - generic [ref=e813]:
+                      - checkbox "Selecionar item a1d342ec-c58a-417e-bb0f-bfc925d6445a"
+                  - cell "retornoterça" [ref=e814]
+                  - cell "Bom dia [contact_first_name]! Tudo certo? Passando para te avisar que nosso retorno é nessa terça-feira agora. Consigo te ajudar com alguma coisa antes da gente conversar?" [ref=e815]:
+                    - generic [ref=e816]: Bom dia [contact_first_name]! Tudo certo? Passando para te avisar que nosso retorno é nessa terça-feira agora. Consigo te ajudar com alguma coisa antes da gente conversar?
+                  - cell "Marketing" [ref=e817]:
+                    - generic [ref=e818]: Marketing
+                  - cell "pt_BR" [ref=e819]
+                  - cell "Canal Principal" [ref=e820]
+                  - cell "Aprovado" [ref=e821]:
+                    - generic [ref=e822]: Aprovado
+                  - cell "27 de abr. de 2026" [ref=e823]
+                  - cell "Excluir" [ref=e824]:
+                    - button "Excluir" [ref=e826] [cursor=pointer]:
+                      - img [ref=e827]
+                - 'row "Selecionar item a19cce21-cd46-41c0-b9bb-4b66d891cba6 #proximospassosclubefuncionários Olá [contact_first_name], tudo bem? Já se passou alguns dias desde o nosso último contato, e gostaria de validar como está o andamento da aprovação com a diretoria, teve algum avanço ou te deram alguma previsão? Fico no aguardo do sei retorno e a disposição, caso precise de algo! Utility pt_BR Canal Principal Aprovado 22 de abr. de 2026 Excluir" [ref=e830]':
+                  - cell "Selecionar item a19cce21-cd46-41c0-b9bb-4b66d891cba6" [ref=e831]:
+                    - generic [ref=e832]:
+                      - checkbox "Selecionar item a19cce21-cd46-41c0-b9bb-4b66d891cba6"
+                  - cell "#proximospassosclubefuncionários" [ref=e833]
+                  - cell "Olá [contact_first_name], tudo bem? Já se passou alguns dias desde o nosso último contato, e gostaria de validar como está o andamento da aprovação com a diretoria, teve algum avanço ou te deram alguma previsão? Fico no aguardo do sei retorno e a disposição, caso precise de algo!" [ref=e834]:
+                    - generic [ref=e835]: Olá [contact_first_name], tudo bem? Já se passou alguns dias desde o nosso último contato, e gostaria de validar como está o andamento da aprovação com a diretoria, teve algum avanço ou te deram alguma previsão? Fico no aguardo do sei retorno e a disposição, caso precise de algo!
+                  - cell "Utility" [ref=e836]:
+                    - generic [ref=e837]: Utility
+                  - cell "pt_BR" [ref=e838]
+                  - cell "Canal Principal" [ref=e839]
+                  - cell "Aprovado" [ref=e840]:
+                    - generic [ref=e841]: Aprovado
+                  - cell "22 de abr. de 2026" [ref=e842]
+                  - cell "Excluir" [ref=e843]:
+                    - button "Excluir" [ref=e845] [cursor=pointer]:
+                      - img [ref=e846]
+                - 'row "Selecionar item a19ac2df-84b6-4d52-99ff-a1a583a23e28 retorno-encerra.sistema Oi, [contact_first_name]. Já validamos que a minha plataforma resolve o problema da sua operação, mas, infelizmente, o sistema irá encerrar a proposta hoje. Quero alinhar com você: faz sentido seguirmos com as condições que consegui ou prefere deixar para outro momento? Marketing pt_BR Canal Principal Aprovado 22 de abr. de 2026 Excluir" [ref=e849]':
+                  - cell "Selecionar item a19ac2df-84b6-4d52-99ff-a1a583a23e28" [ref=e850]:
+                    - generic [ref=e851]:
+                      - checkbox "Selecionar item a19ac2df-84b6-4d52-99ff-a1a583a23e28"
+                  - cell "retorno-encerra.sistema" [ref=e852]
+                  - 'cell "Oi, [contact_first_name]. Já validamos que a minha plataforma resolve o problema da sua operação, mas, infelizmente, o sistema irá encerrar a proposta hoje. Quero alinhar com você: faz sentido seguirmos com as condições que consegui ou prefere deixar para outro momento?" [ref=e853]':
+                    - generic [ref=e854]: "Oi, [contact_first_name]. Já validamos que a minha plataforma resolve o problema da sua operação, mas, infelizmente, o sistema irá encerrar a proposta hoje. Quero alinhar com você: faz sentido seguirmos com as condições que consegui ou prefere deixar para outro momento?"
+                  - cell "Marketing" [ref=e855]:
+                    - generic [ref=e856]: Marketing
+                  - cell "pt_BR" [ref=e857]
+                  - cell "Canal Principal" [ref=e858]
+                  - cell "Aprovado" [ref=e859]:
+                    - generic [ref=e860]: Aprovado
+                  - cell "22 de abr. de 2026" [ref=e861]
+                  - cell "Excluir" [ref=e862]:
+                    - button "Excluir" [ref=e864] [cursor=pointer]:
+                      - img [ref=e865]
+                - row "Selecionar item a19765f3-a4d3-432b-80b0-14f7a607abfa SDR_DIA2_01 *Olá [contact_first_name], tudo bem?* Tentei contato, mas ainda não tive seu retorno. Como você buscou a Poli para *melhorar seus atendimentos*, não quero te deixar esperando. Preciso de apenas 5 minutos para te mostrar nossa solução . 🚀 Somos a solução ideal para quem precisa de *gestão*, *campanhas em massa* e *segurança* frente as restrições no WhatsApp. Podemos conversar ainda hoje? Marketing pt_BR Canal Principal Aprovado 20 de abr. de 2026 Excluir" [ref=e868]:
+                  - cell "Selecionar item a19765f3-a4d3-432b-80b0-14f7a607abfa" [ref=e869]:
+                    - generic [ref=e870]:
+                      - checkbox "Selecionar item a19765f3-a4d3-432b-80b0-14f7a607abfa"
+                  - cell "SDR_DIA2_01" [ref=e871]
+                  - cell "*Olá [contact_first_name], tudo bem?* Tentei contato, mas ainda não tive seu retorno. Como você buscou a Poli para *melhorar seus atendimentos*, não quero te deixar esperando. Preciso de apenas 5 minutos para te mostrar nossa solução . 🚀 Somos a solução ideal para quem precisa de *gestão*, *campanhas em massa* e *segurança* frente as restrições no WhatsApp. Podemos conversar ainda hoje?" [ref=e872]:
+                    - generic [ref=e873]: "*Olá [contact_first_name], tudo bem?* Tentei contato, mas ainda não tive seu retorno. Como você buscou a Poli para *melhorar seus atendimentos*, não quero te deixar esperando. Preciso de apenas 5 minutos para te mostrar nossa solução . 🚀 Somos a solução ideal para quem precisa de *gestão*, *campanhas em massa* e *segurança* frente as restrições no WhatsApp. Podemos conversar ainda hoje?"
+                  - cell "Marketing" [ref=e874]:
+                    - generic [ref=e875]: Marketing
+                  - cell "pt_BR" [ref=e876]
+                  - cell "Canal Principal" [ref=e877]
+                  - cell "Aprovado" [ref=e878]:
+                    - generic [ref=e879]: Aprovado
+                  - cell "20 de abr. de 2026" [ref=e880]
+                  - cell "Excluir" [ref=e881]:
+                    - button "Excluir" [ref=e883] [cursor=pointer]:
+                      - img [ref=e884]
+            - generic [ref=e888]:
+              - generic [ref=e889]:
+                - generic [ref=e890]: Página 2 de 42
+                - generic [ref=e891]: "Total: 626 registros"
+              - generic [ref=e892]:
+                - combobox [ref=e893]:
+                  - option "10 por página"
+                  - option "15 por página" [selected]
+                  - option "25 por página"
+                  - option "50 por página"
+                - generic [ref=e894]:
+                  - button [ref=e895] [cursor=pointer]:
+                    - img [ref=e896]
+                  - button [ref=e899] [cursor=pointer]:
+                    - img [ref=e900]
+                  - button [ref=e902] [cursor=pointer]:
+                    - img [ref=e903]
+                  - button [ref=e905] [cursor=pointer]:
+                    - img [ref=e906]
+  - region "Notifications (F8)":
+    - list

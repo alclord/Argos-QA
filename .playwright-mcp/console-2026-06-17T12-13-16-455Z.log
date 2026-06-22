@@ -1,0 +1,22 @@
+[     350ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:101
+[     351ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:101
+[     406ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:76
+[     440ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[     956ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[   11628ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[   12619ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/crm/index:0
+[   12621ms] [ERROR] getCrmUserToken - Error on get crm user token: AxiosError: Request failed with status code 404
+    at kBe (https://spa-canary.poli.digital/assets/index-DjxF6uES.js:1105:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-DjxF6uES.js:1105:15780)
+    at w2.request (https://spa-canary.poli.digital/assets/index-DjxF6uES.js:1107:2243)
+    at async uz.getUserToken (https://spa-canary.poli.digital/assets/index-DjxF6uES.js:2236:44294)
+    at async https://spa-canary.poli.digital/assets/index-DjxF6uES.js:2236:44585 @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[   12849ms] Identifier 'TCRMEmbed' has already been declared
+[   13133ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/crm/index:0
+[   13133ms] [ERROR] getCrmUserToken - Error on get crm user token: AxiosError: Request failed with status code 404
+    at kBe (https://spa-canary.poli.digital/assets/index-DjxF6uES.js:1105:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-DjxF6uES.js:1105:15780)
+    at w2.request (https://spa-canary.poli.digital/assets/index-DjxF6uES.js:1107:2243)
+    at async uz.getUserToken (https://spa-canary.poli.digital/assets/index-DjxF6uES.js:2236:44294)
+    at async https://spa-canary.poli.digital/assets/index-DjxF6uES.js:2236:44585 @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[   13200ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/595272057_1667995137658708_7850599022326744246_n.jpg?ccb=11-4&oh=01_Q5Aa4gElBzxz2thb0XNU5h6P3FJ-TLUrB8f8-Vdg3-OhSUYyEA&oe=6A077C97&_nc_sid=5e03e0&_nc_cat=111:0

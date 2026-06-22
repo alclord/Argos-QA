@@ -1,0 +1,291 @@
+[     463ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:101
+[     464ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:101
+[     522ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:76
+[     768ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:901:429
+    at cS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:903:31)
+    at Md.bS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:92)
+    at Md.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at fb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Md.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Iq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at sf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:726:315
+    at UA (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:651:1)
+    at ZA.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:655:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:673:218)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:391)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:131)
+    at oC (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:674:773)
+    at rC (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:679:29)
+    at vD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:707:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65j0:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:862:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65j0:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:708:6
+    at r (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:70:9812)
+[     951ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[    3554ms] Identifier 'TCRMEmbed' has already been declared
+[  318530ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[  537207ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  537803ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  538165ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  538322ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  538400ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd/read:0
+[  538494ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  538664ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  538828ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  539009ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  539156ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  539317ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  539481ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  539647ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  539812ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  539978ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  540143ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  540307ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  540470ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  540633ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  540803ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  540981ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  541127ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  541294ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  541459ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  541621ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  541794ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  541957ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  542162ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  542325ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  542489ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  542652ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  542661ms] AxiosError: Request failed with status code 401
+    at fwe (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:15705)
+    at zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2234)
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  542814ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  542816ms] AxiosError: Request failed with status code 401
+    at fwe (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:15705)
+    at zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2234)
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  543490ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  543497ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:8163
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  543655ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  543660ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:8163
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  543819ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  543830ms] AxiosError: Request failed with status code 401
+    at fwe (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:15705)
+    at zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2234)
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  543986ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  543995ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:8163
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  544147ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  544153ms] AxiosError: Request failed with status code 401
+    at fwe (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:15705)
+    at zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2234)
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  544314ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  544328ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:8163
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  544494ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  544504ms] AxiosError: Request failed with status code 401
+    at fwe (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:15705)
+    at zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2234)
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  544670ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  544675ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:8163
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  544833ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  544844ms] AxiosError: Request failed with status code 401
+    at fwe (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:15705)
+    at zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2234)
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  544998ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  545004ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:8163
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  545164ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  545170ms] AxiosError: Request failed with status code 401
+    at fwe (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:15705)
+    at zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2234)
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  545337ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  545348ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:8163
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  545513ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  545529ms] AxiosError: Request failed with status code 401
+    at fwe (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:15705)
+    at zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2234)
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  545706ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  545715ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:8163
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  545869ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  545876ms] AxiosError: Request failed with status code 401
+    at fwe (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:15705)
+    at zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2234)
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  546035ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  546040ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:8163
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  546197ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  546205ms] AxiosError: Request failed with status code 401
+    at fwe (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:15705)
+    at zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2234)
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  546358ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  546364ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:8163
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  546528ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  546535ms] AxiosError: Request failed with status code 401
+    at fwe (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:15705)
+    at zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2234)
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  546687ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  546695ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:8163
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  546898ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  546958ms] AxiosError: Request failed with status code 401
+    at fwe (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:15705)
+    at zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2234)
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  547104ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  547261ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:8163
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  547261ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  547300ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:8163
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  548246ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  548673ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/e3507cc4-546d-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[  548872ms] AxiosError: Request failed with status code 401
+    at fwe (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:966:15705)
+    at zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2234)
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[  548899ms] Error: AxiosError: Request failed with status code 401
+    at https://spa-canary.poli.digital/assets/index-hoijn-GF.js:972:8163
+    at async zy.request (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:968:2138)
+    at async i4 (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:1004:2977)
+    at async c (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:7394)
+    at async o (https://spa-canary.poli.digital/assets/index-hoijn-GF.js:2065:6917)
+[ 1079011ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[ 1121336ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[ 1130994ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[ 1165543ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[ 1328237ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[ 1341595ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/546551196_810687678111403_1972125146864179804_n.jpg?ccb=11-4&oh=01_Q5Aa2gHtS_p3EXNKTxy_u6QHwC1N-v-uBkKQALJGbCFElJBMIA&oe=68EBD2D0&_nc_sid=5e03e0&_nc_cat=106:0
+[ 1383205ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-hoijn-GF.js:69
+[ 1426538ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0
+[ 1431560ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/425016291_355492687404580_8153429953073804003_n.jpg?ccb=11-4&oh=01_Q5Aa4QHlvtqgFyvEYseAu1VfqwWbYTApAUEdsyMco7eOx8YXNw&oe=69E5F1B1&_nc_sid=5e03e0&_nc_cat=104:0

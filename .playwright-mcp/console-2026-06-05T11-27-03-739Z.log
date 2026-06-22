@@ -1,0 +1,51 @@
+[    3623ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:101
+[    3624ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:101
+[    3747ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:76
+[    3848ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:69
+[    4253ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:69
+[    4640ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.poli.digital/auth/activity:0
+[    4648ms] [WARNING] Erro ao enviar heartbeat: AxiosError: Request failed with status code 404
+    at zCe (https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:1051:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:1051:15759) @ https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:69
+[    4709ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/non-payment/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[    5093ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.poli.digital/auth/refresh-token:0
+[    5102ms] [ERROR] Erro na requisição de refresh token: AxiosError: Request failed with status code 401
+    at zCe (https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:1051:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:1051:15759)
+    at y2.request (https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:1053:2234)
+    at async l0t (https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:1057:6854)
+    at async https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:1057:8196
+    at async y2.request (https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:1053:2138)
+    at async _Kt.getOverdueAccounts (https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:2203:47810)
+    at async https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:2209:175589 @ https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:69
+[    5103ms] [ERROR] AxiosError: Request failed with status code 401
+    at zCe (https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:1051:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:1051:15759)
+    at y2.request (https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:1053:2234)
+    at async l0t (https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:1057:6854)
+    at async https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:1057:8196
+    at async y2.request (https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:1053:2138)
+    at async _Kt.getOverdueAccounts (https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:2203:47810)
+    at async https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:2209:175589 @ https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:69
+[    5105ms] [ERROR] AxiosError: Request failed with status code 401
+    at zCe (https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:1051:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:1051:15759)
+    at y2.request (https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:1053:2234)
+    at async l0t (https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:1057:6854)
+    at async https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:1057:8196
+    at async y2.request (https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:1053:2138)
+    at async _Kt.getOverdueAccounts (https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:2203:47810)
+    at async https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:2209:175589 @ https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:69
+[    5504ms] [INFO] WebSocket: Conexão finalizada @ https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:69
+[    5898ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:101
+[    5898ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:101
+[    5930ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:76
+[    5953ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:69
+[    6436ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:69
+[   22752ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:69
+[   24497ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   25695ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   27888ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   32087ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   47150ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:69
+[  112580ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-Dx5WT4lq.js:69

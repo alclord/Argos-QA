@@ -1,0 +1,12 @@
+[  102467ms] [ERROR] Applying inline style violates the following Content Security Policy directive 'style-src 'self' 'nonce-eWVwJYLFri'   https://accounts.google.com'. Either the 'unsafe-inline' keyword, a hash ('sha256-bgUp5tqDCSC1xokY+fdYcHMM/Fap5RX+TCFkA0sXuRk='), or a nonce ('nonce-...') is required to enable inline execution. The action has been blocked. @ https://metabase.prod.cloud.polichat.com.br/app/dist/vendor.21094c4e1f01c7c7.js:5
+[  103880ms] [WARNING] Error getting setting graph.tooltip_columns TypeError: Cannot read properties of undefined (reading 'column')
+    at https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:293:8879
+    at Array.forEach (<anonymous>)
+    at K (https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:293:8849)
+    at Object.F [as getValue] (https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:293:9102)
+    at e (https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:301:118035)
+    at K (https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:301:118283)
+    at f (https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:301:142345)
+    at https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:92:21621
+    at Object.useMemo (https://metabase.prod.cloud.polichat.com.br/app/dist/vendor.21094c4e1f01c7c7.js:6:2154693)
+    at t.useMemo (https://metabase.prod.cloud.polichat.com.br/app/dist/vendor.21094c4e1f01c7c7.js:6:2510369) @ https://metabase.prod.cloud.polichat.com.br/app/dist/app-embed.5fef4bcfdd270a9d.js:300

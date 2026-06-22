@@ -1,0 +1,15 @@
+[     746ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-C0TY_Jbv.js:101
+[     747ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-C0TY_Jbv.js:101
+[     816ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-C0TY_Jbv.js:76
+[     951ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at OM (https://spa-canary.poli.digital/assets/index-C0TY_Jbv.js:1078:280)
+    at f2.aZ (https://spa-canary.poli.digital/assets/index-C0TY_Jbv.js:1078:317)
+    at async f2.request (https://spa-canary.poli.digital/assets/index-C0TY_Jbv.js:1078:2138)
+    at async evt (https://spa-canary.poli.digital/assets/index-C0TY_Jbv.js:1112:26108)
+    at async k (https://spa-canary.poli.digital/assets/index-C0TY_Jbv.js:54:37954)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-C0TY_Jbv.js:54:38261) @ https://spa-canary.poli.digital/assets/index-C0TY_Jbv.js:69
+[    1447ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-C0TY_Jbv.js:69
+[    1619ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/contacts/9bb49c4f-2c88-4a7f-84bb-38074c239b4b?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[    1621ms] [ERROR] AxiosError: Request failed with status code 403
+    at Jke (https://spa-canary.poli.digital/assets/index-C0TY_Jbv.js:1076:10191)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-C0TY_Jbv.js:1076:15759) @ https://spa-canary.poli.digital/assets/index-C0TY_Jbv.js:69

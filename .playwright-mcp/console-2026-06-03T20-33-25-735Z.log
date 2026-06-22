@@ -1,0 +1,15 @@
+[     837ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:101
+[     837ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:101
+[     966ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:76
+[    1463ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:69
+[    1557ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[    2767ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[    4976ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[    7201ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:69
+[    9187ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   40594ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:69
+[   40597ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:69
+[   40597ms] [ERROR] [WebSocket: Erro na conexão: {type: WebSocketError, error: Object} @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:69
+[   42820ms] [WARNING] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: WebSocket is closed before the connection is established. @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1017
+[   43362ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error during WebSocket handshake: Unexpected response code: 503 @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:1018
+[   58433ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-BXk9HxnZ.js:69

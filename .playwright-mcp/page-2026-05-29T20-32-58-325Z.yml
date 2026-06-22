@@ -1,0 +1,490 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - complementary:
+          - generic:
+            - img
+          - navigation:
+            - list:
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=88135c405d438f901e77a1d28e6c56ab1eed20b3&toPath=https://app.poli.digital/home
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /chat
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=88135c405d438f901e77a1d28e6c56ab1eed20b3&toPath=https://app.poli.digital/settings/1/chatbot
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /poli-flow
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=88135c405d438f901e77a1d28e6c56ab1eed20b3&toPath=https://app-spa.poli.digital/marketing
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=88135c405d438f901e77a1d28e6c56ab1eed20b3&toPath=https://app-spa.poli.digital/shopping
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=88135c405d438f901e77a1d28e6c56ab1eed20b3&toPath=https://app-spa.poli.digital/relatorio
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=88135c405d438f901e77a1d28e6c56ab1eed20b3&toPath=https://app.poli.digital/settings/1
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /contacts
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /templates
+                  - generic:
+                    - img
+            - list:
+              - listitem:
+                - button:
+                  - img
+              - listitem:
+                - button:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: YA
+              - listitem:
+                - button:
+                  - img
+              - listitem:
+                - generic:
+                  - generic: 3.5.332
+        - main:
+          - generic:
+            - generic:
+              - generic:
+                - navigation:
+                  - generic:
+                    - link:
+                      - /url: /
+                      - text: Página inicial
+                  - img
+                  - generic: Mensagens agendadas
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                          - generic:
+                            - paragraph: Total
+                            - paragraph: "1478"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                          - generic:
+                            - paragraph: Agendadas
+                            - paragraph: "11"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                          - generic:
+                            - paragraph: Enviadas
+                            - paragraph: "1325"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                          - generic:
+                            - paragraph: Canceladas
+                            - paragraph: "70"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Status
+                                - combobox:
+                                  - generic: Todos os status
+                                  - img
+                              - generic:
+                                - generic: Canal
+                                - combobox [expanded]:
+                                  - generic: Todos os canais
+                                  - img
+                              - generic:
+                                - generic: Responsável
+                                - combobox:
+                                  - generic: Todos os responsáveis
+                                  - img
+                              - generic:
+                                - generic: Período
+                                - button:
+                                  - generic: Todos os períodos
+                                  - img
+                              - generic:
+                                - button:
+                                  - img
+                                  - text: Agendar mensagem
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - table:
+                                    - rowgroup:
+                                      - row:
+                                        - columnheader
+                                        - columnheader: Contato
+                                        - columnheader: Canal
+                                        - columnheader: Mensagem
+                                        - columnheader:
+                                          - button:
+                                            - text: Agendado para
+                                            - img
+                                        - columnheader: Responsável
+                                        - columnheader: Status
+                                        - columnheader: Ações
+                                    - rowgroup:
+                                      - row:
+                                        - cell
+                                        - cell: Ivo Pita
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Canal Principal
+                                        - cell:
+                                          - generic: "🚨 *ATENÇÃO!* 🚨 Faltam apenas 2 horas para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!"
+                                        - cell: 29/05/2026 - 13:00
+                                        - cell: Laura Mathias
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Claudio Ruiz
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Latam - Mexico
+                                        - cell:
+                                          - generic: Hola Claudio, un gusto saludarte. Espero que la revisión de la propuesta de Poli con tu esposa haya avanzado bien. Quería recordarte que el beneficio del 100% de descuento en la implementación expira hoy. Es la vía más segura y económica para terminar con los bloqueos y ese gasto insostenible de 1.200.000 CLP mensuales. Cuéntame por favor, podemos iniciar tu proyecto para ayudarte con el descuento en la implementación?
+                                        - cell: 29/05/2026 - 13:00
+                                        - cell: Jonathan
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Johnny Medeiros
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Canal Principal
+                                        - cell:
+                                          - generic: "*🚀 Nossa reunião está mais perto do que nunca!* Prepare-se para conhecer a plataforma que vai transformar e elevar o nível do seu atendimento. Tenho certeza de que você vai enxergar novas possibilidades para ganhar mais organização, agilidade e resultados no dia a dia. 💻 Importante: para uma melhor experiência durante a apresentação, acesse a reunião pelo computador, ok? Nos vemos em breve!"
+                                        - cell: 29/05/2026 - 10:30
+                                        - cell: Laura Mathias
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Johnny Medeiros
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Canal Principal
+                                        - cell:
+                                          - generic: "🚨 *ATENÇÃO!* 🚨 Faltam apenas 1 hora para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!"
+                                        - cell: 29/05/2026 - 10:00
+                                        - cell: Laura Mathias
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Joaquin
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Latam - Mexico
+                                        - cell:
+                                          - generic: ¡Hola, [contact_first_name]! Tal como lo acordamos en nuestra reunión, te escribo para dar seguimiento al proyecto de *Poli Digital*. ¿Pudiste revisar la propuesta o precisas que aclaremos cualquier duda?
+                                        - cell: 29/05/2026 - 09:00
+                                        - cell: Jonathan
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Johnny Medeiros
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Canal Principal
+                                        - cell:
+                                          - generic: "🚨 *ATENÇÃO!* 🚨 Faltam apenas 2 horas para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!"
+                                        - cell: 29/05/2026 - 09:00
+                                        - cell: Laura Mathias
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Neiker - transporte y servicios hdz
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp
+                                            - generic: Soporte Activo - Latam
+                                        - cell:
+                                          - generic: Hola Neiker! Como estas? Estoy contactándote como acordamos para saber si pudiste analizar la propuesta y ver si podemos avanzar con tu proyecto. Tienes algun feedback o duda en la que pueda ayudarte?
+                                        - cell: 29/05/2026 - 09:00
+                                        - cell: Jonathan
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Marcus Vinicius Moraes Pereira
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Canal Principal
+                                        - cell:
+                                          - generic: "🚨 *ATENÇÃO!* 🚨 Faltam apenas 30 minutos para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!"
+                                        - cell: 29/05/2026 - 07:30
+                                        - cell: Laura Mathias
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Caroline - Marketing Sorria Sim
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Canal Principal
+                                        - cell:
+                                          - generic: "🚨 *ATENÇÃO!* 🚨 Faltam apenas 30 minutos para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!"
+                                        - cell: 29/05/2026 - 06:30
+                                        - cell: Laura Mathias
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Williane
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Canal Principal
+                                        - cell:
+                                          - generic: "🚨 *ATENÇÃO!* 🚨 Faltam apenas 30 minutos para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!"
+                                        - cell: 29/05/2026 - 06:30
+                                        - cell: Laura Mathias
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Williane
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Canal Principal
+                                        - cell:
+                                          - generic: "🚨 *ATENÇÃO!* 🚨 Faltam apenas 1 hora para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!"
+                                        - cell: 29/05/2026 - 06:00
+                                        - cell: Laura Mathias
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Johnny Medeiros
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Canal Principal
+                                        - cell:
+                                          - generic: 🚨 *ATENÇÃO!* 🚨 A nossa reunião é hoje! Chegou o momento de conhecer uma plataforma pensada para trazer mais agilidade, organização e eficiência para o seu atendimento. 🚀 Tenho certeza de que essa apresentação vai abrir novas possibilidades para a sua operação! 💻 Para aproveitar melhor a demonstração, recomendamos o acesso pelo computador. Nos vemos em breve!
+                                        - cell: 29/05/2026 - 06:00
+                                        - cell: Laura Mathias
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Caroline - Marketing Sorria Sim
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Canal Principal
+                                        - cell:
+                                          - generic: "🚨 *ATENÇÃO!* 🚨 Faltam apenas 1 hora para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!"
+                                        - cell: 29/05/2026 - 06:00
+                                        - cell: Laura Mathias
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Caroline - Marketing Sorria Sim
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Canal Principal
+                                        - cell:
+                                          - generic: "🚨 *ATENÇÃO!* 🚨 Faltam apenas 2 horas para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!"
+                                        - cell: 29/05/2026 - 05:00
+                                        - cell: Laura Mathias
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                                      - row:
+                                        - cell
+                                        - cell: Williane
+                                        - cell:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: WhatsApp Business
+                                            - generic: Canal Principal
+                                        - cell:
+                                          - generic: "🚨 *ATENÇÃO!* 🚨 Faltam apenas 2 horas para a nossa reunião! Prepare-se para conhecer a plataforma que pode transformar o seu atendimento e trazer muito mais agilidade para sua equipe. 🚀 💻 Reforçando: acesse a reunião pelo computador para ter a melhor experiência durante a apresentação. Nos vemos em breve!"
+                                        - cell: 29/05/2026 - 05:00
+                                        - cell: Laura Mathias
+                                        - cell:
+                                          - generic: Enviada
+                                        - cell:
+                                          - button:
+                                            - img
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic: Página 1 de 99
+                                  - generic: "Total: 1.478 registros"
+                                - generic:
+                                  - combobox
+                                  - generic:
+                                    - button [disabled]:
+                                      - img
+                                    - button [disabled]:
+                                      - img
+                                    - button:
+                                      - img
+                                    - button:
+                                      - img
+    - list
+  - listbox [ref=e1415]:
+    - option "Todos os canais" [active] [selected] [ref=e1416] [cursor=pointer]:
+      - img [ref=e1419]
+      - generic [ref=e1421]: Todos os canais
+    - option "Comercial (Broker)" [ref=e1422] [cursor=pointer]:
+      - generic [ref=e1424]: Comercial (Broker)
+    - option "CoEX" [ref=e1425] [cursor=pointer]:
+      - generic [ref=e1427]: CoEX
+    - option "Teste homologado Poli" [ref=e1428] [cursor=pointer]:
+      - generic [ref=e1430]: Teste homologado Poli
+    - option "Teste" [ref=e1431] [cursor=pointer]:
+      - generic [ref=e1433]: Teste
+    - option "teste" [ref=e1434] [cursor=pointer]:
+      - generic [ref=e1436]: teste
+    - option "Teste" [ref=e1437] [cursor=pointer]:
+      - generic [ref=e1439]: Teste
+    - option "Teste" [ref=e1440] [cursor=pointer]:
+      - generic [ref=e1442]: Teste
+    - option "Teste de canal do josé" [ref=e1443] [cursor=pointer]:
+      - generic [ref=e1445]: Teste de canal do josé
+    - option "Teste 2 do josé" [ref=e1446] [cursor=pointer]:
+      - generic [ref=e1448]: Teste 2 do josé
+    - option "teste" [ref=e1449] [cursor=pointer]:
+      - generic [ref=e1451]: teste
+    - option "teste 1" [ref=e1452] [cursor=pointer]:
+      - generic [ref=e1454]: teste 1
+    - option "Teste 1" [ref=e1455] [cursor=pointer]:
+      - generic [ref=e1457]: Teste 1
+    - option "PRUEBA DE LATAMM" [ref=e1458] [cursor=pointer]:
+      - generic [ref=e1460]: PRUEBA DE LATAMM
+    - option "Canal Principal" [ref=e1461] [cursor=pointer]:
+      - generic [ref=e1463]: Canal Principal
+    - option "Poli Comercial BSP" [ref=e1464] [cursor=pointer]:
+      - generic [ref=e1466]: Poli Comercial BSP
+    - img [ref=e1468]

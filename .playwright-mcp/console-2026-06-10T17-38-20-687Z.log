@@ -1,0 +1,44 @@
+[   14055ms] [LOG] Defining triggerGuiding @ :0
+[   15243ms] [LOG] i18next: languageChanged pt @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[   15250ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.poli.digital/assets/index-K91NXeHH.js:101
+[   15914ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.poli.digital/assets/index-K91NXeHH.js:76
+[   25346ms] [LOG] User Guiding identify running @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[   25347ms] [LOG] User Guiding identify cleared @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[   25352ms] [WARNING] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: WebSocket is closed before the connection is established. @ https://spa.poli.digital/assets/index-K91NXeHH.js:1097
+[   38960ms] [WARNING] [UserGuiding] 
+ You are loading UserGuiding SDK multiple times 
+
+*Submit a ticket using the link below if you think this is a bug
+https://desk.zoho.com/portal/userguiding/newticket @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[   51596ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.poli.digital/assets/index-K91NXeHH.js:69
+[   52676ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:898:429
+    at qS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:900:31)
+    at Od.pS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:897:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:309:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:255:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Qq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:266:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:722:315
+    at Lz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:625:1)
+    at Qz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:629:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:649:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:100)
+    at nB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:650:742)
+    at qB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:654:183)
+    at CD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:699:231)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e6641:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:866:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e6641:552:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:703:457
+    at r (https://spa.poli.digital/assets/index-K91NXeHH.js:70:9827)

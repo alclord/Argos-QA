@@ -1,0 +1,39 @@
+﻿ï»¿Título do Erro;Projeto Sentry;Ocorrências;Usuários Afetados;Primeiro Visto;Último Visto;Módulo;Sinal Oculto
+AxiosError: Request failed with status code 404;omnispa;12881;3347;13/05/2026;27/05/2026;Nova Interface;Sim — sem SM ticket correspondente
+Error: There is already an encoder stored (mime type);polichat-spa;8551;1817;13/05/2026;27/05/2026;Chat / Mensagens;Sim — sem SM ticket correspondente
+AxiosError: Request failed with status code 401;polichat-spa;4402;1346;13/05/2026;27/05/2026;Autenticação;Sim — sem SM ticket correspondente
+Exception: The requested URL returned error: 403;revendedor-api;15642;432;13/05/2026;27/05/2026;Permissões / Roles;Sim — sem SM ticket correspondente
+ErrorException: Undefined array key 0;polichat-web-app;12011;765;13/05/2026;27/05/2026;Chat / Mensagens;Não
+AxiosError: Network Error (omnispa variante 1);omnispa;1713;777;13/05/2026;27/05/2026;WebSocket / Presença;Sim — sem SM ticket correspondente
+MessageSenderException: Créditos insuficientes;foundationapi;8344;758;13/05/2026;27/05/2026;Chat / Mensagens;Não
+<unknown>;polichat-spa;3402;958;13/05/2026;27/05/2026;? (erro não capturado);Sim — erro não identificado sem SM ticket
+Uncompressed Asset;omnispa;309;299;27/05/2026;27/05/2026;Nova Interface;Sim — NOVO HOJE sem SM ticket
+Exception: The requested URL returned error: 403 (variante 2);revendedor-api;596;124;13/05/2026;27/05/2026;Permissões / Roles;Sim
+AxiosError: Network Error (omnispa variante 2);omnispa;1710;112;13/05/2026;27/05/2026;WebSocket / Presença;Sim
+JarvisClientException: 404 Not Found: Nenhuma mensagem encontrada;foundationapi;193;103;13/05/2026;27/05/2026;Jarvis / IA;Não
+Error: AbortError: AbortError;omnispa;279;100;13/05/2026;27/05/2026;Nova Interface;Sim
+AxiosError: Network Error (omnispa variante 3);omnispa;1701;119;13/05/2026;27/05/2026;WebSocket / Presença;Sim
+ErrorException: Attempt to read property id on null;polichat-web-app;1702;202;13/05/2026;27/05/2026;Chat / Mensagens;Não
+Aws\S3\Exception\S3Exception: Error executing PutObject;polichat-web-app;2252;202;13/05/2026;27/05/2026;Upload / Mídia;Não
+GuzzleHttp ClientException: POST api.crm.poli.d... (v1);polichat-web-app;3196;209;13/05/2026;27/05/2026;CRM / Integrações;Não
+CRMException: Já existe uma etiqueta para esta entidade;polichat-web-app;3199;209;13/05/2026;27/05/2026;CRM / Integrações;Não
+GuzzleHttp ClientException: POST api.crm.poli.d... (v2);polichat-web-app;5420;165;13/05/2026;27/05/2026;CRM / Integrações;Não
+TypeError: a.launchSurvey is not a function;omnispa;714;232;13/05/2026;27/05/2026;Nova Interface;Sim — sem SM ticket correspondente
+ErrorException: rename(/var/www/laravel/storage/tmp/...);polichat-web-app;1417;168;13/05/2026;27/05/2026;Upload / Mídia;Não
+Error: AbortError: The user aborted a request;polichat-spa;803;270;13/05/2026;27/05/2026;Geral;Sim
+AxiosError: Request failed with status code 401 (variante 2);polichat-spa;799;251;13/05/2026;27/05/2026;Autenticação;Sim
+GuzzleHttp ClientException: POST api.crm... (v3);polichat-web-app;5391;92;13/05/2026;27/05/2026;CRM / Integrações;Não
+ErrorException: Attempt to read property customer on null;polichat-web-app;1078410;1;13/05/2026;27/05/2026;Chat / Mensagens;Não (1 usuário — processo interno)
+Exception: Mensagem não encontrada;polichat-web-app;9564;90;13/05/2026;27/05/2026;Chat / Mensagens;Não
+Domains\CRM\Domain\Exceptions\CRMException: Não autenticado (background);foundationapi;13545;0;13/05/2026;27/05/2026;CRM / Integrações;Sim — background job com auth quebrado
+Illuminate\Http\Client\RequestException: HTTP 401 (background);foundationapi;8372;0;13/05/2026;27/05/2026;CRM / Integrações;Sim — background job com auth quebrado
+WebhookDeliveryException: Webhook delivery failed;foundationapi;37794;0;13/05/2026;27/05/2026;Canais / Integrações;Sim — 37.794 entregas de webhook falhando
+Chat created (dispatch background);dispatch;4403;0;13/05/2026;27/05/2026;Distribuição / Filas;Não (mapeado via SM)
+Distribute to department (dispatch background);dispatch;2781;0;13/05/2026;27/05/2026;Distribuição / Filas;Não (mapeado via SM)
+Distribute from the queue (dispatch background);dispatch;2376;0;13/05/2026;27/05/2026;Distribuição / Filas;Não (mapeado via SM)
+CRMException: Não autenticado (background v2);foundationapi;16663;0;15/05/2026;27/05/2026;CRM / Integrações;Sim — background job com auth quebrado
+HTTP request returned status code 401 (background v2);foundationapi;10327;0;15/05/2026;27/05/2026;CRM / Integrações;Sim — background job com auth quebrado
+ReferenceError: channelsCustomerFindIncludingDeleted is not defined;channel-customer;227;0;13/05/2026;27/05/2026;Canais / WhatsApp;Sim — código quebrado em runtime
+Slow DB Query;jarvis;928;0;13/05/2026;27/05/2026;Jarvis / IA;Não
+Assign on first login;dispatch;206;0;13/05/2026;27/05/2026;Distribuição / Filas;Não (mapeado via SM)
+TypeError: Cannot read properties of undefined (reading 'plugin');omnispa;30;19;27/05/2026;27/05/2026;Nova Interface;Sim — NOVO HOJE

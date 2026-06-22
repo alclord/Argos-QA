@@ -1,0 +1,51 @@
+[     928ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:101
+[     928ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:101
+[    1147ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:76
+[    1252ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[    1599ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[   26893ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[   28427ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   29311ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/559966980_1326502272399700_167251233029216118_n.jpg?ccb=11-4&oh=01_Q5Aa4gGsUMLpeY9ewPY-pHvuuDwE6Def07XJUBbSFvHnTIFZoQ&oe=6A22C3C6&_nc_sid=5e03e0&_nc_cat=104:0
+[   29314ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/487819011_1122001249681380_2285523550704014782_n.jpg?ccb=11-4&oh=01_Q5Aa3wFD5nULwxdj04TYsTsvFYrjZuTYlaY98Jkkr6fTO556jA&oe=69ADB528&_nc_sid=5e03e0&_nc_cat=102:0
+[   29636ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   30858ms] Identifier 'TCRMEmbed' has already been declared
+[   31857ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   36072ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   97112ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[   97118ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[   97118ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  320659ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  320661ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  320662ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69

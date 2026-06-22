@@ -1,0 +1,14 @@
+[    2769ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DAh54-o_.js:101
+[    2769ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-DAh54-o_.js:101
+[    3007ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-DAh54-o_.js:76
+[    9077ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-DAh54-o_.js:69
+[    9232ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.poli.digital/auth/logout:0
+[    9247ms] [ERROR] error at logout, please try again @ https://spa-canary.poli.digital/assets/index-DAh54-o_.js:69
+[    9250ms] [ERROR] AxiosError: Request failed with status code 401
+    at z2e (https://spa-canary.poli.digital/assets/index-DAh54-o_.js:1001:10177)
+    at XMLHttpRequest.w (https://spa-canary.poli.digital/assets/index-DAh54-o_.js:1001:15705)
+    at nx.request (https://spa-canary.poli.digital/assets/index-DAh54-o_.js:1003:2234)
+    at async Oh.logout (https://spa-canary.poli.digital/assets/index-DAh54-o_.js:1011:6500)
+    at async Object.mutationFn (https://spa-canary.poli.digital/assets/index-DAh54-o_.js:2143:64055) @ https://spa-canary.poli.digital/assets/index-DAh54-o_.js:69
+[    9266ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DAh54-o_.js:69
+[   33424ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DAh54-o_.js:69

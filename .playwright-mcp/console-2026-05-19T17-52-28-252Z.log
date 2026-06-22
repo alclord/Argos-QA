@@ -1,0 +1,34 @@
+[   18097ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:101
+[   18097ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:101
+[   18225ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:76
+[   18697ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:69
+[   18712ms] [ERROR] error ao buscar chats TypeError: Cannot read properties of undefined (reading 'data')
+    at _dt (https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:1002:26288)
+    at async C (https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:54:37549)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:54:37856) @ https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:69
+[   18770ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:69
+[   19234ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/users/settings/summary:0
+[   19237ms] [ERROR] [UserPreferencesService] Failed to get summary: TypeError: Cannot read properties of undefined (reading 'data')
+    at Gee.getSummary (https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:2108:64570)
+    at async https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:2108:65230 @ https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:69
+[   19237ms] [ERROR] [useUserPreferences] Error: TypeError: Cannot read properties of undefined (reading 'data')
+    at Gee.getSummary (https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:2108:64570)
+    at async https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:2108:65230 @ https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:69
+[   21343ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:101
+[   21343ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:101
+[   21379ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:76
+[   21423ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:69
+[   21935ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:69
+[  127459ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CdvqOcEt.js:69
+[  130857ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/513069239_634897472825783_3996963730102399322_n.jpg?ccb=11-4&oh=01_Q5Aa3QFuX0CH0JNED5dX3rn7F5AQ0MGVgrRpCFrN9tX0nZ-djQ&oe=69613FF5&_nc_sid=5e03e0&_nc_cat=108:0
+[  130912ms] Identifier 'TCRMEmbed' has already been declared
+[  194903ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/491843248_999386305723591_6887783740374728591_n.jpg?ccb=11-4&oh=01_Q5Aa4gHSPkDqNMnNxIdSUsftMjxuuoOrXVtwCTDzlfGznyszow&oe=6A0AFCBD&_nc_sid=5e03e0&_nc_cat=107:0
+[  221424ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/513069239_634897472825783_3996963730102399322_n.jpg?ccb=11-4&oh=01_Q5Aa3QFuX0CH0JNED5dX3rn7F5AQ0MGVgrRpCFrN9tX0nZ-djQ&oe=69613FF5&_nc_sid=5e03e0&_nc_cat=108:0
+[  222684ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/513069239_634897472825783_3996963730102399322_n.jpg?ccb=11-4&oh=01_Q5Aa3QFuX0CH0JNED5dX3rn7F5AQ0MGVgrRpCFrN9tX0nZ-djQ&oe=69613FF5&_nc_sid=5e03e0&_nc_cat=108:0
+[  245096ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/logs/behavior:0
+[  249240ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/logs/behavior:0
+[  269044ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/513069239_634897472825783_3996963730102399322_n.jpg?ccb=11-4&oh=01_Q5Aa3QFuX0CH0JNED5dX3rn7F5AQ0MGVgrRpCFrN9tX0nZ-djQ&oe=69613FF5&_nc_sid=5e03e0&_nc_cat=108:0
+[  275036ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/logs/behavior:0
+[  294181ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/logs/behavior:0
+[  296828ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/513069239_634897472825783_3996963730102399322_n.jpg?ccb=11-4&oh=01_Q5Aa3QFuX0CH0JNED5dX3rn7F5AQ0MGVgrRpCFrN9tX0nZ-djQ&oe=69613FF5&_nc_sid=5e03e0&_nc_cat=108:0
+[  340777ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/513069239_634897472825783_3996963730102399322_n.jpg?ccb=11-4&oh=01_Q5Aa3QFuX0CH0JNED5dX3rn7F5AQ0MGVgrRpCFrN9tX0nZ-djQ&oe=69613FF5&_nc_sid=5e03e0&_nc_cat=108:0

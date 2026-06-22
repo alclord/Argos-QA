@@ -1,0 +1,47 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - button:
+              - img
+          - generic:
+            - generic:
+              - generic:
+                - img
+                - heading [level=1]: Seja bem-vindo!
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                    - generic: Email
+                    - generic:
+                      - textbox:
+                        - /placeholder: nome@exemplo.com
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: Senha
+                      - generic:
+                        - generic:
+                          - textbox:
+                            - /placeholder: "#SenhaForte!"
+                          - button [disabled]:
+                            - img
+                            - generic: Show password
+                - generic:
+                  - link:
+                    - /url: /forgot-password
+                    - text: Esqueci minha senha
+                - button: Login
+    - list
+  - dialog "Sua sessão expirou" [ref=e1]:
+    - heading "Sua sessão expirou" [level=2] [ref=e2]
+    - paragraph [ref=e3]:
+      - generic [ref=e4]: Você foi deslogado por ficar mais de 60 minutos inativo.
+      - generic [ref=e5]: Por favor, faça login novamente.
+    - button "Ok" [active] [ref=e6] [cursor=pointer]
+    - button "Close" [ref=e7] [cursor=pointer]:
+      - img [ref=e8]
+      - generic [ref=e11]: Close

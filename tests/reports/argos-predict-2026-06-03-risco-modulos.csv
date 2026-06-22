@@ -1,0 +1,13 @@
+Módulo;Nível de Risco;Score Total;Score Técnico;Score Usuários;Tendência;Bugs N1 Abertos;Cards em Dev Ativo;Churn (linhas);Autores Únicos (churn);Coeficiente Cross-Serviço;Deploy Freq (merges);PRs Precipitados;Bugs Reabertos;Tempo Médio Resolução (dias);Cenários Desatualizados;Falha Env-Específica;Sentry Δ Semana (%);Delta vs 01/06;Pressão Clientes;Atenção Dev;Zona Calor
+Chat / Mensagens;ALTO;50;20;30;↗️;8;0;>500;6;1.3;13;1;0;;0;Sim;+80%;+9;30;0;Negligenciada
+Canais / WhatsApp;ALTO;42;15;27;↗️;3;3;100-500;3;1.3;4;0;0;;0;;+80% (meta-business);+24;27;3;Negligenciada
+Distribuição / Filas;ALTO;24;13;11;→;1;0;0;0;1.5;0;0;0;;0;;;-4;11;0;Negligenciada
+Contatos / Busca;ALTO;19;5;14;↗️;4;0;0;0;1.0;0;0;0;;0;;;+9;14;1;Subatendida
+WebSocket / Presença;ALTO;18;12;6;↗️;1;0;0;0;1.0;0;0;0;;0;;;+10;6;0;Negligenciada
+Autenticação;ALTO;18;11;7;→;0;0;0;0;2.0;0;0;0;;0;;;+15;7;0;Negligenciada
+Jarvis / IA;ALTO;11;8;3;→;0;0;100-500;2;1.0;2;0;0;;0;;;+7;3;1;Balanceada
+Integrações Externas;ALTO;10;8;2;↘️;0;0;0;0;1.0;0;0;0;;0;;-29%;+4;2;0;Balanceada
+Upload / Mídia;MÉDIO;8;3;5;→;0;0;0;0;1.0;0;0;0;;0;;;+3;5;2;Subatendida
+Permissões / Roles;MÉDIO;7;3;4;→;0;1;100-500;1;1.0;0;0;0;;0;;;+4;4;2;Balanceada
+Configurações;MÉDIO;6;0;6;→;1;0;0;0;1.0;0;0;0;;0;;;+6;6;0;Negligenciada
+Relatórios / SLA;ATENÇÃO;3;0;3;→;1;0;0;0;1.0;0;0;0;;0;;;0;3;0;Subatendida

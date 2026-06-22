@@ -1,0 +1,579 @@
+[     441ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:101
+[     441ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:101
+[     519ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:76
+[    1018ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[    1025ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[    1568ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/487819011_1122001249681380_2285523550704014782_n.jpg?ccb=11-4&oh=01_Q5Aa3wFD5nULwxdj04TYsTsvFYrjZuTYlaY98Jkkr6fTO556jA&oe=69ADB528&_nc_sid=5e03e0&_nc_cat=102:0
+[    1569ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/559966980_1326502272399700_167251233029216118_n.jpg?ccb=11-4&oh=01_Q5Aa4gGsUMLpeY9ewPY-pHvuuDwE6Def07XJUBbSFvHnTIFZoQ&oe=6A22C3C6&_nc_sid=5e03e0&_nc_cat=104:0
+[    2217ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[    2757ms] Identifier 'TCRMEmbed' has already been declared
+[    2759ms] Identifier 'TCRMEmbed' has already been declared
+[    4440ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[    8655ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   24889ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[   24891ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[   24892ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  153123ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at vB (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1103:282)
+    at _2.Mue (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1103:320)
+    at async _2.request (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1103:2147)
+    at async cDt (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1137:26220)
+    at async C (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:54:38287) @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  153274ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/487819011_1122001249681380_2285523550704014782_n.jpg?ccb=11-4&oh=01_Q5Aa3wFD5nULwxdj04TYsTsvFYrjZuTYlaY98Jkkr6fTO556jA&oe=69ADB528&_nc_sid=5e03e0&_nc_cat=102:0
+[  153274ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/559966980_1326502272399700_167251233029216118_n.jpg?ccb=11-4&oh=01_Q5Aa4gGsUMLpeY9ewPY-pHvuuDwE6Def07XJUBbSFvHnTIFZoQ&oe=6A22C3C6&_nc_sid=5e03e0&_nc_cat=104:0
+[  172115ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/559966980_1326502272399700_167251233029216118_n.jpg?ccb=11-4&oh=01_Q5Aa4gGsUMLpeY9ewPY-pHvuuDwE6Def07XJUBbSFvHnTIFZoQ&oe=6A22C3C6&_nc_sid=5e03e0&_nc_cat=104:0
+[  172477ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  172481ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      2
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  172482ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  239837ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at vB (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1103:282)
+    at _2.Mue (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1103:320)
+    at async _2.request (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1103:2147)
+    at async cDt (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1137:26220)
+    at async C (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:54:38287) @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  240413ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/487819011_1122001249681380_2285523550704014782_n.jpg?ccb=11-4&oh=01_Q5Aa3wFD5nULwxdj04TYsTsvFYrjZuTYlaY98Jkkr6fTO556jA&oe=69ADB528&_nc_sid=5e03e0&_nc_cat=102:0
+[  240414ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/559966980_1326502272399700_167251233029216118_n.jpg?ccb=11-4&oh=01_Q5Aa4gGsUMLpeY9ewPY-pHvuuDwE6Def07XJUBbSFvHnTIFZoQ&oe=6A22C3C6&_nc_sid=5e03e0&_nc_cat=104:0
+[  240998ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  240999ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      2
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  241000ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  306230ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  306231ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  306232ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  366509ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  366511ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      2,
+      3
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  366511ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  366511ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  396871ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  396873ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  396874ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  441743ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  443783ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1098
+[  443797ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1098
+[  450245ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  450333ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[  453521ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[  456328ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[  460580ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[  567998ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  568000ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  568000ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  783142ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  783144ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  783145ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  819897ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  819899ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  819899ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  855606ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  855608ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  855609ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  929377ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  929380ms] [WARNING] Amplitude Logger [Warn]: {
+  "error": "Request missing required field",
+  "missingField": "",
+  "eventsWithInvalidFields": {},
+  "eventsWithMissingFields": {
+    "event_type": [
+      1
+    ]
+  },
+  "eventsWithInvalidIdLengths": {},
+  "epsThreshold": 0,
+  "exceededDailyQuotaDevices": {},
+  "silencedDevices": [],
+  "silencedEvents": [],
+  "throttledDevices": {},
+  "throttledEvents": []
+} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  929380ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[  991472ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://api2.amplitude.com/2/httpapi:0
+[  991474ms] [ERROR] Amplitude Logger [Error]: Request missing required field @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[ 1327209ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 1328418ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 1330668ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 1334875ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 4929133ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.poli.digital/auth/inactivity:0
+[ 4929217ms] AxiosError: Request failed with status code 404
+    at ABe (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:15780)
+[ 6765056ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[ 6767163ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1098
+[ 6767775ms] [WARNING] Erro ao enviar heartbeat: AxiosError: Network Error
+    at y.onerror (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:16162)
+    at XMLHttpRequest.r (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:70:9827) @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[ 6767776ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://heimdall.poli.digital/auth/activity:0
+[ 6773210ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[ 6773586ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[ 6773589ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[ 6773591ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[ 6773593ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[ 6773594ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=200&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[ 6773595ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[ 6773598ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats/pinned:0
+[ 6773727ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[ 6773728ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/chats/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/channels/00cb7bde-7ec0-11f0-93ae-062ccf12487f/open?clear_cache=false:0
+[ 6773729ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/settings:0
+[ 6773729ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 6773747ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/broadcasting/auth:0
+[ 6773748ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/protocol:0
+[ 6773749ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/messages?per_page=15&order=-timestamp&include=ack,timestamp,account_channel,contact,author,template,context,preview,components,interactive,metadata,note,error_code:0
+[ 6776630ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 6779302ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 6781507ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[ 6785725ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[10458598ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[10460653ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1098
+[10467376ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[10467577ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[10467580ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=200&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[10467583ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/settings:0
+[10467584ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[10467585ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/protocol:0
+[10467586ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/messages?per_page=15&order=-timestamp&include=ack,timestamp,account_channel,contact,author,template,context,preview,components,interactive,metadata,note,error_code:0
+[10467593ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[10467595ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[10467732ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[10467736ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/chats/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/channels/00cb7bde-7ec0-11f0-93ae-062ccf12487f/open?clear_cache=false:0
+[10467738ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[10467739ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats/pinned:0
+[10467757ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/broadcasting/auth:0
+[10467758ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[10468257ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[10470808ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[10473317ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[10477522ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[14069155ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.poli.digital/auth/inactivity:0
+[14069185ms] AxiosError: Request failed with status code 404
+    at ABe (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:15780)
+[15182149ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/ffb0df61-287b-11f0-a21f-02f29315759f?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[18783834ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.poli.digital/auth/inactivity:0
+[18783844ms] AxiosError: Request failed with status code 404
+    at ABe (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:15780)
+[25385730ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[25387386ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[25388182ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/broadcasting/auth:0
+[46982337ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[46984416ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1098
+[46992038ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[46992253ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[46992265ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[46992267ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/protocol:0
+[46992269ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[46992270ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[46992272ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/messages?per_page=15&order=-timestamp&include=ack,timestamp,account_channel,contact,author,template,context,preview,components,interactive,metadata,note,error_code:0
+[46992273ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[46992396ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[46992399ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[46992399ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats/pinned:0
+[46992400ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/settings:0
+[46992406ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=200&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[46992408ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/chats/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/channels/00cb7bde-7ec0-11f0-93ae-062ccf12487f/open?clear_cache=false:0
+[46992431ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/broadcasting/auth:0
+[46995369ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[46997864ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[47000085ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[47004303ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[48595257ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[48596874ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[50596227ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.poli.digital/auth/inactivity:0
+[50596252ms] AxiosError: Request failed with status code 404
+    at ABe (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:15780)
+[54226259ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[54228287ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1098
+[54237128ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[54237287ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/settings:0
+[54237296ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[54237299ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/chats/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/channels/00cb7bde-7ec0-11f0-93ae-062ccf12487f/open?clear_cache=false:0
+[54237302ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats/pinned:0
+[54237303ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[54237309ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[54237310ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/protocol:0
+[54237416ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[54237432ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=200&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[54237436ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[54237449ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/messages?per_page=15&order=-timestamp&include=ack,timestamp,account_channel,contact,author,template,context,preview,components,interactive,metadata,note,error_code:0
+[54237457ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[54237458ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[54237488ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/broadcasting/auth:0
+[54240479ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[54242841ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[54245064ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[54249258ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[55430149ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[55432286ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1098
+[55432292ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1098
+[55439122ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[55439194ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[55442186ms] [WARNING] Erro ao enviar heartbeat: AxiosError: Network Error
+    at y.onerror (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:16162)
+    at XMLHttpRequest.r (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:70:9827) @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[55442187ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://heimdall.poli.digital/auth/activity:0
+[55442358ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[55444795ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[55449003ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[59040270ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.poli.digital/auth/inactivity:0
+[59040337ms] AxiosError: Request failed with status code 404
+    at ABe (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:15780)
+[87137698ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/ffb0df61-287b-11f0-a21f-02f29315759f?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[87137947ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/ffb0df61-287b-11f0-a21f-02f29315759f/read:0
+[90741894ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.poli.digital/auth/inactivity:0
+[90741949ms] AxiosError: Request failed with status code 404
+    at ABe (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:15780)
+[94388784ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/ffb0df61-287b-11f0-a21f-02f29315759f/read:0
+[94388793ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/ffb0df61-287b-11f0-a21f-02f29315759f?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[101579152ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/ffb0df61-287b-11f0-a21f-02f29315759f/read:0
+[110339466ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[110341276ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[110342138ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/broadcasting/auth:0
+[121656249ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[121660109ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[121660823ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/broadcasting/auth:0
+[122007960ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[122009246ms] [WARNING] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: WebSocket is closed before the connection is established. @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1097
+[122010810ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[122011051ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[122013899ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[122016107ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[122020301ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[125611992ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.poli.digital/auth/inactivity:0
+[125612012ms] AxiosError: Request failed with status code 404
+    at ABe (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:15780)
+[137403945ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[137405641ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[137406483ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/broadcasting/auth:0
+[173537239ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/ffb0df61-287b-11f0-a21f-02f29315759f/read:0
+[173537262ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/ffb0df61-287b-11f0-a21f-02f29315759f?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[177140351ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.poli.digital/auth/inactivity:0
+[177140420ms] AxiosError: Request failed with status code 404
+    at ABe (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:15780)
+[177162770ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[177164806ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1098
+[177171529ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[177171908ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[177171909ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/chats/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/channels/00cb7bde-7ec0-11f0-93ae-062ccf12487f/open?clear_cache=false:0
+[177171913ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[177171914ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[177171915ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[177171917ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats/pinned:0
+[177171918ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=200&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[177171924ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/protocol:0
+[177172039ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/broadcasting/auth:0
+[177172045ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[177172046ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[177172057ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/messages?per_page=15&order=-timestamp&include=ack,timestamp,account_channel,contact,author,template,context,preview,components,interactive,metadata,note,error_code:0
+[177172058ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/settings:0
+[177172059ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[177174608ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[177177578ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[177179796ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[177184015ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[180775388ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.poli.digital/auth/inactivity:0
+[180775399ms] AxiosError: Request failed with status code 404
+    at ABe (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:15780)
+[180788757ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/ffb0df61-287b-11f0-a21f-02f29315759f/read:0
+[180789022ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/ffb0df61-287b-11f0-a21f-02f29315759f?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[181534274ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[181536375ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1098
+[181542410ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[181542633ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[181545550ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[181548509ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[181552711ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[185143782ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.poli.digital/auth/inactivity:0
+[185143792ms] AxiosError: Request failed with status code 404
+    at ABe (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:15780)
+[187982015ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/ffb0df61-287b-11f0-a21f-02f29315759f?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[187982026ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/ffb0df61-287b-11f0-a21f-02f29315759f/read:0
+[191584900ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.poli.digital/auth/inactivity:0
+[191584906ms] AxiosError: Request failed with status code 404
+    at ABe (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:15780)
+[193450316ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[193451910ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[193452953ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/broadcasting/auth:0
+[195412401ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[195414472ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1098
+[195420860ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[195421176ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[195423830ms] [WARNING] Erro ao enviar heartbeat: AxiosError: Network Error
+    at y.onerror (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:16162)
+    at XMLHttpRequest.r (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:70:9827) @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[195423831ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://heimdall.poli.digital/auth/activity:0
+[195423832ms] [ERROR] error ao buscar chats AxiosError: Network Error
+    at y.onerror (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:16162)
+    at XMLHttpRequest.r (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:70:9827)
+    at _2.request (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1103:2243)
+    at async cDt (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1137:26220)
+    at async C (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:54:38287) @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[195423833ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&page=2&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[195424466ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[195426677ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[195430878ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[199022015ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.poli.digital/auth/inactivity:0
+[199022024ms] AxiosError: Request failed with status code 404
+    at ABe (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:15780)
+[204292911ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[204294950ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1098
+[204300995ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[204301179ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/chats/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/channels/00cb7bde-7ec0-11f0-93ae-062ccf12487f/open?clear_cache=false:0
+[204301186ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats/pinned:0
+[204301191ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/protocol:0
+[204301192ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[204301206ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/settings:0
+[204301208ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[204301210ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[204301339ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[204301342ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[204301346ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=200&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[204301348ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[204301360ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[204301361ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/messages?per_page=15&order=-timestamp&include=ack,timestamp,account_channel,contact,author,template,context,preview,components,interactive,metadata,note,error_code:0
+[204301369ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/broadcasting/auth:0
+[204304479ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[204306996ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[204309204ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[204313401ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[207905434ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.poli.digital/auth/inactivity:0
+[207905451ms] AxiosError: Request failed with status code 404
+    at ABe (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:15780)
+[208715263ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[208717461ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1098
+[208723688ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[208723894ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[208723912ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[208723915ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/chats/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/channels/00cb7bde-7ec0-11f0-93ae-062ccf12487f/open?clear_cache=false:0
+[208723917ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[208723920ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats/pinned:0
+[208723921ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/protocol:0
+[208723923ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[208723924ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[208724075ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[208724077ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/broadcasting/auth:0
+[208724078ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[208724079ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=200&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[208724080ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/messages?per_page=15&order=-timestamp&include=ack,timestamp,account_channel,contact,author,template,context,preview,components,interactive,metadata,note,error_code:0
+[208724081ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/settings:0
+[208726837ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/account-channels?include=uuid,uid,name,status,provider,integrator,metadata&page=1:0
+[208726838ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[208726839ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://foundation-api-canary.poli.digital/v3/broadcasting/auth:0
+[208726840ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[208726842ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://foundation-api-canary.poli.digital/v3/accounts/balance/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf:0
+[208726843ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/protocol:0
+[208726844ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://foundation-api-canary.poli.digital/v3/settings:0
+[208726846ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=200&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[208726847ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats/pinned:0
+[208726848ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[208726849ms] [ERROR] Error: AxiosError: Network Error
+    at https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1107:8175
+    at async _2.request (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1103:2147)
+    at async Pze (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1184:14654) @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[208726851ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages:0
+[208726852ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://foundation-api-canary.poli.digital/v3/contacts/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/messages?per_page=15&order=-timestamp&include=ack,timestamp,account_channel,contact,author,template,context,preview,components,interactive,metadata,note,error_code:0
+[208726853ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://foundation-api-canary.poli.digital/v3/chats/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/channels/00cb7bde-7ec0-11f0-93ae-062ccf12487f/open?clear_cache=false:0
+[208726854ms] [ERROR] error ao buscar chats AxiosError: Network Error
+    at y.onerror (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:16162)
+    at XMLHttpRequest.r (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:70:9827)
+    at _2.request (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1103:2243)
+    at async _2.request (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1103:2147)
+    at async cDt (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1137:26220)
+    at async C (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:54:37980)
+    at async Object.u [as fn] (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:54:38287) @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[208726855ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://foundation-api-canary.poli.digital/v3/accounts/9b8af98e-73f4-4fe9-b33b-7aa47b0369bf/chats?include=type,chat_status,read_status,attributes,attendant,team,last_message,tags,unread_messages&status=OPEN&assigned_status=ASSIGNED&order=-date_last_message&contact_type=WITHOUT_CAMPAIGN:0
+[208729511ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[208731708ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[208735919ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[209333363ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[209335451ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1098
+[209335456ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1098
+[209343827ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[209343868ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[209346882ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://foundation-api-canary.poli.digital/v3/chats/9c881b1c-3f8f-4d02-8012-5b5a1cf11857/channels?page=1:0
+[209346883ms] [WARNING] Erro ao enviar heartbeat: AxiosError: Network Error
+    at y.onerror (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:16162)
+    at XMLHttpRequest.r (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:70:9827) @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[209346883ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://heimdall.poli.digital/auth/activity:0
+[209346884ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[209347464ms] Identifier 'TCRMEmbed' has already been declared
+[209349081ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[209353303ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[212946995ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://heimdall.poli.digital/auth/inactivity:0
+[212947001ms] AxiosError: Request failed with status code 404
+    at ABe (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:1101:15780)
+[221117698ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[221119316ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-CEaZpJzJ.js:69
+[221120118ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/broadcasting/auth:0

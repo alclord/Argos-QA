@@ -1,0 +1,325 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https://app.poli.digital/home
+        - img [ref=e11]
+      - generic [ref=e13]:
+        - list [ref=e15]:
+          - listitem [ref=e16]:
+            - link [ref=e469] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e19]
+          - listitem [ref=e23]:
+            - link [ref=e470] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e26]
+          - listitem [ref=e30]:
+            - link [ref=e471] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e33]
+          - listitem [ref=e37]:
+            - link [ref=e472] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e40]
+          - listitem [ref=e43]:
+            - link [ref=e473] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e46]
+          - listitem [ref=e50]:
+            - link [ref=e474] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e53]
+          - listitem [ref=e57]:
+            - link [ref=e475] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e60]
+        - list [ref=e66]:
+          - listitem [ref=e67]:
+            - link [ref=e476] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e71]
+      - generic [ref=e79]:
+        - button "Consumo de créditos" [ref=e80] [cursor=pointer]:
+          - img [ref=e82]
+        - button "YA" [ref=e477] [cursor=pointer]:
+          - generic [ref=e97]: YA
+        - generic [ref=e101]: 3.5.362-DEV4-4398
+    - main [ref=e102]:
+      - main [ref=e103]:
+        - generic [ref=e105]:
+          - navigation "breadcrumb" [ref=e107]:
+            - link "Página inicial" [ref=e109] [cursor=pointer]:
+              - /url: /
+            - img [ref=e110]
+            - generic [ref=e112]: Configurações gerais
+          - generic [ref=e114]:
+            - generic [ref=e115]:
+              - textbox "Buscar configuração..." [ref=e116]
+              - button "Pesquisar" [ref=e117] [cursor=pointer]:
+                - img [ref=e118]
+            - region "Atendimento" [ref=e121]:
+              - heading "Atendimento" [level=2] [ref=e122]
+              - generic [ref=e123]:
+                - link "Modelos Crie e gerencie modelos de mensagem para agilizar o atendimento." [ref=e125] [cursor=pointer]:
+                  - /url: undefined/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=%2Ftools%2Fmessages-builder
+                  - img [ref=e127]
+                  - generic [ref=e132]:
+                    - generic [ref=e133]: Modelos
+                    - generic [ref=e134]: Crie e gerencie modelos de mensagem para agilizar o atendimento.
+                - link "Etiquetas Organize contatos e conversas com etiquetas personalizadas." [ref=e136] [cursor=pointer]:
+                  - /url: /tags
+                  - img [ref=e138]
+                  - generic [ref=e142]:
+                    - generic [ref=e143]: Etiquetas
+                    - generic [ref=e144]: Organize contatos e conversas com etiquetas personalizadas.
+                - link "Departamentos Estruture suas equipes e direcione os atendimentos." [ref=e146] [cursor=pointer]:
+                  - /url: /teams
+                  - img [ref=e148]
+                  - generic [ref=e150]:
+                    - generic [ref=e151]: Departamentos
+                    - generic [ref=e152]: Estruture suas equipes e direcione os atendimentos.
+                - link "Canais Conecte e configure os canais de atendimento da conta." [ref=e154] [cursor=pointer]:
+                  - /url: undefined/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=%2Ftools%2Fchannels%2Flist
+                  - img [ref=e156]
+                  - generic [ref=e161]:
+                    - generic [ref=e162]: Canais
+                    - generic [ref=e163]: Conecte e configure os canais de atendimento da conta.
+                - link "Distribuição Defina como as conversas são distribuídas entre os atendentes." [ref=e165] [cursor=pointer]:
+                  - /url: undefined/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=%2Fdistribution%2F1
+                  - img [ref=e167]
+                  - generic [ref=e172]:
+                    - generic [ref=e173]: Distribuição
+                    - generic [ref=e174]: Defina como as conversas são distribuídas entre os atendentes.
+            - region "Empresa" [ref=e175]:
+              - heading "Empresa" [level=2] [ref=e176]
+              - generic [ref=e177]:
+                - link "Empresa Atualize os dados e as informações da sua empresa." [ref=e179] [cursor=pointer]:
+                  - /url: undefined/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=%2Fdados_empresa%2F1
+                  - img [ref=e181]
+                  - generic [ref=e184]:
+                    - generic [ref=e185]: Empresa
+                    - generic [ref=e186]: Atualize os dados e as informações da sua empresa.
+                - link "Usuários Gerencie os usuários e seus acessos à plataforma." [ref=e188] [cursor=pointer]:
+                  - /url: /users
+                  - img [ref=e190]
+                  - generic [ref=e193]:
+                    - generic [ref=e194]: Usuários
+                    - generic [ref=e195]: Gerencie os usuários e seus acessos à plataforma.
+                - link "Integrações Conecte aplicativos e serviços externos à sua conta." [ref=e197] [cursor=pointer]:
+                  - /url: /applications
+                  - img [ref=e199]
+                  - generic [ref=e206]:
+                    - generic [ref=e207]: Integrações
+                    - generic [ref=e208]: Conecte aplicativos e serviços externos à sua conta.
+                - link "Inteligência artificial Configure os recursos de IA do atendimento." [ref=e210] [cursor=pointer]:
+                  - /url: /settings/ai
+                  - img [ref=e212]
+                  - generic [ref=e214]:
+                    - generic [ref=e215]: Inteligência artificial
+                    - generic [ref=e216]: Configure os recursos de IA do atendimento.
+                - link "Assinatura Acompanhe seu plano, faturas e forma de pagamento." [ref=e218] [cursor=pointer]:
+                  - /url: undefined/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=%2Fdados_plano%2F1
+                  - img [ref=e220]
+                  - generic [ref=e222]:
+                    - generic [ref=e223]: Assinatura
+                    - generic [ref=e224]: Acompanhe seu plano, faturas e forma de pagamento.
+                - link "Carteiras Gerencie as carteiras de atendimento da conta." [ref=e226] [cursor=pointer]:
+                  - /url: undefined/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=%2Fwallets%2F1
+                  - img [ref=e228]
+                  - generic [ref=e231]:
+                    - generic [ref=e232]: Carteiras
+                    - generic [ref=e233]: Gerencie as carteiras de atendimento da conta.
+                - link "Avaliações Configure as avaliações de atendimento." [ref=e235] [cursor=pointer]:
+                  - /url: undefined/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=%2Fsettings%2F1%2Frateconfig
+                  - img [ref=e237]
+                  - generic [ref=e239]:
+                    - generic [ref=e240]: Avaliações
+                    - generic [ref=e241]: Configure as avaliações de atendimento.
+                - link "Protocolos Acompanhe os protocolos de atendimento." [ref=e243] [cursor=pointer]:
+                  - /url: undefined/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=%2Ftickets%2F1
+                  - img [ref=e245]
+                  - generic [ref=e247]:
+                    - generic [ref=e248]: Protocolos
+                    - generic [ref=e249]: Acompanhe os protocolos de atendimento.
+                - button "Widget para site Instale o widget de atendimento no seu site." [ref=e251] [cursor=pointer]:
+                  - img [ref=e253]
+                  - generic [ref=e256]:
+                    - generic [ref=e257]: Widget para site
+                    - generic [ref=e258]: Instale o widget de atendimento no seu site.
+                - generic [ref=e259]:
+                  - button "Segurança Defina as políticas de segurança e acesso da conta." [disabled]:
+                    - generic:
+                      - img
+                    - generic:
+                      - generic: Segurança
+                      - generic: Defina as políticas de segurança e acesso da conta.
+                  - generic: Em breve
+                - generic [ref=e260]:
+                  - button "Permissões Controle o que cada perfil de usuário pode acessar." [disabled]:
+                    - generic:
+                      - img
+                    - generic:
+                      - generic: Permissões
+                      - generic: Controle o que cada perfil de usuário pode acessar.
+                  - generic: Em breve
+                - link "Ações críticas Audite e gerencie ações sensíveis realizadas na conta." [ref=e262] [cursor=pointer]:
+                  - /url: undefined/redirect?sessionId=55ff2217553a8fd63354ba9676f0331de70fe5c0&toPath=%2Factions%2F1
+                  - img [ref=e264]
+                  - generic [ref=e267]:
+                    - generic [ref=e268]: Ações críticas
+                    - generic [ref=e269]: Audite e gerencie ações sensíveis realizadas na conta.
+            - region "Configurações da operação" [ref=e270]:
+              - heading "Configurações da operação" [level=2] [ref=e271]
+              - generic [ref=e296]:
+                - generic [ref=e297]:
+                  - generic [ref=e298]:
+                    - generic [ref=e299]:
+                      - heading "Empresa" [level=2] [ref=e300]
+                      - paragraph [ref=e301]: Padrões aplicados a toda a operação.
+                    - generic [ref=e303]:
+                      - generic [ref=e304]: Fuso-horário
+                      - group [ref=e305]:
+                        - combobox "Buscar fuso-horário..." [ref=e306]: GMT-3:00 America/Sao_Paulo
+                        - group [ref=e307]:
+                          - button [ref=e308] [cursor=pointer]:
+                            - img
+                      - textbox [ref=e309]: "145"
+                  - generic [ref=e310]:
+                    - generic [ref=e311]:
+                      - heading "Identificação do atendente" [level=2] [ref=e312]
+                      - paragraph [ref=e313]: Como o nome do atendente aparece dentro do balão de mensagem para o cliente.
+                    - generic [ref=e314]:
+                      - radiogroup [ref=e316]:
+                        - generic [ref=e317] [cursor=pointer]:
+                          - radio "Informar o nome do atendente em todas as mensagens" [checked] [ref=e318]:
+                            - img [ref=e320]
+                          - radio [checked]
+                          - text: Informar o nome do atendente em todas as mensagens
+                        - generic [ref=e322] [cursor=pointer]:
+                          - radio "Informar o nome do atendente apenas na primeira mensagem" [ref=e323]
+                          - radio
+                          - text: Informar o nome do atendente apenas na primeira mensagem
+                        - generic [ref=e324] [cursor=pointer]:
+                          - radio "Não informar o nome do atendente" [ref=e325]
+                          - radio
+                          - text: Não informar o nome do atendente
+                      - generic [ref=e326]:
+                        - generic [ref=e327]: Complementos à identificação
+                        - generic [ref=e328]:
+                          - generic [ref=e329]:
+                            - generic [ref=e330]: Prefixo
+                            - textbox "Prefixo" [ref=e331]:
+                              - /placeholder: "Ex.: Atendente"
+                          - generic [ref=e332]:
+                            - generic [ref=e333]: Sufixo
+                            - textbox "Sufixo" [active] [ref=e334]:
+                              - /placeholder: "Ex.: diz:"
+                              - text: "diz:"
+                  - generic [ref=e335]:
+                    - generic [ref=e336]:
+                      - heading "Personalização da distribuição" [level=2] [ref=e337]
+                      - paragraph [ref=e338]: Defina como as conversas são distribuídas entre os atendentes.
+                    - generic [ref=e339]:
+                      - generic [ref=e340]:
+                        - generic [ref=e341]: Máximo de chats simultâneos por atendente
+                        - generic [ref=e342]:
+                          - spinbutton "Máximo de chats simultâneos por atendente" [ref=e343]: "10"
+                          - generic [ref=e344]: Chats
+                      - generic [ref=e345]:
+                        - generic [ref=e346]: Quantidade de chats distribuídos no primeiro login
+                        - generic [ref=e347]:
+                          - spinbutton "Quantidade de chats distribuídos no primeiro login" [ref=e348]: "5"
+                          - generic [ref=e349]: Chats
+                      - generic [ref=e350]:
+                        - generic [ref=e351]: Horário da distribuição automática
+                        - generic [ref=e352]:
+                          - generic [ref=e353]:
+                            - generic [ref=e354]: Horário de início
+                            - generic [ref=e357]:
+                              - img [ref=e358]
+                              - textbox "HH:mm" [ref=e361]: 17:19
+                              - button [ref=e362] [cursor=pointer]:
+                                - img [ref=e363]
+                              - button [ref=e366] [cursor=pointer]:
+                                - img [ref=e367]
+                          - generic [ref=e369]:
+                            - generic [ref=e370]: Horário de término
+                            - generic [ref=e373]:
+                              - img [ref=e374]
+                              - textbox "HH:mm" [ref=e377]: 17:19
+                              - button [ref=e378] [cursor=pointer]:
+                                - img [ref=e379]
+                              - button [ref=e382] [cursor=pointer]:
+                                - img [ref=e383]
+                      - generic [ref=e385]:
+                        - generic [ref=e387] [cursor=pointer]: Usar carteiras de contatos
+                        - switch "Usar carteiras de contatos" [ref=e388] [cursor=pointer]
+                        - checkbox
+                      - generic [ref=e389]:
+                        - generic [ref=e391] [cursor=pointer]: Manter o chat com o dono mesmo quando offline
+                        - switch "Manter o chat com o dono mesmo quando offline" [ref=e392] [cursor=pointer]
+                        - checkbox
+                      - generic [ref=e393]:
+                        - generic [ref=e395] [cursor=pointer]: Redirecionar somente após a primeira interação
+                        - switch "Redirecionar somente após a primeira interação" [ref=e396] [cursor=pointer]
+                        - checkbox
+                - generic [ref=e398]:
+                  - generic [ref=e399]:
+                    - heading "Atendimento" [level=2] [ref=e400]
+                    - paragraph [ref=e401]: O que os operadores podem fazer durante as conversas.
+                  - generic [ref=e402]:
+                    - generic [ref=e403]:
+                      - generic [ref=e405] [cursor=pointer]: Auto atendimento em conversas de grupo
+                      - switch "Auto atendimento em conversas de grupo" [ref=e406] [cursor=pointer]
+                      - checkbox
+                    - generic [ref=e407]:
+                      - generic [ref=e409] [cursor=pointer]: Triagem antes do atendimento
+                      - switch "Triagem antes do atendimento" [checked] [ref=e410] [cursor=pointer]
+                      - checkbox [checked]
+                    - generic [ref=e411]:
+                      - generic [ref=e413] [cursor=pointer]: Atraso na finalização do atendimento
+                      - switch "Atraso na finalização do atendimento" [ref=e414] [cursor=pointer]
+                      - checkbox
+                    - generic [ref=e415]:
+                      - generic [ref=e416]: Tempo de finalização receptivo
+                      - paragraph [ref=e417]: Janela de tolerância após o encerramento. Caso o cliente responda dentro desse prazo, um novo chat não será aberto. Após esse tempo, se receber uma mensagem, um novo chat será iniciado.
+                      - generic [ref=e418]:
+                        - spinbutton "Tempo de finalização receptivo" [ref=e419]: "30"
+                        - generic [ref=e420]: segundos
+                    - generic [ref=e421]:
+                      - generic [ref=e422]: Tempo de finalização ativo
+                      - generic [ref=e423]:
+                        - spinbutton "Tempo de finalização ativo" [ref=e424]: "0"
+                        - generic [ref=e425]: segundos
+                    - generic [ref=e426]:
+                      - generic [ref=e427]: Tempo de triagem do chatbot
+                      - generic [ref=e428]:
+                        - spinbutton "Tempo de triagem do chatbot" [ref=e429]: "21660"
+                        - generic [ref=e430]: segundos
+                    - generic [ref=e431]:
+                      - generic [ref=e432]: Encerrar conversa automaticamente após
+                      - generic [ref=e433]:
+                        - spinbutton "Encerrar conversa automaticamente após" [ref=e434]: "259200"
+                        - generic [ref=e435]: segundos
+                    - generic [ref=e436]:
+                      - generic [ref=e437]:
+                        - generic [ref=e438]: Horário comercial — início
+                        - generic [ref=e441]:
+                          - img [ref=e442]
+                          - textbox "HH:mm" [ref=e445]: 17:19
+                          - button [ref=e446] [cursor=pointer]:
+                            - img [ref=e447]
+                          - button [ref=e450] [cursor=pointer]:
+                            - img [ref=e451]
+                      - generic [ref=e453]:
+                        - generic [ref=e454]: Horário comercial — término
+                        - generic [ref=e457]:
+                          - img [ref=e458]
+                          - textbox "HH:mm" [ref=e461]: 17:19
+                          - button [ref=e462] [cursor=pointer]:
+                            - img [ref=e463]
+                          - button [ref=e466] [cursor=pointer]:
+                            - img [ref=e467]
+  - region "Notifications (F8)":
+    - list

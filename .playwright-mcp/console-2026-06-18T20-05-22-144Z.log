@@ -1,0 +1,40 @@
+[    1769ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1
+[    1787ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/:0
+[    2528ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://homolog.qa.poli.digital/credits/balance:0
+[    2564ms] [ERROR] WebSocket connection to 'wss://ms.qa.poli.digital/spa-websocket-ativo?auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6InBvbGlfdXNlciIsInVzZXIiOnsiaWQiOjEwMTgzNiwiZW1haWwiOiJ5dXJpLmFsY2FudGFyYUBwb2xpLmRpZ2l0YWwiLCJuYW1lIjoiIiwiY3VzdG9tZXJfaWQiOjQ2NjY3LCJjdXN0b21lcnMiOls0NjY2N10sInJvbGVzIjpbMiw1XSwicGVybWlzc2lvbnMiOltdfSwicGVybWlzc2lvbnMiOltdLCJpYXQiOjE3ODE2OTcwOTEsImV4cCI6MTc4MTc4MzQ5MX0.AtYgLmk35pFbHVCkeojupkdu3pJ9YOlI3mo7SReaVbQ&customer_id=46667' failed: HTTP Authentication failed; no valid credentials available @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1
+[    2567ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/users/settings/language:0
+[    2571ms] [LOG] websocket on close - ws_unauthorized false @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1
+[    2930ms] [ERROR] Amplitude Logger [Error]: Failed to fetch @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1
+[    2932ms] [WARNING] Amplitude Logger [Warn]: {code: 0, error: "Status 'failed' provided for 1 events"} @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1
+[    3137ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[    3627ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[    3792ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/users/settings/language:0
+[    4606ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.qa.poli.digital/auth/refresh-token:0
+[    4607ms] [ERROR] refreshRequestError:  rd @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1
+[    4607ms] [ERROR] refreshError:  rd @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1
+[    4608ms] [ERROR] [UserPreferencesService] Failed to get language: rd @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1
+[    4890ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[    4898ms] [WARNING] Notifications permission has been blocked as the user has ignored the permission prompt several times. This can be reset in Page Info which can be accessed by clicking the tune icon next to the URL. See https://www.chromestatus.com/feature/6443143280984064 for more information. @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[    9202ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.qa.poli.digital/auth/token:0
+[    9203ms] [ERROR] Erro ao fazer login com o Heimdall rd @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1
+[    9203ms] [ERROR] login error Error: Token not received!
+    at https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:3377425
+    at f (https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:1825709)
+    at Generator.<anonymous> (https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:1827061)
+    at Generator.next (https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:1826138)
+    at d (https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:2816545)
+    at l (https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:2816879) @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1
+[    9318ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[   25572ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://heimdall.qa.poli.digital/auth/token:0
+[   25573ms] [ERROR] Erro ao fazer login com o Heimdall rd @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1
+[   25574ms] [ERROR] login error Error: Token not received!
+    at https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:3377425
+    at f (https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:1825709)
+    at Generator.<anonymous> (https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:1827061)
+    at Generator.next (https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:1826138)
+    at d (https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:2816545)
+    at l (https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:2:2816879) @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1
+[   25681ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://app-spa.qa.poli.digital/login?force_login=true:0
+[   62633ms] [LOG] openSocketRequest @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1
+[   63129ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://heimdall.qa.poli.digital/auth/foundation/allowed:0
+[   63130ms] [ERROR] Erro ao verificar permissão de uso da nova tela de chats rd @ https://app-spa.qa.poli.digital/static/js/main.84b6b384.js:1

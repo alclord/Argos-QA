@@ -1,0 +1,12 @@
+[   17817ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://voxservice.poli.digital/contact/call/34177001:0
+[   17819ms] Error
+    at makeCall (https://vox.poli.digital/dist/bundle.js:32471:19)
+[ 1518205ms] Permission dismissed
+[ 1521481ms] INVALID_STATE_ERROR: Invalid status: 8
+    at RTCSession.terminate (https://vox.poli.digital/dist/bundle.js:19270:15)
+    at ClientManager.hangup (https://vox.poli.digital/dist/bundle.js:32303:33)
+    at HTMLButtonElement.<anonymous> (https://vox.poli.digital/dist/bundle.js:32364:24)
+[ 1522237ms] INVALID_STATE_ERROR: Invalid status: 8
+    at RTCSession.terminate (https://vox.poli.digital/dist/bundle.js:19270:15)
+    at ClientManager.hangup (https://vox.poli.digital/dist/bundle.js:32303:33)
+    at HTMLButtonElement.<anonymous> (https://vox.poli.digital/dist/bundle.js:32364:24)

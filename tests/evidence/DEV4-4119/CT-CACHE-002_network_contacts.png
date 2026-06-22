@@ -1,0 +1,7 @@
+258. [GET] https://foundation-api-canary.poli.digital/v3/contacts/9bac495b-2f76-4a93-ac67-7472b7071e74?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages => [200] 
+260. [POST] https://foundation-api-canary.poli.digital/v3/contacts/9bac495b-2f76-4a93-ac67-7472b7071e74/read => [204] 
+262. [GET] https://foundation-api-canary.poli.digital/v3/contacts/9bac495b-2f76-4a93-ac67-7472b7071e74?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages => [200] 
+265. [GET] https://foundation-api-canary.poli.digital/v3/contacts/9bac495b-2f76-4a93-ac67-7472b7071e74/messages?per_page=15&order=-timestamp&include=ack,timestamp,account_channel,contact,author,template,context,preview,components,interactive,metadata,note,error_code => [200] 
+266. [GET] https://foundation-api-canary.poli.digital/v3/contacts/9bac495b-2f76-4a93-ac67-7472b7071e74/protocol => [200] 
+
+Note: 65 static requests not shown, run with "static" option to see them.

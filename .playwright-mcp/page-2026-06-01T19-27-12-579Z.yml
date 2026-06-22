@@ -1,0 +1,87 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - img [ref=e7]
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link [ref=e11] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4861ccdae5dc6d31bfa446387abf7cb7b747c6ff&toPath=https://app.poli.digital/home
+              - img [ref=e13]
+          - listitem [ref=e16]:
+            - link [ref=e17] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e19]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4861ccdae5dc6d31bfa446387abf7cb7b747c6ff&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e30]
+          - listitem [ref=e32]:
+            - link [ref=e33] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4861ccdae5dc6d31bfa446387abf7cb7b747c6ff&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e35]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4861ccdae5dc6d31bfa446387abf7cb7b747c6ff&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e41]
+          - listitem [ref=e43]:
+            - link [ref=e44] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4861ccdae5dc6d31bfa446387abf7cb7b747c6ff&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e46]
+          - listitem [ref=e49]:
+            - link [ref=e50] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=4861ccdae5dc6d31bfa446387abf7cb7b747c6ff&toPath=https://app.poli.digital/settings/1
+              - img [ref=e52]
+          - listitem [ref=e55]:
+            - link [ref=e56] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e58]
+          - listitem [ref=e62]:
+            - link [ref=e63] [cursor=pointer]:
+              - /url: /channels
+              - img [ref=e65]
+          - listitem [ref=e71]:
+            - link [ref=e72] [cursor=pointer]:
+              - /url: /teams
+              - img [ref=e74]
+          - listitem [ref=e79]:
+            - link [ref=e80] [cursor=pointer]:
+              - /url: /templates
+              - img [ref=e82]
+        - list [ref=e85]:
+          - listitem [ref=e86]:
+            - button "Consumo de créditos" [ref=e87] [cursor=pointer]:
+              - img [ref=e88]
+          - listitem [ref=e91]:
+            - button "YA" [ref=e92] [cursor=pointer]:
+              - generic [ref=e97]: YA
+          - listitem [ref=e99]:
+            - button [ref=e100] [cursor=pointer]:
+              - img [ref=e101]
+          - listitem [ref=e103]:
+            - generic [ref=e105]: 3.5.340
+    - main [ref=e106]:
+      - generic [ref=e108]:
+        - navigation "breadcrumb" [ref=e110]:
+          - link "Página inicial" [ref=e112] [cursor=pointer]:
+            - /url: /
+          - img [ref=e113]
+          - generic [ref=e115]: Gestão de Usuários
+        - generic [ref=e118]:
+          - generic [ref=e120]:
+            - textbox "Buscar por nome ou e-mail..." [ref=e121]
+            - button [ref=e122] [cursor=pointer]:
+              - img [ref=e123]
+          - generic [ref=e126]:
+            - button "Usuários Excluídos" [ref=e127] [cursor=pointer]:
+              - img [ref=e128]
+              - text: Usuários Excluídos
+            - button "Novo Usuário" [ref=e131] [cursor=pointer]:
+              - img [ref=e132]
+              - text: Novo Usuário
+  - region "Notifications (F8)":
+    - list

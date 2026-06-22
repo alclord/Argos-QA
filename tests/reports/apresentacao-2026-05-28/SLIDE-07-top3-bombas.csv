@@ -1,0 +1,4 @@
+﻿Posição;Módulo;BOMBA Score;Bugs N2 sem Fix;Usuários Sentry;O que pode acontecer;Ação urgente
+#1;Chat / Mensagens;85;6 de 8;1.817;Fix incompleto (DEV4-4078) + nova feature sobre camada quebrada (DEV4-4229) = regressão silenciosa pós-deploy;Bloquear DEV4-4229 até DEV4-4078 estável 48h em produção
+#2;Canais / WhatsApp;57;9 de 9;—;DEV4-4023 (verificação Meta/WABA) entra sobre 9 bugs de canal sem corretivo = falhas mascaradas por compliance;Smoke test completo de canais antes de qualquer merge do PLBV
+#3;Distribuição / Filas;49;10 de 10;—;86 dias sem fix no bug mais antigo do sistema. Nova feature (tela de gestão) sendo planejada sobre motor quebrado;Sprint dedicado de bugs de distribuição. Bloquear DEV4-4003

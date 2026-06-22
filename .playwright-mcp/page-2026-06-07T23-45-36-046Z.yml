@@ -1,0 +1,994 @@
+- generic [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: 🔮
+      - generic [ref=e5]:
+        - generic [ref=e6]: Argos Predict
+        - generic [ref=e7]: QA Risk Intelligence
+    - generic [ref=e8]:
+      - generic "Capa" [ref=e9] [cursor=pointer]
+      - generic "Indicadores" [ref=e10] [cursor=pointer]
+      - generic "Ranking de Risco" [ref=e11] [cursor=pointer]
+      - generic "Causa Raiz" [ref=e12] [cursor=pointer]
+      - 'generic "Zoom: Chat" [ref=e13] [cursor=pointer]'
+      - 'generic "Zoom: Canais" [ref=e14] [cursor=pointer]'
+      - 'generic "Zoom: Distribuição" [ref=e15] [cursor=pointer]'
+      - generic "Radar de Serviços" [ref=e16] [cursor=pointer]
+      - generic "Bombas" [ref=e17] [cursor=pointer]
+      - generic "Qualidade" [ref=e18] [cursor=pointer]
+      - generic "PRs em Risco" [ref=e19] [cursor=pointer]
+      - generic "Timeline" [ref=e20] [cursor=pointer]
+      - generic "Ações" [ref=e21] [cursor=pointer]
+    - generic [ref=e22]:
+      - generic "Modo de visualização" [ref=e23]:
+        - button "🚨 Agora" [ref=e24] [cursor=pointer]
+        - button "📈 Tendência" [ref=e25] [cursor=pointer]
+      - button "⊞" [ref=e26] [cursor=pointer]
+      - generic [ref=e27]: Timeline
+      - generic [ref=e28]: 12 / 13
+      - button "←" [ref=e29] [cursor=pointer]
+      - button "→" [active] [ref=e30] [cursor=pointer]
+  - generic [ref=e31]:
+    - generic:
+      - generic:
+        - generic:
+          - generic: 🚨 SITUAÇÃO CRÍTICA
+          - generic: "07 de Junho de 2026 · Janela: 14 dias"
+        - heading "Argos Predict" [level=1]
+        - generic: Mapa de risco semanal · Jira Suporte (100 N1 Aberto) · DEV4 (22 backlog + 0 em dev) · Sentry (100 issues + Δ) · GitHub (28+ PRs)
+        - generic:
+          - generic: ↑ Autenticação +5pts
+          - generic: ↑ Chat +2pts
+          - generic: ↑ WebSocket +2pts
+          - generic: ↓ Distribuição -11pts
+          - generic: ↓ Contatos -10pts
+        - generic:
+          - generic:
+            - generic: Situação atual
+            - generic:
+              - generic:
+                - generic: "64"
+                - generic:
+                  - generic: Chat / Mensagens
+                  - generic: 🚨 Emergência
+              - generic:
+                - generic: "30"
+                - generic:
+                  - generic: Canais / WhatsApp
+                  - generic: 🟡 Alto
+              - generic:
+                - generic: "27"
+                - generic:
+                  - generic: Distribuição / Filas
+                  - generic: 🟡 Alto
+              - generic: 5 módulos em zona de risco
+          - generic:
+            - generic: ⚡ Ação imediata
+            - generic:
+              - generic:
+                - generic: P0
+                - generic: Rollback ou hotfix SPA:1509 (Dev4-4278). omnispa AxiosError 401 ESCALATING com 4…
+              - generic:
+                - generic: P0
+                - generic: Investigar Hermes SQS event-bus-sqs connection errors. DEV4-4262 merged 06-03 → …
+              - generic:
+                - generic: P0
+                - generic: Criar DEV4 corretivo para chats presos na fila (SM-8288, SM-8292, SM-8243). Módu…
+            - generic:
+              - strong: "✅ ✅ Resolvido: bugs recentes"
+              - text: ": DEV4-4338 (busca contato, 06-05) · DEV4-4286 (painel lateral…"
+              - strong: Canais / WhatsApp
+              - text: "-7 pts (melhorando)"
+              - strong: Distribuição / Filas
+              - text: "-11 pts (melhorando)"
+              - strong: Contatos / Busca
+              - text: "-10 pts (melhorando)"
+    - generic:
+      - generic: Visão Geral
+      - heading "O que está acontecendo esta semana" [level=2]
+      - generic:
+        - generic: 🔴 Requer atenção agora
+        - generic:
+          - generic "Chat · Distribuição · Canais · Autenticação · WebSocket — todos score ≥ 10.":
+            - generic: 🔴
+            - generic: "5"
+            - generic: Módulos críticos (ALTO)
+            - generic: Chat · Distribuição · Canais · Autenticação · WebSocket — todos score ≥ 10.
+            - generic: ↓ -2 vs semana anterior
+            - generic: "Meta: < 3"
+          - generic "omnispa encoder (1.312u) · Uncompressed Asset (629u) · AxiosError 401 omnispa ESCALANDO (496u) · outros.":
+            - generic: 🔴
+            - generic: 2.7K+
+            - generic: Usuários afetados (prod)
+            - generic: omnispa encoder (1.312u) · Uncompressed Asset (629u) · AxiosError 401 omnispa ES…
+            - generic: ↓ -1.3K vs semana anterior
+          - 'generic "17 bugs em SM Aberto (14d): Chat (9 bugs) · Distribuição (3) · Canais (2) · Contatos (1) · Upload (1) · Outros (1)."':
+            - generic: 🟡
+            - generic: "17"
+            - generic: Bugs ativos N1
+            - generic: "17 bugs em SM Aberto (14d): Chat (9 bugs) · Distribuição (3) · Canais (2) · Cont…"
+            - generic: ↑ +2 vs semana anterior
+        - generic: 📊 Contexto — dimensão do problema
+        - generic:
+          - generic "Distribuição (HEAT=13, DEV_ATTENTION=0) · Autenticação (HEAT=3, DEV_ATTENTION=0). Zero corretivos no backlog.":
+            - generic: 🔴
+            - generic: "2"
+            - generic: Módulos negligenciados
+            - generic: Distribuição (HEAT=13, DEV_ATTENTION=0) · Autenticação (HEAT=3, DEV_ATTENTION=0)…
+            - generic: ↓ -2 vs semana anterior
+          - 'generic "2 PRs confirmados com bug pós-merge: SPA:1509 (→ AxiosError 401) · FoundationAPI:1102 (→ Hermes SQS errors)."':
+            - generic: 📉
+            - generic: "2"
+            - generic: DORA CFR instável
+            - generic: "2 PRs confirmados com bug pós-merge: SPA:1509 (→ AxiosError 401) · FoundationAPI…"
+            - generic: → 0 vs semana anterior
+          - generic "DEV4-4249 (4 dias stale · Upload/Mídia) · DEV4-4274 (2 dias stale · Canais). Jira atualizado mas cenários não.":
+            - generic: 🧪
+            - generic: "2"
+            - generic: Cenários QA desatualizados
+            - generic: DEV4-4249 (4 dias stale · Upload/Mídia) · DEV4-4274 (2 dias stale · Canais). Jir…
+            - generic: → 0 vs semana anterior
+          - 'generic "4 issues NEW/ESCALATING em omnispa (AxiosError 401: 496u · Uncompressed Asset: 629u · Network Error ×2: 47u total)."':
+            - generic: 📊
+            - generic: "4"
+            - generic: Sentry escalating (omnispa)
+            - generic: "4 issues NEW/ESCALATING em omnispa (AxiosError 401: 496u · Uncompressed Asset: 6…"
+            - generic: ↑ +4 vs semana anterior
+            - generic: "Meta: 0"
+        - generic: ✅ Melhorias desta semana
+        - generic:
+          - generic "DEV4-4338 (busca contato, 06-05) · DEV4-4286 (painel lateral, 06-05) · DEV4-4180 (config gerais, 06-06) aprovados.":
+            - generic: ✅
+            - generic: "3"
+            - generic: "✅ Resolvido: bugs recentes"
+            - generic: DEV4-4338 (busca contato, 06-05) · DEV4-4286 (painel lateral, 06-05) · DEV4-4180…
+            - generic: ↑ +3 vs semana anterior
+    - generic:
+      - generic: Mapa de Risco
+      - heading "Onde estão os problemas" [level=2]
+      - paragraph: "Baseado em sinais ativos: bugs N1 abertos, erros em produção (Sentry) e atividade de código. Quanto maior a barra, mais urgente."
+      - generic:
+        - generic: "Zona:"
+        - button "Todos"
+        - button "✅ Estável"
+        - button "🔵 Atenção"
+        - button "🟡 Alto"
+        - button "🔴 Crítico"
+        - button "🚨 Emergência"
+      - generic:
+        - generic:
+          - generic:
+            - generic: ✅ Estável
+            - generic: 🔵 Atenção
+            - generic: 🟡 Alto
+            - generic: 🔴 Crítico
+            - generic: 🚨 Emergência
+          - generic: As barras são proporcionais ao score total · Clique em qualquer barra para ver detalhes
+      - generic:
+        - generic: Variação vs semana anterior
+        - generic:
+          - generic: 🚨
+          - generic: Chat / Mensagens
+          - generic: ↑2
+        - generic:
+          - generic: 🟡
+          - generic: Canais / WhatsApp
+          - generic: ↓7
+        - generic:
+          - generic: 🟡
+          - generic: Distribuição / Filas
+          - generic: ↓11
+        - generic:
+          - generic: 🟡
+          - generic: Autenticação
+          - generic: ↑5
+        - generic:
+          - generic: 🔵
+          - generic: WebSocket / Presença
+          - generic: ↑2
+        - generic:
+          - generic: ✅
+          - generic: Contatos / Busca
+          - generic: ↓10
+        - generic:
+          - generic: ✅
+          - generic: Upload / Mídia
+          - generic: ↓3
+        - generic:
+          - generic: ✅
+          - generic: Integrações Externas
+          - generic: ↑1
+        - generic:
+          - generic: ✅
+          - generic: Jarvis / IA
+          - generic: ↓1
+        - generic:
+          - generic: ✅
+          - generic: Permissões / Roles
+        - generic:
+          - generic: ✅
+          - generic: Configurações
+    - generic:
+      - generic: Causa Raiz
+      - heading "Quais serviços estão causando os problemas" [level=2]
+      - paragraph: Para cada área com problemas, identificamos qual sistema é o mais provável responsável.
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: 💬
+              - generic: omnispa + polichat-spa + FoundationAPI
+              - generic: Chat SPA
+              - generic: SPA 15 PRs · FoundationAPI 13 PRs · polichat-spa
+            - generic:
+              - generic: "31"
+              - generic:
+                - text: bugs
+                - text: atribuídos
+          - generic: 9 bugs N1 ativos + encoder conflict (1.312u) + Uncompressed Asset (629u) + AxiosError 401 ESCALATING (496u). Release 06-06 gerou 16 novos grupos de erro Sentry.
+          - generic:
+            - generic: Chat / Mensagens
+            - generic: Autenticação
+          - generic:
+            - generic: → omnispa AxiosError 401 ESCALATING — suspect commit SPA:1509 (6 min após merge)
+            - generic: → Uncompressed Asset 629 usuários — regressão de build pós-deploy
+            - generic: → polichat-spa encoder conflict crônico — 1.312 usuários
+            - generic: → 15 PRs no SPA + 13 no FoundationAPI = alta entropia + release degradada
+          - generic:
+            - generic:
+              - generic: Confiança da atribuição
+              - generic: Alta
+        - generic:
+          - generic:
+            - generic:
+              - generic: 🔀
+              - generic: dispatch-service
+              - generic: Distribuição
+              - generic: dispatch (0 PRs) · polichat-web-app
+            - generic:
+              - generic: "13"
+              - generic:
+                - text: bugs
+                - text: atribuídos
+          - generic: 3 bugs N1 ativos (chats presos + distribuição incorreta). Race condition no Redis lock documentado na KB. Zero atenção dev — módulo Negligenciado (HEAT=13, DEV=0).
+          - generic:
+            - generic: Distribuição / Filas
+          - generic:
+            - generic: "→ SM-8288: Chat preso na fila sem distribuição"
+            - generic: "→ SM-8243: Chat para atendente fora da operação — regra de presença violada"
+            - generic: → dispatch 'Chat created' Sentry ongoing — 1.935 ocorrências
+            - generic: "→ Módulo Negligenciado: HEAT=13, DEV_ATTENTION=0"
+          - generic:
+            - generic:
+              - generic: Confiança da atribuição
+              - generic: Média
+        - generic:
+          - generic:
+            - generic:
+              - generic: 📱
+              - generic: waba-webhook + meta-whatsapp-cloud-api
+              - generic: WhatsApp
+              - generic: waba-webhook (2 PRs) · meta-business (1 PR)
+            - generic:
+              - generic: "10"
+              - generic:
+                - text: bugs
+                - text: atribuídos
+          - generic: "2 bugs N1: conta Meta restrita + WABA 24h rule violation. ENABLE_ACK_LOG missing crônico (449k ocorrências). Regra 24h WABA documentada como frágil na KB."
+          - generic:
+            - generic: Canais / WhatsApp
+          - generic:
+            - generic: "→ SM-8228: Conta WABA restrita pela Meta"
+            - generic: "→ SM-8219: Janela 24h WABA não liberada após resposta do cliente"
+            - generic: → meta-whatsapp-cloud-api ENABLE_ACK_LOG missing — 449k ocorrências (crônico)
+            - generic: → waba-webhook PR#3 + meta-business PR#22 no período
+          - generic:
+            - generic:
+              - generic: Confiança da atribuição
+              - generic: Alta
+        - generic:
+          - generic:
+            - generic:
+              - generic: 🔐
+              - generic: heimdall + omnispa auth
+              - generic: Auth / Heimdall
+              - generic: heimdall (×2.0 cross-service) · 1 PR
+            - generic:
+              - generic: "3"
+              - generic:
+                - text: bugs
+                - text: atribuídos
+          - generic: omnispa AxiosError 401 ESCALATING (496u). Suspect commit SPA:1509. heimdall ×2.0 — falha afeta 100% dos usuários. Zero corretivo planejado.
+          - generic:
+            - generic: Autenticação
+          - generic:
+            - generic: → omnispa AxiosError 401 ESCALATING — 496 usuários desde 06-05
+            - generic: "→ Suspect commit SPA:1509 (Dev4-4278): 6 min entre merge e Sentry"
+            - generic: → polichat-spa AxiosError 401 — 863 usuários (melhorando -31%)
+            - generic: → Zero card DEV4 de correção para Autenticação
+          - generic:
+            - generic:
+              - generic: Confiança da atribuição
+              - generic: Alta
+        - generic:
+          - generic:
+            - generic:
+              - generic: ⚡
+              - generic: Hermes + EventBus (FoundationAPI)
+              - generic: WebSocket / Hermes
+              - generic: FoundationAPI:1102 (DEV4-4262) merged 06-03
+            - generic:
+              - generic: "2"
+              - generic:
+                - text: bugs
+                - text: atribuídos
+          - generic: foundationapi SQS event-bus-sqs errors NOVO desde 06-05. DEV4-4262 merged 06-03 — latência de 2 dias. Possível perda silenciosa de mensagens em tempo real.
+          - generic:
+            - generic: WebSocket / Presença
+          - generic:
+            - generic: → foundationapi InvalidArgumentException SQS [event-bus-sqs] — 1.160 oc. (novo 06-05)
+            - generic: → foundationapi MaxAttemptsExceededException queue legacy — 1.013 oc.
+            - generic: "→ DEV4-4262 PR#1102 (454h review, 45 arquivos): PR de alto risco confirmado"
+          - generic:
+            - generic:
+              - generic: Confiança da atribuição
+              - generic: Média
+        - generic:
+          - generic:
+            - generic:
+              - generic: 🔗
+              - generic: CRM Bridge + polichat-web-app
+              - generic: Integrações
+              - generic: polichat-web-app + foundationapi CRM
+            - generic:
+              - generic: "3"
+              - generic:
+                - text: bugs
+                - text: atribuídos
+          - generic: "Novos CRM errors hoje (06-07): polichat-web-app (92509, 92508) + foundationapi (06-06). Sem card de correção. SM-8267 (boleto inválido) ativo."
+          - generic:
+            - generic: Integrações Externas
+          - generic:
+            - generic: → polichat-web-app CRM errors — novo HOJE 06-07
+            - generic: → foundationapi CRMException Triction error — novo 06-06
+            - generic: "→ SM-8267: Boleto gerado inválido para cliente"
+          - generic:
+            - generic:
+              - generic: Confiança da atribuição
+              - generic: Baixa
+    - generic:
+      - generic: "Zoom: CRÍTICO"
+      - heading "Chat / Mensagens — Análise Detalhada" [level=2]
+      - generic:
+        - generic:
+          - generic:
+            - generic: "9"
+            - generic: bugs N1 abertos agora
+          - generic:
+            - generic: "9"
+            - generic: reclamações esta semana
+          - generic:
+            - generic: "33"
+            - generic: dias do erro mais antigo no Sentry
+        - generic:
+          - generic: "Chat é o módulo com maior pressão no sistema: 9 bugs N1 abertos, encoder conflict crônico atingindo 1.312 usuários, e omnispa com 3 issues novos/escalando após release 06-06. Suspect commit identificado (SPA:1509). Nova sidebar (PR#1506, 3.500 linhas) + Hermes EventBus (PR#1102, 2.800 linhas) = período de altíssimo risco de regressão. Zero corretivos em desenvolvimento."
+          - generic:
+            - generic: Serviços suspeitos
+            - generic:
+              - generic: omnispa + SPA (15 PRs)
+              - generic: "22"
+            - generic:
+              - generic: polichat-spa (encoder)
+              - generic: "9"
+      - generic:
+        - generic: Padrão dos problemas — 9 bugs agrupados por sintoma
+        - generic:
+          - generic:
+            - generic: 🔴 Mensagens não aparecem / sistema travado
+            - generic: "Provável origem: omnispa / polichat-web-app"
+          - generic: "4"
+          - generic: bugs
+        - generic:
+          - generic:
+            - generic: 🔴 AxiosError 401 em cascata (496u ESCALATING)
+            - generic: "Provável origem: omnispa / heimdall"
+          - generic: "3"
+          - generic: bugs
+        - generic:
+          - generic:
+            - generic: 🟡 Conversa muda de cliente durante digitação
+            - generic: "Provável origem: foundation-spa / WebSocket"
+          - generic: "1"
+          - generic: bugs
+        - generic:
+          - generic:
+            - generic: 🟡 Uncompressed Asset — degradação de carregamento
+            - generic: "Provável origem: omnispa CDN/Build"
+          - generic: "1"
+          - generic: bugs
+      - button "▶ Ver análise técnica e recomendações":
+        - generic: ▶
+        - text: Ver análise técnica e recomendações
+      - generic:
+        - generic:
+          - generic: "🔧 O que o dev está fazendo: ZERO cards em desenvolvimento ativo. DEV4-4166 (Nova Estrutura, Highest) e DEV4-4248 (sidebar) em backlog. Sem corretivo para os bugs N1 nem para o encoder conflict crônico (1.312u há 33+ dias)."
+          - generic: "⚡ Ação recomendada: P0: Rollback SPA:1509 (Dev4-4278) ou hotfix urgente — omnispa 401 ESCALATING (496u). P0: Investigar Hermes SQS (DEV4-4262). P1: Criar DEV4 corretivo para encoder conflict crônico."
+    - generic:
+      - generic: "Zoom: ALTO"
+      - heading "Canais / WhatsApp — Análise Detalhada" [level=2]
+      - generic:
+        - generic:
+          - generic:
+            - generic: "2"
+            - generic: bugs N1 abertos agora
+          - generic:
+            - generic: "2"
+            - generic: reclamações esta semana
+          - generic:
+            - generic: "90"
+            - generic: dias do erro mais antigo no Sentry
+        - generic:
+          - generic: "Dois bugs N1 críticos: conta Meta restrita (impacta envio para todos os clientes do canal) e WABA 24h rule violation (janela não liberada mesmo com resposta do cliente). O sinal crônico ENABLE_ACK_LOG missing (449k ocorrências em 14 dias) indica que acks de mensagens podem estar sendo perdidos silenciosamente."
+          - generic:
+            - generic: Serviços suspeitos
+            - generic:
+              - generic: waba-webhook
+              - generic: "6"
+            - generic:
+              - generic: meta-whatsapp-cloud-api
+              - generic: "4"
+      - generic:
+        - generic: Padrão dos problemas — 2 bugs agrupados por sintoma
+        - generic:
+          - generic:
+            - generic: 🔴 Conta Meta restrita — bloqueio total de envio
+            - generic: "Provável origem: meta-whatsapp-cloud-api / Meta"
+          - generic: "1"
+          - generic: bugs
+        - generic:
+          - generic:
+            - generic: 🔴 WABA 24h window não liberada após resposta do cliente
+            - generic: "Provável origem: waba-webhook"
+          - generic: "1"
+          - generic: bugs
+        - generic:
+          - generic:
+            - generic: 🟡 ENABLE_ACK_LOG missing — acks possivelmente perdidos
+            - generic: "Provável origem: meta-whatsapp-cloud-api"
+          - generic: "1"
+          - generic: bugs
+      - button "▶ Ver análise técnica e recomendações":
+        - generic: ▶
+        - text: Ver análise técnica e recomendações
+      - generic:
+        - generic:
+          - generic: "🔧 O que o dev está fazendo: DEV4-4238/4239/4240/4274/4276 em backlog (Nova Interface de Canais). ZERO cards de correção para os bugs N1 ativos. DEV4-4274 com cenário QA 2 dias stale."
+          - generic: "⚡ Ação recomendada: P1: Resolver conta Meta restrita (SM-8228) — abrir ticket Meta Business Support. P1: Corrigir WABA 24h rule no waba-webhook (SM-8219). P2: Configurar ENABLE_ACK_LOG no meta-whatsapp-cloud-api."
+    - generic:
+      - generic: "Zoom: ALTO"
+      - heading "Distribuição / Filas — Análise Detalhada" [level=2]
+      - generic:
+        - generic:
+          - generic:
+            - generic: "3"
+            - generic: bugs N1 abertos agora
+          - generic:
+            - generic: "3"
+            - generic: reclamações esta semana
+          - generic:
+            - generic: "180"
+            - generic: dias do erro mais antigo no Sentry
+        - generic:
+          - generic: "Três bugs N1 ativos (todos abertos em 06-05): chats presos na fila, distribuição para atendente offline e mensagens presas pós-disparo. O race condition no Redis lock (documentado na KB) é a causa raiz mais provável. ZERO atenção dev — módulo Negligenciado com GAP=13 (maior gap do sistema)."
+          - generic:
+            - generic: Serviços suspeitos
+            - generic:
+              - generic: dispatch-service (Redis lock)
+              - generic: "10"
+            - generic:
+              - generic: polichat-web-app
+              - generic: "3"
+      - generic:
+        - generic: Padrão dos problemas — 3 bugs agrupados por sintoma
+        - generic:
+          - generic:
+            - generic: 🔴 Chats presos na fila — não distribuídos
+            - generic: "Provável origem: dispatch-service (Redis lock)"
+          - generic: "2"
+          - generic: bugs
+        - generic:
+          - generic:
+            - generic: 🔴 Atribuição para atendente fora da operação
+            - generic: "Provável origem: dispatch-service (presença)"
+          - generic: "1"
+          - generic: bugs
+        - generic:
+          - generic:
+            - generic: 🟡 'Chat created' sem ID — erro recorrente Sentry
+            - generic: "Provável origem: dispatch-service"
+          - generic: "1"
+          - generic: bugs
+      - button "▶ Ver análise técnica e recomendações":
+        - generic: ▶
+        - text: Ver análise técnica e recomendações
+      - generic:
+        - generic:
+          - generic: "🔧 O que o dev está fazendo: ZERO cards de desenvolvimento ativo ou correção no backlog. DEV4-4227 (remover filtro) e DEV4-3446 (fechamento automático) são features, não corretivos. Módulo Negligenciado: HEAT=13, DEV_ATTENTION=0."
+          - generic: "⚡ Ação recomendada: P0: Criar DEV4 corretivo URGENTE para verificação de presença do atendente antes da distribuição. P0: Investigar race condition Redis lock no dispatch-service para os 3 bugs de fila presa."
+    - generic:
+      - generic: Zoom nos Serviços
+      - heading "Cobertura de dev vs. pressão por serviço" [level=2]
+      - paragraph: Cada eixo é um serviço. Vermelho = bugs. Verde = dev ativo. Âmbar = risco técnico latente (KB + Sentry + churn). Azul tracejado = planejado.
+      - generic:
+        - generic:
+          - generic:
+            - button "Score de problemas": Score de problemas
+            - button "Dev trabalhando agora": Dev trabalhando agora
+            - button "Dev planejado (em breve)": Dev planejado (em breve)
+            - button "Risco técnico": Risco técnico
+            - button "resetar"
+          - generic:
+            - button "🕸️ Radar"
+            - button "📊 Tabela"
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic: Chat / Mensagens (omnispa + polichat-spa)
+                - generic: Chat
+                - generic: SPA (15 PRs) · FoundationAPI (13 PRs)
+              - generic: 🔴 Crítico
+            - generic:
+              - generic:
+                - generic: 🐛 Score bugs
+                - generic: "31"
+              - generic: 9 N1 + 22 Sentry
+              - generic:
+                - generic: ⚡ Dev ativo
+                - generic: "0"
+              - generic:
+                - generic: 📋 Planejado
+                - generic: "6"
+              - generic:
+                - generic: 🔬 Risco tec.
+                - generic: "33"
+            - generic: 9 N1 bugs ativos + encoder conflict 1.312u + omnispa Uncompressed 629u
+          - generic:
+            - generic:
+              - generic:
+                - generic: Canais / WhatsApp (waba-webhook + meta-whatsapp-cloud-api)
+                - generic: Canais
+                - generic: waba-webhook (2 PRs)
+              - generic: 🟢 OK
+            - generic:
+              - generic:
+                - generic: 🐛 Score bugs
+                - generic: "10"
+              - generic: 2 N1 + 8 Sentry
+              - generic:
+                - generic: ⚡ Dev ativo
+                - generic: "0"
+              - generic:
+                - generic: 📋 Planejado
+                - generic: "7"
+              - generic:
+                - generic: 🔬 Risco tec.
+                - generic: "20"
+            - generic: 2 N1 bugs + Meta restriction + WABA 24h rule violation + ENABLE_ACK_LOG crônico (449k oc.)
+          - generic:
+            - generic:
+              - generic:
+                - generic: Distribuição / Filas (dispatch-service)
+                - generic: Distribuição
+                - generic: dispatch (0 PRs) · polichat-web-app
+              - generic: 🔴 Crítico
+            - generic:
+              - generic:
+                - generic: 🐛 Score bugs
+                - generic: "13"
+              - generic: 3 N1 + 10 Sentry
+              - generic:
+                - generic: ⚡ Dev ativo
+                - generic: "0"
+              - generic:
+                - generic: 📋 Planejado
+                - generic: "0"
+              - generic:
+                - generic: 🔬 Risco tec.
+                - generic: "14"
+            - generic: "3 N1 bugs ativos: chats presos na fila e distribuição incorreta"
+          - generic:
+            - generic:
+              - generic:
+                - generic: Autenticação (heimdall × 2.0)
+                - generic: Autenticação
+                - generic: heimdall (1 PR) · omnispa (ESCALATING)
+              - generic: 🟢 OK
+            - generic:
+              - generic:
+                - generic: 🐛 Score bugs
+                - generic: "3"
+              - generic: 0 N1 + 3 Sentry
+              - generic:
+                - generic: ⚡ Dev ativo
+                - generic: "0"
+              - generic:
+                - generic: 📋 Planejado
+                - generic: "0"
+              - generic:
+                - generic: 🔬 Risco tec.
+                - generic: "22"
+            - generic: omnispa AxiosError 401 ESCALATING (496u) + polichat-spa 401 (863u melhorando)
+          - generic:
+            - generic:
+              - generic:
+                - generic: WebSocket / Presença (Hermes + EventBus)
+                - generic: WebSocket
+                - generic: FoundationAPI Hermes-inbound (DEV4-4262)
+              - generic: 🟢 OK
+            - generic:
+              - generic:
+                - generic: 🐛 Score bugs
+                - generic: "2"
+              - generic: 0 N1 + 2 Sentry
+              - generic:
+                - generic: ⚡ Dev ativo
+                - generic: "0"
+              - generic:
+                - generic: 📋 Planejado
+                - generic: "0"
+              - generic:
+                - generic: 🔬 Risco tec.
+                - generic: "11"
+            - generic: Hermes SQS event-bus-sqs NOVO + MaxAttempts queue legacy
+          - generic:
+            - generic:
+              - generic:
+                - generic: Upload / Mídia
+                - generic: Upload
+                - generic: cdn.polichat.io · S3
+              - generic: 🟢 OK
+            - generic:
+              - generic:
+                - generic: 🐛 Score bugs
+                - generic: "3"
+              - generic: 1 N1 + 2 Sentry
+              - generic:
+                - generic: ⚡ Dev ativo
+                - generic: "0"
+              - generic:
+                - generic: 📋 Planejado
+                - generic: "1"
+              - generic:
+                - generic: 🔬 Risco tec.
+                - generic: "6"
+            - generic: 1 N1 bug (áudios não carregam) + TypeError CDN novo
+          - generic:
+            - generic:
+              - generic:
+                - generic: Jarvis / IA
+                - generic: Jarvis
+                - generic: jarvis (Python) · FoundationAPI AI
+              - generic: 🟢 OK
+            - generic:
+              - generic:
+                - generic: 🐛 Score bugs
+                - generic: "1"
+              - generic: 0 N1 + 1 Sentry
+              - generic:
+                - generic: ⚡ Dev ativo
+                - generic: "0"
+              - generic:
+                - generic: 📋 Planejado
+                - generic: "0"
+              - generic:
+                - generic: 🔬 Risco tec.
+                - generic: "7"
+            - generic: jarvis IntegrityError MySQL ongoing (1.153 oc.)
+          - generic:
+            - generic:
+              - generic:
+                - generic: Integrações Externas (CRM)
+                - generic: Integrações
+                - generic: polichat-web-app CRM · foundationapi CRM
+              - generic: 🟢 OK
+            - generic:
+              - generic:
+                - generic: 🐛 Score bugs
+                - generic: "3"
+              - generic: 0 N1 + 3 Sentry
+              - generic:
+                - generic: ⚡ Dev ativo
+                - generic: "0"
+              - generic:
+                - generic: 📋 Planejado
+                - generic: "0"
+              - generic:
+                - generic: 🔬 Risco tec.
+                - generic: "6"
+            - generic: "Novos CRM errors: foundationapi (06-06) + polichat-web-app (06-07 HOJE)"
+    - generic:
+      - generic: Risco Imediato
+      - heading "💣 Riscos que podem virar crise esta semana" [level=2]
+      - paragraph: Cada "bomba" é um cenário onde um deploy ou inação nos próximos dias pode gerar impacto visível para os clientes. Barra = risco relativo entre os 3 cenários.
+      - generic:
+        - generic:
+          - generic:
+            - generic: 🚨 URGÊNCIA MÁXIMA
+            - generic: Chat / Mensagens
+            - 'generic "Score de risco: 75"'
+            - generic:
+              - generic: "Risco relativo: 94%"
+              - generic: "Score: 75"
+          - generic:
+            - generic: ⏰ 30 dias sem correção
+            - generic: 👥 2.4K+ usuários afetados
+          - generic:
+            - generic: A situação
+            - generic: 9 bugs N1 ativos + omnispa ESCALATING (3 issues novos/escalando) + 28 PRs no período com suspect commit confirmado. Release 06-06 criou 16 novos grupos de erro. Zero corretivos em dev.
+          - generic:
+            - generic: Gatilho
+            - generic: Novo deploy SPA ou FoundationAPI sem resolver AxiosError 401 e Hermes SQS.
+          - generic:
+            - generic: Impacto se não agir
+            - generic: Clientes perdem acesso ao chat completamente. AxiosError 401 ESCALANDO já afeta 496 usuários — tendência de piora sem rollback.
+          - generic: "⚡ P0: Rollback SPA:1509 (Dev4-4278) ou hotfix urgente. P0: Investigar Hermes SQS (DEV4-4262). Criar DEV4 corretivo para bugs N1."
+        - generic:
+          - generic:
+            - generic: 🔴 URGENTE
+            - generic: Distribuição / Filas
+            - 'generic "Score de risco: 33"'
+            - generic:
+              - generic: "Risco relativo: 41%"
+              - generic: "Score: 33"
+          - generic:
+            - generic: ⏰ 7 dias sem correção
+            - generic: 👥 ~3 contas usuários afetados
+          - generic:
+            - generic: A situação
+            - generic: 3 bugs N1 ativos (chats presos na fila, distribuição para atendente offline) com ZERO atenção dev — nenhum corretivo em backlog ou desenvolvimento.
+          - generic:
+            - generic: Gatilho
+            - generic: Pico de volume de atendimento ou deploy no dispatch-service sem fix do race condition Redis lock.
+          - generic:
+            - generic: Impacto se não agir
+            - generic: Chats ficam presos sem atendente. Clientes aguardam indefinidamente. Atendentes recebem chats mesmo fora do expediente.
+          - generic: ⚡ Criar DEV4 corretivo urgente para lógica de presença de atendente no dispatch-service.
+        - generic:
+          - generic:
+            - generic: 🟡 ALTO RISCO
+            - generic: Autenticação
+            - 'generic "Score de risco: 32"'
+            - generic:
+              - generic: "Risco relativo: 40%"
+              - generic: "Score: 32"
+          - generic:
+            - generic: ⏰ 4 dias sem correção
+            - generic: 👥 496+ usuários afetados
+          - generic:
+            - generic: A situação
+            - generic: omnispa AxiosError 401 ESCALATING (496u) com suspect commit identificado (SPA:1509). Heimdall ×2.0 cross-service — falha aqui afeta 100% dos usuários.
+          - generic:
+            - generic: Gatilho
+            - generic: Continuação do ESCALATING sem rollback ou hotfix → mais usuários perdem acesso.
+          - generic:
+            - generic: Impacto se não agir
+            - generic: 100% dos usuários do omnispa não conseguem autenticar. Heimdall é ponto único — falha total de acesso.
+          - generic: "⚡ HOJE: Rollback SPA:1509 ou hotfix urgente. Verificar rejeição de tokens no heimdall."
+    - generic:
+      - generic: Sinais de Processo
+      - heading "🔬 Qualidade do processo de desenvolvimento" [level=2]
+      - paragraph: "Sinais que revelam fragilidades no ciclo de desenvolvimento antes que virem bugs: regressões confirmadas, revisões precipitadas, cobertura desatualizada e padrões de falha por ambiente."
+      - generic:
+        - generic:
+          - generic: 🔄
+          - generic: "0"
+          - generic: Bugs Reabertos
+          - generic: Regressões confirmadas — fix não resolveu
+        - generic:
+          - generic: 🏃
+          - generic: "0"
+          - generic: Deploys Arriscados
+          - generic: PRs grandes revisados em < 2h — alta chance de bug
+        - generic:
+          - generic: 📈
+          - generic: "4"
+          - generic: Erros Crescendo
+          - generic: Módulos com erros em produção crescendo >50%/semana
+        - generic:
+          - generic: 🌐
+          - generic: "1"
+          - generic: Falha por Ambiente
+          - generic: Módulo falha muito mais em staging do que em canary
+        - generic:
+          - generic: ⏱️
+          - generic: —
+          - generic: Bugs Sem Solução
+          - generic: Módulos com tempo médio de correção > 14 dias
+      - generic:
+        - generic:
+          - generic: Selecione um sinal acima para ver os módulos afetados
+          - generic: —
+        - generic:
+          - generic: Como interpretar este sinal
+          - text: Clique em um dos indicadores acima para ver a explicação e os módulos afetados.
+        - generic:
+          - generic: Comparativo de falhas por ambiente (staging vs canary)
+          - table:
+            - rowgroup:
+              - row "Módulo Taxa Staging Taxa Canary Diferença":
+                - columnheader "Módulo"
+                - columnheader "Taxa Staging"
+                - columnheader "Taxa Canary"
+                - columnheader "Diferença"
+            - rowgroup:
+              - row "Chat / Mensagens 43% 14% Δ29%":
+                - cell "Chat / Mensagens"
+                - cell "43%"
+                - cell "14%"
+                - cell "Δ29%"
+    - generic:
+      - generic: Rastreabilidade de Deploy
+      - heading "🔍 PRs em risco — Dispersão + DORA CFR" [level=2]
+      - paragraph: Cada PR que tocou muitos módulos ao mesmo tempo, ou que gerou bugs nos 3 dias seguintes ao merge. Clique no título para abrir no GitHub.
+      - generic:
+        - generic:
+          - generic:
+            - generic: PRs com maior risco — DORA CFR + Dispersão das mudanças
+            - generic: (últimos 14 dias · clique para abrir no GitHub)
+          - generic:
+            - table:
+              - rowgroup:
+                - row "PR / Título Módulos tocados Dispersão ℹ️ CFR ℹ️ Bugs / Sentry correlacionado":
+                  - columnheader "PR / Título"
+                  - columnheader "Módulos tocados"
+                  - columnheader "Dispersão ℹ️"
+                  - columnheader "CFR ℹ️"
+                  - columnheader "Bugs / Sentry correlacionado"
+              - rowgroup:
+                - 'row "Dev4 4278 fix phone max length ↗ SPA #1509 · 2026-06-03 · @Buzeli · 50 linhas Autenticação Chat 1.5 🟢 Baixa ⚠️ Sim Sentry-100474 Sentry ↗"':
+                  - 'cell "Dev4 4278 fix phone max length ↗ SPA #1509 · 2026-06-03 · @Buzeli · 50 linhas"':
+                    - link "Dev4 4278 fix phone max length ↗":
+                      - /url: https://github.com/poli-digital/SPA/pull/1509
+                    - generic: "SPA #1509 · 2026-06-03 · @Buzeli · 50 linhas"
+                  - cell "Autenticação Chat":
+                    - generic: Autenticação
+                    - generic: Chat
+                  - cell "1.5 🟢 Baixa":
+                    - generic:
+                      - generic: 1.5 🟢 Baixa
+                  - cell "⚠️ Sim"
+                  - cell "Sentry-100474 Sentry ↗":
+                    - generic: Sentry-100474
+                    - generic "omnispa AxiosError 401 iniciou 2h após merge (22:22 merge → 22:28 Sentry)": Sentry ↗
+                - 'row "DEV4-4262/feat - hermes-inbound - Fase 1 (MTP) — EventB… ↗ FoundationAPI #1102 · 2026-06-03 · @akappes · 2800 linhas WebSocket Chat 3.5 🟡 Média ⚠️ Sim Sentry-100397 Sentry ↗"':
+                  - 'cell "DEV4-4262/feat - hermes-inbound - Fase 1 (MTP) — EventB… ↗ FoundationAPI #1102 · 2026-06-03 · @akappes · 2800 linhas"':
+                    - link "DEV4-4262/feat - hermes-inbound - Fase 1 (MTP) — EventB… ↗":
+                      - /url: https://github.com/poli-digital/FoundationAPI/pull/1102
+                    - generic: "FoundationAPI #1102 · 2026-06-03 · @akappes · 2800 linhas"
+                  - cell "WebSocket Chat":
+                    - generic: WebSocket
+                    - generic: Chat
+                  - cell "3.5 🟡 Média":
+                    - generic:
+                      - generic: 3.5 🟡 Média
+                  - cell "⚠️ Sim"
+                  - cell "Sentry-100397 Sentry ↗":
+                    - generic: Sentry-100397
+                    - generic "foundationapi SQS queue connection error apareceu 2 dias após merge (latência de warm-up)": Sentry ↗
+                - 'row "feat(DEV4-4248): Reformular a sidebar com shadcn (nova … ↗ SPA #1506 · 2026-06-05 · @gabrieldesousah · 3500 linhas Chat 3.2 🟡 Média ✅ Não Sentry ↗"':
+                  - 'cell "feat(DEV4-4248): Reformular a sidebar com shadcn (nova … ↗ SPA #1506 · 2026-06-05 · @gabrieldesousah · 3500 linhas"':
+                    - 'link "feat(DEV4-4248): Reformular a sidebar com shadcn (nova … ↗"':
+                      - /url: https://github.com/poli-digital/SPA/pull/1506
+                    - generic: "SPA #1506 · 2026-06-05 · @gabrieldesousah · 3500 linhas"
+                  - cell "Chat":
+                    - generic: Chat
+                  - cell "3.2 🟡 Média":
+                    - generic:
+                      - generic: 3.2 🟡 Média
+                  - cell "✅ Não"
+                  - cell "Sentry ↗":
+                    - generic "omnispa release 06-06 criou 16 novos grupos após este merge ser incluído": Sentry ↗
+                - 'row "DEV4-4190 - Atualização do laravel para última versão ↗ FoundationAPI #1112 · 2026-05-25 · @akappes · 1500 linhas Chat Distribuição 2.8 🟡 Média ✅ Não ✅ Sem bugs"':
+                  - 'cell "DEV4-4190 - Atualização do laravel para última versão ↗ FoundationAPI #1112 · 2026-05-25 · @akappes · 1500 linhas"':
+                    - link "DEV4-4190 - Atualização do laravel para última versão ↗":
+                      - /url: https://github.com/poli-digital/FoundationAPI/pull/1112
+                    - generic: "FoundationAPI #1112 · 2026-05-25 · @akappes · 1500 linhas"
+                  - cell "Chat Distribuição":
+                    - generic: Chat
+                    - generic: Distribuição
+                  - cell "2.8 🟡 Média":
+                    - generic:
+                      - generic: 2.8 🟡 Média
+                  - cell "✅ Não"
+                  - cell "✅ Sem bugs":
+                    - generic: ✅ Sem bugs
+          - generic: Dispersão alta (>3.5) = PR tocou muitos módulos diferentes — maior risco de efeito colateral não previsto
+    - generic [ref=e1012]:
+      - generic [ref=e1013]: Evolução Histórica
+      - heading "Tendência de risco — últimas 8 semanas" [level=2] [ref=e1014]
+      - paragraph [ref=e1015]: Picos revelam eventos críticos (deploys arriscados, escalada de erros). Quedas indicam resolução efetiva. Marcadores ✅ mostram correções entregues.
+      - generic [ref=e1018]:
+        - generic [ref=e1019]: ✅ Cards resolvidos no período — contribuíram para quedas no score
+        - generic [ref=e1020]:
+          - generic [ref=e1021]:
+            - generic [ref=e1022]: ✅
+            - generic [ref=e1023]:
+              - generic [ref=e1024]:
+                - generic [ref=e1025]: DEV4-4180
+                - generic [ref=e1026]: Configurações
+              - generic [ref=e1027]: Tela de Configurações Gerais (nova interface)
+              - generic [ref=e1028]: Resolvido em 2026-06-06
+          - generic [ref=e1029]:
+            - generic [ref=e1030]: ✅
+            - generic [ref=e1031]:
+              - generic [ref=e1032]:
+                - generic [ref=e1033]: DEV4-4338
+                - generic [ref=e1034]: Contatos
+              - generic [ref=e1035]: Pesquisa de contato no chat deve alterar filtro para 'Todos'
+              - generic [ref=e1036]: Resolvido em 2026-06-05
+          - generic [ref=e1037]:
+            - generic [ref=e1038]: ✅
+            - generic [ref=e1039]:
+              - generic [ref=e1040]:
+                - generic [ref=e1041]: DEV4-4286
+                - generic [ref=e1042]: Chat
+              - generic [ref=e1043]: "Refatorar painel lateral do chat: casca única responsiva"
+              - generic [ref=e1044]: Resolvido em 2026-06-05
+          - generic [ref=e1045]:
+            - generic [ref=e1046]: ✅
+            - generic [ref=e1047]:
+              - generic [ref=e1048]:
+                - generic [ref=e1049]: DEV4-4248
+                - generic [ref=e1050]: Chat
+              - generic [ref=e1051]: Reformular sidebar com shadcn — aprovado em QA
+              - generic [ref=e1052]: Resolvido em 2026-06-05
+      - generic [ref=e1053]:
+        - generic [ref=e1054]: "Deploys do período:"
+        - generic "Resolvido em 2026-06-05" [ref=e1055]: ✅ DEV4-4338
+        - generic "Resolvido em 2026-06-05" [ref=e1056]: ✅ DEV4-4286
+        - generic "Resolvido em 2026-06-06" [ref=e1057]: ✅ DEV4-4180
+        - generic "Resolvido em 2026-06-05" [ref=e1058]: ✅ DEV4-4248
+        - 'generic "Merge: 2026-06-03 · CFR: ⚠️" [ref=e1059]': 🚀 SPA#1509
+        - 'generic "Merge: 2026-06-03 · CFR: ⚠️" [ref=e1060]': 🚀 FoundationAPI#1102
+    - generic:
+      - generic: Próximos Passos
+      - heading "O que precisa ser feito agora" [level=2]
+      - generic:
+        - table:
+          - rowgroup:
+            - row "Prioridade Área Ação Prazo":
+              - columnheader "Prioridade"
+              - columnheader "Área"
+              - columnheader "Ação"
+              - columnheader "Prazo"
+          - rowgroup
+      - generic: 💡 Use ← → para navegar entre os slides · F = tela cheia · P = imprimir / exportar PDF
+  - button "?" [ref=e82] [cursor=pointer]
+  - generic [ref=e83]:
+    - button "✕" [ref=e85] [cursor=pointer]
+    - generic [ref=e87]:
+      - generic [ref=e88]: Atalhos de teclado
+      - generic [ref=e89]:
+        - generic [ref=e90]:
+          - generic [ref=e91]: ← →
+          - generic [ref=e92]: Navegar slides
+        - generic [ref=e93]:
+          - generic [ref=e94]: Ctrl K
+          - generic [ref=e95]: Busca global
+        - generic [ref=e96]:
+          - generic [ref=e97]: F
+          - generic [ref=e98]: Tela cheia
+        - generic [ref=e99]:
+          - generic [ref=e100]: P
+          - generic [ref=e101]: Exportar PDF
+        - generic [ref=e102]:
+          - generic [ref=e103]: "?"
+          - generic [ref=e104]: Abrir ajuda
+        - generic [ref=e105]:
+          - generic [ref=e106]: Esc
+          - generic [ref=e107]: Fechar modal
+    - generic [ref=e108]: Clique fora do painel para fechar
+  - contentinfo [ref=e109]:
+    - generic [ref=e110]: Argos Predict · 07 de Junho de 2026 · 14 dias
+    - generic [ref=e111]: Gerado por Argos Predict · Atualizado semanalmente

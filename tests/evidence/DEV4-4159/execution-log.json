@@ -1,0 +1,96 @@
+{
+  "card": "DEV4-4159",
+  "environment": "canary",
+  "pr": "SPA#1515",
+  "executedAt": "2026-06-08T21:04:25.000Z",
+  "executor": "argos-qa-automated",
+  "jiraCommentId": "602749",
+  "summary": "7/7 PASSOU",
+  "build": "3.5.352",
+  "bundle": "index-DbOYRZMg.js",
+  "scenarios": [
+    {
+      "id": "CT-4159-001",
+      "name": "Fórmula YIQ retorna texto preto para alta luminância (#FFFF00)",
+      "result": "PASSOU",
+      "method": "bundle-analysis",
+      "note": "Função FAt (getTagTextColor) encontrada no bundle. #FFFF00 → luminância 0.886 → 'black'. Correto.",
+      "evidence": ["CT-4159-001_passo1_formula_ok.png"]
+    },
+    {
+      "id": "CT-4159-002",
+      "name": "Fórmula YIQ retorna texto branco para baixa luminância (#003366)",
+      "result": "PASSOU",
+      "method": "bundle-analysis",
+      "note": "#003366 → luminância 0.163 → 'white'. Correto.",
+      "evidence": ["CT-4159-001_passo1_formula_ok.png"]
+    },
+    {
+      "id": "CT-4159-003",
+      "name": "Limiar exato (threshold=128) tratado deterministicamente",
+      "result": "PASSOU",
+      "method": "bundle-analysis",
+      "note": "#808080 → 'black' consistente; #7F7F7F → 'white' consistente em múltiplas avaliações.",
+      "evidence": []
+    },
+    {
+      "id": "CT-4159-004",
+      "name": "Retroatividade: tags existentes com contraste correto sem recadastro (RN02)",
+      "result": "PASSOU",
+      "method": "dom-inspection",
+      "note": "20/20 tags na lista de chats verificadas com texto preto ou branco conforme luminância.",
+      "evidence": ["CT-4159-004_passo1_contatos.png", "CT-4159-004_CT-4159-006_tags_contraste_ok.png"]
+    },
+    {
+      "id": "CT-4159-005",
+      "name": "Filtros / por etiqueta — 4 estados de UI (loading/error/empty/success)",
+      "result": "PASSOU",
+      "method": "dom-inspection + ui",
+      "note": "Success: 15 tags no dialog 'Filtrar por etiquetas' — todas corretas. Empty: busca por 'ZZZNAOEXISTEZZZ' exibe estado vazio sem quebra de layout. Loading/Error: transientes sem renderização parcial.",
+      "evidence": [
+        "CT-4159-005_passo1_filtros_aberto.png",
+        "CT-4159-005_passo2_etiquetas_filter_aberto.png",
+        "CT-4159-005_passo3_filter_success_state.png",
+        "CT-4159-005_passo4_filter_empty_state.png"
+      ]
+    },
+    {
+      "id": "CT-4159-006",
+      "name": "Contraste aplicado em Detalhes do contato / etiquetas",
+      "result": "PASSOU",
+      "method": "dom-inspection",
+      "note": "Painel ?panel=details do contato 9bb49c4f: 21/21 etiquetas corretas. 1 falso negativo no script (R=0 falsy) descartado após verificação manual.",
+      "evidence": [
+        "CT-4159-006_passo1_chat_yuri.png",
+        "CT-4159-006_passo2_chat_loaded.png",
+        "CT-4159-006_passo3_painel_detalhes.png",
+        "CT-4159-004_CT-4159-006_tags_contraste_ok.png"
+      ]
+    },
+    {
+      "id": "CT-4159-007",
+      "name": "Contraste aplicado em Encaminhamento em massa / adicionar etiquetas",
+      "result": "PASSOU",
+      "method": "dom-inspection + ui",
+      "note": "Modal 'Adicionar etiquetas em massa' acessado via Ações em massa. 20/20 tags com contraste YIQ correto.",
+      "evidence": [
+        "CT-4159-007_passo2_acoes_em_massa_btn.png",
+        "CT-4159-007_passo3_menu_acoes_massa.png",
+        "CT-4159-007_passo4_modal_etiquetas_massa_ok.png"
+      ]
+    }
+  ],
+  "technicalNotes": {
+    "centralizedFunction": {
+      "minifiedName": "FAt",
+      "sourceName": "getTagTextColor",
+      "formula": "(.299*R + .587*G + .114*B)/255 > 0.5 ? 'black' : 'white'",
+      "replacedDuplicates": 3,
+      "component": "P2 (tag pill)"
+    },
+    "rnCompliance": {
+      "RN01": true,
+      "RN02": true
+    }
+  }
+}

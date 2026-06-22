@@ -1,0 +1,466 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=c213de3726067b4b87659cd2ef5ebb834b70d7e9&toPath=https://app.poli.digital/home
+        - img [ref=e11]
+      - generic [ref=e12]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link [ref=e16] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e18]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=c213de3726067b4b87659cd2ef5ebb834b70d7e9&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e30]
+          - listitem [ref=e33]:
+            - link [ref=e34] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e36]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=c213de3726067b4b87659cd2ef5ebb834b70d7e9&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e41]
+          - listitem [ref=e44]:
+            - link [ref=e45] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=c213de3726067b4b87659cd2ef5ebb834b70d7e9&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e47]
+          - listitem [ref=e50]:
+            - link [ref=e51] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=c213de3726067b4b87659cd2ef5ebb834b70d7e9&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e53]
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - link [ref=e61] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e63]
+      - generic [ref=e66]:
+        - button "Consumo de créditos" [ref=e67] [cursor=pointer]:
+          - img [ref=e69]
+        - button "YA" [ref=e73] [cursor=pointer]:
+          - generic [ref=e79]: YA
+        - generic [ref=e82]: 3.5.359-DEV4-4395
+    - main [ref=e83]:
+      - main [ref=e84]:
+        - generic [ref=e86]:
+          - navigation "breadcrumb" [ref=e88]:
+            - link "Página inicial" [ref=e90] [cursor=pointer]:
+              - /url: /
+            - generic [ref=e91]:
+              - img [ref=e92]
+              - link "Configurações" [ref=e94] [cursor=pointer]:
+                - /url: /settings
+            - img [ref=e95]
+            - generic [ref=e97]: Templates
+          - generic [ref=e99]:
+            - generic [ref=e100]:
+              - generic [ref=e101]:
+                - generic [ref=e102]:
+                  - textbox "Buscar templates" [ref=e103]
+                  - button "Pesquisar" [ref=e104] [cursor=pointer]:
+                    - img [ref=e105]
+                - combobox "Status" [ref=e109] [cursor=pointer]:
+                  - generic: Todos os Status
+                  - img [ref=e110]
+                - combobox "Categoria" [ref=e113] [cursor=pointer]:
+                  - generic: Todas as Categorias
+                  - img [ref=e114]
+                - combobox "Tipo" [ref=e117] [cursor=pointer]:
+                  - generic: Todos os Tipos
+                  - img [ref=e118]
+                - combobox "Canal" [disabled] [ref=e121]:
+                  - generic: Todos os Canais
+                  - img [ref=e122]
+              - link "Criar template" [ref=e124] [cursor=pointer]:
+                - /url: /templates/new
+                - img [ref=e125]
+                - text: Criar template
+            - generic [ref=e126]:
+              - table [ref=e130]:
+                - rowgroup [ref=e131]:
+                  - row "Selecionar todos da página Nome Conteúdo Categoria Idioma Canal Status Criado em Ações" [ref=e132]:
+                    - columnheader "Selecionar todos da página" [ref=e133]:
+                      - checkbox "Selecionar todos da página" [ref=e135] [cursor=pointer]
+                    - columnheader "Nome" [ref=e136]:
+                      - button "Nome" [ref=e137] [cursor=pointer]:
+                        - text: Nome
+                        - img [ref=e138]
+                    - columnheader "Conteúdo" [ref=e141]
+                    - columnheader "Categoria" [ref=e142]
+                    - columnheader "Idioma" [ref=e143]
+                    - columnheader "Canal" [ref=e144]
+                    - columnheader "Status" [ref=e145]
+                    - columnheader "Criado em" [ref=e146]:
+                      - button "Criado em" [ref=e147] [cursor=pointer]:
+                        - text: Criado em
+                        - img [ref=e148]
+                    - columnheader "Ações" [ref=e151]
+                - rowgroup [ref=e152]:
+                  - 'row "Selecionar item a20b604f-d723-4606-805a-474c4d5a867d #Cassiavile Olá bom dia Cassia tudo bem ? Passando para saber o que João achou sobre a nossa plataforma ? Vamos seguir com a nossa parceria e trazer toda essa melhoria para sua empresa ? Marketing pt_BR Canal Principal Aprovado 17 de jun. de 2026 Editar Excluir" [ref=e153]':
+                    - cell "Selecionar item a20b604f-d723-4606-805a-474c4d5a867d" [ref=e154]:
+                      - generic [ref=e155]:
+                        - checkbox "Selecionar item a20b604f-d723-4606-805a-474c4d5a867d"
+                    - cell "#Cassiavile" [ref=e156]:
+                      - link "#Cassiavile" [ref=e157] [cursor=pointer]:
+                        - /url: /templates/a20b604f-d723-4606-805a-474c4d5a867d/edit
+                    - cell "Olá bom dia Cassia tudo bem ? Passando para saber o que João achou sobre a nossa plataforma ? Vamos seguir com a nossa parceria e trazer toda essa melhoria para sua empresa ?" [ref=e158]:
+                      - generic [ref=e159]: Olá bom dia Cassia tudo bem ? Passando para saber o que João achou sobre a nossa plataforma ? Vamos seguir com a nossa parceria e trazer toda essa melhoria para sua empresa ?
+                    - cell "Marketing" [ref=e160]:
+                      - generic [ref=e161]: Marketing
+                    - cell "pt_BR" [ref=e162]
+                    - cell "Canal Principal" [ref=e163]
+                    - cell "Aprovado" [ref=e164]:
+                      - generic [ref=e165]: Aprovado
+                    - cell "17 de jun. de 2026" [ref=e166]
+                    - cell "Editar Excluir" [ref=e167]:
+                      - generic [ref=e168]:
+                        - link "Editar" [ref=e169] [cursor=pointer]:
+                          - /url: /templates/a20b604f-d723-4606-805a-474c4d5a867d/edit
+                          - img [ref=e170]
+                        - button "Excluir" [ref=e173] [cursor=pointer]:
+                          - img [ref=e174]
+                  - 'row "Selecionar item a209fae4-bb7c-4b0c-8603-b8b03dd3c107 #ju_noshow Não conseguimos nos encontrar no horário que havíamos reagendado. Como reservamos um especialista para a apresentação, gostaria apenas de confirmar se o projeto ainda está em andamento e *se faz sentido reagendarmos um novo horário.* Se sim, me informe sua melhor disponibilidade que organizo tudo para você. 😊 Marketing pt_BR Canal Principal Aprovado 16 de jun. de 2026 Editar Excluir" [ref=e177]':
+                    - cell "Selecionar item a209fae4-bb7c-4b0c-8603-b8b03dd3c107" [ref=e178]:
+                      - generic [ref=e179]:
+                        - checkbox "Selecionar item a209fae4-bb7c-4b0c-8603-b8b03dd3c107"
+                    - cell "#ju_noshow" [ref=e180]:
+                      - link "#ju_noshow" [ref=e181] [cursor=pointer]:
+                        - /url: /templates/a209fae4-bb7c-4b0c-8603-b8b03dd3c107/edit
+                    - cell "Não conseguimos nos encontrar no horário que havíamos reagendado. Como reservamos um especialista para a apresentação, gostaria apenas de confirmar se o projeto ainda está em andamento e *se faz sentido reagendarmos um novo horário.* Se sim, me informe sua melhor disponibilidade que organizo tudo para você. 😊" [ref=e182]:
+                      - generic [ref=e183]: Não conseguimos nos encontrar no horário que havíamos reagendado. Como reservamos um especialista para a apresentação, gostaria apenas de confirmar se o projeto ainda está em andamento e *se faz sentido reagendarmos um novo horário.* Se sim, me informe sua melhor disponibilidade que organizo tudo para você. 😊
+                    - cell "Marketing" [ref=e184]:
+                      - generic [ref=e185]: Marketing
+                    - cell "pt_BR" [ref=e186]
+                    - cell "Canal Principal" [ref=e187]
+                    - cell "Aprovado" [ref=e188]:
+                      - generic [ref=e189]: Aprovado
+                    - cell "16 de jun. de 2026" [ref=e190]
+                    - cell "Editar Excluir" [ref=e191]:
+                      - generic [ref=e192]:
+                        - link "Editar" [ref=e193] [cursor=pointer]:
+                          - /url: /templates/a209fae4-bb7c-4b0c-8603-b8b03dd3c107/edit
+                          - img [ref=e194]
+                        - button "Excluir" [ref=e197] [cursor=pointer]:
+                          - img [ref=e198]
+                  - row "Selecionar item a20b6562-5ad8-4d28-9695-a169b13cd8f5 marasinicor Oi, [contact_first_name] ! Após finalizarmos nossa ligação, conversei com a minha gestão sobre o prazo de vocês. Devido às recentes alterações de valores e às mudanças que a Meta vem implementando, não consigo manter por muito tempo as condições que negociamos. No entanto, conseguimos estender o prazo para assinatura até o dia 26/06. Dessa forma, o contrato permanecerá disponível para assinatura durante esta semana e a próxima. Fico no aguardo da devolutiva de vocês e permaneço à disposição para qualquer dúvida. Marketing pt_BR Canal Principal Em análise 16 de jun. de 2026 Editar Excluir" [ref=e201]:
+                    - cell "Selecionar item a20b6562-5ad8-4d28-9695-a169b13cd8f5" [ref=e202]:
+                      - generic [ref=e203]:
+                        - checkbox "Selecionar item a20b6562-5ad8-4d28-9695-a169b13cd8f5"
+                    - cell "marasinicor" [ref=e204]:
+                      - link "marasinicor" [ref=e205] [cursor=pointer]:
+                        - /url: /templates/a20b6562-5ad8-4d28-9695-a169b13cd8f5/edit
+                    - cell "Oi, [contact_first_name] ! Após finalizarmos nossa ligação, conversei com a minha gestão sobre o prazo de vocês. Devido às recentes alterações de valores e às mudanças que a Meta vem implementando, não consigo manter por muito tempo as condições que negociamos. No entanto, conseguimos estender o prazo para assinatura até o dia 26/06. Dessa forma, o contrato permanecerá disponível para assinatura durante esta semana e a próxima. Fico no aguardo da devolutiva de vocês e permaneço à disposição para qualquer dúvida." [ref=e206]:
+                      - generic [ref=e207]: Oi, [contact_first_name] ! Após finalizarmos nossa ligação, conversei com a minha gestão sobre o prazo de vocês. Devido às recentes alterações de valores e às mudanças que a Meta vem implementando, não consigo manter por muito tempo as condições que negociamos. No entanto, conseguimos estender o prazo para assinatura até o dia 26/06. Dessa forma, o contrato permanecerá disponível para assinatura durante esta semana e a próxima. Fico no aguardo da devolutiva de vocês e permaneço à disposição para qualquer dúvida.
+                    - cell "Marketing" [ref=e208]:
+                      - generic [ref=e209]: Marketing
+                    - cell "pt_BR" [ref=e210]
+                    - cell "Canal Principal" [ref=e211]
+                    - cell "Em análise" [ref=e212]:
+                      - generic [ref=e213]: Em análise
+                    - cell "16 de jun. de 2026" [ref=e214]
+                    - cell "Editar Excluir" [ref=e215]:
+                      - generic [ref=e216]:
+                        - link "Editar" [ref=e217] [cursor=pointer]:
+                          - /url: /templates/a20b6562-5ad8-4d28-9695-a169b13cd8f5/edit
+                          - img [ref=e218]
+                        - button "Excluir" [ref=e221] [cursor=pointer]:
+                          - img [ref=e222]
+                  - row "Selecionar item a20a0f90-c1fc-414d-bdc4-e2068138f9b3 cancelación_ttv ¡Hola, [contact_first_name]! ¿Cómo estás? Soy [operator_name], de Poli. Recibí la solicitud de cancelación de su cuenta y, antes que nada, me gustaría entender qué fue lo que sucedió. No me comunico para intentar revertir la decisión en este momento, sino para escuchar su experiencia. ¿Podrías dedicarme unos minutos? Utility pt_BR Latam - Mexico Aprovado 16 de jun. de 2026 Editar Excluir" [ref=e225]:
+                    - cell "Selecionar item a20a0f90-c1fc-414d-bdc4-e2068138f9b3" [ref=e226]:
+                      - generic [ref=e227]:
+                        - checkbox "Selecionar item a20a0f90-c1fc-414d-bdc4-e2068138f9b3"
+                    - cell "cancelación_ttv" [ref=e228]:
+                      - link "cancelación_ttv" [ref=e229] [cursor=pointer]:
+                        - /url: /templates/a20a0f90-c1fc-414d-bdc4-e2068138f9b3/edit
+                    - cell "¡Hola, [contact_first_name]! ¿Cómo estás? Soy [operator_name], de Poli. Recibí la solicitud de cancelación de su cuenta y, antes que nada, me gustaría entender qué fue lo que sucedió. No me comunico para intentar revertir la decisión en este momento, sino para escuchar su experiencia. ¿Podrías dedicarme unos minutos?" [ref=e230]:
+                      - generic [ref=e231]: ¡Hola, [contact_first_name]! ¿Cómo estás? Soy [operator_name], de Poli. Recibí la solicitud de cancelación de su cuenta y, antes que nada, me gustaría entender qué fue lo que sucedió. No me comunico para intentar revertir la decisión en este momento, sino para escuchar su experiencia. ¿Podrías dedicarme unos minutos?
+                    - cell "Utility" [ref=e232]:
+                      - generic [ref=e233]: Utility
+                    - cell "pt_BR" [ref=e234]
+                    - cell "Latam - Mexico" [ref=e235]
+                    - cell "Aprovado" [ref=e236]:
+                      - generic [ref=e237]: Aprovado
+                    - cell "16 de jun. de 2026" [ref=e238]
+                    - cell "Editar Excluir" [ref=e239]:
+                      - generic [ref=e240]:
+                        - link "Editar" [ref=e241] [cursor=pointer]:
+                          - /url: /templates/a20a0f90-c1fc-414d-bdc4-e2068138f9b3/edit
+                          - img [ref=e242]
+                        - button "Excluir" [ref=e245] [cursor=pointer]:
+                          - img [ref=e246]
+                  - row "Selecionar item a2098b2e-983d-4f11-ac07-0a1df535d656 retornohospital Olá, Flávio! Tudo bem? Preciso apenas de uma definição sua em relação à proposta que apresentamos. Vocês conseguiram avaliar internamente e existe possibilidade de avançarmos ainda neste momento ou devo entender que essa decisão ficará para um outro momento? Se houver algum ponto específico impedindo o avanço, me sinalize para que eu veja se consigo ajudá-los. Utility pt_BR Canal Principal Aprovado 16 de jun. de 2026 Editar Excluir" [ref=e249]:
+                    - cell "Selecionar item a2098b2e-983d-4f11-ac07-0a1df535d656" [ref=e250]:
+                      - generic [ref=e251]:
+                        - checkbox "Selecionar item a2098b2e-983d-4f11-ac07-0a1df535d656"
+                    - cell "retornohospital" [ref=e252]:
+                      - link "retornohospital" [ref=e253] [cursor=pointer]:
+                        - /url: /templates/a2098b2e-983d-4f11-ac07-0a1df535d656/edit
+                    - cell "Olá, Flávio! Tudo bem? Preciso apenas de uma definição sua em relação à proposta que apresentamos. Vocês conseguiram avaliar internamente e existe possibilidade de avançarmos ainda neste momento ou devo entender que essa decisão ficará para um outro momento? Se houver algum ponto específico impedindo o avanço, me sinalize para que eu veja se consigo ajudá-los." [ref=e254]:
+                      - generic [ref=e255]: Olá, Flávio! Tudo bem? Preciso apenas de uma definição sua em relação à proposta que apresentamos. Vocês conseguiram avaliar internamente e existe possibilidade de avançarmos ainda neste momento ou devo entender que essa decisão ficará para um outro momento? Se houver algum ponto específico impedindo o avanço, me sinalize para que eu veja se consigo ajudá-los.
+                    - cell "Utility" [ref=e256]:
+                      - generic [ref=e257]: Utility
+                    - cell "pt_BR" [ref=e258]
+                    - cell "Canal Principal" [ref=e259]
+                    - cell "Aprovado" [ref=e260]:
+                      - generic [ref=e261]: Aprovado
+                    - cell "16 de jun. de 2026" [ref=e262]
+                    - cell "Editar Excluir" [ref=e263]:
+                      - generic [ref=e264]:
+                        - link "Editar" [ref=e265] [cursor=pointer]:
+                          - /url: /templates/a2098b2e-983d-4f11-ac07-0a1df535d656/edit
+                          - img [ref=e266]
+                        - button "Excluir" [ref=e269] [cursor=pointer]:
+                          - img [ref=e270]
+                  - 'row "Selecionar item a20b6562-5d31-4a45-a09b-0a4eb9202085 #solucoescursos Patrícia, obrigada pela transparência durante todo esse processo. Pelo que entendi, a necessidade existe, mas o investimento atual não faz sentido para a realidade da escola neste momento. Existe algum valor que a diretoria considere viável para esse tipo de solução? Se houver, posso verificar internamente uma alternativa mais aderente ao cenário de vocês. E, caso realmente não seja o momento, sem problema. Ficamos à disposição para retomarmos essa conversa no futuro. Utility pt_BR Canal Principal Aprovado 16 de jun. de 2026 Editar Excluir" [ref=e273]':
+                    - cell "Selecionar item a20b6562-5d31-4a45-a09b-0a4eb9202085" [ref=e274]:
+                      - generic [ref=e275]:
+                        - checkbox "Selecionar item a20b6562-5d31-4a45-a09b-0a4eb9202085"
+                    - cell "#solucoescursos" [ref=e276]:
+                      - link "#solucoescursos" [ref=e277] [cursor=pointer]:
+                        - /url: /templates/a20b6562-5d31-4a45-a09b-0a4eb9202085/edit
+                    - cell "Patrícia, obrigada pela transparência durante todo esse processo. Pelo que entendi, a necessidade existe, mas o investimento atual não faz sentido para a realidade da escola neste momento. Existe algum valor que a diretoria considere viável para esse tipo de solução? Se houver, posso verificar internamente uma alternativa mais aderente ao cenário de vocês. E, caso realmente não seja o momento, sem problema. Ficamos à disposição para retomarmos essa conversa no futuro." [ref=e278]:
+                      - generic [ref=e279]: Patrícia, obrigada pela transparência durante todo esse processo. Pelo que entendi, a necessidade existe, mas o investimento atual não faz sentido para a realidade da escola neste momento. Existe algum valor que a diretoria considere viável para esse tipo de solução? Se houver, posso verificar internamente uma alternativa mais aderente ao cenário de vocês. E, caso realmente não seja o momento, sem problema. Ficamos à disposição para retomarmos essa conversa no futuro.
+                    - cell "Utility" [ref=e280]:
+                      - generic [ref=e281]: Utility
+                    - cell "pt_BR" [ref=e282]
+                    - cell "Canal Principal" [ref=e283]
+                    - cell "Aprovado" [ref=e284]:
+                      - generic [ref=e285]: Aprovado
+                    - cell "16 de jun. de 2026" [ref=e286]
+                    - cell "Editar Excluir" [ref=e287]:
+                      - generic [ref=e288]:
+                        - link "Editar" [ref=e289] [cursor=pointer]:
+                          - /url: /templates/a20b6562-5d31-4a45-a09b-0a4eb9202085/edit
+                          - img [ref=e290]
+                        - button "Excluir" [ref=e293] [cursor=pointer]:
+                          - img [ref=e294]
+                  - row "Selecionar item a209f904-04be-400d-97a5-a94e6ffd6c04 ajusteplano_ttv Oi, [contact_first_name]! Aqui é [operator_name], da Poli. Vi que vocês fizeram um ajuste no plano e queria entender como está sendo essa transição — se está atendendo o que precisam ou se tem algo que a gente possa fazer para garantir que o uso continue fluindo bem. Tem alguns minutos? Utility pt_BR Canal Principal Aprovado 16 de jun. de 2026 Editar Excluir" [ref=e297]:
+                    - cell "Selecionar item a209f904-04be-400d-97a5-a94e6ffd6c04" [ref=e298]:
+                      - generic [ref=e299]:
+                        - checkbox "Selecionar item a209f904-04be-400d-97a5-a94e6ffd6c04"
+                    - cell "ajusteplano_ttv" [ref=e300]:
+                      - link "ajusteplano_ttv" [ref=e301] [cursor=pointer]:
+                        - /url: /templates/a209f904-04be-400d-97a5-a94e6ffd6c04/edit
+                    - cell "Oi, [contact_first_name]! Aqui é [operator_name], da Poli. Vi que vocês fizeram um ajuste no plano e queria entender como está sendo essa transição — se está atendendo o que precisam ou se tem algo que a gente possa fazer para garantir que o uso continue fluindo bem. Tem alguns minutos?" [ref=e302]:
+                      - generic [ref=e303]: Oi, [contact_first_name]! Aqui é [operator_name], da Poli. Vi que vocês fizeram um ajuste no plano e queria entender como está sendo essa transição — se está atendendo o que precisam ou se tem algo que a gente possa fazer para garantir que o uso continue fluindo bem. Tem alguns minutos?
+                    - cell "Utility" [ref=e304]:
+                      - generic [ref=e305]: Utility
+                    - cell "pt_BR" [ref=e306]
+                    - cell "Canal Principal" [ref=e307]
+                    - cell "Aprovado" [ref=e308]:
+                      - generic [ref=e309]: Aprovado
+                    - cell "16 de jun. de 2026" [ref=e310]
+                    - cell "Editar Excluir" [ref=e311]:
+                      - generic [ref=e312]:
+                        - link "Editar" [ref=e313] [cursor=pointer]:
+                          - /url: /templates/a209f904-04be-400d-97a5-a94e6ffd6c04/edit
+                          - img [ref=e314]
+                        - button "Excluir" [ref=e317] [cursor=pointer]:
+                          - img [ref=e318]
+                  - row "Selecionar item a20b60bf-deb2-46b4-bf26-75c94105b6d4 Contato sem retorno_ttv Oi, [contact_first_name], tudo bem? Tentei contato agora para falarmos sobre [motivo], mas não consegui retorno. Vou deixar registrado por aqui e fico disponível para retomarmos. Se puder, me indique o melhor horário para conversarmos ainda hoje ou amanhã. Utility pt_BR Canal Principal Aprovado 16 de jun. de 2026 Editar Excluir" [ref=e321]:
+                    - cell "Selecionar item a20b60bf-deb2-46b4-bf26-75c94105b6d4" [ref=e322]:
+                      - generic [ref=e323]:
+                        - checkbox "Selecionar item a20b60bf-deb2-46b4-bf26-75c94105b6d4"
+                    - cell "Contato sem retorno_ttv" [ref=e324]:
+                      - link "Contato sem retorno_ttv" [ref=e325] [cursor=pointer]:
+                        - /url: /templates/a20b60bf-deb2-46b4-bf26-75c94105b6d4/edit
+                    - cell "Oi, [contact_first_name], tudo bem? Tentei contato agora para falarmos sobre [motivo], mas não consegui retorno. Vou deixar registrado por aqui e fico disponível para retomarmos. Se puder, me indique o melhor horário para conversarmos ainda hoje ou amanhã." [ref=e326]:
+                      - generic [ref=e327]: Oi, [contact_first_name], tudo bem? Tentei contato agora para falarmos sobre [motivo], mas não consegui retorno. Vou deixar registrado por aqui e fico disponível para retomarmos. Se puder, me indique o melhor horário para conversarmos ainda hoje ou amanhã.
+                    - cell "Utility" [ref=e328]:
+                      - generic [ref=e329]: Utility
+                    - cell "pt_BR" [ref=e330]
+                    - cell "Canal Principal" [ref=e331]
+                    - cell "Aprovado" [ref=e332]:
+                      - generic [ref=e333]: Aprovado
+                    - cell "16 de jun. de 2026" [ref=e334]
+                    - cell "Editar Excluir" [ref=e335]:
+                      - generic [ref=e336]:
+                        - link "Editar" [ref=e337] [cursor=pointer]:
+                          - /url: /templates/a20b60bf-deb2-46b4-bf26-75c94105b6d4/edit
+                          - img [ref=e338]
+                        - button "Excluir" [ref=e341] [cursor=pointer]:
+                          - img [ref=e342]
+                  - row "Selecionar item a20b6562-5e12-404a-a794-82ad92f9e3a1 factura pendiente ¡Hola, [contact_first_name]! ¿Cómo estás? Soy [operator_name], de Poli. Me pongo en contacto porque identifiqué una factura pendiente en su cuenta y quería conversar contigo antes de que esto afecte el acceso a la plataforma. ¿Tienes un momento para hablar? Utility pt_BR Latam - Mexico Aprovado 16 de jun. de 2026 Editar Excluir" [ref=e345]:
+                    - cell "Selecionar item a20b6562-5e12-404a-a794-82ad92f9e3a1" [ref=e346]:
+                      - generic [ref=e347]:
+                        - checkbox "Selecionar item a20b6562-5e12-404a-a794-82ad92f9e3a1"
+                    - cell "factura pendiente" [ref=e348]:
+                      - link "factura pendiente" [ref=e349] [cursor=pointer]:
+                        - /url: /templates/a20b6562-5e12-404a-a794-82ad92f9e3a1/edit
+                    - cell "¡Hola, [contact_first_name]! ¿Cómo estás? Soy [operator_name], de Poli. Me pongo en contacto porque identifiqué una factura pendiente en su cuenta y quería conversar contigo antes de que esto afecte el acceso a la plataforma. ¿Tienes un momento para hablar?" [ref=e350]:
+                      - generic [ref=e351]: ¡Hola, [contact_first_name]! ¿Cómo estás? Soy [operator_name], de Poli. Me pongo en contacto porque identifiqué una factura pendiente en su cuenta y quería conversar contigo antes de que esto afecte el acceso a la plataforma. ¿Tienes un momento para hablar?
+                    - cell "Utility" [ref=e352]:
+                      - generic [ref=e353]: Utility
+                    - cell "pt_BR" [ref=e354]
+                    - cell "Latam - Mexico" [ref=e355]
+                    - cell "Aprovado" [ref=e356]:
+                      - generic [ref=e357]: Aprovado
+                    - cell "16 de jun. de 2026" [ref=e358]
+                    - cell "Editar Excluir" [ref=e359]:
+                      - generic [ref=e360]:
+                        - link "Editar" [ref=e361] [cursor=pointer]:
+                          - /url: /templates/a20b6562-5e12-404a-a794-82ad92f9e3a1/edit
+                          - img [ref=e362]
+                        - button "Excluir" [ref=e365] [cursor=pointer]:
+                          - img [ref=e366]
+                  - row "Selecionar item a2098e83-65cd-4b89-adc8-2388831fec10 check_in ¡Hola, [contact_first_name]! ¿Cómo estás? Soy [operator_name], de Poli. Te escribo para hacer un breve seguimiento y saber cómo está siendo tu experiencia con la plataforma. ¿Hay algo en lo que puedo ayudarte o alguna duda que tengas? 😊 Utility pt_BR Latam - Mexico Aprovado 16 de jun. de 2026 Editar Excluir" [ref=e369]:
+                    - cell "Selecionar item a2098e83-65cd-4b89-adc8-2388831fec10" [ref=e370]:
+                      - generic [ref=e371]:
+                        - checkbox "Selecionar item a2098e83-65cd-4b89-adc8-2388831fec10"
+                    - cell "check_in" [ref=e372]:
+                      - link "check_in" [ref=e373] [cursor=pointer]:
+                        - /url: /templates/a2098e83-65cd-4b89-adc8-2388831fec10/edit
+                    - cell "¡Hola, [contact_first_name]! ¿Cómo estás? Soy [operator_name], de Poli. Te escribo para hacer un breve seguimiento y saber cómo está siendo tu experiencia con la plataforma. ¿Hay algo en lo que puedo ayudarte o alguna duda que tengas? 😊" [ref=e374]:
+                      - generic [ref=e375]: ¡Hola, [contact_first_name]! ¿Cómo estás? Soy [operator_name], de Poli. Te escribo para hacer un breve seguimiento y saber cómo está siendo tu experiencia con la plataforma. ¿Hay algo en lo que puedo ayudarte o alguna duda que tengas? 😊
+                    - cell "Utility" [ref=e376]:
+                      - generic [ref=e377]: Utility
+                    - cell "pt_BR" [ref=e378]
+                    - cell "Latam - Mexico" [ref=e379]
+                    - cell "Aprovado" [ref=e380]:
+                      - generic [ref=e381]: Aprovado
+                    - cell "16 de jun. de 2026" [ref=e382]
+                    - cell "Editar Excluir" [ref=e383]:
+                      - generic [ref=e384]:
+                        - link "Editar" [ref=e385] [cursor=pointer]:
+                          - /url: /templates/a2098e83-65cd-4b89-adc8-2388831fec10/edit
+                          - img [ref=e386]
+                        - button "Excluir" [ref=e389] [cursor=pointer]:
+                          - img [ref=e390]
+                  - row "Selecionar item a2096c60-5b3e-4e3f-8acd-9c2d10dc4bde checkin_ttv Oi, [contact_first_name]! Tudo bem? Aqui é [operator_name], da Poli. Passando para um check-in rápido, como está sendo a experiência de vocês com a plataforma? Tem alguma coisa que posso ajudar? Utility pt_BR Canal Principal Aprovado 16 de jun. de 2026 Editar Excluir" [ref=e393]:
+                    - cell "Selecionar item a2096c60-5b3e-4e3f-8acd-9c2d10dc4bde" [ref=e394]:
+                      - generic [ref=e395]:
+                        - checkbox "Selecionar item a2096c60-5b3e-4e3f-8acd-9c2d10dc4bde"
+                    - cell "checkin_ttv" [ref=e396]:
+                      - link "checkin_ttv" [ref=e397] [cursor=pointer]:
+                        - /url: /templates/a2096c60-5b3e-4e3f-8acd-9c2d10dc4bde/edit
+                    - cell "Oi, [contact_first_name]! Tudo bem? Aqui é [operator_name], da Poli. Passando para um check-in rápido, como está sendo a experiência de vocês com a plataforma? Tem alguma coisa que posso ajudar?" [ref=e398]:
+                      - generic [ref=e399]: Oi, [contact_first_name]! Tudo bem? Aqui é [operator_name], da Poli. Passando para um check-in rápido, como está sendo a experiência de vocês com a plataforma? Tem alguma coisa que posso ajudar?
+                    - cell "Utility" [ref=e400]:
+                      - generic [ref=e401]: Utility
+                    - cell "pt_BR" [ref=e402]
+                    - cell "Canal Principal" [ref=e403]
+                    - cell "Aprovado" [ref=e404]:
+                      - generic [ref=e405]: Aprovado
+                    - cell "16 de jun. de 2026" [ref=e406]
+                    - cell "Editar Excluir" [ref=e407]:
+                      - generic [ref=e408]:
+                        - link "Editar" [ref=e409] [cursor=pointer]:
+                          - /url: /templates/a2096c60-5b3e-4e3f-8acd-9c2d10dc4bde/edit
+                          - img [ref=e410]
+                        - button "Excluir" [ref=e413] [cursor=pointer]:
+                          - img [ref=e414]
+                  - row "Selecionar item a209c5e7-168f-4ebc-ae5f-f73b49f58dd4 checkin_ttv Oi, [contact_first_name]! Tudo bem? Aqui é [operator_name], da Poli. Passando para um check-in rápido, como está sendo a experiência de vocês com a plataforma? Tem alguma coisa que posso ajudar? — pt_BR — Em análise 16 de jun. de 2026 Editar Excluir" [ref=e417]:
+                    - cell "Selecionar item a209c5e7-168f-4ebc-ae5f-f73b49f58dd4" [ref=e418]:
+                      - generic [ref=e419]:
+                        - checkbox "Selecionar item a209c5e7-168f-4ebc-ae5f-f73b49f58dd4"
+                    - cell "checkin_ttv" [ref=e420]:
+                      - link "checkin_ttv" [ref=e421] [cursor=pointer]:
+                        - /url: /templates/a209c5e7-168f-4ebc-ae5f-f73b49f58dd4/edit
+                    - cell "Oi, [contact_first_name]! Tudo bem? Aqui é [operator_name], da Poli. Passando para um check-in rápido, como está sendo a experiência de vocês com a plataforma? Tem alguma coisa que posso ajudar?" [ref=e422]:
+                      - generic [ref=e423]: Oi, [contact_first_name]! Tudo bem? Aqui é [operator_name], da Poli. Passando para um check-in rápido, como está sendo a experiência de vocês com a plataforma? Tem alguma coisa que posso ajudar?
+                    - cell "—" [ref=e424]
+                    - cell "pt_BR" [ref=e425]
+                    - cell "—" [ref=e426]
+                    - cell "Em análise" [ref=e427]:
+                      - generic [ref=e428]: Em análise
+                    - cell "16 de jun. de 2026" [ref=e429]
+                    - cell "Editar Excluir" [ref=e430]:
+                      - generic [ref=e431]:
+                        - link "Editar" [ref=e432] [cursor=pointer]:
+                          - /url: /templates/a209c5e7-168f-4ebc-ae5f-f73b49f58dd4/edit
+                          - img [ref=e433]
+                        - button "Excluir" [ref=e436] [cursor=pointer]:
+                          - img [ref=e437]
+                  - row "Selecionar item a20b6562-5efa-4dbc-b23c-3d812705104d cancelamento_ttv Oi, [contact_first_name]! Tudo bem? Aqui é [operator_name], da Poli. Recebi a solicitação de cancelamento de vocês e queria muito entender o que aconteceu antes de qualquer coisa. Não estou ligando para reverter agora, estou ligando para te ouvir. Você consegue me dar alguns minutos? — pt_BR — Em análise 16 de jun. de 2026 Editar Excluir" [ref=e440]:
+                    - cell "Selecionar item a20b6562-5efa-4dbc-b23c-3d812705104d" [ref=e441]:
+                      - generic [ref=e442]:
+                        - checkbox "Selecionar item a20b6562-5efa-4dbc-b23c-3d812705104d"
+                    - cell "cancelamento_ttv" [ref=e443]:
+                      - link "cancelamento_ttv" [ref=e444] [cursor=pointer]:
+                        - /url: /templates/a20b6562-5efa-4dbc-b23c-3d812705104d/edit
+                    - cell "Oi, [contact_first_name]! Tudo bem? Aqui é [operator_name], da Poli. Recebi a solicitação de cancelamento de vocês e queria muito entender o que aconteceu antes de qualquer coisa. Não estou ligando para reverter agora, estou ligando para te ouvir. Você consegue me dar alguns minutos?" [ref=e445]:
+                      - generic [ref=e446]: Oi, [contact_first_name]! Tudo bem? Aqui é [operator_name], da Poli. Recebi a solicitação de cancelamento de vocês e queria muito entender o que aconteceu antes de qualquer coisa. Não estou ligando para reverter agora, estou ligando para te ouvir. Você consegue me dar alguns minutos?
+                    - cell "—" [ref=e447]
+                    - cell "pt_BR" [ref=e448]
+                    - cell "—" [ref=e449]
+                    - cell "Em análise" [ref=e450]:
+                      - generic [ref=e451]: Em análise
+                    - cell "16 de jun. de 2026" [ref=e452]
+                    - cell "Editar Excluir" [ref=e453]:
+                      - generic [ref=e454]:
+                        - link "Editar" [ref=e455] [cursor=pointer]:
+                          - /url: /templates/a20b6562-5efa-4dbc-b23c-3d812705104d/edit
+                          - img [ref=e456]
+                        - button "Excluir" [ref=e459] [cursor=pointer]:
+                          - img [ref=e460]
+                  - row "Selecionar item a2097047-cc7b-4b0a-99cc-032517be282c cancelamento_ttv Oi, [contact_first_name]! Tudo bem? Aqui é [operator_name], da Poli. Recebi a solicitação de cancelamento de vocês e queria muito entender o que aconteceu antes de qualquer coisa. Não estou ligando para reverter agora, estou ligando para te ouvir. Você consegue me dar alguns minutos? Utility pt_BR Canal Principal Aprovado 16 de jun. de 2026 Editar Excluir" [ref=e463]:
+                    - cell "Selecionar item a2097047-cc7b-4b0a-99cc-032517be282c" [ref=e464]:
+                      - generic [ref=e465]:
+                        - checkbox "Selecionar item a2097047-cc7b-4b0a-99cc-032517be282c"
+                    - cell "cancelamento_ttv" [ref=e466]:
+                      - link "cancelamento_ttv" [ref=e467] [cursor=pointer]:
+                        - /url: /templates/a2097047-cc7b-4b0a-99cc-032517be282c/edit
+                    - cell "Oi, [contact_first_name]! Tudo bem? Aqui é [operator_name], da Poli. Recebi a solicitação de cancelamento de vocês e queria muito entender o que aconteceu antes de qualquer coisa. Não estou ligando para reverter agora, estou ligando para te ouvir. Você consegue me dar alguns minutos?" [ref=e468]:
+                      - generic [ref=e469]: Oi, [contact_first_name]! Tudo bem? Aqui é [operator_name], da Poli. Recebi a solicitação de cancelamento de vocês e queria muito entender o que aconteceu antes de qualquer coisa. Não estou ligando para reverter agora, estou ligando para te ouvir. Você consegue me dar alguns minutos?
+                    - cell "Utility" [ref=e470]:
+                      - generic [ref=e471]: Utility
+                    - cell "pt_BR" [ref=e472]
+                    - cell "Canal Principal" [ref=e473]
+                    - cell "Aprovado" [ref=e474]:
+                      - generic [ref=e475]: Aprovado
+                    - cell "16 de jun. de 2026" [ref=e476]
+                    - cell "Editar Excluir" [ref=e477]:
+                      - generic [ref=e478]:
+                        - link "Editar" [ref=e479] [cursor=pointer]:
+                          - /url: /templates/a2097047-cc7b-4b0a-99cc-032517be282c/edit
+                          - img [ref=e480]
+                        - button "Excluir" [ref=e483] [cursor=pointer]:
+                          - img [ref=e484]
+                  - row "Selecionar item a20b6562-6377-4ce4-9d3e-d3d7e116b117 inadimplência_ttv Oi, [contact_first_name]! Tudo bem? Aqui é [operator_name], da Poli. Estou entrando em contato porque identifiquei uma pendência financeira na conta de vocês e queria conversar antes que isso impacte o acesso à plataforma. Você consegue me dar um minutinho? — pt_BR — Em análise 16 de jun. de 2026 Editar Excluir" [ref=e487]:
+                    - cell "Selecionar item a20b6562-6377-4ce4-9d3e-d3d7e116b117" [ref=e488]:
+                      - generic [ref=e489]:
+                        - checkbox "Selecionar item a20b6562-6377-4ce4-9d3e-d3d7e116b117"
+                    - cell "inadimplência_ttv" [ref=e490]:
+                      - link "inadimplência_ttv" [ref=e491] [cursor=pointer]:
+                        - /url: /templates/a20b6562-6377-4ce4-9d3e-d3d7e116b117/edit
+                    - cell "Oi, [contact_first_name]! Tudo bem? Aqui é [operator_name], da Poli. Estou entrando em contato porque identifiquei uma pendência financeira na conta de vocês e queria conversar antes que isso impacte o acesso à plataforma. Você consegue me dar um minutinho?" [ref=e492]:
+                      - generic [ref=e493]: Oi, [contact_first_name]! Tudo bem? Aqui é [operator_name], da Poli. Estou entrando em contato porque identifiquei uma pendência financeira na conta de vocês e queria conversar antes que isso impacte o acesso à plataforma. Você consegue me dar um minutinho?
+                    - cell "—" [ref=e494]
+                    - cell "pt_BR" [ref=e495]
+                    - cell "—" [ref=e496]
+                    - cell "Em análise" [ref=e497]:
+                      - generic [ref=e498]: Em análise
+                    - cell "16 de jun. de 2026" [ref=e499]
+                    - cell "Editar Excluir" [ref=e500]:
+                      - generic [ref=e501]:
+                        - link "Editar" [ref=e502] [cursor=pointer]:
+                          - /url: /templates/a20b6562-6377-4ce4-9d3e-d3d7e116b117/edit
+                          - img [ref=e503]
+                        - button "Excluir" [ref=e506] [cursor=pointer]:
+                          - img [ref=e507]
+              - generic [ref=e511]:
+                - generic [ref=e512]:
+                  - generic [ref=e513]: Página 1 de 235
+                  - generic [ref=e514]: "Total: 3.519 registros"
+                - generic [ref=e515]:
+                  - combobox [ref=e516]:
+                    - option "10 por página"
+                    - option "15 por página" [selected]
+                    - option "25 por página"
+                    - option "50 por página"
+                  - generic [ref=e517]:
+                    - button [disabled]:
+                      - img
+                    - button [disabled]:
+                      - img
+                    - button [ref=e518] [cursor=pointer]:
+                      - img [ref=e519]
+                    - button [ref=e521] [cursor=pointer]:
+                      - img [ref=e522]
+  - region "Notifications (F8)":
+    - list

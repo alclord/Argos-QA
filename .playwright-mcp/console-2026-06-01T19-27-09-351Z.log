@@ -1,0 +1,62 @@
+[    1810ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:101
+[    1810ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:101
+[    1984ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:76
+[    2912ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:888:429
+    at eS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:890:31)
+    at Nd.dS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:887:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:304:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:254:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:230:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Dq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at tf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:265:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:714:315
+    at Hz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:619:1)
+    at Mz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:643:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:100)
+    at jB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:644:742)
+    at mB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:648:183)
+    at wD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:691:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e65s0:681:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:857:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e65s0:546:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:695:495
+    at r (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:70:9812)
+[    3213ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[   37854ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[   39250ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users:0
+[   39253ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/users:0
+[  422783ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[  425318ms] [INFO] WebSocket: Conexão finalizada @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[  425645ms] [WARNING] Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component. @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[  425645ms] [WARNING] Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component. @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[  426086ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[  426223ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api-canary.poli.digital/v3/users/settings/language:0
+[  426325ms] [ERROR] Amplitude Logger [Error]: Failed to fetch (api2.amplitude.com) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[  426328ms] [WARNING] Amplitude Logger [Warn]: {code: 0, error: "Status 'failed' provided for 2 events"} @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[  427990ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:101
+[  427990ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:101
+[  428169ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:76
+[  428269ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[  428790ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[  438182ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[  440476ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at s8 (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:280)
+    at lx.lY (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:317)
+    at async lx.request (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1013:2138)
+    at async vmt (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:1047:26103)
+    at async _ (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37544)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:54:37851) @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[  461582ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-3ee-NHD7.js:69
+[  464142ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/profile:0
+[  464143ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://spa-canary.poli.digital/profile:0

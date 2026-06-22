@@ -1,0 +1,10 @@
+[     356ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:7795/favicon.ico:0
+[   14676ms] TypeError: Cannot read properties of undefined (reading 'bugs_cards')
+    at showRankingModal (http://localhost:7795/:467:21)
+    at An.onClick (http://localhost:7795/:453:9)
+    at d (https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js:13:1113)
+    at An._handleEvent (https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js:19:102756)
+    at An._eventHandler (https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js:19:102386)
+    at s (https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js:19:100325)
+    at An.<anonymous> (https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js:19:43466)
+    at https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js:13:5410

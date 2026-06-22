@@ -1,0 +1,1313 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link [ref=e6] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e8]:
+          - listitem [ref=e9] [cursor=pointer]:
+            - generic "Pesquisar" [ref=e10]:
+              - generic [ref=e11]:
+                - img [ref=e12]
+                - generic: Pesquisar
+          - listitem
+          - listitem [ref=e14]:
+            - link "Página Inicial" [ref=e15] [cursor=pointer]:
+              - /url: https://homolog.qa.poli.digital/home
+              - generic [ref=e16]:
+                - img [ref=e17]
+                - generic: Página Inicial
+          - listitem [ref=e19]:
+            - link "Chat" [ref=e20] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/chat
+              - generic [ref=e21]:
+                - img [ref=e22]
+                - generic: Chat
+          - listitem [ref=e24]:
+            - link "Automações" [ref=e25] [cursor=pointer]:
+              - /url: https://homolog.qa.poli.digital/settings/46667/chatbot
+              - generic [ref=e26]:
+                - img [ref=e27]
+                - generic: Automações
+          - listitem [ref=e29]:
+            - link "Marketing" [ref=e30] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/marketing
+              - generic [ref=e31]:
+                - img [ref=e32]
+                - generic: Marketing
+          - listitem [ref=e34]:
+            - link "Relatórios" [ref=e35] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/relatorio
+              - generic [ref=e36]:
+                - img [ref=e37]
+                - generic: Relatórios
+          - listitem [ref=e39]:
+            - link "Configurações" [ref=e40] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/tools
+              - generic [ref=e41]:
+                - img [ref=e42]
+                - generic: Configurações
+          - listitem [ref=e44]:
+            - link "Administração" [ref=e45] [cursor=pointer]:
+              - /url: https://app-spa.qa.poli.digital/admin
+              - generic [ref=e46]:
+                - img [ref=e47]
+                - generic: Administração
+        - generic [ref=e49]:
+          - listitem [ref=e50]:
+            - link "Notificação" [ref=e51] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e52]:
+                - img [ref=e53]
+                - generic: Notificação
+          - listitem [ref=e55]:
+            - link "Suporte" [ref=e56] [cursor=pointer]:
+              - /url: https://polichat.com.br/central-de-conhecimento/
+              - generic [ref=e57]:
+                - img [ref=e58]
+                - generic: Suporte
+          - listitem [ref=e61]:
+            - generic [ref=e64]:
+              - img "Yuri Alcantara" [ref=e66]
+              - generic: Yuri Alcantara
+          - listitem [ref=e68]:
+            - link " Recolher Menu" [ref=e69] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e70]:
+                - generic [ref=e71]: 
+                - generic: Recolher Menu
+          - listitem [ref=e72]:
+            - generic "versão" [ref=e73]:
+              - paragraph [ref=e75]: v2.18.466
+    - generic [ref=e77]:
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e80]: 
+          - generic [ref=e81]: Lista de usuários
+        - generic [ref=e82]:
+          - link "Voltar" [ref=e84] [cursor=pointer]:
+            - /url: https://homolog.qa.poli.digital/home
+            - generic [ref=e85]: 
+            - text: Voltar
+          - link " Carteira de clientes" [ref=e87] [cursor=pointer]:
+            - /url: https://homolog.qa.poli.digital/wallets/46667
+            - generic [ref=e88]: 
+            - text: Carteira de clientes
+          - generic [ref=e92]:
+            - textbox "Pesquisar Colaborador" [active] [ref=e93]
+            - button "" [ref=e95] [cursor=pointer]:
+              - generic [ref=e96]: 
+        - separator [ref=e97]
+        - generic [ref=e98]:
+          - button "Adicionar usuário" [ref=e100] [cursor=pointer]:
+            - generic [ref=e101]: 
+            - text: Adicionar usuário
+          - link "Usuários Excluídos" [ref=e103] [cursor=pointer]:
+            - /url: https://homolog.qa.poli.digital/users/46667/deleted
+            - generic [ref=e104]: 
+            - text: Usuários Excluídos
+        - text:   
+      - generic [ref=e106]:
+        - text:               
+        - table [ref=e107]:
+          - rowgroup [ref=e108]:
+            - row "Usuário Email Cargos Canais Setores Criado em Ações" [ref=e109]:
+              - columnheader "Usuário" [ref=e110]
+              - columnheader "Email" [ref=e111]
+              - columnheader "Cargos" [ref=e112]
+              - columnheader "Canais" [ref=e113]
+              - columnheader "Setores" [ref=e114]
+              - columnheader "Criado em" [ref=e115]
+              - columnheader "Ações" [ref=e116]
+          - rowgroup [ref=e117]:
+            - row "ATeste Poli ATeste Poli testepoli22@teste.com Operador de chat                        INATIVO ok Produto Teste Produto Teste poli 02 produto dep webchat Jmeter Nik 26/09/2023 16:47  " [ref=e118]:
+              - cell "ATeste Poli ATeste Poli" [ref=e119]:
+                - img "ATeste Poli" [ref=e120]
+                - text: ATeste Poli
+              - cell "testepoli22@teste.com" [ref=e122]
+              - cell "Operador de chat" [ref=e123]:
+                - list [ref=e124]:
+                  - listitem [ref=e125]:
+                    - img "Operador de chat" [ref=e126]
+              - cell "                      " [ref=e127]:
+                - list [ref=e128]:
+                  - listitem [ref=e129]:
+                    - generic "TestSup" [ref=e130]: 
+                  - listitem [ref=e131]:
+                    - generic "grelha-zapi" [ref=e132]: 
+                  - listitem [ref=e133]:
+                    - generic "[TESTE] TesteCypress62992548428" [ref=e134]: 
+                  - listitem [ref=e135]:
+                    - generic "[TESTE] TesteCypress62997603244" [ref=e136]: 
+                  - listitem [ref=e137]:
+                    - generic "Apenas QA" [ref=e138]: 
+                  - listitem [ref=e139]:
+                    - generic "Pv Teste" [ref=e140]: 
+                  - listitem [ref=e141]:
+                    - generic "teste360" [ref=e142]: 
+                  - listitem [ref=e143]:
+                    - generic "Canal de atendimento de Teste" [ref=e144]: 
+                  - listitem [ref=e145]:
+                    - generic "Cypress" [ref=e146]: 
+                  - listitem [ref=e147]:
+                    - generic "Automação QA" [ref=e148]: 
+                  - listitem [ref=e149]:
+                    - generic "Messenger Staging" [ref=e150]: 
+                  - listitem [ref=e151]:
+                    - generic "hml web-chat" [ref=e152]: 
+                  - listitem [ref=e153]:
+                    - generic "lineu" [ref=e154]: 
+                  - listitem [ref=e155]:
+                    - generic "Pv Teste" [ref=e156]: 
+                  - listitem [ref=e157]:
+                    - generic "alow teste" [ref=e158]: 
+                  - listitem [ref=e159]:
+                    - generic "pv teste 123" [ref=e160]: 
+                  - listitem [ref=e161]:
+                    - generic "pv" [ref=e162]: 
+                  - listitem [ref=e163]:
+                    - generic "Pv Teste" [ref=e164]: 
+                  - listitem [ref=e165]:
+                    - generic "Webchat 0302" [ref=e166]: 
+                  - listitem [ref=e167]:
+                    - generic "[TESTE] TesteCypress62999483927" [ref=e168]: 
+                  - listitem [ref=e169]:
+                    - generic "Automação QA Webchat" [ref=e170]: 
+                  - listitem [ref=e171]:
+                    - generic "Fake messenger" [ref=e172]: 
+                  - listitem [ref=e173]:
+                    - generic "Meu Teste Favorito (Instagram)" [ref=e174]: 
+              - cell "INATIVO ok Produto Teste Produto Teste poli 02 produto dep webchat Jmeter Nik" [ref=e175]:
+                - list [ref=e176]:
+                  - listitem [ref=e177]:
+                    - img "INATIVO ok" [ref=e178]
+                  - listitem [ref=e179]:
+                    - img "Produto" [ref=e180]
+                  - listitem [ref=e181]:
+                    - img "Teste Produto" [ref=e182]
+                  - listitem [ref=e183]:
+                    - img "Teste poli 02 produto" [ref=e184]
+                  - listitem [ref=e185]:
+                    - img "dep" [ref=e186]
+                  - listitem [ref=e187]:
+                    - img "webchat Jmeter Nik" [ref=e188]
+              - cell "26/09/2023 16:47" [ref=e189]
+              - cell " " [ref=e190]:
+                - list [ref=e191]:
+                  - listitem [ref=e192]:
+                    - link "" [ref=e193] [cursor=pointer]:
+                      - /url: https://homolog.qa.poli.digital/users/46667/84064/edit
+                      - generic [ref=e194]: 
+                  - listitem [ref=e195]:
+                    - generic [ref=e197] [cursor=pointer]: 
+            - row "users.index.status_labels.1 Aldi Stag aldi_staging@qa.digital Gestor Operador de chat                       INATIVO ok Produto Teste Kellen Teste Produto Teste cria 2 Teste edit Teste poli 02 produto dep jansen webchat Jmeter Nik 09/05/2025 12:23  " [ref=e198]:
+              - cell "users.index.status_labels.1 Aldi Stag" [ref=e199]:
+                - img "users.index.status_labels.1" [ref=e200]
+                - text: Aldi Stag
+              - cell "aldi_staging@qa.digital" [ref=e202]
+              - cell "Gestor Operador de chat" [ref=e203]:
+                - list [ref=e204]:
+                  - listitem [ref=e205]:
+                    - img "Gestor" [ref=e206]
+                  - listitem [ref=e207]:
+                    - img "Operador de chat" [ref=e208]
+              - cell "                     " [ref=e209]:
+                - list [ref=e210]:
+                  - listitem [ref=e211]:
+                    - generic "TestSup" [ref=e212]: 
+                  - listitem [ref=e213]:
+                    - generic "grelha-zapi" [ref=e214]: 
+                  - listitem [ref=e215]:
+                    - generic "[TESTE] TesteCypress62992548428" [ref=e216]: 
+                  - listitem [ref=e217]:
+                    - generic "[TESTE] TesteCypress62997603244" [ref=e218]: 
+                  - listitem [ref=e219]:
+                    - generic "Apenas QA" [ref=e220]: 
+                  - listitem [ref=e221]:
+                    - generic "Pv Teste" [ref=e222]: 
+                  - listitem [ref=e223]:
+                    - generic "teste360" [ref=e224]: 
+                  - listitem [ref=e225]:
+                    - generic "Cypress" [ref=e226]: 
+                  - listitem [ref=e227]:
+                    - generic "Automação QA" [ref=e228]: 
+                  - listitem [ref=e229]:
+                    - generic "Messenger Staging" [ref=e230]: 
+                  - listitem [ref=e231]:
+                    - generic "hml web-chat" [ref=e232]: 
+                  - listitem [ref=e233]:
+                    - generic "lineu" [ref=e234]: 
+                  - listitem [ref=e235]:
+                    - generic "Pv Teste" [ref=e236]: 
+                  - listitem [ref=e237]:
+                    - generic "alow teste" [ref=e238]: 
+                  - listitem [ref=e239]:
+                    - generic "pv teste 123" [ref=e240]: 
+                  - listitem [ref=e241]:
+                    - generic "pv" [ref=e242]: 
+                  - listitem [ref=e243]:
+                    - generic "Pv Teste" [ref=e244]: 
+                  - listitem [ref=e245]:
+                    - generic "Webchat 0302" [ref=e246]: 
+                  - listitem [ref=e247]:
+                    - generic "[TESTE] TesteCypress62999483927" [ref=e248]: 
+                  - listitem [ref=e249]:
+                    - generic "Automação QA Webchat" [ref=e250]: 
+                  - listitem [ref=e251]:
+                    - generic "Fake messenger" [ref=e252]: 
+                  - listitem [ref=e253]:
+                    - generic "Meu Teste Favorito (Instagram)" [ref=e254]: 
+              - cell "INATIVO ok Produto Teste Kellen Teste Produto Teste cria 2 Teste edit Teste poli 02 produto dep jansen webchat Jmeter Nik" [ref=e255]:
+                - list [ref=e256]:
+                  - listitem [ref=e257]:
+                    - img "INATIVO ok" [ref=e258]
+                  - listitem [ref=e259]:
+                    - img "Produto" [ref=e260]
+                  - listitem [ref=e261]:
+                    - img "Teste Kellen" [ref=e262]
+                  - listitem [ref=e263]:
+                    - img "Teste Produto" [ref=e264]
+                  - listitem [ref=e265]:
+                    - img "Teste cria 2" [ref=e266]
+                  - listitem [ref=e267]:
+                    - img "Teste edit" [ref=e268]
+                  - listitem [ref=e269]:
+                    - img "Teste poli 02 produto" [ref=e270]
+                  - listitem [ref=e271]:
+                    - img "dep" [ref=e272]
+                  - listitem [ref=e273]:
+                    - img "jansen" [ref=e274]
+                  - listitem [ref=e275]:
+                    - img "webchat Jmeter Nik" [ref=e276]
+              - cell "09/05/2025 12:23" [ref=e277]
+              - cell " " [ref=e278]:
+                - list [ref=e279]:
+                  - listitem [ref=e280]:
+                    - link "" [ref=e281] [cursor=pointer]:
+                      - /url: https://homolog.qa.poli.digital/users/46667/99491/edit
+                      - generic [ref=e282]: 
+                  - listitem [ref=e283]:
+                    - generic [ref=e285] [cursor=pointer]: 
+            - row "Aldinelly Reh 3 Aldinelly Reh 3 aldinelly@polichat.com Administrador geral Gestor Operador de chat                        INATIVO ok Produto Teste Kellen Teste Produto Teste cria 2 Teste edit Teste poli 02 produto dep departamento exclusivo da empresa TESTE QA jansen webchat Jmeter Nik 29/07/2024 10:53  " [ref=e286]:
+              - cell "Aldinelly Reh 3 Aldinelly Reh 3" [ref=e287]:
+                - img "Aldinelly Reh 3" [ref=e288]
+                - text: Aldinelly Reh 3
+              - cell "aldinelly@polichat.com" [ref=e290]
+              - cell "Administrador geral Gestor Operador de chat" [ref=e291]:
+                - list [ref=e292]:
+                  - listitem [ref=e293]:
+                    - img "Administrador geral" [ref=e294]
+                  - listitem [ref=e295]:
+                    - img "Gestor" [ref=e296]
+                  - listitem [ref=e297]:
+                    - img "Operador de chat" [ref=e298]
+              - cell "                      " [ref=e299]:
+                - list [ref=e300]:
+                  - listitem [ref=e301]:
+                    - generic "TestSup" [ref=e302]: 
+                  - listitem [ref=e303]:
+                    - generic "grelha-zapi" [ref=e304]: 
+                  - listitem [ref=e305]:
+                    - generic "[TESTE] TesteCypress62992548428" [ref=e306]: 
+                  - listitem [ref=e307]:
+                    - generic "[TESTE] TesteCypress62997603244" [ref=e308]: 
+                  - listitem [ref=e309]:
+                    - generic "Apenas QA" [ref=e310]: 
+                  - listitem [ref=e311]:
+                    - generic "Pv Teste" [ref=e312]: 
+                  - listitem [ref=e313]:
+                    - generic "teste360" [ref=e314]: 
+                  - listitem [ref=e315]:
+                    - generic "Cypress" [ref=e316]: 
+                  - listitem [ref=e317]:
+                    - generic "Automação QA" [ref=e318]: 
+                  - listitem [ref=e319]:
+                    - generic "Messenger Staging" [ref=e320]: 
+                  - listitem [ref=e321]:
+                    - generic "hml web-chat" [ref=e322]: 
+                  - listitem [ref=e323]:
+                    - generic "lineu" [ref=e324]: 
+                  - listitem [ref=e325]:
+                    - generic "Pv Teste" [ref=e326]: 
+                  - listitem [ref=e327]:
+                    - generic "alow teste" [ref=e328]: 
+                  - listitem [ref=e329]:
+                    - generic "pv teste 123" [ref=e330]: 
+                  - listitem [ref=e331]:
+                    - generic "pv" [ref=e332]: 
+                  - listitem [ref=e333]:
+                    - generic "Pv Teste" [ref=e334]: 
+                  - listitem [ref=e335]:
+                    - generic "Webchat 0302" [ref=e336]: 
+                  - listitem [ref=e337]:
+                    - generic "[TESTE] TesteCypress62999483927" [ref=e338]: 
+                  - listitem [ref=e339]:
+                    - generic "Automação QA Webchat" [ref=e340]: 
+                  - listitem [ref=e341]:
+                    - generic "Fake messenger" [ref=e342]: 
+                  - listitem [ref=e343]:
+                    - generic "Meu Teste Favorito (Instagram)" [ref=e344]: 
+                  - listitem [ref=e345]:
+                    - generic "WABA Staging" [ref=e346]: 
+              - cell "INATIVO ok Produto Teste Kellen Teste Produto Teste cria 2 Teste edit Teste poli 02 produto dep departamento exclusivo da empresa TESTE QA jansen webchat Jmeter Nik" [ref=e347]:
+                - list [ref=e348]:
+                  - listitem [ref=e349]:
+                    - img "INATIVO ok" [ref=e350]
+                  - listitem [ref=e351]:
+                    - img "Produto" [ref=e352]
+                  - listitem [ref=e353]:
+                    - img "Teste Kellen" [ref=e354]
+                  - listitem [ref=e355]:
+                    - img "Teste Produto" [ref=e356]
+                  - listitem [ref=e357]:
+                    - img "Teste cria 2" [ref=e358]
+                  - listitem [ref=e359]:
+                    - img "Teste edit" [ref=e360]
+                  - listitem [ref=e361]:
+                    - img "Teste poli 02 produto" [ref=e362]
+                  - listitem [ref=e363]:
+                    - img "dep" [ref=e364]
+                  - listitem [ref=e365]:
+                    - img "departamento exclusivo da empresa TESTE QA" [ref=e366]
+                  - listitem [ref=e367]:
+                    - img "jansen" [ref=e368]
+                  - listitem [ref=e369]:
+                    - img "webchat Jmeter Nik" [ref=e370]
+              - cell "29/07/2024 10:53" [ref=e371]
+              - cell " " [ref=e372]:
+                - list [ref=e373]:
+                  - listitem [ref=e374]:
+                    - link "" [ref=e375] [cursor=pointer]:
+                      - /url: https://homolog.qa.poli.digital/users/46667/91992/edit
+                      - generic [ref=e376]: 
+                  - listitem [ref=e377]:
+                    - generic [ref=e379] [cursor=pointer]: 
+            - row "Allan bezerra Allan bezerra allan.bezerra@poli.digital Administrador geral Gestor Supervisor                   08/09/2023 10:54  " [ref=e380]:
+              - cell "Allan bezerra Allan bezerra" [ref=e381]:
+                - img "Allan bezerra" [ref=e382]
+                - text: Allan bezerra
+              - cell "allan.bezerra@poli.digital" [ref=e384]
+              - cell "Administrador geral Gestor Supervisor" [ref=e385]:
+                - list [ref=e386]:
+                  - listitem [ref=e387]:
+                    - img "Administrador geral" [ref=e388]
+                  - listitem [ref=e389]:
+                    - img "Gestor" [ref=e390]
+                  - listitem [ref=e391]:
+                    - img "Supervisor" [ref=e392]
+              - cell "                 " [ref=e393]:
+                - list [ref=e394]:
+                  - listitem [ref=e395]:
+                    - generic "TestSup" [ref=e396]: 
+                  - listitem [ref=e397]:
+                    - generic "grelha-zapi" [ref=e398]: 
+                  - listitem [ref=e399]:
+                    - generic "[TESTE] TesteCypress62992548428" [ref=e400]: 
+                  - listitem [ref=e401]:
+                    - generic "[TESTE] TesteCypress62997603244" [ref=e402]: 
+                  - listitem [ref=e403]:
+                    - generic "Apenas QA" [ref=e404]: 
+                  - listitem [ref=e405]:
+                    - generic "Meu Teste Favorito" [ref=e406]: 
+                  - listitem [ref=e407]:
+                    - generic "hml web-chat" [ref=e408]: 
+                  - listitem [ref=e409]:
+                    - generic "lineu" [ref=e410]: 
+                  - listitem [ref=e411]:
+                    - generic "Pv Teste" [ref=e412]: 
+                  - listitem [ref=e413]:
+                    - generic "alow teste" [ref=e414]: 
+                  - listitem [ref=e415]:
+                    - generic "pv teste 123" [ref=e416]: 
+                  - listitem [ref=e417]:
+                    - generic "pv" [ref=e418]: 
+                  - listitem [ref=e419]:
+                    - generic "Pv Teste" [ref=e420]: 
+                  - listitem [ref=e421]:
+                    - generic "Webchat 0302" [ref=e422]: 
+                  - listitem [ref=e423]:
+                    - generic "[TESTE] TesteCypress62999483927" [ref=e424]: 
+                  - listitem [ref=e425]:
+                    - generic "Waba Staging 2" [ref=e426]: 
+                  - listitem [ref=e427]:
+                    - generic "WABA QA" [ref=e428]: 
+                  - listitem [ref=e429]:
+                    - generic "WABA 20/01" [ref=e430]: 
+              - cell [ref=e431]:
+                - list
+              - cell "08/09/2023 10:54" [ref=e432]
+              - cell " " [ref=e433]:
+                - list [ref=e434]:
+                  - listitem [ref=e435]:
+                    - link "" [ref=e436] [cursor=pointer]:
+                      - /url: https://homolog.qa.poli.digital/users/46667/83761/edit
+                      - generic [ref=e437]: 
+                  - listitem [ref=e438]:
+                    - generic [ref=e440] [cursor=pointer]: 
+            - row "Andrea Andrea andreateste@poli.digital.com Operador de chat comper 24/11/2025 10:35  " [ref=e441]:
+              - cell "Andrea Andrea" [ref=e442]:
+                - img "Andrea" [ref=e443]
+                - text: Andrea
+              - cell "andreateste@poli.digital.com" [ref=e445]
+              - cell "Operador de chat" [ref=e446]:
+                - list [ref=e447]:
+                  - listitem [ref=e448]:
+                    - img "Operador de chat" [ref=e449]
+              - cell [ref=e450]:
+                - list
+              - cell "comper" [ref=e451]:
+                - list [ref=e452]:
+                  - listitem [ref=e453]:
+                    - img "comper" [ref=e454]
+              - cell "24/11/2025 10:35" [ref=e455]
+              - cell " " [ref=e456]:
+                - list [ref=e457]:
+                  - listitem [ref=e458]:
+                    - link "" [ref=e459] [cursor=pointer]:
+                      - /url: https://homolog.qa.poli.digital/users/46667/101564/edit
+                      - generic [ref=e460]: 
+                  - listitem [ref=e461]:
+                    - generic [ref=e463] [cursor=pointer]: 
+            - row "users.index.status_labels.0 Arthur Kappes edit 2 somente nome arthur.kappes@poli.digital Gestor Operador de chat Supervisor                         Produto dep webchat Jmeter Nik 18/03/2022 15:15  " [ref=e464]:
+              - cell "users.index.status_labels.0 Arthur Kappes edit 2 somente nome" [ref=e465]:
+                - img "users.index.status_labels.0" [ref=e466]
+                - text: Arthur Kappes edit 2 somente nome
+              - cell "arthur.kappes@poli.digital" [ref=e468]
+              - cell "Gestor Operador de chat Supervisor" [ref=e469]:
+                - list [ref=e470]:
+                  - listitem [ref=e471]:
+                    - img "Gestor" [ref=e472]
+                  - listitem [ref=e473]:
+                    - img "Operador de chat" [ref=e474]
+                  - listitem [ref=e475]:
+                    - img "Supervisor" [ref=e476]
+              - cell "                       " [ref=e477]:
+                - list [ref=e478]:
+                  - listitem [ref=e479]:
+                    - generic "TestSup" [ref=e480]: 
+                  - listitem [ref=e481]:
+                    - generic "grelha-zapi" [ref=e482]: 
+                  - listitem [ref=e483]:
+                    - generic "[TESTE] TesteCypress62992548428" [ref=e484]: 
+                  - listitem [ref=e485]:
+                    - generic "[TESTE] TesteCypress62997603244" [ref=e486]: 
+                  - listitem [ref=e487]:
+                    - generic "Apenas QA" [ref=e488]: 
+                  - listitem [ref=e489]:
+                    - generic "Pv Teste" [ref=e490]: 
+                  - listitem [ref=e491]:
+                    - generic "teste360" [ref=e492]: 
+                  - listitem [ref=e493]:
+                    - generic "Cypress" [ref=e494]: 
+                  - listitem [ref=e495]:
+                    - generic "Automação QA" [ref=e496]: 
+                  - listitem [ref=e497]:
+                    - generic "Messenger Staging" [ref=e498]: 
+                  - listitem [ref=e499]:
+                    - generic "hml web-chat" [ref=e500]: 
+                  - listitem [ref=e501]:
+                    - generic "lineu" [ref=e502]: 
+                  - listitem [ref=e503]:
+                    - generic "Pv Teste" [ref=e504]: 
+                  - listitem [ref=e505]:
+                    - generic "alow teste" [ref=e506]: 
+                  - listitem [ref=e507]:
+                    - generic "pv teste 123" [ref=e508]: 
+                  - listitem [ref=e509]:
+                    - generic "pv" [ref=e510]: 
+                  - listitem [ref=e511]:
+                    - generic "Pv Teste" [ref=e512]: 
+                  - listitem [ref=e513]:
+                    - generic "Webchat 0302" [ref=e514]: 
+                  - listitem [ref=e515]:
+                    - generic "[TESTE] TesteCypress62999483927" [ref=e516]: 
+                  - listitem [ref=e517]:
+                    - generic "Automação QA Webchat" [ref=e518]: 
+                  - listitem [ref=e519]:
+                    - generic "Fake messenger" [ref=e520]: 
+                  - listitem [ref=e521]:
+                    - generic "Meu Teste Favorito (Instagram)" [ref=e522]: 
+                  - listitem [ref=e523]:
+                    - generic "WABA Staging" [ref=e524]: 
+                  - listitem [ref=e525]:
+                    - generic "fghfghfghfg" [ref=e526]: 
+              - cell "Produto dep webchat Jmeter Nik" [ref=e527]:
+                - list [ref=e528]:
+                  - listitem [ref=e529]:
+                    - img "Produto" [ref=e530]
+                  - listitem [ref=e531]:
+                    - img "dep" [ref=e532]
+                  - listitem [ref=e533]:
+                    - img "webchat Jmeter Nik" [ref=e534]
+              - cell "18/03/2022 15:15" [ref=e535]
+              - cell " " [ref=e536]:
+                - list [ref=e537]:
+                  - listitem [ref=e538]:
+                    - link "" [ref=e539] [cursor=pointer]:
+                      - /url: https://homolog.qa.poli.digital/users/46667/69333/edit
+                      - generic [ref=e540]: 
+                  - listitem [ref=e541]:
+                    - generic [ref=e543] [cursor=pointer]: 
+            - row "users.index.status_labels.1 Ativador de disparador Não deletar heinrychsupervisor@poli.digital Administrador geral Gestor                       INATIVO ok Teste poli 02 produto jansen 02/08/2024 19:16  " [ref=e544]:
+              - cell "users.index.status_labels.1 Ativador de disparador Não deletar" [ref=e545]:
+                - img "users.index.status_labels.1" [ref=e546]
+                - text: Ativador de disparador Não deletar
+              - cell "heinrychsupervisor@poli.digital" [ref=e548]
+              - cell "Administrador geral Gestor" [ref=e549]:
+                - list [ref=e550]:
+                  - listitem [ref=e551]:
+                    - img "Administrador geral" [ref=e552]
+                  - listitem [ref=e553]:
+                    - img "Gestor" [ref=e554]
+              - cell "                     " [ref=e555]:
+                - list [ref=e556]:
+                  - listitem [ref=e557]:
+                    - generic "TestSup" [ref=e558]: 
+                  - listitem [ref=e559]:
+                    - generic "grelha-zapi" [ref=e560]: 
+                  - listitem [ref=e561]:
+                    - generic "[TESTE] TesteCypress62992548428" [ref=e562]: 
+                  - listitem [ref=e563]:
+                    - generic "[TESTE] TesteCypress62997603244" [ref=e564]: 
+                  - listitem [ref=e565]:
+                    - generic "Apenas QA" [ref=e566]: 
+                  - listitem [ref=e567]:
+                    - generic "Pv Teste" [ref=e568]: 
+                  - listitem [ref=e569]:
+                    - generic "teste360" [ref=e570]: 
+                  - listitem [ref=e571]:
+                    - generic "Cypress" [ref=e572]: 
+                  - listitem [ref=e573]:
+                    - generic "Automação QA" [ref=e574]: 
+                  - listitem [ref=e575]:
+                    - generic "Messenger Staging" [ref=e576]: 
+                  - listitem [ref=e577]:
+                    - generic "hml web-chat" [ref=e578]: 
+                  - listitem [ref=e579]:
+                    - generic "lineu" [ref=e580]: 
+                  - listitem [ref=e581]:
+                    - generic "Pv Teste" [ref=e582]: 
+                  - listitem [ref=e583]:
+                    - generic "alow teste" [ref=e584]: 
+                  - listitem [ref=e585]:
+                    - generic "pv teste 123" [ref=e586]: 
+                  - listitem [ref=e587]:
+                    - generic "pv" [ref=e588]: 
+                  - listitem [ref=e589]:
+                    - generic "Pv Teste" [ref=e590]: 
+                  - listitem [ref=e591]:
+                    - generic "Webchat 0302" [ref=e592]: 
+                  - listitem [ref=e593]:
+                    - generic "[TESTE] TesteCypress62999483927" [ref=e594]: 
+                  - listitem [ref=e595]:
+                    - generic "Automação QA Webchat" [ref=e596]: 
+                  - listitem [ref=e597]:
+                    - generic "Fake messenger" [ref=e598]: 
+                  - listitem [ref=e599]:
+                    - generic "Meu Teste Favorito (Instagram)" [ref=e600]: 
+              - cell "INATIVO ok Teste poli 02 produto jansen" [ref=e601]:
+                - list [ref=e602]:
+                  - listitem [ref=e603]:
+                    - img "INATIVO ok" [ref=e604]
+                  - listitem [ref=e605]:
+                    - img "Teste poli 02 produto" [ref=e606]
+                  - listitem [ref=e607]:
+                    - img "jansen" [ref=e608]
+              - cell "02/08/2024 19:16" [ref=e609]
+              - cell " " [ref=e610]:
+                - list [ref=e611]:
+                  - listitem [ref=e612]:
+                    - link "" [ref=e613] [cursor=pointer]:
+                      - /url: https://homolog.qa.poli.digital/users/46667/92226/edit
+                      - generic [ref=e614]: 
+                  - listitem [ref=e615]:
+                    - generic [ref=e617] [cursor=pointer]: 
+            - row "Automacao admin 3 Automacao admin 3 automacaoadmin3@poli.digital Gestor Operador de chat                       INATIVO ok Produto Teste Kellen Teste Produto Teste cria 2 Teste edit Teste poli 02 produto dep jansen webchat Jmeter Nik 12/05/2025 10:29  " [ref=e618]:
+              - cell "Automacao admin 3 Automacao admin 3" [ref=e619]:
+                - img "Automacao admin 3" [ref=e620]
+                - text: Automacao admin 3
+              - cell "automacaoadmin3@poli.digital" [ref=e622]
+              - cell "Gestor Operador de chat" [ref=e623]:
+                - list [ref=e624]:
+                  - listitem [ref=e625]:
+                    - img "Gestor" [ref=e626]
+                  - listitem [ref=e627]:
+                    - img "Operador de chat" [ref=e628]
+              - cell "                     " [ref=e629]:
+                - list [ref=e630]:
+                  - listitem [ref=e631]:
+                    - generic "TestSup" [ref=e632]: 
+                  - listitem [ref=e633]:
+                    - generic "grelha-zapi" [ref=e634]: 
+                  - listitem [ref=e635]:
+                    - generic "[TESTE] TesteCypress62992548428" [ref=e636]: 
+                  - listitem [ref=e637]:
+                    - generic "[TESTE] TesteCypress62997603244" [ref=e638]: 
+                  - listitem [ref=e639]:
+                    - generic "Apenas QA" [ref=e640]: 
+                  - listitem [ref=e641]:
+                    - generic "Pv Teste" [ref=e642]: 
+                  - listitem [ref=e643]:
+                    - generic "teste360" [ref=e644]: 
+                  - listitem [ref=e645]:
+                    - generic "Cypress" [ref=e646]: 
+                  - listitem [ref=e647]:
+                    - generic "Automação QA" [ref=e648]: 
+                  - listitem [ref=e649]:
+                    - generic "Messenger Staging" [ref=e650]: 
+                  - listitem [ref=e651]:
+                    - generic "hml web-chat" [ref=e652]: 
+                  - listitem [ref=e653]:
+                    - generic "lineu" [ref=e654]: 
+                  - listitem [ref=e655]:
+                    - generic "Pv Teste" [ref=e656]: 
+                  - listitem [ref=e657]:
+                    - generic "alow teste" [ref=e658]: 
+                  - listitem [ref=e659]:
+                    - generic "pv teste 123" [ref=e660]: 
+                  - listitem [ref=e661]:
+                    - generic "pv" [ref=e662]: 
+                  - listitem [ref=e663]:
+                    - generic "Pv Teste" [ref=e664]: 
+                  - listitem [ref=e665]:
+                    - generic "Webchat 0302" [ref=e666]: 
+                  - listitem [ref=e667]:
+                    - generic "[TESTE] TesteCypress62999483927" [ref=e668]: 
+                  - listitem [ref=e669]:
+                    - generic "Automação QA Webchat" [ref=e670]: 
+                  - listitem [ref=e671]:
+                    - generic "Fake messenger" [ref=e672]: 
+                  - listitem [ref=e673]:
+                    - generic "Meu Teste Favorito (Instagram)" [ref=e674]: 
+              - cell "INATIVO ok Produto Teste Kellen Teste Produto Teste cria 2 Teste edit Teste poli 02 produto dep jansen webchat Jmeter Nik" [ref=e675]:
+                - list [ref=e676]:
+                  - listitem [ref=e677]:
+                    - img "INATIVO ok" [ref=e678]
+                  - listitem [ref=e679]:
+                    - img "Produto" [ref=e680]
+                  - listitem [ref=e681]:
+                    - img "Teste Kellen" [ref=e682]
+                  - listitem [ref=e683]:
+                    - img "Teste Produto" [ref=e684]
+                  - listitem [ref=e685]:
+                    - img "Teste cria 2" [ref=e686]
+                  - listitem [ref=e687]:
+                    - img "Teste edit" [ref=e688]
+                  - listitem [ref=e689]:
+                    - img "Teste poli 02 produto" [ref=e690]
+                  - listitem [ref=e691]:
+                    - img "dep" [ref=e692]
+                  - listitem [ref=e693]:
+                    - img "jansen" [ref=e694]
+                  - listitem [ref=e695]:
+                    - img "webchat Jmeter Nik" [ref=e696]
+              - cell "12/05/2025 10:29" [ref=e697]
+              - cell " " [ref=e698]:
+                - list [ref=e699]:
+                  - listitem [ref=e700]:
+                    - link "" [ref=e701] [cursor=pointer]:
+                      - /url: https://homolog.qa.poli.digital/users/46667/99493/edit
+                      - generic [ref=e702]: 
+                  - listitem [ref=e703]:
+                    - generic [ref=e705] [cursor=pointer]: 
+            - 'row "Automacao85126 updated Automacao85126 updated adminqa@poli.digital Administrador geral Gestor Operador de chat                           Apenas eu INATIVO ok Produto Teste Kellen Teste Produto Teste cria 2 Teste edit Teste poli 02 produto Testing`s team Updated team dep departamento exclusivo da empresa TESTE QA distributeeee jansen webchat Jmeter Nik 14/02/2023 17:21  " [ref=e706]':
+              - cell "Automacao85126 updated Automacao85126 updated" [ref=e707]:
+                - img "Automacao85126 updated" [ref=e708]
+                - text: Automacao85126 updated
+              - cell "adminqa@poli.digital" [ref=e710]
+              - cell "Administrador geral Gestor Operador de chat" [ref=e711]:
+                - list [ref=e712]:
+                  - listitem [ref=e713]:
+                    - img "Administrador geral" [ref=e714]
+                  - listitem [ref=e715]:
+                    - img "Gestor" [ref=e716]
+                  - listitem [ref=e717]:
+                    - img "Operador de chat" [ref=e718]
+              - cell "                         " [ref=e719]:
+                - list [ref=e720]:
+                  - listitem [ref=e721]:
+                    - generic "TestSup" [ref=e722]: 
+                  - listitem [ref=e723]:
+                    - generic "grelha-zapi" [ref=e724]: 
+                  - listitem [ref=e725]:
+                    - generic "[TESTE] TesteCypress62992548428" [ref=e726]: 
+                  - listitem [ref=e727]:
+                    - generic "[TESTE] TesteCypress62997603244" [ref=e728]: 
+                  - listitem [ref=e729]:
+                    - generic "Apenas QA" [ref=e730]: 
+                  - listitem [ref=e731]:
+                    - generic "Pv Teste" [ref=e732]: 
+                  - listitem [ref=e733]:
+                    - generic "teste360" [ref=e734]: 
+                  - listitem [ref=e735]:
+                    - generic "Cypress" [ref=e736]: 
+                  - listitem [ref=e737]:
+                    - generic "Automação QA" [ref=e738]: 
+                  - listitem [ref=e739]:
+                    - generic "Messenger Staging" [ref=e740]: 
+                  - listitem [ref=e741]:
+                    - generic "Meu Teste Favorito" [ref=e742]: 
+                  - listitem [ref=e743]:
+                    - generic "hml web-chat" [ref=e744]: 
+                  - listitem [ref=e745]:
+                    - generic "lineu" [ref=e746]: 
+                  - listitem [ref=e747]:
+                    - generic "Pv Teste" [ref=e748]: 
+                  - listitem [ref=e749]:
+                    - generic "alow teste" [ref=e750]: 
+                  - listitem [ref=e751]:
+                    - generic "pv teste 123" [ref=e752]: 
+                  - listitem [ref=e753]:
+                    - generic "pv" [ref=e754]: 
+                  - listitem [ref=e755]:
+                    - generic "Pv Teste" [ref=e756]: 
+                  - listitem [ref=e757]:
+                    - generic "Webchat 0302" [ref=e758]: 
+                  - listitem [ref=e759]:
+                    - generic "[TESTE] TesteCypress62999483927" [ref=e760]: 
+                  - listitem [ref=e761]:
+                    - generic "Automação QA Webchat" [ref=e762]: 
+                  - listitem [ref=e763]:
+                    - generic "Fake messenger" [ref=e764]: 
+                  - listitem [ref=e765]:
+                    - generic "Meu Teste Favorito (Instagram)" [ref=e766]: 
+                  - listitem [ref=e767]:
+                    - generic "Waba Staging 2" [ref=e768]: 
+                  - listitem [ref=e769]:
+                    - generic "WABA Staging" [ref=e770]: 
+                  - listitem [ref=e771]:
+                    - generic "fghfghfghfg" [ref=e772]: 
+              - 'cell "Apenas eu INATIVO ok Produto Teste Kellen Teste Produto Teste cria 2 Teste edit Teste poli 02 produto Testing`s team Updated team dep departamento exclusivo da empresa TESTE QA distributeeee jansen webchat Jmeter Nik" [ref=e773]':
+                - list [ref=e774]:
+                  - listitem [ref=e775]:
+                    - img "Apenas eu" [ref=e776]
+                  - listitem [ref=e777]:
+                    - img "INATIVO ok" [ref=e778]
+                  - listitem [ref=e779]:
+                    - img "Produto" [ref=e780]
+                  - listitem [ref=e781]:
+                    - img "Teste Kellen" [ref=e782]
+                  - listitem [ref=e783]:
+                    - img "Teste Produto" [ref=e784]
+                  - listitem [ref=e785]:
+                    - img "Teste cria 2" [ref=e786]
+                  - listitem [ref=e787]:
+                    - img "Teste edit" [ref=e788]
+                  - listitem [ref=e789]:
+                    - img "Teste poli 02 produto" [ref=e790]
+                  - listitem [ref=e791]:
+                    - 'img "Testing`s team" [ref=e792]'
+                  - listitem [ref=e793]:
+                    - img "Updated team" [ref=e794]
+                  - listitem [ref=e795]:
+                    - img "dep" [ref=e796]
+                  - listitem [ref=e797]:
+                    - img "departamento exclusivo da empresa TESTE QA" [ref=e798]
+                  - listitem [ref=e799]:
+                    - img "distributeeee" [ref=e800]
+                  - listitem [ref=e801]:
+                    - img "jansen" [ref=e802]
+                  - listitem [ref=e803]:
+                    - img "webchat Jmeter Nik" [ref=e804]
+              - cell "14/02/2023 17:21" [ref=e805]
+              - cell " " [ref=e806]:
+                - list [ref=e807]:
+                  - listitem [ref=e808]:
+                    - link "" [ref=e809] [cursor=pointer]:
+                      - /url: https://homolog.qa.poli.digital/users/46667/79332/edit
+                      - generic [ref=e810]: 
+                  - listitem [ref=e811]:
+                    - generic [ref=e813] [cursor=pointer]: 
+            - row "Automacao97446 Automacao97446 policypressNEW97446@yopmail.com Operador de chat Usuário sem acesso                       16/04/2025 13:00  " [ref=e814]:
+              - cell "Automacao97446 Automacao97446" [ref=e815]:
+                - img "Automacao97446" [ref=e816]
+                - text: Automacao97446
+              - cell "policypressNEW97446@yopmail.com" [ref=e818]
+              - cell "Operador de chat Usuário sem acesso" [ref=e819]:
+                - list [ref=e820]:
+                  - listitem [ref=e821]:
+                    - img "Operador de chat" [ref=e822]
+                  - listitem [ref=e823]:
+                    - img "Usuário sem acesso" [ref=e824]
+              - cell "                     " [ref=e825]:
+                - list [ref=e826]:
+                  - listitem [ref=e827]:
+                    - generic "TestSup" [ref=e828]: 
+                  - listitem [ref=e829]:
+                    - generic "grelha-zapi" [ref=e830]: 
+                  - listitem [ref=e831]:
+                    - generic "[TESTE] TesteCypress62992548428" [ref=e832]: 
+                  - listitem [ref=e833]:
+                    - generic "[TESTE] TesteCypress62997603244" [ref=e834]: 
+                  - listitem [ref=e835]:
+                    - generic "Apenas QA" [ref=e836]: 
+                  - listitem [ref=e837]:
+                    - generic "Pv Teste" [ref=e838]: 
+                  - listitem [ref=e839]:
+                    - generic "teste360" [ref=e840]: 
+                  - listitem [ref=e841]:
+                    - generic "Cypress" [ref=e842]: 
+                  - listitem [ref=e843]:
+                    - generic "Automação QA" [ref=e844]: 
+                  - listitem [ref=e845]:
+                    - generic "Messenger Staging" [ref=e846]: 
+                  - listitem [ref=e847]:
+                    - generic "hml web-chat" [ref=e848]: 
+                  - listitem [ref=e849]:
+                    - generic "lineu" [ref=e850]: 
+                  - listitem [ref=e851]:
+                    - generic "Pv Teste" [ref=e852]: 
+                  - listitem [ref=e853]:
+                    - generic "alow teste" [ref=e854]: 
+                  - listitem [ref=e855]:
+                    - generic "pv teste 123" [ref=e856]: 
+                  - listitem [ref=e857]:
+                    - generic "pv" [ref=e858]: 
+                  - listitem [ref=e859]:
+                    - generic "Pv Teste" [ref=e860]: 
+                  - listitem [ref=e861]:
+                    - generic "Webchat 0302" [ref=e862]: 
+                  - listitem [ref=e863]:
+                    - generic "[TESTE] TesteCypress62999483927" [ref=e864]: 
+                  - listitem [ref=e865]:
+                    - generic "Automação QA Webchat" [ref=e866]: 
+                  - listitem [ref=e867]:
+                    - generic "Fake messenger" [ref=e868]: 
+                  - listitem [ref=e869]:
+                    - generic "Meu Teste Favorito (Instagram)" [ref=e870]: 
+              - cell [ref=e871]:
+                - list
+              - cell "16/04/2025 13:00" [ref=e872]
+              - cell " " [ref=e873]:
+                - list [ref=e874]:
+                  - listitem [ref=e875]:
+                    - link "" [ref=e876] [cursor=pointer]:
+                      - /url: https://homolog.qa.poli.digital/users/46667/99084/edit
+                      - generic [ref=e877]: 
+                  - listitem [ref=e878]:
+                    - generic [ref=e880] [cursor=pointer]: 
+            - row "Automacao98259 Automacao98259 policypress53955@yopmail.com Usuário sem acesso                       16/04/2025 11:32  " [ref=e881]:
+              - cell "Automacao98259 Automacao98259" [ref=e882]:
+                - img "Automacao98259" [ref=e883]
+                - text: Automacao98259
+              - cell "policypress53955@yopmail.com" [ref=e885]
+              - cell "Usuário sem acesso" [ref=e886]:
+                - list [ref=e887]:
+                  - listitem [ref=e888]:
+                    - img "Usuário sem acesso" [ref=e889]
+              - cell "                     " [ref=e890]:
+                - list [ref=e891]:
+                  - listitem [ref=e892]:
+                    - generic "TestSup" [ref=e893]: 
+                  - listitem [ref=e894]:
+                    - generic "grelha-zapi" [ref=e895]: 
+                  - listitem [ref=e896]:
+                    - generic "[TESTE] TesteCypress62992548428" [ref=e897]: 
+                  - listitem [ref=e898]:
+                    - generic "[TESTE] TesteCypress62997603244" [ref=e899]: 
+                  - listitem [ref=e900]:
+                    - generic "Apenas QA" [ref=e901]: 
+                  - listitem [ref=e902]:
+                    - generic "Pv Teste" [ref=e903]: 
+                  - listitem [ref=e904]:
+                    - generic "teste360" [ref=e905]: 
+                  - listitem [ref=e906]:
+                    - generic "Cypress" [ref=e907]: 
+                  - listitem [ref=e908]:
+                    - generic "Automação QA" [ref=e909]: 
+                  - listitem [ref=e910]:
+                    - generic "Messenger Staging" [ref=e911]: 
+                  - listitem [ref=e912]:
+                    - generic "hml web-chat" [ref=e913]: 
+                  - listitem [ref=e914]:
+                    - generic "lineu" [ref=e915]: 
+                  - listitem [ref=e916]:
+                    - generic "Pv Teste" [ref=e917]: 
+                  - listitem [ref=e918]:
+                    - generic "alow teste" [ref=e919]: 
+                  - listitem [ref=e920]:
+                    - generic "pv teste 123" [ref=e921]: 
+                  - listitem [ref=e922]:
+                    - generic "pv" [ref=e923]: 
+                  - listitem [ref=e924]:
+                    - generic "Pv Teste" [ref=e925]: 
+                  - listitem [ref=e926]:
+                    - generic "Webchat 0302" [ref=e927]: 
+                  - listitem [ref=e928]:
+                    - generic "[TESTE] TesteCypress62999483927" [ref=e929]: 
+                  - listitem [ref=e930]:
+                    - generic "Automação QA Webchat" [ref=e931]: 
+                  - listitem [ref=e932]:
+                    - generic "Fake messenger" [ref=e933]: 
+                  - listitem [ref=e934]:
+                    - generic "Meu Teste Favorito (Instagram)" [ref=e935]: 
+              - cell [ref=e936]:
+                - list
+              - cell "16/04/2025 11:32" [ref=e937]
+              - cell " " [ref=e938]:
+                - list [ref=e939]:
+                  - listitem [ref=e940]:
+                    - link "" [ref=e941] [cursor=pointer]:
+                      - /url: https://homolog.qa.poli.digital/users/46667/99079/edit
+                      - generic [ref=e942]: 
+                  - listitem [ref=e943]:
+                    - generic [ref=e945] [cursor=pointer]: 
+            - row "Automacao98259 Automacao98259 policypress27389@yopmail.com Gestor Operador de chat Supervisor                       16/04/2025 11:34  " [ref=e946]:
+              - cell "Automacao98259 Automacao98259" [ref=e947]:
+                - img "Automacao98259" [ref=e948]
+                - text: Automacao98259
+              - cell "policypress27389@yopmail.com" [ref=e950]
+              - cell "Gestor Operador de chat Supervisor" [ref=e951]:
+                - list [ref=e952]:
+                  - listitem [ref=e953]:
+                    - img "Gestor" [ref=e954]
+                  - listitem [ref=e955]:
+                    - img "Operador de chat" [ref=e956]
+                  - listitem [ref=e957]:
+                    - img "Supervisor" [ref=e958]
+              - cell "                     " [ref=e959]:
+                - list [ref=e960]:
+                  - listitem [ref=e961]:
+                    - generic "TestSup" [ref=e962]: 
+                  - listitem [ref=e963]:
+                    - generic "grelha-zapi" [ref=e964]: 
+                  - listitem [ref=e965]:
+                    - generic "[TESTE] TesteCypress62992548428" [ref=e966]: 
+                  - listitem [ref=e967]:
+                    - generic "[TESTE] TesteCypress62997603244" [ref=e968]: 
+                  - listitem [ref=e969]:
+                    - generic "Apenas QA" [ref=e970]: 
+                  - listitem [ref=e971]:
+                    - generic "Pv Teste" [ref=e972]: 
+                  - listitem [ref=e973]:
+                    - generic "teste360" [ref=e974]: 
+                  - listitem [ref=e975]:
+                    - generic "Cypress" [ref=e976]: 
+                  - listitem [ref=e977]:
+                    - generic "Automação QA" [ref=e978]: 
+                  - listitem [ref=e979]:
+                    - generic "Messenger Staging" [ref=e980]: 
+                  - listitem [ref=e981]:
+                    - generic "hml web-chat" [ref=e982]: 
+                  - listitem [ref=e983]:
+                    - generic "lineu" [ref=e984]: 
+                  - listitem [ref=e985]:
+                    - generic "Pv Teste" [ref=e986]: 
+                  - listitem [ref=e987]:
+                    - generic "alow teste" [ref=e988]: 
+                  - listitem [ref=e989]:
+                    - generic "pv teste 123" [ref=e990]: 
+                  - listitem [ref=e991]:
+                    - generic "pv" [ref=e992]: 
+                  - listitem [ref=e993]:
+                    - generic "Pv Teste" [ref=e994]: 
+                  - listitem [ref=e995]:
+                    - generic "Webchat 0302" [ref=e996]: 
+                  - listitem [ref=e997]:
+                    - generic "[TESTE] TesteCypress62999483927" [ref=e998]: 
+                  - listitem [ref=e999]:
+                    - generic "Automação QA Webchat" [ref=e1000]: 
+                  - listitem [ref=e1001]:
+                    - generic "Fake messenger" [ref=e1002]: 
+                  - listitem [ref=e1003]:
+                    - generic "Meu Teste Favorito (Instagram)" [ref=e1004]: 
+              - cell [ref=e1005]:
+                - list
+              - cell "16/04/2025 11:34" [ref=e1006]
+              - cell " " [ref=e1007]:
+                - list [ref=e1008]:
+                  - listitem [ref=e1009]:
+                    - link "" [ref=e1010] [cursor=pointer]:
+                      - /url: https://homolog.qa.poli.digital/users/46667/99080/edit
+                      - generic [ref=e1011]: 
+                  - listitem [ref=e1012]:
+                    - generic [ref=e1014] [cursor=pointer]: 
+            - 'row "CRM CRM crm@poli.digital Gestor Operador de chat                             Apenas eu INATIVO ok Produto Teste Kellen Teste Produto Teste cria 2 Teste edit Teste poli 02 produto Testing`s team Updated team dep departamento exclusivo da empresa TESTE QA jansen webchat Jmeter Nik 18/12/2025 11:01  " [ref=e1015]':
+              - cell "CRM CRM" [ref=e1016]:
+                - img "CRM" [ref=e1017]
+                - text: CRM
+              - cell "crm@poli.digital" [ref=e1019]
+              - cell "Gestor Operador de chat" [ref=e1020]:
+                - list [ref=e1021]:
+                  - listitem [ref=e1022]:
+                    - img "Gestor" [ref=e1023]
+                  - listitem [ref=e1024]:
+                    - img "Operador de chat" [ref=e1025]
+              - cell "                           " [ref=e1026]:
+                - list [ref=e1027]:
+                  - listitem [ref=e1028]:
+                    - generic "TestSup" [ref=e1029]: 
+                  - listitem [ref=e1030]:
+                    - generic "grelha-zapi" [ref=e1031]: 
+                  - listitem [ref=e1032]:
+                    - generic "[TESTE] TesteCypress62992548428" [ref=e1033]: 
+                  - listitem [ref=e1034]:
+                    - generic "[TESTE] TesteCypress62997603244" [ref=e1035]: 
+                  - listitem [ref=e1036]:
+                    - generic "Apenas QA" [ref=e1037]: 
+                  - listitem [ref=e1038]:
+                    - generic "Pv Teste" [ref=e1039]: 
+                  - listitem [ref=e1040]:
+                    - generic "teste360" [ref=e1041]: 
+                  - listitem [ref=e1042]:
+                    - generic "Cypress" [ref=e1043]: 
+                  - listitem [ref=e1044]:
+                    - generic "Automação QA" [ref=e1045]: 
+                  - listitem [ref=e1046]:
+                    - generic "Messenger Staging" [ref=e1047]: 
+                  - listitem [ref=e1048]:
+                    - generic "Meu Teste Favorito" [ref=e1049]: 
+                  - listitem [ref=e1050]:
+                    - generic "hml web-chat" [ref=e1051]: 
+                  - listitem [ref=e1052]:
+                    - generic "lineu" [ref=e1053]: 
+                  - listitem [ref=e1054]:
+                    - generic "Pv Teste" [ref=e1055]: 
+                  - listitem [ref=e1056]:
+                    - generic "alow teste" [ref=e1057]: 
+                  - listitem [ref=e1058]:
+                    - generic "pv teste 123" [ref=e1059]: 
+                  - listitem [ref=e1060]:
+                    - generic "pv" [ref=e1061]: 
+                  - listitem [ref=e1062]:
+                    - generic "Pv Teste" [ref=e1063]: 
+                  - listitem [ref=e1064]:
+                    - generic "Webchat 0302" [ref=e1065]: 
+                  - listitem [ref=e1066]:
+                    - generic "[TESTE] TesteCypress62999483927" [ref=e1067]: 
+                  - listitem [ref=e1068]:
+                    - generic "Automação QA Webchat" [ref=e1069]: 
+                  - listitem [ref=e1070]:
+                    - generic "Fake messenger" [ref=e1071]: 
+                  - listitem [ref=e1072]:
+                    - generic "Staging Messenger (Instagram)" [ref=e1073]: 
+                  - listitem [ref=e1074]:
+                    - generic "Page 101 (Instagram)" [ref=e1075]: 
+                  - listitem [ref=e1076]:
+                    - generic "Meu Teste Favorito (Instagram)" [ref=e1077]: 
+                  - listitem [ref=e1078]:
+                    - generic "Waba Staging 2" [ref=e1079]: 
+                  - listitem [ref=e1080]:
+                    - generic "WABA Staging" [ref=e1081]: 
+                  - listitem [ref=e1082]:
+                    - generic "fghfghfghfg" [ref=e1083]: 
+              - 'cell "Apenas eu INATIVO ok Produto Teste Kellen Teste Produto Teste cria 2 Teste edit Teste poli 02 produto Testing`s team Updated team dep departamento exclusivo da empresa TESTE QA jansen webchat Jmeter Nik" [ref=e1084]':
+                - list [ref=e1085]:
+                  - listitem [ref=e1086]:
+                    - img "Apenas eu" [ref=e1087]
+                  - listitem [ref=e1088]:
+                    - img "INATIVO ok" [ref=e1089]
+                  - listitem [ref=e1090]:
+                    - img "Produto" [ref=e1091]
+                  - listitem [ref=e1092]:
+                    - img "Teste Kellen" [ref=e1093]
+                  - listitem [ref=e1094]:
+                    - img "Teste Produto" [ref=e1095]
+                  - listitem [ref=e1096]:
+                    - img "Teste cria 2" [ref=e1097]
+                  - listitem [ref=e1098]:
+                    - img "Teste edit" [ref=e1099]
+                  - listitem [ref=e1100]:
+                    - img "Teste poli 02 produto" [ref=e1101]
+                  - listitem [ref=e1102]:
+                    - 'img "Testing`s team" [ref=e1103]'
+                  - listitem [ref=e1104]:
+                    - img "Updated team" [ref=e1105]
+                  - listitem [ref=e1106]:
+                    - img "dep" [ref=e1107]
+                  - listitem [ref=e1108]:
+                    - img "departamento exclusivo da empresa TESTE QA" [ref=e1109]
+                  - listitem [ref=e1110]:
+                    - img "jansen" [ref=e1111]
+                  - listitem [ref=e1112]:
+                    - img "webchat Jmeter Nik" [ref=e1113]
+              - cell "18/12/2025 11:01" [ref=e1114]
+              - cell " " [ref=e1115]:
+                - list [ref=e1116]:
+                  - listitem [ref=e1117]:
+                    - link "" [ref=e1118] [cursor=pointer]:
+                      - /url: https://homolog.qa.poli.digital/users/46667/101609/edit
+                      - generic [ref=e1119]: 
+                  - listitem [ref=e1120]:
+                    - generic [ref=e1122] [cursor=pointer]: 
+            - row "Carga Empresas Carga Empresas cargaempresa_46667@poli.digital                     23/06/2025 09:39  " [ref=e1123]:
+              - cell "Carga Empresas Carga Empresas" [ref=e1124]:
+                - img "Carga Empresas" [ref=e1125]
+                - text: Carga Empresas
+              - cell "cargaempresa_46667@poli.digital" [ref=e1127]
+              - cell [ref=e1128]:
+                - list
+              - cell "                   " [ref=e1129]:
+                - list [ref=e1130]:
+                  - listitem [ref=e1131]:
+                    - generic "TestSup" [ref=e1132]: 
+                  - listitem [ref=e1133]:
+                    - generic "grelha-zapi" [ref=e1134]: 
+                  - listitem [ref=e1135]:
+                    - generic "[TESTE] TesteCypress62992548428" [ref=e1136]: 
+                  - listitem [ref=e1137]:
+                    - generic "[TESTE] TesteCypress62997603244" [ref=e1138]: 
+                  - listitem [ref=e1139]:
+                    - generic "Apenas QA" [ref=e1140]: 
+                  - listitem [ref=e1141]:
+                    - generic "Pv Teste" [ref=e1142]: 
+                  - listitem [ref=e1143]:
+                    - generic "teste360" [ref=e1144]: 
+                  - listitem [ref=e1145]:
+                    - generic "Cypress" [ref=e1146]: 
+                  - listitem [ref=e1147]:
+                    - generic "Messenger Staging" [ref=e1148]: 
+                  - listitem [ref=e1149]:
+                    - generic "hml web-chat" [ref=e1150]: 
+                  - listitem [ref=e1151]:
+                    - generic "lineu" [ref=e1152]: 
+                  - listitem [ref=e1153]:
+                    - generic "Pv Teste" [ref=e1154]: 
+                  - listitem [ref=e1155]:
+                    - generic "alow teste" [ref=e1156]: 
+                  - listitem [ref=e1157]:
+                    - generic "pv teste 123" [ref=e1158]: 
+                  - listitem [ref=e1159]:
+                    - generic "pv" [ref=e1160]: 
+                  - listitem [ref=e1161]:
+                    - generic "Pv Teste" [ref=e1162]: 
+                  - listitem [ref=e1163]:
+                    - generic "Webchat 0302" [ref=e1164]: 
+                  - listitem [ref=e1165]:
+                    - generic "[TESTE] TesteCypress62999483927" [ref=e1166]: 
+                  - listitem [ref=e1167]:
+                    - generic "Fake messenger" [ref=e1168]: 
+                  - listitem [ref=e1169]:
+                    - generic "Meu Teste Favorito (Instagram)" [ref=e1170]: 
+              - cell [ref=e1171]:
+                - list
+              - cell "23/06/2025 09:39" [ref=e1172]
+              - cell " " [ref=e1173]:
+                - list [ref=e1174]:
+                  - listitem [ref=e1175]:
+                    - link "" [ref=e1176] [cursor=pointer]:
+                      - /url: https://homolog.qa.poli.digital/users/46667/99817/edit
+                      - generic [ref=e1177]: 
+                  - listitem [ref=e1178]:
+                    - generic [ref=e1180] [cursor=pointer]: 
+            - row "Daniel Perez Daniel Perez daniel.calistrato@poli.digital Administrador geral Gestor Operador de chat Supervisor                     Produto 08/10/2025 16:42  " [ref=e1181]:
+              - cell "Daniel Perez Daniel Perez" [ref=e1182]:
+                - img "Daniel Perez" [ref=e1183]
+                - text: Daniel Perez
+              - cell "daniel.calistrato@poli.digital" [ref=e1185]
+              - cell "Administrador geral Gestor Operador de chat Supervisor" [ref=e1186]:
+                - list [ref=e1187]:
+                  - listitem [ref=e1188]:
+                    - img "Administrador geral" [ref=e1189]
+                  - listitem [ref=e1190]:
+                    - img "Gestor" [ref=e1191]
+                  - listitem [ref=e1192]:
+                    - img "Operador de chat" [ref=e1193]
+                  - listitem [ref=e1194]:
+                    - img "Supervisor" [ref=e1195]
+              - cell "                   " [ref=e1196]:
+                - list [ref=e1197]:
+                  - listitem [ref=e1198]:
+                    - generic "TestSup" [ref=e1199]: 
+                  - listitem [ref=e1200]:
+                    - generic "grelha-zapi" [ref=e1201]: 
+                  - listitem [ref=e1202]:
+                    - generic "[TESTE] TesteCypress62992548428" [ref=e1203]: 
+                  - listitem [ref=e1204]:
+                    - generic "[TESTE] TesteCypress62997603244" [ref=e1205]: 
+                  - listitem [ref=e1206]:
+                    - generic "Apenas QA" [ref=e1207]: 
+                  - listitem [ref=e1208]:
+                    - generic "Pv Teste" [ref=e1209]: 
+                  - listitem [ref=e1210]:
+                    - generic "teste360" [ref=e1211]: 
+                  - listitem [ref=e1212]:
+                    - generic "Automação QA" [ref=e1213]: 
+                  - listitem [ref=e1214]:
+                    - generic "Messenger Staging" [ref=e1215]: 
+                  - listitem [ref=e1216]:
+                    - generic "hml web-chat" [ref=e1217]: 
+                  - listitem [ref=e1218]:
+                    - generic "lineu" [ref=e1219]: 
+                  - listitem [ref=e1220]:
+                    - generic "Pv Teste" [ref=e1221]: 
+                  - listitem [ref=e1222]:
+                    - generic "alow teste" [ref=e1223]: 
+                  - listitem [ref=e1224]:
+                    - generic "pv teste 123" [ref=e1225]: 
+                  - listitem [ref=e1226]:
+                    - generic "pv" [ref=e1227]: 
+                  - listitem [ref=e1228]:
+                    - generic "Pv Teste" [ref=e1229]: 
+                  - listitem [ref=e1230]:
+                    - generic "Webchat 0302" [ref=e1231]: 
+                  - listitem [ref=e1232]:
+                    - generic "[TESTE] TesteCypress62999483927" [ref=e1233]: 
+                  - listitem [ref=e1234]:
+                    - generic "Automação QA Webchat" [ref=e1235]: 
+                  - listitem [ref=e1236]:
+                    - generic "Fake messenger" [ref=e1237]: 
+              - cell "Produto" [ref=e1238]:
+                - list [ref=e1239]:
+                  - listitem [ref=e1240]:
+                    - img "Produto" [ref=e1241]
+              - cell "08/10/2025 16:42" [ref=e1242]
+              - cell " " [ref=e1243]:
+                - list [ref=e1244]:
+                  - listitem [ref=e1245]:
+                    - link "" [ref=e1246] [cursor=pointer]:
+                      - /url: https://homolog.qa.poli.digital/users/46667/101400/edit
+                      - generic [ref=e1247]: 
+                  - listitem [ref=e1248]:
+                    - generic [ref=e1250] [cursor=pointer]: 
+        - navigation [ref=e1252]:
+          - list [ref=e1253]:
+            - listitem "« Previous" [ref=e1254] [cursor=pointer]:
+              - generic: ‹
+            - listitem [ref=e1255] [cursor=pointer]:
+              - generic [ref=e1256]: "1"
+            - listitem [ref=e1257] [cursor=pointer]:
+              - link "2" [ref=e1258]:
+                - /url: https://homolog.qa.poli.digital/users/46667?page=2
+            - listitem [ref=e1259] [cursor=pointer]:
+              - link "3" [ref=e1260]:
+                - /url: https://homolog.qa.poli.digital/users/46667?page=3
+            - listitem [ref=e1261] [cursor=pointer]:
+              - link "4" [ref=e1262]:
+                - /url: https://homolog.qa.poli.digital/users/46667?page=4
+            - listitem [ref=e1263] [cursor=pointer]:
+              - link "5" [ref=e1264]:
+                - /url: https://homolog.qa.poli.digital/users/46667?page=5
+            - listitem [ref=e1265] [cursor=pointer]:
+              - link "6" [ref=e1266]:
+                - /url: https://homolog.qa.poli.digital/users/46667?page=6
+            - listitem [ref=e1267] [cursor=pointer]:
+              - link "7" [ref=e1268]:
+                - /url: https://homolog.qa.poli.digital/users/46667?page=7
+            - listitem [ref=e1269] [cursor=pointer]:
+              - link "8" [ref=e1270]:
+                - /url: https://homolog.qa.poli.digital/users/46667?page=8
+            - listitem [ref=e1271] [cursor=pointer]:
+              - link "9" [ref=e1272]:
+                - /url: https://homolog.qa.poli.digital/users/46667?page=9
+            - listitem [ref=e1273] [cursor=pointer]:
+              - link "10" [ref=e1274]:
+                - /url: https://homolog.qa.poli.digital/users/46667?page=10
+            - listitem [ref=e1275] [cursor=pointer]:
+              - generic: ...
+            - listitem [ref=e1276] [cursor=pointer]:
+              - link "14" [ref=e1277]:
+                - /url: https://homolog.qa.poli.digital/users/46667?page=14
+            - listitem [ref=e1278] [cursor=pointer]:
+              - link "15" [ref=e1279]:
+                - /url: https://homolog.qa.poli.digital/users/46667?page=15
+            - listitem [ref=e1280] [cursor=pointer]:
+              - link "Next »" [ref=e1281]:
+                - /url: https://homolog.qa.poli.digital/users/46667?page=2
+                - text: ›
+  - text:    
+  - link "Suporte" [ref=e1286] [cursor=pointer]:
+    - /url: https://api.whatsapp.com/send?phone=556282361759
+    - text: Suporte
+    - img [ref=e1287]

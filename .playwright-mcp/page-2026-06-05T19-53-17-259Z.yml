@@ -1,0 +1,122 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=6bec35eab109d7304e16382c144d65fb5f688471&toPath=https://app.poli.digital/home
+        - img [ref=e11]
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - list
+        - generic [ref=e14]:
+          - list
+      - generic [ref=e15]:
+        - button "Consumo de créditos" [ref=e16] [cursor=pointer]:
+          - img [ref=e18]
+        - button "YA" [ref=e22] [cursor=pointer]:
+          - generic [ref=e28]: YA
+        - generic [ref=e31]: 3.5.347
+    - main [ref=e32]:
+      - main [ref=e33]:
+        - generic [ref=e35]:
+          - navigation "breadcrumb" [ref=e37]:
+            - link "Página inicial" [ref=e39] [cursor=pointer]:
+              - /url: /
+            - img [ref=e40]
+            - generic [ref=e42]: Configurações gerais
+          - generic [ref=e44]:
+            - generic [ref=e45]:
+              - textbox "Buscar configuração..." [ref=e46]
+              - button [ref=e47] [cursor=pointer]:
+                - img [ref=e48]
+            - region "Atendimento" [ref=e51]:
+              - heading "Atendimento" [level=2] [ref=e52]
+              - generic [ref=e53]:
+                - link "Modelos Crie e gerencie modelos de mensagem para agilizar o atendimento." [ref=e54] [cursor=pointer]:
+                  - /url: /templates
+                  - img [ref=e56]
+                  - generic [ref=e61]:
+                    - generic [ref=e62]: Modelos
+                    - generic [ref=e63]: Crie e gerencie modelos de mensagem para agilizar o atendimento.
+                - link "Etiquetas Organize contatos e conversas com etiquetas personalizadas." [ref=e64] [cursor=pointer]:
+                  - /url: /tags
+                  - img [ref=e66]
+                  - generic [ref=e70]:
+                    - generic [ref=e71]: Etiquetas
+                    - generic [ref=e72]: Organize contatos e conversas com etiquetas personalizadas.
+                - link "Departamentos Estruture suas equipes e direcione os atendimentos." [ref=e73] [cursor=pointer]:
+                  - /url: /teams
+                  - img [ref=e75]
+                  - generic [ref=e77]:
+                    - generic [ref=e78]: Departamentos
+                    - generic [ref=e79]: Estruture suas equipes e direcione os atendimentos.
+                - link "Canais Conecte e configure os canais de atendimento da conta." [ref=e80] [cursor=pointer]:
+                  - /url: /channels
+                  - img [ref=e82]
+                  - generic [ref=e87]:
+                    - generic [ref=e88]: Canais
+                    - generic [ref=e89]: Conecte e configure os canais de atendimento da conta.
+                - link "Distribuição Defina como as conversas são distribuídas entre os atendentes." [ref=e90] [cursor=pointer]:
+                  - /url: /settings/distribution
+                  - img [ref=e92]
+                  - generic [ref=e97]:
+                    - generic [ref=e98]: Distribuição
+                    - generic [ref=e99]: Defina como as conversas são distribuídas entre os atendentes.
+            - region "Empresa" [ref=e100]:
+              - heading "Empresa" [level=2] [ref=e101]
+              - generic [ref=e102]:
+                - link "Empresa Atualize os dados e as informações da sua empresa." [ref=e103] [cursor=pointer]:
+                  - /url: /settings/company
+                  - img [ref=e105]
+                  - generic [ref=e108]:
+                    - generic [ref=e109]: Empresa
+                    - generic [ref=e110]: Atualize os dados e as informações da sua empresa.
+                - link "Usuários Gerencie os usuários e seus acessos à plataforma." [ref=e111] [cursor=pointer]:
+                  - /url: /users
+                  - img [ref=e113]
+                  - generic [ref=e116]:
+                    - generic [ref=e117]: Usuários
+                    - generic [ref=e118]: Gerencie os usuários e seus acessos à plataforma.
+                - link "Integrações Conecte aplicativos e serviços externos à sua conta." [ref=e119] [cursor=pointer]:
+                  - /url: /applications
+                  - img [ref=e121]
+                  - generic [ref=e128]:
+                    - generic [ref=e129]: Integrações
+                    - generic [ref=e130]: Conecte aplicativos e serviços externos à sua conta.
+                - link "Inteligência artificial Configure os recursos de IA do atendimento." [ref=e131] [cursor=pointer]:
+                  - /url: /settings/ai
+                  - img [ref=e133]
+                  - generic [ref=e135]:
+                    - generic [ref=e136]: Inteligência artificial
+                    - generic [ref=e137]: Configure os recursos de IA do atendimento.
+                - link "Assinatura Acompanhe seu plano, faturas e forma de pagamento." [ref=e138] [cursor=pointer]:
+                  - /url: /settings/subscription
+                  - img [ref=e140]
+                  - generic [ref=e142]:
+                    - generic [ref=e143]: Assinatura
+                    - generic [ref=e144]: Acompanhe seu plano, faturas e forma de pagamento.
+                - link "Segurança Defina as políticas de segurança e acesso da conta." [ref=e145] [cursor=pointer]:
+                  - /url: /settings/security
+                  - img [ref=e147]
+                  - generic [ref=e151]:
+                    - generic [ref=e152]: Segurança
+                    - generic [ref=e153]: Defina as políticas de segurança e acesso da conta.
+                - link "Permissões Controle o que cada perfil de usuário pode acessar." [ref=e154] [cursor=pointer]:
+                  - /url: /settings/permissions
+                  - img [ref=e156]
+                  - generic [ref=e158]:
+                    - generic [ref=e159]: Permissões
+                    - generic [ref=e160]: Controle o que cada perfil de usuário pode acessar.
+                - link "Ações críticas Audite e gerencie ações sensíveis realizadas na conta." [ref=e161] [cursor=pointer]:
+                  - /url: /settings/critical-actions
+                  - img [ref=e163]
+                  - generic [ref=e166]:
+                    - generic [ref=e167]: Ações críticas
+                    - generic [ref=e168]: Audite e gerencie ações sensíveis realizadas na conta.
+                - link "Exportar conversas Exporte o histórico de conversas da sua conta." [ref=e169] [cursor=pointer]:
+                  - /url: /settings/export-conversations
+                  - img [ref=e171]
+                  - generic [ref=e174]:
+                    - generic [ref=e175]: Exportar conversas
+                    - generic [ref=e176]: Exporte o histórico de conversas da sua conta.
+  - region "Notifications (F8)":
+    - list

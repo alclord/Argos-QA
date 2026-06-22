@@ -1,0 +1,42 @@
+[     750ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://ad.doubleclick.net/ccm/s/collect?auid=317096333.1779910388&gtm=45He6621h2v846319599za200zd846319599xea:0
+[     889ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:101
+[     889ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:101
+[    1022ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:76
+[    1576ms] TypeError: Cannot read properties of undefined (reading 'plugin')
+    at <anonymous>:1:101
+    at <anonymous>:1:126
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:896:429
+    at qS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:898:31)
+    at Od.pS (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:895:92)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:309:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:470)
+    at Od.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:255:473)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:231:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:719)
+    at k.Kq (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:193:1286)
+    at uf (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:266:960)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:720:315
+    at Kz (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:623:1)
+    at Pz.evaluate (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:627:722)
+    at e (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:647:170)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:198:125
+    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:648:360)
+    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:648:100)
+    at mB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:648:742)
+    at pB (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:652:183)
+    at BD (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:697:252)
+    at c.push (https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:701:209)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=G-EPZWL6H9X8&cx=c&gtm=4e6621h2:688:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=AW-806600684:866:69)
+    at c.push (https://www.googletagmanager.com/gtag/js?id=UA-118273772-1&cx=c&gtm=4e6620:554:69)
+    at https://www.googletagmanager.com/gtm.js?id=GTM-M2LRLQN:701:495
+    at r (https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:70:9812)
+[    1878ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[    2725ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0
+[    2793ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:69
+[    6126ms] Identifier 'TCRMEmbed' has already been declared
+[   46340ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/473401787_1776961919511233_1796431923958519858_n.jpg?ccb=11-4&oh=01_Q5Aa3gGfUimcsz5PJCl57DyIzZByr1rsN6CeYgYIYyjFXiIZOA&oe=698DB2E8&_nc_sid=5e03e0&_nc_cat=104:0
+[  124825ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-Ddp2E-uQ.js:69
+[  160768ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://pps.whatsapp.net/v/t61.24694-24/437184832_898610138517247_1283479863683724595_n.jpg?ccb=11-4&oh=01_Q5Aa4gGX2ma97syCUx2rsuB7d4avSxodCswO68toDPKKOhnlOQ&oe=6A0F4E99&_nc_sid=5e03e0&_nc_cat=107:0

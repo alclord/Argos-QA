@@ -1,0 +1,82 @@
+﻿Modulo;Titulo;Ocorrencias;Usuarios;Primeira Occur.;Status
+Autenticação;Error: connect ECONNREFUSED 172.20.63.249:3000;339375;0;2025-03-06T21:25:40.012000Z;ongoing
+Autenticação;Error: read ECONNRESET;21350;0;2025-03-07T12:37:36.754000Z;ongoing
+Autenticação;Error: getaddrinfo EAI_AGAIN nectarcrm-integration-service.poli-core-integration-system.svc.cluster.local;24531;0;2025-03-07T17:16:42.766000Z;ongoing
+Autenticação;Error: socket hang up;5608;0;2025-03-07T12:37:36.758000Z;ongoing
+Autenticação;URIError: URI malformed;1037;0;2025-03-07T11:17:42.823000Z;ongoing
+Autenticação;AxiosError: Request failed with status code 429;688;0;2026-02-28T05:01:44.176000Z;ongoing
+Autenticação;FastifyError: Unsupported Media Type: application/x-www-form-urlencoded;3;0;2026-06-17T11:13:27.209000Z;new
+Autenticação;Error: Erro proposital para testar Sentry!;5;0;2026-05-22T04:32:49.989000Z;ongoing
+Autenticação;SSO callback failed: resolve-user error;1;0;2026-06-18T21:12:42.472000Z;new
+Autenticação;Error: There is already an encoder stored which handles exactly the same mime types.;269438;1641;2025-10-08T17:43:10.414000Z;ongoing
+Autenticação;AxiosError: Request failed with status code 401;65271;1376;2025-10-08T19:32:09.520000Z;ongoing
+Autenticação;<unknown>;105724;881;2025-10-09T15:00:51.775000Z;ongoing
+Autenticação;Error: AxiosError: Request failed with status code 401;15745;345;2025-10-09T13:47:54.298000Z;ongoing
+Autenticação;Error: AbortError: The user aborted a request.;30552;217;2025-10-09T15:07:32.821000Z;ongoing
+Autenticação;Large Render Blocking Asset;5223;86;2025-10-09T15:09:28.060000Z;ongoing
+Autenticação;AxiosError: Network Error;2067;102;2025-10-09T15:32:59.424000Z;ongoing
+Autenticação;AxiosError: Network Error;508;93;2026-04-23T01:19:45.234000Z;ongoing
+Autenticação;Error: No error message;7024;116;2025-10-09T15:11:30.518000Z;ongoing
+Autenticação;ReferenceError: chatPanelElement is not defined;2220;52;2025-10-09T15:51:09.194000Z;ongoing
+Autenticação;Error: Rejected;1419;29;2025-10-09T15:44:39.113000Z;ongoing
+Autenticação;TypeError: Cannot read properties of undefined (reading 'template_name');1195;32;2025-10-09T15:12:48.656000Z;ongoing
+Autenticação;AxiosError: Network Error;231;36;2026-04-23T11:26:30.477000Z;ongoing
+Autenticação;Error: Rejected;1542;12;2025-10-09T16:43:22.025000Z;ongoing
+Autenticação;TypeError: Cannot read properties of undefined (reading 'contact');359;22;2025-12-18T00:14:49.515000Z;ongoing
+Canais;Error: Request failed with status code 500;1131563;0;2025-03-11T12:09:32.463000Z;ongoing
+Canais;"""WabaProviderCloudAPIError: """"Não foi possível criar \""""Template no Meta\"""".""""""";10915;0;2025-05-20T11:15:48.030000Z;ongoing
+Canais;ReferenceError: channelsCustomerFindIncludingDeleted is not defined;2729;0;2025-09-23T12:28:18.035000Z;ongoing
+Canais;WabaProviderCloudAPIError: Ocorreu um erro inesperado;435;0;2026-02-04T19:34:42.734000Z;ongoing
+Canais;Error: Template não encontrada;709;0;2025-03-11T21:13:46.163000Z;ongoing
+Canais;Error: Campo 'HEADER' não suporta emoji.;741;0;2025-05-21T14:24:01.631000Z;ongoing
+Canais;"""WabaProviderCloudAPIError: """"Error to meta delete template in removeByName""""""";120;0;2026-02-16T11:05:24.782000Z;ongoing
+Canais;Error: Campo 'FOOTER' não suporta emoji.;122;0;2026-02-02T18:14:54.259000Z;ongoing
+Canais;TypeError: Cannot destructure property 'totalPage' of '(intermediate value)' as it is undefined.;102;0;2025-12-24T00:00:00.873000Z;ongoing
+Canais;Error: Não implementado!;62;0;2026-02-24T18:19:39.971000Z;ongoing
+Canais;Error: Template não encontrada;84;0;2026-01-19T17:53:25.030000Z;ongoing
+Canais;WabaProviderError: Erro na configuração do canal.;148;0;2026-01-20T19:06:47.869000Z;ongoing
+Canais;MongoError: Authorization failure;7;0;2026-06-11T19:09:39.124000Z;ongoing
+Canais;ReferenceError: AppError is not defined;1630;0;2025-03-11T13:14:00.486000Z;ongoing
+Canais;TemplateError: Corpo da mensagem não preenchido.;4;0;2026-06-17T14:38:23.535000Z;new
+Distribuição / Filas;Chat created;95545;0;2025-03-06T19:00:45.426000Z;ongoing
+Distribuição / Filas;Distribute to department;32319;0;2025-03-06T19:12:38.228000Z;ongoing
+Distribuição / Filas;Distribute from the queue;72830;0;2025-03-06T19:00:45.796000Z;ongoing
+Distribuição / Filas;Assign on first login;10397;0;2025-03-06T19:11:23.285000Z;ongoing
+Distribuição / Filas;Error: read ECONNRESET;2425;9;2025-03-24T12:33:41.827000Z;ongoing
+Distribuição / Filas;Error: connect ECONNREFUSED 172.20.28.134:8080;3432;2;2025-03-10T21:32:08.041000Z;ongoing
+Distribuição / Filas;Error: getaddrinfo EAI_AGAIN users-service.poli-core-identity-system;2414;3;2025-03-20T16:45:44.137000Z;ongoing
+Distribuição / Filas;AxiosError: Request failed with status code 500;10190;0;2025-03-11T01:51:46.910000Z;ongoing
+Distribuição / Filas;AxiosError: Request failed with status code 401;15;0;2026-06-12T21:23:00.301000Z;ongoing
+Distribuição / Filas;Error: socket hang up;3171;0;2025-03-11T12:02:32.406000Z;ongoing
+Distribuição / Filas;Error: Process already running!;16;0;2026-02-20T10:13:42.374000Z;ongoing
+WebSocket / Presença;Operator not connected;3570151;0;2025-03-13T12:27:01.335000Z;ongoing
+Jarvis / IA;Exception: Usuário não encontrado;2945;0;2026-02-05T12:17:44.177941Z;ongoing
+Jarvis / IA;Consecutive HTTP;39669;0;2025-10-06T15:55:01.848421Z;ongoing
+Jarvis / IA;IntegrityError: (mysql.connector.errors.IntegrityError) 1048 (23000): Column 'channel_id' cannot be null;6885;0;2026-03-09T19:39:20.898241Z;ongoing
+Jarvis / IA;Slow DB Query;14981;0;2025-10-14T11:58:46.940628Z;ongoing
+Jarvis / IA;AttributeError: 'NoneType' object has no attribute 'get';31072;0;2025-10-20T14:53:19.519924Z;ongoing
+Jarvis / IA;AttributeError: 'NoneType' object has no attribute 'get';80400;0;2025-10-15T15:15:35.672275Z;ongoing
+Jarvis / IA;Erro inesperado no modelo 'llama-3.1-8b-instant': 'NoneType' object has no attribute 'get';1699;0;2025-10-30T10:41:31.131957Z;ongoing
+Jarvis / IA;BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.;1110;0;2025-10-13T22:04:15.821891Z;ongoing
+Jarvis / IA;"""BadRequestError: Error code: 400 - {'error': {'message': """"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details."""", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': '{\n  """"motivo"""":""""commercial"""",\n...""";368;0;2026-03-10T17:39:53.250136Z;ongoing
+Jarvis / IA;Failed to transcribe audio segment 0: Error code: 400 - {'error': {'message': 'could not process file - is it a valid media file?', 'type': 'invalid_request_error'}};395;0;2025-10-20T16:52:57.818385Z;ongoing
+Jarvis / IA;TimeoutError: Timeout de requisição excedido;145;0;2026-02-18T13:35:04.168596Z;ongoing
+Jarvis / IA;Erro inesperado no modelo 'openai/gpt-oss-120b': 'NoneType' object has no attribute 'get';77;0;2026-03-10T19:55:13.340363Z;ongoing
+Jarvis / IA;Failed to transcribe audio segment 0: Request timed out.;5;0;2026-05-31T23:08:19.780762Z;ongoing
+Jarvis / IA;Erro inesperado no modelo 'llama-3.1-8b-instant': list indices must be integers or slices, not str;9;0;2026-04-22T20:48:48.779853Z;ongoing
+Jarvis / IA;"""ValueError: invalid literal for int() with base 10: '18""""'""";17;0;2026-02-03T19:30:04.310860Z;ongoing
+Chat / Mensagens;"""ErrorException: Attempt to read property """"customer"""" on null""";8605990;1;2026-02-09T20:14:05.315486Z;ongoing
+Chat / Mensagens;Exception: Graph returned an error: Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.;213571;677;2025-09-16T21:28:15.645538Z;ongoing
+Chat / Mensagens;Exception: Não foi possível enviar Template;61139;11;2026-03-24T15:05:38.305318Z;ongoing
+Chat / Mensagens;Exception: cURL error 35: TLS connect error: error:0A000126:SSL routines::unexpected eof while reading (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://oauth2.googleapis.com/token;795454;122;2025-11-17T14:00:02.687664Z;ongoing
+Chat / Mensagens;Exception: Customer not active!;16254;59;2026-06-15T14:11:53.551835Z;ongoing
+Chat / Mensagens;Exception: Customer not active!;17578;623;2026-06-01T19:00:53.347657Z;ongoing
+Chat / Mensagens;GuzzleHttp\Exception\ClientException: Client error: `POST http://meta-whatsapp-cloud-api.poli-core-meta-system.svc.cluster.local:4300/legacy/sendTemplate` resulted in a `400 Bad Request` response;213532;11;2025-09-16T14:13:46.271985Z;ongoing
+Chat / Mensagens;ErrorException: Undefined array key 0;513705;594;2025-09-16T21:21:49.956982Z;ongoing
+Chat / Mensagens;App\CRM\Domain\Exceptions\CRMException: Triction error: Etiqueta 27593 não encontrada;84032;294;2025-09-16T17:54:31.882715Z;ongoing
+Chat / Mensagens;GuzzleHttp\Exception\ClientException: Client error: `PATCH https://api.crm.poli.digital/api/contacts/13018448` resulted in a `404 Not Found` response:;82931;325;2025-09-16T17:54:31.841688Z;ongoing
+Chat / Mensagens;Illuminate\Database\QueryException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '56-100-37026633-2026-06-22-3-1949981939' for key 'credits_count.unique_credits_count' (SQL: insert into `credits_count` (`customer_id`, `contact_id`, `channel_id`, `date_occur`, `typ...;41346;130;2025-11-17T14:06:12.172758Z;ongoing
+Chat / Mensagens;App\CRM\Domain\Exceptions\CRMException: Triction error: Não autenticado.;28727;123;2025-11-17T14:00:24.123263Z;ongoing
+Chat / Mensagens;GuzzleHttp\Exception\ClientException: Client error: `POST https://api.crm.poli.digital/api/contacts` resulted in a `401 Unauthorized` response:;28240;138;2025-11-17T14:00:24.087450Z;ongoing
+Chat / Mensagens;GuzzleHttp\Exception\ClientException: Client error: `POST https://api.crm.poli.digital/api/labels` resulted in a `400 Bad Request` response:;8465;158;2026-01-30T12:28:10.372406Z;ongoing
+Chat / Mensagens;App\CRM\Domain\Exceptions\CRMException: Triction error: Já existe uma etiqueta com este nome.;8465;158;2026-01-30T12:28:10.382970Z;ongoing

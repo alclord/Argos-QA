@@ -1,0 +1,11 @@
+[     744ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:101
+[     745ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:101
+[     821ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:76
+[    1174ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api-canary.poli.digital/v3/crm/index:0
+[    1176ms] [ERROR] getCrmUserToken - Error on get crm user token: AxiosError: Request failed with status code 404
+    at kBe (https://spa-canary.poli.digital/assets/index-DjxF6uES.js:1105:10207)
+    at XMLHttpRequest.x (https://spa-canary.poli.digital/assets/index-DjxF6uES.js:1105:15780)
+    at w2.request (https://spa-canary.poli.digital/assets/index-DjxF6uES.js:1107:2243)
+    at async uz.getUserToken (https://spa-canary.poli.digital/assets/index-DjxF6uES.js:2236:44294)
+    at async https://spa-canary.poli.digital/assets/index-DjxF6uES.js:2236:44585 @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69
+[    1376ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-DjxF6uES.js:69

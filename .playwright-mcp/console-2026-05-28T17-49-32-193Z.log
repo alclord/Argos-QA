@@ -1,0 +1,10 @@
+[     715ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:101
+[     715ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:101
+[     779ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:76
+[    1302ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-DS8iyN8b.js:69
+[    3005ms] Identifier 'TCRMEmbed' has already been declared
+[    3043ms] Identifier 'TCRMEmbed' has already been declared
+[   72264ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/templates?include=key,version,status,message,variables,team,metadata&page=1&per_page=999&order=tag&keyboard_shortcut=NOT_EMPTY:0
+[   74942ms] [ERROR] Access to fetch at 'https://spa.qa.poli.digital/' (redirected from 'https://foundation-api.qa.poli.digital/v3/templates?keyboard_shortcut=NOT_EMPTY&per_page=9999') from origin 'https://spa.qa.poli.digital' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://spa.qa.poli.digital/chat/9bb49c4f-2c88-4a7f-84bb-38074c239b4b:0
+[   74943ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://spa.qa.poli.digital/:0
+[   75245ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://foundation-api.qa.poli.digital/v3/templates?keyboard_shortcut=NOT_EMPTY&per_page=999:0

@@ -1,0 +1,25 @@
+Título do Erro;Projeto Sentry;Ocorrências (7d);Ocorrências (14d);Δ Semana (%);Usuários Afetados;Primeiro Visto;Último Visto;Módulo;Sinal Oculto
+AxiosError: Request failed with status code 404;omnispa;5680;~9800;+80%;2299;30/05/2026;03/06/2026;Chat / Mensagens;Não (SM: AxiosError 404 ativo)
+Error: Request failed with status code 500;spa-backend;1868;~3000;~+25%;775;27/05/2026;03/06/2026;WebSocket / Presença;Sim
+polichat "Customer not active!";polichat-web-app;2810;~1800;NOVO +56%;322;01/06/2026;03/06/2026;Distribuição / Filas;Sim
+AxiosError: Network Error (1);omnispa;397;~600;+100% NOVO;237;30/05/2026;03/06/2026;Chat / Mensagens;Sim
+AxiosError: Network Error (2);omnispa;356;~400;+100% NOVO;262;30/05/2026;03/06/2026;Chat / Mensagens;Sim
+Exception: URL returned error 403;revendedor-api;5710;~8000;-29%;139;27/05/2026;03/06/2026;Integrações Externas;Sim
+Exception: URL returned error 500;revendedor-api;5727;13806;-29%;138;27/05/2026;03/06/2026;Integrações Externas;Sim
+MessageSenderException: Contato não possui canal;foundationapi;3338;~5000;~+50%;461;27/05/2026;03/06/2026;Canais / WhatsApp · Contatos / Busca;Sim
+ErrorException: Array to string conversion;polichat-web-app;187;~300;~0%;162;27/05/2026;03/06/2026;Chat / Mensagens;Sim
+ErrorException: Attempt to read property "id" on null;polichat-web-app;636;~900;~0%;134;27/05/2026;03/06/2026;Chat / Mensagens;Sim
+Exception: Não foi possível enviar Template;polichat-web-app;216;~300;~0%;116;27/05/2026;03/06/2026;Chat / Mensagens;Sim
+Error: getaddrinfo EAI_AGAIN laravel-webhook;spa-backend;168;~250;~0%;113;27/05/2026;03/06/2026;WebSocket / Presença;Sim
+Firebase\JWT\ExpiredException: Expired token;polichat-web-app;147;~200;~0%;105;27/05/2026;03/06/2026;Autenticação;Sim
+Error: No error message;omnispa;185;~250;~0%;154;28/05/2026;03/06/2026;Chat / Mensagens;Sim
+AxiosError: Request failed with status code 401 (1);omnispa;213;~100;NOVO;96;30/05/2026;03/06/2026;Autenticação;Sim
+AxiosError: Request failed with status code 401 (2);omnispa;218;~100;NOVO;89;30/05/2026;03/06/2026;Autenticação;Sim
+TypeError: a.launchSurvey is not a function;omnispa;308;~400;+100% NOVO;150;30/05/2026;03/06/2026;Chat / Mensagens;Sim
+SQLSTATE[23000]: Integrity constraint violation;polichat-web-app;2590;~3500;~0%;87;27/05/2026;03/06/2026;Chat / Mensagens;Sim
+TypeError: Cannot read properties of undefined (plugin) — escalating;omnispa;48;48;NOVO;12;03/06/2026;03/06/2026;Chat / Mensagens;Sim
+Error: Request failed with status code 400;channel-customer;6711;11847;+31%;0;27/05/2026;03/06/2026;Canais / WhatsApp;Sim
+*errors.errorString: Customer dont have token;leads;1783;4000;-20%;0;27/05/2026;03/06/2026;Integrações Externas;Sim
+App\Exceptions\JarvisClientException: 404 Not Found;foundationapi;64;~80;~0%;47;28/05/2026;03/06/2026;Jarvis / IA;Sim
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002];polichat-web-app;1274;~1800;~0%;345;27/05/2026;03/06/2026;Infra / DB;Sim
+Error (PhoneRepository);meta-business-management;36;56;+80%;0;27/05/2026;03/06/2026;Canais / WhatsApp;Sim

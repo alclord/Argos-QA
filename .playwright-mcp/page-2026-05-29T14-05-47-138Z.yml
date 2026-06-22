@@ -1,0 +1,74 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: 🔮
+      - generic [ref=e5]:
+        - generic [ref=e6]: Argos Predict
+        - generic [ref=e7]: QA Risk Intelligence
+    - generic [ref=e19]:
+      - generic [ref=e20]: 1 / 10
+      - button "←" [ref=e21] [cursor=pointer]
+      - button "→" [ref=e22] [cursor=pointer]
+  - generic [ref=e23]:
+    - generic [ref=e25]:
+      - generic [ref=e26]: ⚠️ 4 módulos com sinais ativos · 18 bugs N1 abertos · 7 erros silenciosos em produção
+      - generic [ref=e27]: Qualidade · Risco · Produto
+      - heading "QA Risk Intelligence" [level=1] [ref=e28]:
+        - text: QA Risk
+        - text: Intelligence
+      - paragraph [ref=e30]:
+        - text: "Mapa de risco semanal baseado em sinais reais:"
+        - text: reclamações de clientes, erros em produção e atividade de código.
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - text: Data
+          - generic [ref=e33]: 28 de Maio de 2026
+        - generic [ref=e34]:
+          - text: Janela
+          - generic [ref=e35]: 14 dias
+    - generic:
+      - generic: Visão Geral
+      - heading "O que está acontecendo esta semana" [level=2]
+    - generic:
+      - generic: Mapa de Risco
+      - heading "Onde estão os problemas" [level=2]
+      - paragraph: "Baseado em sinais ativos: bugs N1 abertos, erros em produção (Sentry) e atividade de código. Quanto maior a barra, mais urgente."
+    - generic:
+      - generic: Causa Raiz
+      - heading "Quais serviços estão causando os problemas" [level=2]
+      - paragraph: Para cada área com problemas, identificamos qual sistema é o mais provável responsável.
+    - generic:
+      - generic: Zoom nos Serviços
+      - heading "Quem está com problema — e quem o dev está tocando?" [level=2]
+      - paragraph: Cada eixo é um serviço. Quanto maior a área vermelha, mais bugs. Quanto maior a verde, mais ativo o dev. Azul tracejado = o que está planejado.
+      - generic:
+        - generic:
+          - generic:
+            - button "Score de problemas": Score de problemas
+            - button "Dev trabalhando agora": Dev trabalhando agora
+            - button "Dev planejado (em breve)": Dev planejado (em breve)
+            - button "resetar"
+    - generic:
+      - generic: Risco Imediato
+      - heading "💣 O que pode explodir esta semana" [level=2]
+      - paragraph: Cenários onde uma decisão errada de deploy pode transformar um problema controlado em uma crise.
+    - generic:
+      - generic: Próximos Passos
+      - heading "O que precisa ser feito agora" [level=2]
+      - generic:
+        - table:
+          - rowgroup:
+            - row "Prioridade Área Ação Prazo":
+              - columnheader "Prioridade"
+              - columnheader "Área"
+              - columnheader "Ação"
+              - columnheader "Prazo"
+          - rowgroup
+      - generic: 💡 Use ← → para navegar entre os slides · F = tela cheia · P = imprimir / exportar PDF
+  - button "?" [ref=e36] [cursor=pointer]
+  - generic [ref=e37]:
+    - button "✕" [ref=e39] [cursor=pointer]
+    - generic [ref=e41]: Clique fora do painel para fechar
+  - contentinfo [ref=e42]:
+    - generic [ref=e43]: Argos Predict · 28 de Maio de 2026 · 14 dias
+    - generic [ref=e44]: Gerado por Argos Predict · Atualizado semanalmente

@@ -1,0 +1,19 @@
+[    1041ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:101
+[    1041ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:101
+[    1131ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:76
+[    1563ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[    1675ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[    2919ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[    5182ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[    9480ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://foundation-api-canary.poli.digital/v3/accounts/payment-due-alert:0
+[   26178ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[   26189ms] [ERROR] [WebSocket: Erro na conexão: {type: PusherError, data: Object} @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[   26197ms] [ERROR] [WebSocket: Erro na conexão: {type: WebSocketError, error: Object} @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[   26992ms] [ERROR] [WebSocket: Erro na conexão: {type: WebSocketError, error: Object} @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[   27600ms] [ERROR] [WebSocket: Erro na conexão: {type: WebSocketError, error: Object} @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[   28169ms] [ERROR] [WebSocket: Erro na conexão: {type: WebSocketError, error: Object} @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69
+[   28700ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error during WebSocket handshake: Unexpected response code: 503 @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:1078
+[   29217ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error during WebSocket handshake: Unexpected response code: 503 @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:1078
+[   44233ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error during WebSocket handshake: Unexpected response code: 503 @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:1078
+[   74313ms] [ERROR] WebSocket connection to 'wss://soketi.poli.digital/app/76039847darcsr0399385?protocol=7&client=js&version=8.5.0&flash=false' failed: Error during WebSocket handshake: Unexpected response code: 503 @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:1078
+[  135015ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-DDiD8YDD.js:69

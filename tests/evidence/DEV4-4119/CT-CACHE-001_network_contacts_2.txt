@@ -1,0 +1,13 @@
+7. [POST] https://foundation-api-canary.poli.digital/v3/contacts/6f936f2a-52cc-11f1-9d75-06799772b1cd/read => [FAILED] net::ERR_ABORTED
+9. [GET] https://foundation-api-canary.poli.digital/v3/contacts/ee945952-3a55-11f0-a21f-02f29315759f?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages => [FAILED] net::ERR_ABORTED
+65. [GET] https://foundation-api-canary.poli.digital/v3/contacts/6f936f2a-52cc-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages => [200] 
+66. [GET] https://foundation-api-canary.poli.digital/v3/contacts/ee945952-3a55-11f0-a21f-02f29315759f?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages => [200] 
+67. [GET] https://foundation-api-canary.poli.digital/v3/contacts/6fd041cf-53bb-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages => [200] 
+76. [POST] https://foundation-api-canary.poli.digital/v3/contacts/9c897fc4-6a5a-49da-8b57-785b7db6d688/unread => [204] 
+86. [POST] https://foundation-api-canary.poli.digital/v3/contacts/ee945952-3a55-11f0-a21f-02f29315759f/unread => [204] 
+87. [POST] https://foundation-api-canary.poli.digital/v3/contacts/ee945952-3a55-11f0-a21f-02f29315759f/unread => [204] 
+90. [GET] https://foundation-api-canary.poli.digital/v3/contacts/e70542ea-53b8-11f1-9d75-06799772b1cd?include=type,chat_status,read_status,attributes,attendant,addresses,contact_channels,tags,metadata,account_channel,team,last_message,unread_messages => [200] 
+93. [POST] https://foundation-api-canary.poli.digital/v3/contacts/ee945952-3a55-11f0-a21f-02f29315759f/unread => [204] 
+94. [POST] https://foundation-api-canary.poli.digital/v3/contacts/ee945952-3a55-11f0-a21f-02f29315759f/unread => [204] 
+
+Note: 27 static requests not shown, run with "static" option to see them.

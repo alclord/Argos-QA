@@ -1,0 +1,414 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: https://app-spa.poli.digital/redirect?sessionId=40aba9ca4b7e981a0d8470d169424857c01a677c&toPath=https://app.poli.digital/home
+        - img [ref=e11]
+      - generic [ref=e12]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link [ref=e16] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e18]
+          - listitem [ref=e21]:
+            - link [ref=e22] [cursor=pointer]:
+              - /url: /contacts
+              - img [ref=e24]
+          - listitem [ref=e27]:
+            - link [ref=e28] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=40aba9ca4b7e981a0d8470d169424857c01a677c&toPath=https://app.poli.digital/settings/1/chatbot
+              - img [ref=e30]
+          - listitem [ref=e33]:
+            - link [ref=e34] [cursor=pointer]:
+              - /url: /poli-flow
+              - img [ref=e36]
+          - listitem [ref=e38]:
+            - link [ref=e39] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=40aba9ca4b7e981a0d8470d169424857c01a677c&toPath=https://app-spa.poli.digital/marketing
+              - img [ref=e41]
+          - listitem [ref=e44]:
+            - link [ref=e45] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=40aba9ca4b7e981a0d8470d169424857c01a677c&toPath=https://app-spa.poli.digital/shopping
+              - img [ref=e47]
+          - listitem [ref=e50]:
+            - link [ref=e51] [cursor=pointer]:
+              - /url: https://app-spa.poli.digital/redirect?sessionId=40aba9ca4b7e981a0d8470d169424857c01a677c&toPath=https://app-spa.poli.digital/relatorio
+              - img [ref=e53]
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - link [ref=e61] [cursor=pointer]:
+              - /url: /settings
+              - img [ref=e63]
+      - generic [ref=e66]:
+        - button "Consumo de créditos" [ref=e67] [cursor=pointer]:
+          - img [ref=e69]
+        - button "YA" [ref=e73] [cursor=pointer]:
+          - generic [ref=e79]: YA
+        - generic [ref=e82]: 3.5.359-DEV4-4405
+    - main [ref=e83]:
+      - main [ref=e84]:
+        - generic [ref=e85]:
+          - button "✨ Nova Versão" [ref=e86] [cursor=pointer]:
+            - generic [ref=e87]: ✨ Nova Versão
+            - img [ref=e88]
+          - generic [ref=e92]:
+            - generic [ref=e93]:
+              - button "Em atendimento" [ref=e94] [cursor=pointer]:
+                - generic [ref=e95]: Em atendimento
+                - img [ref=e96]
+              - generic [ref=e98]:
+                - button "Contatos" [ref=e99] [cursor=pointer]:
+                  - img [ref=e100]
+                - button "Filtros" [ref=e104] [cursor=pointer]:
+                  - img [ref=e105]
+            - generic [ref=e109]:
+              - generic [ref=e110]:
+                - textbox "Pesquisar" [ref=e111]
+                - button "Pesquisar" [ref=e112] [cursor=pointer]:
+                  - img [ref=e113]
+              - button "Ordenação das conversas" [ref=e116] [cursor=pointer]:
+                - img [ref=e117]
+          - generic [ref=e246]:
+            - generic [ref=e247] [cursor=pointer]:
+              - generic [ref=e248]:
+                - generic [ref=e250]:
+                  - generic [ref=e254]: C
+                  - button "Selecionar todos" [ref=e255]:
+                    - checkbox
+                - generic [ref=e256]:
+                  - generic [ref=e258]: Cecilia | Bonsucesso Imóveis 51558
+                  - generic [ref=e259]:
+                    - generic [ref=e260]:
+                      - img "WhatsApp Business" [ref=e261]
+                      - generic [ref=e264]: WhatsApp Business
+                    - generic [ref=e268]: Eu to no wpp web
+                  - generic [ref=e269]:
+                    - generic [ref=e270]:
+                      - img [ref=e271]
+                      - generic [ref=e273]: Thalyta Cardoso
+                    - generic [ref=e274]:
+                      - img [ref=e275]
+                      - generic [ref=e277]: Satisfação
+              - generic [ref=e279]:
+                - generic [ref=e280]: Há 1min
+                - generic [ref=e281]: "2"
+                - button "Abrir menu de opções" [ref=e282]:
+                  - img [ref=e283]
+            - generic [ref=e285] [cursor=pointer]:
+              - generic [ref=e286]:
+                - generic [ref=e288]:
+                  - generic [ref=e292]: JM
+                  - button "Selecionar todos" [ref=e293]:
+                    - checkbox
+                - generic [ref=e294]:
+                  - generic [ref=e296]: João Maurício Oliveira - Vip Têxtil
+                  - generic [ref=e301]: "Resumo da Conversa Contexto Geral da Conversa: A empresa de João está enfrentando dificuldades em disparar mensagens para rotas de entrega pelo WhatsApp, causando problemas no serviço e impedindo o uso por 24 horas. Além disso, o uso de um chat bot anterior teve problemas, pois o Contato Contato é uma empresa atendendo pessoas mais idosa ou com pouco conhecimento de tecnologia. Assuntos Principais: Problemas Atuais: A empresa de João está enfrentando dificuldades em disparar mensagens para rotas de entrega pelo WhatsApp, causando problemas no serviço e impedindo o uso por 24 horas. Plataforma de Atendimento: A empresa Poli foi apresentada como uma solução para ajudar a resolver os problemas da empresa de João. A plataforma conta com API oficial, torna os envios pelo disparador mais seguros e evita banimentos, restrições e bloqueios. Fluxo de Envio: O Contato Contato deseja enviar mensagens para clientes vinculados para informar os dias da semana em que o carro da empresa irá passar em suas cidades. Quantidade de Pessoas Involvidas: O Contato Contato mencionou que apenas 2 pessoas estão atendendo, mas as conversas são acompanhadas em 4 telas. Agendamento da Reunião: Foi agendada uma reunião com o consultor Marcus Calil para apresentar a plataforma e proposta personalizada para o Contato Contato. Próximos Passos e Pendências: A apresentação da plataforma será realizada no dia 18 de junho, às 16h00. O Contato Contato precisa avaliar a proposta financeira da plataforma. Foi solicitado que o Contato Contato forneça informações a fins cadastrais para finalizar o agendamento. Foi transferido o atendimento para a consultora Tácia para continuar a conversa com João. O resumo deixa claro o Contexto Geral da Conversa, os Assuntos Principais e os Próximos Passos e Pendências da conversa."
+                  - generic [ref=e302]:
+                    - generic [ref=e303]:
+                      - img [ref=e304]
+                      - generic [ref=e306]: Tácia Marinia
+                    - generic [ref=e307]:
+                      - img [ref=e308]
+                      - generic [ref=e310]: Pré Venda
+              - generic [ref=e312]:
+                - generic [ref=e313]: Há 1min
+                - button "Abrir menu de opções" [ref=e314]:
+                  - img [ref=e315]
+            - generic [ref=e317] [cursor=pointer]:
+              - generic [ref=e318]:
+                - generic [ref=e320]:
+                  - generic [ref=e324]: ET
+                  - button "Selecionar todos" [ref=e325]:
+                    - checkbox
+                - generic [ref=e326]:
+                  - generic [ref=e328]: Eduardo teste
+                  - generic [ref=e329]:
+                    - generic [ref=e330]:
+                      - img "WhatsApp Business" [ref=e331]
+                      - generic [ref=e334]: WhatsApp Business
+                    - generic [ref=e338]: Falar agora
+                  - generic [ref=e339]:
+                    - generic [ref=e340]:
+                      - img [ref=e341]
+                      - generic [ref=e343]: Hugo Ferraz
+                    - generic [ref=e344]:
+                      - img [ref=e345]
+                      - generic [ref=e347]: Comercial
+              - generic [ref=e349]:
+                - generic [ref=e350]: Há 1min
+                - generic [ref=e351]: "1"
+                - button "Abrir menu de opções" [ref=e352]:
+                  - img [ref=e353]
+            - generic [ref=e355] [cursor=pointer]:
+              - generic [ref=e356]:
+                - generic [ref=e358]:
+                  - generic [ref=e362]: C
+                  - button "Selecionar todos" [ref=e363]:
+                    - checkbox
+                - generic [ref=e364]:
+                  - generic [ref=e366]: Caio - Mega Farma Peixoto - 52275
+                  - generic [ref=e367]:
+                    - generic [ref=e368]:
+                      - img "WhatsApp Business" [ref=e369]
+                      - generic [ref=e372]: WhatsApp Business
+                    - generic [ref=e375]:
+                      - generic [ref=e376]: "Geovana Gonçalves diz::"
+                      - generic [ref=e377]: Nosso jurídico e financeiro já está ciente do caso e está em análise.
+                  - generic [ref=e378]:
+                    - generic [ref=e379]:
+                      - img [ref=e380]
+                      - generic [ref=e382]: Tifany
+                    - generic [ref=e383]:
+                      - img [ref=e384]
+                      - generic [ref=e386]: Satisfação
+              - generic [ref=e387]:
+                - button [ref=e390]
+                - generic [ref=e392]:
+                  - generic [ref=e393]: Há 1min
+                  - button "Abrir menu de opções" [ref=e394]:
+                    - img [ref=e395]
+            - generic [ref=e397] [cursor=pointer]:
+              - generic [ref=e398]:
+                - generic [ref=e400]:
+                  - generic [ref=e404]: EG
+                  - button "Selecionar todos" [ref=e405]:
+                    - checkbox
+                - generic [ref=e406]:
+                  - generic [ref=e408]: "Emanuela Gomes Da Silva - #27815"
+                  - generic [ref=e409]:
+                    - generic [ref=e410]:
+                      - img "WhatsApp Business" [ref=e411]
+                      - generic [ref=e414]: WhatsApp Business
+                    - generic [ref=e417]:
+                      - generic [ref=e418]: "Felipe Mendes diz::"
+                      - generic [ref=e419]: Pode conferir pra gente se teria alguma pendência no gerenciador de anúncios?
+                  - generic [ref=e420]:
+                    - generic [ref=e421]:
+                      - img [ref=e422]
+                      - generic [ref=e424]: Felipe Mendes
+                    - generic [ref=e425]:
+                      - img [ref=e426]
+                      - generic [ref=e428]: Satisfação
+              - generic [ref=e430]:
+                - generic [ref=e431]: Há 1min
+                - button "Abrir menu de opções" [ref=e432]:
+                  - img [ref=e433]
+            - generic [ref=e435] [cursor=pointer]:
+              - generic [ref=e436]:
+                - generic [ref=e438]:
+                  - generic [ref=e442]: KE
+                  - button "Selecionar todos" [ref=e443]:
+                    - checkbox
+                - generic [ref=e444]:
+                  - generic [ref=e446]: Kelly
+                  - generic [ref=e447]:
+                    - generic [ref=e448]:
+                      - img "WhatsApp Business" [ref=e449]
+                      - generic [ref=e452]: WhatsApp Business
+                    - generic [ref=e455]:
+                      - generic [ref=e456]: "Leticia Bezerra diz::"
+                      - generic [ref=e457]: Kelly quem vai te demonstrar o sistema é o Pablo, as 16h ele estará te aguardando no link
+                  - generic [ref=e458]:
+                    - generic [ref=e459]:
+                      - img [ref=e460]
+                      - generic [ref=e462]: Leticia Bezerra
+                    - generic [ref=e463]:
+                      - img [ref=e464]
+                      - generic [ref=e466]: Pré Venda
+              - generic [ref=e468]:
+                - generic [ref=e469]: Há 1min
+                - button "Abrir menu de opções" [ref=e470]:
+                  - img [ref=e471]
+            - generic [ref=e473] [cursor=pointer]:
+              - generic [ref=e474]:
+                - generic [ref=e476]:
+                  - generic [ref=e480]: SK
+                  - button "Selecionar todos" [ref=e481]:
+                    - checkbox
+                - generic [ref=e482]:
+                  - generic [ref=e484]: Sabrina Knevitz
+                  - generic [ref=e485]:
+                    - generic [ref=e486]:
+                      - img "WhatsApp Business" [ref=e487]
+                      - generic [ref=e490]: WhatsApp Business
+                    - generic [ref=e494]: Sim, Prosseguir
+                  - generic [ref=e495]:
+                    - generic [ref=e496]:
+                      - img [ref=e497]
+                      - generic [ref=e499]: Isadora Rocha
+                    - generic [ref=e500]:
+                      - img [ref=e501]
+                      - generic [ref=e503]: Pré Venda
+              - generic [ref=e504]:
+                - generic [ref=e506]:
+                  - button [ref=e507]
+                  - button [ref=e509]
+                - generic [ref=e511]:
+                  - generic [ref=e512]: Há 1min
+                  - generic [ref=e513]: "1"
+                  - button "Abrir menu de opções" [ref=e514]:
+                    - img [ref=e515]
+            - generic [ref=e517] [cursor=pointer]:
+              - generic [ref=e518]:
+                - generic [ref=e520]:
+                  - generic [ref=e524]: PF
+                  - button "Selecionar todos" [ref=e525]:
+                    - checkbox
+                - generic [ref=e526]:
+                  - generic [ref=e528]: Patricia|Roval Farmacia De Manipulacao- 44190
+                  - generic [ref=e529]:
+                    - generic [ref=e530]:
+                      - img "WhatsApp Business" [ref=e531]
+                      - generic [ref=e534]: WhatsApp Business
+                    - generic [ref=e538]: obrigadaa
+                  - generic [ref=e539]:
+                    - generic [ref=e540]:
+                      - img [ref=e541]
+                      - generic [ref=e543]: Tifany
+                    - generic [ref=e544]:
+                      - img [ref=e545]
+                      - generic [ref=e547]: Satisfação
+              - generic [ref=e549]:
+                - generic [ref=e550]: Há 1min
+                - button "Abrir menu de opções" [ref=e551]:
+                  - img [ref=e552]
+            - generic [ref=e554] [cursor=pointer]:
+              - generic [ref=e555]:
+                - generic [ref=e557]:
+                  - generic [ref=e561]: MS
+                  - button "Selecionar todos" [ref=e562]:
+                    - checkbox
+                - generic [ref=e563]:
+                  - generic [ref=e565]: Milena Souza
+                  - generic [ref=e566]:
+                    - generic [ref=e567]:
+                      - img "WhatsApp Business" [ref=e568]
+                      - generic [ref=e571]: WhatsApp Business
+                    - generic [ref=e574]:
+                      - generic [ref=e575]: "Julliana Reis diz::"
+                      - generic [ref=e576]: Milena, eu não tenho acesso a tabela de valores para negociação pois o consultor negocia e formaliza de forma personalizada na apresentação para o cliente
+                  - generic [ref=e577]:
+                    - generic [ref=e578]:
+                      - img [ref=e579]
+                      - generic [ref=e581]: Julliana Reis
+                    - generic [ref=e582]:
+                      - img [ref=e583]
+                      - generic [ref=e585]: Pré Venda
+              - generic [ref=e586]:
+                - button [ref=e589]
+                - generic [ref=e591]:
+                  - generic [ref=e592]: Há 1min
+                  - button "Abrir menu de opções" [ref=e593]:
+                    - img [ref=e594]
+            - generic [ref=e596] [cursor=pointer]:
+              - generic [ref=e597]:
+                - generic [ref=e599]:
+                  - generic [ref=e603]: P
+                  - button "Selecionar todos" [ref=e604]:
+                    - checkbox
+                - generic [ref=e605]:
+                  - generic [ref=e607]: Pedro - Lemos milhomens advogados - 52299
+                  - generic [ref=e608]:
+                    - generic [ref=e609]:
+                      - img "WhatsApp Business" [ref=e610]
+                      - generic [ref=e613]: WhatsApp Business
+                    - generic [ref=e616]:
+                      - generic [ref=e617]: "Thalyta Cardoso diz::"
+                      - generic [ref=e618]: É uma verificação rápida, 2 minutinhos, so deixar o facebook bussines aberto pra mim
+                  - generic [ref=e619]:
+                    - generic [ref=e620]:
+                      - img [ref=e621]
+                      - generic [ref=e623]: Thalyta Cardoso
+                    - generic [ref=e624]:
+                      - img [ref=e625]
+                      - generic [ref=e627]: Satisfação
+              - generic [ref=e629]:
+                - generic [ref=e630]: Há 1min
+                - button "Abrir menu de opções" [ref=e631]:
+                  - img [ref=e632]
+            - generic [ref=e634] [cursor=pointer]:
+              - generic [ref=e635]:
+                - generic [ref=e637]:
+                  - generic [ref=e641]: JL
+                  - button "Selecionar todos" [ref=e642]:
+                    - checkbox
+                - generic [ref=e643]:
+                  - generic [ref=e645]: Jorge Lopes - Legaliza Marcas
+                  - generic [ref=e646]:
+                    - generic [ref=e647]:
+                      - img "WhatsApp Business" [ref=e648]
+                      - generic [ref=e651]: WhatsApp Business
+                    - generic [ref=e654]:
+                      - generic [ref=e655]: "Marcus Vinícius diz::"
+                      - generic [ref=e656]: envio o invite no jorge.lopes@bancomarcas.com?
+                  - generic [ref=e657]:
+                    - generic [ref=e658]:
+                      - img [ref=e659]
+                      - generic [ref=e661]: Maria Vitoria
+                    - generic [ref=e662]:
+                      - img [ref=e663]
+                      - generic [ref=e665]: Comercial
+              - generic [ref=e667]:
+                - generic [ref=e668]: Há 1min
+                - button "Abrir menu de opções" [ref=e669]:
+                  - img [ref=e670]
+            - generic [ref=e672] [cursor=pointer]:
+              - generic [ref=e673]:
+                - generic [ref=e675]:
+                  - generic [ref=e679]: MD
+                  - button "Selecionar todos" [ref=e680]:
+                    - checkbox
+                - generic [ref=e681]:
+                  - generic [ref=e683]: Marcio Daroz
+                  - generic [ref=e684]:
+                    - generic [ref=e685]:
+                      - img "WhatsApp Business" [ref=e686]
+                      - generic [ref=e689]: WhatsApp Business
+                    - generic [ref=e693]: Uma pena que não puderam manter
+                  - generic [ref=e694]:
+                    - generic [ref=e695]:
+                      - img [ref=e696]
+                      - generic [ref=e698]: Maria Vitoria
+                    - generic [ref=e699]:
+                      - img [ref=e700]
+                      - generic [ref=e702]: Pré Venda
+              - generic [ref=e703]:
+                - generic [ref=e705]:
+                  - button [ref=e706]
+                  - button [ref=e708]
+                - generic [ref=e710]:
+                  - generic [ref=e711]: Há 1min
+                  - button "Abrir menu de opções" [ref=e712]:
+                    - img [ref=e713]
+            - generic [ref=e715] [cursor=pointer]:
+              - generic [ref=e716]:
+                - generic [ref=e718]:
+                  - generic [ref=e722]: IV
+                  - button "Selecionar todos" [ref=e723]:
+                    - checkbox
+                - generic [ref=e724]:
+                  - generic [ref=e726]: Ivan
+                  - generic [ref=e727]:
+                    - generic [ref=e728]:
+                      - img "WhatsApp Business" [ref=e729]
+                      - generic [ref=e732]: WhatsApp Business
+                    - generic [ref=e735]:
+                      - generic [ref=e736]: "Leticia Bezerra diz::"
+                      - generic [ref=e737]: Entendo Ivan, agradeço o contato. Deixo as portas abertas caso futuramente faça sentido para a sua operação
+                  - generic [ref=e738]:
+                    - generic [ref=e739]:
+                      - img [ref=e740]
+                      - generic [ref=e742]: Leticia Bezerra
+                    - generic [ref=e743]:
+                      - img [ref=e744]
+                      - generic [ref=e746]: Pré Venda
+              - generic [ref=e748]:
+                - generic [ref=e749]: Há 1min
+                - button "Abrir menu de opções" [ref=e751]:
+                  - img [ref=e752]
+            - button "Carregar mais" [ref=e755] [cursor=pointer]
+        - generic [ref=e243]:
+          - img "Logo" [ref=e244]
+          - heading "Bem-vindo!" [level=1] [ref=e245]
+  - region "Notifications (F8)":
+    - list

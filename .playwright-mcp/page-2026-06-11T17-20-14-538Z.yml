@@ -1,0 +1,137 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - generic:
+        - iframe [ref=e43]:
+          - generic [ref=f4e7]:
+            - button "Close Preview" [ref=f4e8] [cursor=pointer]:
+              - img [ref=f4e9]
+            - generic [ref=f4e12]:
+              - generic "play the video" [ref=f4e15]:
+                - iframe [ref=f4e16]:
+                  - application [active]:
+                    - iframe [ref=f13e1]:
+                      
+                    - region
+                    - generic "Mostrando leitor." [ref=f13e4]:
+                      - generic "Exibindo Nova versão da Poli.mp4…"
+                      - main [ref=f13e6]:
+                        - generic [ref=f13e10]:
+                          - status "Carregando" [ref=f13e12]
+                          - generic [ref=f13e47]:
+                            - generic "Visualizar imagem":
+                              - generic:
+                                - generic:
+                                  - 'button "Atalho do teclado para iniciar: k"':
+                                    - generic:
+                                      - generic:
+                                        - img
+                                    - generic:
+                                      - generic:
+                                        - img
+                                  - tooltip: Reproduzir (k)
+                            - progressbar "Carregando…" [ref=f13e50]:
+                              - img [ref=f13e52]
+                            - tabpanel "Player de vídeo" [ref=f13e57]
+                      - button "Outra janela" [ref=f13e60] [cursor=pointer]
+                    - generic [ref=f13e62]: Carregando Nova versão da Poli.mp4…
+              - generic [ref=f4e19]:
+                - heading "✨ A Poli evoluiu" [level=3] [ref=f4e20]:
+                  - text: ✨
+                  - strong [ref=f4e21]: A Poli evoluiu
+                - paragraph [ref=f4e22]:
+                  - text: Você foi selecionado para ter acesso antecipado a nossa
+                  - strong [ref=f4e23]: nova versão.
+                  - text: Pensamos cada detalhe para quem usa a plataforma
+                  - strong [ref=f4e24]: todos os dias
+                  - text: ", em operações reais, com clientes reais e metas reais."
+                - paragraph [ref=f4e25]:
+                  - text: "A nova interface nasce com um objetivo claro:"
+                  - strong [ref=f4e26]: fazer você atender mais rápido, com mais controle e menos esforço.
+                - paragraph [ref=f4e27]:
+                  - text: Não é apenas uma mudança visual.
+                  - text: É a base que vai sustentar tudo o que vem pela frente.
+                - paragraph [ref=f4e28]: "Preparamos um sistema, mais leve, rápido e fácil de usar: feita pra facilitar o seu dia a dia."
+              - button "Vamos conhecer as novidades!" [ref=f4e33] [cursor=pointer]
+            - button "Não exibir novamente" [ref=f4e35]
+        - iframe [ref=e44]:
+          - button "open resource center" [ref=f9e4] [cursor=pointer]:
+            - generic [ref=f9e6]:
+              - img [ref=f9e9]
+              - generic [ref=f9e11]: Ajuda
+  - generic [ref=e2]:
+    - generic [ref=e46]:
+      - generic [ref=e49]:
+        - link "Dashboard" [ref=e51] [cursor=pointer]:
+          - /url: https://app-spa.poli.digital/redirect?sessionId=cbf10fb36b56418f82dd29a078b7891c4305229f&toPath=https://app.poli.digital/home
+          - img [ref=e53]
+        - generic [ref=e54]:
+          - list [ref=e56]:
+            - listitem [ref=e57]:
+              - link [ref=e58] [cursor=pointer]:
+                - /url: /chat
+                - img [ref=e60]
+            - listitem [ref=e63]:
+              - link [ref=e64] [cursor=pointer]:
+                - /url: /contacts
+                - img [ref=e66]
+            - listitem [ref=e69]:
+              - link [ref=e70] [cursor=pointer]:
+                - /url: https://app-spa.poli.digital/redirect?sessionId=cbf10fb36b56418f82dd29a078b7891c4305229f&toPath=https://app.poli.digital/settings/46667/chatbot
+                - img [ref=e72]
+            - listitem [ref=e75]:
+              - link [ref=e76] [cursor=pointer]:
+                - /url: /poli-flow
+                - img [ref=e78]
+            - listitem [ref=e80]:
+              - link [ref=e81] [cursor=pointer]:
+                - /url: https://app-spa.poli.digital/redirect?sessionId=cbf10fb36b56418f82dd29a078b7891c4305229f&toPath=https://app-spa.poli.digital/shopping
+                - img [ref=e83]
+            - listitem [ref=e86]:
+              - link [ref=e87] [cursor=pointer]:
+                - /url: https://app-spa.poli.digital/redirect?sessionId=cbf10fb36b56418f82dd29a078b7891c4305229f&toPath=https://app-spa.poli.digital/relatorio
+                - img [ref=e89]
+          - list [ref=e94]:
+            - listitem [ref=e95]:
+              - link [ref=e97] [cursor=pointer]:
+                - /url: /settings
+                - img [ref=e99]
+        - generic [ref=e102]:
+          - button "Consumo de créditos" [ref=e103] [cursor=pointer]:
+            - img [ref=e105]
+          - button "OC" [ref=e109] [cursor=pointer]:
+            - generic [ref=e115]: OC
+          - generic [ref=e118]: 3.5.359
+      - main [ref=e119]:
+        - main [ref=e120]:
+          - generic [ref=e121]:
+            - button "✨ Nova Versão" [ref=e122] [cursor=pointer]:
+              - generic [ref=e123]: ✨ Nova Versão
+              - img [ref=e124]
+            - generic [ref=e128]:
+              - generic [ref=e129]:
+                - button "Atribuídos a mim" [ref=e130] [cursor=pointer]:
+                  - generic [ref=e131]: Atribuídos a mim
+                  - img [ref=e132]
+                - generic [ref=e134]:
+                  - button [ref=e135] [cursor=pointer]:
+                    - img [ref=e136]
+                  - button "Contatos" [ref=e141] [cursor=pointer]:
+                    - img [ref=e142]
+                  - button "Filtros" [ref=e146] [cursor=pointer]:
+                    - img [ref=e147]
+              - generic [ref=e151]:
+                - generic [ref=e152]:
+                  - textbox "Pesquisar" [ref=e153]
+                  - button "Pesquisar" [ref=e154] [cursor=pointer]:
+                    - img [ref=e155]
+                - button "Ordenação das conversas" [ref=e158] [cursor=pointer]:
+                  - img [ref=e159]
+            - heading "Nada encontrado" [level=1] [ref=e165]:
+              - img [ref=e166]
+              - text: Nada encontrado
+          - generic [ref=e171]:
+            - img "Logo" [ref=e172]
+            - heading "Bem-vindo!" [level=1] [ref=e173]
+    - region "Notifications (F8)":
+      - list

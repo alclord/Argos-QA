@@ -1,0 +1,795 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - complementary:
+          - generic:
+            - img
+          - navigation:
+            - list:
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=485a75600707ca7387a2c41ab90ebb610facf773&toPath=https://app.poli.digital/home
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /chat
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=485a75600707ca7387a2c41ab90ebb610facf773&toPath=https://app.poli.digital/settings/46667/chatbot
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /poli-flow
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=485a75600707ca7387a2c41ab90ebb610facf773&toPath=https://app-spa.poli.digital/marketing
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=485a75600707ca7387a2c41ab90ebb610facf773&toPath=https://app-spa.poli.digital/shopping
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=485a75600707ca7387a2c41ab90ebb610facf773&toPath=https://app-spa.poli.digital/relatorio
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=485a75600707ca7387a2c41ab90ebb610facf773&toPath=https://app.poli.digital/settings/46667
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /contacts
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /channels
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /teams
+                  - generic:
+                    - img
+              - listitem:
+                - link:
+                  - /url: /templates
+                  - generic:
+                    - img
+            - list:
+              - listitem:
+                - button:
+                  - img
+              - listitem:
+                - button:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: YA
+              - listitem:
+                - button:
+                  - img
+              - listitem:
+                - generic:
+                  - generic: 3.5.347
+        - main:
+          - generic:
+            - generic:
+              - generic:
+                - navigation:
+                  - generic:
+                    - link:
+                      - /url: /
+                      - text: Página inicial
+                  - img
+                  - generic: Contatos
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - textbox:
+                          - /placeholder: Buscar contatos...
+                        - button:
+                          - img
+                    - generic:
+                      - button:
+                        - img
+                        - text: Ver excluídos
+                      - button:
+                        - img
+                        - text: Adicionar Novo
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - table:
+                            - rowgroup:
+                              - row:
+                                - columnheader:
+                                  - generic:
+                                    - checkbox
+                                - columnheader:
+                                  - button:
+                                    - text: Nome
+                                    - img
+                                - columnheader:
+                                  - button:
+                                    - text: Email
+                                    - img
+                                - columnheader: Telefone
+                                - columnheader: Atendente
+                                - columnheader: Canais
+                                - columnheader: Etiquetas
+                                - columnheader:
+                                  - button:
+                                    - text: Data de criação
+                                    - img
+                                - columnheader
+                            - rowgroup:
+                              - row:
+                                - cell:
+                                  - generic:
+                                    - checkbox
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: AQ
+                                    - button:
+                                      - img
+                                    - generic: Argos QA Internacional
+                                    - button:
+                                      - img
+                                - cell: —
+                                - cell: "54912345678901"
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: YA
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - img
+                                        - generic: WhatsApp
+                                    - generic:
+                                      - generic:
+                                        - img
+                                        - generic: WhatsApp
+                                - cell: —
+                                - cell: 3 de jun. de 2026
+                                - cell:
+                                  - generic:
+                                    - button [expanded]:
+                                      - img
+                                    - button:
+                                      - img
+                              - row:
+                                - cell:
+                                  - generic:
+                                    - checkbox
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: "N"
+                                    - button:
+                                      - img
+                                    - generic: N8N - alertas
+                                    - button:
+                                      - img
+                                - cell: —
+                                - cell: —
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: NI
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - img
+                                        - generic: WhatsApp
+                                - cell: —
+                                - cell: 28 de mai. de 2026
+                                - cell:
+                                  - generic:
+                                    - button:
+                                      - img
+                                    - button:
+                                      - img
+                              - row:
+                                - cell:
+                                  - generic:
+                                    - checkbox
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - img
+                                    - button:
+                                      - img
+                                    - generic: Piperun
+                                    - button:
+                                      - img
+                                - cell: —
+                                - cell: "556596398434"
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: PR
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - img
+                                        - generic: WhatsApp
+                                    - generic:
+                                      - generic:
+                                        - img
+                                        - generic: WhatsApp
+                                - cell: —
+                                - cell: 26 de mai. de 2026
+                                - cell:
+                                  - generic:
+                                    - button:
+                                      - img
+                                    - button:
+                                      - img
+                              - row:
+                                - cell:
+                                  - generic:
+                                    - checkbox
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: TR
+                                    - button:
+                                      - img
+                                    - generic: Teste R Interface
+                                    - button:
+                                      - img
+                                - cell: —
+                                - cell: "551234567890"
+                                - cell: —
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - img
+                                        - generic: WhatsApp
+                                - cell: —
+                                - cell: 25 de mai. de 2026
+                                - cell:
+                                  - generic:
+                                    - button:
+                                      - img
+                                    - button:
+                                      - img
+                              - row:
+                                - cell:
+                                  - generic:
+                                    - checkbox
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: MP
+                                    - button:
+                                      - img
+                                    - generic: MARIANA PEREIRA FELICIANO
+                                    - button:
+                                      - img
+                                - cell: —
+                                - cell: "5521986299512"
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: HE
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - img
+                                        - generic: WhatsApp
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic: teste
+                                - cell: 22 de mai. de 2026
+                                - cell:
+                                  - generic:
+                                    - button:
+                                      - img
+                                    - button:
+                                      - img
+                              - row:
+                                - cell:
+                                  - generic:
+                                    - checkbox
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: MC
+                                    - button:
+                                      - img
+                                    - generic: MAYARA CAROLINE ROPELATTO
+                                    - button:
+                                      - img
+                                - cell: —
+                                - cell: "5544998914346"
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: HE
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - img
+                                        - generic: WhatsApp
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic: teste
+                                - cell: 22 de mai. de 2026
+                                - cell:
+                                  - generic:
+                                    - button:
+                                      - img
+                                    - button:
+                                      - img
+                              - row:
+                                - cell:
+                                  - generic:
+                                    - checkbox
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: CD
+                                    - button:
+                                      - img
+                                    - generic: Cristiellen de Sousa Pereira
+                                    - button:
+                                      - img
+                                - cell: —
+                                - cell: "5537991264986"
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: HE
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - img
+                                        - generic: WhatsApp
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic: teste
+                                - cell: 22 de mai. de 2026
+                                - cell:
+                                  - generic:
+                                    - button:
+                                      - img
+                                    - button:
+                                      - img
+                              - row:
+                                - cell:
+                                  - generic:
+                                    - checkbox
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: LJ
+                                    - button:
+                                      - img
+                                    - generic: lidia justina lira kasmirski
+                                    - button:
+                                      - img
+                                - cell: —
+                                - cell: "5551981415057"
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: HE
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - img
+                                        - generic: WhatsApp
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic: teste
+                                - cell: 22 de mai. de 2026
+                                - cell:
+                                  - generic:
+                                    - button:
+                                      - img
+                                    - button:
+                                      - img
+                              - row:
+                                - cell:
+                                  - generic:
+                                    - checkbox
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: MT
+                                    - button:
+                                      - img
+                                    - generic: MARIA TORRES DE SOUZA
+                                    - button:
+                                      - img
+                                - cell: —
+                                - cell: "5595991447676"
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: HE
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - img
+                                        - generic: WhatsApp
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic: teste
+                                - cell: 22 de mai. de 2026
+                                - cell:
+                                  - generic:
+                                    - button:
+                                      - img
+                                    - button:
+                                      - img
+                              - row:
+                                - cell:
+                                  - generic:
+                                    - checkbox
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: AP
+                                    - button:
+                                      - img
+                                    - generic: Ana Paula Mendes
+                                    - button:
+                                      - img
+                                - cell: —
+                                - cell: "5517991887173"
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: HE
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - img
+                                        - generic: WhatsApp
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic: teste
+                                - cell: 22 de mai. de 2026
+                                - cell:
+                                  - generic:
+                                    - button:
+                                      - img
+                                    - button:
+                                      - img
+                              - row:
+                                - cell:
+                                  - generic:
+                                    - checkbox
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: LF
+                                    - button:
+                                      - img
+                                    - generic: Larissa Fagundes
+                                    - button:
+                                      - img
+                                - cell: —
+                                - cell: "5547996134341"
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: HE
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - img
+                                        - generic: WhatsApp
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic: teste
+                                - cell: 22 de mai. de 2026
+                                - cell:
+                                  - generic:
+                                    - button:
+                                      - img
+                                    - button:
+                                      - img
+                              - row:
+                                - cell:
+                                  - generic:
+                                    - checkbox
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: MA
+                                    - button:
+                                      - img
+                                    - generic: Marcia
+                                    - button:
+                                      - img
+                                - cell: —
+                                - cell: "5531995937615"
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: HE
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - img
+                                        - generic: WhatsApp
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic: teste
+                                - cell: 22 de mai. de 2026
+                                - cell:
+                                  - generic:
+                                    - button:
+                                      - img
+                                    - button:
+                                      - img
+                              - row:
+                                - cell:
+                                  - generic:
+                                    - checkbox
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: RM
+                                    - button:
+                                      - img
+                                    - generic: Rodrigo Mendonça Vaz
+                                    - button:
+                                      - img
+                                - cell: —
+                                - cell: "5521992346794"
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: HE
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - img
+                                        - generic: WhatsApp
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic: teste
+                                - cell: 22 de mai. de 2026
+                                - cell:
+                                  - generic:
+                                    - button:
+                                      - img
+                                    - button:
+                                      - img
+                              - row:
+                                - cell:
+                                  - generic:
+                                    - checkbox
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: AR
+                                    - button:
+                                      - img
+                                    - generic: Arthur
+                                    - button:
+                                      - img
+                                - cell: —
+                                - cell: "554888509696"
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: PV
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - img
+                                        - generic: WhatsApp Business
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic: Cliente Atendido
+                                    - generic:
+                                      - generic: Venda realizada
+                                - cell: 19 de mai. de 2026
+                                - cell:
+                                  - generic:
+                                    - button:
+                                      - img
+                                    - button:
+                                      - img
+                              - row:
+                                - cell:
+                                  - generic:
+                                    - checkbox
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: MP
+                                    - button:
+                                      - img
+                                    - generic: Mariana Pedrosa
+                                    - button:
+                                      - img
+                                - cell: —
+                                - cell: "5561998745518"
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: PV
+                                - cell:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - img
+                                        - generic: WhatsApp
+                                - cell: —
+                                - cell: 15 de mai. de 2026
+                                - cell:
+                                  - generic:
+                                    - button:
+                                      - img
+                                    - button:
+                                      - img
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: Página 1 de 2251
+                          - generic: "Total: 33.763 registros"
+                        - generic:
+                          - combobox
+                          - generic:
+                            - button [disabled]:
+                              - img
+                            - button [disabled]:
+                              - img
+                            - button:
+                              - img
+                            - button:
+                              - img
+    - list
+  - generic:
+    - generic:
+      - paragraph: Yuri Alcantara Gestor
+      - tooltip:
+        - paragraph: Yuri Alcantara Gestor
+  - dialog "Editar" [active] [ref=e1047]:
+    - heading "Editar" [level=2] [ref=e1049]
+    - generic [ref=e1051]:
+      - generic [ref=e1052]:
+        - tablist [ref=e1053]:
+          - tab "Contato" [selected] [ref=e1054] [cursor=pointer]
+          - tab "Endereço" [ref=e1055] [cursor=pointer]
+        - tabpanel "Contato" [ref=e1056]:
+          - generic [ref=e1057]:
+            - text: Nome *
+            - textbox "Nome *" [ref=e1058]:
+              - /placeholder: "Ex: Fulano de Tal"
+              - text: Argos QA Internacional
+          - generic [ref=e1059]:
+            - text: Telefone *
+            - generic [ref=e1101]:
+              - 'textbox "Ex: (00) 00000-0000" [ref=e1102]': +54 (912) 3456-7890
+              - 'button "Argentina: + 54" [ref=e1104] [cursor=pointer]'
+          - generic [ref=e1066]:
+            - text: E-mail
+            - textbox "E-mail" [ref=e1067]:
+              - /placeholder: "Ex: contato@exemplo.com"
+          - generic [ref=e1068]:
+            - text: CPF
+            - textbox "CPF" [ref=e1069]:
+              - /placeholder: "Ex: 000.000.000-00"
+          - generic [ref=e1070]:
+            - text: Origem
+            - combobox [ref=e1071] [cursor=pointer]:
+              - generic: Orgânico
+              - img [ref=e1072]
+            - combobox [ref=e1074]
+          - generic [ref=e1075]:
+            - text: Fonte
+            - combobox [ref=e1076] [cursor=pointer]:
+              - generic: Selecione a Fonte
+              - img [ref=e1077]
+            - combobox [ref=e1079]
+      - button "Salvar" [ref=e1081] [cursor=pointer]
+    - button "Close" [ref=e1082] [cursor=pointer]:
+      - img [ref=e1083]
+      - generic [ref=e1086]: Close

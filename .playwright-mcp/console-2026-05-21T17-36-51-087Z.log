@@ -1,0 +1,21 @@
+[     649ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:101
+[     650ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:101
+[     795ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:76
+[    1266ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[   10885ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[   31208ms] [INFO] WebSocket: Conexão finalizada @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[   31306ms] [WARNING] Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component. @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[   31306ms] [WARNING] Select is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component. @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[   31454ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[   31466ms] [ERROR] error ao buscar chats TypeError: Cannot read properties of undefined (reading 'data')
+    at Ndt (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:1002:26293)
+    at async C (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:54:37544)
+    at async Object.d [as fn] (https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:54:37851) @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[   31505ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/accounts/payment-due-alert:0
+[   31514ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://foundation-api.qa.poli.digital/v3/users/settings/language:0
+[   32184ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:101
+[   32184ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:101
+[   32254ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:76
+[   32512ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[   32759ms] [INFO] WebSocket: Conexão estabelecida @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69
+[   49851ms] [LOG] i18next: languageChanged pt @ https://spa.qa.poli.digital/assets/index-BPQPqcD9.js:69

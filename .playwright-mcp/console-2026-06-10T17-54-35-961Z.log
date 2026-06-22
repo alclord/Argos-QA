@@ -1,0 +1,11 @@
+[     805ms] [LOG] i18next: languageChanged pt @ https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:101
+[     805ms] [LOG] i18next: initialized {debug: true, initAsync: true, ns: Array(1), defaultNS: Array(1), fallbackLng: Array(1)} @ https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:101
+[     903ms] [WARNING] Replay is disabled because neither `replaysSessionSampleRate` nor `replaysOnErrorSampleRate` are set. @ https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:76
+[    1039ms] [ERROR] error ao buscar chats CanceledError: canceled
+    at zM (https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:1088:280)
+    at f2.fZ (https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:1088:317)
+    at async f2.request (https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:1088:2138)
+    at async yvt (https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:1122:26189)
+    at async k (https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:54:37954)
+    at async Object.d [as fn] (https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:54:38261) @ https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:69
+[    1395ms] [INFO] WebSocket: Conexão estabelecida @ https://spa-canary.poli.digital/assets/index-BJCUZQyw.js:69

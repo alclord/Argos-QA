@@ -1,0 +1,244 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - link:
+                  - /url: https://app-spa.poli.digital/redirect?sessionId=6df0ff706ed26a1ec0b091ae5eeb9b7f8f8cef37&toPath=https://app.poli.digital/home
+                  - generic:
+                    - img
+              - generic:
+                - generic:
+                  - list:
+                    - listitem:
+                      - link:
+                        - /url: /chat
+                        - generic:
+                          - img
+                    - listitem:
+                      - link:
+                        - /url: /contacts
+                        - generic:
+                          - img
+                    - listitem:
+                      - link:
+                        - /url: https://app-spa.poli.digital/redirect?sessionId=6df0ff706ed26a1ec0b091ae5eeb9b7f8f8cef37&toPath=https://app.poli.digital/settings/1/chatbot
+                        - generic:
+                          - img
+                    - listitem:
+                      - link:
+                        - /url: /poli-flow
+                        - generic:
+                          - img
+                    - listitem:
+                      - link:
+                        - /url: https://app-spa.poli.digital/redirect?sessionId=6df0ff706ed26a1ec0b091ae5eeb9b7f8f8cef37&toPath=https://app-spa.poli.digital/marketing
+                        - generic:
+                          - img
+                    - listitem:
+                      - link:
+                        - /url: https://app-spa.poli.digital/redirect?sessionId=6df0ff706ed26a1ec0b091ae5eeb9b7f8f8cef37&toPath=https://app-spa.poli.digital/shopping
+                        - generic:
+                          - img
+                    - listitem:
+                      - link:
+                        - /url: https://app-spa.poli.digital/redirect?sessionId=6df0ff706ed26a1ec0b091ae5eeb9b7f8f8cef37&toPath=https://app-spa.poli.digital/relatorio
+                        - generic:
+                          - img
+                - generic:
+                  - list:
+                    - listitem:
+                      - generic:
+                        - link:
+                          - /url: /settings
+                          - generic:
+                            - img
+              - generic:
+                - button:
+                  - generic:
+                    - img
+                - generic:
+                  - button:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: YA
+                - generic:
+                  - generic: 3.5.352
+        - main:
+          - main:
+            - generic:
+              - generic:
+                - generic:
+                  - navigation:
+                    - generic:
+                      - link:
+                        - /url: /
+                        - text: Página inicial
+                    - img
+                    - generic: Configurações gerais
+                - generic:
+                  - generic:
+                    - generic:
+                      - textbox:
+                        - /placeholder: Buscar configuração...
+                      - button:
+                        - img
+                    - region:
+                      - heading [level=2]: Atendimento
+                      - generic:
+                        - generic:
+                          - link:
+                            - /url: https://app-spa.poli.digital/redirect?sessionId=6df0ff706ed26a1ec0b091ae5eeb9b7f8f8cef37&toPath=https%3A%2F%2Fapp-spa.poli.digital%2Ftools%2Fmessages-builder
+                            - generic:
+                              - img
+                            - generic:
+                              - generic: Modelos
+                              - generic: Crie e gerencie modelos de mensagem para agilizar o atendimento.
+                        - generic:
+                          - link:
+                            - /url: /tags
+                            - generic:
+                              - img
+                            - generic:
+                              - generic: Etiquetas
+                              - generic: Organize contatos e conversas com etiquetas personalizadas.
+                        - generic:
+                          - link:
+                            - /url: /teams
+                            - generic:
+                              - img
+                            - generic:
+                              - generic: Departamentos
+                              - generic: Estruture suas equipes e direcione os atendimentos.
+                        - generic:
+                          - link:
+                            - /url: https://app-spa.poli.digital/redirect?sessionId=6df0ff706ed26a1ec0b091ae5eeb9b7f8f8cef37&toPath=https%3A%2F%2Fapp-spa.poli.digital%2Ftools%2Fchannels%2Flist
+                            - generic:
+                              - img
+                            - generic:
+                              - generic: Canais
+                              - generic: Conecte e configure os canais de atendimento da conta.
+                        - generic:
+                          - link:
+                            - /url: https://app-spa.poli.digital/redirect?sessionId=6df0ff706ed26a1ec0b091ae5eeb9b7f8f8cef37&toPath=https%3A%2F%2Fapp.poli.digital%2Fdistribution%2F1
+                            - generic:
+                              - img
+                            - generic:
+                              - generic: Distribuição
+                              - generic: Defina como as conversas são distribuídas entre os atendentes.
+                    - region:
+                      - heading [level=2]: Empresa
+                      - generic:
+                        - generic:
+                          - link:
+                            - /url: https://app-spa.poli.digital/redirect?sessionId=6df0ff706ed26a1ec0b091ae5eeb9b7f8f8cef37&toPath=https%3A%2F%2Fapp.poli.digital%2Fdados_empresa%2F1
+                            - generic:
+                              - img
+                            - generic:
+                              - generic: Empresa
+                              - generic: Atualize os dados e as informações da sua empresa.
+                        - generic:
+                          - link:
+                            - /url: /users
+                            - generic:
+                              - img
+                            - generic:
+                              - generic: Usuários
+                              - generic: Gerencie os usuários e seus acessos à plataforma.
+                        - generic:
+                          - link:
+                            - /url: /applications
+                            - generic:
+                              - img
+                            - generic:
+                              - generic: Integrações
+                              - generic: Conecte aplicativos e serviços externos à sua conta.
+                        - generic:
+                          - link:
+                            - /url: /settings/ai
+                            - generic:
+                              - img
+                            - generic:
+                              - generic: Inteligência artificial
+                              - generic: Configure os recursos de IA do atendimento.
+                        - generic:
+                          - link:
+                            - /url: https://app-spa.poli.digital/redirect?sessionId=6df0ff706ed26a1ec0b091ae5eeb9b7f8f8cef37&toPath=https%3A%2F%2Fapp.poli.digital%2Fdados_plano%2F1
+                            - generic:
+                              - img
+                            - generic:
+                              - generic: Assinatura
+                              - generic: Acompanhe seu plano, faturas e forma de pagamento.
+                        - generic:
+                          - link:
+                            - /url: https://app-spa.poli.digital/redirect?sessionId=6df0ff706ed26a1ec0b091ae5eeb9b7f8f8cef37&toPath=https%3A%2F%2Fapp.poli.digital%2Fwallets%2F1
+                            - generic:
+                              - img
+                            - generic:
+                              - generic: Carteiras
+                              - generic: Gerencie as carteiras de atendimento da conta.
+                        - generic:
+                          - link:
+                            - /url: https://app-spa.poli.digital/redirect?sessionId=6df0ff706ed26a1ec0b091ae5eeb9b7f8f8cef37&toPath=https%3A%2F%2Fapp.poli.digital%2Fsettings%2F1%2Frateconfig
+                            - generic:
+                              - img
+                            - generic:
+                              - generic: Avaliações
+                              - generic: Configure as avaliações de atendimento.
+                        - generic:
+                          - link:
+                            - /url: https://app-spa.poli.digital/redirect?sessionId=6df0ff706ed26a1ec0b091ae5eeb9b7f8f8cef37&toPath=https%3A%2F%2Fapp.poli.digital%2Ftickets%2F1
+                            - generic:
+                              - img
+                            - generic:
+                              - generic: Protocolos
+                              - generic: Acompanhe os protocolos de atendimento.
+                        - generic:
+                          - button:
+                            - generic:
+                              - img
+                            - generic:
+                              - generic: Widget para site
+                              - generic: Instale o widget de atendimento no seu site.
+                        - generic:
+                          - button [disabled]:
+                            - generic:
+                              - img
+                            - generic:
+                              - generic: Segurança
+                              - generic: Defina as políticas de segurança e acesso da conta.
+                          - generic: Em breve
+                        - generic:
+                          - button [disabled]:
+                            - generic:
+                              - img
+                            - generic:
+                              - generic: Permissões
+                              - generic: Controle o que cada perfil de usuário pode acessar.
+                          - generic: Em breve
+                        - generic:
+                          - link:
+                            - /url: https://app-spa.poli.digital/redirect?sessionId=6df0ff706ed26a1ec0b091ae5eeb9b7f8f8cef37&toPath=https%3A%2F%2Fapp.poli.digital%2Factions%2F1
+                            - generic:
+                              - img
+                            - generic:
+                              - generic: Ações críticas
+                              - generic: Audite e gerencie ações sensíveis realizadas na conta.
+    - list
+  - dialog "Widget para site" [ref=e252]:
+    - generic [ref=e253]:
+      - heading "Widget para site" [level=2] [ref=e254]
+      - paragraph [ref=e255]: Copie e cole o código abaixo no seu site para instalar o widget de atendimento da Polichat.
+    - code [ref=e257]: "<!-- Polichat --> <script type=\"text/javascript\"> (function(p,o,l,i,c,h,a,t){ p['PolichatObject'] = c;p[c]=p[c]||function(){ (p[c].q=p[c].q||[]).push(arguments);},h=o.createElement(l);p[c].t=p[c].t||new Date(); a=o.getElementsByTagName(l)[0];h.async=1;h.src=i;a.parentNode.insertBefore(h,a); })(window,document,'script','https://ms.poli.digital/tags/public/services/serv.js','poli'); poli('create','1'); poli('send','avaliation'); poli('send','widget'); </script>"
+    - button "Copiar código" [active] [ref=e258] [cursor=pointer]:
+      - img [ref=e259]
+      - text: Copiar código
+    - button "Close" [ref=e262] [cursor=pointer]:
+      - img [ref=e263]
+      - generic [ref=e266]: Close
