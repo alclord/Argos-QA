@@ -991,12 +991,15 @@ function buildHealthBar() {
 }
 
 // Score zone thresholds
+// Alinhado com classifyLevel() em scripts/argos-predict/scorers/scoring.js —
+// antes esta tabela usava faixas (0/10/20/40/60) desenhadas para a escala antiga
+// de score (centenas de pontos); a normalizacao do SCORE_USR passou a produzir
+// scores na faixa 0-40, e as duas classificacoes divergiam para o mesmo modulo.
 const ZONE_THRESHOLDS = [
-  { min: 0,  max: 9,  label: 'Estável',    cor: '#22C55E', emoji: '✅' },
-  { min: 10, max: 19, label: 'Atenção',    cor: '#3B82F6', emoji: '🔵' },
-  { min: 20, max: 39, label: 'Alto',       cor: '#F59E0B', emoji: '🟡' },
-  { min: 40, max: 59, label: 'Crítico',    cor: '#EF4444', emoji: '🔴' },
-  { min: 60, max: 999,label: 'Emergência', cor: '#DC2626', emoji: '🚨' }
+  { min: 0,  max: 2,   label: 'Estável', cor: '#22C55E', emoji: '🟢' },
+  { min: 3,  max: 5,   label: 'Atenção', cor: '#F97316', emoji: '🟠' },
+  { min: 6,  max: 9,   label: 'Médio',   cor: '#F59E0B', emoji: '🟡' },
+  { min: 10, max: 999, label: 'Alto',    cor: '#EF4444', emoji: '🔴' },
 ];
 
 function getZone(score) {
@@ -1174,9 +1177,10 @@ function buildCapa() {
     document.getElementById('heroGrid').parentElement.insertBefore(resumoEl, document.getElementById('heroGrid'));
   }
 
-  // Contar módulos críticos e em emergência
-  const criticos = (REPORT.ranking || []).filter(r => r.total >= 20).length;
-  const emAtencao = (REPORT.ranking || []).filter(r => r.total >= 10 && r.total < 20).length;
+  // Contar módulos críticos e em atenção — usa o mesmo nivel calculado no backend
+  // (scoring.js classifyLevel), para não divergir do resto do dashboard.
+  const criticos = (REPORT.ranking || []).filter(r => r.nivel === 'ALTO').length;
+  const emAtencao = (REPORT.ranking || []).filter(r => r.nivel === 'MÉDIO' || r.nivel === 'ATENÇÃO').length;
   const emDev = (REPORT.ranking || []).filter(r => r.nivel === 'ALTO' && r.bugs_n1 > 0).length;
 
   // Status badge
@@ -1194,7 +1198,7 @@ function buildCapa() {
 
   // Hero numbers (left)
   const heroNums = document.getElementById('heroNums');
-  const modAlto = (REPORT.ranking || []).filter(r => r.total >= 20);
+  const modAlto = (REPORT.ranking || []).filter(r => r.nivel === 'ALTO');
   heroNums.innerHTML = modAlto.slice(0, 3).map(r => {
     const z = getZone(r.total);
     return `<div style="display:flex;align-items:baseline;gap:8px;margin-bottom:6px">
@@ -1204,7 +1208,7 @@ function buildCapa() {
         <div style="font-size:.65rem;color:${z.cor}">${z.emoji} ${z.label}</div>
       </div>
     </div>`;
-  }).join('') + `<div style="margin-top:8px;font-size:.72rem;color:var(--txt2)">${(REPORT.ranking||[]).filter(r=>r.total>=10).length} módulos em zona de risco</div>`;
+  }).join('') + `<div style="margin-top:8px;font-size:.72rem;color:var(--txt2)">${(REPORT.ranking||[]).filter(r=>r.nivel==='ALTO').length} módulos em zona de risco</div>`;
 
   // Actions (right)
   const heroAcoes = document.getElementById('heroAcoes');
@@ -1651,7 +1655,7 @@ function buildDrillDetailed() {
 function showDrillBugs(mod, type) {
   const svc = (REPORT.servicos_radar || []).find(s => s.nome.startsWith(mod) || s.apelido === mod);
   if (!svc) return;
-  const items = (type === 'n1' || type === 'reclamacoes') ? (svc.bugs_n1_items || []) : (svc.bugs_cards || []);
+  const items = svc.bugs_cards || [];
   const label = type === 'n1' ? 'Bugs N1 abertos' : 'Reclamações esta semana';
   const cor = type === 'n1' ? '#F97316' : '#EF4444';
   document.getElementById('modalTag').textContent = '🐛 ' + label;
@@ -2057,41 +2061,35 @@ function buildBombas() {
 function buildQualidade() {
   const q = REPORT.qualidadeProcesso || {};
 
+  const naoMedido = v => v === null || v === undefined;
   const sinais = [
     {
       icone: '🔄', label: 'Bugs Reabertos', cor: 'red',
-      valor: q.bugsReabertos?.total ?? '—',
+      valor: naoMedido(q.bugsReabertos?.total) ? '—' : q.bugsReabertos.total,
       detalhe: 'Regressões confirmadas — fix não resolveu',
       modulos: q.bugsReabertos?.modulos || [],
       hint: 'Cada reabertura indica que um fix anterior foi incompleto ou gerou regressão. Módulos com ≥2 reaberturas no período são candidatos a backlog crônico.'
     },
     {
-      icone: '🏃', label: 'Deploys Arriscados', cor: 'amber',
-      valor: q.prsPrecipitados?.total ?? '—',
+      icone: '🏃', label: 'PRs Precipitados', cor: 'amber',
+      valor: naoMedido(q.prsPrecipitados?.total) ? 'não medido' : q.prsPrecipitados.total,
       detalhe: 'PRs grandes revisados em < 2h — alta chance de bug',
       modulos: q.prsPrecipitados?.modulos || [],
-      hint: 'PRs complexos revisados em menos de 2h têm alta probabilidade de introduzir bugs. São um sinal antecipado de regressão antes do bug aparecer no suporte.'
+      hint: 'PRs complexos revisados em menos de 2h têm alta probabilidade de introduzir bugs. Sinal ainda não calculado nesta versão do pipeline.'
     },
     {
-      icone: '📈', label: 'Erros Crescendo', cor: 'red',
-      valor: q.sentryEscalando?.total ?? '—',
-      detalhe: 'Módulos com erros em produção crescendo >50%/semana',
-      modulos: q.sentryEscalando?.modulos || [],
-      hint: 'Erros crescendo 50%+ em uma semana indicam degradação ativa em produção. Diferente do volume absoluto — um novo bug escalando é mais urgente que um bug crônico estável.'
+      icone: '🧪', label: 'Cenários QA Desatualizados', cor: 'orange',
+      valor: naoMedido(q.stalenessQA?.total) ? 'não medido' : q.stalenessQA.total,
+      detalhe: 'Cenário de teste mais antigo que a última mudança do card',
+      modulos: q.stalenessQA?.modulos || [],
+      hint: 'Cenários de teste desatualizados em áreas ativas viram zona cega de cobertura. Sinal ainda não calculado nesta versão do pipeline.'
     },
     {
-      icone: '🌐', label: 'Falha por Ambiente', cor: 'amber',
-      valor: q.envFailures?.total ?? '—',
+      icone: '🌐', label: 'Falha Env-Específica', cor: 'amber',
+      valor: naoMedido(q.envFailures?.total) ? 'não medido' : q.envFailures.total,
       detalhe: 'Módulo falha muito mais em staging do que em canary',
       modulos: q.envFailures?.modulos || [],
-      hint: 'Módulos com taxa de falha significativamente diferente entre staging e canary indicam problema de configuração, dados de ambiente ou dependência de infraestrutura.'
-    },
-    {
-      icone: '⏱️', label: 'Bugs Sem Solução', cor: 'orange',
-      valor: q.resolucaoLenta?.total ?? '—',
-      detalhe: 'Módulos com tempo médio de correção > 14 dias',
-      modulos: q.resolucaoLenta?.modulos || [],
-      hint: 'Tempo médio de resolução acima de 14 dias indica alta complexidade técnica, falta de priorização ou dependência externa. Esses módulos são candidatos a refatoração.'
+      hint: 'Módulos com taxa de falha significativamente diferente entre staging e canary indicam problema de configuração, dados de ambiente ou dependência de infraestrutura. Sinal ainda não calculado nesta versão do pipeline.'
     }
   ];
 
@@ -2227,19 +2225,17 @@ let qualAtivo = null;
 function toggleQualDetail(label, el) {
   const q = REPORT.qualidadeProcesso || {};
   const mapa = {
-    'Bugs Reabertos':         { key:'bugsReabertos',  fmt: m => `${m.modulo} — ${m.count} reabertura${m.count>1?'s':''}` },
-    'PRs Precipitados':       { key:'prsPrecipitados', fmt: m => `${m.modulo} — ${m.count} PR${m.count>1?'s':''} precipitado${m.count>1?'s':''}` },
-    'Sentry Escalando':       { key:'sentryEscalando', fmt: m => `${m.modulo} — +${m.delta}%` },
-    'Falha Env-Específica':   { key:'envFailures',     fmt: m => `${m.modulo} — Δ${Math.round(Math.abs(m.staging-m.canary)*100)}%` },
-    'Resolução Lenta':        { key:'resolucaoLenta',  fmt: m => `${m.modulo} — ${m.media_dias} dias em média` }
+    'Bugs Reabertos':               { key:'bugsReabertos',  fmt: m => `${m.modulo} — ${m.count} reabertura${m.count>1?'s':''}` },
+    'PRs Precipitados':             { key:'prsPrecipitados', fmt: m => `${m.modulo} — ${m.count} PR${m.count>1?'s':''} precipitado${m.count>1?'s':''}` },
+    'Cenários QA Desatualizados':   { key:'stalenessQA',     fmt: m => `${m.modulo} — ${m.count} cenário${m.count>1?'s':''} (${m.oldest_days}d atrás)` },
+    'Falha Env-Específica':         { key:'envFailures',     fmt: m => `${m.modulo} — Δ${Math.round(Math.abs(m.staging-m.canary)*100)}%` },
   };
 
   const sinaisInfo = {
     'Bugs Reabertos': 'Cada reabertura indica que um fix anterior foi incompleto ou gerou regressão. Módulos com ≥2 reaberturas são candidatos a backlog crônico.',
-    'PRs Precipitados': 'PRs complexos (>10 arquivos) revisados em <2h têm alta probabilidade de introduzir bugs. Sinal antecipado de regressão antes do bug aparecer no suporte.',
-    'Sentry Escalando': 'Erros crescendo 50%+ em uma semana indicam degradação ativa. Um bug escalando é mais urgente que um bug crônico estável.',
-    'Falha Env-Específica': 'Módulos com taxa de falha diferente entre staging e canary indicam problema de configuração, dados de ambiente ou dependência de infraestrutura.',
-    'Resolução Lenta': 'Tempo médio >14 dias indica alta complexidade técnica, falta de priorização ou dependência externa.'
+    'PRs Precipitados': 'PRs complexos (>10 arquivos) revisados em <2h têm alta probabilidade de introduzir bugs. Sinal ainda não calculado nesta versão do pipeline.',
+    'Cenários QA Desatualizados': 'Cenários de teste mais antigos que a última mudança do card viram zona cega de cobertura. Sinal ainda não calculado nesta versão do pipeline.',
+    'Falha Env-Específica': 'Módulos com taxa de falha diferente entre staging e canary indicam problema de configuração, dados de ambiente ou dependência de infraestrutura. Sinal ainda não calculado nesta versão do pipeline.',
   };
 
   // Toggle
@@ -2270,27 +2266,10 @@ function buildAcoes() {
 }
 
 // ── CLASSIFICAÇÃO POR MÓDULO (SM) ─────────────────────────
-const SM_MODULO_KEYWORDS = [
-  { nome: 'Chat/Mensagens', keywords: ['chat', 'mensagem', 'message', 'envio', 'recebimento', 'compose', 'resposta', 'template', 'conversa', 'conversation'] },
-  { nome: 'Canais/WhatsApp', keywords: ['whatsapp', 'waba', 'z-api', 'zapi', 'webchat', 'instagram', 'sms', 'canal', 'channel'] },
-  { nome: 'Distribuição/Filas', keywords: ['fila', 'queue', 'distribuicao', 'assign', 'atribuicao', 'dispatch', 'espera', 'waiting', 'atendimento'] },
-  { nome: 'Autenticação', keywords: ['login', 'logout', 'auth', 'sessao', 'session', 'senha', 'password', 'token', 'jwt', 'heimdall', 'acesso', 'entrar'] },
-  { nome: 'WebSocket/Presença', keywords: ['websocket', 'presenca', 'online', 'offline', 'real-time', 'tempo real', 'notificacao', 'notification', 'socket'] },
-  { nome: 'Upload/Mídia', keywords: ['arquivo', 'file', 'upload', 'pdf', 'imagem', 'image', 'midia', 'media', 'anexo', 'attachment', 'foto', 'video', 'audio'] },
-  { nome: 'Jarvis/IA', keywords: ['ia', 'ai', 'jarvis', 'transcricao', 'resumo', 'sugestao', 'inteligencia artificial', 'assistente', 'llm'] },
-  { nome: 'Integrações', keywords: ['crm', 'erp', 'integracao', 'webhook', 'api externa', 'zapier', 'hubspot', 'salesforce'] }
-];
-function classifySM(sumario) {
-  const s = sumario.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  for (const m of SM_MODULO_KEYWORDS) {
-    for (const kw of m.keywords) {
-      if (s.includes(kw)) return m.nome;
-    }
-  }
-  return 'Outros';
-}
+// Usa o campo `module` já calculado no backend (scripts/argos-predict/scorers/module-mapper.js)
+// — ver classifyTickets() abaixo.
 function classifyTickets(all) {
-  return all.map(t => ({ ...t, modulo: classifySM(t.sumario) }));
+  return all.map(t => ({ ...t, modulo: t.module || 'Outros' }));
 }
 
 // ── SLIDE 13: CHAMADOS SM ─────────────────────────────────
@@ -2305,10 +2284,10 @@ function buildSMTickets() {
   smAllModulos = [...new Set(all.map(t => t.modulo))].sort();
   renderSMModFilter(all);
   renderSMSummary(all);
-  const tipos = [...new Set(all.map(t => t.tipo))];
+  const tipos = [...new Set(all.map(t => t.type))];
   document.getElementById('smFilterBar').innerHTML =
     '<button class="sm-filter-btn active" data-filter="todos" onclick="setSMFilter(\'todos\')">Todos (' + all.length + ')</button>' +
-    tipos.map(t => `<button class="sm-filter-btn" data-filter="${t}" onclick="setSMFilter('${t}')">${t} (${all.filter(x => x.tipo === t).length})</button>`).join('');
+    tipos.map(t => `<button class="sm-filter-btn" data-filter="${t}" onclick="setSMFilter('${t}')">${t} (${all.filter(x => x.type === t).length})</button>`).join('');
   renderSMTable(all);
   document.getElementById('smSubtitle').textContent = smTab === 'n2'
     ? 'Chamados N2: bugs com suporte N2. Filtre por módulo (serviço) ou tipo.'
@@ -2320,7 +2299,7 @@ function renderSMModFilter(all) {
   all.forEach(t => { modCounts[t.modulo] = (modCounts[t.modulo] || 0) + 1; });
   const el = document.getElementById('smModFilterBar');
   if (!el) return;
-  const modOrder = ['Chat/Mensagens','Canais/WhatsApp','Distribuição/Filas','Autenticação','WebSocket/Presença','Upload/Mídia','Jarvis/IA','Integrações'];
+  const modOrder = ['Chat / Mensagens','Canais','Contatos','Distribuição / Filas','Autenticação','WebSocket / Presença','Upload / Mídia','Jarvis / IA','Configurações','Permissões / Roles','Relatórios / SLA','Integrações Externas','Disparos / Campanhas'];
   const sorted = modOrder.filter(m => modCounts[m]).concat(smAllModulos.filter(m => !modOrder.includes(m)));
   el.innerHTML =
     '<button class="sm-mod-btn active" data-mod="todos" onclick="setSMModFilter(\'todos\')">Todos (' + all.length + ')</button>' +
@@ -2355,41 +2334,42 @@ function applySMFilters() {
   const raw = smTab === 'n2' ? (REPORT.sm_tickets_n2 || []) : (REPORT.sm_tickets_raw || []);
   let all = classifyTickets(raw);
   if (smFilterMod !== 'todos') all = all.filter(t => t.modulo === smFilterMod);
-  if (smFilter !== 'todos') all = all.filter(t => t.tipo === smFilter);
+  if (smFilter !== 'todos') all = all.filter(t => t.type === smFilter);
   renderSMSummary(all);
   renderSMTable(all);
 }
 
 function renderSMSummary(tickets) {
-  const bugs = tickets.filter(t => t.tipo === 'Bug').length;
+  const bugs = tickets.filter(t => t.type === 'Bug').length;
   const total = tickets.length;
   const el = document.getElementById('smSummary');
   if (el) el.innerHTML = `<span style="font-size:.82rem;color:var(--txt2)">${total} chamados · <b style="color:#F87171">${bugs} bugs</b> · ${tickets.filter(t => t.status === 'Aberto').length} abertos · ${tickets.filter(t => t.status === 'Concluído').length} concluídos · ${tickets.filter(t => t.status === 'Handoff').length} handoff</span>`;
 }
 
 function renderSMTable(tickets) {
-  const sorted = [...tickets].sort((a, b) => parseInt(b.id.replace('SM-','')) - parseInt(a.id.replace('SM-','')));
+  const sorted = [...tickets].sort((a, b) => parseInt((b.key||'').replace('SM-','')) - parseInt((a.key||'').replace('SM-','')));
   const container = document.getElementById('smTableContainer');
   if (!sorted.length) {
     container.innerHTML = '<div style="padding:24px;text-align:center;color:#475569;font-size:.85rem">Nenhum chamado encontrado para este filtro.</div>';
     return;
   }
   const tipoCores = {Bug:'#EF4444',Solicitação:'#3B82F6',Dúvida:'#F59E0B',Tarefa:'#6366F1',História:'#22C55E'};
-  const modCores = { 'Chat/Mensagens':'#3B82F6','Canais/WhatsApp':'#22C55E','Distribuição/Filas':'#F59E0B','Autenticação':'#8B5CF6','WebSocket/Presença':'#06B6D4','Upload/Mídia':'#EC4899','Jarvis/IA':'#F97316','Integrações':'#6366F1' };
+  const modCores = { 'Chat / Mensagens':'#3B82F6','Canais':'#22C55E','Contatos':'#14B8A6','Distribuição / Filas':'#F59E0B','Autenticação':'#8B5CF6','WebSocket / Presença':'#06B6D4','Upload / Mídia':'#EC4899','Jarvis / IA':'#F97316','Configurações':'#A3A3A3','Permissões / Roles':'#84CC16','Relatórios / SLA':'#0EA5E9','Integrações Externas':'#6366F1','Disparos / Campanhas':'#D946EF' };
   container.innerHTML = `<table class="sm-table">
     <thead><tr><th>ID</th><th>Data</th><th>Status</th><th>Chamado</th><th>Módulo</th><th>Tipo</th></tr></thead>
     <tbody>${sorted.map(t => {
-      const href = `https://poli-digital.atlassian.net/browse/${t.id}`;
-      const cor = tipoCores[t.tipo] || '#64748B';
+      const href = `https://poli-digital.atlassian.net/browse/${t.key}`;
+      const cor = tipoCores[t.type] || '#64748B';
       const modCor = modCores[t.modulo] || '#64748B';
       const statusCls = t.status === 'Handoff' ? 'sm-st-handoff' : t.status === 'Aberto' ? 'sm-st-aberto' : t.status === 'Concluído' ? 'sm-st-concluido' : '';
+      const criado = t.created ? t.created.slice(0, 10).split('-').reverse().join('/') : '';
       return `<tr>
-        <td><a href="${href}" target="_blank" class="sm-id">${t.id}</a></td>
-        <td style="color:var(--txt2);font-size:.72rem;white-space:nowrap">${t.criado}</td>
+        <td><a href="${href}" target="_blank" class="sm-id">${t.key}</a></td>
+        <td style="color:var(--txt2);font-size:.72rem;white-space:nowrap">${criado}</td>
         <td><span class="sm-status ${statusCls}">${t.status}</span></td>
-        <td class="sm-tit">${t.sumario}</td>
+        <td class="sm-tit">${t.summary}</td>
         <td><span class="sm-tag" style="background:${modCor}18;color:${modCor}">${t.modulo}</span></td>
-        <td><span class="sm-tag" style="background:${cor}18;color:${cor}">${t.tipo}</span></td>
+        <td><span class="sm-tag" style="background:${cor}18;color:${cor}">${t.type}</span></td>
       </tr>`;
     }).join('')}</tbody></table>`;
 }
@@ -2446,7 +2426,6 @@ const DATASET_META = [
   { label: 'Dev ativo agora',         cor: '#22C55E', key: 'dev_ativo_items',     emoji: '⚡', vazio: 'Nenhum card ou PR ativo neste serviço no momento.' },
   { label: 'Planejado (backlog)',     cor: '#6366F1', key: 'dev_planejado_items', emoji: '📋', vazio: 'Nenhum card planejado para este serviço.' },
   { label: 'Risco técnico latente',   cor: '#F59E0B', key: 'score_tec_itens',     emoji: '🔬', vazio: 'Nenhuma fragilidade técnica documentada para este serviço.' },
-  { label: 'Reclamações N1',          cor: '#F97316', key: 'bugs_n1_items',       emoji: '📞', vazio: 'Nenhuma reclamação N1 registrada para este serviço.' }
 ];
 
 function tipoCardStyle(tipo) {
@@ -2657,7 +2636,14 @@ document.addEventListener('click', e => {
 
 // ── SLIDE 10: TIMELINE ────────────────────────────────────
 function buildTimeline() {
-  if (!REPORT.timeline || !REPORT.timeline.length) return;
+  if (!REPORT.timeline || !REPORT.timeline.length) {
+    const box = document.getElementById('cTimeline')?.closest('.chart-box');
+    if (box) box.innerHTML = `<div style="text-align:center;padding:40px 20px;color:#475569;font-size:.85rem">
+      <div style="font-size:2rem;margin-bottom:12px">📅</div>
+      Timeline ainda não disponível — sinal não calculado nesta versão do pipeline.
+    </div>`;
+    return;
+  }
   const tl = REPORT.timeline;
   const labels = tl.map(w => w.data);
   const modulos = Object.keys(tl[0].modulos).slice(0, 5);
